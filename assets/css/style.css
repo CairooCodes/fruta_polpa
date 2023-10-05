@@ -1,0 +1,173 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css");
+
+@font-face {
+  font-family: "garnetcapitals";
+  src: url('../fonts/garnet-capitals-regular.ttf') format('woff2'),
+    url('../fonts/garnet-capitals-regular.ttf') format('woff');
+}
+
+.carousel-3D-swiper-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+  min-height: 500px;
+}
+
+.carousel-3D-swiper-title {
+  text-align: center;
+  font-size: 3rem;
+  color: orangered;
+}
+
+.carousel-3D-swiper {
+  width: 100% !important;
+}
+
+.shadow1 {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.shadow2 {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.carousel-3D-swiper .swiper-slide {
+  position: relative;
+}
+
+.carousel-3D-swiper .image-wrapper {
+  overflow: hidden;
+  max-height: 225px;
+}
+
+.swiper-slide-active .details {
+  background-color: rgba(255, 133, 30, 0.8);
+}
+
+.swiper-slide-active:hover .details {
+  height: 70% !important;
+  background-color: rgba(255, 133, 30, 0.84);
+}
+
+.swiper-slide-active .details span,
+.swiper-slide-active .details h3 {
+  color: white;
+}
+
+.details {
+  transition: 0.3s;
+  padding: 25px 20px;
+  font-weight: 600;
+  text-align: center;
+  background-color: rgba(128, 128, 128, 0.7);
+}
+
+.details span {
+  display: block;
+  font-size: 16px;
+  color: #f44336;
+}
+
+.details h3 {
+  margin: 0;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 1.1;
+}
+
+.details p {
+  margin: 8px 0 0;
+  opacity: 0.65;
+  font-size: 14px;
+  font-weight: 500;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.carousel-3D-swiper-section .swiper-pagination-bullet {
+  margin: 0 4px;
+  width: 16px;
+  height: 16px;
+  z-index: 50;
+}
+
+.carousel-3D-swiper-section .swiper-pagination-bullet-active {
+  opacity: 1;
+  background: orange;
+}
+
+
+body {
+  font-family: -apple-system, 'Inter', sans-serif;
+}
+
+.hero {
+  padding-top: 80px;
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.btn_whats {
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  background: green;
+  padding: 20px;
+  border-radius: 30px;
+  color: #fff;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.form {
+  background: url(../img/conosco.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cursos {
+  background: url(../img/conosco.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fadeInUp {
+  animation: fadeInUp 1s ease backwards;
+}
+
+@keyframes fadeInUp {
+  0% {
+    transform: translate(0px, 100px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate(0px, 0);
+    opacity: 1;
+  }
+}
+
+.box {
+  animation-delay: 0.3s;
+}
+
+.header-banner {
+  background-image: url(../img/banner-politico.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+header {
+  font-family: "garnetcapitals", sans-serif;
+}

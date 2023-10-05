@@ -1,0 +1,17 @@
+{
+    "name": "cairo/boom",
+    "autoload": {
+        "psr-4": {
+            "Cairo\\Boom\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Cairo",
+            "email": "cairofelipedev@gmail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.7"
+    }
+}

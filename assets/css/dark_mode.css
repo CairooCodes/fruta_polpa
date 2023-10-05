@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+:root {
+  --body-bg: #FFFFFF;
+  --card-bg: #FFFFFF;
+  --card-bd-col: #bdbdbd;
+  --text-color: #252525;
+}
+
+.dark_mode {
+  --body-bg: #252525;
+  --card-bg: #555;
+  --card-bd-col: #212121;
+  --text-color: #f5f5f5;
+}
+
+body {
+  background: var(--body-bg);
+}
+
+header {
+  background: var(--body-bg);
+}
+
+h1,li,span,p {
+  color: var(--text-color);
+}
