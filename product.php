@@ -56,20 +56,22 @@ if ($stmt->rowCount() > 0) {
     </h1>
   </div>
   <section class="mx-auto max-w-7xl px-2">
-    <div class="max-w-screen-xl px-4 py-8 mx-auto space-y-12 lg:space-y-20 lg:py-6 lg:px-6">
-      <div>
-        <div class="mt-4 rounded-xl p-2 shadow-md shadow-blue-200">
+    <div class="max-w-screen-xl px-4 py-8 mx-auto space-y-12 lg:space-y-20 lg:py-6 lg:px-6 grid grid-cols-2 gap-8">
+      <div class="image">
+        <div class="mt-4 rounded-xl p-2 shadow-md shadow-blue-200" style="width: 400px; height: 350px;">
           <div  class="flex justify-center">
-            <?php echo "<img class='lazy rounded-md h-full w-52 object-cover' src=" . $URI->base('/admin/uploads/products') . '/' . $product['img'] . '>' ?>
+            <?php echo "<img class='lazy rounded-md h-full w-52 object-cover mt-14' style='width: 350px; height: 250px;' src=" . $URI->base('/admin/uploads/products') . '/' . $product['img'] . '>' ?>
           </div>
         </div>
       </div>
-      <h2>
+      <div class="description">
+      <!-- <h2>
         <?php echo $product['price']; ?>
-      </h2>
+      </h2> -->
       <h2>
         <?php echo $product['description']; ?>
       </h2>
+      </div>
     </div>
   </section>
 
