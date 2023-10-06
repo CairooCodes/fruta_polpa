@@ -10,9 +10,18 @@ function getBanners()
 function getProducts()
 {
   global $pdo;
-  $stmt = $pdo->prepare("SELECT * FROM products order by id asc");
+  $stmt = $pdo->prepare("SELECT * FROM products order by id desc");
   $stmt->execute();
   return $stmt->fetchAll(PDO::FETCH_ASSOC);
+}
+
+function getProduct($id)
+{
+  global $pdo;
+  $stmt = $pdo->prepare("SELECT * FROM products WHERE id = :id");
+  $stmt->bindParam(':id', $id);
+  $stmt->execute();
+  return $stmt->fetch(PDO::FETCH_ASSOC);
 }
 
 function getBlogs()

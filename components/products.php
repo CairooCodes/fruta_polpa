@@ -12,9 +12,11 @@
                         <button class="bg-color1 hover:bg-orange-700 text-sm text-white font-bold py-2 px-4 rounded">
                             PEÇA JÁ
                         </button>
-                        <button class="bg-gray-400 hover:bg-gray-600 text-sm text-white font-bold py-2 px-4 rounded">
+                        <a href="<?php echo $URI->base('/product/' . slugify($product['name'])); ?>">
+                            <button class="bg-gray-400 hover:bg-gray-600 text-sm text-white font-bold py-2 px-4 rounded">
                             BENEFÍCIOS
                         </button>
+                        </a>
                     </div>
                 </div>
 <!-- 
