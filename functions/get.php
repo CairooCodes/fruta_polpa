@@ -41,19 +41,3 @@ function getBlog($id)
   return $stmt->fetch(PDO::FETCH_ASSOC);
 }
 
-function getCursos()
-{
-  global $pdo;
-  $stmt = $pdo->prepare("SELECT * FROM cursos order by id asc");
-  $stmt->execute();
-  return $stmt->fetchAll(PDO::FETCH_ASSOC);
-}
-
-function getCurso($id)
-{
-  global $pdo;
-  $stmt = $pdo->prepare("SELECT * FROM cursos WHERE id = :id");
-  $stmt->bindParam(':id', $id);
-  $stmt->execute();
-  return $stmt->fetch(PDO::FETCH_ASSOC);
-}

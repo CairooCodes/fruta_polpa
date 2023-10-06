@@ -16,14 +16,14 @@ $stmt->execute([$user_id]);
 $user = $stmt->fetch();
 
 $id = $_GET['id'];
-$curso = getCurso($id);
+$blog = getBlog($id);
 
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
-  <title>Cursos Boom</title>
+  <title>Blog Fruta Polpa</title>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -52,34 +52,30 @@ $curso = getCurso($id);
     <?php include "components/header.php" ?>
     <div class="max-w-7xl px-4 pb-8 mx-auto py-8">
       <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
-        <form action="./controllers/edit_curso.php?id=<?php echo $curso['id']; ?>" method="POST" enctype="multipart/form-data" class="relative bg-white rounded-lg shadow">
+        <form action="./controllers/edit_blog.php?id=<?php echo $blog['id']; ?>" method="POST" enctype="multipart/form-data" class="relative bg-white rounded-lg shadow">
           <!-- Modal header -->
           <div class="flex items-start justify-between p-4 border-b rounded-t">
             <h3 class="text-xl font-semibold text-gray-900">
-              Editar Curso
+              Editar Blog
             </h3>
           </div>
           <!-- Modal body -->
           <div class="p-6 space-y-6">
             <div class="grid grid-cols-6 gap-6">
-              <input id="id" name="id" type="hidden" value="<?php echo $curso['id']; ?>">
+              <input id="id" name="id" type="hidden" value="<?php echo $blog['id']; ?>">
               <div class="col-span-6 sm:col-span-3">
                 <label class="block mb-2 text-sm font-medium text-gray-900">Nome</label>
-                <input name="name" type="text" value="<?php echo $curso['name']; ?>" id="name" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5" placeholder="Nome do Curso" required="">
+                <input name="name" type="text" value="<?php echo $blog['name']; ?>" id="name" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-orange-600 focus:border-orange-600 block w-full p-2.5" placeholder="Nome do blog" required="">
               </div>
               <div class="col-span-6 sm:col-span-3">
                 <label for="phone-number" class="block mb-2 text-sm font-medium text-gray-900">Imagem</label>
                 <input type="file" id="img" name="img">
               </div>
-              <div class="col-span-6 sm:col-span-3">
-                <label class="block mb-2 text-sm font-medium text-gray-900">Link</label>
-                <input name="link" type="text" value="<?php echo $curso['link']; ?>" id="link" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5" placeholder="Link do Serviço" required="">
-              </div>
             </div>
-            <textarea name="description" id="description" type="text"><?php echo $curso['description']; ?></textarea>
+            <textarea name="description" id="description" type="text"><?php echo $blog['description']; ?></textarea>
           </div>
           <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b">
-            <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Editar</button>
+            <button type="submit" class="text-white bg-orange-700 hover:bg-orange-800 focus:ring-4 focus:outline-none focus:ring-orange-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Editar</button>
           </div>
         </form>
       </div>
