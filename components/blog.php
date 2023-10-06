@@ -8,65 +8,68 @@
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper py-6">
             <!-- Slides -->
-            <div class="swiper-slide">
-              <div style="background-image: url(https://avatars.githubusercontent.com/u/108219612?v=4);" class="shadow1 bg-no-repeat bg-cover rounded-2xl h-[550px]">
-                <div class="details rounded-b-2xl absolute bottom-0 w-full h-2/5">
-                  <h3>Título</h3>
-                  <span>Subtitulo</span>
-                  <p>Lorem ipsum dolor</p>
+            <?php foreach ($blogs as $blog) { ?>
+              <div class="swiper-slide">
+                <div class="lazy max-h-2/3 object-cover">
+                  <img src='./admin/uploads/blogs/<?php echo $blog['img'] ?>'>
+                  <div class="details rounded-b-2xl absolute bottom-0 w-full h-2/5">
+                    <h3><?php echo $blog['name'] ?></h3>
+                  </div>
                 </div>
               </div>
-            </div>
+            <?php }
+            ?>
+          </div>
 
-            <div class="swiper-slide">
-              <div style="background-image: url(https://avatars.githubusercontent.com/u/108219612?v=4);" class="shadow1 bg-no-repeat bg-cover rounded-2xl h-[550px]">
-                <div class="details rounded-b-2xl absolute bottom-0 w-full h-2/5">
-                  <h3>Título</h3>
-                  <span>Subtitulo</span>
-                  <p>Lorem ipsum dolor</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div style="background-image: url(https://avatars.githubusercontent.com/u/108219612?v=4);" class="shadow1 bg-no-repeat bg-cover rounded-2xl h-[550px]">
-                <div class="details rounded-b-2xl absolute bottom-0 w-full h-2/5">
-                  <h3>Título</h3>
-                  <span>Subtitulo</span>
-                  <p>Lorem ipsum dolor</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div style="background-image: url(https://avatars.githubusercontent.com/u/108219612?v=4);" class="shadow1 bg-no-repeat bg-cover rounded-2xl h-[550px]">
-                <div class="details rounded-b-2xl absolute bottom-0 w-full h-2/5">
-                  <h3>Título</h3>
-                  <span>Subtitulo</span>
-                  <p>Lorem ipsum dolor</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div style="background-image: url(https://avatars.githubusercontent.com/u/108219612?v=4);" class="shadow1 bg-no-repeat bg-cover rounded-2xl h-[550px]">
-                <div class="details rounded-b-2xl absolute bottom-0 w-full h-2/5">
-                  <h3>Título</h3>
-                  <span>Subtitulo</span>
-                  <p>Lorem ipsum dolor</p>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div style="background-image: url(https://avatars.githubusercontent.com/u/108219612?v=4);" class="shadow1 bg-no-repeat bg-cover rounded-2xl h-[550px]">
-                <div class="details rounded-b-2xl absolute bottom-0 w-full h-2/5">
-                  <h3>Título</h3>
-                  <span>Subtitulo</span>
-                  <p>Lorem ipsum dolor</p>
-                </div>
+          <!-- <div class="swiper-slide">
+            <div style="background-image: url(https://avatars.githubusercontent.com/u/108219612?v=4);" class="shadow1 bg-no-repeat bg-cover rounded-2xl h-[550px]">
+              <div class="details rounded-b-2xl absolute bottom-0 w-full h-2/5">
+                <h3>Título</h3>
+                <span>Subtitulo</span>
+                <p>Lorem ipsum dolor</p>
               </div>
             </div>
           </div>
+
+          <div class="swiper-slide">
+            <div style="background-image: url(https://avatars.githubusercontent.com/u/108219612?v=4);" class="shadow1 bg-no-repeat bg-cover rounded-2xl h-[550px]">
+              <div class="details rounded-b-2xl absolute bottom-0 w-full h-2/5">
+                <h3>Título</h3>
+                <span>Subtitulo</span>
+                <p>Lorem ipsum dolor</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div style="background-image: url(https://avatars.githubusercontent.com/u/108219612?v=4);" class="shadow1 bg-no-repeat bg-cover rounded-2xl h-[550px]">
+              <div class="details rounded-b-2xl absolute bottom-0 w-full h-2/5">
+                <h3>Título</h3>
+                <span>Subtitulo</span>
+                <p>Lorem ipsum dolor</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div style="background-image: url(https://avatars.githubusercontent.com/u/108219612?v=4);" class="shadow1 bg-no-repeat bg-cover rounded-2xl h-[550px]">
+              <div class="details rounded-b-2xl absolute bottom-0 w-full h-2/5">
+                <h3>Título</h3>
+                <span>Subtitulo</span>
+                <p>Lorem ipsum dolor</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div style="background-image: url(https://avatars.githubusercontent.com/u/108219612?v=4);" class="shadow1 bg-no-repeat bg-cover rounded-2xl h-[550px]">
+              <div class="details rounded-b-2xl absolute bottom-0 w-full h-2/5">
+                <h3>Título</h3>
+                <span>Subtitulo</span>
+                <p>Lorem ipsum dolor</p>
+              </div>
+            </div>
+          </div>
+        </div> -->
           <!-- pagination -->
           <div class="swiper-button-prev swiper-button-prev-blog shadow1 text-white bg-color1 hover:bg-white hover:text-color1 p-8 py-9 rounded-full pr-10"></div>
           <div class="swiper-button-next swiper-button-next-blog shadow1 text-white bg-color1 hover:bg-white hover:text-color1 p-8 py-9 rounded-full pl-10"></div>
@@ -74,9 +77,11 @@
         </div>
       </section>
       <div class="flex justify-center mt-6">
-        <button class="shadow1 bg-color1 mx-auto hover:bg-white hover:text-color1 text-md text-white font-bold py-2 px-4 rounded">
-          Ver Todos
-        </button>
+        <a href="./blogs.php">
+          <button class="shadow1 bg-color1 mx-auto hover:bg-white hover:text-color1 text-md text-white font-bold py-2 px-4 rounded">
+            Ver Todos
+          </button>
+        </a>
       </div>
     </div>
 </section>

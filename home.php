@@ -6,6 +6,7 @@ require "./functions/get.php";
 
 $banners = getBanners();
 $products = getProducts();
+$blogs = getBlogs();
 
 $URI = new URI();
 ?>

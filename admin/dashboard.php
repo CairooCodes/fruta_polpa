@@ -61,21 +61,21 @@ $page = 'dash';
         <div class="flex flex-wrap justify-between h-full">
           <!-- Card pequeña 1 -->
 
-          <div class="flex-1 bg-gradient-to-r from-orange-400 to-orange-700 rounded-lg flex flex-col items-center justify-center p-4 space-y-2 border border-gray-200 m-2">
-            <a href="cursos.php">
+          <div class="flex-1 bg-gradient-to-r from-orange-400 to-orange-700 rounded-lg flex flex-col items-center justify-center text-center p-4 space-y-2 border border-gray-200 m-2">
+            <a href="blogs.php">
               <i class="bi bi-mortarboard-fill text-white text-4xl"></i>
-              <p class="text-white">Cursos</p>
+              <p class="text-white">Blogs</p>
             </a>
           </div>
           <!-- Caja pequeña 2 -->
-          <div class="flex-1 bg-gradient-to-r from-orange-400 to-orange-700 rounded-lg flex flex-col items-center justify-center p-4 space-y-2 border border-gray-200 m-2">
-            <a href="servicos.php">
+          <div class="flex-1 bg-gradient-to-r from-orange-400 to-orange-700 rounded-lg flex flex-col items-center justify-center text-center p-4 space-y-2 border border-gray-200 m-2">
+            <a href="products.php">
               <i class="bi bi-wallet-fill text-white text-4xl"></i>
-              <p class="text-white">Serviços</p>
+              <p class="text-white">Produtos</p>
             </a>
           </div>
           <!-- Caja pequeña 3 -->
-          <div class="flex-1 bg-gradient-to-r from-orange-400 to-orange-700 rounded-lg flex flex-col items-center justify-center p-4 space-y-2 border border-gray-200 m-2">
+          <div class="flex-1 bg-gradient-to-r from-orange-400 to-orange-700 rounded-lg flex flex-col items-center justify-center text-center p-4 space-y-2 border border-gray-200 m-2">
             <a href="leads.php">
               <i class="bi bi-person-fill text-white text-4xl"></i>
               <p class="text-white">Usuários</p>

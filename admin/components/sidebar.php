@@ -8,10 +8,10 @@
 
     <div class="mt-8 text-center">
       <?php
-      if (!empty($user['img'])) {
-        $img = base64_encode($user['img']);
-        echo "<img src='data:image/jpeg;base64," . $img . "' onerror='this.src='./assets/img/semperfil.png'' class='w-10 h-10 m-auto rounded-full lg:w-28 lg:h-28'>";
-      }
+      // if (!empty($user['img'])) {
+      //   $img = base64_encode($user['img']);
+      //   echo "<img src='data:image/jpeg;base64," . $img . "' onerror='this.src='./assets/img/semperfil.png'' class='w-10 h-10 m-auto rounded-full lg:w-28 lg:h-28'>";
+      // }
       ?>
       <h5 class="hidden mt-4 text-xl font-semibold text-gray-800 lg:block"><?php echo $user['name']; ?></h5>
       <span class="hidden text-gray-800 lg:block">Admin</span>
@@ -31,21 +31,21 @@
         </a>
       </li> -->
       <li>
-        <a href="cursos.php" class="px-3 py-2 flex items-center space-x-3 rounded-md text-gray-800 group 
-        <?php if ($page == 'cursos') {
+        <a href="blogs.php" class="px-3 py-2 flex items-center space-x-3 rounded-md text-gray-800 group 
+        <?php if ($page == 'blogs') {
           echo 'bg-orange-600 text-white';
         } ?>">
           <i class="bi bi-mortarboard-fill"></i>
-          <span class="group-hover:text-gray-700">Cursos</span>
+          <span class="group-hover:text-gray-700">Blogs</span>
         </a>
       </li>
       <li>
-        <a href="servicos.php" class="px-3 py-2 flex items-center space-x-3 rounded-md text-gray-800 group 
-        <?php if ($page == 'servicos') {
+        <a href="products.php" class="px-3 py-2 flex items-center space-x-3 rounded-md text-gray-800 group 
+        <?php if ($page == 'products') {
           echo 'bg-orange-600 text-white';
         } ?>">
           <i class="bi bi-mortarboard-fill"></i>
-          <span class="group-hover:text-gray-700">Serviços</span>
+          <span class="group-hover:text-gray-700">Produtos</span>
         </a>
       </li>
     </ul>

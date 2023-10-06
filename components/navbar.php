@@ -32,10 +32,7 @@
             <a href="./cursos.php" class="uppercase block py-2 pl-3 pr-4 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent text-sm lg:border-0 lg:hover:text-color1 font-semibold lg:p-0">Polpas</a>
           </li>
           <li>
-            <a href="./marketing-politico.php" class="uppercase block py-2 pl-3 pr-4 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent text-sm lg:border-0 lg:hover:text-color1 font-semibold lg:p-0">Blog</a>
-          </li>
-          <li>
-            <a href="" class="uppercase block py-2 pl-3 pr-4 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent text-sm lg:border-0 lg:hover:text-color1 font-semibold lg:p-0">Blog</a>
+            <a href="./blogs.php" class="uppercase block py-2 pl-3 pr-4 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent text-sm lg:border-0 lg:hover:text-color1 font-semibold lg:p-0">Blog</a>
           </li>
           <li>
             <a href="https://boomempresarial.com.br/quem-somos" class="uppercase block py-2 pl-3 pr-4 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-color1 text-sm font-semibold lg:p-0">Promoções</a>
@@ -63,7 +60,7 @@
             <a href="./cursos.php" class="uppercase block py-2 pl-3 pr-4 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent text-sm lg:border-0 lg:hover:text-color1 font-semibold lg:p-0">Polpas</a>
           </li>
           <li>
-            <a href="./marketing-politico.php" class="uppercase block py-2 pl-3 pr-4 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent text-sm lg:border-0 lg:hover:text-color1 font-semibold lg:p-0">Blog</a>
+            <a href="./blogs.php" class="uppercase block py-2 pl-3 pr-4 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent text-sm lg:border-0 lg:hover:text-color1 font-semibold lg:p-0">Blog</a>
           </li>
           <li>
             <a href="" class="uppercase block py-2 pl-3 pr-4 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent text-sm lg:border-0 lg:hover:text-color1 font-semibold lg:p-0">Promoções</a>
