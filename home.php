@@ -7,6 +7,7 @@ require "./functions/get.php";
 $banners = getBanners();
 $products = getProducts();
 $blogs = getBlogs();
+$abouts = getAbouts();
 
 $URI = new URI();
 ?>
@@ -26,7 +27,7 @@ $URI = new URI();
   <?php include "./components/form.php"; ?>
 
 
-  <section id="clientes" class="max-w-screen-xl px-4 py-8 mx-auto lg:py-24 lg:px-6">
+  <!-- <section id="clientes" class="max-w-screen-xl px-4 py-8 mx-auto lg:py-24 lg:px-6">
     <h3 class="text-2xl font-bold text-center">Clientes que confiam em nosso trabalho </h3>
     <div class="pt-10">
       <div class="grid grid-cols-3 gap-8">
@@ -94,12 +95,11 @@ $URI = new URI();
         <div class="swiper-pagination swiper-pacotes"></div>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <?php include "./components/footer.php" ?>
   <?php include "./components/modal_form_whats.php" ?>
   <script src="assets/js/tw.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>

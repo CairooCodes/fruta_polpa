@@ -28,7 +28,7 @@ $pdo = null;
 <html lang="pt-br">
 
 <head>
-  <title>Leads Boom - Soluções Empresariais</title>
+  <title>Leads Fruta Polpa</title>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -95,10 +95,7 @@ $pdo = null;
               <th scope="col" class="px-6 py-3">ID</th>
               <th scope="col" class="px-6 py-3">Nome Completo</th>
               <th scope="col" class="px-6 py-3">E-mail</th>
-              <th scope="col" class="px-6 py-3">Celular</th>
-              <th scope="col" class="px-6 py-3">Segmento</th>
-              <!-- <th scope="col" class="px-6 py-3">Nº Funcionários</th>
-              <th scope="col" class="px-6 py-3">Faturamento</th> -->
+              <th scope="col" class="px-6 py-3">WhatsApp</th>
               <th scope="col" class="px-6 py-3">Type</th>
             </tr>
           </thead>
@@ -118,10 +115,7 @@ $pdo = null;
                 <td class="pl-5 font-semibold "><?php echo $lead['id']; ?></td>
                 <td class="pl-5 font-semibold"><?php echo $lead['name']; ?></td>
                 <td class="pl-5 font-semibold"><?php echo $lead['email']; ?></td>
-                <td class="pl-5 font-semibold"><?php echo $lead['celular']; ?></td>
-                <td class="pl-5 font-semibold"><?php echo $lead['segmento']; ?></td>
-                <!-- <td class="pl-5 font-semibold"><?php //echo $lead['qtd_funcionarios']; ?></td>
-                <td class="pl-5 font-semibold"><?php //echo $lead['qtd_faturamento']; ?></td> -->
+                <td class="pl-5 font-semibold"><?php echo $lead['whatsapp']; ?></td>
                 <td class="pl-5 font-semibold"><?php echo $lead['type']; ?></td>
               </tr>
             <?php } ?>

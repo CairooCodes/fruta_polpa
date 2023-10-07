@@ -60,7 +60,7 @@ if ($stmt->rowCount() > 0) {
       <div>
         <div class="mt-4 rounded-xl p-2 shadow-md shadow-blue-200">
           <div  class="flex justify-center">
-          <?php echo "<img class='lazy rounded-md h-full w-52 object-cover' src=" . $URI->base('/admin/uploads/blogs') . '/' . $blog['img'] . '>' ?>
+          <?php echo "<img class='lazy rounded-md h-full w-76 object-cover' src=" . $URI->base('/admin/uploads/blogs') . '/' . $blog['img'] . '>' ?>
           </div>
         </div>
       </div>

@@ -2,12 +2,12 @@
 require "../../db_config.php";
 $name = $_POST['name'];
 $email = $_POST['email'];
-$celular = $_POST['celular'] ?? '';
+$whatsapp = $_POST['whatsapp'] ?? '';
 $segmento = $_POST['segmento'] ?? '';
 $type = $_POST['type'];
-$sql = "INSERT INTO leads (name, email, celular, segmento, type) VALUES (?,?,?,?,?)";
+$sql = "INSERT INTO leads (name, email, whatsapp, segmento, type) VALUES (?,?,?,?,?)";
 $stmt = $pdo->prepare($sql);
-$stmt->execute([$name, $email, $celular, $segmento, $type]);
+$stmt->execute([$name, $email, $whatsapp, $segmento, $type]);
 
 echo ("
 <script>

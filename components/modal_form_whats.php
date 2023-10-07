@@ -25,7 +25,7 @@
 	</style>
 </head>
 <body>
-	<a class="whatsapp-link" href="https://api.whatsapp.com/send?phone=5586994333489" target="_blank">
+	<a class="whatsapp-link" href="https://api.whatsapp.com/send?phone=5586994293833&text=Olá%20Fruta%20Polpa-site" target="_blank">
 		<i class="fa fa-whatsapp"></i>
 	</a>
 </body>

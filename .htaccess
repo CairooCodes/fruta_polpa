@@ -4,7 +4,6 @@ RewriteCond %{HTTPS} off
 RewriteCond %{SCRIPT_FILENAME} !-f
 RewriteCond %{SCRIPT_FILENAME} !-d
 RewriteRule ^home$ home.php [QSA,L,NC]
-RewriteRule ^marketing-politico$ marketing-politico.php [QSA,L,NC]
 RewriteRule ^quem-somos$ quem-somos.php [QSA,L,NC]
 RewriteRule ^products$ products.php [QSA,L,NC]
 RewriteRule ^product\/([0-9A-z_-]+)$ product.php?slug=$1 [QSA,L,NC]

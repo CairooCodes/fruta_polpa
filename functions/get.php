@@ -7,6 +7,14 @@ function getBanners()
   return $stmt->fetchAll(PDO::FETCH_ASSOC);
 }
 
+function getAbouts()
+{
+  global $pdo;
+  $stmt = $pdo->prepare("SELECT * FROM about order by id desc");
+  $stmt->execute();
+  return $stmt->fetchAll(PDO::FETCH_ASSOC);
+}
+
 function getProducts()
 {
   global $pdo;
