@@ -6,14 +6,14 @@
             foreach ($products as $product) {
             ?>
                 <div class="swiper-slide grid bg-white p-4 rounded-2xl shadow2">
-                    <h3 class="text-xl text-color1 text-center font-bold pt-4"><?php echo $product['name'] ?></h3>
+                    <h3 class="text-xl text-color1 text-center font-bold pt-4 mb-2"><?php echo $product['name'] ?></h3>
                     <img class='lazy max-h-2/3 object-cover' data-src='./admin/uploads/products/<?php echo $product['img'] ?>'>
                     <div class="flex justify-evenly pb-5">
-                        <button class="bg-color1 hover:bg-orange-700 text-sm text-white font-bold py-2 px-4 rounded">
+                        <button class="bg-color1 hover:bg-orange-700 text-sm text-white font-bold py-2 px-4 rounded mt-4">
                             PEÇA JÁ
                         </button>
                         <a href="<?php echo $URI->base('/product/' . slugify($product['name'])); ?>">
-                            <button class="bg-gray-400 hover:bg-gray-600 text-sm text-white font-bold py-2 px-4 rounded">
+                            <button class="bg-gray-400 hover:bg-gray-600 text-sm text-white font-bold py-2 px-4 rounded mt-4">
                             BENEFÍCIOS
                         </button>
                         </a>

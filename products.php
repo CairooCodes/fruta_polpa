@@ -29,7 +29,7 @@ $URI = new URI();
             <?php foreach ($products as $product) { ?>
                 <div>
                     <div class="mb-8 mt-4 items-center rounded-xl p-2">
-                        <img class='rounded-full' src='./admin/uploads/products/<?php echo $product['img']; ?>'>
+                        <img class='custom-image' src='./admin/uploads/products/<?php echo $product['img']; ?>'>
                     </div>
 
                     <div class="flex justify-center mt-4">
