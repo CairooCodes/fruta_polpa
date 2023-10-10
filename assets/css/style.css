@@ -177,3 +177,23 @@ header {
   height: 200px;
   object-fit: cover;
 }
+
+.counter {
+  font-weight: 800;
+  color: #00284a;
+  font-size: 90px;
+  line-height: 0.7;
+}
+
+.counter:after {
+  content: ' anos no mercado de polpas de frutas.';
+  color: #00284a;
+  font-size: 47px;
+}
+
+#intro {
+  min-height: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
