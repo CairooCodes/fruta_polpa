@@ -50,5 +50,22 @@
       opacity: 1;
       transform: translateY(0);
     }
+
+    /* Estilo para o efeito da linha laranja */
+    .nav-link {
+      position: relative;
+      text-decoration: none;
+    }
+
+    .nav-link:hover::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -4px;
+      height: 2px;
+      background-color: orange;
+    }
   </style>
+
 </head>
