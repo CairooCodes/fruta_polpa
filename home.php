@@ -23,8 +23,8 @@ $URI = new URI();
   <?php include "./components/navbar.php"; ?>
   <?php include "./components/banners.php"; ?>
   <?php include "./components/products.php"; ?>
-  <?php include "./components/blog.php"; ?>
-  <?php include "./components/form.php"; ?>
+  <!-- <?php include "./components/blog.php"; ?> -->
+  <!-- <?php include "./components/form.php"; ?> -->
 
 
   <!-- <section id="clientes" class="max-w-screen-xl px-4 py-8 mx-auto lg:py-24 lg:px-6">
