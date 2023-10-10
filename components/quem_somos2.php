@@ -1,11 +1,11 @@
 <section>
     <div class="container">
-        <div id="intro">
-            <button>
+        <div class="text-center ">
+            <button class="font-boldrounded rounded-full bg-color1">
                 <a href="./products.php">CONHEÇA NOSSOS PRODUTOS</a>
             </button>
         </div>
-        <div id="intro" class="d-flex flex-wrap align-items-center justify-content-between">
+        <div class="max-w-full px-4 pt-24 mx-auto lg:grid grid-cols-2">
             <div class="text-content col-md-6">
                 <div>
                     <p><span style="font-size: 18px; color: #00284a; letter-spacing: 4px; font-weight: 300;">MAIS DE</span></p>
@@ -13,12 +13,12 @@
                 <div class="counter m-2 p-2" style="font-size: 42pt;" data-target="15" data-source="0" data-duration="3000" class="counter" counter="0">
                     15
                 </div>
-                <div>
+                <div class="mt-14 mb-4">
                     <p>Trabalhamos com 25 sabores desde os mais tradicionais que são a acerola, goiaba e maracujá, como também contamos com a linha funcional, montada com 6 sabores especialmente pensadas para trazer benefícios diretos a saúde e qualidade das milhares de famílias em 7 estados diferentes: Piauí, Maranhão, Tocantins, Pará, Amapá, Goiás/DF e Ceará.</p>
-                    <a href="quem_somos.php">Leia mais</a>
                 </div>
+                <a href="quem_somos.php">Leia mais</a>
             </div>
-            <div class="col-md-6" style="max-width: 40%; height: auto; text-align: right;">
+            <div class="col-md-6" style="max-width: 100%; height: auto; text-align: right;">
                 <img src="./assets/img/quemsomos.jpg" alt="quemsommos">
             </div>
         </div>
