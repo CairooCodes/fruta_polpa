@@ -66,6 +66,21 @@
       height: 2px;
       background-color: orange;
     }
+
+    .nav-link2 {
+      position: relative;
+      text-decoration: none;
+    }
+
+    .nav-link2:hover::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -4px;
+      height: 2px;
+      background-color: white;
+    }
   </style>
 
 </head>
