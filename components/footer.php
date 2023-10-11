@@ -12,16 +12,16 @@
           <nav class="mt-4 flex flex-col space-y-2 text-white">
           <div class="grid grid-cols-2 gap-2">
             <a href="./quem-somos.php">
-              <span class="nav-link2">Home</span>
+              <span class="footer-link2">Home</span>
             </a>
             <a href="./diretoria.php">
-            <span class="nav-link2">Fruta Polpa</span>
+            <span class="footer-link2">Fruta Polpa</span>
             </a>
             <a href="./sedes.php">
-            <span class="nav-link2">Blog</span>
+            <span class="footer-link2">Blog</span>
             </a>
             <a href="./ESTATUTOLIVRO.pdf">
-            <span class="nav-link2">Industrial</span>
+            <span class="footer-link2">Industrial</span>
             </a>
           </div>
           </nav>
@@ -32,7 +32,7 @@
             <div class="grid grid-cols-3 gap-2 text-center">
               <?php foreach ($products as $product) { ?>
                 <a href="<?php echo $URI->base('product/' . slugify($product['name'])); ?>">
-                <span class="nav-link2"><?php echo $product['name']; ?></span>
+                <span class="footer-link2"><?php echo $product['name']; ?></span>
                 </a>
               <?php
               }
@@ -44,19 +44,19 @@
           <p class="font-semibold text-white border-b-2">CONTATO</p>
           <nav class="mt-4 flex flex-col space-y-2 text-white">
             <a href="#">
-            <span class="nav-link2">Contato</span>
+            <span class="footer-link2">Contato</span>
             </a>
             <a href="#">
-            <span class="nav-link2">Distribuidores</span>
+            <span class="footer-link2">Distribuidores</span>
             </a>
             <a href="#">
-            <span class="nav-link2">Seja um Representante</span>
+            <span class="footer-link2">Seja um Representante</span>
             </a>
             <a href="#">
-            <span class="nav-link2">Política de Privacidade</span>
+            <span class="footer-link2">Política de Privacidade</span>
             </a>
             <a href="#">
-            <span class="nav-link2">Denúcia</span>
+            <span class="footer-link2">Denúcia</span>
             </a>
         </div>
         <div>

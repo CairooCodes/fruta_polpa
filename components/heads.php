@@ -67,12 +67,12 @@
       background-color: orange;
     }
 
-    .nav-link2 {
+    .footer-link2 {
       position: relative;
       text-decoration: none;
     }
 
-    .nav-link2:hover::after {
+    .footer-link2:hover::after {
       content: "";
       position: absolute;
       left: 0;
