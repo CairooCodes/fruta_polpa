@@ -163,7 +163,7 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
                         <ul class="absolute z-10 hidden rounded bg-white pt-1 shadow-md shadow-gray-300 group-hover:block">
                             <li class="grid justify-items-start">
                                 <button class="rounded py-2 px-4">
-                                    <a href="<?php echo $URI->base("fale_conosco.php"); ?>">
+                                    <a href="<?php echo $URI->base("faleconosco.php"); ?>">
                                         <h1 class="ml-2 mr-5 text-sm text-gray-900 uppercase">
                                             Fale Conosco
                                         </h1>
@@ -172,7 +172,7 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
                             </li>
                             <li class="grid justify-items-start">
                                 <button class="rounded py-2 px-4">
-                                    <a href="<?php echo $URI->base("trabalhe_conosco.php"); ?>">
+                                    <a href="<?php echo $URI->base("trabalheconosco.php"); ?>">
                                         <h1 class="ml-2 mr-5 text-sm text-gray-900 uppercase">
                                             Trabalhe Conosco
                                         </h1>
