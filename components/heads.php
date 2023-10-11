@@ -51,22 +51,48 @@
       transform: translateY(0);
     }
 
-    /* Estilo para o efeito da linha laranja */
-    .nav-link {
+    /* teste aqui */
+    /* Estilize os links no navbar */
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav li {
+      margin: 0 20px;
+      text-align: center;
       position: relative;
-      text-decoration: none;
+      /* Adicione isso para controlar o posicionamento da imagem */
     }
 
-    .nav-link:hover::after {
-      content: "";
+    /* Estilo para o link no hover */
+    nav a:hover+.hover-image,
+    .hover-image:hover {
+      display: block;
+    }
+
+    /* Estilo para a imagem normal */
+    .hover-image {
+      display: none;
       position: absolute;
-      left: 0;
-      right: 0;
-      bottom: -4px;
-      height: 2px;
-      background-color: orange;
+      left: 50%;
+      /* Posicione a imagem no centro horizontalmente */
+      transform: translateX(-50%);
+      top: 30px;
+      /* Posicione a imagem um pouco abaixo do texto */
+      width: 60px;
+      /* Defina o tamanho desejado para a imagem */
+      height: auto;
+      /* Mantém a proporção original da imagem */
     }
 
+    /* Estilo para o link no hover */
+    /* nav a:hover { */
+    /* Adicione estilos para o link no hover, se desejar */
+    /* } */
+
+    /* final do teste */
     .footer-link2 {
       position: relative;
       text-decoration: none;
