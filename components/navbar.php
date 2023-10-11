@@ -101,21 +101,21 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
                     <div class="group inline-block">
                         <li class="py-2">
                             <div class="inline-flex items-center rounded">
-                            <a href="" class="text-orange-500" aria-current="page">Produtos</a><img src="./assets/img/laranja.png" class="hover-image" alt="Imagem 1">
-                            <svg class="h-4 w-4 fill-current text-orange-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
-                            </svg>
+                                <a href="" class="text-orange-500" aria-current="page">Produtos</a><img src="./assets/img/laranja.png" class="hover-image" alt="Imagem 1">
+                                <svg class="h-4 w-4 ml-2 fill-current text-orange-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                    <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                                </svg>
                             </div>
                         </li>
                         <ul class="absolute z-10 hidden rounded bg-white pt-1 shadow-md shadow-gray-300 group-hover:block">
-                            <li>
-                                <button class="inline-flex items-center rounded py-2 px-4">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="#E96708" class="bi bi-chevron-right font-bold" viewBox="0 0 16 16">
+                            <li class="grid justify-items-start">
+                                <button class="rounded py-2 px-4">
+                                    <!-- <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="#E96708" class="bi bi-chevron-right font-bold" viewBox="0 0 16 16">
                                         <path fillRule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
-                                    </svg>
+                                    </svg> -->
                                     <a href="<?php echo $URI->base('products'); ?>">
                                         <h1 class="text-gray-900 ml-2 mr-5 text-sm">
-                                            Nossos produtos
+                                            Todos nossos produtos
                                         </h1>
                                     </a>
                                 </button>
@@ -127,11 +127,11 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
                                 while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
                                     extract($row);
                             ?>
-                                    <li>
-                                        <button class="inline-flex items-center rounded py-2 px-4">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="#E96708" class="bi bi-chevron-right font-bold" viewBox="0 0 16 16">
+                                    <li class="grid justify-items-start">
+                                        <button class="rounded py-2 px-4">
+                                            <!-- <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="#E96708" class="bi bi-chevron-right font-bold" viewBox="0 0 16 16">
                                                 <path fillRule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
-                                            </svg>
+                                            </svg> -->
                                             <a href="<?php echo $URI->base('product/' . slugify($name)); ?>">
                                                 <h1 class="ml-2 mr-5 text-sm text-gray-900 uppercase">
                                                     <?php echo $name; ?>
@@ -152,40 +152,42 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
                         <a href="<?php echo $URI->base("distribuidores"); ?>" class="block py-2 pl-3 pr-4 text-orange-500 rounded lg:p-0" aria-current="page">Distribuidores</a><img src="./assets/img/laranja.png" class="hover-image" alt="Imagem 1">
                     </li>
                     <div class="group inline-block">
-                    <li class="py-2">
+                        <li class="py-2">
                             <div class="inline-flex items-center rounded">
-                            <a href="" class="text-orange-500" aria-current="page">Contato</a><img src="./assets/img/laranja.png" class="hover-image" alt="Imagem 1">
-                            <svg class="h-4 w-4 fill-current text-orange-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
-                            </svg>
+                                <a href="" class="text-orange-500" aria-current="page">Contato</a><img src="./assets/img/laranja.png" class="hover-image" alt="Imagem 1">
+                                <svg class="h-4 w-4 ml-2 fill-current text-orange-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                    <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                                </svg>
                             </div>
                         </li>
                         <ul class="absolute z-10 hidden rounded bg-white pt-1 shadow-md shadow-gray-300 group-hover:block">
-                            <?php
-                            //$stmt = $pdo->prepare("SELECT * FROM contacts");
-                            //$stmt->execute();
-                            //if ($stmt->rowCount() > 0) {
-                            //while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-                            //extract($row);
-                            ?>
-                            <li>
-                                <button class="inline-flex items-center rounded py-2 px-4">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="#E96708" class="bi bi-chevron-right font-bold" viewBox="0 0 16 16">
-                                        <path fillRule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
-                                    </svg>
-                                    <a href="<?php //echo $URI->base('conta/' . slugify($name)); 
-                                                ?>">
+                            <li class="grid justify-items-start">
+                                <button class="rounded py-2 px-4">
+                                    <a href="<?php echo $URI->base("fale_conosco.php"); ?>">
                                         <h1 class="ml-2 mr-5 text-sm text-gray-900 uppercase">
-                                            <?php //echo $name; 
-                                            ?>
+                                            Fale Conosco
                                         </h1>
                                     </a>
                                 </button>
                             </li>
-                            <?php
-                            //}
-                            //}
-                            ?>
+                            <li class="grid justify-items-start">
+                                <button class="rounded py-2 px-4">
+                                    <a href="<?php echo $URI->base("trabalhe_conosco.php"); ?>">
+                                        <h1 class="ml-2 mr-5 text-sm text-gray-900 uppercase">
+                                            Trabalhe Conosco
+                                        </h1>
+                                    </a>
+                                </button>
+                            </li>
+                            <li class="grid justify-items-start">
+                                <button class="rounded py-2 px-4">
+                                    <a href="<?php echo $URI->base("denucia.php"); ?>">
+                                        <h1 class="ml-2 mr-5 text-sm text-gray-900 uppercase">
+                                            Denúncia
+                                        </h1>
+                                    </a>
+                                </button>
+                            </li>
                         </ul>
                     </div>
                 </ul>
