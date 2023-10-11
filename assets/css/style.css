@@ -197,3 +197,43 @@ header {
   flex-wrap: wrap;
   align-items: center;
 }
+
+/* Adicione este código CSS no seu arquivo de estilo ou no bloco de estilo dentro do cabeçalho HTML */
+.button-style {
+  width: 300px;
+  height: 50px;
+  background: #00284a;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+  line-height: 50px; /* Centralizar o texto verticalmente */
+  border-radius: 25px; /* Para criar um botão arredondado */
+  transition: background-color 0.3s ease; /* Adicionando transição suave para a mudança de cor */
+}
+
+.button-style:hover {
+  background: #004e80; /* Cor que o botão terá quando o mouse estiver sobre ele */
+}
+
+/* Para remover o sublinhado do link dentro do botão */
+.button-style a {
+  text-decoration: none;
+  color: #fdfdfd;
+}
+
+/* Adicione este código ao seu arquivo de estilo CSS */
+.leia-mais-link {
+  color: #00284a; /* Cor do texto do link (por exemplo, vermelho) */
+  text-decoration: none; /* Remove o sublinhado padrão do link */
+  padding-bottom: 4px; /* Adiciona espaço entre o texto e o sublinhado */
+  border-bottom: 2px solid #00284a; /* Adiciona um sublinhado personalizado com espaço */
+  transition: border-bottom 0.3s ease; /* Adiciona uma transição suave para o sublinhado */
+}
+
+/* Altere a cor do sublinhado do link quando o mouse passar por cima */
+.leia-mais-link:hover {
+  color: #004e80;
+  border-bottom-color: #ff851e; /* Nova cor do sublinhado quando o mouse passa sobre o link (por exemplo, verde) */
+}
+
+

@@ -11,7 +11,7 @@
                         <a href="<?php echo $URI->base('/product/' . slugify($product['name'])); ?>">
                             </button>
                             <h3 class="text-xl text-white text-center font-bold pt-4 mb-2"><?php echo $product['name'] ?></h3>
-                            <button class="bg-none hover:bg-color1 text-sm text-gray-800 font-bold py-2 px-4 rounded-full border-2 border-gray mt-4">
+                            <button class="hover:bg-color1 text-sm text-gray-800 font-bold py-2 px-4 rounded-full border-2 border-gray mt-4">
                                 BENEFÍCIOS
                             </button>
                         </a>
