@@ -180,7 +180,7 @@ header {
 
 .counter {
   font-weight: 800;
-  color: #00284a;
+  color: #ff851e;
   font-size: 90px;
   line-height: 0.7;
 }
@@ -212,7 +212,7 @@ header {
 }
 
 .button-style:hover {
-  background: #004e80; /* Cor que o botão terá quando o mouse estiver sobre ele */
+  background: #ff851e; /* Cor que o botão terá quando o mouse estiver sobre ele */
 }
 
 /* Para remover o sublinhado do link dentro do botão */
@@ -224,15 +224,16 @@ header {
 /* Adicione este código ao seu arquivo de estilo CSS */
 .leia-mais-link {
   color: #00284a; /* Cor do texto do link (por exemplo, vermelho) */
-  text-decoration: none; /* Remove o sublinhado padrão do link */
   padding-bottom: 4px; /* Adiciona espaço entre o texto e o sublinhado */
+  /* padding-left: 24px; */
   border-bottom: 2px solid #00284a; /* Adiciona um sublinhado personalizado com espaço */
   transition: border-bottom 0.3s ease; /* Adiciona uma transição suave para o sublinhado */
+  
 }
 
 /* Altere a cor do sublinhado do link quando o mouse passar por cima */
 .leia-mais-link:hover {
-  color: #004e80;
+  color: #ff851e;
   border-bottom-color: #ff851e; /* Nova cor do sublinhado quando o mouse passa sobre o link (por exemplo, verde) */
 }
 

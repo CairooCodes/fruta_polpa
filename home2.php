@@ -15,7 +15,7 @@ $URI = new URI();
 <html lang="pt-br">
 
 <head>
-<?php include "./components/heads.php"; ?>
+  <?php include "./components/heads.php"; ?>
 </head>
 
 <body>
@@ -24,7 +24,7 @@ $URI = new URI();
   <?php include "./components/banners.php"; ?>
   <?php include "./components/quem_somos2.php"; ?>
   <?php include "./components/products.php"; ?>
-  
+
   <!-- <?php include "./components/blog.php"; ?> -->
   <!-- <?php include "./components/form.php"; ?> -->
 
@@ -105,73 +105,73 @@ $URI = new URI();
   <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
-	<script src="./assets/js/lz.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
- <script>
-    const carousel3Dswiper = new Swiper(".carousel-3D-swiper", {
-    loop: true,
-    effect: "coverflow",
-    grabCursor: true,
-    centeredSlides: true,
-    slidesPerView: 3,
-    coverflowEffect: {
-      rotate: 0,
-      stretch: 0,
-      depth: 350,
-      modifier: 1,
-      slideShadows: true
-    },
-		 navigation: {
-      nextEl: ".swiper-button-next-blog",
-      prevEl: ".swiper-button-prev-blog",
-    },
-    pagination: {
-      el: ".swiper-pagination-blog"
-    }
-  });
- </script>
-	<script>
-		var swiper = new Swiper(".swiper_banners", {
-			loop: true,
-			autoplay: {
-				delay: 5000,
-				disableOnInteraction: false,
-			},
-			pagination: {
-				el: ".swiper-pagination-banners-main",
-				clickable: true,
-			},
-			navigation: {
-				nextEl: ".swiper-button-next",
-				prevEl: ".swiper-button-prev",
-			},
-		});
-	</script>
+  <script src="./assets/js/lz.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
   <script>
-		var swiper = new Swiper(".swiper_products", {
-			loop: true,
+    const carousel3Dswiper = new Swiper(".carousel-3D-swiper", {
+      loop: true,
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 3,
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 350,
+        modifier: 1,
+        slideShadows: true
+      },
+      navigation: {
+        nextEl: ".swiper-button-next-blog",
+        prevEl: ".swiper-button-prev-blog",
+      },
+      pagination: {
+        el: ".swiper-pagination-blog"
+      }
+    });
+  </script>
+  <script>
+    var swiper = new Swiper(".swiper_banners", {
+      loop: true,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination-banners-main",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+  <script>
+    var swiper = new Swiper(".swiper_products", {
+      loop: true,
       freeMode: true,
-			breakpoints: {
-				300: {
-					slidesPerView: 1.3,
-					spaceBetween: 20,
-				},
-				640: {
-					slidesPerView: 2,
-					spaceBetween: 30,
-				},
-				768: {
-					slidesPerView: 3,
-					spaceBetween: 30,
-				},
-				1024: {
-					slidesPerView: 4,
-					spaceBetween: 30,
-				},
-			},
-		});
-	</script>
+      breakpoints: {
+        300: {
+          slidesPerView: 1.3,
+          spaceBetween: 20,
+        },
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+        1024: {
+          slidesPerView: 4,
+          spaceBetween: 30,
+        },
+      },
+    });
+  </script>
   <script>
     $('a[href^="#"]').on('click', function(e) {
       e.preventDefault();
@@ -272,38 +272,59 @@ $URI = new URI();
 
     cards.forEach(card => observer.observe(card));
   </script>
+
+<script>
+  var valor_inicial = 0;
+  var intervalId;
+
+  function updateCounter() {
+    document.querySelector(".counter").textContent = valor_inicial;
+    valor_inicial++;
+
+    if (valor_inicial > 15) {
+      clearInterval(intervalId);
+    }
+  }
+
+  intervalId = setInterval(updateCounter, 180);
+</script>
+
+  <!-- <script>
+    var count = 0; // Valor inicial do contador
+
+    function updateCounter() {
+      count++;
+      document.querySelector(".counter").textContent = count;
+    }
+
+    // Chame a função para atualizar o contador
+    setInterval(updateCounter, 1000); // Atualize a cada segundo (1000ms)
+  </script> -->
 </body>
 
 </html>
 
-<script>
-// Obtém todos os elementos com a classe "counter"
-var counters = document.querySelectorAll('.counter');
-
-// Função para animar a contagem
-function countUp() {
-    counters.forEach(counter => {
-        var target = parseInt(counter.getAttribute('data-target')); // Obtém o valor alvo do atributo data-target
-        var duration = parseInt(counter.getAttribute('data-duration')); // Obtém a duração da animação do atributo data-duration
-        var source = parseInt(counter.getAttribute('data-source')) || 0; // Obtém o valor de origem do atributo data-source, padrão é 0
-        var increment = Math.ceil(target / (duration / 100)); // Calcula o incremento com base na duração
-
-        // Função de animação
-        function animate() {
-            var currentCount = parseInt(counter.innerText);
-            if (currentCount < target) {
-                counter.innerText = Math.min(currentCount + increment, target);
-                setTimeout(animate, 10);
-            } else {
-                counter.innerText = target;
+<script type="text/javascript">
+  $(function() {
+    var flag_counter = false;
+    $('.counter').appear();
+    $('.counter').on('appear', function(e) {
+      if (!flag_counter) {
+        flag_counter = true;
+        $('.counter').off('appear');
+        $('.counter').each(function() {
+          $(this).attr('Counter', $(this).data('source'));
+          $(this).animate({
+            Counter: $(this).data('target')
+          }, {
+            duration: $(this).data('duration'),
+            easing: 'swing',
+            step: function(now) {
+              $(this).text(Math.ceil(now).toLocaleString());
             }
-        }
-
-        // Inicia a animação
-        animate();
+          });
+        });
+      }
     });
-}
-
-// Chama a função de contagem quando a janela é carregada
-window.addEventListener('load', countUp);
+  });
 </script>
