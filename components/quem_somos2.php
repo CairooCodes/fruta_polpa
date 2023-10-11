@@ -1,6 +1,6 @@
 <section>
     <div class="container max-w-full">
-        <div class="text-center ">
+        <div class="text-center">
             <button class="button-style">
                 <a href="./products.php">CONHEÇA NOSSOS PRODUTOS</a>
             </button>
@@ -18,9 +18,9 @@
                 </div>
                 <a href="quem_somos.php" class="leia-mais-link">Leia mais</a>
             </div>
-            <div class="col-md-6" style="max-width: 100%; height: auto; text-align: right;">
+            <!-- <div class="col-md-6" style="max-width: 100%; height: auto; text-align: right;">
                 <img src="./assets/img/quemsomos.jpg" alt="quemsommos">
-            </div>
+            </div> -->
         </div>
     </div>
 </section>

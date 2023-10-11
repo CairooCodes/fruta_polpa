@@ -198,7 +198,6 @@ header {
   align-items: center;
 }
 
-/* Adicione este código CSS no seu arquivo de estilo ou no bloco de estilo dentro do cabeçalho HTML */
 .button-style {
   width: 300px;
   height: 50px;
@@ -206,35 +205,37 @@ header {
   font-weight: bold;
   text-align: center;
   margin-top: 10px;
-  line-height: 50px; /* Centralizar o texto verticalmente */
-  border-radius: 25px; /* Para criar um botão arredondado */
-  transition: background-color 0.3s ease; /* Adicionando transição suave para a mudança de cor */
+  line-height: 50px;
+  border-radius: 25px;
+  transition: background-color 0.3s ease;
 }
 
 .button-style:hover {
-  background: #ff851e; /* Cor que o botão terá quando o mouse estiver sobre ele */
+  background: #ff851e;
 }
 
-/* Para remover o sublinhado do link dentro do botão */
 .button-style a {
   text-decoration: none;
   color: #fdfdfd;
 }
 
-/* Adicione este código ao seu arquivo de estilo CSS */
 .leia-mais-link {
-  color: #00284a; /* Cor do texto do link (por exemplo, vermelho) */
-  padding-bottom: 4px; /* Adiciona espaço entre o texto e o sublinhado */
-  /* padding-left: 24px; */
-  border-bottom: 2px solid #00284a; /* Adiciona um sublinhado personalizado com espaço */
-  transition: border-bottom 0.3s ease; /* Adiciona uma transição suave para o sublinhado */
+  color: #00284a;
+  padding-bottom: 4px;
+  border-bottom: 2px solid #00284a;
+  transition: border-bottom 0.3s ease;
   
 }
 
-/* Altere a cor do sublinhado do link quando o mouse passar por cima */
 .leia-mais-link:hover {
   color: #ff851e;
-  border-bottom-color: #ff851e; /* Nova cor do sublinhado quando o mouse passa sobre o link (por exemplo, verde) */
+  border-bottom-color: #ff851e; 
 }
 
-
+.container {
+        background-image: url('../img/polpaquemsomos.png'); 
+        background-size: 110% 140%;
+        background-position: center;
+        background-repeat: no-repeat;
+        opacity: 0.5;
+}
