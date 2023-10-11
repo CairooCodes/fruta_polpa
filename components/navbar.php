@@ -93,18 +93,20 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
             <div class="items-center justify-center hidden w-full lg:flex lg:w-auto lg:order-1 py-1.5 mt-2" id="mobile-menu-2">
                 <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
                     <li class="py-2">
-                        <a href="<?php echo $URI->base("home.php"); ?>" class="nav-link block py-2 pl-3 pr-4 text-orange-500 rounded lg:p-0" aria-current="page">Home</a>
+                        <a href="<?php echo $URI->base("home.php"); ?>" class="block py-2 pl-3 pr-4 text-orange-500 rounded lg:p-0" aria-current="page">Home</a><img src="./assets/img/laranja.png" class="hover-image" alt="Imagem 1">
                     </li>
                     <li class="py-2">
-                        <a href="<?php echo $URI->base("quemsomos"); ?>" class="nav-link block py-2 pl-3 pr-4 text-orange-500 rounded lg:p-0" aria-current="page">Quem Somos</a>
+                        <a href="<?php echo $URI->base("quemsomos"); ?>" class="block py-2 pl-3 pr-4 text-orange-500 rounded lg:p-0" aria-current="page">Quem Somos</a><img src="./assets/img/laranja.png" class="hover-image" alt="Imagem 1">
                     </li>
                     <div class="group inline-block">
-                        <button class="inline-flex items-center rounded py-2 px-3">
-                            <span class="text-orange-500">Produtos</span>
+                        <li class="py-2">
+                            <div class="inline-flex items-center rounded">
+                            <a href="" class="text-orange-500" aria-current="page">Produtos</a><img src="./assets/img/laranja.png" class="hover-image" alt="Imagem 1">
                             <svg class="h-4 w-4 fill-current text-orange-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                                 <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
                             </svg>
-                        </button>
+                            </div>
+                        </li>
                         <ul class="absolute z-10 hidden rounded bg-white pt-1 shadow-md shadow-gray-300 group-hover:block">
                             <li>
                                 <button class="inline-flex items-center rounded py-2 px-4">
@@ -144,47 +146,48 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
                         </ul>
                     </div>
                     <li class="py-2">
-                        <a href="<?php echo $URI->base("blog"); ?>" class="nav-link block py-2 pl-3 pr-4 text-orange-500 rounded lg:p-0" aria-current="page">Blog</a>
+                        <a href="<?php echo $URI->base("blog"); ?>" class="block py-2 pl-3 pr-4 text-orange-500 rounded lg:p-0" aria-current="page">Blog</a><img src="./assets/img/laranja.png" class="hover-image" alt="Imagem 1">
                     </li>
                     <li class="py-2 md:px-4">
-                        <a href="<?php echo $URI->base("distribuidores"); ?>" class="nav-link block py-2 pl-3 pr-4 text-orange-500 rounded lg:p-0" aria-current="page">Distribuidores</a>
+                        <a href="<?php echo $URI->base("distribuidores"); ?>" class="block py-2 pl-3 pr-4 text-orange-500 rounded lg:p-0" aria-current="page">Distribuidores</a><img src="./assets/img/laranja.png" class="hover-image" alt="Imagem 1">
                     </li>
                     <div class="group inline-block">
-                        <button class="inline-flex items-center rounded py-2 px-3">
-                            <span class="text-orange-500">Contato</span>
+                    <li class="py-2">
+                            <div class="inline-flex items-center rounded">
+                            <a href="" class="text-orange-500" aria-current="page">Contato</a><img src="./assets/img/laranja.png" class="hover-image" alt="Imagem 1">
                             <svg class="h-4 w-4 fill-current text-orange-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                                 <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
                             </svg>
-                        </button>
+                            </div>
+                        </li>
                         <ul class="absolute z-10 hidden rounded bg-white pt-1 shadow-md shadow-gray-300 group-hover:block">
                             <?php
                             //$stmt = $pdo->prepare("SELECT * FROM contacts");
                             //$stmt->execute();
                             //if ($stmt->rowCount() > 0) {
-                                //while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-                                    //extract($row);
+                            //while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+                            //extract($row);
                             ?>
-                                    <li>
-                                        <button class="inline-flex items-center rounded py-2 px-4">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="#E96708" class="bi bi-chevron-right font-bold" viewBox="0 0 16 16">
-                                                <path fillRule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
-                                            </svg>
-                                            <a href="<?php //echo $URI->base('conta/' . slugify($name)); ?>">
-                                                <h1 class="ml-2 mr-5 text-sm text-gray-900 uppercase">
-                                                    <?php //echo $name; ?>
-                                                </h1>
-                                            </a>
-                                        </button>
-                                    </li>
+                            <li>
+                                <button class="inline-flex items-center rounded py-2 px-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="#E96708" class="bi bi-chevron-right font-bold" viewBox="0 0 16 16">
+                                        <path fillRule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                    </svg>
+                                    <a href="<?php //echo $URI->base('conta/' . slugify($name)); 
+                                                ?>">
+                                        <h1 class="ml-2 mr-5 text-sm text-gray-900 uppercase">
+                                            <?php //echo $name; 
+                                            ?>
+                                        </h1>
+                                    </a>
+                                </button>
+                            </li>
                             <?php
-                                //}
+                            //}
                             //}
                             ?>
                         </ul>
                     </div>
-                    <li class="py-2 md:px-4">
-                        <a href="<?php echo $URI->base("contato"); ?>" class="nav-link block py-2 pl-3 pr-4 text-orange-500 rounded lg:p-0" aria-current="page">Contato</a>
-                    </li>
                 </ul>
             </div>
         </div>
