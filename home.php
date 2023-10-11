@@ -23,79 +23,8 @@ $URI = new URI();
   <?php include "./components/navbar.php"; ?>
   <?php include "./components/banners.php"; ?>
   <?php include "./components/products.php"; ?>
-  <!-- <?php include "./components/blog.php"; ?> -->
-  <!-- <?php include "./components/form.php"; ?> -->
 
 
-  <!-- <section id="clientes" class="max-w-screen-xl px-4 py-8 mx-auto lg:py-24 lg:px-6">
-    <h3 class="text-2xl font-bold text-center">Clientes que confiam em nosso trabalho </h3>
-    <div class="pt-10">
-      <div class="grid grid-cols-3 gap-8">
-        <div class="p-10 shadow rounded-b-xl">
-          <img class="mb-2 w-56 h-full" src="./assets/img/clientes/adidas.jpg" alt="profile picture">
-        </div>
-        <div class="p-10 shadow rounded-b-xl">
-          <img class="mb-2 w-56 h-full" src="./assets/img/clientes/ART FARMA.png">
-        </div>
-        <div class="p-10 shadow rounded-b-xl">
-          <img class="mb-2 w-56 h-full" src="./assets/img/clientes/floriculturali.jpg">
-        </div>
-        <div class="p-10 shadow rounded-b-xl">
-          <img class="mb-2 w-56 h-full" src="./assets/img/clientes/Piauiense.png">
-        </div>
-        <div class="p-5 shadow rounded-b-xl">
-          <img class="mb-2" src="./assets/img/clientes/NorteLink.png">
-        </div>
-        <div class="p-5 shadow rounded-b-xl">
-          <img class="mb-2" src="./assets/img/clientes/cci.png">
-        </div>
-      </div>
-      <div class="swiper-pagination swiper-pacotes"></div>
-    </div>
-    <div id="#depoimentos" class="max-w-screen-xl lg:px-4 lg:py-8 mx-auto text-center lg:py-12 lg:px-6">
-      <div class="swiper mySwiper2 pt-20 pb-20">
-        <div class="swiper-wrapper pb-10">
-          <div class="swiper-slide h-60 lg:h-32 flex p-10 items-center rounded-b-xl">
-            <figure class="max-w-screen-md mx-auto">
-              <svg class="h-12 mx-auto mb-3 text-color1" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z" fill="currentColor" />
-              </svg>
-              <blockquote>
-                <p class="text-lg text-justify font-medium text-gray-900 md:text-2xl">"A Boom é uma parceira de peso para desenvolvimento da nossa marca no PI e MA através das redes sociais, nos ajudando a encantar os clientes, com estratégias assertivas e conteúdos que potencializam cada vez mais os nossos resultados! Sem dúvidas, a Boom faz parte do nosso melhor time de vendas!"</p>
-              </blockquote>
-              <figcaption class="flex items-center justify-center mt-6 space-x-3">
-                <img class="w-6 h-6 rounded-full" src="./assets/img/clientes/adidas.jpg" alt="profile picture">
-                <div class="flex items-center divide-x-2 divide-gray-500">
-                  <div class="pr-3 font-medium text-gray-900">Andréa Sales </div>
-                  <div class="pl-3 text-sm font-light text-color1">
-                    Supervisora Adidas</div>
-                </div>
-              </figcaption>
-            </figure>
-          </div>
-          <div class="swiper-slide h-60 lg:h-32 flex p-10 items-center rounded-b-xl">
-            <figure class="max-w-screen-md mx-auto">
-              <svg class="h-12 mx-auto mb-3 text-color1" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z" fill="currentColor" />
-              </svg>
-              <blockquote>
-                <p class="text-xl text-justify font-medium text-gray-900 md:text-2xl">"Somos clientes da Boom há aproximadamente 01 ano e estamos muito satisfeitos com a resultado da parceria. O número de seguidores do Instagram e as vendas por canais digitais aumentaram e temos resultado satisfatório com o tráfego pago."</p>
-              </blockquote>
-              <figcaption class="flex items-center justify-center mt-6 space-x-3">
-                <img class="w-6 h-6 rounded-full" src="./assets/img/clientes/Piauiense.png" alt="profile picture">
-                <div class="flex items-center divide-x-2 divide-gray-500">
-                  <div class="pr-3 font-medium text-gray-900">Lalinne Moura</div>
-                  <div class="pl-3 text-sm font-light text-color1">
-                    Proprietária Livraria Piauiense</div>
-                </div>
-              </figcaption>
-            </figure>
-          </div>
-        </div>
-        <div class="swiper-pagination swiper-pacotes"></div>
-      </div>
-    </div>
-  </section> -->
 
   <?php include "./components/footer.php" ?>
   <?php include "./components/modal_form_whats.php" ?>
