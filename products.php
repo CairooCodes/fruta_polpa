@@ -22,7 +22,7 @@ $URI = new URI();
     <?php include "./components/navbar.php" ?>
     <div class="mx-auto max-w-7xl px-2 pt-32">
         <h1 class="text-orange-600 text-center text-3xl font-extrabold leading-9 tracking-tight sm:text-4xl sm:leading-10 md:text-left md:text-3xl md:leading-14">
-            Produtos Fruta Polpa
+            Polpas Tradicionais
         </h1>
         <div class="grid lg:grid-cols-4 gap-8">
 
@@ -34,6 +34,28 @@ $URI = new URI();
 
                     <div class="flex justify-center mt-4">
                         <a href="<?php echo $URI->base('/product/' . slugify($product['name'])); ?>" class="text-white bg-orange-600 focus:ring-4 rounded-md font-md text-md px-5 py-2 text-center">Saiba mais</a>
+                    </div>
+                </div>
+
+            <?php }
+            ?>
+        </div>
+    </div>
+
+    <div class="mx-auto max-w-7xl px-2 pt-32">
+        <h1 class="text-orange-600 text-center text-3xl font-extrabold leading-9 tracking-tight sm:text-4xl sm:leading-10 md:text-left md:text-3xl md:leading-14">
+            Polpas Mix
+        </h1>
+        <div class="grid lg:grid-cols-4 gap-8">
+
+            <?php foreach ($mixs as $mix) { ?>
+                <div>
+                    <div class="mb-8 mt-4 items-center rounded-xl p-2">
+                        <img class='custom-image' src='./admin/uploads/products/<?php echo $mix['img']; ?>'>
+                    </div>
+
+                    <div class="flex justify-center mt-4">
+                        <a href="<?php echo $URI->base('/mix/' . slugify($mix['name'])); ?>" class="text-white bg-orange-600 focus:ring-4 rounded-md font-md text-md px-5 py-2 text-center">Saiba mais</a>
                     </div>
                 </div>
 

@@ -67,6 +67,26 @@ function updateProduct($id, $name, $img, $description, $price)
   $stmt->execute();
 }
 
+function updateMixs($id, $name, $img, $description, $price)
+{
+  global $pdo;
+  if ($img) {
+    $stmt = $pdo->prepare("UPDATE mixs SET name = :name, img=:img, description=:description, price=:price WHERE id = :id");
+    $stmt->bindParam(':name', $name);
+    $stmt->bindValue(':img', $img);
+    $stmt->bindParam(':description', $description);
+    $stmt->bindParam(':price', $price);
+    $stmt->bindParam(':id', $id);
+  } else {
+    $stmt = $pdo->prepare("UPDATE mixs SET name = :name, description=:description, price=:price WHERE id = :id");
+    $stmt->bindParam(':name', $name);
+    $stmt->bindParam(':description', $description);
+    $stmt->bindParam(':price', $price);
+    $stmt->bindParam(':id', $id);
+  }
+  $stmt->execute();
+}
+
 
 
 

@@ -49,3 +49,21 @@ function getBlog($id)
   return $stmt->fetch(PDO::FETCH_ASSOC);
 }
 
+function getMixs()
+{
+  global $pdo;
+  $stmt = $pdo->prepare("SELECT * FROM mixs order by id desc");
+  $stmt->execute();
+  return $stmt->fetchAll(PDO::FETCH_ASSOC);
+}
+
+function getMix($id)
+{
+  global $pdo;
+  $stmt = $pdo->prepare("SELECT * FROM mixs WHERE id = :id");
+  $stmt->bindParam(':id', $id);
+  $stmt->execute();
+  return $stmt->fetch(PDO::FETCH_ASSOC);
+}
+
+
