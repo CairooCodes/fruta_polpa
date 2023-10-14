@@ -2,7 +2,6 @@
 require "../../db_config.php";
 
 $name = $_POST['name'];
-$link = $_POST['link'];
 
 $uploadDir = '../uploads/banners/';
 
@@ -22,7 +21,7 @@ if (isset($_FILES['img']) && $_FILES['img']['error'] == UPLOAD_ERR_OK) {
   }
 }
 
-$sql = "INSERT INTO banners (name, img, link) VALUES (?,?,?)";
+$sql = "INSERT INTO banners (name, img) VALUES (?,?)";
 $stmt = $pdo->prepare($sql);
-$stmt->execute([$name, $imgPath, $link]);
+$stmt->execute([$name, $imgPath]);
 header('Location: ../banners.php');

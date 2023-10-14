@@ -66,4 +66,11 @@ function getMix($id)
   return $stmt->fetch(PDO::FETCH_ASSOC);
 }
 
+function getRecruitments()
+{
+  global $pdo;
+  $stmt = $pdo->prepare("SELECT * FROM recruitment order by id desc");
+  $stmt->execute();
+  return $stmt->fetchAll(PDO::FETCH_ASSOC);
+}
 

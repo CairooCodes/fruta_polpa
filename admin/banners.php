@@ -48,7 +48,6 @@ $page = 'banners';
       <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
       <div class="flex items-center justify-between py-4 bg-white">
           <div>
-
           </div>
           <div class="flex space-x-2">
             <button id="dropdownActionButton" data-dropdown-toggle="dropdownAction" class="inline-flex items-center text-gray-500 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-sm px-3 py-1.5" type="button">

@@ -13,7 +13,7 @@ if (!empty($_GET['id'])) {
       $img = file_get_contents($_FILES['img']['tmp_name']);
     }
 
-    updateBanner($id, $name, $img, $link);
+    updateBanner($id, $name, $img);
     header('Location: ../banners.php');
     exit();
   }
