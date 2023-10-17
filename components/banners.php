@@ -1,4 +1,4 @@
-<section class="swiper swiper_banners">
+<!-- <section class="swiper swiper_banners">
   <div class="swiper-wrapper">
     <?php
     foreach ($banners as $banners) {
@@ -13,4 +13,9 @@
   <div class="swiper-button-next text-white"></div>
   <div class="swiper-button-prev text-white"></div>
   <div class="swiper-pagination swiper-pagination-banners-main"></div>
-</section>
+</section> -->
+<sectio>
+  <video playsinline autoplay muted loop>
+    <source src="./assets/img/frutapolpanew.mp4" type="video/mp4">
+  </video>
+</sectio>
