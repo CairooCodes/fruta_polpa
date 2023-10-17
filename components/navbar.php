@@ -81,188 +81,32 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
           </svg>
         </button>
       </div>
-      <div class="flex space-x-2">
+      <div class="items-center justify-center hidden w-full lg:flex lg:w-auto lg:order-1 py-1.5" id="mobile-menu-2">
+        <ul class="flex flex-col lg:flex-row">
+          <li class="py-2">
+            <a href="<?php echo $URI->base("home.php"); ?>" class="block py-2 uppercase text-sm rounded" aria-current="page">Home</a>
+          </li>
+          <li class="py-2">
+            <a href="<?php echo $URI->base("quemsomos"); ?>" class="block py-2 uppercase text-sm rounded" aria-current="page">Quem Somos</a>
+          </li>
+          <li class="py-2">
+            <a href="<?php echo $URI->base("produtos"); ?>" class="block py-2 uppercase text-sm rounded" aria-current="page">Produtos</a>
+          </li>
+          <li class="py-2">
+            <a href="<?php echo $URI->base("blog"); ?>" class="block py-2 uppercase text-sm rounded" aria-current="page">Blog</a>
+          </li>
+          <li class="py-2 md:px-4">
+            <a href="<?php echo $URI->base("distribuidores"); ?>" class="block py-2 uppercase text-sm rounded" aria-current="page">Distribuidores</a>
+          </li>
+          <li class="py-2">
+            <a href="<?php echo $URI->base("produtos"); ?>" class="block py-2 uppercase text-sm rounded" aria-current="page">Contato</a>
+          </li>
+
+        </ul>
         <button class="hover:bg-color1 text-sm text-gray-800 font-bold py-2 px-4 rounded-full border-2 border-color1">
           ATENDIMENTO ONLINE
         </button>
-        <button class="hover:bg-color1 text-sm text-gray-800 font-bold py-2 px-4 rounded-full border-2 border-color1">
-          NOSSOS PRODUTOS
-        </button>
       </div>
-      <!-- <div class="items-center justify-center hidden w-full lg:flex lg:w-auto lg:order-1 py-1.5 mt-2" id="mobile-menu-2">
-        <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
-          <li class="py-2">
-            <a href="<?php echo $URI->base("home.php"); ?>" class="block py-2 pl-3 pr-4 uppercase text-sm rounded lg:p-0" aria-current="page">Home</a><img src="./assets/img/laranja.png" class="hover-image" alt="Imagem 1">
-          </li>
-          <li class="py-2">
-            <a href="<?php echo $URI->base("quemsomos"); ?>" class="block py-2 pl-3 pr-4 uppercase text-sm rounded lg:p-0" aria-current="page">Quem Somos</a><img src="./assets/img/laranja.png" class="hover-image" alt="Imagem 1">
-          </li>
-          <div class="group inline-block">
-            <li class="py-1">
-              <div class="inline-flex items-center rounded">
-                <a href="" class="uppercase text-sm" aria-current="page">Produtos</a><img src="./assets/img/laranja.png" class="hover-image" alt="Imagem 1">
-                <svg class="h-4 w-4 ml-2 fill-current uppercase text-sm" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                  <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
-                </svg>
-              </div>
-            </li>
-            <ul class="absolute z-10 hidden rounded bg-white pt-1 shadow-md shadow-gray-300 group-hover:block">
-              <li class="grid justify-items-start">
-                <button class="rounded py-2 px-4">
-                  <a href="<?php echo $URI->base('products'); ?>">
-                    <h1 class="text-gray-900 ml-2 mr-5 text-sm">
-                      Todos nossos produtos
-                    </h1>
-                  </a>
-                </button>
-              </li>
-              <?php
-              $stmt = $pdo->prepare("SELECT * FROM products");
-              $stmt->execute();
-              if ($stmt->rowCount() > 0) {
-                while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-                  extract($row);
-              ?>
-                  <li class="grid justify-items-start">
-                    <button class="rounded py-2 px-4">
-                      <a href="<?php echo $URI->base('product/' . slugify($name)); ?>">
-                        <h1 class="ml-2 mr-5 text-sm text-gray-900 uppercase">
-                          <?php echo $name; ?>
-                        </h1>
-                      </a>
-                    </button>
-                  </li>
-              <?php
-                }
-              }
-              ?>
-            </ul>
-          </div>
-          <li class="py-2">
-            <a href="<?php echo $URI->base("blog"); ?>" class="block py-2 pl-3 pr-4 uppercase text-sm rounded lg:p-0" aria-current="page">Blog</a><img src="./assets/img/laranja.png" class="hover-image" alt="Imagem 1">
-          </li>
-          <li class="py-2 md:px-4">
-            <a href="<?php echo $URI->base("distribuidores"); ?>" class="block py-2 pl-3 pr-4 uppercase text-sm rounded lg:p-0" aria-current="page">Distribuidores</a><img src="./assets/img/laranja.png" class="hover-image" alt="Imagem 1">
-          </li>
-          <div class="group inline-block">
-            <li class="py-1">
-              <div class="inline-flex items-center rounded">
-                <a href="" class="uppercase text-sm" aria-current="page">Contato</a><img src="./assets/img/laranja.png" class="hover-image" alt="Imagem 1">
-                <svg class="h-4 w-4 ml-2 fill-current uppercase text-sm" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                  <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
-                </svg>
-              </div>
-            </li>
-            <ul class="absolute z-10 hidden rounded bg-white pt-1 shadow-md shadow-gray-300 group-hover:block">
-              <li class="grid justify-items-start">
-                <button class="rounded py-2 px-4">
-                  <a href="<?php echo $URI->base("faleconosco.php"); ?>">
-                    <h1 class="ml-2 mr-5 text-sm text-gray-900 uppercase">
-                      Fale Conosco
-                    </h1>
-                  </a>
-                </button>
-              </li>
-              <li class="grid justify-items-start">
-                <button class="rounded py-2 px-4">
-                  <a href="<?php echo $URI->base("trabalheconosco.php"); ?>">
-                    <h1 class="ml-2 mr-5 text-sm text-gray-900 uppercase">
-                      Trabalhe Conosco
-                    </h1>
-                  </a>
-                </button>
-              </li>
-            </ul>
-          </div>
-        </ul>
-      </div> -->
     </div>
-    <!-- <div style="position:absolute;top:10px;right:120px;" class="pt-20 items-center justify-center hidden w-full lg:flex lg:w-auto lg:order-1 py-1.5 mt-2" id="mobile-menu-2">
-      <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
-        <li class="py-2">
-          <a href="<?php echo $URI->base("home.php"); ?>" class="block py-2 pl-3 pr-4 uppercase text-sm rounded lg:p-0" aria-current="page">Home</a><img src="./assets/img/laranja.png" class="hover-image" alt="Imagem 1">
-        </li>
-        <li class="py-2">
-          <a href="<?php echo $URI->base("quemsomos"); ?>" class="block py-2 pl-3 pr-4 uppercase text-sm rounded lg:p-0" aria-current="page">Quem Somos</a><img src="./assets/img/laranja.png" class="hover-image" alt="Imagem 1">
-        </li>
-        <div class="group inline-block">
-          <li class="py-1">
-            <div class="inline-flex items-center rounded">
-              <a href="" class="uppercase text-sm" aria-current="page">Produtos</a><img src="./assets/img/laranja.png" class="hover-image" alt="Imagem 1">
-              <svg class="h-4 w-4 ml-2 fill-current uppercase text-sm" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
-              </svg>
-            </div>
-          </li>
-          <ul class="absolute z-10 hidden rounded bg-white pt-1 shadow-md shadow-gray-300 group-hover:block">
-            <li class="grid justify-items-start">
-              <button class="rounded py-2 px-4">
-                <a href="<?php echo $URI->base('products'); ?>">
-                  <h1 class="text-gray-900 ml-2 mr-5 text-sm">
-                    Todos nossos produtos
-                  </h1>
-                </a>
-              </button>
-            </li>
-            <?php
-            $stmt = $pdo->prepare("SELECT * FROM products");
-            $stmt->execute();
-            if ($stmt->rowCount() > 0) {
-              while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-                extract($row);
-            ?>
-                <li class="grid justify-items-start">
-                  <button class="rounded py-2 px-4">
-                    <a href="<?php echo $URI->base('product/' . slugify($name)); ?>">
-                      <h1 class="ml-2 mr-5 text-sm text-gray-900 uppercase">
-                        <?php echo $name; ?>
-                      </h1>
-                    </a>
-                  </button>
-                </li>
-            <?php
-              }
-            }
-            ?>
-          </ul>
-        </div>
-        <li class="py-2">
-          <a href="<?php echo $URI->base("blog"); ?>" class="block py-2 pl-3 pr-4 uppercase text-sm rounded lg:p-0" aria-current="page">Blog</a><img src="./assets/img/laranja.png" class="hover-image" alt="Imagem 1">
-        </li>
-        <li class="py-2 md:px-4">
-          <a href="<?php echo $URI->base("distribuidores"); ?>" class="block py-2 pl-3 pr-4 uppercase text-sm rounded lg:p-0" aria-current="page">Distribuidores</a><img src="./assets/img/laranja.png" class="hover-image" alt="Imagem 1">
-        </li>
-        <div class="group inline-block">
-          <li class="py-1">
-            <div class="inline-flex items-center rounded">
-              <a href="" class="uppercase text-sm" aria-current="page">Contato</a><img src="./assets/img/laranja.png" class="hover-image" alt="Imagem 1">
-              <svg class="h-4 w-4 ml-2 fill-current uppercase text-sm" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
-              </svg>
-            </div>
-          </li>
-          <ul class="absolute z-10 hidden rounded bg-white pt-1 shadow-md shadow-gray-300 group-hover:block">
-            <li class="grid justify-items-start">
-              <button class="rounded py-2 px-4">
-                <a href="<?php echo $URI->base("faleconosco.php"); ?>">
-                  <h1 class="ml-2 mr-5 text-sm text-gray-900 uppercase">
-                    Fale Conosco
-                  </h1>
-                </a>
-              </button>
-            </li>
-            <li class="grid justify-items-start">
-              <button class="rounded py-2 px-4">
-                <a href="<?php echo $URI->base("trabalheconosco.php"); ?>">
-                  <h1 class="ml-2 mr-5 text-sm text-gray-900 uppercase">
-                    Trabalhe Conosco
-                  </h1>
-                </a>
-              </button>
-            </li>
-          </ul>
-        </div>
-      </ul>
-    </div> -->
   </nav>
 </header>

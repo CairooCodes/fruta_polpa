@@ -221,12 +221,12 @@ body {
   padding-bottom: 4px;
   border-bottom: 2px solid #00284a;
   transition: border-bottom 0.3s ease;
-  
+
 }
 
 .leia-mais-link:hover {
   color: #ff851e;
-  border-bottom-color: #ff851e; 
+  border-bottom-color: #ff851e;
 }
 
 .container {
@@ -246,9 +246,39 @@ body {
   width: 100%;
   height: 100%;
   background-image: url('../img/polpaquemsomos.png');
-  background-color:darkgreen;
+  background-color: darkgreen;
   background-size: cover;
   background-position: center;
   opacity: 0.3;
   z-index: -1;
 }
+
+
+#mobile-menu-2 li a {
+  display: inline-block;
+  text-decoration: none;
+  color: #1F2937;
+  font-family: sans-serif;
+}
+
+#mobile-menu-2 li a:hover {
+  color: black;
+}
+
+
+#mobile-menu-2 li a:after {
+  display: block;
+  content: '';
+  width: inherit;
+  border-bottom: solid 3px orangered;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+
+#mobile-menu-2 li a:hover:after {
+  transform: scaleX(1);
+}
+
+/* #mobile-menu-2 li a.from-left:after {
+  transform-origin: left;
+} */
