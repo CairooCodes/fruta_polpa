@@ -58,6 +58,15 @@
         </a>
       </li>
       <li>
+        <a href="receitas.php" class="px-3 py-2 flex items-center space-x-3 rounded-md text-gray-800 group 
+        <?php if ($page == 'receitas') {
+          echo 'bg-orange-600 text-white';
+        } ?>">
+          <i class="bi bi-cart"></i>
+          <span class="group-hover:text-gray-700">Receitas</span>
+        </a>
+      </li>
+      <li>
         <a href="leads.php" class="px-3 py-2 flex items-center space-x-3 rounded-md text-gray-800 group 
         <?php if ($page == 'leads') {
           echo 'bg-orange-600 text-white';

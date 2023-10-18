@@ -85,6 +85,38 @@ function updateMixs($id, $name, $img, $description, $price)
   $stmt->execute();
 }
 
+function updateCategorie($id, $name)
+{
+  global $pdo;
+  if ($id) {
+    $stmt = $pdo->prepare("UPDATE categories SET name = :name WHERE id = :id");
+    $stmt->bindParam(':name', $name);
+    $stmt->bindParam(':id', $id);
+  } else {
+    $stmt = $pdo->prepare("UPDATE categories SET name = :name WHERE id = :id");
+    $stmt->bindParam(':name', $name);
+    $stmt->bindParam(':id', $id);
+  }
+  $stmt->execute();
+}
+
+function updateReceita($id, $name, $description, $img)
+{
+  global $pdo;
+  if ($img) {
+    $stmt = $pdo->prepare("UPDATE receitas SET name = :name, img=:img, description=:description WHERE id = :id");
+    $stmt->bindParam(':name', $name);
+    $stmt->bindValue(':img', $img);
+    $stmt->bindParam(':description', $description);
+    $stmt->bindParam(':id', $id);
+  } else {
+    $stmt = $pdo->prepare("UPDATE receitas SET name = :name, description=:description WHERE id = :id");
+    $stmt->bindParam(':name', $name);
+    $stmt->bindParam(':description', $description);
+    $stmt->bindParam(':id', $id);
+  }
+  $stmt->execute();
+}
 
 
 
