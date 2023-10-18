@@ -15,6 +15,13 @@ $stmt = $pdo->prepare($sql);
 $stmt->execute([$user_id]);
 $user = $stmt->fetch();
 
+function getReceita($id){
+  global $pdo;
+  $stmt = $pdo->prepare("SELECT * FROM receitas where id = $id order by id desc");
+  $stmt->execute();
+  return $stmt->fetchAll(PDO::FETCH_ASSOC);
+}
+
 $id = $_GET['id'];
 $receita = getReceita($id);
 

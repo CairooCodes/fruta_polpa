@@ -62,7 +62,7 @@
         <?php if ($page == 'receitas') {
           echo 'bg-orange-600 text-white';
         } ?>">
-          <i class="bi bi-cart"></i>
+          <i class="bi bi-file-text"></i>
           <span class="group-hover:text-gray-700">Receitas</span>
         </a>
       </li>

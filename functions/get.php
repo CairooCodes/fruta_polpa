@@ -106,10 +106,11 @@ function getReceitas2()
   return $stmt->fetchAll(PDO::FETCH_ASSOC);
 }
 
-function getReceita($id){
+function getReceita($id)
+{
   global $pdo;
-  $stmt = $pdo->prepare("SELECT * FROM receitas where id = $id order by id desc");
+  $stmt = $pdo->prepare("SELECT * FROM receitas WHERE id = :id");
+  $stmt->bindParam(':id', $id);
   $stmt->execute();
-  return $stmt->fetchAll(PDO::FETCH_ASSOC);
+  return $stmt->fetch(PDO::FETCH_ASSOC);
 }
-

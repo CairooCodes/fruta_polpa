@@ -26,7 +26,7 @@ $URI = new URI();
 
 
 
-  <?php include "./components/footer2.php" ?>
+  <?php include "./components/footer.php" ?>
   <?php include "./components/modal_form_whats.php" ?>
   <script src="assets/js/tw.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js"></script>
