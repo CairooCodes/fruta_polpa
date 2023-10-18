@@ -44,17 +44,17 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 }
 ?>
 <header class="w-full">
-  <div class="hidden bg-orange-500 sm:block">
+  <div class="hidden bg-gray-200 sm:block">
     <div class="mx-auto flex max-w-6xl justify-between">
       <div class="flex justify-between items-center space-x-2">
         <a href="mapa-fruta-polpa.php"><img width="20px" src="<?php echo $URI->base('/assets/img/brazil.png') ?>" /></a>
-        <span class="text-xs text-white">Encontre Fruta Polpa</span>
+        <span class="text-xs text-gray-600">Encontre Fruta Polpa</span>
       </div>
       <div class="flex items-center">
         <div>
           <img class="mr-2 nuvem-icon" width="30" src="<?php echo $URI->base('/assets/img/tempo.png') ?>">
         </div>
-        <div class="hidden md:block text-white text-xs">
+        <div class="hidden md:block text-gray-600 text-xs">
           Teresina/PI - Min <?php echo $var1[$i]; ?> e Max <?php echo $var2[$i]; ?> ºC
         </div>
       </div>
