@@ -16,7 +16,8 @@ $stmt->execute([$user_id]);
 $user = $stmt->fetch();
 
 
-$products = getProducts();
+$products = getAllProducts();
+$categories = getCategoriesProducts();
 $page = 'products';
 ?>
 <!DOCTYPE html>
@@ -90,7 +91,7 @@ $page = 'products';
                 Nome
               </th>
               <th scope="col" class="px-6 py-3">
-                Preço
+                Categoria
               </th>
               <th scope="col" class="px-6 py-3">
                 Ação
@@ -109,7 +110,7 @@ $page = 'products';
                   </div>
                 </th>
                 <th class="px-6 py-3">
-                  <?php echo $product['price']; ?>
+                  <?php echo $product['categorie_type']; ?>
                 </th>
                 <td class="px-6 py-4">
                   <a href="./editar_product.php?id=<?php echo $product['id']; ?>" type="button" class="font-medium text-blue-600 hover:underline">Editar</a>

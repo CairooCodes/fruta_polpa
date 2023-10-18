@@ -15,10 +15,26 @@ function getAbouts()
   return $stmt->fetchAll(PDO::FETCH_ASSOC);
 }
 
-function getProducts()
+function getAllProducts()
 {
   global $pdo;
-  $stmt = $pdo->prepare("SELECT * FROM products order by id desc");
+  $stmt = $pdo->prepare("SELECT products.id, products.img, products.name, c.name as categorie_type FROM products INNER JOIN categories c ON products.categorie_id = c.id order by products.id desc;");
+  $stmt->execute();
+  return $stmt->fetchAll(PDO::FETCH_ASSOC);
+}
+
+function getProducts1()
+{
+  global $pdo;
+  $stmt = $pdo->prepare("SELECT * FROM products where categorie_id = 1 order by id desc");
+  $stmt->execute();
+  return $stmt->fetchAll(PDO::FETCH_ASSOC);
+}
+
+function getProducts2()
+{
+  global $pdo;
+  $stmt = $pdo->prepare("SELECT * FROM products where categorie_id = 2 order by id desc");
   $stmt->execute();
   return $stmt->fetchAll(PDO::FETCH_ASSOC);
 }
@@ -30,6 +46,14 @@ function getProduct($id)
   $stmt->bindParam(':id', $id);
   $stmt->execute();
   return $stmt->fetch(PDO::FETCH_ASSOC);
+}
+
+function getCategoriesProducts()
+{
+  global $pdo;
+  $stmt = $pdo->prepare("SELECT * FROM categories WHERE type = 'Polpas' order by id desc");
+  $stmt->execute();
+  return $stmt->fetchAll(PDO::FETCH_ASSOC);
 }
 
 function getBlogs()
@@ -44,23 +68,6 @@ function getBlog($id)
 {
   global $pdo;
   $stmt = $pdo->prepare("SELECT * FROM blogs WHERE id = :id");
-  $stmt->bindParam(':id', $id);
-  $stmt->execute();
-  return $stmt->fetch(PDO::FETCH_ASSOC);
-}
-
-function getMixs()
-{
-  global $pdo;
-  $stmt = $pdo->prepare("SELECT * FROM mixs order by id desc");
-  $stmt->execute();
-  return $stmt->fetchAll(PDO::FETCH_ASSOC);
-}
-
-function getMix($id)
-{
-  global $pdo;
-  $stmt = $pdo->prepare("SELECT * FROM mixs WHERE id = :id");
   $stmt->bindParam(':id', $id);
   $stmt->execute();
   return $stmt->fetch(PDO::FETCH_ASSOC);
@@ -113,4 +120,12 @@ function getReceita($id)
   $stmt->bindParam(':id', $id);
   $stmt->execute();
   return $stmt->fetch(PDO::FETCH_ASSOC);
+}
+
+function getCategoriesReceitas()
+{
+  global $pdo;
+  $stmt = $pdo->prepare("SELECT * FROM categories WHERE type = 'Receitas' order by name asc");
+  $stmt->execute();
+  return $stmt->fetchAll(PDO::FETCH_ASSOC);
 }

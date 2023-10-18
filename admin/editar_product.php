@@ -72,11 +72,23 @@ $product = getProduct($id);
                 <input type="file" id="img" name="img">
               </div>
               <div class="col-span-6 sm:col-span-3">
-                <label class="block mb-2 text-sm font-medium text-gray-900">Preço</label>
-                <input name="price" type="text" value="<?php echo $product['price']; ?>" id="price" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-orange-600 focus:border-orange-600 block w-full p-2.5" placeholder="Preço do Serviço" required="">
+                <label for="categoria" class="block mb-2 text-sm font-medium text-gray-900">Categorias</label>
+                <select class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5" name="categorie_id">
+                  <?php foreach ($categories as $categorie) {
+                    if ($categorie['id'] == $noticias[0]['categorie_id']) { ?>
+                      <option value="<?php echo $categorie['id']; ?>"><?php echo $categorie['name']; ?> (selecionado)</option>
+                  <?php }
+                  } ?>
+                  <?php foreach ($categories as $categorie) { ?>
+                    <option value="<?php echo $categorie['id']; ?>"><?php echo $categorie['name']; ?></option>
+                  <?php } ?>
+                </select>
               </div>
             </div>
-            
+            <div class="col-span-6 sm:col-span-3">
+              <label class="block mb-2 text-sm font-medium text-gray-900">Preço</label>
+              <input name="price" type="text" value="<?php echo $product['price']; ?>" id="price" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-orange-600 focus:border-orange-600 block w-full p-2.5" placeholder="Preço do Serviço" required="">
+            </div>
             <label class="block text-sm font-medium text-gray-900">Descrição</label>
             <textarea name="description" id="description" type="text"><?php echo $product['description']; ?></textarea>
           </div>
@@ -95,7 +107,7 @@ $product = getProduct($id);
       toolbar: 'undo redo | bold italic underline strikethrough | fontselect fontsizeselect formatselect | alignleft aligncenter alignright alignjustify | outdent indent |  numlist bullist checklist | forecolor backcolor casechange permanentpen formatpainter removeformat | pagebreak | charmap emoticons | fullscreen  preview save print | insertfile image media pageembed template link anchor codesample | a11ycheck ltr rtl | showcomments addcomment'
     });
   </script>
-  
+
 </body>
 
 </html>

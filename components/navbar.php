@@ -87,10 +87,10 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
             <a href="<?php echo $URI->base("home.php"); ?>" class="block py-2 uppercase text-xs rounded" aria-current="page">Home</a>
           </li>
           <li class="py-2">
-            <a href="<?php echo $URI->base("quemsomos"); ?>" class="block py-2 uppercase text-xs rounded" aria-current="page">Quem Somos</a>
+            <a href="<?php echo $URI->base("quem-somos"); ?>" class="block py-2 uppercase text-xs rounded" aria-current="page">Quem Somos</a>
           </li>
           <li class="py-2">
-            <a href="<?php echo $URI->base("produtos"); ?>" class="block py-2 uppercase text-xs rounded" aria-current="page">Produtos</a>
+            <a href="<?php echo $URI->base("products"); ?>" class="block py-2 uppercase text-xs rounded" aria-current="page">Produtos</a>
           </li>
           <li class="py-2">
             <a href="<?php echo $URI->base("blog"); ?>" class="block py-2 uppercase text-xs rounded" aria-current="page">Blog</a>
@@ -99,13 +99,15 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
             <a href="<?php echo $URI->base("distribuidores"); ?>" class="block py-2 uppercase text-xs rounded" aria-current="page">Distribuidores</a>
           </li>
           <li class="py-2">
-            <a href="<?php echo $URI->base("produtos"); ?>" class="block py-2 uppercase text-xs rounded" aria-current="page">Contato</a>
+            <a href="<?php echo $URI->base("contato"); ?>" class="block py-2 uppercase text-xs rounded" aria-current="page">Contato</a>
           </li>
 
         </ul>
-        <button class="hover:bg-color1 hover:text-white text-xs text-gray-800 py-2 px-4 rounded-full border-2 border-color1">
-          ATENDIMENTO ONLINE
-        </button>
+        <a href="<?php echo $URI->base("receitas"); ?>">
+          <button class="hover:bg-color1 hover:text-white text-xs text-gray-800 py-2 px-4 rounded-full border-2 border-color1">
+            RECEITAS
+          </button>
+        </a>
         <button class="ml-4 bg-color1 text-white text-xs text-gray-800 py-2 px-4 rounded-full border-2 border-color1">
           PRODUTOS
         </button>

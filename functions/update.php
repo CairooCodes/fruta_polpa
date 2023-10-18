@@ -45,41 +45,23 @@ function updateBlog($id, $name, $img, $description, $link)
   $stmt->execute();
 }
 
-function updateProduct($id, $name, $img, $description, $price)
+function updateProduct($id, $name, $img, $description, $price, $categorie_id)
 {
   global $pdo;
   if ($img) {
-    $stmt = $pdo->prepare("UPDATE products SET name = :name, img=:img, description=:description, price=:price WHERE id = :id");
+    $stmt = $pdo->prepare("UPDATE products SET name = :name, img=:img, description=:description, price=:price, categorie_id = :categorie_id WHERE id = :id");
     $stmt->bindParam(':name', $name);
     $stmt->bindValue(':img', $img);
     $stmt->bindParam(':description', $description);
     $stmt->bindParam(':price', $price);
+    $stmt->bindParam(':categorie_id', $categorie_id);
     $stmt->bindParam(':id', $id);
   } else {
-    $stmt = $pdo->prepare("UPDATE products SET name = :name, description=:description, price=:price WHERE id = :id");
+    $stmt = $pdo->prepare("UPDATE products SET name = :name, description=:description, price=:price, categorie_id = :categorie_id WHERE id = :id");
     $stmt->bindParam(':name', $name);
     $stmt->bindParam(':description', $description);
     $stmt->bindParam(':price', $price);
-    $stmt->bindParam(':id', $id);
-  }
-  $stmt->execute();
-}
-
-function updateMixs($id, $name, $img, $description, $price)
-{
-  global $pdo;
-  if ($img) {
-    $stmt = $pdo->prepare("UPDATE mixs SET name = :name, img=:img, description=:description, price=:price WHERE id = :id");
-    $stmt->bindParam(':name', $name);
-    $stmt->bindValue(':img', $img);
-    $stmt->bindParam(':description', $description);
-    $stmt->bindParam(':price', $price);
-    $stmt->bindParam(':id', $id);
-  } else {
-    $stmt = $pdo->prepare("UPDATE mixs SET name = :name, description=:description, price=:price WHERE id = :id");
-    $stmt->bindParam(':name', $name);
-    $stmt->bindParam(':description', $description);
-    $stmt->bindParam(':price', $price);
+    $stmt->bindParam(':categorie_id', $categorie_id);
     $stmt->bindParam(':id', $id);
   }
   $stmt->execute();

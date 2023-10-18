@@ -25,11 +25,19 @@
             <input type="file" id="img" name="img">
           </div>
           <div class="col-span-6 sm:col-span-3">
-            <label for="last-name" class="block mb-2 text-sm font-medium text-gray-900">Preço</label>
-            <input type="text" name="price" id="price" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-orange-600 focus:border-orange-600 block w-full p-2.5" placeholder="Valor" required="">
+            <label for="categoria" class="block text-sm font-medium text-gray-900">Categorias de Polpas</label>
+            <select class="uppercase shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2" name="categorie_id">
+              <?php foreach ($categories as $categorie) { ?>
+                <option value="<?php echo $categorie['id']; ?>"><?php echo $categorie['name']; ?></option>
+              <?php } ?>
+            </select>
+            <a href="categorias.php" class="text-sm font-medium text-gray-700"><i class="bi bi-plus-circle"></i> Adicionar Categoria</a>
           </div>
         </div>
-        
+        <div class="col-span-6 sm:col-span-3">
+          <label for="last-name" class="block mb-2 text-sm font-medium text-gray-900">Preço</label>
+          <input type="text" name="price" id="price" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-orange-600 focus:border-orange-600 block w-full p-2.5" placeholder="Valor" required="">
+        </div>
         <textarea name="description" id="description"></textarea>
         <!-- Modal footer -->
         <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b">

@@ -4,6 +4,7 @@ require "../../db_config.php";
 $name = $_POST['name'];
 $description = $_POST['description'];
 $price = $_POST['price'];
+$categorie_id = $_POST['categorie_id'];
 
 $dom = new DOMDocument();
 $dom->loadHTML($description);
@@ -28,7 +29,7 @@ if (isset($_FILES['img']) && $_FILES['img']['error'] == UPLOAD_ERR_OK) {
 
 $new_description = $dom->saveHTML();
 
-$sql = "INSERT INTO products (name, img, description, price) VALUES (?,?,?,?)";
+$sql = "INSERT INTO products (name, img, description, price, categorie_id) VALUES (?,?,?,?,?)";
 $stmt = $pdo->prepare($sql);
-$stmt->execute([$name, $imgPath, $description, $price]);  
+$stmt->execute([$name, $imgPath, $description, $price, $categorie_id]);  
 header('Location: ../products.php');

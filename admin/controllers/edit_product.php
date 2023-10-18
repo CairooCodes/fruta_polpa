@@ -7,6 +7,7 @@ if (!empty($_GET['id'])) {
     $name = $_POST['name'];
     $description = $_POST['description'];
     $price = $_POST['price'];
+    $categorie_id = $_POST['categorie_id'];
 
     $uploadDir = '../uploads/products/';
 
@@ -26,7 +27,7 @@ if (!empty($_GET['id'])) {
       }
     }
 
-    updateProduct($id, $name, $img, $description, $price);
+    updateProduct($id, $name, $img, $description, $price, $categorie_id);
     header('Location: ../products.php');
     exit();
   }

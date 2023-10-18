@@ -5,7 +5,7 @@ require "config/url.class.php";
 require "./functions/get.php";
 
 $banners = getBanners();
-$products = getProducts();
+$products = getAllProducts();
 $blogs = getBlogs();
 $abouts = getAbouts();
 
