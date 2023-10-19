@@ -22,9 +22,9 @@ $URI = new URI();
   <!-- Start block -->
   <?php include "./components/navbar.php"; ?>
   <?php include "./components/banners.php"; ?>
+  <?php include "./components/quem_somos.php"; ?>
+
   <?php include "./components/products.php"; ?>
-
-
 
   <?php include "./components/footer.php" ?>
   <?php include "./components/modal_form_whats.php" ?>
