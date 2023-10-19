@@ -15,7 +15,7 @@ $stmt = $pdo->prepare($sql);
 $stmt->execute([$user_id]);
 $user = $stmt->fetch();
 
-function getReceita($id){
+function getReceitas($id){
   global $pdo;
   $stmt = $pdo->prepare("SELECT * FROM receitas where id = $id order by id desc");
   $stmt->execute();
@@ -23,7 +23,7 @@ function getReceita($id){
 }
 
 $id = $_GET['id'];
-$receita = getReceita($id);
+$receita = getReceitas($id);
 
 ?>
 <!DOCTYPE html>
