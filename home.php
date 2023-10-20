@@ -79,10 +79,16 @@ $URI = new URI();
 		var swiper = new Swiper(".swiper_products_type", {
 			loop: true,
       freeMode: true,
-			
-					slidesPerView: 2,
+			breakpoints: {
+				300: {
+					slidesPerView: 1,
 					spaceBetween: 20,
-			
+				},
+				640: {
+					slidesPerView: 2,
+					spaceBetween: 45,
+				},
+			},
 		});
 	</script>
   <script>
