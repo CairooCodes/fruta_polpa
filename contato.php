@@ -4,7 +4,7 @@ require "config/helper.php";
 require "config/url.class.php";
 require "./functions/get.php";
 
-$products = getProducts();
+$products = getAllProducts();
 $URI = new URI();
 
 ?>
