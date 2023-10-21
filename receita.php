@@ -20,7 +20,7 @@ function remove_simbolos_acentos($string)
 
 
 $url = explode("/", $_SERVER['REQUEST_URI']);
-$idpost = $url[3];
+$idpost = $url[4];
 
 $idpost2 = "";
 
@@ -60,7 +60,7 @@ if ($stmt->rowCount() > 0) {
       <div class="image">
         <div class="mt-4 rounded-xl p-2 shadow-md shadow-blue-200" style="width: 400px; height: 350px;">
           <div  class="flex justify-center">
-            <?php echo "<img class='lazy rounded-md h-full w-52 object-cover mt-14' style='width: 350px; height: 250px;' src=" . $URI->base('/admin/uploads/receitas') . '/' . $receita['img'] . '>' ?>
+            <?php echo "<img class='lazy rounded-md h-full w-52 object-cover mt-14' style='width: 350px; height: 250px;' data-src=" . $URI->base('/admin/uploads/receitas') . '/' . $receita['img'] . '>' ?>
           </div>
         </div>
       </div>
@@ -75,8 +75,7 @@ if ($stmt->rowCount() > 0) {
   <?php include "./components/footer.php" ?>
   <?php include "./components/modal_form_whats.php" ?>
 
-  <script src="<?php echo $URI->base('assets/js/script.js'); ?>"></script>
-  <script src="./assets/js/lz.js"></script>
+  <script src="<?php echo $URI->base('/assets/js/lz.js'); ?>"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
   <script src="<?php echo $URI->base('/assets/js/tw.js'); ?>"></script>
   <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js"></script>
