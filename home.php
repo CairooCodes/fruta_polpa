@@ -22,9 +22,9 @@ $URI = new URI();
   <!-- Start block -->
   <?php include "./components/navbar.php"; ?>
   <?php include "./components/banners.php"; ?>
-  <?php include "./components/products.php"; ?>
+  <?php include "./components/quem_somos.php"; ?>
 
-
+  <?php include "./components/products_types.php"; ?>
 
   <?php include "./components/footer.php" ?>
   <?php include "./components/modal_form_whats.php" ?>
@@ -76,25 +76,17 @@ $URI = new URI();
 		});
 	</script>
   <script>
-		var swiper = new Swiper(".swiper_products", {
+		var swiper = new Swiper(".swiper_products_type", {
 			loop: true,
       freeMode: true,
 			breakpoints: {
 				300: {
-					slidesPerView: 1.3,
+					slidesPerView: 1,
 					spaceBetween: 20,
 				},
 				640: {
 					slidesPerView: 2,
-					spaceBetween: 30,
-				},
-				768: {
-					slidesPerView: 3,
-					spaceBetween: 30,
-				},
-				1024: {
-					slidesPerView: 4,
-					spaceBetween: 30,
+					spaceBetween: 45,
 				},
 			},
 		});
