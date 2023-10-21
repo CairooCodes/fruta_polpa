@@ -50,7 +50,7 @@ if ($stmt->rowCount() > 0) {
 
 <body>
   <?php include "./components/navbar.php" ?>
-  <div class="bg-gray-300  pt-36 pb-20">
+  <div class="bg-gray-200  pt-16 pb-16">
     <h1 class="text-center text-6xl">
       <?php echo $product['name']; ?>
     </h1>
