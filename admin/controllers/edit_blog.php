@@ -6,7 +6,6 @@ if (!empty($_GET['id'])) {
     $id = $_POST['id'];
     $name = $_POST['name'];
     $description = $_POST['description'];
-    $link = $_POST['link'];
 
     $uploadDir = '../uploads/blogs/';
 
@@ -26,7 +25,7 @@ if (!empty($_GET['id'])) {
       }
     }
 
-    updateBlog($id, $name, $img, $description, $link);
+    updateBlog($id, $name, $img, $description);
     header('Location: ../blogs.php');
     exit();
   }

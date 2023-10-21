@@ -25,21 +25,19 @@ function updateBanner($id, $name, $img)
   $stmt->execute();
 }
 
-function updateBlog($id, $name, $img, $description, $link)
+function updateBlog($id, $name, $img, $description)
 {
   global $pdo;
   if ($img) {
-    $stmt = $pdo->prepare("UPDATE blogs SET name = :name, img=:img, description=:description, link=:link WHERE id = :id");
+    $stmt = $pdo->prepare("UPDATE blogs SET name = :name, img=:img, description=:description WHERE id = :id");
     $stmt->bindParam(':name', $name);
     $stmt->bindValue(':img', $img);
     $stmt->bindParam(':description', $description);
-    $stmt->bindParam(':link', $link);
     $stmt->bindParam(':id', $id);
   } else {
-    $stmt = $pdo->prepare("UPDATE blogs SET name = :name, description=:description, link=:link WHERE id = :id");
+    $stmt = $pdo->prepare("UPDATE blogs SET name = :name, description=:description WHERE id = :id");
     $stmt->bindParam(':name', $name);
     $stmt->bindParam(':description', $description);
-    $stmt->bindParam(':link', $link);
     $stmt->bindParam(':id', $id);
   }
   $stmt->execute();

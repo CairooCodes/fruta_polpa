@@ -3,7 +3,7 @@ require "../../db_config.php";
 
 $name = $_POST['name'];
 $description = $_POST['description'];
-$link = $_POST['link'];
+
 
 $dom = new DOMDocument();
 $dom->loadHTML($description);
@@ -28,7 +28,7 @@ if (isset($_FILES['img']) && $_FILES['img']['error'] == UPLOAD_ERR_OK) {
 
 $new_description = $dom->saveHTML();
 
-$sql = "INSERT INTO blogs (name, img, description, link) VALUES (?,?,?,?)";
+$sql = "INSERT INTO blogs (name, img, description) VALUES (?,?,?)";
 $stmt = $pdo->prepare($sql);
-$stmt->execute([$name, $imgPath, $description, $link]);  
+$stmt->execute([$name, $imgPath, $description]);  
 header('Location: ../blogs.php');
