@@ -50,23 +50,23 @@ if ($stmt->rowCount() > 0) {
 
 <body>
   <?php include "./components/navbar.php" ?>
-  <div class="bg-gray-300  pt-36 pb-20">
+  <div class="bg-gray-300  pt-16 pb-16">
     <h1 class="text-center text-6xl">
       <?php echo $blog['name']; ?>
     </h1>
   </div>
   <section class="mx-auto max-w-7xl px-2">
     <div class="max-w-screen-xl px-4 py-8 mx-auto space-y-12 lg:space-y-20 lg:py-6 lg:px-6">
-      <div>
-        <div class="mt-4 rounded-xl p-2 shadow-md shadow-blue-200">
-          <div  class="flex justify-center">
-          <?php echo "<img class='lazy rounded-md h-full w-76 object-cover' src=" . $URI->base('/admin/uploads/blogs') . '/' . $blog['img'] . '>' ?>
-          </div>
-        </div>
-      </div>
       <h2>
         <?php echo $blog['description']; ?>
       </h2>
+      <div>
+        <div class="mt-4 rounded-xl p-2 shadow-md shadow-blue-200">
+          <div class="flex justify-center">
+            <?php echo "<img class='lazy rounded-md object-cover blog-image' src=" . $URI->base('/admin/uploads/blogs') . '/' . $blog['img'] . '>' ?>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 

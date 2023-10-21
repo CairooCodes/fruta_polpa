@@ -305,3 +305,15 @@ body {
 .fade-up h1 {
  text-shadow: #000 1px 1px;
 }
+
+.blog-image {
+  max-width: 100%;
+  height: auto;
+  width: 350px;
+}
+
+.same-size-image {
+  width: 200px; /* Defina a largura desejada para todas as imagens */
+  height: 200px; /* Defina a altura desejada para todas as imagens */
+  object-fit: cover; /* Garante que a imagem cubra o contêiner, mantendo suas proporções */
+}
