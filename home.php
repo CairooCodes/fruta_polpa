@@ -6,6 +6,8 @@ require "./functions/get.php";
 
 $banners = getBanners();
 $products = getAllProducts();
+$products1 = getProducts1();
+$products2 = getProducts2();
 $blogs = getBlogs();
 $abouts = getAbouts();
 
@@ -15,7 +17,7 @@ $URI = new URI();
 <html lang="pt-br">
 
 <head>
-<?php include "./components/heads.php"; ?>
+  <?php include "./components/heads.php"; ?>
 </head>
 
 <body>
@@ -32,65 +34,78 @@ $URI = new URI();
   <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
-	<script src="./assets/js/lz.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
- <script>
-    const carousel3Dswiper = new Swiper(".carousel-3D-swiper", {
-    loop: true,
-    effect: "coverflow",
-    grabCursor: true,
-    centeredSlides: true,
-    slidesPerView: 3,
-    coverflowEffect: {
-      rotate: 0,
-      stretch: 0,
-      depth: 350,
-      modifier: 1,
-      slideShadows: true
-    },
-		 navigation: {
-      nextEl: ".swiper-button-next-blog",
-      prevEl: ".swiper-button-prev-blog",
-    },
-    pagination: {
-      el: ".swiper-pagination-blog"
-    }
+  <script src="./assets/js/lz.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<script>
+$(document).ready(function() {
+  // Initialize Slick Slider
+  $(".slick-slider").slick({
+    prevArrow: $('.slick-prev'),
+    nextArrow: $('.slick-next'),
   });
- </script>
-	<script>
-		var swiper = new Swiper(".swiper_banners", {
-			loop: true,
-			autoplay: {
-				delay: 5000,
-				disableOnInteraction: false,
-			},
-			pagination: {
-				el: ".swiper-pagination-banners-main",
-				clickable: true,
-			},
-			navigation: {
-				nextEl: ".swiper-button-next",
-				prevEl: ".swiper-button-prev",
-			},
-		});
-	</script>
+});
+</script>
   <script>
-		var swiper = new Swiper(".swiper_products_type", {
-			loop: true,
+    const carousel3Dswiper = new Swiper(".carousel-3D-swiper", {
+      loop: true,
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 3,
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 350,
+        modifier: 1,
+        slideShadows: true
+      },
+      navigation: {
+        nextEl: ".swiper-button-next-blog",
+        prevEl: ".swiper-button-prev-blog",
+      },
+      pagination: {
+        el: ".swiper-pagination-blog"
+      }
+    });
+  </script>
+  <script>
+    var swiper = new Swiper(".swiper_banners", {
+      loop: true,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination-banners-main",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+  <script>
+    var swiper = new Swiper(".swiper_products_type", {
+      loop: true,
       freeMode: true,
-			breakpoints: {
-				300: {
-					slidesPerView: 1,
-					spaceBetween: 20,
-				},
-				640: {
-					slidesPerView: 2,
-					spaceBetween: 45,
-				},
-			},
-		});
-	</script>
+      breakpoints: {
+        300: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 45,
+        },
+      },
+    });
+  </script>
   <script>
     $('a[href^="#"]').on('click', function(e) {
       e.preventDefault();

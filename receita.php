@@ -20,7 +20,7 @@ function remove_simbolos_acentos($string)
 
 
 $url = explode("/", $_SERVER['REQUEST_URI']);
-$idpost = $url[4];
+$idpost = $url[3];
 
 $idpost2 = "";
 
@@ -59,15 +59,24 @@ if ($stmt->rowCount() > 0) {
     <div class="max-w-screen-xl px-4 py-8 mx-auto space-y-12 lg:space-y-20 lg:py-6 lg:px-6 grid grid-cols-2 gap-8">
       <div class="image">
         <div class="mt-4 rounded-xl p-2 shadow-md shadow-blue-200" style="width: 400px; height: 350px;">
-          <div  class="flex justify-center">
-            <?php echo "<img class='lazy rounded-md h-full w-52 object-cover mt-14' style='width: 350px; height: 250px;' data-src=" . $URI->base('/admin/uploads/receitas') . '/' . $receita['img'] . '>' ?>
+          <div class="flex justify-center">
+            <div class="swiper swiper_receita">
+              <div class="swiper-wrapper pb-10">
+                <a class="swiper-slide">
+                  <?php echo "<img class='lazy rounded-md h-full w-52 object-cover mt-14' style='width: 350px; height: 250px;' data-src=" . $URI->base('/admin/uploads/receitas') . '/' . $receita['img'] . '>' ?>
+                </a>
+              </div>
+              <div class="swiper-button-next text-white"></div>
+              <div class="swiper-button-prev text-white"></div>
+              <div class="swiper-pagination swiper-pagination-receita-main"></div>
+            </div>
           </div>
         </div>
       </div>
       <div class="description">
-      <h2>
-        <?php echo $receita['description']; ?>
-      </h2>
+        <h2>
+          <?php echo $receita['description']; ?>
+        </h2>
       </div>
     </div>
   </section>
@@ -81,6 +90,24 @@ if ($stmt->rowCount() > 0) {
   <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js"></script>
   <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script>
+		var swiper = new Swiper(".swiper_receita", {
+			loop: true,
+			autoplay: {
+				delay: 5000,
+				disableOnInteraction: false,
+			},
+			pagination: {
+				el: ".swiper-pagination-receita-main",
+				clickable: true,
+			},
+			navigation: {
+				nextEl: ".swiper-button-next",
+				prevEl: ".swiper-button-prev",
+			},
+		});
+	</script>
 </body>
 
 </html>

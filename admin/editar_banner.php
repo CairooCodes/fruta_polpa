@@ -71,11 +71,7 @@ function getBanner($id)
             <div class="grid grid-cols-6 gap-6">
               <div class="col-span-6 sm:col-span-3">
                 <label class="block mb-2 text-sm font-medium text-gray-900">Nome</label>
-                <input name="name" type="text" value="<?php echo $banner['name']; ?>" id="name" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5" placeholder="Nome do Banner" required="">
-              </div>
-              <div class="col-span-6 sm:col-span-3">
-                <label class="block mb-2 text-sm font-medium text-gray-900">Link do Banner</label>
-                <input name="link" type="text" value="<?php echo $banner['link']; ?>" id="link" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5" placeholder="Link do Banner">
+                <input name="name" type="text" value="<?php echo $banner['name']; ?>" id="name" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-orange-600 focus:border-orange-600 block w-full p-2.5" placeholder="Nome do Banner" required="">
               </div>
               <input id="id" name="id" type="hidden" value="<?php echo $banner['id']; ?>">
               <div class="col-span-6 sm:col-span-3">
@@ -85,7 +81,7 @@ function getBanner($id)
             </div>
           </div>
           <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b">
-            <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Editar</button>
+            <button type="submit" class="text-white bg-orange-700 hover:bg-orange-800 focus:ring-4 focus:outline-none focus:ring-orange-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Editar</button>
           </div>
         </form>
       </div>

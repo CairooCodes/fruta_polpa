@@ -77,14 +77,14 @@ function getCategorie($id)
                         <div class="grid grid-cols-6 gap-6">
                             <div class="col-span-6 sm:col-span-3">
                                 <label class="block mb-2 text-sm font-medium text-gray-900">Nome</label>
-                                <input name="name" type="text" value="<?php echo $categorie['name']; ?>" id="name" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5" placeholder="Nome da Categoria" required="">
+                                <input name="name" type="text" value="<?php echo $categorie['name']; ?>" id="name" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-orange-600 focus:border-orange-600 block w-full p-2.5" placeholder="Nome da Categoria" required="">
                             </div>
 
                             <input id="id" name="id" type="hidden" value="<?php echo $categorie['id']; ?>">
                         </div>
                     </div>
                     <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b">
-                        <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Editar</button>
+                        <button type="submit" class="text-white bg-orange-700 hover:bg-orange-800 focus:ring-4 focus:outline-none focus:ring-orange-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Editar</button>
                     </div>
                 </form>
             </div>

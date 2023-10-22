@@ -74,7 +74,7 @@ $categories = getCategoriesProducts()
               </div>
               <div class="col-span-6 sm:col-span-3">
                 <label for="categoria" class="block mb-2 text-sm font-medium text-gray-900">Categorias</label>
-                <select class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5" name="categorie_id">
+                <select class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-orange-600 focus:border-orange-600 block w-full p-2.5" name="categorie_id">
                   <?php foreach ($categories as $categorie) {
                     if ($categorie['id'] == $product[0]['categorie_id']) { ?>
                       <option value="<?php echo $categorie['id']; ?>"><?php echo $categorie['name']; ?> (selecionado)</option>

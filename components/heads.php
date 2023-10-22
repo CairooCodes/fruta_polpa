@@ -15,9 +15,9 @@
   <!-- Social media share -->
   <meta property="og:title" content="Fruta Polpa">
   <meta property="og:site_name" content="">
-  <meta property="og:url" content="https://boomempresarial.com.br/">
+  <meta property="og:url" content="https://frutapolpa.com.br/">
   <meta property="og:description" content="Fruta Polpa">
-  <meta property="og:image" content="https://boomempresarial.com.br/assets/img/logo.png">
+  <meta property="og:image" content="https://frutapolpa.com.br/assets/img/logo.png">
   <!-- Favicon -->
   <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/logo.png">
   <link rel="icon" type="image/png" sizes="32x32" href="<?php echo $URI->base("/assets/img/icon.png"); ?>">
@@ -28,6 +28,8 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.css" rel="stylesheet" />
   <script src="https://cdn.jsdelivr.net/npm/intersection-observer@0.12.2/intersection-observer.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <style>
     /* Estilo para esconder a navbar inicialmente */
     #navbar {

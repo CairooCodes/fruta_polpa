@@ -50,7 +50,7 @@ if ($stmt->rowCount() > 0) {
 
 <body>
   <?php include "./components/navbar.php" ?>
-  <div class="bg-gray-300  pt-16 pb-16">
+  <div class="bg-gray-300  pt-16 pb-10">
     <h1 class="text-center text-6xl">
       <?php echo $blog['name']; ?>
     </h1>
@@ -60,12 +60,15 @@ if ($stmt->rowCount() > 0) {
       <h2>
         <?php echo $blog['description']; ?>
       </h2>
-      <div>
-        <div class="mt-4 rounded-xl p-2 shadow-md shadow-blue-200">
-          <div class="flex justify-center">
-            <?php echo "<img class='lazy rounded-md object-cover blog-image' src=" . $URI->base('/admin/uploads/blogs') . '/' . $blog['img'] . '>' ?>
-          </div>
+      <div class="swiper swiper_blog">
+        <div class="swiper-wrapper">
+            <a class="swiper-slide">
+              <?php echo "<img class='lazy rounded-md object-cover blog-image' src=" . $URI->base('/admin/uploads/blogs') . '/' . $blog['img'] . '>' ?>
+            </a>
         </div>
+        <div class="swiper-button-next text-white"></div>
+        <div class="swiper-button-prev text-white"></div>
+        <div class="swiper-pagination swiper-pagination-blog-main"></div>
       </div>
     </div>
   </section>
@@ -80,6 +83,24 @@ if ($stmt->rowCount() > 0) {
   <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js"></script>
   <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script>
+		var swiper = new Swiper(".swiper_blog", {
+			loop: true,
+			autoplay: {
+				delay: 5000,
+				disableOnInteraction: false,
+			},
+			pagination: {
+				el: ".swiper-pagination-blog-main",
+				clickable: true,
+			},
+			navigation: {
+				nextEl: ".swiper-button-next",
+				prevEl: ".swiper-button-prev",
+			},
+		});
+	</script>
 </body>
 
 </html>

@@ -9,25 +9,23 @@ if (!empty($_GET['id'])) {
     $price = $_POST['price'];
     $categorie_id = $_POST['categorie_id'];
 
-    $uploadDir = '../uploads/products/';
-
-    $imgPath = null;
-
+    // Verificar se uma nova imagem de perfil foi enviada
     if (isset($_FILES['img']) && $_FILES['img']['error'] == UPLOAD_ERR_OK) {
+      $uploadDir = '../uploads/products/';
       $imgTmpName = $_FILES['img']['tmp_name'];
       $imgName = $_FILES['img']['name'];
-
       $uniqueName = uniqid() . '_' . $imgName;
 
       if (move_uploaded_file($imgTmpName, $uploadDir . $uniqueName)) {
-        $imgPath = $uniqueName;
+        // Atualizar o caminho da nova imagem no banco de dados
+        updateProductImage($id, $uniqueName);
       } else {
-        echo 'Erro ao fazer o upload da imagem.';
+        echo 'Erro ao fazer o upload da imagem de perfil.';
         exit;
       }
     }
 
-    updateProduct($id, $name, $img, $description, $price, $categorie_id);
+    updateProduct($id, $name, $description, $price, $categorie_id);
     header('Location: ../products.php');
     exit();
   }

@@ -71,31 +71,22 @@ $receita = getReceitas($id);
             <div class="grid grid-cols-6 gap-6">
               <div class="col-span-6 sm:col-span-3">
                 <label class="block mb-2 text-sm font-medium text-gray-900">Título</label>
-                <input name="name" type="text" value="<?php echo $receita[0]['name']; ?>" id="name" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5" placeholder="Nome da notícia" required="">
+                <input name="name" type="text" value="<?php echo $receita[0]['name']; ?>" id="name" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-orange-600 focus:border-orange-600 block w-full p-2.5" placeholder="Nome da notícia" required="">
               </div>
               <input id="id" name="id" type="hidden" value="<?php echo $receita[0]['id']; ?>">
               <div class="col-span-6 sm:col-span-3">
                 <label for="phone-number" class="block mb-2 text-sm font-medium text-gray-900">Imagem</label>
                 <input type="file" id="img" name="img">
               </div>
-              <!-- <div class="col-span-6 sm:col-span-3">
-                <label for="categoria" class="block mb-2 text-sm font-medium text-gray-900">Categorias</label>
-                <select class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5" name="categorie_id">
-                  <?php// foreach ($categories as $categorie) {
-                    //if ($categorie['id'] == $receita[0]['categorie_id']) { ?>
-                      <option value="<?php// echo $categorie['id']; ?>"><?php// echo $categorie['name']; ?> (selecionado)</option>
-                  <?php// }
-                  //} ?>
-                  <?php// foreach ($categories as $categorie) { ?>
-                    <option value="<?php// echo $categorie['id']; ?>"><?php// echo $categorie['name']; ?></option>
-                  <?php// } ?>
-                </select>
-              </div> -->
             </div>
             <textarea name="description" id="description" type="text"><?php echo $receita[0]['description']; ?></textarea>
+            <div class="col-span-6 sm:col-span-3">
+              <label class="block mb-2 text-sm font-medium text-gray-900">Imagens Adicionais</label>
+              <input name="imagens[]" type="file" accept="image/*" multiple id="imagens" class="shadow-sm border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-orange-600 focus:border-orange-600 block w-full p-2.5">
+            </div>
           </div>
           <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b">
-            <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Editar</button>
+            <button type="submit" class="text-white bg-orange-700 hover:bg-orange-800 focus:ring-4 focus:outline-none focus:ring-orange-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Editar</button>
           </div>
         </form>
       </div>

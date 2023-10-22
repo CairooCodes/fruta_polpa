@@ -9,13 +9,12 @@ function updateAbout($id, $texto)
   $stmt->execute();
 }
 
-function updateBanner($id, $name, $img)
+function updateBanner($id, $name)
 {
   global $pdo;
   if ($img) {
     $stmt = $pdo->prepare("UPDATE banners SET name = :name, img=:img WHERE id = :id");
     $stmt->bindParam(':name', $name);
-    $stmt->bindValue(':img', $img);
     $stmt->bindParam(':id', $id);
   } else {
     $stmt = $pdo->prepare("UPDATE banners SET name = :name WHERE id = :id");
@@ -25,13 +24,25 @@ function updateBanner($id, $name, $img)
   $stmt->execute();
 }
 
-function updateBlog($id, $name, $img, $description)
+function updateBannerImage($userId, $newImagePath)
+{
+  global $pdo;
+
+  try {
+    $sql = "UPDATE banners SET img = ? WHERE id = ?";
+    $stmt = $pdo->prepare($sql);
+    $stmt->execute([$newImagePath, $userId]);
+  } catch (PDOException $e) {
+    echo 'Erro ao atualizar a imagem de perfil: ' . $e->getMessage();
+  }
+}
+
+function updateBlog($id, $name, $description)
 {
   global $pdo;
   if ($img) {
-    $stmt = $pdo->prepare("UPDATE blogs SET name = :name, img=:img, description=:description WHERE id = :id");
+    $stmt = $pdo->prepare("UPDATE blogs SET name = :name, description=:description WHERE id = :id");
     $stmt->bindParam(':name', $name);
-    $stmt->bindValue(':img', $img);
     $stmt->bindParam(':description', $description);
     $stmt->bindParam(':id', $id);
   } else {
@@ -43,13 +54,25 @@ function updateBlog($id, $name, $img, $description)
   $stmt->execute();
 }
 
-function updateProduct($id, $name, $img, $description, $price, $categorie_id)
+function updateBlogImage($userId, $newImagePath)
+{
+  global $pdo;
+
+  try {
+    $sql = "UPDATE blogs SET img = ? WHERE id = ?";
+    $stmt = $pdo->prepare($sql);
+    $stmt->execute([$newImagePath, $userId]);
+  } catch (PDOException $e) {
+    echo 'Erro ao atualizar a imagem de perfil: ' . $e->getMessage();
+  }
+}
+
+function updateProduct($id, $name, $description, $price, $categorie_id)
 {
   global $pdo;
   if ($img) {
-    $stmt = $pdo->prepare("UPDATE products SET name = :name, img=:img, description=:description, price=:price, categorie_id = :categorie_id WHERE id = :id");
+    $stmt = $pdo->prepare("UPDATE products SET name = :name, description=:description, price=:price, categorie_id = :categorie_id WHERE id = :id");
     $stmt->bindParam(':name', $name);
-    $stmt->bindValue(':img', $img);
     $stmt->bindParam(':description', $description);
     $stmt->bindParam(':price', $price);
     $stmt->bindParam(':categorie_id', $categorie_id);
@@ -63,6 +86,19 @@ function updateProduct($id, $name, $img, $description, $price, $categorie_id)
     $stmt->bindParam(':id', $id);
   }
   $stmt->execute();
+}
+
+function updateProductImage($userId, $newImagePath)
+{
+  global $pdo;
+
+  try {
+    $sql = "UPDATE products SET img = ? WHERE id = ?";
+    $stmt = $pdo->prepare($sql);
+    $stmt->execute([$newImagePath, $userId]);
+  } catch (PDOException $e) {
+    echo 'Erro ao atualizar a imagem de perfil: ' . $e->getMessage();
+  }
 }
 
 function updateCategorie($id, $name)
@@ -80,13 +116,12 @@ function updateCategorie($id, $name)
   $stmt->execute();
 }
 
-function updateReceita($id, $name, $description, $img)
+function updateReceita($id, $name, $description)
 {
   global $pdo;
   if ($img) {
-    $stmt = $pdo->prepare("UPDATE receitas SET name = :name, img=:img, description=:description WHERE id = :id");
+    $stmt = $pdo->prepare("UPDATE receitas SET name = :name, description=:description WHERE id = :id");
     $stmt->bindParam(':name', $name);
-    $stmt->bindValue(':img', $img);
     $stmt->bindParam(':description', $description);
     $stmt->bindParam(':id', $id);
   } else {
@@ -98,5 +133,33 @@ function updateReceita($id, $name, $description, $img)
   $stmt->execute();
 }
 
+function updateReceitaImage($userId, $newImagePath)
+{
+  global $pdo;
+
+  try {
+    $sql = "UPDATE receitas SET img = ? WHERE id = ?";
+    $stmt = $pdo->prepare($sql);
+    $stmt->execute([$newImagePath, $userId]);
+  } catch (PDOException $e) {
+    echo 'Erro ao atualizar a imagem de perfil: ' . $e->getMessage();
+  }
+}
+
+// Função para atualizar as imagens do usuário
+function updateRceitaImages($userId, $newImagesPaths)
+{
+  global $pdo;
+
+  try {
+    // Atualizar o campo de imagens do usuário
+    $imagesPathsString = implode(',', $newImagesPaths);
+    $sqlUpdate = "UPDATE receitas SET imagens = ? WHERE id = ?";
+    $stmtUpdate = $pdo->prepare($sqlUpdate);
+    $stmtUpdate->execute([$imagesPathsString, $userId]);
+  } catch (PDOException $e) {
+    echo 'Erro ao atualizar as imagens do usuário: ' . $e->getMessage();
+  }
+}
 
 

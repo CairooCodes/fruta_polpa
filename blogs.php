@@ -20,7 +20,7 @@ $URI = new URI();
 
 <body>
     <?php include "./components/navbar.php" ?>
-    <div class="mx-auto max-w-7xl px-2 pt-32">
+    <div class="mx-auto max-w-7xl px-2 pt-10">
         <h1 class="text-orange-600 text-center text-3xl font-extrabold leading-9 tracking-tight sm:text-4xl sm:leading-10 md:text-left md:text-3xl md:leading-14">
             Blogs Fruta Polpa
         </h1>

@@ -4,16 +4,25 @@ require "../../functions/update.php";
 if (!empty($_GET['id'])) {
   if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $name = $_POST['name'];
-    $link = $_POST['link'];
     $id = $_POST['id'];
 
-    $img = null;
-
+    // Verificar se uma nova imagem de perfil foi enviada
     if (isset($_FILES['img']) && $_FILES['img']['error'] == UPLOAD_ERR_OK) {
-      $img = file_get_contents($_FILES['img']['tmp_name']);
+      $uploadDir = '../uploads/banners/';
+      $imgTmpName = $_FILES['img']['tmp_name'];
+      $imgName = $_FILES['img']['name'];
+      $uniqueName = uniqid() . '_' . $imgName;
+
+      if (move_uploaded_file($imgTmpName, $uploadDir . $uniqueName)) {
+        // Atualizar o caminho da nova imagem no banco de dados
+        updateBannerImage($id, $uniqueName);
+      } else {
+        echo 'Erro ao fazer o upload da imagem de perfil.';
+        exit;
+      }
     }
 
-    updateBanner($id, $name, $img);
+    updateBanner($id, $name);
     header('Location: ../banners.php');
     exit();
   }
