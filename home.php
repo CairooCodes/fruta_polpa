@@ -39,57 +39,8 @@ $URI = new URI();
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
-<script>
-$(document).ready(function() {
-  // Initialize Slick Slider
-  $(".slick-slider").slick({
-    prevArrow: $('.slick-prev'),
-    nextArrow: $('.slick-next'),
-  });
-});
-</script>
-  <script>
-    const carousel3Dswiper = new Swiper(".carousel-3D-swiper", {
-      loop: true,
-      effect: "coverflow",
-      grabCursor: true,
-      centeredSlides: true,
-      slidesPerView: 3,
-      coverflowEffect: {
-        rotate: 0,
-        stretch: 0,
-        depth: 350,
-        modifier: 1,
-        slideShadows: true
-      },
-      navigation: {
-        nextEl: ".swiper-button-next-blog",
-        prevEl: ".swiper-button-prev-blog",
-      },
-      pagination: {
-        el: ".swiper-pagination-blog"
-      }
-    });
-  </script>
-  <script>
-    var swiper = new Swiper(".swiper_banners", {
-      loop: true,
-      autoplay: {
-        delay: 5000,
-        disableOnInteraction: false,
-      },
-      pagination: {
-        el: ".swiper-pagination-banners-main",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-    });
-  </script>
   <script>
     var swiper = new Swiper(".swiper_products_type", {
       loop: true,
@@ -115,61 +66,6 @@ $(document).ready(function() {
       $('html, body').animate({
         scrollTop: targetOffset - 100
       }, 500);
-    });
-  </script>
-  <script>
-    var swiper = new Swiper(".mySwiper", {
-      autoplay: {
-        delay: 3000, // Time between slides in milliseconds (3 seconds)
-        disableOnInteraction: false, // Autoplay continues even when the user interacts with the swiper
-      },
-      freeMode: true,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      breakpoints: {
-        640: {
-          slidesPerView: 2,
-          spaceBetween: 20,
-        },
-        768: {
-          slidesPerView: 4,
-          spaceBetween: 40,
-        },
-        1024: {
-          slidesPerView: 5,
-          spaceBetween: 50,
-        },
-      },
-    });
-  </script>
-  <script>
-    var swiper = new Swiper(".mySwiper2", {
-      freeMode: true,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      breakpoints: {
-        640: {
-          slidesPerView: 1,
-          spaceBetween: 20,
-        },
-        768: {
-          slidesPerView: 1,
-          spaceBetween: 30,
-        },
-        1024: {
-          slidesPerView: 1,
-          spaceBetween: 40,
-        },
-      },
-      autoplay: {
-        delay: 3000,
-        disableOnInteraction: true,
-      },
-      loop: true,
     });
   </script>
   <script>
