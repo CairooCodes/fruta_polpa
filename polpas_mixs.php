@@ -21,19 +21,19 @@ $URI = new URI();
 
 <body>
     <?php include "./components/navbar.php" ?>
-    <div class="mx-auto max-w-7xl px-2 pt-10">
-        <h1 class="text-orange-600 text-center text-3xl font-extrabold leading-9 tracking-tight sm:text-4xl sm:leading-10 md:text-left md:text-3xl md:leading-14">
+    <div class="mx-auto px-2 pt-10">
+        <h1 class="text-orange-600 px-6 lg:px-28 text-center text-3xl font-extrabold leading-9 tracking-tight sm:text-4xl sm:leading-10 md:text-left md:text-3xl md:leading-14">
             Polpas Mix
         </h1>
-        <div class="lg:grid lg:grid-cols-2 max-w-full-2xl mx-auto px-10 lg:space-x-5">
-            <div class="pt-10 lg:col-span-3">
-                <div class="swiper swiper_polpas2">
-                    <div class="swiper-wrapper">
+        <div class="mx-auto px-6 lg:px-48">
+            <div class="">
+                <div class="swiper swiper_polpas2 py-8  ">
+                    <div class="swiper-wrapper ">
                         <?php foreach ($products2 as $product2) { ?>
                             <div class="swiper-slide my-4 mx-1">
-                                <div class="max-w-lg p-3 mx-auto rounded-md shadow-csc">
+                                <div class="max-w-lg p-3 mx-auto rounded-md shadow2">
                                     <div>
-                                        <img class='lazy rounded-md h-52 w-full' data-src='./admin/uploads/products/<?php echo $product2['img'] ?>'>
+                                        <img class='lazy rounded-md h-96 object-cover w-full' data-src='./admin/uploads/products/<?php echo $product2['img'] ?>'>
                                     </div>
                                     <div class="rounded-2xl text-center">
                                         <h3 class="post-title mb-4 text-lg font-semibold py-2"><?php echo $product2['name']; ?></h3>
@@ -48,6 +48,13 @@ $URI = new URI();
                         ?>
                     </div>
                 </div>
+                <div class="swiper-button-next font-black text-orange-500 hover:text-orange-700 lg:mr-12"></div>
+                <div class="swiper-button-prev font-black text-orange-500 hover:text-orange-700 lg:ml-12"></div>
+            </div>
+        </div>
+        <div>
+            <div class="flex justify-center mt-4">
+                <a href="" class="text-white bg-orange-500 focus:ring-4 rounded-3xl font-md text-md px-12 py-3 text-center font-black shadow-lg hover:bg-orange-700 hover:shadow-orange-700/50 duration-500 shadow-orange-500/50">ENCONTRE O DISTRIBUIDOR MAIS PRÓXIMO</a>
             </div>
         </div>
 
@@ -67,10 +74,13 @@ $URI = new URI();
         <script>
             var swiper = new Swiper(".swiper_polpas2", {
                 loop: true,
-                freeMode: true,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
                 breakpoints: {
                     300: {
-                        slidesPerView: 1.2,
+                        slidesPerView: 1,
                         spaceBetween: 20,
                     },
                     640: {
@@ -84,6 +94,13 @@ $URI = new URI();
                 },
             });
         </script>
+        <style>
+            .swiper-button-next,
+            .swiper-button-prev {
+                transform: scale(0.6);
+                /* Fator de escala desejado (0.8 reduzirá em 20%) */
+            }
+        </style>
 </body>
 
 </html>
