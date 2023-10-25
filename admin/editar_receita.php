@@ -60,13 +60,13 @@ $receita = getReceitas($id);
     <div class="max-w-7xl px-4 pb-8 mx-auto py-8">
       <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
         <form action="./controllers/edit_receita.php?id=<?php echo $receita[0]['id']; ?>" method="POST" enctype="multipart/form-data" class="relative bg-white rounded-lg shadow">
-          <!-- Modal header -->
+          
           <div class="flex items-start justify-between p-4 border-b rounded-t">
             <h3 class="text-xl font-semibold text-gray-900">
               Editar Receita
             </h3>
           </div>
-          <!-- Modal body -->
+         
           <div class="p-6 space-y-6">
             <div class="grid grid-cols-6 gap-6">
               <div class="col-span-6 sm:col-span-3">

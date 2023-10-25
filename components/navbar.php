@@ -84,13 +84,13 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
       <div class="items-center justify-center hidden w-full lg:flex lg:w-auto lg:order-1 py-1.5" id="mobile-menu-2">
         <ul class="flex flex-col lg:flex-row">
           <li class="py-2">
-            <a href="<?php echo $URI->base("home.php"); ?>" class="block py-2 uppercase text-xs rounded" aria-current="page">Home</a>
+            <a href="<?php echo $URI->base("home"); ?>" class="block py-2 uppercase text-xs rounded" aria-current="page">Home</a>
           </li>
           <li class="py-2">
-            <a href="<?php echo $URI->base("quem-somos"); ?>" class="block py-2 uppercase text-xs rounded" aria-current="page">Quem Somos</a>
+            <a href="<?php echo $URI->base("institucional"); ?>" class="block py-2 uppercase text-xs rounded" aria-current="page">Institucional</a>
           </li>
           <li class="py-2">
-            <a href="<?php echo $URI->base("products"); ?>" class="block py-2 uppercase text-xs rounded" aria-current="page">Produtos</a>
+            <a href="<?php echo $URI->base("polpas"); ?>" class="block py-2 uppercase text-xs rounded" aria-current="page">Polpas</a>
           </li>
           <li class="py-2">
             <a href="<?php echo $URI->base("blogs"); ?>" class="block py-2 uppercase text-xs rounded" aria-current="page">Blog</a>

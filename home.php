@@ -5,9 +5,9 @@ require "config/url.class.php";
 require "./functions/get.php";
 
 $banners = getBanners();
-$products = getAllProducts();
-$products1 = getProducts1();
-$products2 = getProducts2();
+$polpas = getAllPolpas();
+$polpas1 = getPolpas1();
+$polpas2 = getPolpas2();
 $blogs = getBlogs();
 $abouts = getAbouts();
 
@@ -21,15 +21,13 @@ $URI = new URI();
 </head>
 
 <body>
-  <!-- Start block -->
+
   <?php include "./components/navbar.php"; ?>
   <?php include "./components/banners.php"; ?>
-  <?php include "./components/quem-somos.php"; ?>
-
-  <?php include "./components/products_types.php"; ?>
-
+  <?php include "./components/institucional.php"; ?>
+  <?php include "./components/polpas_types.php"; ?>
   <?php include "./components/footer.php" ?>
-  <?php include "./components/modal_form_whats.php" ?>
+
   <script src="assets/js/tw.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>

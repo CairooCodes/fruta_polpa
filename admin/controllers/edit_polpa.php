@@ -12,7 +12,7 @@ if (!empty($_GET['id'])) {
     $info = $_POST['info'];
     $receita = $_POST['receita'];
 
-    // Verificar se uma nova imagem de perfil foi enviada
+  
     if (isset($_FILES['img']) && $_FILES['img']['error'] == UPLOAD_ERR_OK) {
       $uploadDir = '../uploads/products/';
       $imgTmpName = $_FILES['img']['tmp_name'];
@@ -20,19 +20,18 @@ if (!empty($_GET['id'])) {
       $uniqueName = uniqid() . '_' . $imgName;
 
       if (move_uploaded_file($imgTmpName, $uploadDir . $uniqueName)) {
-        // Atualizar o caminho da nova imagem no banco de dados
-        updateProductImage($id, $uniqueName);
+        updatePolpaImage($id, $uniqueName);
       } else {
         echo 'Erro ao fazer o upload da imagem de perfil.';
         exit;
       }
     }
 
-    updateProduct($id, $name, $description, $price, $categorie_id, $subject, $info, $receita);
-    header('Location: ../products.php');
+    updatePolpa($id, $name, $description, $price, $categorie_id, $subject, $info, $receita);
+    header('Location: ../polpas.php');
     exit();
   }
 } else {
-  header('Location: ../products.php');
+  header('Location: ../polpas.php');
   exit();
 }

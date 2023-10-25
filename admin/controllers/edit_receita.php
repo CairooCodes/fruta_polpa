@@ -8,15 +8,13 @@ if (!empty($_GET['id'])) {
     $description = $_POST['description'];
 
 
-    // Verificar se uma nova imagem de perfil foi enviada
+
     if (isset($_FILES['img']) && $_FILES['img']['error'] == UPLOAD_ERR_OK) {
       $uploadDir = '../uploads/receitas/';
       $imgTmpName = $_FILES['img']['tmp_name'];
       $imgName = $_FILES['img']['name'];
       $uniqueName = uniqid() . '_' . $imgName;
-
       if (move_uploaded_file($imgTmpName, $uploadDir . $uniqueName)) {
-        // Atualizar o caminho da nova imagem no banco de dados
         updateReceitaImage($id, $uniqueName);
       } else {
         echo 'Erro ao fazer o upload da imagem de perfil.';
@@ -24,7 +22,6 @@ if (!empty($_GET['id'])) {
       }
     }
 
-    // Verificar se novas imagens foram enviadas
     if (isset($_FILES['imagens']) && !empty($_FILES['imagens']['name'][0])) {
       $imagesDir = '../uploads/receitas/';
       $imagesPaths = array();
@@ -34,7 +31,6 @@ if (!empty($_GET['id'])) {
         $imageTmpName = $_FILES['imagens']['tmp_name'][$i];
         $imageName = $_FILES['imagens']['name'][$i];
         $imageUniqueName = uniqid() . '_' . $imageName;
-
         if (move_uploaded_file($imageTmpName, $imagesDir . $imageUniqueName)) {
           $imagesPaths[] = $imageUniqueName;
         } else {
@@ -43,7 +39,6 @@ if (!empty($_GET['id'])) {
         }
       }
 
-      // Atualizar as imagens no banco de dados
       updateReceitaImages($id, $imagesPaths);
     }
 

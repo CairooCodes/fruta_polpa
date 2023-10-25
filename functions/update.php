@@ -67,7 +67,7 @@ function updateBlogImage($userId, $newImagePath)
   }
 }
 
-function updateProduct($id, $name, $description, $price, $categorie_id, $subject, $info)
+function updatePolpa($id, $name, $description, $price, $categorie_id, $subject, $info)
 {
   global $pdo;
   if ($img) {
@@ -94,7 +94,7 @@ function updateProduct($id, $name, $description, $price, $categorie_id, $subject
   $stmt->execute();
 }
 
-function updateProductImage($userId, $newImagePath)
+function updatePolpaImage($userId, $newImagePath)
 {
   global $pdo;
 

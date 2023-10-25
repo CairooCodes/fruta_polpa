@@ -4,7 +4,6 @@ require "config/helper.php";
 require "config/url.class.php";
 require "./functions/get.php";
 
-$products = getProducts();
 $URI = new URI();
 
 ?>
@@ -82,10 +81,8 @@ $URI = new URI();
                 </form>
             </div>
     </section>
-
-
+    
     <?php include "./components/footer.php" ?>
-    <?php include "./components/modal_form_whats.php" ?>
 
     <script src="./assets/js/script.js"></script>
     <script src="./assets/js/lz.js"></script>

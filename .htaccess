@@ -4,11 +4,15 @@ RewriteCond %{HTTPS} off
 RewriteCond %{SCRIPT_FILENAME} !-f
 RewriteCond %{SCRIPT_FILENAME} !-d
 RewriteRule ^home$ home.php [QSA,L,NC]
-RewriteRule ^quem-somos$ quem-somos.php [QSA,L,NC]
+RewriteRule ^institucional$ institucional.php [QSA,L,NC]
 RewriteRule ^contato$ contato.php [QSA,L,NC]
-RewriteRule ^products$ products.php [QSA,L,NC]
-RewriteRule ^product\/([0-9A-z_-]+)$ product.php?slug=$1 [QSA,L,NC]
+RewriteRule ^trabalhe-conosco$ trabalhe-conosco.php [QSA,L,NC]
+RewriteRule ^polpas-tradicionais$ polpas-tradicionais.php [QSA,L,NC]
+RewriteRule ^polpas-mixs$ polpas-mixs.php [QSA,L,NC]
+RewriteRule ^polpas$ polpas.php [QSA,L,NC]
+RewriteRule ^polpa\/([0-9A-z_-]+)$ polpa.php?slug=$1 [QSA,L,NC]
 RewriteRule ^blogs$ blogs.php [QSA,L,NC]
 RewriteRule ^blog\/([0-9A-z_-]+)$ blog.php?slug=$1 [QSA,L,NC]
 RewriteRule ^receita\/([0-9A-z_-]+)$ receita.php?slug=$1 [QSA,L,NC]
 RewriteRule ^receitas$ receitas.php [QSA,L,NC]
+

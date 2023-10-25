@@ -15,7 +15,7 @@ function getAbouts()
   return $stmt->fetchAll(PDO::FETCH_ASSOC);
 }
 
-function getAllProducts()
+function getAllPolpas()
 {
   global $pdo;
   $stmt = $pdo->prepare("SELECT products.id, products.img, products.name, c.name as categorie_type FROM products INNER JOIN categories c ON products.categorie_id = c.id order by products.id desc;");
@@ -23,7 +23,7 @@ function getAllProducts()
   return $stmt->fetchAll(PDO::FETCH_ASSOC);
 }
 
-function getProducts1()
+function getPolpas1()
 {
   global $pdo;
   $stmt = $pdo->prepare("SELECT * FROM products where categorie_id = 1 order by id desc");
@@ -31,7 +31,7 @@ function getProducts1()
   return $stmt->fetchAll(PDO::FETCH_ASSOC);
 }
 
-function getProducts2()
+function getPolpas2()
 {
   global $pdo;
   $stmt = $pdo->prepare("SELECT * FROM products where categorie_id = 2 order by id desc");
@@ -39,7 +39,7 @@ function getProducts2()
   return $stmt->fetchAll(PDO::FETCH_ASSOC);
 }
 
-function getProduct($id)
+function getPolpa($id)
 {
   global $pdo;
   $stmt = $pdo->prepare("SELECT * FROM products WHERE id = :id");
@@ -48,7 +48,7 @@ function getProduct($id)
   return $stmt->fetch(PDO::FETCH_ASSOC);
 }
 
-function getCategoriesProducts()
+function getCategoriesPolpas()
 {
   global $pdo;
   $stmt = $pdo->prepare("SELECT * FROM categories WHERE type = 'Polpas' order by id desc");

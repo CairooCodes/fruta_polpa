@@ -49,8 +49,8 @@
         </a>
       </li>
       <li>
-        <a href="products.php" class="px-3 py-2 flex items-center space-x-3 rounded-md text-gray-800 group 
-        <?php if ($page == 'products') {
+        <a href="polpas.php" class="px-3 py-2 flex items-center space-x-3 rounded-md text-gray-800 group 
+        <?php if ($page == 'polpas') {
           echo 'bg-orange-600 text-white';
         } ?>">
           <i class="bi bi-cart"></i>

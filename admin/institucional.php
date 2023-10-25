@@ -35,14 +35,14 @@ $page = 'quem-somos';
         <!-- Modal header -->
         <div class="flex items-start justify-between p-4 border-b rounded-t">
           <h3 class="text-xl font-semibold text-gray-900">
-            Quem Somos
+            Institucional
           </h3>
         </div>
-        <!-- Modal body -->
+        
         <div class="p-6 space-y-6">
           <textarea name="texto" id="texto" type="text"><?php echo $about['texto']; ?></textarea>
           <input id="id" name="id" type="hidden" value="<?php echo $about['id']; ?>">
-          <!-- Modal footer -->
+         
           <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b">
             <button type="submit" class="text-white bg-orange-600 hover:bg-orange-800 focus:ring-4 focus:outline-none focus:ring-orange-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Atualizar quem somos</button>
           </div>

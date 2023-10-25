@@ -16,15 +16,15 @@ $stmt->execute([$user_id]);
 $user = $stmt->fetch();
 
 $receitas = getAllReceitas();
-$products = getAllProducts();
-$categories = getCategoriesProducts();
-$page = 'products';
+$polpas = getAllPolpas();
+$categories = getCategoriesPolpas();
+$page = 'polpas';
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
-  <title>Produtos Fruta Polpa</title>
+  <title>Polpas Fruta Polpa</title>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -66,7 +66,7 @@ $page = 'products';
               <div id="dropdownAction" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44">
                 <ul class="py-1 text-sm text-gray-700" aria-labelledby="dropdownActionButton">
                   <li>
-                    <button data-modal-target="addProductModal" data-modal-show="addProductModal" class="block px-4 py-2 hover:bg-gray-100">Adicionar Produto</button>
+                    <button data-modal-target="addPolpaModal" data-modal-show="addPolpaModal" class="block px-4 py-2 hover:bg-gray-100">Adicionar Polpa</button>
                   </li>
                   <li>
                     <a href="#" class="block px-4 py-2 hover:bg-gray-100">Exportar Dados</a>
@@ -99,28 +99,28 @@ $page = 'products';
             </tr>
           </thead>
           <tbody>
-            <?php foreach ($products as $product) { ?>
+            <?php foreach ($polpas as $polpa) { ?>
               <tr class="bg-white border-b">
                 <th scope="row" class="flex items-center px-6 py-4 text-gray-900 whitespace-nowrap">
                   <div>
-                    <img class='lazy w-10' data-src='./uploads/products/<?php echo $product['img']; ?>'></img>
+                    <img class='lazy w-10' data-src='./uploads/polpas/<?php echo $polpa['img']; ?>'></img>
                   </div>
                   <div class="pl-3">
-                    <div class="text-base font-semibold"><?php echo $product['name']; ?></div>
+                    <div class="text-base font-semibold"><?php echo $polpa['name']; ?></div>
                   </div>
                 </th>
                 <th class="px-6 py-3">
-                  <?php echo $product['categorie_type']; ?>
+                  <?php echo $polpa['categorie_type']; ?>
                 </th>
                 <td class="px-6 py-4">
-                  <a href="./editar_product.php?id=<?php echo $product['id']; ?>" type="button" class="font-medium text-blue-600 hover:underline">Editar</a>
-                  <a href="./controllers/delete_product.php?id=<?php echo $product['id']; ?>" type="button" class="font-medium text-red-600 hover:underline">Excluir</a>
+                  <a href="./editar_polpa.php?id=<?php echo $polpa['id']; ?>" type="button" class="font-medium text-blue-600 hover:underline">Editar</a>
+                  <a href="./controllers/delete_polpa.php?id=<?php echo $polpa['id']; ?>" type="button" class="font-medium text-red-600 hover:underline">Excluir</a>
                 </td>
               </tr>
             <?php } ?>
           </tbody>
         </table>
-        <?php include "./components/modal_add_product.php"; ?>
+        <?php include "./components/modal_add_polpa.php"; ?>
       </div>
     </div>
   </div>

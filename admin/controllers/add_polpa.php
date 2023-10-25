@@ -12,7 +12,7 @@ $receita = $_POST['receita'];
 $dom = new DOMDocument();
 $dom->loadHTML($description);
 
-$uploadDir = '../uploads/products/';
+$uploadDir = '../uploads/polpas/';
 
 $imgPath = null;
 
@@ -35,4 +35,4 @@ $new_description = $dom->saveHTML();
 $sql = "INSERT INTO products (name, img, description, price, categorie_id, subject, info, receita) VALUES (?,?,?,?,?,?,?,?)";
 $stmt = $pdo->prepare($sql);
 $stmt->execute([$name, $imgPath, $description, $price, $categorie_id, $subject, $info, $receita]);  
-header('Location: ../products.php');
+header('Location: ../polpas.php');

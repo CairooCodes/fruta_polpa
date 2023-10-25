@@ -16,8 +16,8 @@ $stmt->execute([$user_id]);
 $user = $stmt->fetch();
 
 $id = $_GET['id'];
-$product = getProduct($id);
-$categories = getCategoriesProducts();
+$polpa = getPolpa($id);
+$categories = getCategoriesPolpas();
 $receitas = getAllReceitas();
 
 ?>
@@ -25,7 +25,7 @@ $receitas = getAllReceitas();
 <html lang="pt-br">
 
 <head>
-  <title>Produtos Fruta Polpa</title>
+  <title>Polpas Fruta Polpa</title>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -54,20 +54,20 @@ $receitas = getAllReceitas();
     <?php include "components/header.php" ?>
     <div class="max-w-7xl px-4 pb-8 mx-auto py-8">
       <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
-        <form action="./controllers/edit_product.php?id=<?php echo $product['id']; ?>" method="POST" enctype="multipart/form-data" class="relative bg-white rounded-lg shadow">
-          <!-- Modal header -->
+        <form action="./controllers/edit_polpa.php?id=<?php echo $polpa['id']; ?>" method="POST" enctype="multipart/form-data" class="relative bg-white rounded-lg shadow">
+         
           <div class="flex items-start justify-between p-4 border-b rounded-t">
             <h3 class="text-xl font-semibold text-gray-900">
-              Editar Produto
+              Editar Polpa
             </h3>
           </div>
-          <!-- Modal body -->
+       
           <div class="p-6 space-y-6">
             <div class="grid grid-cols-6 gap-6">
-              <input id="id" name="id" type="hidden" value="<?php echo $product['id']; ?>">
+              <input id="id" name="id" type="hidden" value="<?php echo $polpa['id']; ?>">
               <div class="col-span-6 sm:col-span-3">
                 <label class="block mb-2 text-sm font-medium text-gray-900">Nome</label>
-                <input name="name" type="text" value="<?php echo $product['name']; ?>" id="name" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-orange-600 focus:border-orange-600 block w-full p-2.5" placeholder="Nome do Serviço" required="">
+                <input name="name" type="text" value="<?php echo $polpa['name']; ?>" id="name" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-orange-600 focus:border-orange-600 block w-full p-2.5" placeholder="Nome do Serviço" required="">
               </div>
               <div class="col-span-6 sm:col-span-3">
                 <label for="phone-number" class="block mb-2 text-sm font-medium text-gray-900">Imagem</label>
@@ -77,7 +77,7 @@ $receitas = getAllReceitas();
                 <label for="categoria" class="block mb-2 text-sm font-medium text-gray-900">Categorias</label>
                 <select class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-orange-600 focus:border-orange-600 block w-full p-2.5" name="categorie_id">
                   <?php foreach ($categories as $categorie) {
-                    if ($categorie['id'] == $product[0]['categorie_id']) { ?>
+                    if ($categorie['id'] == $polpa[0]['categorie_id']) { ?>
                       <option value="<?php echo $categorie['id']; ?>"><?php echo $categorie['name']; ?> (selecionado)</option>
                   <?php }
                   } ?>
@@ -90,7 +90,7 @@ $receitas = getAllReceitas();
                 <label for="receita" class="block mb-2 text-sm font-medium text-gray-900">Receitas</label>
                 <select class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-orange-600 focus:border-orange-600 block w-full p-2.5" name="categorie_id">
                   <?php foreach ($receitas as $receita) {
-                    if ($receita['id'] == $product[0]['receita']) { ?>
+                    if ($receita['id'] == $polpa[0]['receita']) { ?>
                       <option value="<?php echo $receita['id']; ?>"><?php echo $receita['name']; ?> (selecionado)</option>
                   <?php }
                   } ?>
@@ -102,19 +102,19 @@ $receitas = getAllReceitas();
             </div>
             <div class="col-span-6 sm:col-span-3">
               <label class="block mb-2 text-sm font-medium text-gray-900">Preço</label>
-              <input name="price" type="text" value="<?php echo $product['price']; ?>" id="price" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-orange-600 focus:border-orange-600 block w-full p-2.5" placeholder="Preço do Serviço" required="">
+              <input name="price" type="text" value="<?php echo $polpa['price']; ?>" id="price" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-orange-600 focus:border-orange-600 block w-full p-2.5" placeholder="Preço do Serviço" required="">
             </div>
             <div>
               <label class="block text-sm font-medium text-gray-900">Introdução</label>
-              <textarea name="subject" id="subject" type="text"><?php echo $product['subject']; ?></textarea>
+              <textarea name="subject" id="subject" type="text"><?php echo $polpa['subject']; ?></textarea>
             </div>
             <div>
               <label class="block text-sm font-medium text-gray-900">informações Nutricionais</label>
-              <textarea name="info" id="info" type="text"><?php echo $product['info']; ?></textarea>
+              <textarea name="info" id="info" type="text"><?php echo $polpa['info']; ?></textarea>
             </div>
             <div>
               <label class="block text-sm font-medium text-gray-900">Descrição</label>
-              <textarea name="description" id="description" type="text"><?php echo $product['description']; ?></textarea>
+              <textarea name="description" id="description" type="text"><?php echo $polpa['description']; ?></textarea>
             </div>
           </div>
           <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b">

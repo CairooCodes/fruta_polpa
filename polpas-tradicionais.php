@@ -4,7 +4,7 @@ require "config/helper.php";
 require "config/url.class.php";
 require "./functions/get.php";
 
-$products1 = getProducts1();
+$polpas1 = getPolpas1();
 
 $URI = new URI();
 
@@ -29,17 +29,17 @@ $URI = new URI();
       <div class="pt-10 lg:col-span-4">
         <div class="swiper swiper_polpas1">
           <div class="swiper-wrapper">
-            <?php foreach ($products1 as $product1) { ?>
+            <?php foreach ($polpas1 as $polpa1) { ?>
               <div class="swiper-slide my-4 mx-1">
                 <div class="max-w-lg p-3 mx-auto rounded-md shadow-csc">
                   <div>
-                    <img class='lazy rounded-md h-52 w-full' data-src='./admin/uploads/products/<?php echo $product1['img'] ?>'>
+                    <img class='lazy rounded-md h-52 w-full' data-src='./admin/uploads/polpas/<?php echo $polpa1['img'] ?>'>
                   </div>
                   <div class="rounded-2xl text-center">
-                    <h3 class="post-title mb-4 text-lg font-semibold py-2"><?php echo $product1['name']; ?></h3>
+                    <h3 class="post-title mb-4 text-lg font-semibold py-2"><?php echo $polpa1['name']; ?></h3>
                   </div>
                   <div class="flex justify-center mt-4">
-                    <a href="<?php echo $URI->base('noticia/' . slugify($product1['name'])); ?>" class="text-white bg-orange-500 focus:ring-4 rounded-md font-md text-md px-5 py-2 text-center">Saiba mais</a>
+                    <a href="<?php echo $URI->base('noticia/' . slugify($polpa1['name'])); ?>" class="text-white bg-orange-500 focus:ring-4 rounded-md font-md text-md px-5 py-2 text-center">Saiba mais</a>
                   </div>
                 </div>
               </div>
@@ -52,7 +52,6 @@ $URI = new URI();
 
 
     <?php include "./components/footer.php" ?>
-    <?php include "./components/modal_form_whats.php" ?>
 
     <script src="./assets/js/script.js"></script>
     <script src="./assets/js/lz.js"></script>

@@ -4,7 +4,7 @@ require "config/helper.php";
 require "config/url.class.php";
 require "./functions/get.php";
 
-$products2 = getProducts2();
+$polpas2 = getPolpas2();
 
 $URI = new URI();
 
@@ -29,17 +29,17 @@ $URI = new URI();
             <div class="">
                 <div class="swiper swiper_polpas2 py-8  ">
                     <div class="swiper-wrapper ">
-                        <?php foreach ($products2 as $product2) { ?>
+                        <?php foreach ($polpas2 as $polpa2) { ?>
                             <div class="swiper-slide my-4 mx-1">
                                 <div class="max-w-lg p-3 mx-auto rounded-md shadow2">
                                     <div>
-                                        <img class='lazy rounded-md h-96 object-cover w-full' data-src='./admin/uploads/products/<?php echo $product2['img'] ?>'>
+                                        <img class='lazy rounded-md h-96 object-cover w-full' data-src='./admin/uploads/polpas/<?php echo $polpa2['img'] ?>'>
                                     </div>
                                     <div class="rounded-2xl text-center">
-                                        <h3 class="post-title mb-4 text-lg font-semibold py-2"><?php echo $product2['name']; ?></h3>
+                                        <h3 class="post-title mb-4 text-lg font-semibold py-2"><?php echo $polpa2['name']; ?></h3>
                                     </div>
                                     <div class="flex justify-center mt-4">
-                                        <a href="<?php echo $URI->base('noticia/' . slugify($product2['name'])); ?>" class="text-white bg-orange-500 focus:ring-4 rounded-md font-md text-md px-5 py-2 text-center">Saiba mais</a>
+                                        <a href="<?php echo $URI->base('noticia/' . slugify($polpa2['name'])); ?>" class="text-white bg-orange-500 focus:ring-4 rounded-md font-md text-md px-5 py-2 text-center">Saiba mais</a>
                                     </div>
                                 </div>
                             </div>
@@ -59,7 +59,6 @@ $URI = new URI();
         </div>
 
         <?php include "./components/footer.php" ?>
-        <?php include "./components/modal_form_whats.php" ?>
 
         <script src="./assets/js/script.js"></script>
         <script src="./assets/js/lz.js"></script>
