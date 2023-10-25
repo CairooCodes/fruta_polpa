@@ -25,7 +25,7 @@ $URI = new URI();
   <?php include "./components/navbar.php"; ?>
   <?php include "./components/banners.php"; ?>
   <?php include "./components/institucional.php"; ?>
-  <?php include "./components/polpas_types.php"; ?>
+  <?php include "./components/polpas-types.php"; ?>
   <?php include "./components/footer.php" ?>
 
   <script src="assets/js/tw.js"></script>

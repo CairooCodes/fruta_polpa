@@ -8,7 +8,7 @@
         <div style="background: rgb(252,114,0);
 background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(224,148,148,1) 100%);" class="bg-bottom rounded-b-2xl">
           <div class="flex justify-center pb-5">
-            <a href="<?php echo $URI->base('/product/teste.php'); ?>">
+            <a href="<?php echo $URI->base("polpas-tradicionais"); ?>">
               <h3 class="text-xl text-green-800 text-center font pt-6 mb-2" style="font-family: 'Poppins';">100% naturais</h3>
               <h3 class="text-4xl text-white text-center font-black mb-2">Polpas</h3>
               <button class="hover:bg-slate-100 hover:text-gray-900 text-sm text-white py-2 px-4 rounded-full border-2 border-gray mt-4">
@@ -24,7 +24,7 @@ background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(224,148,148,1) 10
         <img class='lazy object-cover h-full px-3' data-src='./assets/img/mix_refrescante.jpg'>
         <div style="background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(224,148,148,1) 100%);" class="bg-bottom rounded-b-2xl">
           <div class="flex justify-center pb-5">
-            <a href="<?php echo $URI->base('/product/teste.php'); ?>">
+            <a href="<?php echo $URI->base("polpas-mixs"); ?>">
               <h3 class="text-xl text-green-800 text-center font pt-6 mb-2" style="font-family: 'Poppins';">100% naturais</h3>
               <h3 class="text-4xl text-white text-center font-black mb-2">Polpas</h3>
               <button class="hover:bg-slate-100 hover:text-gray-900 text-sm text-white py-2 px-4 rounded-full border-2 border-gray mt-4">

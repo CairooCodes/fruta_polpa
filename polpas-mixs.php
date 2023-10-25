@@ -53,8 +53,8 @@ $URI = new URI();
             </div>
         </div>
         <div>
-            <div class="flex justify-center mt-4">
-                <a href="" class="text-white bg-orange-500 focus:ring-4 rounded-3xl font-md text-md px-12 py-3 text-center font-black shadow-lg hover:bg-orange-700 hover:shadow-orange-700/50 duration-500 shadow-orange-500/50">ENCONTRE O DISTRIBUIDOR MAIS PRÓXIMO</a>
+            <div class="flex justify-center px-4 py-8">
+                <a href="#" class="text-white bg-orange-500 focus:ring-4 rounded-3xl font-md text-md px-12 py-3 text-center font-black shadow-lg hover:bg-orange-700 hover:shadow-orange-700/50 duration-500 shadow-orange-500/50">ENCONTRE O DISTRIBUIDOR MAIS PRÓXIMO</a>
             </div>
         </div>
 
