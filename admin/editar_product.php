@@ -17,7 +17,8 @@ $user = $stmt->fetch();
 
 $id = $_GET['id'];
 $product = getProduct($id);
-$categories = getCategoriesProducts()
+$categories = getCategoriesProducts();
+$receitas = getAllReceitas();
 
 ?>
 <!DOCTYPE html>
@@ -85,13 +86,36 @@ $categories = getCategoriesProducts()
                   <?php } ?>
                 </select>
               </div>
+              <div class="col-span-6 sm:col-span-3">
+                <label for="receita" class="block mb-2 text-sm font-medium text-gray-900">Receitas</label>
+                <select class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-orange-600 focus:border-orange-600 block w-full p-2.5" name="categorie_id">
+                  <?php foreach ($receitas as $receita) {
+                    if ($receita['id'] == $product[0]['receita']) { ?>
+                      <option value="<?php echo $receita['id']; ?>"><?php echo $receita['name']; ?> (selecionado)</option>
+                  <?php }
+                  } ?>
+                  <?php foreach ($receitas as $receita) { ?>
+                    <option value="<?php echo $receita['id']; ?>"><?php echo $receita['name']; ?></option>
+                  <?php } ?>
+                </select>
+              </div>
             </div>
             <div class="col-span-6 sm:col-span-3">
               <label class="block mb-2 text-sm font-medium text-gray-900">Preço</label>
               <input name="price" type="text" value="<?php echo $product['price']; ?>" id="price" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-orange-600 focus:border-orange-600 block w-full p-2.5" placeholder="Preço do Serviço" required="">
             </div>
-            <label class="block text-sm font-medium text-gray-900">Descrição</label>
-            <textarea name="description" id="description" type="text"><?php echo $product['description']; ?></textarea>
+            <div>
+              <label class="block text-sm font-medium text-gray-900">Introdução</label>
+              <textarea name="subject" id="subject" type="text"><?php echo $product['subject']; ?></textarea>
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-gray-900">informações Nutricionais</label>
+              <textarea name="info" id="info" type="text"><?php echo $product['info']; ?></textarea>
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-gray-900">Descrição</label>
+              <textarea name="description" id="description" type="text"><?php echo $product['description']; ?></textarea>
+            </div>
           </div>
           <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b">
             <button type="submit" class="text-white bg-orange-700 hover:bg-orange-800 focus:ring-4 focus:outline-none focus:ring-orange-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Editar</button>
@@ -101,6 +125,20 @@ $categories = getCategoriesProducts()
     </div>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
+  <script>
+    tinymce.init({
+      selector: '#subject',
+      plugins: 'print preview powerpaste casechange importcss tinydrive searchreplace autolink autosave save directionality advcode visualblocks visualchars fullscreen image link media mediaembed template codesample table charmap hr pagebreak nonbreaking anchor toc insertdatetime advlist lists checklist wordcount tinymcespellchecker a11ychecker imagetools textpattern noneditable help formatpainter permanentpen pageembed charmap tinycomments mentions quickbars linkchecker emoticons advtable export',
+      toolbar: 'undo redo | bold italic underline strikethrough | fontselect fontsizeselect formatselect | alignleft aligncenter alignright alignjustify | outdent indent |  numlist bullist checklist | forecolor backcolor casechange permanentpen formatpainter removeformat | pagebreak | charmap emoticons | fullscreen  preview save print | insertfile image media pageembed template link anchor codesample | a11ycheck ltr rtl | showcomments addcomment'
+    });
+  </script>
+  <script>
+    tinymce.init({
+      selector: '#info',
+      plugins: 'print preview powerpaste casechange importcss tinydrive searchreplace autolink autosave save directionality advcode visualblocks visualchars fullscreen image link media mediaembed template codesample table charmap hr pagebreak nonbreaking anchor toc insertdatetime advlist lists checklist wordcount tinymcespellchecker a11ychecker imagetools textpattern noneditable help formatpainter permanentpen pageembed charmap tinycomments mentions quickbars linkchecker emoticons advtable export',
+      toolbar: 'undo redo | bold italic underline strikethrough | fontselect fontsizeselect formatselect | alignleft aligncenter alignright alignjustify | outdent indent |  numlist bullist checklist | forecolor backcolor casechange permanentpen formatpainter removeformat | pagebreak | charmap emoticons | fullscreen  preview save print | insertfile image media pageembed template link anchor codesample | a11ycheck ltr rtl | showcomments addcomment'
+    });
+  </script>
   <script>
     tinymce.init({
       selector: '#description',

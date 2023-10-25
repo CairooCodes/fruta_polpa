@@ -22,6 +22,9 @@ $URI = new URI();
 
 <body>
     <?php include "./components/navbar.php" ?>
+    <div>
+        <img src="./assets/img/polpas.png" alt="polpas">
+    </div>
     <div class="mx-auto max-w-7xl px-2 pt-10">
         <h1 class="text-orange-600 text-center text-3xl font-extrabold leading-9 tracking-tight sm:text-4xl sm:leading-10 md:text-left md:text-3xl md:leading-14">
             Polpas Tradicionais
@@ -31,14 +34,11 @@ $URI = new URI();
             <?php foreach ($products1 as $product1) { ?>
                 <div>
                     <div class="mb-8 mt-4 items-center rounded-xl p-2">
-                        <h1 class="text-orange-600 title-font mb-3 text-lg font-semibold text-center">
-                            <?php echo $product1['name']; ?>
-                        </h1>
                         <img class='custom-image' src='./admin/uploads/products/<?php echo $product1['img']; ?>'>
                     </div>
 
                     <div class="flex justify-center mt-4">
-                        <a href="<?php echo $URI->base('/product/' . slugify($product1['name'])); ?>" class="text-white bg-orange-600 focus:ring-4 rounded-md font-md text-md px-5 py-2 text-center">Saiba mais</a>
+                        <a href="<?php echo $URI->base('/product/' . slugify($product1['name'])); ?>" class="text-orange-600 border-2 border-orange-600 bg-white rounded-full font-semibold text-lg px-5 py-2 text-center hover:bg-orange-600 hover:text-white"><?php echo $product1['name']; ?></a>
                     </div>
                 </div>
 
@@ -56,14 +56,11 @@ $URI = new URI();
             <?php foreach ($products2 as $product2) { ?>
                 <div>
                     <div class="mb-8 mt-4 items-center rounded-xl p-2">
-                        <h1 class="text-orange-600 title-font mb-3 text-lg font-semibold text-center">
-                            <?php echo $product2['name']; ?>
-                        </h1>
                         <img class='custom-image' src='./admin/uploads/products/<?php echo $product2['img']; ?>'>
                     </div>
 
                     <div class="flex justify-center mt-4">
-                        <a href="<?php echo $URI->base('/product/' . slugify($product2['name'])); ?>" class="text-white bg-orange-600 focus:ring-4 rounded-md font-md text-md px-5 py-2 text-center">Saiba mais</a>
+                        <a href="<?php echo $URI->base('/product/' . slugify($product2['name'])); ?>" class="text-orange-600 border-2 border-orange-600 bg-white rounded-full font-semibold text-lg px-5 py-2 text-center hover:bg-orange-600 hover:text-white"><?php echo $product2['name']; ?></a>
                     </div>
                 </div>
 

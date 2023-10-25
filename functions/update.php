@@ -67,22 +67,28 @@ function updateBlogImage($userId, $newImagePath)
   }
 }
 
-function updateProduct($id, $name, $description, $price, $categorie_id)
+function updateProduct($id, $name, $description, $price, $categorie_id, $subject, $info)
 {
   global $pdo;
   if ($img) {
-    $stmt = $pdo->prepare("UPDATE products SET name = :name, description=:description, price=:price, categorie_id = :categorie_id WHERE id = :id");
+    $stmt = $pdo->prepare("UPDATE products SET name = :name, description=:description, price=:price, categorie_id = :categorie_id, subject=:subject, info=:info, receita=:receita WHERE id = :id");
     $stmt->bindParam(':name', $name);
     $stmt->bindParam(':description', $description);
     $stmt->bindParam(':price', $price);
     $stmt->bindParam(':categorie_id', $categorie_id);
+    $stmt->bindParam(':subject', $subject);
+    $stmt->bindParam(':info', $info);
+    $stmt->bindParam(':receita', $receita);
     $stmt->bindParam(':id', $id);
   } else {
-    $stmt = $pdo->prepare("UPDATE products SET name = :name, description=:description, price=:price, categorie_id = :categorie_id WHERE id = :id");
+    $stmt = $pdo->prepare("UPDATE products SET name = :name, description=:description, price=:price, categorie_id = :categorie_id, subject=:subject, info=:info, receita=:receita WHERE id = :id");
     $stmt->bindParam(':name', $name);
     $stmt->bindParam(':description', $description);
     $stmt->bindParam(':price', $price);
     $stmt->bindParam(':categorie_id', $categorie_id);
+    $stmt->bindParam(':subject', $subject);
+    $stmt->bindParam(':info', $info);
+    $stmt->bindParam(':receita', $receita);
     $stmt->bindParam(':id', $id);
   }
   $stmt->execute();

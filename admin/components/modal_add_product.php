@@ -1,5 +1,5 @@
 <div id="addProductModal" tabindex="-1" aria-hidden="true" class="fixed z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] md:h-full">
-  <div class="relative w-full h-full max-w-7xl md:h-auto">
+  <div class="relative w-full h-full max-w-7xl md:h-auto mt-96">
     <!-- Modal content -->
     <form action="./controllers/add_product.php" method="post" enctype="multipart/form-data" class="relative bg-white rounded-lg shadow">
       <!-- Modal header -->
@@ -33,12 +33,32 @@
             </select>
             <a href="categorias.php" class="text-sm font-medium text-gray-700"><i class="bi bi-plus-circle"></i> Adicionar Categoria</a>
           </div>
+          <div class="col-span-6 sm:col-span-3">
+            <label for="receita" class="block text-sm font-medium text-gray-900">Receitas de Polpas</label>
+            <select class="uppercase shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2" name="receitas">
+              <?php foreach ($receitas as $receita) { ?>
+                <option value="<?php echo $receita['id']; ?>"><?php echo $receita['name']; ?></option>
+              <?php } ?>
+            </select>
+            <a href="receitas.php" class="text-sm font-medium text-gray-700"><i class="bi bi-plus-circle"></i> Adicionar Receita</a>
+          </div>
         </div>
         <div class="col-span-6 sm:col-span-3">
           <label for="last-name" class="block mb-2 text-sm font-medium text-gray-900">Preço</label>
           <input type="text" name="price" id="price" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-orange-600 focus:border-orange-600 block w-full p-2.5" placeholder="Valor" required="">
         </div>
-        <textarea name="description" id="description"></textarea>
+        <div>
+          <label class="block text-sm font-medium text-gray-900">Introdução</label>
+          <textarea name="subject" id="subject"></textarea>
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-gray-900">Informações Nutricionais</label>
+          <textarea name="info" id="info"></textarea>
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-gray-900">Descrição</label>
+          <textarea name="description" id="description"></textarea>
+        </div>
         <!-- Modal footer -->
         <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b">
           <button type="submit" class="text-white bg-orange-700 hover:bg-orange-800 focus:ring-4 focus:outline-none focus:ring-orange-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Cadastrar Produto</button>

@@ -1,86 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Owl Carousel Example with Custom Navigation</title>
-    <!-- Include jQuery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <!-- Include Owl Carousel CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
     <style>
-        .linha2 {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            margin: 0;
+            padding: 0;
         }
 
-        .col-xs-3 {
-            width: 25%;
+        .timeline {
+            position: relative;
+            margin: 50px auto;
+            width: 90%;
+            height: 4px;
+            background: #007bff;
         }
 
-        .dotlinha {
-            border-left: 2px solid #00284a;
-            padding-left: 20px;
-            margin-left: -20px;
+        .event {
+            position: absolute;
+            width: 24px;
+            height: 24px;
+            background: #007bff;
+            border-radius: 50%;
+            transform: translateX(-50%);
+            cursor: pointer;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
         }
 
-        .dotlinha2 {
-            border-left: 2px solid #00284a;
-            padding-left: 20px;
-            margin-left: -20px;
+        .event:hover {
+            background: #ff5733;
+        }
+
+        .event-label {
+            position: absolute;
+            top: 70px;
+            text-align: center;
+            width: 150px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-weight: bold;
+            background: #fff;
+            padding: 10px;
+            border-radius: 6px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            margin: 30px 0;
+            color: #007bff;
         }
     </style>
 </head>
-
 <body>
-    <div class="container-fluid linha2" name="Container_653047e33a5ab" id="_858523062_1621449915">
-        <!-- Década de 30 -->
-        <div class="col-xs-3">
-            <div class="dotlinha">
-                <p style="color: #002c4a;">
-                    <strong><span style="font-size: 20px; letter-spacing: 2px;">DÉCADA DE 30</span></strong>
-                    <br>
-                    <span style="font-size: 14px;">Início da plantação de frutas</span>
-                </p>
-            </div>
-        </div>
-
-        <!-- Década de 70 -->
-        <div class="col-xs-3">
-            <div class="dotlinha">
-                <p style="color: #002c4a;">
-                    <strong><span style="font-size: 20px; letter-spacing: 2px;">DÉCADA DE 70</span></strong>
-                    <br>
-                    <span style="font-size: 14px;">Pré processamento de morango para indústrias de iogurte</span>
-                </p>
-            </div>
-        </div>
-
-        <!-- Década de 90 -->
-        <div class="col-xs-3">
-            <div class="dotlinha">
-                <p style="color: #002c4a;">
-                    <strong><span style="font-size: 20px; letter-spacing: 2px;">DÉCADA DE 90</span></strong>
-                    <br>
-                    <span style="font-size: 14px;">Início das Distribuidoras DM</span>
-                </p>
-            </div>
-        </div>
-
-        <!-- 2008 -->
-        <div class="col-xs-3">
-            <div class="dotlinha">
-                <p style="color: #002c4a;">
-                    <strong><span style="font-size: 20px; letter-spacing: 2px;">2008</span></strong>
-                    <br>
-                    <span style="font-size: 14px;">Início das Lojas de FLV</span>
-                </p>
-            </div>
-        </div>
+    <h1>Linha do Tempo da Empresa Fruta Polpa</h1>
+    <div class="timeline">
+        <div class="event" style="left: 10%;"></div>
+        <div class="event-label" style="left: 10%;">Fundação (2005)</div>
+        <div class="event" style="left: 30%;"></div>
+        <div class="event-label" style="left: 30%;">Expansão Nacional (2010)</div>
+        <div class="event" style="left: 50%;"></div>
+        <div class="event-label" style="left: 50%;">Lançamento de Novos Produtos (2015)</div>
+        <div class="event" style="left: 70%;"></div>
+        <div class="event-label" style="left: 70%;">Parceria Global (2018)</div>
+        <div class="event" style="left: 90%;"></div>
+        <div class="event-label" style="left: 90%;">Hoje</div>
     </div>
 </body>
-
 </html>

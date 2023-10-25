@@ -8,6 +8,9 @@ if (!empty($_GET['id'])) {
     $description = $_POST['description'];
     $price = $_POST['price'];
     $categorie_id = $_POST['categorie_id'];
+    $subject = $_POST['subject'];
+    $info = $_POST['info'];
+    $receita = $_POST['receita'];
 
     // Verificar se uma nova imagem de perfil foi enviada
     if (isset($_FILES['img']) && $_FILES['img']['error'] == UPLOAD_ERR_OK) {
@@ -25,7 +28,7 @@ if (!empty($_GET['id'])) {
       }
     }
 
-    updateProduct($id, $name, $description, $price, $categorie_id);
+    updateProduct($id, $name, $description, $price, $categorie_id, $subject, $info, $receita);
     header('Location: ../products.php');
     exit();
   }
