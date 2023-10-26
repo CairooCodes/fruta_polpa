@@ -16,7 +16,7 @@
 <style>
   /* Set the size of the div element that contains the map */
   #map {
-    height: 400px;
+    height: 600px;
     /* The height is 400 pixels */
     width: 100%;
     /* The width is the width of the web page */
@@ -42,7 +42,7 @@
 function initMap() {
   const map = new google.maps.Map(document.getElementById("map"), {
     zoom: 10,
-    center: { lat: -33.9, lng: 151.2 },
+    center: { lat: -5.19, lng: -42.79 },
   });
 
   setMarkers(map);
@@ -51,11 +51,13 @@ function initMap() {
 // Data for the markers consisting of a name, a LatLng and a zIndex for the
 // order in which these markers should display on top of each other.
 const beaches = [
-  ["Bondi Beach", -33.890542, 151.274856, 4],
-  ["Coogee Beach", -33.923036, 151.259052, 5],
-  ["Cronulla Beach", -34.028249, 151.157507, 3],
-  ["Manly Beach", -33.80010128657071, 151.28747820854187, 2],
-  ["Maroubra Beach", -33.950198, 151.259302, 1],
+  ["Amapá", 1.6853618308968827, -51.92856612894796, 7],
+  ["Goiás", -15.784166135848661, -47.73089443818123, 6],
+  ["Ceará", -4.980588985022141, -39.34353647393992, 5],
+  ["Pará", -3.7012503942779116, -52.45824654277153, 4],
+  ["Tocantins", -9.973678952034751, -48.527946318219655, 3],
+  ["Maranhão", -2.5162050369619413, -44.256061701124395, 2],
+  ["Piauí", -5.192327294970707, -42.79527200206918, 1]
 ];
 
 function setMarkers(map) {
