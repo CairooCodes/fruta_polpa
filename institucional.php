@@ -131,38 +131,18 @@ $URI = new URI();
 	<div class="mx-auto max-w-6xl pt-2 about mt-24">
 		<section>
 			<div class="lg:pt-4 lg:p-0 lg:p-10 p-5">
-				<div class="grid grid-cols-2 gap-4">
+				<div class="md:grid md:grid-cols-2 md:gap-6">
 					<div class="mx-auto">
-						<h1 class="font-extrabold text-orange-600 text-4xl font-sans uppercase py-10">Fazendas</h1>
+						<h1 class="font-extrabold text-orange-600 text-4xl font-sans uppercase pb-3 lg:py-10">Fazendas</h1>
 						<p class="text-medium font-sans">A qualidade dos produtos "in natura" e congelados De Marchi tem origem nas fazendas do grupo e também dos produtores parceiros. Elas são a garantia de produtos cultivados com muito cuidado e sabor incomparáveis.</p>
 					</div>
 					<!-- Your HTML Structure -->
 					<div class="owl-carousel">
 						<div class="item">
-							<img src="./assets/img/fazenda.png" alt="fazenda">
-							<div class="custom-navigation">
-								<button type="button" class="next flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-next>
-									<span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-										<svg class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-											<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-										</svg>
-										<span class="hidden">Next</span>
-									</span>
-								</button>
-							</div>
+							<img src="./assets/img/fazenda.png" class="rounded-lg lg:h-80 cover" alt="fazenda">
 						</div>
 						<div class="item">
-							<img src="./assets/img/fazenda2.png" alt="fazenda2">
-							<div class="custom-navigation">
-								<button type="button" class="next flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-next>
-									<span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-										<svg class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-											<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-										</svg>
-										<span class="hidden">Next</span>
-									</span>
-								</button>
-							</div>
+							<img src="./assets/img/fazenda2.png" class="rounded-lg lg:h-80 cover" alt="fazenda2">
 						</div>
 					</div>
 				</div>
@@ -171,78 +151,41 @@ $URI = new URI();
 
 		<section>
 			<div class="lg:pt-4 lg:p-0 lg:p-10 p-5">
-				<div class="grid grid-cols-2 gap-4">
+				<div class="md:grid md:grid-cols-2 md:gap-6">
+
 					<div class="mx-auto">
-						<h1 class="font-extrabold text-orange-600 text-4xl font-sans uppercase py-10">Indústria</h1>
-						<p class="text-medium font-sans">O grupo conta com mais de 3.000 profissionais altamente capacitados e modernos equipamentos para garantir produtos minimamente processados, mantendo toda qualidade e sabor que vem direto do campo.</p>
+						<h1 class="font-extrabold text-orange-600 text-4xl font-sans uppercase pb-3 lg:py-10">Indústria</h1>
+						<p class="text-medium font-sans ">O grupo conta com mais de 3.000 profissionais altamente capacitados e modernos equipamentos para garantir produtos minimamente processados, mantendo toda qualidade e sabor que vem direto do campo.</p>
 					</div>
+
 					<!-- Your HTML Structure -->
-					<div class="owl-carousel">
+					<div class="owl-carousel order-first">
 						<div class="item">
-							<img src="./assets/img/industria.png" alt="industria">
-							<div class="custom-navigation">
-								<button type="button" class="next flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-next>
-									<span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-										<svg class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-											<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-										</svg>
-										<span class="hidden">Next</span>
-									</span>
-								</button>
-							</div>
+							<img src="./assets/img/industria2.png" class="rounded-lg lg:h-80 cover" alt="industria">
 						</div>
 						<div class="item">
-							<img src="./assets/img/industria2.png" alt="industria2">
-							<div class="custom-navigation">
-								<button type="button" class="next flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-next>
-									<span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-										<svg class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-											<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-										</svg>
-										<span class="hidden">Next</span>
-									</span>
-								</button>
-							</div>
+							<img src="./assets/img/industria.png" class="rounded-lg lg:h-80 cover" alt="industria2">
 						</div>
 					</div>
+
 				</div>
 			</div>
 		</section>
 
 		<section>
 			<div class="lg:pt-4 lg:p-0 lg:p-10 p-5">
-				<div class="grid grid-cols-2 gap-4">
+				<div class="md:grid md:grid-cols-2 md:gap-6">
 					<div class="mx-auto">
-						<h1 class="font-extrabold text-orange-600 text-4xl font-sans uppercase py-10">Supermercados</h1>
+						<h1 class="font-extrabold text-orange-600 text-4xl font-sans uppercase pb-3 lg:py-10">Supermercados</h1>
 						<p class="text-medium font-sans">A De Marchi abastece, diariamente, centenas de supermercados por todo país e também administra as seções FLV (Frutas, Legumes e Verduras) de renomadas redes de supermercados.</p>
 					</div>
 					<!-- Your HTML Structure -->
 					<div class="owl-carousel">
 						<div class="item">
-							<img src="./assets/img/supermercado.png" alt="supermercado">
-							<div class="custom-navigation">
-								<button type="button" class="next flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-next>
-									<span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-										<svg class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-											<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-										</svg>
-										<span class="hidden">Next</span>
-									</span>
-								</button>
-							</div>
+							<img src="./assets/img/supermercado.png" class="rounded-lg" alt="supermercado">
 						</div>
 						<div class="item">
-							<img src="./assets/img/supermercado2.png" alt="supermercado2">
-							<div class="custom-navigation">
-								<button type="button" class="next flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-next>
-									<span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-										<svg class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-											<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-										</svg>
-										<span class="hidden">Next</span>
-									</span>
-								</button>
-							</div>
+							<img src="./assets/img/supermercado2.png" class="rounded-lg" alt="supermercado2">
 						</div>
 					</div>
 				</div>
@@ -257,7 +200,7 @@ $URI = new URI();
 		</div>
 	</div>
 	<?php include "./components/footer.php"; ?>
-	
+
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
 	<script src="assets/js/tw.js"></script>
 	<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js"></script>

@@ -13,7 +13,7 @@
           <p>montada com 6 sabores especialmente pensadas para trazer benefícios diretos a saúde e qualidade das milhares de famílias em 7 estados diferentes:
           <p>Piauí, Maranhão, Tocantins, Pará, Amapá, Goiás/DF e Ceará.
         </div>
-        <a href="quemsomos.php" class="leia-mais-link">Leia mais</a>
+        <a href="<?php echo $URI->base("institucional"); ?>" class="leia-mais-link">Leia mais</a>
       </div>
       <div class="text-content col-md-6 px-12">
         <img src="./assets/img/polpaquemsomos.png" class="w-full">
