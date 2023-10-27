@@ -1,9 +1,12 @@
+/* icons */
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css");
 
-@font-face {
-  /* font-family: "garnetcapitals";
-  src: url('../fonts/garnet-capitals-regular.ttf') format('woff2'),
-    url('../fonts/garnet-capitals-regular.ttf') format('woff'); */
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;600;700;800&display=swap');
+
+
+body {
+  font-family: 'Raleway', sans-serif;
 }
 
 .carousel-3D-swiper-section {
@@ -258,7 +261,6 @@ body {
   display: inline-block;
   text-decoration: none;
   color: #1F2937;
-  font-family: sans-serif;
 }
 
 #mobile-menu-2 li a:hover {
@@ -303,7 +305,7 @@ body {
 }
 
 .fade-up h1 {
- text-shadow: #000 1px 1px;
+  text-shadow: #000 1px 1px;
 }
 
 .blog-image {
@@ -313,7 +315,23 @@ body {
 }
 
 .same-size-image {
-  width: 200px; /* Defina a largura desejada para todas as imagens */
-  height: 200px; /* Defina a altura desejada para todas as imagens */
-  object-fit: cover; /* Garante que a imagem cubra o contêiner, mantendo suas proporções */
+  width: 200px;
+  /* Defina a largura desejada para todas as imagens */
+  height: 200px;
+  /* Defina a altura desejada para todas as imagens */
+  object-fit: cover;
+  /* Garante que a imagem cubra o contêiner, mantendo suas proporções */
+}
+
+
+/* Definindo a classe para aplicar o efeito fade-in-up */
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.fade-in-up.visible {
+  opacity: 1;
+  transform: translateY(0);
 }

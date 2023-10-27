@@ -2,7 +2,7 @@
   <div class="swiper swiper_products_type pt-12 max-w-4xl rounded-2xl">
     <h6 class="lg:text-3xl text-xl pb-2 text-center "><span style="font-size: 20px;letter-spacing: 4px; font-weight: 300;" class="text-color1 uppercase bg-clip-text bg-gradient-to-r from-color2 to-color2">Nossos Produtos</span></h6>
     <h1 class="lg:text-5xl text-3xl pb-4 text-center mb-4"><span style="letter-spacing: 0.5px;color:#00284a;" class="font-black bg-clip-text bg-gradient-to-r from-color2 to-color2">Linhas de Produtos</span></h1>
-    <div class="swiper-wrapper pb-4 pt-12">
+    <div class="swiper-wrapper pb-4 pt-12" id="produtos">
       <div class="swiper-slide hover:-translate-y-4 transition duration-500 grid bg-white rounded-2xl shadow2 relative">
         <img class='lazy object-cover h-full px-3' data-src='./assets/img/Abacaxi.jpg'>
         <div style="background: rgb(252,114,0);
