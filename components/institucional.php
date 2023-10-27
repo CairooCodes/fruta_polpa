@@ -3,9 +3,9 @@
     <div class="max-w-full px-4 lg:pt-12 pb-12 mx-auto lg:grid grid-cols-2 mt-2">
       <div class="text-content col-md-6 lg:px-12">
         <div>
-          <p><span style="font-size: 18px; color: #00284a; letter-spacing: 2px; font-weight: 300; padding-left: 10px;">MAIS DE</span></p>
+          <p>MAIS DE</p>
         </div>
-        <div class="counter" style="font-size: 56pt;" data-target="15" data-source="0" data-duration="2000" counter="0">
+        <div class="counter" data-target="15" data-source="0" data-duration="2000" counter="0">
           15
         </div>
         <div class="mt-14 mb-4">

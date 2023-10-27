@@ -4,11 +4,6 @@
 /* fonts */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;600;700;800&display=swap');
 
-
-body {
-  font-family: 'Raleway', sans-serif;
-}
-
 .carousel-3D-swiper-section {
   display: flex;
   justify-content: center;
@@ -323,6 +318,18 @@ body {
   /* Garante que a imagem cubra o contêiner, mantendo suas proporções */
 }
 
+header {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+}
+
+.banners {
+  font-family: 'Raleway', sans-serif;
+}
+
+.header-institucional {
+  font-family: 'Raleway', sans-serif;
+}
 
 /* Definindo a classe para aplicar o efeito fade-in-up */
 .fade-in-up {
