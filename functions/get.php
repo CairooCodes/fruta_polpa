@@ -122,6 +122,15 @@ function getReceita($id)
   return $stmt->fetch(PDO::FETCH_ASSOC);
 }
 
+function getReceita2($id)
+{
+  global $pdo;
+  $stmt = $pdo->prepare("SELECT * FROM receitas WHERE product_id = :id");
+  $stmt->bindParam(':id', $id);
+  $stmt->execute();
+  return $stmt->fetch(PDO::FETCH_ASSOC);
+}
+
 function getCategoriesReceitas()
 {
   global $pdo;

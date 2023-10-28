@@ -21,7 +21,7 @@ function remove_simbolos_acentos($string)
 
 
 $url = explode("/", $_SERVER['REQUEST_URI']);
-$idpost = $url[3];
+$idpost = $url[4];
 
 $idpost2 = "";
 
@@ -35,10 +35,12 @@ if ($stmt->rowCount() > 0) {
     if ($string1 == $string2) {
       $idpost2 = $name;
       $polpa = getPolpa($id);
-      $receita = getReceita($id);
     }
   }
 }
+
+
+// Verifica se existem receitas relacionadas à polpa
 
 
 ?>
@@ -55,6 +57,7 @@ if ($stmt->rowCount() > 0) {
   <div class="bg-gray-200  pt-16 pb-16">
     <h1 class="text-center text-6xl text-orange-600">
       <?php echo $polpa['name']; ?>
+
     </h1>
     <h2 class="text-center text-2xl px-5 py-10">
       Do norte do país para a sua geladeira. O fruto genuinamente brasileiro que dá a força que você precisa na rotina. Nossa dica é você consumir acompanhado de banana, fica uma delícia.
@@ -75,17 +78,36 @@ if ($stmt->rowCount() > 0) {
         </h2>
       </div>
     </div>
-    <div class="grid grid-cols-2">
-      <h1>
-      <?php// echo $polpa['price']; ?>
-      </h1>
-      <h2>
-        <?php echo $polpa['info']; ?>
-      </h2>
+    <div class="grid grid-cols-3">
+      <?php
+      $polpaId = $polpa['id'];
+
+      // Consulta SQL para obter todas as receitas relacionadas à polpa
+      $stmt = $pdo->prepare("SELECT * FROM receitas WHERE product_id = :product_id");
+      $stmt->bindParam(':product_id', $polpaId);
+      $stmt->execute();
+
+      if ($stmt->rowCount() > 0) {
+        $receitasDaPolpa = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        foreach ($receitasDaPolpa as $receita) {
+      ?>
+          <div>
+            <div class="mb-8 mt-4 items-center rounded-xl p-2">
+              <?php echo "<img class='lazy rounded-md h-full w-52 object-cover mt-14' style='width: 350px; height: 250px;' src=" . $URI->base('/admin/uploads/receitas') . '/' . $receita['img'] . '>' ?>
+            </div>
+            <div class="mb-8 mt-4 items-center rounded-xl p-2 text-orange-600 text-center text-xl font-semibold">
+              <?php echo $receita['name']; ?>
+            </div>
+
+            <div class="flex justify-center mt-4">
+              <a href="<?php echo $URI->base('/receita/' . slugify($receita['name'])); ?>" class="text-white bg-orange-600 focus:ring-4 rounded-md font-md text-md px-5 py-2 text-center">Saiba mais</a>
+            </div>
+          </div>
+      <?php }
+      } else {
+        echo "Não foram encontradas receitas para esta polpa.";
+      } ?>
     </div>
-      <div class="flex justify-center mt-4">
-        <a href="<?php echo $URI->base('/receita/' . slugify($receitas['name'])); ?>" class="text-orange-600 border-2 border-orange-600 bg-white rounded-full font-semibold text-lg px-5 py-2 text-center hover:bg-orange-600 hover:text-white"><?php echo $polpa['receita']; ?></a>
-      </div>
     </div>
   </section>
 
