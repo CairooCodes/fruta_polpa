@@ -67,7 +67,7 @@ session_start();
         </form>
         <div class="mt-7 text-center text-gray-300 text-xs">
           <span>
-            Copyright © 2023 Boom - Soluções Empresáriais
+            Copyright © - 2023 Fruta Polpa
         </div>
       </div>
     </div>

@@ -8,7 +8,7 @@ session_start();
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Login Boom Empresarial</title>
+  <title>Login Fruta Polpa</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -69,7 +69,7 @@ session_start();
         </form>
         <div class="mt-7 text-center text-gray-900 text-xs">
           <span>
-            Copyright © 2023 Boom - Soluções Empresáriais
+            Copyright © 2023 Fruta Polpa
         </div>
       </div>
     </div>

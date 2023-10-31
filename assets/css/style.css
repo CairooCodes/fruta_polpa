@@ -183,7 +183,7 @@ body {
 .counter:after {
   content: ' anos no mercado de polpas de frutas.';
   color: #00284a;
-  font-size: 47px;
+  font-size: 57px;
 }
 
 #intro {
@@ -329,6 +329,9 @@ header {
 
 .header-institucional {
   font-family: 'Raleway', sans-serif;
+  /* background-image: url('../img/banner_pagina_Institucional.jpg');
+  background-size: cover;
+  background-repeat: no-repeat; */
 }
 
 /* Definindo a classe para aplicar o efeito fade-in-up */

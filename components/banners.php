@@ -1,6 +1,3 @@
-<section class="pb-2 rounded">
-  <img src="./assets/img/banner_pagina_inicial.jpg" alt="banner_pagina_inicial" class="h-96 w-full">
-</section>
 <section class="video">
   <video playsinline autoplay muted loop>
     <source src="./assets/img/frutapolpanew.mp4" type="video/mp4">
