@@ -43,10 +43,10 @@ $URI = new URI();
     var swiper = new Swiper(".swiper_products_type", {
       effect: "flip",
       // grabCursor: true,
-      // autoplay: {
-      //   delay: 2500,
-      //   disableOnInteraction: false,
-      // },
+      autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+      },
       pagination: {
         el: ".swiper-pagination",
       },

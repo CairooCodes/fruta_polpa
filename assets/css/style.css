@@ -345,3 +345,7 @@ header {
   opacity: 1;
   transform: translateY(0);
 }
+
+.swiper-pagination-bullet-active {
+  background-color: yellow!important;
+}
