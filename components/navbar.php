@@ -62,7 +62,7 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
   </div>
   <nav class="shadow bg-white">
     <div class="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto">
-      <a href="<?php echo $URI->base("home.php"); ?>">
+      <a href="<?php echo $URI->base("/home.php"); ?>">
         <img class="w-16 my-2" src="<?php echo $URI->base("/assets/img/$logo"); ?>" class="logo" alt="<?php echo $title; ?>" />
       </a>
       <div class="flex items-center lg:order-2 lg:hidden">
@@ -84,33 +84,35 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
       <div class="items-center justify-center hidden w-full lg:flex lg:w-auto lg:order-1 py-1.5" id="mobile-menu-2">
         <ul class="flex flex-col lg:flex-row">
           <li class="py-2">
-            <a href="<?php echo $URI->base("home"); ?>" class="block py-2 uppercase text-xs rounded" aria-current="page">Home</a>
+            <a href="<?php echo $URI->base("/home"); ?>" class="block py-2 uppercase text-xs rounded" aria-current="page">Home</a>
           </li>
           <li class="py-2">
-            <a href="<?php echo $URI->base("institucional"); ?>" class="block py-2 uppercase text-xs rounded" aria-current="page">Institucional</a>
+            <a href="<?php echo $URI->base("/institucional"); ?>" class="block py-2 uppercase text-xs rounded" aria-current="page">Institucional</a>
           </li>
           <li class="py-2">
-            <a href="<?php echo $URI->base("polpas"); ?>" class="block py-2 uppercase text-xs rounded" aria-current="page">Polpas</a>
+            <a href="<?php echo $URI->base("/polpas"); ?>" class="block py-2 uppercase text-xs rounded" aria-current="page">Polpas</a>
           </li>
           <li class="py-2">
-            <a href="<?php echo $URI->base("blogs"); ?>" class="block py-2 uppercase text-xs rounded" aria-current="page">Blog</a>
+            <a href="<?php echo $URI->base("/blogs"); ?>" class="block py-2 uppercase text-xs rounded" aria-current="page">Blog</a>
           </li>
           <li class="py-2 md:px-4">
-            <a href="<?php echo $URI->base("distribuidores"); ?>" class="block py-2 uppercase text-xs rounded" aria-current="page">Distribuidores</a>
+            <a href="#" class="block py-2 uppercase text-xs rounded" aria-current="page">Distribuidores</a>
           </li>
           <li class="py-2">
-            <a href="<?php echo $URI->base("contato"); ?>" class="block py-2 uppercase text-xs rounded" aria-current="page">Contato</a>
+            <a href="<?php echo $URI->base("/contato"); ?>" class="block py-2 uppercase text-xs rounded" aria-current="page">Contato</a>
           </li>
 
         </ul>
-        <a href="<?php echo $URI->base("receitas"); ?>">
-          <button class="hover:bg-color1 hover:text-white text-xs text-gray-800 py-2 px-4 rounded-full border-2 border-color1">
-            RECEITAS
+        <div class="flex justify-center">
+          <a href="<?php echo $URI->base("receitas"); ?>">
+            <button class="hover:bg-color1 hover:text-white text-xs text-gray-800 py-2 px-4 rounded-full border-2 border-color1">
+              RECEITAS
+            </button>
+          </a>
+          <button class="ml-4 bg-color1 text-white text-xs text-gray-800 py-2 px-4 rounded-full border-2 border-color1">
+            PRODUTOS
           </button>
-        </a>
-        <button class="ml-4 bg-color1 text-white text-xs text-gray-800 py-2 px-4 rounded-full border-2 border-color1">
-          PRODUTOS
-        </button>
+        </div>
       </div>
     </div>
   </nav>

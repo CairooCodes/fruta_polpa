@@ -41,18 +41,19 @@ $URI = new URI();
 
   <script>
     var swiper = new Swiper(".swiper_products_type", {
-      loop: true,
-      freeMode: true,
-      breakpoints: {
-        300: {
-          slidesPerView: 1,
-          spaceBetween: 20,
-        },
-        640: {
-          slidesPerView: 2,
-          spaceBetween: 45,
-        },
+      effect: "flip",
+      grabCursor: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
       },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+      // navigation: {
+      //   nextEl: ".swiper-button-next",
+      //   prevEl: ".swiper-button-prev",
+      // },
     });
   </script>
   <script>
