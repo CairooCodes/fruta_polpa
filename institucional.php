@@ -15,81 +15,6 @@ $URI = new URI();
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-	<style>
-		.owl-carousel {
-			position: relative;
-		}
-
-		.custom-navigation {
-			position: absolute;
-			top: 50%;
-			transform: translateY(-50%);
-		}
-
-		.custom-navigation .prev,
-		.custom-navigation .next {
-			color: #fff;
-			padding: 10px 15px;
-			border: none;
-			cursor: pointer;
-		}
-
-		.custom-navigation .prev {
-			position: absolute;
-			left: 0;
-		}
-
-		.custom-navigation .next {
-			position: absolute;
-			right: 0;
-		}
-
-		linha do tempo body {
-			font-family: Arial, sans-serif;
-			background-color: #f4f4f4;
-			text-align: center;
-			margin: 0;
-			padding: 0;
-		}
-
-		.timeline {
-			position: relative;
-			margin: 50px auto;
-			width: 90%;
-			height: 4px;
-			background: #ff5733;
-		}
-
-		.event {
-			position: absolute;
-			width: 24px;
-			height: 24px;
-			background: #ff5733;
-			border-radius: 50%;
-			transform: translateX(-50%);
-			cursor: pointer;
-			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-		}
-
-		.event:hover {
-			background: #ff5733;
-		}
-
-		.event-label {
-			position: absolute;
-			top: 70px;
-			text-align: center;
-			width: 150px;
-			left: 50%;
-			transform: translateX(-50%);
-			font-weight: bold;
-			background: #fff;
-			padding: 10px;
-			border-radius: 6px;
-			box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-		}
-	</style>
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 </head>
@@ -97,36 +22,13 @@ $URI = new URI();
 
 <body>
 	<?php include "./components/navbar.php"; ?>
-	<img src="./assets/img/banner_pagina_Institucional.jpg" alt="banner_pagina_Institucional">
-	<div class="">
-		<div class="mx-auto max-w-6xl pt-2 about">
-			<div class="lg:pt-4 lg:p-0 lg:p-10 p-5">
-				<div class="mt-24 font-sans">
-					<?php foreach ($abouts as $about) {
-						echo $about['texto'];
-					} ?>
-				</div>
-			</div>
-		</div>
-
+	<div class="pt-5">
 		<div class="pb-24">
 			<div class="text-center">
 				<p class="text-2xl text-orange-600 uppercase font-sans">Nossa História</p>
 				<h1 class="font-bold text-orange-600 text-5xl font-sans mb-2">
 					Linha do Tempo
 				</h1>
-			</div>
-			<div class="timeline">
-				<div class="event" style="left: 10%;"></div>
-				<div class="event-label" style="left: 10%;">Fundação (2005)</div>
-				<div class="event" style="left: 30%;"></div>
-				<div class="event-label" style="left: 30%;">Expansão Nacional (2010)</div>
-				<div class="event" style="left: 50%;"></div>
-				<div class="event-label" style="left: 50%;">Lançamento de Novos Produtos (2015)</div>
-				<div class="event" style="left: 70%;"></div>
-				<div class="event-label" style="left: 70%;">Parceria Global (2018)</div>
-				<div class="event" style="left: 90%;"></div>
-				<div class="event-label" style="left: 90%;">Hoje</div>
 			</div>
 		</div>
 
