@@ -40,12 +40,12 @@
         </h2>
         <div class="mb-10 list-none">
           <li class="mt-3">
-            <a href="<?php echo $URI->base("home"); ?>" class="text-gray-600 cursor-pointer hover:text-orange-500">
+            <a href="<?php echo $URI->base("/home"); ?>" class="text-gray-600 cursor-pointer hover:text-orange-500">
               Home
             </a>
           </li>
           <li class="mt-3">
-            <a href="<?php echo $URI->base("institucional"); ?>" class="text-gray-600 cursor-pointer hover:text-orange-500">
+            <a href="<?php echo $URI->base("/institucional"); ?>" class="text-gray-600 cursor-pointer hover:text-orange-500">
               Institucional
             </a>
           </li>
@@ -63,12 +63,12 @@
         </h2>
         <div class="mb-10 list-none">
           <li class="mt-3">
-            <a href="<?php echo $URI->base("polpas-tradicionais"); ?>" class="text-gray-600 cursor-pointer hover:text-orange-500">
+            <a href="<?php echo $URI->base("/polpas-tradicionais"); ?>" class="text-gray-600 cursor-pointer hover:text-orange-500">
               Polpas Tradicionais
             </a>
           </li>
           <li class="mt-3">
-            <a href="<?php echo $URI->base("polpas-mixs"); ?>" class="text-gray-600 cursor-pointer hover:text-orange-500">
+            <a href="<?php echo $URI->base("/polpas-mixs"); ?>" class="text-gray-600 cursor-pointer hover:text-orange-500">
               Polpas Mix
             </a>
           </li>
@@ -83,12 +83,12 @@
         </p>
         <div class="mb-10 list-none">
           <li class="mt-3">
-            <a href="<?php echo $URI->base("contato"); ?>" class="text-gray-600 cursor-pointer hover:text-orange-500">
+            <a href="<?php echo $URI->base("/contato"); ?>" class="text-gray-600 cursor-pointer hover:text-orange-500">
               Fale Conosco
             </a>
           </li>
           <li class="mt-3">
-            <a href="<?php echo $URI->base("trabalhe-conosco"); ?>" class="text-gray-600 cursor-pointer hover:text-orange-500">
+            <a href="<?php echo $URI->base("/trabalhe-conosco"); ?>" class="text-gray-600 cursor-pointer hover:text-orange-500">
               Trabalhe Conosco
             </a>
           </li>

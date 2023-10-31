@@ -10,7 +10,7 @@
               <img class="w-full" src='./assets/img/ABACAXI1.png'>
               <div class="bg-bottom rounded-b-2xl bg-orange-500">
                 <div class="flex justify-center pb-5">
-                  <a href="<?php echo $URI->base(" polpas-tradicionais"); ?>">
+                  <a href="<?php echo $URI->base("/polpas-tradicionais"); ?>">
                     <h3 class="text-xl text-white text-center font-bold pt-6 mb-2">100%
                       naturais</h3>
                     <h3 class="text-3xl text-white text-center font-black mb-2">Polpas Tradicionais</h3>
@@ -24,19 +24,238 @@
             </div>
           </div>
           <div class="swiper-slide">
-            <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+            <div class="hover:-translate-y-4 transition duration-500 bg-white rounded-2xl shadow2 relative">
+              <img class="w-full" src='./assets/img/AÇAÍ1.png'>
+              <div class="bg-bottom rounded-b-2xl bg-orange-500">
+                <div class="flex justify-center pb-5">
+                  <a href="<?php echo $URI->base("/polpas-tradicionais"); ?>">
+                    <h3 class="text-xl text-white text-center font-bold pt-6 mb-2">100%
+                      naturais</h3>
+                    <h3 class="text-3xl text-white text-center font-black mb-2">Polpas Tradicionais</h3>
+                    <button class="hover:bg-slate-100 hover:text-gray-900 text-sm text-white py-2 px-4 rounded-full border-2 border-gray mt-4 ml-20">
+                      CONHEÇA
+                      <i class="bi bi-caret-right-fill"></i>
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="swiper-slide">
-            <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+            <div class="hover:-translate-y-4 transition duration-500 bg-white rounded-2xl shadow2 relative">
+              <img class="w-full" src='./assets/img/ACEROLA1.png'>
+              <div class="bg-bottom rounded-b-2xl bg-orange-500">
+                <div class="flex justify-center pb-5">
+                  <a href="<?php echo $URI->base("/polpas-tradicionais"); ?>">
+                    <h3 class="text-xl text-white text-center font-bold pt-6 mb-2">100%
+                      naturais</h3>
+                    <h3 class="text-3xl text-white text-center font-black mb-2">Polpas Tradicionais</h3>
+                    <button class="hover:bg-slate-100 hover:text-gray-900 text-sm text-white py-2 px-4 rounded-full border-2 border-gray mt-4 ml-20">
+                      CONHEÇA
+                      <i class="bi bi-caret-right-fill"></i>
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="swiper-slide">
-            <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+            <div class="hover:-translate-y-4 transition duration-500 bg-white rounded-2xl shadow2 relative">
+              <img class="w-full" src='./assets/img/BACURI1.png'>
+              <div class="bg-bottom rounded-b-2xl bg-orange-500">
+                <div class="flex justify-center pb-5">
+                  <a href="<?php echo $URI->base("/polpas-tradicionais"); ?>">
+                    <h3 class="text-xl text-white text-center font-bold pt-6 mb-2">100%
+                      naturais</h3>
+                    <h3 class="text-3xl text-white text-center font-black mb-2">Polpas Tradicionais</h3>
+                    <button class="hover:bg-slate-100 hover:text-gray-900 text-sm text-white py-2 px-4 rounded-full border-2 border-gray mt-4 ml-20">
+                      CONHEÇA
+                      <i class="bi bi-caret-right-fill"></i>
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="swiper-slide">
-            <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+            <div class="hover:-translate-y-4 transition duration-500 bg-white rounded-2xl shadow2 relative">
+              <img class="w-full" src='./assets/img/CAJÁ1.png'>
+              <div class="bg-bottom rounded-b-2xl bg-orange-500">
+                <div class="flex justify-center pb-5">
+                  <a href="<?php echo $URI->base("/polpas-tradicionais"); ?>">
+                    <h3 class="text-xl text-white text-center font-bold pt-6 mb-2">100%
+                      naturais</h3>
+                    <h3 class="text-3xl text-white text-center font-black mb-2">Polpas Tradicionais</h3>
+                    <button class="hover:bg-slate-100 hover:text-gray-900 text-sm text-white py-2 px-4 rounded-full border-2 border-gray mt-4 ml-20">
+                      CONHEÇA
+                      <i class="bi bi-caret-right-fill"></i>
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="swiper-slide">
-            <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+            <div class="hover:-translate-y-4 transition duration-500 bg-white rounded-2xl shadow2 relative">
+              <img class="w-full" src='./assets/img/CAJU1.png'>
+              <div class="bg-bottom rounded-b-2xl bg-orange-500">
+                <div class="flex justify-center pb-5">
+                  <a href="<?php echo $URI->base("/polpas-tradicionais"); ?>">
+                    <h3 class="text-xl text-white text-center font-bold pt-6 mb-2">100%
+                      naturais</h3>
+                    <h3 class="text-3xl text-white text-center font-black mb-2">Polpas Tradicionais</h3>
+                    <button class="hover:bg-slate-100 hover:text-gray-900 text-sm text-white py-2 px-4 rounded-full border-2 border-gray mt-4 ml-20">
+                      CONHEÇA
+                      <i class="bi bi-caret-right-fill"></i>
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="hover:-translate-y-4 transition duration-500 bg-white rounded-2xl shadow2 relative">
+              <img class="w-full" src='./assets/img/CUPUAÇU1.png'>
+              <div class="bg-bottom rounded-b-2xl bg-orange-500">
+                <div class="flex justify-center pb-5">
+                  <a href="<?php echo $URI->base("/polpas-tradicionais"); ?>">
+                    <h3 class="text-xl text-white text-center font-bold pt-6 mb-2">100%
+                      naturais</h3>
+                    <h3 class="text-3xl text-white text-center font-black mb-2">Polpas Tradicionais</h3>
+                    <button class="hover:bg-slate-100 hover:text-gray-900 text-sm text-white py-2 px-4 rounded-full border-2 border-gray mt-4 ml-20">
+                      CONHEÇA
+                      <i class="bi bi-caret-right-fill"></i>
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="hover:-translate-y-4 transition duration-500 bg-white rounded-2xl shadow2 relative">
+              <img class="w-full" src='./assets/img/GOIABA1.png'>
+              <div class="bg-bottom rounded-b-2xl bg-orange-500">
+                <div class="flex justify-center pb-5">
+                  <a href="<?php echo $URI->base("/polpas-tradicionais"); ?>">
+                    <h3 class="text-xl text-white text-center font-bold pt-6 mb-2">100%
+                      naturais</h3>
+                    <h3 class="text-3xl text-white text-center font-black mb-2">Polpas Tradicionais</h3>
+                    <button class="hover:bg-slate-100 hover:text-gray-900 text-sm text-white py-2 px-4 rounded-full border-2 border-gray mt-4 ml-20">
+                      CONHEÇA
+                      <i class="bi bi-caret-right-fill"></i>
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="hover:-translate-y-4 transition duration-500 bg-white rounded-2xl shadow2 relative">
+              <img class="w-full" src='./assets/img/GRAVIOLA1.png'>
+              <div class="bg-bottom rounded-b-2xl bg-orange-500">
+                <div class="flex justify-center pb-5">
+                  <a href="<?php echo $URI->base("/polpas-tradicionais"); ?>">
+                    <h3 class="text-xl text-white text-center font-bold pt-6 mb-2">100%
+                      naturais</h3>
+                    <h3 class="text-3xl text-white text-center font-black mb-2">Polpas Tradicionais</h3>
+                    <button class="hover:bg-slate-100 hover:text-gray-900 text-sm text-white py-2 px-4 rounded-full border-2 border-gray mt-4 ml-20">
+                      CONHEÇA
+                      <i class="bi bi-caret-right-fill"></i>
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="hover:-translate-y-4 transition duration-500 bg-white rounded-2xl shadow2 relative">
+              <img class="w-full" src='./assets/img/MANGA1.png'>
+              <div class="bg-bottom rounded-b-2xl bg-orange-500">
+                <div class="flex justify-center pb-5">
+                  <a href="<?php echo $URI->base("/polpas-tradicionais"); ?>">
+                    <h3 class="text-xl text-white text-center font-bold pt-6 mb-2">100%
+                      naturais</h3>
+                    <h3 class="text-3xl text-white text-center font-black mb-2">Polpas Tradicionais</h3>
+                    <button class="hover:bg-slate-100 hover:text-gray-900 text-sm text-white py-2 px-4 rounded-full border-2 border-gray mt-4 ml-20">
+                      CONHEÇA
+                      <i class="bi bi-caret-right-fill"></i>
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="hover:-translate-y-4 transition duration-500 bg-white rounded-2xl shadow2 relative">
+              <img class="w-full" src='./assets/img/MARACUJÁ1.png'>
+              <div class="bg-bottom rounded-b-2xl bg-orange-500">
+                <div class="flex justify-center pb-5">
+                  <a href="<?php echo $URI->base("/polpas-tradicionais"); ?>">
+                    <h3 class="text-xl text-white text-center font-bold pt-6 mb-2">100%
+                      naturais</h3>
+                    <h3 class="text-3xl text-white text-center font-black mb-2">Polpas Tradicionais</h3>
+                    <button class="hover:bg-slate-100 hover:text-gray-900 text-sm text-white py-2 px-4 rounded-full border-2 border-gray mt-4 ml-20">
+                      CONHEÇA
+                      <i class="bi bi-caret-right-fill"></i>
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="hover:-translate-y-4 transition duration-500 bg-white rounded-2xl shadow2 relative">
+              <img class="w-full" src='./assets/img/MORANGO1.png'>
+              <div class="bg-bottom rounded-b-2xl bg-orange-500">
+                <div class="flex justify-center pb-5">
+                  <a href="<?php echo $URI->base("/polpas-tradicionais"); ?>">
+                    <h3 class="text-xl text-white text-center font-bold pt-6 mb-2">100%
+                      naturais</h3>
+                    <h3 class="text-3xl text-white text-center font-black mb-2">Polpas Tradicionais</h3>
+                    <button class="hover:bg-slate-100 hover:text-gray-900 text-sm text-white py-2 px-4 rounded-full border-2 border-gray mt-4 ml-20">
+                      CONHEÇA
+                      <i class="bi bi-caret-right-fill"></i>
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="hover:-translate-y-4 transition duration-500 bg-white rounded-2xl shadow2 relative">
+              <img class="w-full" src='./assets/img/MURICI1.png'>
+              <div class="bg-bottom rounded-b-2xl bg-orange-500">
+                <div class="flex justify-center pb-5">
+                  <a href="<?php echo $URI->base("/polpas-tradicionais"); ?>">
+                    <h3 class="text-xl text-white text-center font-bold pt-6 mb-2">100%
+                      naturais</h3>
+                    <h3 class="text-3xl text-white text-center font-black mb-2">Polpas Tradicionais</h3>
+                    <button class="hover:bg-slate-100 hover:text-gray-900 text-sm text-white py-2 px-4 rounded-full border-2 border-gray mt-4 ml-20">
+                      CONHEÇA
+                      <i class="bi bi-caret-right-fill"></i>
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="hover:-translate-y-4 transition duration-500 bg-white rounded-2xl shadow2 relative">
+              <img class="w-full" src='./assets/img/TAMARINDO1.png'>
+              <div class="bg-bottom rounded-b-2xl bg-orange-500">
+                <div class="flex justify-center pb-5">
+                  <a href="<?php echo $URI->base("/polpas-tradicionais"); ?>">
+                    <h3 class="text-xl text-white text-center font-bold pt-6 mb-2">100%
+                      naturais</h3>
+                    <h3 class="text-3xl text-white text-center font-black mb-2">Polpas Tradicionais</h3>
+                    <button class="hover:bg-slate-100 hover:text-gray-900 text-sm text-white py-2 px-4 rounded-full border-2 border-gray mt-4 ml-20">
+                      CONHEÇA
+                      <i class="bi bi-caret-right-fill"></i>
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="swiper-pagination"></div>
         </div>
@@ -47,14 +266,14 @@
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <div class="hover:-translate-y-4 transition duration-500 bg-white rounded-2xl shadow2 relative">
-              <img class="w-full" src='./assets/img/ABACAXI1.png'>
+              <img class="w-full" src='./assets/img/MIX_ABACAXI_COM_HORTELÃ1.png'>
               <div class="bg-bottom rounded-b-2xl bg-orange-500">
                 <div class="flex justify-center pb-5">
-                  <a href="<?php echo $URI->base(" polpas-tradicionais"); ?>">
+                  <a href="<?php echo $URI->base("/polpas-mixs"); ?>">
                     <h3 class="text-xl text-white text-center font-bold pt-6 mb-2">100%
                       naturais</h3>
-                    <h3 class="text-3xl text-white text-center font-black mb-2">Polpas Tradicionais</h3>
-                    <button class="hover:bg-slate-100 hover:text-gray-900 text-sm text-white py-2 px-4 rounded-full border-2 border-gray mt-4 ml-20">
+                    <h3 class="text-3xl text-white text-center font-black mb-2">Polpas Mix</h3>
+                    <button class="hover:bg-slate-100 hover:text-gray-900 text-sm text-white py-2 px-4 rounded-full border-2 border-gray mt-4 ml-4">
                       CONHEÇA
                       <i class="bi bi-caret-right-fill"></i>
                     </button>
@@ -64,23 +283,99 @@
             </div>
           </div>
           <div class="swiper-slide">
-            <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+            <div class="hover:-translate-y-4 transition duration-500 bg-white rounded-2xl shadow2 relative">
+              <img class="w-full" src='./assets/img/MIX_HIBISCO1.png'>
+              <div class="bg-bottom rounded-b-2xl bg-orange-500">
+                <div class="flex justify-center pb-5">
+                  <a href="<?php echo $URI->base("/polpas-mixs"); ?>">
+                    <h3 class="text-xl text-white text-center font-bold pt-6 mb-2">100%
+                      naturais</h3>
+                    <h3 class="text-3xl text-white text-center font-black mb-2">Polpas Mix</h3>
+                    <button class="hover:bg-slate-100 hover:text-gray-900 text-sm text-white py-2 px-4 rounded-full border-2 border-gray mt-4 ml-4">
+                      CONHEÇA
+                      <i class="bi bi-caret-right-fill"></i>
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="swiper-slide">
-            <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+            <div class="hover:-translate-y-4 transition duration-500 bg-white rounded-2xl shadow2 relative">
+              <img class="w-full" src='./assets/img/MIX_REFRESCANTE1.png'>
+              <div class="bg-bottom rounded-b-2xl bg-orange-500">
+                <div class="flex justify-center pb-5">
+                  <a href="<?php echo $URI->base("/polpas-mixs"); ?>">
+                    <h3 class="text-xl text-white text-center font-bold pt-6 mb-2">100%
+                      naturais</h3>
+                    <h3 class="text-3xl text-white text-center font-black mb-2">Polpas Mix</h3>
+                    <button class="hover:bg-slate-100 hover:text-gray-900 text-sm text-white py-2 px-4 rounded-full border-2 border-gray mt-4 ml-4">
+                      CONHEÇA
+                      <i class="bi bi-caret-right-fill"></i>
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="swiper-slide">
-            <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+            <div class="hover:-translate-y-4 transition duration-500 bg-white rounded-2xl shadow2 relative">
+              <img class="w-full" src='./assets/img/MIX_TROPICAL1.png'>
+              <div class="bg-bottom rounded-b-2xl bg-orange-500">
+                <div class="flex justify-center pb-5">
+                  <a href="<?php echo $URI->base("/polpas-mixs"); ?>">
+                    <h3 class="text-xl text-white text-center font-bold pt-6 mb-2">100%
+                      naturais</h3>
+                    <h3 class="text-3xl text-white text-center font-black mb-2">Polpas Mix</h3>
+                    <button class="hover:bg-slate-100 hover:text-gray-900 text-sm text-white py-2 px-4 rounded-full border-2 border-gray mt-4 ml-4">
+                      CONHEÇA
+                      <i class="bi bi-caret-right-fill"></i>
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="swiper-slide">
-            <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+            <div class="hover:-translate-y-4 transition duration-500 bg-white rounded-2xl shadow2 relative">
+              <img class="w-full" src='./assets/img/MIX_VERDE1.png'>
+              <div class="bg-bottom rounded-b-2xl bg-orange-500">
+                <div class="flex justify-center pb-5">
+                  <a href="<?php echo $URI->base("/polpas-mixs"); ?>">
+                    <h3 class="text-xl text-white text-center font-bold pt-6 mb-2">100%
+                      naturais</h3>
+                    <h3 class="text-3xl text-white text-center font-black mb-2">Polpas Mix</h3>
+                    <button class="hover:bg-slate-100 hover:text-gray-900 text-sm text-white py-2 px-4 rounded-full border-2 border-gray mt-4 ml-4">
+                      CONHEÇA
+                      <i class="bi bi-caret-right-fill"></i>
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="swiper-slide">
-            <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+            <div class="hover:-translate-y-4 transition duration-500 bg-white rounded-2xl shadow2 relative">
+              <img class="w-full" src='./assets/img/MIX_YELLOW1.png'>
+              <div class="bg-bottom rounded-b-2xl bg-orange-500">
+                <div class="flex justify-center pb-5">
+                  <a href="<?php echo $URI->base("/polpas-mixs"); ?>">
+                    <h3 class="text-xl text-white text-center font-bold pt-6 mb-2">100%
+                      naturais</h3>
+                    <h3 class="text-3xl text-white text-center font-black mb-2">Polpas Mix</h3>
+                    <button class="hover:bg-slate-100 hover:text-gray-900 text-sm text-white py-2 px-4 rounded-full border-2 border-gray mt-4 ml-4">
+                      CONHEÇA
+                      <i class="bi bi-caret-right-fill"></i>
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="swiper-pagination"></div>
         </div>
+        <div class="swiper-pagination"></div>
       </div>
     </div>
+  </div>
   </div>
 </section>

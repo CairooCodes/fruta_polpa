@@ -39,7 +39,7 @@ $URI = new URI();
                                         <h3 class="post-title mb-4 text-lg font-semibold py-2"><?php echo $polpa2['name']; ?></h3>
                                     </div>
                                     <div class="flex justify-center mt-4">
-                                        <a href="<?php echo $URI->base('noticia/' . slugify($polpa2['name'])); ?>" class="text-white bg-orange-500 focus:ring-4 rounded-md font-md text-md px-5 py-2 text-center">Saiba mais</a>
+                                        <a href="<?php echo $URI->base('/polpa/' . slugify($polpa2['name'])); ?>" class="text-white bg-orange-500 focus:ring-4 rounded-md font-md text-md px-5 py-2 text-center">Saiba mais</a>
                                     </div>
                                 </div>
                             </div>

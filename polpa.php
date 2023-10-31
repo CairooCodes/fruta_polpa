@@ -21,7 +21,7 @@ function remove_simbolos_acentos($string)
 
 
 $url = explode("/", $_SERVER['REQUEST_URI']);
-$idpost = $url[4];
+$idpost = $url[3];
 
 $idpost2 = "";
 
@@ -105,7 +105,7 @@ if ($stmt->rowCount() > 0) {
           </div>
       <?php }
       } else {
-        echo "Não foram encontradas receitas para esta polpa.";
+        echo "";
       } ?>
     </div>
     </div>

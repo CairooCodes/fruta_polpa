@@ -10,7 +10,7 @@
     </div>
   </div>
   <div class="text-center fade-in-up">
-    <a href="#produtos">
+    <a href="polpas.php">
       <button class="bg-color1 text-white text-md text-gray-800 py-3 px-4 rounded-full border-2 border-color1 font-semibold">
         CONHEÇA NOSSOS PRODUTOS
       </button>

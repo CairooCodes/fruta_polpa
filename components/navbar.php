@@ -104,14 +104,16 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 
         </ul>
         <div class="flex justify-center">
-          <a href="<?php echo $URI->base("receitas"); ?>">
+          <a href="<?php echo $URI->base("/receitas"); ?>">
             <button class="hover:bg-color1 hover:text-white text-xs text-gray-800 py-2 px-4 rounded-full border-2 border-color1">
               RECEITAS
             </button>
           </a>
+          <a href="<?php echo $URI->base("/polpas"); ?>">
           <button class="ml-4 bg-color1 text-white text-xs text-gray-800 py-2 px-4 rounded-full border-2 border-color1">
             PRODUTOS
           </button>
+          </a>
         </div>
       </div>
     </div>

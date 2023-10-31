@@ -10,7 +10,7 @@
       <div class="mt-14 mb-4 text-justify">
         <p>Trabalhamos com 25 sabores desde os mais tradicionais que são a acerola, goiaba e maracujá, como também contamos com a linha funcional, montada com 6 sabores especialmente pensadas para trazer benefícios diretos a saúde e qualidade das milhares de famílias em 7 estados diferentes: Piauí, Maranhão, Tocantins, Pará, Amapá, Goiás/DF e Ceará.</p>
       </div>
-      <a href="<?php echo $URI->base("institucional"); ?>" class="leia-mais-link">Leia mais</a>
+      <a href="<?php echo $URI->base("/institucional"); ?>" class="leia-mais-link">Leia mais</a>
     </div>
     <div class="lg:px-32">
       <img src="./assets/img/banner-home-mobile.jpg" class="w-full">
