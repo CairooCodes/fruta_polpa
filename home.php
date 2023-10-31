@@ -42,11 +42,11 @@ $URI = new URI();
   <script>
     var swiper = new Swiper(".swiper_products_type", {
       effect: "flip",
-      grabCursor: true,
-      autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-      },
+      // grabCursor: true,
+      // autoplay: {
+      //   delay: 2500,
+      //   disableOnInteraction: false,
+      // },
       pagination: {
         el: ".swiper-pagination",
       },
