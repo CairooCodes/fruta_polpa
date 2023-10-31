@@ -54,7 +54,7 @@
           echo 'bg-orange-600 text-white';
         } ?>">
           <i class="bi bi-cart"></i>
-          <span class="group-hover:text-gray-700">Produtos</span>
+          <span class="group-hover:text-gray-700">Polpas</span>
         </a>
       </li>
       <li>

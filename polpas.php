@@ -23,7 +23,7 @@ $URI = new URI();
 <body>
     <?php include "./components/navbar.php" ?>
     <div>
-        <img src="./assets/img/polpas.png" alt="polpas">
+        <img src="./assets/img/banner_pagina_polpas.jpg" alt="banner_pagina_polpas">
     </div>
     <div class="mx-auto max-w-7xl px-2 pt-10">
         <h1 class="text-orange-600 text-center text-3xl font-extrabold leading-9 tracking-tight sm:text-4xl sm:leading-10 md:text-left md:text-3xl md:leading-14">
