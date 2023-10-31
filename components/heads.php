@@ -17,7 +17,7 @@
   <meta property="og:site_name" content="">
   <meta property="og:url" content="https://frutapolpa.com.br/">
   <meta property="og:description" content="Fruta Polpa">
-  <meta property="og:image" content="https://frutapolpa.com.br/assets/img/logo.png">
+  <meta property="og:image" content="http://br220.teste.website/~cairod86/frutapolpa/assets/img/logo.png">
   <!-- Favicon -->
   <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/logo.png">
   <link rel="icon" type="image/png" sizes="32x32" href="<?php echo $URI->base("/assets/img/icon.png"); ?>">
