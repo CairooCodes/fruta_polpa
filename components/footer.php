@@ -4,8 +4,7 @@
     <div class="flex-shrink-0 w-64 mx-auto text-center md:mx-0 md:text-left">
       <div>
         <a href="<?php echo $URI->base("/home"); ?>" class="flex justify-center">
-          <img data-src="<?php echo $URI->base("/assets/img/$logo"); ?>" class="logo lazy" alt="" />
-          <!-- <img src="./assets/img/logo.png" alt="FrutaPolpaLogo" class="w-2xl h-auto mx-auto md:mx-0"> -->
+          <img data-src="<?php echo $URI->base("./assets/img/$logo"); ?>" class="logo lazy" alt="<?php echo $title; ?>"/>
         </a>
       </div>
       <div class="text-center mt-2">
