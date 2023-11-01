@@ -25,8 +25,8 @@ $URI = new URI();
   <?php include "./components/navbar.php"; ?>
   <?php include "./components/banners.php"; ?>
   <?php include "./components/institucional.php"; ?>
-  <?php include "./components/quality-premium.php"; ?>
   <?php include "./components/polpas-types.php"; ?>
+  <?php include "./components/premium-quality.php"; ?>
   <?php include "./components/footer.php" ?>
 
   <script src="assets/js/tw.js"></script>
@@ -34,6 +34,7 @@ $URI = new URI();
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
   <script src="./assets/js/lz.js"></script>
+ <script src="./assets/js/main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
 
@@ -51,10 +52,19 @@ $URI = new URI();
       pagination: {
         el: ".swiper-pagination",
       },
-      // navigation: {
-      //   nextEl: ".swiper-button-next",
-      //   prevEl: ".swiper-button-prev",
-      // },
+    });
+  </script>
+  <script>
+    var swiper = new Swiper(".swiper_products_type2", {
+      effect: "fade",
+      // grabCursor: true,
+      autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination2",
+      },
     });
   </script>
   <script>
@@ -84,23 +94,7 @@ $URI = new URI();
     }
   </script>
   <script>
-    const cards = document.querySelectorAll('.fade-in-up');
-    const options = {
-      root: null,
-      rootMargin: '0px',
-      threshold: 0.2
-    };
 
-    const observer = new IntersectionObserver((entries, observer) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-          observer.unobserve(entry.target);
-        }
-      });
-    }, options);
-
-    cards.forEach(card => observer.observe(card));
   </script>
 </body>
 

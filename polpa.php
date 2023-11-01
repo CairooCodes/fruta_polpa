@@ -21,7 +21,7 @@ function remove_simbolos_acentos($string)
 
 
 $url = explode("/", $_SERVER['REQUEST_URI']);
-$idpost = $url[3];
+$idpost = $url[4];
 
 $idpost2 = "";
 
@@ -53,29 +53,32 @@ if ($stmt->rowCount() > 0) {
 
 <body>
   <?php include "./components/navbar.php" ?>
-  <div class="bg-gray-200  pt-16 pb-16">
-    <h1 class="text-center text-6xl text-orange-600">
-      <?php echo $polpa['name']; ?>
-
-    </h1>
-    <h2 class="text-center text-2xl px-5 py-10">
-      Do norte do país para a sua geladeira. O fruto genuinamente brasileiro que dá a força que você precisa na rotina. Nossa dica é você consumir acompanhado de banana, fica uma delícia.
-    </h2>
-  </div>
   <section class="mx-auto max-w-7xl px-2">
-    <div class="max-w-screen-xl px-4 py-8 mx-auto space-y-12 lg:space-y-20 lg:py-6 lg:px-6 grid grid-cols-2">
-      <div class="image">
-        <div class="mt-4 rounded-xl p-2 shadow-md shadow-blue-200" style="width: 500px; height: 350px;">
+    <div class="max-w-screen-xl pt-10 mx-auto lg:grid grid-cols-2 pb-10">
+      <div>
+        <h1 class="text-3xl text-orange-600 font-bold">
+          <?php echo $polpa['name']; ?>
+        </h1>
+        <div class="rounded-xl shadow-md shadow-blue-200 mb-5">
           <div class="flex justify-center">
-            <?php echo "<img class='lazy rounded-md h-full w-52 object-cover mt-14' style='width: 350px; height: 250px;' data-src=" . $URI->base('/admin/uploads/polpas') . '/' . $polpa['img'] . '>' ?>
+            <?php echo "<img class='fade-in-up lazy' data-src=" . $URI->base('/admin/uploads/polpas') . '/' . $polpa['img'] . '>' ?>
           </div>
         </div>
       </div>
-      <div class="description">
-        <h2 class="">
-          <?php echo $polpa['description']; ?>
-        </h2>
-        <div class="w-full max-w-md mx-auto px-2 py-4">
+      <div class="lg:px-10 p-2">
+        <h1 class="text-2xl text-orange-600 font-bold">
+          Modo de preparo:
+        </h1>
+        <h1 class="text-xl">
+          1- Coloque a embalagem por 10 segundos em água corrente.
+        </h1>
+        <h1 class="text-xl">
+          2- Abra a embalagem com o produto ainda congelado.
+        </h1>
+        <h1 class="text-xl">
+          3- Bata no liquidificador 100g de fruta com 200ml de água ou outro líquido de sua preferência. Rende 1 copo de 300 ml. Adoce a gosto.
+        </h1>
+        <div class="w-full max-w-md mx-auto py-4">
           <table class="bg-green-300 w-full">
             <thead class="bg-green-600">
               <tr>
@@ -167,6 +170,7 @@ if ($stmt->rowCount() > 0) {
   <script src="<?php echo $URI->base('/assets/js/script.js'); ?>"></script>
   <script src="<?php echo $URI->base('/assets/js/lz.js"'); ?>"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
+  <script src="<?php echo $URI->base('/assets/js/main.js'); ?>"></script>
   <script src="<?php echo $URI->base('/assets/js/tw.js'); ?>"></script>
   <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js"></script>
   <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>

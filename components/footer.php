@@ -1,10 +1,10 @@
 <!-- component -->
-<footer class="w-full text-gray-700 bg-white body-font">
+<footer class="w-full text-gray-700 bg-white body-font border-t">
   <div class="container flex flex-col flex-wrap px-5 py-12 mx-auto md:items-center lg:items-start md:flex-row md:flex-no-wrap">
     <div class="flex-shrink-0 w-64 mx-auto text-center md:mx-0 md:text-left">
       <div>
         <a href="<?php echo $URI->base("/home"); ?>" class="flex justify-center">
-          <img data-src="<?php echo $URI->base("./assets/img/$logo"); ?>" class="logo lazy" alt="<?php echo $title; ?>"/>
+          <img data-src="<?php echo $URI->base("./assets/img/$logo"); ?>" class="logo lazy" alt="<?php echo $title; ?>" />
         </a>
       </div>
       <div class="text-center mt-2">
