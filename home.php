@@ -25,6 +25,7 @@ $URI = new URI();
   <?php include "./components/navbar.php"; ?>
   <?php include "./components/banners.php"; ?>
   <?php include "./components/institucional.php"; ?>
+  <?php include "./components/quality-premium.php"; ?>
   <?php include "./components/polpas-types.php"; ?>
   <?php include "./components/footer.php" ?>
 
