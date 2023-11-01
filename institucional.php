@@ -22,8 +22,8 @@ $URI = new URI();
 
 <body>
 	<?php include "./components/navbar.php"; ?>
-	<section class="max-w-full px-4 pt-5 mx-auto lg:grid grid-cols">
-		<div class="mx-auto pb-8">
+	<section class="max-w-full px-4 pt-10 mx-auto">
+		<div class="mx-auto pb-16">
 			<div class="text-center">
 				<p class="text-2xl text-orange-600 uppercase font-sans">Nossa História</p>
 				<h1 class="font-bold text-orange-600 text-5xl font-sans mb-2">

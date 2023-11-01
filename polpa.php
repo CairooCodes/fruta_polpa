@@ -75,6 +75,58 @@ if ($stmt->rowCount() > 0) {
         <h2 class="">
           <?php echo $polpa['description']; ?>
         </h2>
+        <div class="w-full max-w-md mx-auto px-2 py-4">
+          <table class="bg-green-300 w-full">
+            <thead class="bg-green-600">
+              <tr>
+                <th class="px-4 py-2">Nutriente</th>
+                <th class="px-4 py-2">% VD (*)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="px-4 py-2">Valor Energético</td>
+                <td class="px-4 py-2">4%</td>
+              </tr>
+              <tr>
+                <td class="px-4 py-2">Carboidratos</td>
+                <td class="px-4 py-2">0,2%</td>
+              </tr>
+              <tr>
+                <td class="px-4 py-2">Proteínas</td>
+                <td class="px-4 py-2">2%</td>
+              </tr>
+              <tr>
+                <td class="px-4 py-2">Gorduras totais</td>
+                <td class="px-4 py-2">17%</td>
+              </tr>
+              <tr>
+                <td class="px-4 py-2">Gorduras saturadas</td>
+                <td class="px-4 py-2">15%</td>
+              </tr>
+              <tr>
+                <td class="px-4 py-2">Gorduras trans</td>
+                <td class="px-4 py-2">**</td>
+              </tr>
+              <tr>
+                <td class="px-4 py-2">Fibra alimentar</td>
+                <td class="px-4 py-2">37%</td>
+              </tr>
+              <tr>
+                <td class="px-4 py-2">Sódio</td>
+                <td class="px-4 py-2">5,5%</td>
+              </tr>
+              <tr>
+                <td class="px-4 py-2">Cálcio</td>
+                <td class="px-4 py-2">5%</td>
+              </tr>
+              <tr>
+                <td class="px-4 py-2">Ferro</td>
+                <td class="px-4 py-2">0,2%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
     <div class="grid grid-cols-3">
