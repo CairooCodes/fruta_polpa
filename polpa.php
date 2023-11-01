@@ -49,7 +49,6 @@ if ($stmt->rowCount() > 0) {
 
 <head>
   <?php include "components/heads.php"; ?>
-
 </head>
 
 <body>
@@ -68,7 +67,7 @@ if ($stmt->rowCount() > 0) {
       <div class="image">
         <div class="mt-4 rounded-xl p-2 shadow-md shadow-blue-200" style="width: 500px; height: 350px;">
           <div class="flex justify-center">
-            <?php echo "<img class='lazy rounded-md h-full w-52 object-cover mt-14' style='width: 350px; height: 250px;' src=" . $URI->base('/admin/uploads/polpas') . '/' . $polpa['img'] . '>' ?>
+            <?php echo "<img class='lazy rounded-md h-full w-52 object-cover mt-14' style='width: 350px; height: 250px;' data-src=" . $URI->base('/admin/uploads/polpas') . '/' . $polpa['img'] . '>' ?>
           </div>
         </div>
       </div>
@@ -93,7 +92,7 @@ if ($stmt->rowCount() > 0) {
       ?>
           <div>
             <div class="mb-8 mt-4 items-center rounded-xl p-2">
-              <?php echo "<img class='lazy rounded-md h-full w-52 object-cover mt-14' style='width: 350px; height: 250px;' src=" . $URI->base('/admin/uploads/receitas') . '/' . $receita['img'] . '>' ?>
+              <?php echo "<img class='lazy rounded-md h-full w-52 object-cover mt-14' style='width: 350px; height: 250px;' data-src=" . $URI->base('/admin/uploads/receitas') . '/' . $receita['img'] . '>' ?>
             </div>
             <div class="mb-8 mt-4 items-center rounded-xl p-2 text-orange-600 text-center text-xl font-semibold">
               <?php echo $receita['name']; ?>
@@ -113,13 +112,14 @@ if ($stmt->rowCount() > 0) {
 
   <?php include "./components/footer.php" ?>
 
-  <script src="<?php echo $URI->base('assets/js/script.js'); ?>"></script>
-  <script src="./assets/js/lz.js"></script>
+  <script src="<?php echo $URI->base('/assets/js/script.js'); ?>"></script>
+  <script src="<?php echo $URI->base('/assets/js/lz.js"'); ?>"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
   <script src="<?php echo $URI->base('/assets/js/tw.js'); ?>"></script>
   <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js"></script>
   <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
