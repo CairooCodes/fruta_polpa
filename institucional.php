@@ -22,7 +22,7 @@ $URI = new URI();
 
 <body>
 	<?php include "./components/navbar.php"; ?>
-	<section class="max-w-full px-4 pt-5 mx-auto lg:grid grid-cols-2">
+	<section class="max-w-full px-4 pt-5 mx-auto lg:grid grid-cols">
 		<div class="mx-auto pb-8">
 			<div class="text-center">
 				<p class="text-2xl text-orange-600 uppercase font-sans">Nossa História</p>
