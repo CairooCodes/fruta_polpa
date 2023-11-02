@@ -25,32 +25,20 @@ $URI = new URI();
     <h1 class="text-orange-600 text-center text-3xl font-extrabold leading-9 tracking-tight sm:text-4xl sm:leading-10 md:text-left md:text-3xl md:leading-14">
       Polpas Tradicionais
     </h1>
-    <div class="mx-auto px-6 lg:px-48">
-      <div class="">
-        <div class="swiper swiper_polpas2 py-8  ">
-          <div class="swiper-wrapper ">
-            <?php foreach ($polpas1 as $polpa1) { ?>
-              <div class="swiper-slide my-4 mx-1">
-                <div class="max-w-lg p-3 mx-auto rounded-md shadow2">
-                  <div>
-                    <img class='lazy rounded-md h-96 object-cover w-full' data-src='./admin/uploads/polpas/<?php echo $polpa1['img'] ?>'>
-                  </div>
-                  <div class="rounded-2xl text-center">
-                    <h3 class="post-title mb-4 text-lg font-semibold py-2"><?php echo $polpa1['name']; ?></h3>
-                  </div>
-                  <div class="flex justify-center mt-4">
-                    <a href="<?php echo $URI->base('/polpa/' . slugify($polpa1['name'])); ?>" class="text-white bg-orange-500 focus:ring-4 rounded-md font-md text-md px-5 py-2 text-center">Saiba mais</a>
-                  </div>
-                </div>
-              </div>
-            <?php
-            }
-            ?>
+    <div class="grid lg:grid-cols-4 gap-8 py-16">
+      <?php foreach ($polpas1 as $polpa1) { ?>
+        <div>
+          <div class="mb-8 mt-4 items-center rounded-xl p-2">
+            <img src='./admin/uploads/polpas/<?php echo $polpa1['img']; ?>'>
+          </div>
+
+          <div class="flex justify-center mt-4">
+            <a href="<?php echo $URI->base('/polpa/' . slugify($polpa1['name'])); ?>" class="text-orange-600 border-2 border-orange-600 bg-white rounded-full font-semibold text-lg px-5 py-2 text-center hover:bg-orange-600 hover:text-white"><?php echo $polpa1['name']; ?></a>
           </div>
         </div>
-        <div class="swiper-button-next font-black text-orange-500 hover:text-orange-700 lg:mr-12"></div>
-        <div class="swiper-button-prev font-black text-orange-500 hover:text-orange-700 lg:ml-12"></div>
-      </div>
+
+      <?php }
+      ?>
     </div>
     <div>
       <div class="flex justify-center px-4 py-8">

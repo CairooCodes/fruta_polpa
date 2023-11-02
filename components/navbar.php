@@ -90,13 +90,13 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
             <a href="<?php echo $URI->base("/institucional"); ?>" class="block py-2 uppercase text-xs rounded" aria-current="page">Institucional</a>
           </li>
           <li class="py-2">
-            <a href="<?php echo $URI->base("/polpas"); ?>" class="block py-2 uppercase text-xs rounded" aria-current="page">Polpas</a>
+            <a href="<?php echo $URI->base("/polpas"); ?>" class="block py-2 uppercase text-xs rounded" aria-current="page">Nossos produtos</a>
           </li>
           <li class="py-2">
-            <a href="<?php echo $URI->base("/blogs"); ?>" class="block py-2 uppercase text-xs rounded" aria-current="page">Blog</a>
+            <a href="<?php echo $URI->base("/polpas"); ?>" class="block py-2 uppercase text-xs rounded" aria-current="page">Qualidade premium</a>
           </li>
-          <li class="py-2 md:px-4">
-            <a href="#" class="block py-2 uppercase text-xs rounded" aria-current="page">Distribuidores</a>
+          <li class="py-2">
+            <a href="<?php echo $URI->base("/polpas"); ?>" class="block py-2 uppercase text-xs rounded" aria-current="page">Seja nosso parceiro</a>
           </li>
           <li class="py-2">
             <a href="<?php echo $URI->base("/contato"); ?>" class="block py-2 uppercase text-xs rounded" aria-current="page">Contato</a>
@@ -111,7 +111,7 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
           </a>
           <a href="<?php echo $URI->base("/polpas"); ?>">
           <button class="ml-4 bg-color1 text-white text-xs text-gray-800 py-2 px-4 rounded-full border-2 border-color1">
-            PRODUTOS
+            Trabalhe conosco
           </button>
           </a>
         </div>

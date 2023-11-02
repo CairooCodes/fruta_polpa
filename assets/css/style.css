@@ -169,7 +169,8 @@ body {
 
 .custom-image {
   width: 300px;
-  height: 200px;
+  height: 350px;
+  border-radius: 20px;
   object-fit: cover;
 }
 

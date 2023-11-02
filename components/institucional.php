@@ -1,5 +1,5 @@
 <section class="bg-white max-w-full header-institucional">
-  <div class="max-w-full px-4 lg:pt-12 pb-12 mx-auto lg:grid grid-cols-2 mt-2">
+  <div class="max-w-full px-4 pt-4 lg:pl-24  mx-auto items-center lg:grid grid-cols-2 mt-2">
     <div class="lg:px-12">
       <div>
         <p>MAIS DE</p>
@@ -12,7 +12,7 @@
       </div>
       <a href="<?php echo $URI->base("/institucional"); ?>" class="leia-mais-link">Leia mais</a>
     </div>
-    <div class="lg:px-32">
+    <div class="">
       <img src="./assets/img/página institucional.png" class="w-full">
     </div>
   </div>

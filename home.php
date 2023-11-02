@@ -46,7 +46,7 @@ $URI = new URI();
       effect: "flip",
       // grabCursor: true,
       autoplay: {
-        delay: 4000,
+        delay: 3500,
         disableOnInteraction: false,
       },
       pagination: {
@@ -56,14 +56,14 @@ $URI = new URI();
   </script>
   <script>
     var swiper = new Swiper(".swiper_products_type2", {
-      effect: "fade",
+      effect: "flip",
       // grabCursor: true,
       autoplay: {
-        delay: 4000,
+        delay: 4500,
         disableOnInteraction: false,
       },
       pagination: {
-        el: ".swiper-pagination2",
+        el: ".swiper-pagination",
       },
     });
   </script>
