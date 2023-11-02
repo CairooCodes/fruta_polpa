@@ -21,7 +21,7 @@ function remove_simbolos_acentos($string)
 
 
 $url = explode("/", $_SERVER['REQUEST_URI']);
-$idpost = $url[3];
+$idpost = $url[4];
 
 $idpost2 = "";
 
@@ -132,10 +132,23 @@ if ($stmt->rowCount() > 0) {
         </div>
       </div>
     </div>
-    <div class="grid grid-cols-3">
+    <?php
+    $polpaId2 = $polpa['id'];
+    // Consulta SQL para obter todas as receitas relacionadas à polpa
+    $stmt2 = $pdo->prepare("SELECT * FROM receitas WHERE product_id = :product_id");
+    $stmt2->bindParam(':product_id', $polpaId2);
+    $stmt2->execute();
+
+    if ($stmt2->rowCount() > 0) {
+      echo "<h1 class='text-xl text-gray-800 font-bold'>
+      Confira algumas de nossas receitas com polpa de <?php echo $polpa[name]; ?>
+    </h1>";
+    }
+    ?>
+
+    <div class="grid grid-cols-3 pb-10">
       <?php
       $polpaId = $polpa['id'];
-
       // Consulta SQL para obter todas as receitas relacionadas à polpa
       $stmt = $pdo->prepare("SELECT * FROM receitas WHERE product_id = :product_id");
       $stmt->bindParam(':product_id', $polpaId);
@@ -147,14 +160,13 @@ if ($stmt->rowCount() > 0) {
       ?>
           <div>
             <div class="mb-8 mt-4 items-center rounded-xl p-2">
-              <?php echo "<img class='lazy rounded-md h-full w-52 object-cover mt-14' style='width: 350px; height: 250px;' data-src=" . $URI->base('/admin/uploads/receitas') . '/' . $receita['img'] . '>' ?>
+              <?php echo "<img class='lazy rounded-md' style='width: 350px; height: 250px;' data-src=" . $URI->base('/admin/uploads/receitas') . '/' . $receita['img'] . '>' ?>
             </div>
             <div class="mb-8 mt-4 items-center rounded-xl p-2 text-orange-600 text-center text-xl font-semibold">
               <?php echo $receita['name']; ?>
             </div>
-
-            <div class="flex justify-center mt-4">
-              <a href="<?php echo $URI->base('/receita/' . slugify($receita['name'])); ?>" class="text-white bg-orange-600 focus:ring-4 rounded-md font-md text-md px-5 py-2 text-center">Saiba mais</a>
+            <div class="flex justify-center">
+              <a href="<?php echo $URI->base('/receita/' . slugify($receita['name'])); ?>" class="text-orange-600 border-2 border-orange-600 bg-white rounded-full font-semibold text-lg px-5 py-2 text-center hover:bg-orange-600 hover:text-white">Saiba Mais</a>
             </div>
           </div>
       <?php }
