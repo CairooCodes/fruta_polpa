@@ -15,7 +15,7 @@ $stmt = $pdo->prepare($sql);
 $stmt->execute([$user_id]);
 $user = $stmt->fetch();
 
-$polpas= getAllPolpas();
+$polpas = getAllPolpas();
 $receitas = getAllReceitas();
 $page = 'receitas';
 ?>
@@ -90,6 +90,9 @@ $page = 'receitas';
                 Nome
               </th>
               <th scope="col" class="px-6 py-3">
+                Polpa
+              </th>
+              <th scope="col" class="px-6 py-3">
                 Ação
               </th>
             </tr>
@@ -103,6 +106,11 @@ $page = 'receitas';
                   </div>
                   <div class="pl-3">
                     <div class="text-base font-semibold"><?php echo $receita['name']; ?></div>
+                  </div>
+                </th>
+                <th class="bg-white border-b">
+                  <div class="pl-3">
+                    <div class="text-base font-semibold"><?php echo $receita['product_id']; ?></div>
                   </div>
                 </th>
                 <td class="px-6 py-4">

@@ -94,10 +94,6 @@ $polpas = getAllPolpas();
               </div>
             </div>
             <textarea name="description" id="description" type="text"><?php echo $receita[0]['description']; ?></textarea>
-            <div class="col-span-6 sm:col-span-3">
-              <label class="block mb-2 text-sm font-medium text-gray-900">Imagens Adicionais</label>
-              <input name="imagens[]" type="file" accept="image/*" multiple id="imagens">
-            </div>
           </div>
           <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b">
             <button type="submit" class="text-white bg-orange-700 hover:bg-orange-800 focus:ring-4 focus:outline-none focus:ring-orange-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Editar</button>

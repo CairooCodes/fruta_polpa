@@ -22,25 +22,6 @@ if (!empty($_GET['id'])) {
       }
     }
 
-    if (isset($_FILES['imagens']) && !empty($_FILES['imagens']['name'][0])) {
-      $imagesDir = '../uploads/receitas/';
-      $imagesPaths = array();
-      $totalFiles = count($_FILES['imagens']['name']);
-
-      for ($i = 0; $i < $totalFiles; $i++) {
-        $imageTmpName = $_FILES['imagens']['tmp_name'][$i];
-        $imageName = $_FILES['imagens']['name'][$i];
-        $imageUniqueName = uniqid() . '_' . $imageName;
-        if (move_uploaded_file($imageTmpName, $imagesDir . $imageUniqueName)) {
-          $imagesPaths[] = $imageUniqueName;
-        } else {
-          echo 'Erro ao fazer o upload de uma das imagens.';
-          exit;
-        }
-      }
-
-      updateReceitaImages($id, $imagesPaths);
-    }
 
     updateReceita($id, $name, $description, $product_id);
     header('Location: ../receitas.php');
