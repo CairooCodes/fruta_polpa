@@ -3,7 +3,7 @@ require "../../db_config.php";
 
 $name = $_POST['name'];
 $description = $_POST['description'];
-$categorie_id = $_POST['categorie_id'];
+$product_id = $_POST['product_id'];
 
 $dom = new DOMDocument();
 $dom->loadHTML($description);
@@ -44,8 +44,8 @@ if (isset($_FILES['imagens']) && !empty($_FILES['imagens']['name'][0])) {
 
 $new_description = $dom->saveHTML();
 
-$sql = "INSERT INTO receitas (name, description, categorie_id, img, images) VALUES (?,?,?,?,?)";
+$sql = "INSERT INTO receitas (name, description, product_id, img, imagens) VALUES (?,?,?,?,?)";
 $stmt = $pdo->prepare($sql);
 $imagesPathsString = implode(',', $imagesPaths);
-$stmt->execute([$name, $description,  $categorie_id, $imgPath, $imagesPathsString]);
+$stmt->execute([$name, $description,  $product_id, $imgPath, $imagesPathsString]);
 header('Location: ../receitas.php');

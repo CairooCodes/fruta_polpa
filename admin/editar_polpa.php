@@ -86,23 +86,6 @@ $receitas = getAllReceitas();
                   <?php } ?>
                 </select>
               </div>
-              <div class="col-span-6 sm:col-span-3">
-                <label for="receita" class="block mb-2 text-sm font-medium text-gray-900">Receitas</label>
-                <select class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-orange-600 focus:border-orange-600 block w-full p-2.5" name="categorie_id">
-                  <?php foreach ($receitas as $receita) {
-                    if ($receita['id'] == $polpa[0]['receita']) { ?>
-                      <option value="<?php echo $receita['id']; ?>"><?php echo $receita['name']; ?> (selecionado)</option>
-                  <?php }
-                  } ?>
-                  <?php foreach ($receitas as $receita) { ?>
-                    <option value="<?php echo $receita['id']; ?>"><?php echo $receita['name']; ?></option>
-                  <?php } ?>
-                </select>
-              </div>
-            </div>
-            <div class="col-span-6 sm:col-span-3">
-              <label class="block mb-2 text-sm font-medium text-gray-900">Preço</label>
-              <input name="price" type="text" value="<?php echo $polpa['price']; ?>" id="price" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-orange-600 focus:border-orange-600 block w-full p-2.5" placeholder="Preço do Serviço" required="">
             </div>
             <div>
               <label class="block text-sm font-medium text-gray-900">Introdução</label>

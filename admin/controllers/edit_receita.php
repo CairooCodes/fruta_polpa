@@ -6,7 +6,7 @@ if (!empty($_GET['id'])) {
     $id = $_POST['id'];
     $name = $_POST['name'];
     $description = $_POST['description'];
-
+    $product_id = $_POST['product_id'];
 
 
     if (isset($_FILES['img']) && $_FILES['img']['error'] == UPLOAD_ERR_OK) {
@@ -42,7 +42,7 @@ if (!empty($_GET['id'])) {
       updateReceitaImages($id, $imagesPaths);
     }
 
-    updateReceita($id, $name, $description);
+    updateReceita($id, $name, $description, $product_id);
     header('Location: ../receitas.php');
     exit();
   }

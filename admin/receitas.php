@@ -15,7 +15,7 @@ $stmt = $pdo->prepare($sql);
 $stmt->execute([$user_id]);
 $user = $stmt->fetch();
 
-
+$polpas= getAllPolpas();
 $receitas = getAllReceitas();
 $page = 'receitas';
 ?>
