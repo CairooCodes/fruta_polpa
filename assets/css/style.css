@@ -347,5 +347,21 @@ header {
 }
 
 .swiper-pagination-bullet-active {
-  background-color: yellow!important;
+  background-color: yellow !important;
+}
+
+@media (max-width: 767px) {
+  .counter {
+    font-weight: 800;
+    color: #ff851e;
+    font-size: 50px;
+    line-height: 0.7;
+  }
+
+  .counter:after {
+    content: ' anos no mercado de polpas de frutas.';
+    color: #00284a;
+    font-size: 32px;
+  }
+
 }
