@@ -13,17 +13,45 @@
     </div>
     <div class="lg:px-16 fade-in-up">
       <div class="max-w-full lg:pt-12 pt-4 mx-auto grid grid-cols-2 mt-2">
-        <img src="./assets/img/industria2.png" class="w-full  rounded-tl-md">
-        <div class="flex justify-center items-center bg-color1 text-white p-3 rounded-tr-md">
-          <h1 class="font-bold">SUSTENTABILIDADE</h1>
+        <img src="./assets/img/materiaprimaselecionada.png" class="w-full  rounded-tl-md">
+        <div class="flex justify-center items-center text-white text-center p-3 rounded-tr-md" style="background-color:  #1c5503;">
+          <h1 class="font-bold">MATÉRIA PRIMA SELECIONADA</h1>
         </div>
       </div>
-      <div class="max-w-full pb-12 mx-auto grid grid-cols-2">
-        <div class="flex justify-center items-center bg-color1 text-white p-3 rounded-bl-md">
-          <h1 class="font-bold">CERTIFICAÇÕES</h1>
+      <div class="max-w-full mx-auto grid grid-cols-2">
+        <div class="flex justify-center items-center text-white p-3 rounded-bl-md" style="background-color: #cfcd0d;">
+          <h1 class="font-bold">SELEÇÃO</h1>
         </div>
-        <img src="./assets/img/fazenda2.png" class="w-full rounded-br-md">
+        <img src="./assets/img/seleção.png" class="w-full rounded-br-md">
+        <img src="./assets/img/qualidadepremium.png" class="w-full  rounded-tl-md">
+        <div class="flex justify-center items-center text-white p-3 rounded-tr-md" style="background-color: #f7640e;">
+          <h1 class="font-bold">QUALIDADE PREMIUM</h1>
+        </div>
+        <div class="flex justify-center items-center text-white p-3 rounded-bl-md" style="background-color: #ce1575;">
+          <h1 class="font-bold">TECNOLOGIA</h1>
+        </div>
+        <img src="./assets/img/tecnologia.png" class="w-full rounded-br-md">
+        <img src="./assets/img/produção.png" class="w-full  rounded-tl-md">
+        <div class="flex justify-center items-center text-white p-3 rounded-tr-md" style="background-color: #ffae00;">
+          <h1 class="font-bold">PRODUÇÃO</h1>
+        </div>
+        <div class="flex justify-center items-center text-white p-3 rounded-bl-md pb-12" style="background-color: #ff2400;">
+          <h1 class="font-bold">LOGÍSTICA</h1>
+        </div>
+        <img src="./assets/img/logística.png" class="w-full rounded-br-md">
       </div>
     </div>
+    <!-- <div class="max-w-full mx-auto grid grid-cols-2 mt-2">
+
+    </div>
+    <div class="max-w-full mx-auto grid grid-cols-2">
+
+    </div>
+    <div class="max-w-full mx-auto grid grid-cols-2 mt-2">
+
+    </div>
+    <div class="max-w-full pb-12 mx-auto grid grid-cols-2">
+
+    </div> -->
   </div>
 </section>

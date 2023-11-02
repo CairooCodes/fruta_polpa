@@ -13,7 +13,7 @@
       <a href="<?php echo $URI->base("/institucional"); ?>" class="leia-mais-link">Leia mais</a>
     </div>
     <div class="lg:px-32">
-      <img src="./assets/img/banner-home-mobile.jpg" class="w-full">
+      <img src="./assets/img/página institucional.png" class="w-full">
     </div>
   </div>
 </section>

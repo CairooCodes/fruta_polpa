@@ -8,7 +8,8 @@
           <div class="swiper-slide">
             <div class="hover:-translate-y-4 transition duration-500 bg-white rounded-2xl shadow2 relative">
               <img class="w-full" src='./assets/img/ABACAXI1.png'>
-              <div class="bg-bottom rounded-b-2xl bg-orange-500">
+              <div class="bg-bottom rounded-b-2xl" style="background: rgb(252,114,0);
+background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);">
                 <div class="flex justify-center pb-5">
                   <a href="<?php echo $URI->base("/polpas-tradicionais"); ?>">
                     <h3 class="text-xl text-white text-center font-bold pt-6 mb-2">100%
@@ -26,7 +27,8 @@
           <div class="swiper-slide">
             <div class="hover:-translate-y-4 transition duration-500 bg-white rounded-2xl shadow2 relative">
               <img class="w-full" src='./assets/img/AÇAÍ1.png'>
-              <div class="bg-bottom rounded-b-2xl bg-orange-500">
+              <div class="bg-bottom rounded-b-2xl" style="background: rgb(252,114,0);
+background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);">
                 <div class="flex justify-center pb-5">
                   <a href="<?php echo $URI->base("/polpas-tradicionais"); ?>">
                     <h3 class="text-xl text-white text-center font-bold pt-6 mb-2">100%
@@ -44,7 +46,8 @@
           <div class="swiper-slide">
             <div class="hover:-translate-y-4 transition duration-500 bg-white rounded-2xl shadow2 relative">
               <img class="w-full" src='./assets/img/ACEROLA1.png'>
-              <div class="bg-bottom rounded-b-2xl bg-orange-500">
+              <div class="bg-bottom rounded-b-2xl" style="background: rgb(252,114,0);
+background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);">
                 <div class="flex justify-center pb-5">
                   <a href="<?php echo $URI->base("/polpas-tradicionais"); ?>">
                     <h3 class="text-xl text-white text-center font-bold pt-6 mb-2">100%
@@ -62,7 +65,8 @@
           <div class="swiper-slide">
             <div class="hover:-translate-y-4 transition duration-500 bg-white rounded-2xl shadow2 relative">
               <img class="w-full" src='./assets/img/BACURI1.png'>
-              <div class="bg-bottom rounded-b-2xl bg-orange-500">
+              <div class="bg-bottom rounded-b-2xl" style="background: rgb(252,114,0);
+background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);">
                 <div class="flex justify-center pb-5">
                   <a href="<?php echo $URI->base("/polpas-tradicionais"); ?>">
                     <h3 class="text-xl text-white text-center font-bold pt-6 mb-2">100%
@@ -80,7 +84,8 @@
           <div class="swiper-slide">
             <div class="hover:-translate-y-4 transition duration-500 bg-white rounded-2xl shadow2 relative">
               <img class="w-full" src='./assets/img/CAJÁ1.png'>
-              <div class="bg-bottom rounded-b-2xl bg-orange-500">
+              <div class="bg-bottom rounded-b-2xl" style="background: rgb(252,114,0);
+background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);">
                 <div class="flex justify-center pb-5">
                   <a href="<?php echo $URI->base("/polpas-tradicionais"); ?>">
                     <h3 class="text-xl text-white text-center font-bold pt-6 mb-2">100%
@@ -98,7 +103,8 @@
           <div class="swiper-slide">
             <div class="hover:-translate-y-4 transition duration-500 bg-white rounded-2xl shadow2 relative">
               <img class="w-full" src='./assets/img/CAJU1.png'>
-              <div class="bg-bottom rounded-b-2xl bg-orange-500">
+              <div class="bg-bottom rounded-b-2xl" style="background: rgb(252,114,0);
+background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);">
                 <div class="flex justify-center pb-5">
                   <a href="<?php echo $URI->base("/polpas-tradicionais"); ?>">
                     <h3 class="text-xl text-white text-center font-bold pt-6 mb-2">100%
@@ -116,7 +122,8 @@
           <div class="swiper-slide">
             <div class="hover:-translate-y-4 transition duration-500 bg-white rounded-2xl shadow2 relative">
               <img class="w-full" src='./assets/img/CUPUAÇU1.png'>
-              <div class="bg-bottom rounded-b-2xl bg-orange-500">
+              <div class="bg-bottom rounded-b-2xl" style="background: rgb(252,114,0);
+background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);">
                 <div class="flex justify-center pb-5">
                   <a href="<?php echo $URI->base("/polpas-tradicionais"); ?>">
                     <h3 class="text-xl text-white text-center font-bold pt-6 mb-2">100%
@@ -134,7 +141,8 @@
           <div class="swiper-slide">
             <div class="hover:-translate-y-4 transition duration-500 bg-white rounded-2xl shadow2 relative">
               <img class="w-full" src='./assets/img/GOIABA1.png'>
-              <div class="bg-bottom rounded-b-2xl bg-orange-500">
+              <div class="bg-bottom rounded-b-2xl" style="background: rgb(252,114,0);
+background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);">
                 <div class="flex justify-center pb-5">
                   <a href="<?php echo $URI->base("/polpas-tradicionais"); ?>">
                     <h3 class="text-xl text-white text-center font-bold pt-6 mb-2">100%
@@ -152,7 +160,8 @@
           <div class="swiper-slide">
             <div class="hover:-translate-y-4 transition duration-500 bg-white rounded-2xl shadow2 relative">
               <img class="w-full" src='./assets/img/GRAVIOLA1.png'>
-              <div class="bg-bottom rounded-b-2xl bg-orange-500">
+              <div class="bg-bottom rounded-b-2xl" style="background: rgb(252,114,0);
+background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);">
                 <div class="flex justify-center pb-5">
                   <a href="<?php echo $URI->base("/polpas-tradicionais"); ?>">
                     <h3 class="text-xl text-white text-center font-bold pt-6 mb-2">100%
@@ -170,7 +179,8 @@
           <div class="swiper-slide">
             <div class="hover:-translate-y-4 transition duration-500 bg-white rounded-2xl shadow2 relative">
               <img class="w-full" src='./assets/img/MANGA1.png'>
-              <div class="bg-bottom rounded-b-2xl bg-orange-500">
+              <div class="bg-bottom rounded-b-2xl" style="background: rgb(252,114,0);
+background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);">
                 <div class="flex justify-center pb-5">
                   <a href="<?php echo $URI->base("/polpas-tradicionais"); ?>">
                     <h3 class="text-xl text-white text-center font-bold pt-6 mb-2">100%
@@ -188,7 +198,8 @@
           <div class="swiper-slide">
             <div class="hover:-translate-y-4 transition duration-500 bg-white rounded-2xl shadow2 relative">
               <img class="w-full" src='./assets/img/MARACUJÁ1.png'>
-              <div class="bg-bottom rounded-b-2xl bg-orange-500">
+              <div class="bg-bottom rounded-b-2xl" style="background: rgb(252,114,0);
+background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);">
                 <div class="flex justify-center pb-5">
                   <a href="<?php echo $URI->base("/polpas-tradicionais"); ?>">
                     <h3 class="text-xl text-white text-center font-bold pt-6 mb-2">100%
@@ -206,7 +217,8 @@
           <div class="swiper-slide">
             <div class="hover:-translate-y-4 transition duration-500 bg-white rounded-2xl shadow2 relative">
               <img class="w-full" src='./assets/img/MORANGO1.png'>
-              <div class="bg-bottom rounded-b-2xl bg-orange-500">
+              <div class="bg-bottom rounded-b-2xl" style="background: rgb(252,114,0);
+background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);">
                 <div class="flex justify-center pb-5">
                   <a href="<?php echo $URI->base("/polpas-tradicionais"); ?>">
                     <h3 class="text-xl text-white text-center font-bold pt-6 mb-2">100%
@@ -224,7 +236,8 @@
           <div class="swiper-slide">
             <div class="hover:-translate-y-4 transition duration-500 bg-white rounded-2xl shadow2 relative">
               <img class="w-full" src='./assets/img/MURICI1.png'>
-              <div class="bg-bottom rounded-b-2xl bg-orange-500">
+              <div class="bg-bottom rounded-b-2xl" style="background: rgb(252,114,0);
+background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);">
                 <div class="flex justify-center pb-5">
                   <a href="<?php echo $URI->base("/polpas-tradicionais"); ?>">
                     <h3 class="text-xl text-white text-center font-bold pt-6 mb-2">100%
@@ -242,7 +255,8 @@
           <div class="swiper-slide">
             <div class="hover:-translate-y-4 transition duration-500 bg-white rounded-2xl shadow2 relative">
               <img class="w-full" src='./assets/img/TAMARINDO1.png'>
-              <div class="bg-bottom rounded-b-2xl bg-orange-500">
+              <div class="bg-bottom rounded-b-2xl" style="background: rgb(252,114,0);
+background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);">
                 <div class="flex justify-center pb-5">
                   <a href="<?php echo $URI->base("/polpas-tradicionais"); ?>">
                     <h3 class="text-xl text-white text-center font-bold pt-6 mb-2">100%
@@ -267,7 +281,8 @@
           <div class="swiper-slide">
             <div class="hover:-translate-y-4 transition duration-500 bg-white rounded-2xl shadow2 relative">
               <img class="w-full" src='./assets/img/MIX_ABACAXI_COM_HORTELÃ1.png'>
-              <div class="bg-bottom rounded-b-2xl bg-orange-500">
+              <div class="bg-bottom rounded-b-2xl" style="background: rgb(252,114,0);
+background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);">
                 <div class="flex justify-center pb-5">
                   <a href="<?php echo $URI->base("/polpas-mixs"); ?>">
                     <h3 class="text-xl text-white text-center font-bold pt-6 mb-2">100%
@@ -285,7 +300,8 @@
           <div class="swiper-slide">
             <div class="hover:-translate-y-4 transition duration-500 bg-white rounded-2xl shadow2 relative">
               <img class="w-full" src='./assets/img/MIX_HIBISCO1.png'>
-              <div class="bg-bottom rounded-b-2xl bg-orange-500">
+              <div class="bg-bottom rounded-b-2xl" style="background: rgb(252,114,0);
+background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);">
                 <div class="flex justify-center pb-5">
                   <a href="<?php echo $URI->base("/polpas-mixs"); ?>">
                     <h3 class="text-xl text-white text-center font-bold pt-6 mb-2">100%
@@ -303,7 +319,8 @@
           <div class="swiper-slide">
             <div class="hover:-translate-y-4 transition duration-500 bg-white rounded-2xl shadow2 relative">
               <img class="w-full" src='./assets/img/MIX_REFRESCANTE1.png'>
-              <div class="bg-bottom rounded-b-2xl bg-orange-500">
+              <div class="bg-bottom rounded-b-2xl" style="background: rgb(252,114,0);
+background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);">
                 <div class="flex justify-center pb-5">
                   <a href="<?php echo $URI->base("/polpas-mixs"); ?>">
                     <h3 class="text-xl text-white text-center font-bold pt-6 mb-2">100%
@@ -321,7 +338,8 @@
           <div class="swiper-slide">
             <div class="hover:-translate-y-4 transition duration-500 bg-white rounded-2xl shadow2 relative">
               <img class="w-full" src='./assets/img/MIX_TROPICAL1.png'>
-              <div class="bg-bottom rounded-b-2xl bg-orange-500">
+              <div class="bg-bottom rounded-b-2xl" style="background: rgb(252,114,0);
+background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);">
                 <div class="flex justify-center pb-5">
                   <a href="<?php echo $URI->base("/polpas-mixs"); ?>">
                     <h3 class="text-xl text-white text-center font-bold pt-6 mb-2">100%
@@ -339,7 +357,8 @@
           <div class="swiper-slide">
             <div class="hover:-translate-y-4 transition duration-500 bg-white rounded-2xl shadow2 relative">
               <img class="w-full" src='./assets/img/MIX_VERDE1.png'>
-              <div class="bg-bottom rounded-b-2xl bg-orange-500">
+              <div class="bg-bottom rounded-b-2xl" style="background: rgb(252,114,0);
+background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);">
                 <div class="flex justify-center pb-5">
                   <a href="<?php echo $URI->base("/polpas-mixs"); ?>">
                     <h3 class="text-xl text-white text-center font-bold pt-6 mb-2">100%
@@ -357,7 +376,8 @@
           <div class="swiper-slide">
             <div class="hover:-translate-y-4 transition duration-500 bg-white rounded-2xl shadow2 relative">
               <img class="w-full" src='./assets/img/MIX_YELLOW1.png'>
-              <div class="bg-bottom rounded-b-2xl bg-orange-500">
+              <div class="bg-bottom rounded-b-2xl" style="background: rgb(252,114,0);
+background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);">
                 <div class="flex justify-center pb-5">
                   <a href="<?php echo $URI->base("/polpas-mixs"); ?>">
                     <h3 class="text-xl text-white text-center font-bold pt-6 mb-2">100%
