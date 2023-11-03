@@ -6,6 +6,7 @@ RewriteCond %{SCRIPT_FILENAME} !-d
 RewriteRule ^home$ home.php [QSA,L,NC]
 RewriteRule ^institucional$ institucional.php [QSA,L,NC]
 RewriteRule ^contato$ contato.php [QSA,L,NC]
+RewriteRule ^certificacoes$ certificacoes.php [QSA,L,NC]
 RewriteRule ^trabalhe-conosco$ trabalhe-conosco.php [QSA,L,NC]
 RewriteRule ^polpas-tradicionais$ polpas-tradicionais.php [QSA,L,NC]
 RewriteRule ^polpas-mixs$ polpas-mixs.php [QSA,L,NC]

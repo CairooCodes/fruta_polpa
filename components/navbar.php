@@ -101,7 +101,9 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
           <li class="py-2">
             <a href="<?php echo $URI->base("/contato"); ?>" class="block py-2 uppercase text-xs rounded" aria-current="page">Contato</a>
           </li>
-
+          <li class="py-2">
+            <a href="<?php echo $URI->base("/certificacoes"); ?>" class="block py-2 uppercase text-xs rounded" aria-current="page">Certificações</a>
+          </li>
         </ul>
         <div class="flex justify-center">
           <a href="<?php echo $URI->base("/receitas"); ?>">
