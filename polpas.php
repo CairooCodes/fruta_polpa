@@ -46,7 +46,7 @@ $URI = new URI();
     </div>
   </div>
 
-  <div class="mx-auto max-w-7xl px-2 pt-24">
+  <div class="mx-auto max-w-7xl px-2 pt-24 mb-10">
     <h1 class="text-orange-600 text-center text-3xl font-extrabold leading-9 tracking-tight sm:text-4xl sm:leading-10 md:text-left md:text-3xl md:leading-14">
       Polpas Mix
     </h1>

@@ -111,8 +111,8 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
               RECEITAS
             </button>
           </a>
-          <a href="<?php echo $URI->base("/polpas"); ?>">
-          <button class="ml-4 bg-color1 text-white text-xs text-gray-800 py-2 px-4 rounded-full border-2 border-color1">
+          <a href="<?php echo $URI->base("/trabalhe-conosco"); ?>">
+          <button class="ml-4 text-xs py-2 px-4 rounded-full border-2 boder-transparent hover:border-color1 bg-color1 hover:bg-white text-white hover:text-color1">
             Trabalhe conosco
           </button>
           </a>
