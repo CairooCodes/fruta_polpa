@@ -24,51 +24,7 @@ $URI = new URI();
 <body>
   <?php include "./components/navbar.php"; ?>
   <section class="max-w-full px-4 pt-10 mx-auto fade-in-up">
-    <div class="mb-10">
-      <div class="mx-auto px-2">
-        <h1 class="text-orange-600 px-6 lg:px-28 text-center text-3xl font-extrabold leading-9 tracking-tight sm:text-4xl sm:leading-10 md:text-3xl md:leading-14">
-          Conheça nossa equipe
-        </h1>
-        <div class="mx-auto px-6 lg:px-48">
-          <div class="">
-            <div class="swiper swiper_equip py-8  ">
-              <div class="swiper-wrapper ">
-                  <div class="swiper-slide my-4 mx-1">
-                    <div class="max-w-lg p-3 mx-auto rounded-md shadow2">
-                      <div>
-                        <img src="./assets/img/certificado1.png" alt="">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide my-4 mx-1">
-                    <div class="max-w-lg p-3 mx-auto rounded-md shadow2">
-                      <div>
-                        <img src="./assets/img/certificado1.png" alt="">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide my-4 mx-1">
-                    <div class="max-w-lg p-3 mx-auto rounded-md shadow2">
-                      <div>
-                        <img src="./assets/img/certificado1.png" alt="">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide my-4 mx-1">
-                    <div class="max-w-lg p-3 mx-auto rounded-md shadow2">
-                      <div>
-                        <img src="./assets/img/certificado1.png" alt="">
-                      </div>
-                    </div>
-                  </div>
-              </div>
-            </div>
-            <div class="swiper-button-next font-black text-orange-500 hover:text-orange-700 lg:mr-12"></div>
-            <div class="swiper-button-prev font-black text-orange-500 hover:text-orange-700 lg:ml-12"></div>
-          </div>
-        </div>
-      </div>
-    </div>
+
     <div class="mx-auto lg:pb-16 pb-4">
       <div class="text-center">
         <p class="text-2xl text-orange-600 uppercase font-sans">Nossa História</p>
@@ -223,6 +179,51 @@ $URI = new URI();
             <span class="pr-2">Encontre o Distribuidor mais próximo</span><i class="bi bi-chevron-right"></i>
           </button>
         </a>
+      </div>
+    </div>
+    <div class="mb-10 mt-20">
+      <div class="mx-auto px-2">
+        <h1 class="text-orange-600 px-6 lg:px-28 text-center text-3xl font-extrabold leading-9 tracking-tight sm:text-4xl sm:leading-10 md:text-3xl md:leading-14">
+          Conheça nossa equipe
+        </h1>
+        <div class="mx-auto px-6 lg:px-48">
+          <div class="">
+            <div class="swiper swiper_equip py-8  ">
+              <div class="swiper-wrapper ">
+                <div class="swiper-slide my-4 mx-1">
+                  <div class="max-w-full p-1 mx-auto rounded-md shadow2">
+                    <div>
+                      <img src="./assets/img/seleção.png" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide my-4 mx-1">
+                  <div class="max-w-full p-1 mx-auto rounded-md shadow2">
+                    <div>
+                      <img src="./assets/img/supermercado.png" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide my-4 mx-1">
+                  <div class="max-w-full p-1 mx-auto rounded-md shadow2">
+                    <div>
+                      <img src="./assets/img/tecnologia.png" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide my-4 mx-1">
+                  <div class="max-w-full p-1 mx-auto rounded-md shadow2">
+                    <div>
+                      <img src="./assets/img/industria2.png" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next font-black text-orange-500 hover:text-orange-700 lg:mr-12"></div>
+            <div class="swiper-button-prev font-black text-orange-500 hover:text-orange-700 lg:ml-12"></div>
+          </div>
+        </div>
       </div>
     </div>
   </section>

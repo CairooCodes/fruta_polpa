@@ -31,10 +31,9 @@ $URI = new URI();
   <section>
     <div class="max-w-full px-4 pt-5 mx-auto lg:grid grid-cols-2">
       <div class="mx-auto py-28">
-        <h1 class="text-orange-600 text-3xl font-extrabold leading-9 tracking-tight sm:text-4xl sm:leading-10 md:text-left md:text-3xl md:leading-14 text-center">
+        <h1 class="text-orange-600 text-3xl font-extrabold leading-9 tracking-tight sm:text-4xl sm:leading-10 md:text-left md:text-3xl md:leading-14 text-center mt-8">
           Entre em Contato
         </h1>
-
         <div class="py-8">
           <div class="mt-4 flex flex-col space-y-2 text-gray-500">
             <p class="font-bold text-orange-500">Telefone</p>
@@ -83,7 +82,7 @@ $URI = new URI();
           </a>
         </div>
       </div>
-      <div class="mx-auto bg-gray-500 rounded w-full">
+      <!-- <div class="mx-auto bg-gray-500 rounded w-full">
         <form action="./admin/controllers/add_lead.php" method="post" class="mr-auto lg:p-16 place-self-center">
           <h2 class="text-center md:text-left text-3xl font-extrabold pb-5 tracking-wider text-white">Envie uma mensagem</h2>
           <div>
@@ -102,7 +101,7 @@ $URI = new URI();
             <label class="text-sm font-bold text-white">
               WhatsApp
             </label>
-            <input type="number" name="whatsapp" id="whatsapp" placeholder="(99) 9 9999-9999" class="mt-2 mb-4 w-full rounded-lg p-3 text-gray-900" />
+            <input type="number" name="whatsapp" id="telephone" placeholder="(99) 9 9999-9999" class="mt-2 mb-4 w-full rounded-lg p-3 text-gray-900" />
           </div>
           <div>
             <label class="text-sm font-bold text-white">
@@ -119,6 +118,41 @@ $URI = new URI();
           <input type="hidden" value="CONTATO" name="type">
           <div class="mt-2 flex justify-center items-center">
             <input type="submit" class="my-2 w-full cursor-pointer rounded-lg bg-orange-500 py-2 px-4 font-medium text-white duration-300 ease-in-out hover:bg-gray-300 hover:text-black" value="Quero comprar Fruta Polpa">
+          </div>
+        </form>
+      </div> -->
+      <div class="mx-auto w-full py-28 px-16">
+        <form action="./admin/controllers/add_lead.php" method="POST" class="bg-color1 p-8 rounded-lg w-full">
+          <h2 class="text-center md:text-left text-3xl font-extrabold pb-5 tracking-wider text-white">Envie seu contato</h2>
+          <div class="mb-5">
+            <label for="name" class="mb-3 block text-base font-medium text-white">
+              Nome
+            </label>
+            <input type="text" name="name" id="name" placeholder="Nome completo" class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" />
+          </div>
+          <div class="mb-5">
+            <label for="email" class="mb-3 block text-base font-medium text-white">
+              Email
+            </label>
+            <input type="email" name="email" id="email" placeholder="email@gmail.com" class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" />
+          </div>
+          <div class="mb-5">
+            <label for="subject" class="mb-3 block text-base font-medium text-white">
+              WhatsApp
+            </label>
+            <input type="number" name="telephone" id="telephone" placeholder="(99) 9 9999-9999" class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" />
+          </div>
+          <div class="mb-5">
+            <label for="subject" class="mb-3 block text-base font-medium text-white">
+              CNPJ/CPF
+            </label>
+            <input type="number" name="cnpj" id="cnpj" placeholder="CNPJ da Empresa ou CPF pessoa fisica" class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" />
+          </div>
+          <input type="hidden" value="CONTATO" name="type">
+          <div>
+            <button class="bg-white hover:bg-color1 text-sm text-color1 hover:text-white font-bold py-2 px-4 rounded-full border-2 border-white">
+              Enviar
+            </button>
           </div>
         </form>
       </div>
