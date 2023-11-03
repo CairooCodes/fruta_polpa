@@ -109,6 +109,26 @@
       height: 2px;
       background-color: white;
     }
+
+    .cert-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .cert-item {
+      border: 1px solid #ccc;
+      margin: 10px 0;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .cert-description {
+      display: none;
+    }
+
+    .show-description {
+      display: block;
+    }
   </style>
 
 </head>
