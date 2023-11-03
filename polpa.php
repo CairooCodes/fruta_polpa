@@ -141,7 +141,7 @@ if ($stmt->rowCount() > 0) {
 
     if ($stmt2->rowCount() > 0) {
       echo "<h1 class='text-xl text-gray-800 font-bold'>
-      Confira algumas de nossas receitas com polpa de <?php echo $polpa[name]; ?>
+      Confira algumas de nossas receitas
     </h1>";
     }
     ?>
