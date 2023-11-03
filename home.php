@@ -29,7 +29,7 @@ $URI = new URI();
   <?php include "./components/premium-quality.php"; ?>
 
   <section>
-    <div class="max-w-full px-4 pt-5 mx-auto lg:grid grid-cols-2">
+    <div class="max-w-full px-4 pt-5 mx-auto lg:grid grid-cols-2 mb-10">
       <div class="mx-auto py-28">
         <h1 class="text-orange-600 text-3xl font-extrabold leading-9 tracking-tight sm:text-4xl sm:leading-10 md:text-left md:text-3xl md:leading-14 text-center">
           Entre em Contato
@@ -83,7 +83,7 @@ $URI = new URI();
           </a>
         </div>
       </div>
-      <div class="mx-auto bg-gray-500 rounded w-full">
+      <div class="mx-auto bg-gray-500 rounded w-full px-4 py-6">
         <form action="./admin/controllers/add_lead.php" method="post" class="mr-auto lg:p-16 place-self-center">
           <h2 class="text-center md:text-left text-3xl font-extrabold pb-5 tracking-wider text-white">Envie uma mensagem</h2>
           <div>

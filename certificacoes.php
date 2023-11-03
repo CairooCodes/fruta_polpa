@@ -25,17 +25,17 @@ $URI = new URI();
             <h1 class="text-orange-600 text-center text-3xl font-extrabold leading-9 tracking-tight sm:text-4xl sm:leading-10 md:text-left md:text-3xl md:leading-14">
                 Certificações
             </h1>
-            <p class="mt-5">
-                Conquistamos selos e certificações importantes por meio de nossas marcas, sempre estivemos atentos e preocupados na qualidade do que produzimos e entregamos aos nossos consumidores.
+            <p class="mt-5 text-justify">
+                "Conquistamos selos e certificações de renome por meio de nossas marcas, resultado do nosso contínuo compromisso com a excelência na produção e entrega de produtos de alta qualidade aos nossos consumidores. Nosso empenho em garantir padrões rigorosos de qualidade abrange desde a seleção cuidadosa de matérias-primas até os processos de fabricação e distribuição, assegurando a satisfação e confiança de nossos clientes. Essas conquistas refletem nosso firme compromisso em superar as expectativas do mercado e manter um alto nível de integridade em tudo o que fazemos."
             </p>
         </div>
-        <div class="grid lg:grid-rows gap-8 text-center mt-16">
+        <div class="lg:grid grid-rows gap-8 text-center mt-16">
             <div class="cert-grid">
                 <div class="cert-card mb-10">
                     <h2 class="text-orange-600 text-center font-bold text-xl">
                         Certificação FSSC 22000 pelo órgão DNV
                     </h2>
-                    <div class="flex justify-center px-5 py-10 gap-4">
+                    <div class="flex justify-center px-5 py-10 gap-6">
                         <img src="./assets/img/certificado8.png" alt="" class="w-1/4 h-1/4">
                         <img src="./assets/img/certificado7.jpg" alt="" class="w-1/4 h-1/4">
                     </div>
@@ -57,10 +57,10 @@ $URI = new URI();
                     <h2 class="text-orange-600 text-center font-bold text-xl">
                         Certificações Orgânicas
                     </h2>
-                    <div class="flex justify-center px-5 py-10 gap-4">
-                        <img src="./assets/img/certificado4.png" alt="" class="w-2/5 h-1/4 pt-16">
-                        <img src="./assets/img/certificado5.jpg" alt="" class="w-1/4 h-1/4">
-                        <img src="./assets/img/certificado6.jpg" alt="" class="w-1/3 h-1/4 pt-2">
+                    <div class="flex justify-center px-5 py-10 gap-4 mx-auto">
+                        <img src="./assets/img/certificado4.png" alt="" class="w-2/5 h-1/4 pt-5">
+                        <img src="./assets/img/certificado5.png" alt="" class="w-1/4 h-1/4 pt-3">
+                        <img src="./assets/img/certificado6.png" alt="" class="w-1/4 h-1/4 pt-2">
                     </div>
                     <button class="saiba-mais hover:bg-color1 text-sm text-gray-800 font-bold py-2 px-4 rounded-full border-2 border-color1">Saiba Mais</button>
                     <div class="cert-description text-center m-2">
