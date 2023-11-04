@@ -93,7 +93,7 @@ $URI = new URI();
                         <label class="text-sm font-bold text-white">
                             WhatsApp
                         </label>
-                        <input type="number" name="whatsapp" id="whatsapp" placeholder="(99) 9 9999-9999" class="mt-2 mb-4 w-full rounded-lg p-3 text-gray-900" />
+                        <input type="text" name="telephone" id="telephone" placeholder="(99) 9 9999-9999" class="mt-2 mb-4 w-full rounded-lg p-3 text-gray-900" />
                     </div>
                     <div>
                         <label class="text-sm font-bold text-white">
