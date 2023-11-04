@@ -67,7 +67,7 @@ $URI = new URI();
                 </div>
                 <div class="mt-12">
                     <h1 class="text-orange-600 text-xl font-extrabold leading-9 tracking-tight sm:text-2xl sm:leading-10 md:text-left md:text-xl md:leading-14 text-center">Deseja ser um Revendedor ou Representante?</h1>
-                    <a href="./trabalhe-conosco.php" class="flex justify-center py-5">
+                    <a href="<?php echo $URI->base("/trabalhe-conosco"); ?>" class="flex justify-center py-5">
                         <button class="hover:bg-color1 text-sm text-gray-800 font-bold py-2 px-4 rounded-full border-2 border-color1">
                             Clique aqui e Trabalhe Conosco!
                         </button>

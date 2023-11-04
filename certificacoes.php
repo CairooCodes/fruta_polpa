@@ -63,10 +63,10 @@ $URI = new URI();
                     </h2>
                     <div class="px-5 py-10 lg:grid grid-cols-3 gap-2">
                         <div class="flex justify-center">
-                            <img src="./assets/img/certificado4.png" alt="" class="lg:w-11/12 md:w-full">
+                            <img src="./assets/img/certificado4.png" alt="" class="lg:w-11/12 md:w-full h-3/4 mt-10">
                         </div>
                         <div class="flex justify-center">
-                            <img src="./assets/img/certificado5.png" alt="" class="lg:w-3/4 md:w-full">
+                            <img src="./assets/img/certificado5.png" alt="" class="lg:w-11/12 md:w-full">
                         </div>
                         <div class="flex justify-center">
                             <img src="./assets/img/certificado6.png" alt="" class="lg:w-3/4 md:w-full">
