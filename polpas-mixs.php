@@ -45,18 +45,25 @@ $URI = new URI();
                 <a href="#" class="text-white bg-orange-500 focus:ring-4 rounded-3xl font-md text-md px-12 py-3 text-center font-black shadow-lg hover:bg-orange-700 hover:shadow-orange-700/50 duration-500 shadow-orange-500/50">ENCONTRE O DISTRIBUIDOR MAIS PRÓXIMO</a>
             </div>
         </div>
+    </div>
 
-        <?php include "./components/footer.php" ?>
-
-        <script src="./assets/js/script.js"></script>
-        <script src="./assets/js/lz.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
-        <script src="assets/js/dark_mode.js"></script>
-        <script src="assets/js/tw.js"></script>
-        <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-        <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+    <?php include "./components/footer.php" ?>
+    <?php include "./components/modal_form_whatsapp.php" ?>
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/lz.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
+    <script src="assets/js/dark_mode.js"></script>
+    <script src="assets/js/tw.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+    <script>
+        // JavaScript para abrir o WhatsApp ao clicar no botão
+        document.getElementById('openWhatsApp').addEventListener('click', function() {
+            window.open('https://api.whatsapp.com/send?phone=5586994293833&text=Olá%20Fruta%20Polpa-site', '_blank');
+        });
+    </script>
 </body>
 
 </html>

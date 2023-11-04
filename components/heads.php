@@ -110,16 +110,10 @@
       background-color: white;
     }
 
-    .cert-list {
-      list-style: none;
-      padding: 0;
-    }
-
-    .cert-item {
-      border: 1px solid #ccc;
-      margin: 10px 0;
-      padding: 20px;
-      text-align: center;
+    .swiper-button-next,
+    .swiper-button-prev {
+      transform: scale(0.6);
+      /* Fator de escala desejado (0.8 reduzirá em 20%) */
     }
 
     .cert-description {
@@ -128,6 +122,30 @@
 
     .show-description {
       display: block;
+    }
+
+    /* Estilos para o botão flutuante */
+    .whatsapp-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      /* Cor de fundo do WhatsApp */
+      color: #fff;
+      border: none;
+      border-radius: 50%;
+      font-size: 24px;
+      width: 60px;
+      height: 60px;
+      cursor: pointer;
+      text-align: center;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Estilos para o ícone do WhatsApp */
+    .whatsapp-icon {
+      font-size: 24px;
+      line-height: 60px;
     }
   </style>
 

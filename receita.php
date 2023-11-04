@@ -70,7 +70,7 @@ if ($stmt->rowCount() > 0) {
   </section>
 
   <?php include "./components/footer.php" ?>
-
+  <?php include "./components/modal_form_whatsapp.php" ?>
   <script src="<?php echo $URI->base('/assets/js/lz.js'); ?>"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
   <script src="<?php echo $URI->base('/assets/js/tw.js'); ?>"></script>
@@ -94,6 +94,12 @@ if ($stmt->rowCount() > 0) {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
       },
+    });
+  </script>
+    <script>
+    // JavaScript para abrir o WhatsApp ao clicar no botão
+    document.getElementById('openWhatsApp').addEventListener('click', function() {
+      window.open('https://api.whatsapp.com/send?phone=5586994293833&text=Olá%20Fruta%20Polpa-site', '_blank');
     });
   </script>
 </body>

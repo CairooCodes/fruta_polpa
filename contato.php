@@ -69,7 +69,7 @@ $URI = new URI();
                     <h1 class="text-orange-600 text-xl font-extrabold leading-9 tracking-tight sm:text-2xl sm:leading-10 md:text-left md:text-xl md:leading-14 text-center">Deseja ser um Revendedor ou Representante?</h1>
                     <a href="./trabalhe-conosco.php" class="flex justify-center py-5">
                         <button class="hover:bg-color1 text-sm text-gray-800 font-bold py-2 px-4 rounded-full border-2 border-color1">
-                        Clique aqui e Trabalhe Conosco!
+                            Clique aqui e Trabalhe Conosco!
                         </button>
                     </a>
                 </div>
@@ -119,7 +119,7 @@ $URI = new URI();
 
 
     <?php include "./components/footer.php" ?>
-
+    <?php include "./components/modal_form_whatsapp.php" ?>
     <script src="./assets/js/script.js"></script>
     <script src="./assets/js/lz.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
@@ -129,6 +129,12 @@ $URI = new URI();
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+    <script>
+        // JavaScript para abrir o WhatsApp ao clicar no botão
+        document.getElementById('openWhatsApp').addEventListener('click', function() {
+            window.open('https://api.whatsapp.com/send?phone=5586994293833&text=Olá%20Fruta%20Polpa-site', '_blank');
+        });
+    </script>
 </body>
 
 </html>

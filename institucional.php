@@ -220,15 +220,15 @@ $URI = new URI();
                 </div>
               </div>
             </div>
-            <div class="swiper-button-next font-black text-orange-500 hover:text-orange-700 lg:mr-12"></div>
-            <div class="swiper-button-prev font-black text-orange-500 hover:text-orange-700 lg:ml-12"></div>
+            <!-- <div class="swiper-button-next font-black text-orange-500 hover:text-orange-700 lg:mr-12"></div>
+            <div class="swiper-button-prev font-black text-orange-500 hover:text-orange-700 lg:ml-12"></div> -->
           </div>
         </div>
       </div>
     </div>
   </section>
   <?php include "./components/footer.php"; ?>
-
+  <?php include "./components/modal_form_whatsapp.php" ?>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
   <script src="assets/js/tw.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js"></script>
@@ -283,13 +283,12 @@ $URI = new URI();
       },
     });
   </script>
-  <style>
-    .swiper-button-next,
-    .swiper-button-prev {
-      transform: scale(0.6);
-      /* Fator de escala desejado (0.8 reduzirá em 20%) */
-    }
-  </style>
+  <script>
+    // JavaScript para abrir o WhatsApp ao clicar no botão
+    document.getElementById('openWhatsApp').addEventListener('click', function() {
+      window.open('https://api.whatsapp.com/send?phone=5586994293833&text=Olá%20Fruta%20Polpa-site', '_blank');
+    });
+  </script>
 </body>
 
 </html>
