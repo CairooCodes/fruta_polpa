@@ -35,7 +35,7 @@ $URI = new URI();
                     </div>
                 </div>
             </div>
-            <div class="mx-auto bg-gray-400 rounded w-full py-26 mb-12">
+            <div class="mx-auto bg-gray-400 rounded w-full px-4 py-2">
                 <form action="./admin/controllers/add_recruitment.php" method="post" class="mr-auto lg:p-16 place-self-center">
                     <h2 class="text-center md:text-left text-3xl font-extrabold pb-5 tracking-wider text-white">Envie uma mensagem</h2>
                     <div>
@@ -75,8 +75,8 @@ $URI = new URI();
                         <input type="text" name="office" id="office" placeholder="Qual área que deseja trabalhar?" class="mt-2 mb-4 w-full rounded-lg p-3 text-gray-900" />
                     </div>
                     <input type="hidden" value="RECRUTAMENTO" name="type">
-                    <div>
-                        <button class="bg-white hover:bg-color1 text-sm text-color1 hover:text-white font-bold py-2 px-4 rounded-full border-2 border-white">
+                    <div class="flex justify-center mt-5">
+                        <button class="bg-white hover:bg-color1 text-sm text-color1 hover:text-white font-bold py-2 px-4 rounded-full border-2 border-white w-full md:w-80">
                             Enviar
                         </button>
                     </div>

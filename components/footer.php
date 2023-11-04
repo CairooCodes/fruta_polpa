@@ -49,7 +49,7 @@
             </a>
           </li>
           <li class="mt-3">
-            <a href="blogs.php" class="text-gray-600 cursor-pointer hover:text-orange-500">
+            <a href="<?php echo $URI->base("/blogs"); ?>" class="text-gray-600 cursor-pointer hover:text-orange-500">
               Blog
             </a>
           </li>

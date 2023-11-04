@@ -93,10 +93,10 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
             <a href="<?php echo $URI->base("/polpas"); ?>" class="block py-2 uppercase text-xs rounded" aria-current="page">Nossos produtos</a>
           </li>
           <li class="py-2">
-            <a href="<?php echo $URI->base("/polpas"); ?>" class="block py-2 uppercase text-xs rounded" aria-current="page">Qualidade premium</a>
+            <a href="<?php echo $URI->base("#premium-quality"); ?>" class="block py-2 uppercase text-xs rounded" aria-current="page">Qualidade premium</a>
           </li>
           <li class="py-2">
-            <a href="<?php echo $URI->base("/polpas"); ?>" class="block py-2 uppercase text-xs rounded" aria-current="page">Seja nosso parceiro</a>
+            <a href="<?php echo $URI->base("/trabalhe-conosco"); ?>" class="block py-2 uppercase text-xs rounded" aria-current="page">Seja nosso parceiro</a>
           </li>
           <li class="py-2">
             <a href="<?php echo $URI->base("/contato"); ?>" class="block py-2 uppercase text-xs rounded" aria-current="page">Contato</a>

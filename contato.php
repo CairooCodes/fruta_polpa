@@ -74,7 +74,7 @@ $URI = new URI();
                     </a>
                 </div>
             </div>
-            <div class="mx-auto bg-gray-400 rounded w-full">
+            <div class="mx-auto bg-gray-400 rounded w-full px-4 py-2">
                 <form action="./admin/controllers/add_lead.php" method="post" class="mr-auto lg:p-16 place-self-center">
                     <h2 class="text-center md:text-left text-3xl font-extrabold pb-5 tracking-wider text-white">Envie uma mensagem</h2>
                     <div>
@@ -108,8 +108,8 @@ $URI = new URI();
                         <textarea name="description" id="description" placeholder="Assunto..." rows="2" cols="50" class="mt-2 mb-4 w-full rounded-lg p-3 text-gray-900"></textarea>
                     </div>
                     <input type="hidden" value="CONTATO" name="type">
-                    <div>
-                        <button class="bg-white hover:bg-color1 text-sm text-color1 hover:text-white font-bold py-2 px-4 rounded-full border-2 border-white">
+                    <div class="flex justify-center mt-5">
+                        <button class="bg-white hover:bg-color1 text-sm text-color1 hover:text-white font-bold py-2 px-4 rounded-full border-2 border-white w-full md:w-80">
                             Quero comprar Fruta Polpa
                         </button>
                     </div>

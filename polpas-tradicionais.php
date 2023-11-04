@@ -23,7 +23,7 @@ $URI = new URI();
   <?php include "./components/navbar.php" ?>
   <div class="mx-auto max-w-7xl px-2 pt-10">
     <h1 class="text-orange-600 text-center text-3xl font-extrabold leading-9 tracking-tight sm:text-4xl sm:leading-10 md:text-left md:text-3xl md:leading-14">
-      Polpas Tradicionais
+      Fruta Polpa Tradicionais
     </h1>
     <div class="grid lg:grid-cols-4 gap-8 py-16">
       <?php foreach ($polpas1 as $polpa1) { ?>
