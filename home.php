@@ -81,8 +81,8 @@ $URI = new URI();
           </a>
         </div>
       </div>
-      <div class="mx-auto rounded w-full px-4 py-6">
-        <div class="mx-auto w-full py-28 px-16">
+      <div class="mx-auto rounded w-full">
+        <div class="mx-auto">
           <form action="./admin/controllers/add_lead.php" method="POST" class="bg-color1 p-8 rounded-lg w-full">
             <h2 class="text-center md:text-left text-3xl font-extrabold pb-5 tracking-wider text-white">
               Envie sua Mensagem</h2>
