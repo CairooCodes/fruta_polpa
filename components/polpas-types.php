@@ -8,7 +8,7 @@
           <div class="swiper-slide">
             <div class="transition duration-500 bg-white rounded-2xl shadow2">
               <div class="h-full">
-                <img style='margin-bottom: -100px;' class='lazy object-cover object-center mx-auto h-full relative top-[-100px]' data-src='./assets/img/ABACAXI1.png'>
+                <img style='margin-bottom: -100px;' class='lazy relative top-[-100px]' data-src='./assets/img/ABACAXI1.png'>
               </div>
               <div class="bg-bottom rounded-b-2xl" style="background: rgb(252,114,0);
 background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);">
@@ -29,7 +29,7 @@ background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%
           <div class="swiper-slide">
             <div class=" transition duration-500 bg-white rounded-2xl shadow2 ">
               <div class="h-full">
-                <img style='margin-bottom: -100px;' class='lazy object-cover object-center mx-auto h-full relative top-[-100px]' data-src='./assets/img/AÇAÍ1.png'>
+                <img style='margin-bottom: -100px;' class='lazy relative top-[-100px]' data-src='./assets/img/AÇAÍ1.png'>
               </div>
               <div class="bg-bottom rounded-b-2xl" style="background: rgb(252,114,0);
 background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);">
@@ -50,7 +50,7 @@ background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%
           <div class="swiper-slide">
             <div class=" transition duration-500 bg-white rounded-2xl shadow2 ">
               <div class="h-full">
-                <img style='margin-bottom: -100px;' class='lazy object-cover object-center mx-auto h-full relative top-[-100px]' data-src='./assets/img/ACEROLA1.png'>
+                <img style='margin-bottom: -100px;' class='lazy relative top-[-100px]' data-src='./assets/img/ACEROLA1.png'>
               </div>
               <div class="bg-bottom rounded-b-2xl" style="background: rgb(252,114,0);
 background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);">
@@ -71,7 +71,7 @@ background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%
           <div class="swiper-slide">
             <div class=" transition duration-500 bg-white rounded-2xl shadow2 ">
               <div class="h-full">
-                <img style='margin-bottom: -100px;' class='lazy object-cover object-center mx-auto h-full relative top-[-100px]' data-src='./assets/img/BACURI1.png'>
+                <img style='margin-bottom: -100px;' class='lazy relative top-[-100px]' data-src='./assets/img/BACURI1.png'>
               </div>
               <div class="bg-bottom rounded-b-2xl" style="background: rgb(252,114,0);
 background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);">
@@ -92,7 +92,7 @@ background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%
           <div class="swiper-slide">
             <div class=" transition duration-500 bg-white rounded-2xl shadow2 ">
               <div class="h-full">
-                <img style='margin-bottom: -100px;' class='lazy object-cover object-center mx-auto h-full relative top-[-100px]' data-src='./assets/img/CAJÁ1.png'>
+                <img style='margin-bottom: -100px;' class='lazy relative top-[-100px]' data-src='./assets/img/CAJÁ1.png'>
               </div>
               <div class="bg-bottom rounded-b-2xl" style="background: rgb(252,114,0);
 background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);">
@@ -113,7 +113,7 @@ background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%
           <div class="swiper-slide">
             <div class=" transition duration-500 bg-white rounded-2xl shadow2 ">
               <div class="h-full">
-                <img style='margin-bottom: -100px;' class='lazy object-cover object-center mx-auto h-full relative top-[-100px]' data-src='./assets/img/CAJU1.png'>
+                <img style='margin-bottom: -100px;' class='lazy relative top-[-100px]' data-src='./assets/img/CAJU1.png'>
               </div>
               <div class="bg-bottom rounded-b-2xl" style="background: rgb(252,114,0);
 background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);">
@@ -134,7 +134,7 @@ background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%
           <div class="swiper-slide">
             <div class=" transition duration-500 bg-white rounded-2xl shadow2 ">
               <div class="h-full">
-                <img style='margin-bottom: -100px;' class='lazy object-cover object-center mx-auto h-full relative top-[-100px]' data-src='./assets/img/CUPUAÇU1.png'>
+                <img style='margin-bottom: -100px;' class='lazy relative top-[-100px]' data-src='./assets/img/CUPUAÇU1.png'>
               </div>
               <div class="bg-bottom rounded-b-2xl" style="background: rgb(252,114,0);
 background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);">
@@ -155,7 +155,7 @@ background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%
           <div class="swiper-slide">
             <div class=" transition duration-500 bg-white rounded-2xl shadow2 ">
               <div class="h-full">
-                <img style='margin-bottom: -100px;' class='lazy object-cover object-center mx-auto h-full relative top-[-100px]' data-src='./assets/img/GOIABA1.png'>
+                <img style='margin-bottom: -100px;' class='lazy relative top-[-100px]' data-src='./assets/img/GOIABA1.png'>
               </div>
               <div class="bg-bottom rounded-b-2xl" style="background: rgb(252,114,0);
 background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);">
@@ -176,7 +176,7 @@ background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%
           <div class="swiper-slide">
             <div class=" transition duration-500 bg-white rounded-2xl shadow2 ">
               <div class="h-full">
-                <img style='margin-bottom: -100px;' class='lazy object-cover object-center mx-auto h-full relative top-[-100px]' data-src='./assets/img/GRAVIOLA1.png'>
+                <img style='margin-bottom: -100px;' class='lazy relative top-[-100px]' data-src='./assets/img/GRAVIOLA1.png'>
               </div>
               <div class="bg-bottom rounded-b-2xl" style="background: rgb(252,114,0);
 background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);">
@@ -197,7 +197,7 @@ background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%
           <div class="swiper-slide">
             <div class=" transition duration-500 bg-white rounded-2xl shadow2 ">
               <div class="h-full">
-                <img style='margin-bottom: -100px;' class='lazy object-cover object-center mx-auto h-full relative top-[-100px]' data-src='./assets/img/MANGA1.png'>
+                <img style='margin-bottom: -100px;' class='lazy relative top-[-100px]' data-src='./assets/img/MANGA1.png'>
               </div>
               <div class="bg-bottom rounded-b-2xl" style="background: rgb(252,114,0);
 background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);">
@@ -218,7 +218,7 @@ background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%
           <div class="swiper-slide">
             <div class=" transition duration-500 bg-white rounded-2xl shadow2 ">
               <div class="h-full">
-                <img style='margin-bottom: -100px;' class='lazy object-cover object-center mx-auto h-full relative top-[-100px]' data-src='./assets/img/MARACUJÁ1.png'>
+                <img style='margin-bottom: -100px;' class='lazy relative top-[-100px]' data-src='./assets/img/MARACUJÁ1.png'>
               </div>
               <div class="bg-bottom rounded-b-2xl" style="background: rgb(252,114,0);
 background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);">
@@ -239,7 +239,7 @@ background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%
           <div class="swiper-slide">
             <div class=" transition duration-500 bg-white rounded-2xl shadow2 ">
               <div class="h-full">
-                <img style='margin-bottom: -100px;' class='lazy object-cover object-center mx-auto h-full relative top-[-100px]' data-src='./assets/img/MORANGO1.png'>
+                <img style='margin-bottom: -100px;' class='lazy relative top-[-100px]' data-src='./assets/img/MORANGO1.png'>
               </div>
               <div class="bg-bottom rounded-b-2xl" style="background: rgb(252,114,0);
 background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);">
@@ -260,7 +260,7 @@ background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%
           <div class="swiper-slide">
             <div class=" transition duration-500 bg-white rounded-2xl shadow2 ">
               <div class="h-full">
-                <img style='margin-bottom: -100px;' class='lazy object-cover object-center mx-auto h-full relative top-[-100px]' data-src='./assets/img/MURICI1.png'>
+                <img style='margin-bottom: -100px;' class='lazy relative top-[-100px]' data-src='./assets/img/MURICI1.png'>
               </div>
               <div class="bg-bottom rounded-b-2xl" style="background: rgb(252,114,0);
 background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);">
@@ -281,7 +281,7 @@ background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%
           <div class="swiper-slide">
             <div class=" transition duration-500 bg-white rounded-2xl shadow2 ">
               <div class="h-full">
-                <img style='margin-bottom: -100px;' class='lazy object-cover object-center mx-auto h-full relative top-[-100px]' data-src='./assets/img/TAMARINDO1.png'>
+                <img style='margin-bottom: -100px;' class='lazy relative top-[-100px]' data-src='./assets/img/TAMARINDO1.png'>
               </div>
               <div class="bg-bottom rounded-b-2xl" style="background: rgb(252,114,0);
 background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);">
@@ -309,7 +309,7 @@ background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%
           <div class="swiper-slide">
             <div class=" transition duration-500 bg-white rounded-2xl shadow2 ">
               <div class="h-full">
-                <img style='margin-bottom: -100px;' class='lazy object-cover object-center mx-auto h-full relative top-[-100px]' data-src='./assets/img/MIX_ABACAXI_COM_HORTELÃ1.png'>
+                <img style='margin-bottom: -100px;' class='lazy relative top-[-100px]' data-src='./assets/img/MIX_ABACAXI_COM_HORTELÃ1.png'>
               </div>
               <div class="bg-bottom rounded-b-2xl" style="background: rgb(252,114,0);
 background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);">
@@ -330,7 +330,7 @@ background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%
           <div class="swiper-slide">
             <div class=" transition duration-500 bg-white rounded-2xl shadow2 ">
               <div class="h-full">
-                <img style='margin-bottom: -100px;' class='lazy object-cover object-center mx-auto h-full relative top-[-100px]' data-src='./assets/img/MIX_HIBISCO1.png'>
+                <img style='margin-bottom: -100px;' class='lazy relative top-[-100px]' data-src='./assets/img/MIX_HIBISCO1.png'>
               </div>
               <div class="bg-bottom rounded-b-2xl" style="background: rgb(252,114,0);
 background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);">
@@ -351,7 +351,7 @@ background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%
           <div class="swiper-slide">
             <div class=" transition duration-500 bg-white rounded-2xl shadow2 ">
               <div class="h-full">
-                <img style='margin-bottom: -100px;' class='lazy object-cover object-center mx-auto h-full relative top-[-100px]' data-src='./assets/img/MIX_REFRESCANTE1.png'>
+                <img style='margin-bottom: -100px;' class='lazy relative top-[-100px]' data-src='./assets/img/MIX_REFRESCANTE1.png'>
               </div>
               <div class="bg-bottom rounded-b-2xl" style="background: rgb(252,114,0);
 background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);">
@@ -372,7 +372,7 @@ background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%
           <div class="swiper-slide">
             <div class=" transition duration-500 bg-white rounded-2xl shadow2 ">
               <div class="h-full">
-                <img style='margin-bottom: -100px;' class='lazy object-cover object-center mx-auto h-full relative top-[-100px]' data-src='./assets/img/MIX_TROPICAL1.png'>
+                <img style='margin-bottom: -100px;' class='lazy relative top-[-100px]' data-src='./assets/img/MIX_TROPICAL1.png'>
               </div>
               <div class="bg-bottom rounded-b-2xl" style="background: rgb(252,114,0);
 background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);">
@@ -393,7 +393,7 @@ background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%
           <div class="swiper-slide">
             <div class=" transition duration-500 bg-white rounded-2xl shadow2 ">
               <div class="h-full">
-                <img style='margin-bottom: -100px;' class='lazy object-cover object-center mx-auto h-full relative top-[-100px]' data-src='./assets/img/MIX_VERDE1.png'>
+                <img style='margin-bottom: -100px;' class='lazy relative top-[-100px]' data-src='./assets/img/MIX_VERDE1.png'>
               </div>
               <div class="bg-bottom rounded-b-2xl" style="background: rgb(252,114,0);
 background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);">
@@ -414,7 +414,7 @@ background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%
           <div class="swiper-slide">
             <div class=" transition duration-500 bg-white rounded-2xl shadow2 ">
               <div class="h-full">
-                <img style='margin-bottom: -100px;' class='lazy object-cover object-center mx-auto h-full relative top-[-100px]' data-src='./assets/img/MIX_YELLOW1.png'>
+                <img style='margin-bottom: -100px;' class='lazy relative top-[-100px]' data-src='./assets/img/MIX_YELLOW1.png'>
               </div>
               <div class="bg-bottom rounded-b-2xl" style="background: rgb(252,114,0);
 background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);">
