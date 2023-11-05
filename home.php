@@ -24,6 +24,7 @@ $URI = new URI();
 
   <?php include "./components/navbar.php"; ?>
   <?php include "./components/banners.php"; ?>
+  <?php include "./components/parceiros.php"; ?>
   <?php include "./components/institucional.php"; ?>
   <?php include "./components/polpas-types.php"; ?>
   <?php include "./components/premium-quality.php"; ?>
@@ -34,12 +35,44 @@ $URI = new URI();
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
   <script src="./assets/js/lz.js"></script>
- <script src="./assets/js/main.js"></script>
+  <script src="./assets/js/main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <script>
+    var swiper = new Swiper(".swiper-portfolio", {
+      loop: true,
+      freeMode: true,
+      spaceBetween: 0,
+      grabCursor: false,
+      speed: 5000,
+      freeModeMomentum: false,
+      noSwiping: true,
+      noSwipingClass: 'swiper-slide',
+      autoplay: {
+        delay: 1,
+        disableOnInteraction: true
+      },
+      breakpoints: {
+        200: {
+          slidesPerView: 2,
+          spaceBetween: 20
+        },
+        300: {
+          slidesPerView: 3,
+          spaceBetween: 20
+        },
+        640: {
+          slidesPerView: 6,
+          spaceBetween: 45
+        }
+      },
+      loopedSlides: 6,
+    });
+  </script>
 
   <script>
     var swiper = new Swiper(".swiper_products_type", {

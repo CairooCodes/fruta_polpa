@@ -23,7 +23,50 @@ $URI = new URI();
 <body>
   <?php include "./components/navbar.php"; ?>
   <section class="max-w-full px-4 pt-10 mx-auto fade-in-up">
-    <div class="mx-auto lg:pb-16 pb-4">
+    <div class="mx-auto md:max-w-7xl">
+      <div class="grid md:grid-cols-2">
+        <div class="grid grid-rows-3">
+          <div class="bg-red-600 rounded-t-2xl md:rounded-t-none md:rounded-tl-2xl">
+            <div class="flex h-full items-center">
+              <h1 class="-rotate-90 text-white text-2xl font-[1000]">Missão</h1>
+              <h3 class="px-8 text-white text-lg">
+                Orientados por nossos valores e com a
+                nutrição como foco central, trabalhamos
+                junto com nossos parceiros para melhorar
+                a qualidade de vida e contribuir para um
+                futuro mais saudável.
+              </h3>
+            </div>
+          </div>
+          <div class="bg-orange-500">
+            <div class="flex h-full items-center">
+              <h1 class="-rotate-90 text-white text-2xl font-[1000]">Visão</h1>
+              <h3 class="px-8 text-white text-lg">
+                Deﬁnimos como meta direcionar
+                esforços para alcançarmos a liderança
+                no segmento até 2028 de forma
+                sustentável.
+              </h3>
+            </div>
+          </div>
+          <div class="bg-orange-400 md:rounded-bl-2xl  ">
+            <div class="flex h-full items-center">
+              <h1 class="-rotate-90 text-white text-2xl font-[1000]">Valores</h1>
+              <h3 class="px-8 text-white text-lg">
+                Respeito ao próximo;<br>
+                Humildade;<br>
+                Proatividade;<br>
+                Comprometimento<br>
+              </h3>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <img class="w-full rounded-b-2xl md:rounded-b-none  md:rounded-r-2xl" src="<?php echo $URI->base("/assets/img/institucional.png"); ?>" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="mx-auto lg:pb-16 pb-4 py-12">
       <div class="text-center">
         <p class="text-2xl text-orange-600 uppercase font-sans">Nossa História</p>
         <h1 class="font-bold text-orange-600 lg:text-5xl text-xl font-sans mb-2">
@@ -31,82 +74,104 @@ $URI = new URI();
         </h1>
       </div>
     </div>
-    <div class="flex flex-col sm:flex-row justify-between md:max-w-6xl mx-auto">
-      <div class="mb-4 sm:mr-4">
+    <div class="grid md:grid-cols-4 gap-4 mx-auto md:px-20 justify-center">
+      <div class="">
+        <div class="flex gap-2 mr-2 p-2">
+          <i class="bi bi-dot"></i>
+          <i class="bi bi-dot"></i>
+          <i class="bi bi-dot"></i>
+          <i class="bi bi-dot"></i>
+          <i class="bi bi-dot"></i>
+          <i class="bi bi-dot"></i>
+          <i class="bi bi-dot"></i>
+          <i class="bi bi-dot"></i>
+          <i class="bi bi-dot"></i>
+          <i class="bi bi-dot"></i>
+          <i class="bi bi-dot"></i>
+          <i class="bi bi-dot"></i>
+          <i class="bi bi-dot"></i>
+          <i class="text-center bi bi-record-circle"></i>
+        </div>
         <div class="grid justify-start">
-          <div class="flex">
-            <div class="grid grid-rows-2 gap-2 mr-2 p-2">
-              <i class="text-center bi bi-record-circle"></i>
-              <i class="bi bi-dot"></i>
-              <i class="bi bi-dot"></i>
-              <i class="bi bi-dot"></i>
-              <i class="bi bi-dot"></i>
-              <i class="bi bi-dot"></i>
-            </div>
-            <div class="grid justify-start">
-              <p class="text-gray-500">(2003)<br><span class="font-semibold font-sans text-color1">Fundação</span></p>
-              <p class="font-sans">Fundada no ano de 2003, a Fruta Polpa iniciou suas atividades<br>
-                vendendo frutas in natura na cidade de Teresina.<br>
-                Com apenas 04 colaboradores, começou o negócio de <br>produção de polpas.</p>
-            </div>
-          </div>
-          <br>
-          <div class="flex">
-            <div class="grid grid-rows-2 gap-2 mr-2 p-2">
-              <i class="text-center bi bi-record-circle"></i>
-              <i class="bi bi-dot"></i>
-              <i class="bi bi-dot"></i>
-              <i class="bi bi-dot"></i>
-              <i class="bi bi-dot"></i>
-              <i class="bi bi-dot"></i>
-            </div>
-            <div class="grid justify-start">
-              <p class="text-gray-500">(2010)<br><span class="font-semibold font-sans text-color1">Expanção Nacional</span></p>
-              <p class="font-sans">Fundada no ano de 2003, a Fruta Polpa iniciou suas atividades<br>
-                vendendo frutas in natura na cidade de Teresina.<br>
-                Com apenas 04 colaboradores, começou o negócio de <br>produção de polpas.</p>
-            </div>
-          </div>
+          <p class="text-gray-500">(2003)<br><span class="font-semibold font-sans text-color1">Fundação</span></p>
+          <p class="font-sans">Fundada no ano de 2003, a Fruta Polpa iniciou suas atividades<br>
+            vendendo frutas in natura na cidade de Teresina.<br>
+            Com apenas 04 colaboradores, começou o negócio de <br>produção de polpas.</p>
         </div>
       </div>
-      <div class="grid justify-items-end">
-        <div class="text-right img-right">
-          <div class="flex">
-            <div class="grid justify-start">
-              <p class="text-gray-500">(2015)<br><span class="font-semibold font-sans text-color1">Lançamento de Novos Produtos</span></p>
-              <p class="font-sans text-justify"><br>Fundada no ano de 2003, a Fruta Polpa iniciou suas atividades<br>
-                vendendo frutas in natura na cidade de Teresina.<br>
-                Com apenas 04 colaboradores, começou o negócio de <br>produção de polpas.</p>
-            </div>
-            <div class="grid grid-rows-2 gap-2 mr-2 p-2">
-              <i class="text-center bi bi-record-circle"></i>
-              <i class="bi bi-dot"></i>
-              <i class="bi bi-dot"></i>
-              <i class="bi bi-dot"></i>
-              <i class="bi bi-dot"></i>
-              <i class="bi bi-dot"></i>
-            </div>
-          </div>
-          <br>
-          <div class="flex">
-            <div class="grid justify-start">
-              <p class="text-gray-500">(2018)<br><span class="font-semibold font-sans text-color1">Parceria Global</span></p>
-              <p class="font-sans text-justify"><br>Fundada no ano de 2003, a Fruta Polpa iniciou suas atividades<br>
-                vendendo frutas in natura na cidade de Teresina.<br>
-                Com apenas 04 colaboradores, começou o negócio de <br>produção de polpas.</p>
-            </div>
-            <div class="grid grid-rows-2 gap-2 mr-2 p-2">
-              <i class="text-center bi bi-record-circle"></i>
-              <i class="bi bi-dot"></i>
-              <i class="bi bi-dot"></i>
-              <i class="bi bi-dot"></i>
-              <i class="bi bi-dot"></i>
-              <i class="bi bi-dot"></i>
-            </div>
-          </div>
+      <div class="">
+        <div class="flex gap-2 mr-2 p-2">
+          <i class="bi bi-dot"></i>
+          <i class="bi bi-dot"></i>
+          <i class="bi bi-dot"></i>
+          <i class="bi bi-dot"></i>
+          <i class="bi bi-dot"></i>
+          <i class="bi bi-dot"></i>
+          <i class="bi bi-dot"></i>
+          <i class="bi bi-dot"></i>
+          <i class="bi bi-dot"></i>
+          <i class="bi bi-dot"></i>
+          <i class="bi bi-dot"></i>
+          <i class="bi bi-dot"></i>
+          <i class="bi bi-dot"></i>
+          <i class="text-center bi bi-record-circle"></i>
+        </div>
+        <div class="grid justify-start">
+          <p class="text-gray-500">(2010)<br><span class="font-semibold font-sans text-color1">Expanção Nacional</span></p>
+          <p class="font-sans">Fundada no ano de 2003, a Fruta Polpa iniciou suas atividades<br>
+            vendendo frutas in natura na cidade de Teresina.<br>
+            Com apenas 04 colaboradores, começou o negócio de <br>produção de polpas.</p>
         </div>
       </div>
-    </div>
+      <div class="">
+        <div class="flex gap-2 mr-2 p-2">
+          <i class="bi bi-dot"></i>
+          <i class="bi bi-dot"></i>
+          <i class="bi bi-dot"></i>
+          <i class="bi bi-dot"></i>
+          <i class="bi bi-dot"></i>
+          <i class="bi bi-dot"></i>
+          <i class="bi bi-dot"></i>
+          <i class="bi bi-dot"></i>
+          <i class="bi bi-dot"></i>
+          <i class="bi bi-dot"></i>
+          <i class="bi bi-dot"></i>
+          <i class="bi bi-dot"></i>
+          <i class="bi bi-dot"></i>
+          <i class="text-center bi bi-record-circle"></i>
+        </div>
+        <div class="grid justify-start">
+          <p class="text-gray-500">(2015)<br><span class="font-semibold font-sans text-color1">Lançamento de Novos Produtos</span></p>
+          <p class="font-sans text-justify">Fundada no ano de 2003, a Fruta Polpa iniciou suas atividades<br>
+            vendendo frutas in natura na cidade de Teresina.<br>
+            Com apenas 04 colaboradores, começou o negócio de <br>produção de polpas.</p>
+        </div>
+      </div>
+      <div class="">
+        <div class="flex gap-2 mr-2 p-2">
+          <i class="bi bi-dot"></i>
+          <i class="bi bi-dot"></i>
+          <i class="bi bi-dot"></i>
+          <i class="bi bi-dot"></i>
+          <i class="bi bi-dot"></i>
+          <i class="bi bi-dot"></i>
+          <i class="bi bi-dot"></i>
+          <i class="bi bi-dot"></i>
+          <i class="bi bi-dot"></i>
+          <i class="bi bi-dot"></i>
+          <i class="bi bi-dot"></i>
+          <i class="bi bi-dot"></i>
+          <i class="bi bi-dot"></i>
+          <i class="text-center bi bi-record-circle"></i>
+        </div>
+        <div class="grid justify-start">
+          <p class="text-gray-500">(2018)<br><span class="font-semibold font-sans text-color1">Parceria Global</span></p>
+          <p class="font-sans text-justify">Fundada no ano de 2003, a Fruta Polpa iniciou suas atividades<br>
+            vendendo frutas in natura na cidade de Teresina.<br>
+            Com apenas 04 colaboradores, começou o negócio de <br>produção de polpas.</p>
+        </div>
+
+      </div>
     </div>
     <div class="mx-auto max-w-6xl pt-2 about mt-24">
       <section>
