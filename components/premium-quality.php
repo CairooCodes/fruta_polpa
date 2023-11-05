@@ -1,4 +1,4 @@
-<section class="bg-white max-w-full header-institucional">
+<section class="bg-white max-w-full header-institucional" id="premium-quality">
   <div class="max-w-full px-4 lg:pt-12 pb-12 mx-auto lg:grid grid-cols-2 mt-2">
     <div class="lg:px-12">
       <div class="mt-14 mb-4 text-justify">
@@ -10,7 +10,7 @@
         </p>
       </div>
       <a href="<?php echo $URI->base("/"); ?>" class="leia-mais-link">Leia mais</a>
-      <div class="max-w-full mx-auto grid grid-cols-2 pt-4">
+      <div class="max-w-full mx-auto grid grid-cols-2 pt-8">
         <img data-src="./assets/img/industria2.png" class="lazy w-full">
         <div class="flex justify-center items-center text-white p-3" style="background-color: #f7640e;">
           <h1 class="font-bold">QUALIDADE PREMIUM</h1>

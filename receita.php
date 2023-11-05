@@ -20,7 +20,7 @@ function remove_simbolos_acentos($string)
 
 
 $url = explode("/", $_SERVER['REQUEST_URI']);
-$idpost = $url[4];
+$idpost = $url[3];
 
 $idpost2 = "";
 
@@ -58,7 +58,7 @@ if ($stmt->rowCount() > 0) {
         </h1>
         <div class="rounded-xl shadow-md shadow-blue-200 mb-5">
           <div class="flex justify-center">
-            <?php echo "<img class='fade-in-up lazy' data-src=" . $URI->base('/admin/uploads/receitas') . '/' . $receita['img'] . '>' ?>
+            <?php echo "<img class='fade-in-up lazy w-4/5' data-src=" . $URI->base('/admin/uploads/receitas') . '/' . $receita['img'] . '>' ?>
           </div>
         </div>
       </div>
@@ -70,7 +70,7 @@ if ($stmt->rowCount() > 0) {
   </section>
 
   <?php include "./components/footer.php" ?>
-
+  <?php include "./components/modal_form_whatsapp.php" ?>
   <script src="<?php echo $URI->base('/assets/js/lz.js'); ?>"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
   <script src="<?php echo $URI->base('/assets/js/tw.js'); ?>"></script>
@@ -94,6 +94,12 @@ if ($stmt->rowCount() > 0) {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
       },
+    });
+  </script>
+    <script>
+    // JavaScript para abrir o WhatsApp ao clicar no botão
+    document.getElementById('openWhatsApp').addEventListener('click', function() {
+      window.open('https://api.whatsapp.com/send?phone=5586994293833&text=Olá%20Fruta%20Polpa-site', '_blank');
     });
   </script>
 </body>

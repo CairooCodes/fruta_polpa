@@ -1,6 +1,7 @@
 <?php
 session_start();
 require "../db_config.php";
+require "../functions/get.php";
 
 if (!isset($_SESSION['id'])) {
   header('Location: login.php');
@@ -8,29 +9,22 @@ if (!isset($_SESSION['id'])) {
 }
 
 $user_id = $_SESSION['id'] ?? null;
+
 $sql = "SELECT name, email, img FROM users WHERE id = ?";
 $stmt = $pdo->prepare($sql);
 $stmt->execute([$user_id]);
 $user = $stmt->fetch();
 
-try {
-  $stmt = $pdo->prepare("SELECT * FROM leads");
-  $stmt->execute();
-  $leads = $stmt->fetchAll();
-} catch (PDOException $e) {
-  echo "Erro ao recuperar dados: " . $e->getMessage();
-}
 
-
-$pdo = null;
-$page = 'leads';
+$recruitments = getRecruitments();
+$page = 'trabalhe-conosco';
 ?>
 
 <!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
-  <title>Leads Fruta Polpa</title>
+  <title>Trabalhe Conosco - Fruta Polpa</title>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -91,22 +85,30 @@ $page = 'leads';
         <table class="w-full text-sm text-left text-gray-500">
           <thead class="text-xs text-gray-700 uppercase bg-gray-50">
             <tr>
-              <th scope="col" class="px-6 py-3">Nome Completo</th>
-              <th scope="col" class="px-6 py-3">E-mail</th>
-              <th scope="col" class="px-6 py-3">WhatsApp</th>
-              <th scope="col" class="px-6 py-3">Tipo</th>
-              <th scope="col" class="px-6 py-3">Ação</th>
+              <th scope="col" class="px-6 py-3">
+                Nome
+              </th>
+              <th scope="col" class="px-6 py-3">
+                Área de Interesse
+              </th>
+              <th scope="col" class="px-6 py-3">
+                Ação
+              </th>
             </tr>
           </thead>
           <tbody>
-            <?php foreach ($leads as $lead) { ?>
-              <tr>
-                <th class="pl-5 font-semibold"><?php echo $lead['name']; ?></th>
-                <th class="pl-5 font-semibold"><?php echo $lead['email']; ?></th>
-                <th class="pl-5 font-semibold"><?php echo $lead['telephone']; ?></th>
-                <th class="pl-5 font-semibold"><?php echo $lead['type']; ?></th>
+            <?php foreach ($recruitments as $recruitment) { ?>
+              <tr class="bg-white border-b">
+                <th scope="row" class="flex items-center px-6 py-4 text-gray-900 whitespace-nowrap">
+                  <div class="pl-3">
+                    <div class="text-base font-semibold"><?php echo $recruitment['name']; ?></div>
+                  </div>
+                </th>
+                <th class="px-6 py-3">
+                <div class="text-base font-semibold"><?php echo $recruitment['office']; ?></div>
+                </th>
                 <td class="px-6 py-4">
-                  <a href="./controllers/delete_lead.php?id=<?php echo $lead['id']; ?>" type="button" class="font-medium text-red-600 hover:underline">Excluir</a>
+                  <a href="./controllers/delete_recruitment.php?id=<?php echo $recruitment['id']; ?>" type="button" class="font-medium text-red-600 hover:underline">Excluir</a>
                 </td>
               </tr>
             <?php } ?>

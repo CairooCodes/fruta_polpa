@@ -31,12 +31,12 @@
         </a>
       </li>
       <li>
-        <a href="quem-somos.php?id=1" class="px-3 py-2 flex items-center space-x-3 rounded-md text-gray-800 group 
-        <?php if ($page == 'quem-somos') {
+        <a href="trabalhe-conosco.php?id=1" class="px-3 py-2 flex items-center space-x-3 rounded-md text-gray-800 group 
+        <?php if ($page == 'trabalhe-conosco') {
           echo 'bg-orange-600 text-white';
         } ?>">
           <i class="bi bi-people"></i>
-          <span class="group-hover:text-gray-700">Quem Somos</span>
+          <span class="group-hover:text-gray-700">Trabalhe Conosco</span>
         </a>
       </li>
       <li>

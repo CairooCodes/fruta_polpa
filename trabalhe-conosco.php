@@ -23,7 +23,7 @@ $URI = new URI();
         <div class="max-w-full px-4 pt-5 mx-auto lg:grid grid-cols-2">
             <div class="mx-auto flex items-center">
                 <div>
-                    <h1 class="font-medium text-orange-500 px-10">
+                    <h1 class="font-medium text-orange-500 text-center px-10">
                         FAÇA PARTE DESTA HISTÓRIA!
                     </h1>
 
@@ -35,7 +35,7 @@ $URI = new URI();
                     </div>
                 </div>
             </div>
-            <div class="mx-auto bg-gray-500 rounded w-full">
+            <div class="mx-auto bg-gray-400 rounded w-full px-4 py-2">
                 <form action="./admin/controllers/add_recruitment.php" method="post" class="mr-auto lg:p-16 place-self-center">
                     <h2 class="text-center md:text-left text-3xl font-extrabold pb-5 tracking-wider text-white">Envie uma mensagem</h2>
                     <div>
@@ -75,15 +75,17 @@ $URI = new URI();
                         <input type="text" name="office" id="office" placeholder="Qual área que deseja trabalhar?" class="mt-2 mb-4 w-full rounded-lg p-3 text-gray-900" />
                     </div>
                     <input type="hidden" value="RECRUTAMENTO" name="type">
-                    <div class="mt-2 flex justify-center items-center">
-                        <input type="submit" class="my-2 w-full cursor-pointer rounded-lg bg-orange-500 py-2 px-4 font-medium text-white duration-300 ease-in-out hover:bg-gray-300 hover:text-black" value="Enviar">
+                    <div class="flex justify-center mt-5">
+                        <button class="bg-white hover:bg-color1 text-sm text-color1 hover:text-white font-bold py-2 px-4 rounded-full border-2 border-white w-full md:w-80">
+                            Enviar
+                        </button>
                     </div>
                 </form>
             </div>
     </section>
-    
-    <?php include "./components/footer.php" ?>
 
+    <?php include "./components/footer.php" ?>
+    <?php include "./components/modal_form_whatsapp.php" ?>
     <script src="./assets/js/script.js"></script>
     <script src="./assets/js/lz.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
@@ -93,6 +95,12 @@ $URI = new URI();
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+    <script>
+    // JavaScript para abrir o WhatsApp ao clicar no botão
+    document.getElementById('openWhatsApp').addEventListener('click', function() {
+      window.open('https://api.whatsapp.com/send?phone=5586994293833&text=Olá%20Fruta%20Polpa-site', '_blank');
+    });
+  </script>
 </body>
 
 </html>

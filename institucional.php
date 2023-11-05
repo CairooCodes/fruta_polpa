@@ -4,6 +4,7 @@ require "config/helper.php";
 require "config/url.class.php";
 require "./functions/get.php";
 
+$polpas2 = getPolpas2();
 $abouts = getAbouts();
 $URI = new URI();
 ?>
@@ -244,9 +245,54 @@ $URI = new URI();
         </a>
       </div>
     </div>
+    <div class="mb-10 mt-20">
+      <div class="mx-auto px-2">
+        <h1 class="text-orange-600 px-6 lg:px-28 text-center text-3xl font-extrabold leading-9 tracking-tight sm:text-4xl sm:leading-10 md:text-3xl md:leading-14">
+          Conheça nossa equipe
+        </h1>
+        <div class="mx-auto px-6 lg:px-48">
+          <div class="">
+            <div class="swiper swiper_equip py-8  ">
+              <div class="swiper-wrapper ">
+                <div class="swiper-slide my-4 mx-1">
+                  <div class="max-w-full p-1 mx-auto rounded-md shadow2">
+                    <div>
+                      <img src="./assets/img/seleção.png" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide my-4 mx-1">
+                  <div class="max-w-full p-1 mx-auto rounded-md shadow2">
+                    <div>
+                      <img src="./assets/img/supermercado.png" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide my-4 mx-1">
+                  <div class="max-w-full p-1 mx-auto rounded-md shadow2">
+                    <div>
+                      <img src="./assets/img/tecnologia.png" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide my-4 mx-1">
+                  <div class="max-w-full p-1 mx-auto rounded-md shadow2">
+                    <div>
+                      <img src="./assets/img/industria2.png" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="swiper-button-next font-black text-orange-500 hover:text-orange-700 lg:mr-12"></div>
+            <div class="swiper-button-prev font-black text-orange-500 hover:text-orange-700 lg:ml-12"></div> -->
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
   <?php include "./components/footer.php"; ?>
-
+  <?php include "./components/modal_form_whatsapp.php" ?>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
   <script src="assets/js/tw.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js"></script>
@@ -275,6 +321,36 @@ $URI = new URI();
       $(".custom-navigation .next").on("click", function() {
         owl.trigger("next.owl.carousel");
       });
+    });
+  </script>
+
+  <script>
+    var swiper = new Swiper(".swiper_equip", {
+      loop: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      breakpoints: {
+        300: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 10,
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+        },
+      },
+    });
+  </script>
+  <script>
+    // JavaScript para abrir o WhatsApp ao clicar no botão
+    document.getElementById('openWhatsApp').addEventListener('click', function() {
+      window.open('https://api.whatsapp.com/send?phone=5586994293833&text=Olá%20Fruta%20Polpa-site', '_blank');
     });
   </script>
 </body>

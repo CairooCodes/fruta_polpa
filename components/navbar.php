@@ -93,15 +93,17 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
             <a href="<?php echo $URI->base("/polpas"); ?>" class="block py-2 uppercase text-xs rounded" aria-current="page">Nossos produtos</a>
           </li>
           <li class="py-2">
-            <a href="<?php echo $URI->base("/polpas"); ?>" class="block py-2 uppercase text-xs rounded" aria-current="page">Qualidade premium</a>
+            <a href="<?php echo $URI->base("#premium-quality"); ?>" class="block py-2 uppercase text-xs rounded" aria-current="page">Qualidade premium</a>
           </li>
           <li class="py-2">
-            <a href="<?php echo $URI->base("/polpas"); ?>" class="block py-2 uppercase text-xs rounded" aria-current="page">Seja nosso parceiro</a>
+            <a href="<?php echo $URI->base("/trabalhe-conosco"); ?>" class="block py-2 uppercase text-xs rounded" aria-current="page">Seja nosso parceiro</a>
           </li>
           <li class="py-2">
             <a href="<?php echo $URI->base("/contato"); ?>" class="block py-2 uppercase text-xs rounded" aria-current="page">Contato</a>
           </li>
-
+          <li class="py-2">
+            <a href="<?php echo $URI->base("/certificacoes"); ?>" class="block py-2 uppercase text-xs rounded" aria-current="page">Certificações</a>
+          </li>
         </ul>
         <div class="flex justify-center">
           <a href="<?php echo $URI->base("/receitas"); ?>">
@@ -109,8 +111,8 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
               RECEITAS
             </button>
           </a>
-          <a href="<?php echo $URI->base("/polpas"); ?>">
-          <button class="ml-4 bg-color1 text-white text-xs text-gray-800 py-2 px-4 rounded-full border-2 border-color1">
+          <a href="<?php echo $URI->base("/trabalhe-conosco"); ?>">
+          <button class="ml-4 text-xs py-2 px-4 rounded-full border-2 boder-transparent hover:border-color1 bg-color1 hover:bg-white text-white hover:text-color1">
             Trabalhe conosco
           </button>
           </a>

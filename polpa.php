@@ -21,7 +21,7 @@ function remove_simbolos_acentos($string)
 
 
 $url = explode("/", $_SERVER['REQUEST_URI']);
-$idpost = $url[4];
+$idpost = $url[3];
 
 $idpost2 = "";
 
@@ -56,9 +56,12 @@ if ($stmt->rowCount() > 0) {
   <section class="mx-auto max-w-7xl px-2">
     <div class="max-w-screen-xl pt-10 mx-auto lg:grid grid-cols-2 pb-10">
       <div>
-        <h1 class="text-3xl text-orange-600 font-bold">
+        <h1 class="text-4xl text-orange-600 font-bold">
           <?php echo $polpa['name']; ?>
         </h1>
+        <h2 class="py-4 px-2 text-justify text-xl">
+          A polpa de fruta é um produto natural obtido pela extração da parte carnosa e suculenta de frutas maduras, preservando seu sabor e aroma autênticos. É uma opção saudável e versátil, rica em nutrientes, que pode ser consumida de várias maneiras, como lanche, ingrediente em bebidas e sobremesas, e é valorizada por sua conveniência e durabilidade, permitindo desfrutar do sabor das frutas em qualquer estação do ano.
+        </h2>
         <div class="rounded-xl shadow-md shadow-blue-200 mb-5">
           <div class="flex justify-center">
             <?php echo "<img class='fade-in-up lazy' data-src=" . $URI->base('/admin/uploads/polpas') . '/' . $polpa['img'] . '>' ?>
@@ -66,10 +69,10 @@ if ($stmt->rowCount() > 0) {
         </div>
       </div>
       <div class="lg:px-10 p-2">
-        <h1 class="text-2xl text-orange-600 font-bold">
+        <h1 class="text-2xl text-orange-600 font-bold mt-10">
           Modo de preparo:
         </h1>
-        <h1 class="text-xl">
+        <h1 class="text-xl mt-5">
           1- Coloque a embalagem por 10 segundos em água corrente.
         </h1>
         <h1 class="text-xl">
@@ -78,7 +81,7 @@ if ($stmt->rowCount() > 0) {
         <h1 class="text-xl">
           3- Bata no liquidificador 100g de fruta com 200ml de água ou outro líquido de sua preferência. Rende 1 copo de 300 ml. Adoce a gosto.
         </h1>
-        <div class="w-full max-w-md mx-auto py-4">
+        <div class="w-full max-w-md mx-auto py-4 mt-5">
           <table class="bg-green-300 w-full">
             <thead class="bg-green-600">
               <tr>
@@ -141,7 +144,7 @@ if ($stmt->rowCount() > 0) {
 
     if ($stmt2->rowCount() > 0) {
       echo "<h1 class='text-xl text-gray-800 font-bold'>
-      Confira algumas de nossas receitas com polpa de <?php echo $polpa[name]; ?>
+      Confira algumas de nossas receitas
     </h1>";
     }
     ?>
@@ -178,7 +181,7 @@ if ($stmt->rowCount() > 0) {
   </section>
 
   <?php include "./components/footer.php" ?>
-
+  <?php include "./components/modal_form_whatsapp.php" ?>
   <script src="<?php echo $URI->base('/assets/js/script.js'); ?>"></script>
   <script src="<?php echo $URI->base('/assets/js/lz.js"'); ?>"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
@@ -187,7 +190,12 @@ if ($stmt->rowCount() > 0) {
   <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js"></script>
   <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
-
+  <script>
+    // JavaScript para abrir o WhatsApp ao clicar no botão
+    document.getElementById('openWhatsApp').addEventListener('click', function() {
+      window.open('https://api.whatsapp.com/send?phone=5586994293833&text=Olá%20Fruta%20Polpa-site', '_blank');
+    });
+  </script>
 </body>
 
 </html>
