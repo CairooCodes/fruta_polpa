@@ -43,11 +43,6 @@
         },
       ];
 
-      // const image = {
-      //   url: "https://frutapolpa.com.br/assets/images/icone.png",
-      //   origin: new google.maps.Point(0, 0),
-      //   anchor: new google.maps.Point(0, 32),
-      // };
 
       for (let i = 0; i < beaches.length; i++) {
         const beach = beaches[i];
@@ -74,7 +69,7 @@
         });
       }
     }
-
+ 
     window.initMap = initMap;
   </script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAet9s5aUCXCW8LCVn3GgnSixUcrXhSANc&callback=initMap&v=weekly" defer></script>
