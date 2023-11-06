@@ -117,7 +117,7 @@ $URI = new URI();
 
 
     <?php include "./components/footer.php" ?>
-    <?php include "./components/modal_form_whatsapp.php" ?>
+    <?php include "./components/btn-whatsapp.php" ?>
     <script src="./assets/js/script.js"></script>
     <script src="./assets/js/lz.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>

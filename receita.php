@@ -70,7 +70,7 @@ if ($stmt->rowCount() > 0) {
   </section>
 
   <?php include "./components/footer.php" ?>
-  <?php include "./components/modal_form_whatsapp.php" ?>
+  <?php include "./components/btn-whatsapp.php" ?>
   <script src="<?php echo $URI->base('/assets/js/lz.js'); ?>"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
   <script src="<?php echo $URI->base('/assets/js/tw.js'); ?>"></script>

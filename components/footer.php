@@ -1,5 +1,5 @@
 <!-- component -->
-<footer class="w-full text-gray-700 bg-white body-font border-t">
+<footer class="w-full text-gray-700 bg-white body-font border-t pt-16">
   <div class="max-w-screen-xl px-4 flex flex-col flex-wrap py-12 mx-auto md:items-center lg:items-start md:flex-row md:flex-no-wrap">
     <div class="flex-shrink-0 w-64 mx-auto text-center md:mx-0 md:text-left">
       <div>

@@ -25,11 +25,11 @@ $URI = new URI();
 
   <!-- Body -->
   <?php include "./components/banners.php"; ?>
-  <?php include "./components/parceiros.php"; ?>
   <?php include "./components/institucional.php"; ?>
   <?php include "./components/polpas-types.php"; ?>
   <?php include "./components/premium-quality.php"; ?>
   <?php include "./components/form-maps.php"; ?>
+  <?php include "./components/parceiros.php"; ?>
   <!-- End Body -->
 
   <?php include "./components/footer.php" ?>

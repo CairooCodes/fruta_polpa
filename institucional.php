@@ -29,7 +29,7 @@ $URI = new URI();
         <div class="grid grid-rows-3">
           <div class="bg-red-600 rounded-t-2xl md:rounded-t-none md:rounded-tl-2xl">
             <div class="flex h-full items-center">
-              <h1 class="-rotate-90 text-white text-2xl font-[1000]">Missão</h1>
+              <h1 class="-rotate-90 text-white text-2xl font-[1000] ml-2">Missão</h1>
               <h3 class="px-8 text-white text-lg">
                 Orientados por nossos valores e com a
                 nutrição como foco central, trabalhamos
@@ -41,7 +41,7 @@ $URI = new URI();
           </div>
           <div class="bg-orange-500">
             <div class="flex h-full items-center">
-              <h1 class="-rotate-90 text-white text-2xl font-[1000]">Visão</h1>
+              <h1 class="-rotate-90 text-white text-2xl font-[1000] ml-4">Visão</h1>
               <h3 class="px-8 text-white text-lg">
                 Deﬁnimos como meta direcionar
                 esforços para alcançarmos a liderança
@@ -245,54 +245,75 @@ $URI = new URI();
         </a>
       </div>
     </div>
-    <div class="mb-10 mt-20">
-      <div class="mx-auto px-2">
-        <h1 class="text-orange-600 px-6 lg:px-28 text-center text-3xl font-extrabold leading-9 tracking-tight sm:text-4xl sm:leading-10 md:text-3xl md:leading-14">
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-4 py-12">
+      <div class="text-center pb-12">
+        <!-- <h2 class="text-base font-bold text-indigo-600">
+          We have the best equipment
+        </h2> -->
+        <h1 class="font-bold font-sans text-3xl md:text-4xl lg:text-5xl text-orange-600">
           Conheça nossa equipe
         </h1>
-        <div class="mx-auto px-6 lg:px-48">
-          <div class="">
-            <div class="swiper swiper_equip py-8  ">
-              <div class="swiper-wrapper ">
-                <div class="swiper-slide my-4 mx-1">
-                  <div class="max-w-full p-1 mx-auto rounded-md shadow2">
-                    <div>
-                      <img src="./assets/img/seleção.png" alt="">
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide my-4 mx-1">
-                  <div class="max-w-full p-1 mx-auto rounded-md shadow2">
-                    <div>
-                      <img src="./assets/img/supermercado.png" alt="">
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide my-4 mx-1">
-                  <div class="max-w-full p-1 mx-auto rounded-md shadow2">
-                    <div>
-                      <img src="./assets/img/tecnologia.png" alt="">
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide my-4 mx-1">
-                  <div class="max-w-full p-1 mx-auto rounded-md shadow2">
-                    <div>
-                      <img src="./assets/img/industria2.png" alt="">
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- <div class="swiper-button-next font-black text-orange-500 hover:text-orange-700 lg:mr-12"></div>
-            <div class="swiper-button-prev font-black text-orange-500 hover:text-orange-700 lg:ml-12"></div> -->
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="w-full bg-white rounded-lg p-12 flex flex-col justify-center items-center">
+          <div class="mb-8">
+            <img class="object-center object-cover rounded-full h-48 w-48" src="./assets/img/seleção.png" alt="photo">
+          </div>
+          <div class="text-center">
+            <p class="text-xl text-gray-700 font-bold mb-2">Dany Bailey</p>
+            <p class="text-base text-gray-400 font-normal">Software Engineer</p>
+          </div>
+        </div>
+        <div class="w-full bg-white rounded-lg p-12 flex flex-col justify-center items-center">
+          <div class="mb-8">
+            <img class="object-center object-cover rounded-full h-48 w-48" src="./assets/img/seleção.png" alt="photo">
+          </div>
+          <div class="text-center">
+            <p class="text-xl text-gray-700 font-bold mb-2">Lucy Carter</p>
+            <p class="text-base text-gray-400 font-normal">Graphic Designer</p>
+          </div>
+        </div>
+        <div class="w-full bg-white rounded-lg p-12 flex flex-col justify-center items-center">
+          <div class="mb-8">
+            <img class="object-center object-cover rounded-full h-48 w-48" src="./assets/img/seleção.png" alt="photo">
+          </div>
+          <div class="text-center">
+            <p class="text-xl text-gray-700 font-bold mb-2">Jade Bradley</p>
+            <p class="text-base text-gray-400 font-normal">Dev Ops</p>
+          </div>
+        </div>
+        <div class="w-full bg-white rounded-lg p-12 flex flex-col justify-center items-center">
+          <div class="mb-8">
+            <img class="object-center object-cover rounded-full h-48 w-48" src="./assets/img/seleção.png" alt="photo">
+          </div>
+          <div class="text-center">
+            <p class="text-xl text-gray-700 font-bold mb-2">Dany Bailey</p>
+            <p class="text-base text-gray-400 font-normal">Software Engineer</p>
+          </div>
+        </div>
+        <div class="w-full bg-white rounded-lg p-12 flex flex-col justify-center items-center">
+          <div class="mb-8">
+            <img class="object-center object-cover rounded-full h-48 w-48" src="./assets/img/seleção.png" alt="photo">
+          </div>
+          <div class="text-center">
+            <p class="text-xl text-gray-700 font-bold mb-2">Lucy Carter</p>
+            <p class="text-base text-gray-400 font-normal">Graphic Designer</p>
+          </div>
+        </div>
+        <div class="w-full bg-white rounded-lg p-12 flex flex-col justify-center items-center">
+          <div class="mb-8">
+            <img class="object-center object-cover rounded-full h-48 w-48" src="./assets/img/seleção.png" alt="photo">
+          </div>
+          <div class="text-center">
+            <p class="text-xl text-gray-700 font-bold mb-2">Jade Bradley</p>
+            <p class="text-base text-gray-400 font-normal">Dev Ops</p>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   </section>
   <?php include "./components/footer.php"; ?>
-  <?php include "./components/modal_form_whatsapp.php" ?>
+  <?php include "./components/btn-whatsapp.php" ?>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
   <script src="assets/js/tw.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js"></script>
