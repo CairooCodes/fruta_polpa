@@ -12,8 +12,8 @@
       </div>
       <a href="<?php echo $URI->base("/institucional"); ?>" class="leia-mais-link">Leia mais</a>
     </div>
-    <div class="">
-      <img src="./assets/img/página institucional.png" class="w-full">
+    <div class="lg:p-20">
+      <img src="./assets/img/banner-home-mobile.jpg" class="w-full">
     </div>
   </div>
 </section>
