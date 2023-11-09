@@ -1,4 +1,4 @@
-<section class="bg-white max-w-screen-xl px-4 header-institucional mx-auto" id="premium-quality">
+<section class="bg-white max-w-screen-xl px-4 header-institucional mx-auto">
   <div class="lg:pt-12 pb-12 lg:grid grid-cols-2 mt-2">
     <div class="lg:px-12">
       <div class="mt-14 mb-4 text-justify">
@@ -9,7 +9,7 @@
           Referência em polpas de frutas premium, garantindo qualidade excepcional e sabor autêntico. Além disso, nosso compromisso com a sustentabilidade inclui práticas responsáveis na produção e parcerias com agricultores locais. Possuímos certificações de qualidade e sustentabilidade, assegurando a pureza de nossos produtos e nossa dedicação ao meio ambiente. Escolha a Fruta Polpa e desfrute de sabores incríveis com consciência ecológica.
         </p>
       </div>
-      <a href="<?php echo $URI->base("/"); ?>" class="leia-mais-link">Leia mais</a>
+      <a href="<?php echo $URI->base("/premium-quality"); ?>" class="leia-mais-link">Leia mais</a>
       <div class="max-w-full mx-auto grid grid-cols-2 pt-8">
         <img data-src="./assets/img/industria2.png" class="lazy w-full rounded-tl-md">
         <div class="flex justify-center items-center text-white p-3 rounded-tr-md" style="background-color: #f7640e;">

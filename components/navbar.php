@@ -47,7 +47,7 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
   <div class="hidden bg-gray-200 sm:block">
     <div class="mx-auto flex max-w-screen-xl px-4 justify-between">
       <div class="flex justify-between items-center space-x-2">
-        <a href="mapa-fruta-polpa.php"><img width="20px" src="<?php echo $URI->base('/assets/img/brazil.png') ?>" /></a>
+        <a href="#map"><img width="20px" src="<?php echo $URI->base('/assets/img/brazil.png') ?>" /></a>
         <span class="text-xs text-gray-600">Encontre Fruta Polpa</span>
       </div>
       <div class="flex items-center">
@@ -93,7 +93,7 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
             <a href="<?php echo $URI->base("/polpas"); ?>" class="block py-2 uppercase text-xs rounded" aria-current="page">Nossos produtos</a>
           </li>
           <li class="py-2">
-            <a href="<?php echo $URI->base("#premium-quality"); ?>" class="block py-2 uppercase text-xs rounded" aria-current="page">Qualidade premium</a>
+            <a href="<?php echo $URI->base("/premium-quality"); ?>" class="block py-2 uppercase text-xs rounded" aria-current="page">Qualidade premium</a>
           </li>
           <li class="py-2">
             <a href="<?php echo $URI->base("/trabalhe-conosco"); ?>" class="block py-2 uppercase text-xs rounded" aria-current="page">Seja nosso parceiro</a>

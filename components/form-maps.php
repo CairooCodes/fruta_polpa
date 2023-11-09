@@ -23,7 +23,7 @@
         </label>
         <textarea type="text" name="description" id="description" placeholder="Deixe uma mensagem" rows="2" cols="50" class="mt-2 mb-4 w-full rounded-lg p-3 text-gray-900"></textarea>
         <input type="hidden" value="CONTATO" name="type">
-        <button class="bg-sky-950 hover:bg-gray-500 text-base text-white hover:text-white font-bold py-2 px-4 rounded-md lg:w-full sm:w-80">
+        <button class="bg-green-900 hover:bg-gray-500 text-base text-white hover:text-white font-bold py-2 px-4 rounded-md lg:w-full sm:w-80">
           Enviar
         </button>
       </form>
