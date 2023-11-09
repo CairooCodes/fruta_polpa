@@ -5,8 +5,9 @@
 </section>
 <section class="max-w-full lg:pt-32 lg:pb-12 pb-2 banners">
   <div class="max-w-full px-16 lg:pt-12 pt-10 lg:pb-20 mx-auto mt-2 pb-3 lg:px-16">
-    <div class="fade-up w-full">
-      <h1 class="lg:text-6xl text-right text-4xl text-white font-black">Não é polpa, é Fruta Polpa!</h1>
+    <div class="fade-up w-full flex justify-end">
+      <p class="cssnormal lg:text-6xl text-right text-2xl text-white">Não é polpa,</p>
+      <p class="csscursiva lg:text-6xl text-right text-2xl text-white ml-3">é Fruta Polpa!</p>
     </div>
   </div>
   <div class="text-center fade-in-up">

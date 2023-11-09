@@ -328,7 +328,7 @@ function initMap() {
       map,
       icon: {
         url: "./assets/img/mapicon.png",
-        scaledSize: new google.maps.Size(64, 64), // Ajuste o tamanho conforme necessário
+        scaledSize: new google.maps.Size(100, 100), // Ajuste o tamanho conforme necessário
       },
       title: beach.title,
       zIndex: beach.zIndex,
