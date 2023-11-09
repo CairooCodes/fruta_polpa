@@ -30,6 +30,7 @@
     </div>
     <div class="pt-2 pb-10">
       <div id="map"></div>
+      <div id="mapa"></div>
     </div>
   </div>
 </section>

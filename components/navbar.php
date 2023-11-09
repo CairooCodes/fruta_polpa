@@ -47,7 +47,7 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
   <div class="hidden bg-gray-200 sm:block">
     <div class="mx-auto flex max-w-screen-xl px-4 justify-between">
       <div class="flex justify-between items-center space-x-2">
-        <a href="#map"><img width="20px" src="<?php echo $URI->base('/assets/img/brazil.png') ?>" /></a>
+        <a href="#mapa"><img width="20px" src="<?php echo $URI->base('/assets/img/brazil.png') ?>" /></a>
         <span class="text-xs text-gray-600">Encontre Fruta Polpa</span>
       </div>
       <div class="flex items-center">
