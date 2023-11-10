@@ -56,8 +56,8 @@ if ($stmt->rowCount() > 0) {
   <section class="mx-auto max-w-7xl px-2">
     <div class="max-w-screen-xl pt-10 mx-auto lg:grid grid-cols-2 pb-10">
       <div>
-        <h1 class="lg:text-3xl text-3xl">
-          <span style="letter-spacing: 0.5px" class="font-black bg-clip-text bg-gradient-to-r from-color1 to-color1 text-color1">
+        <h1 class="lg:text-4xl text-3xl">
+          <span style="letter-spacing: 0.5px; color:#1c5503" class="font-black bg-clip-text bg-gradient-to-r from-color1 to-color1 text-color1">
             <?php echo $polpa['name']; ?>
           </span>
         </h1>

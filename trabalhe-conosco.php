@@ -42,41 +42,41 @@ $URI = new URI();
                         <label class="text-sm font-bold text-white">
                             Nome
                         </label>
-                        <input type="text" name="name" id="name" placeholder="Seu nome completo" class="mt-2 mb-4 w-full rounded-lg p-3 text-gray-900" />
+                        <input type="text" name="name" id="name" placeholder="Seu nome completo" class="mt-2 mb-4 w-full rounded-lg p-3 text-gray-900" required=""/>
                     </div>
                     <div>
                         <label class="text-sm font-bold text-white">
                             Email
                         </label>
-                        <input type="email" name="email" id="email" placeholder="Email@gmail.com" class="mt-2 mb-4 w-full rounded-lg p-3 text-gray-900" />
+                        <input type="email" name="email" id="email" placeholder="Email@gmail.com" class="mt-2 mb-4 w-full rounded-lg p-3 text-gray-900" required=""/>
                     </div>
                     <div>
                         <label class="text-sm font-bold text-white">
                             Telefone
                         </label>
-                        <input type="number" name="telephone" id="telephone" placeholder="(99) 9 9999-9999" class="mt-2 mb-4 w-full rounded-lg p-3 text-gray-900" />
+                        <input type="number" name="telephone" id="telephone" placeholder="(99) 9 9999-9999" class="mt-2 mb-4 w-full rounded-lg p-3 text-gray-900" required=""/>
                     </div>
                     <div>
                         <label class="text-sm font-bold text-white">
                             Cidade
                         </label>
-                        <input type="text" name="city" id="city" placeholder="Cidade" class="mt-2 mb-4 w-full rounded-lg p-3 text-gray-900" />
+                        <input type="text" name="city" id="city" placeholder="Cidade" class="mt-2 mb-4 w-full rounded-lg p-3 text-gray-900" required=""/>
                     </div>
                     <div>
                         <label class="text-sm font-bold text-white">
                             Estado
                         </label>
-                        <input type="text" name="state" id="state" placeholder="Estado" class="mt-2 mb-4 w-full rounded-lg p-3 text-gray-900" />
+                        <input type="text" name="state" id="state" placeholder="Estado" class="mt-2 mb-4 w-full rounded-lg p-3 text-gray-900" required=""/>
                     </div>
                     <div>
                         <label class="text-sm font-bold text-white">
                             Área de Interesse
                         </label>
-                        <input type="text" name="office" id="office" placeholder="Qual área que deseja trabalhar?" class="mt-2 mb-4 w-full rounded-lg p-3 text-gray-900" />
+                        <input type="text" name="office" id="office" placeholder="Qual área que deseja trabalhar?" class="mt-2 mb-4 w-full rounded-lg p-3 text-gray-900" required=""/>
                     </div>
                     <input type="hidden" value="RECRUTAMENTO" name="type">
                     <div class="flex justify-center mt-5">
-                        <button class="bg-white hover:bg-color1 text-sm text-color1 hover:text-white font-bold py-2 px-4 rounded-full border-2 border-white w-full md:w-80">
+                        <button style="background: rgb(252,114,0); background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);" class="bg-white hover:bg-color1 text-sm text-white hover:text-black font-bold py-2 px-4 rounded-full w-full md:w-80">
                             Enviar
                         </button>
                     </div>

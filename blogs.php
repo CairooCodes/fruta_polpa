@@ -21,9 +21,12 @@ $URI = new URI();
 <body>
     <?php include "./components/navbar.php" ?>
     <div class="mx-auto max-w-7xl px-2 pt-10">
-        <h1 class="text-orange-600 text-center text-3xl font-extrabold leading-9 tracking-tight sm:text-4xl sm:leading-10 md:text-left md:text-3xl md:leading-14">
-            Blogs Fruta Polpa
+        <h1 class="lg:text-4xl text-3xl">
+            <span style="letter-spacing: 0.5px,; color:#1c5503" class="font-black bg-clip-text bg-gradient-to-r from-color1 to-color1 text-color1">
+                Blogs Fruta Polpa
+            </span>
         </h1>
+
         <div class="grid lg:grid-cols-4 gap-8">
 
             <?php foreach ($blogs as $blog) { ?>
@@ -33,7 +36,7 @@ $URI = new URI();
                     </div>
 
                     <div class="flex justify-center mt-4">
-                        <a href="<?php echo $URI->base('/blog/' . slugify($blog['name'])); ?>" class="text-white bg-orange-600 focus:ring-4 rounded-md font-md text-md px-5 py-2 text-center">Saiba mais</a>
+                        <a href="<?php echo $URI->base('/blog/' . slugify($blog['name'])); ?>" style="background: rgb(252,114,0); background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);" class="text-white border-2 border-white bg-white rounded-full font-semibold text-lg px-5 py-2 text-center hover:bg-orange-600 hover:text-black">Saiba mais</a>
                     </div>
                 </div>
 
@@ -54,11 +57,11 @@ $URI = new URI();
     <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
     <script>
-    // JavaScript para abrir o WhatsApp ao clicar no botão
-    document.getElementById('openWhatsApp').addEventListener('click', function() {
-      window.open('https://api.whatsapp.com/send?phone=5586994293833&text=Olá%20Fruta%20Polpa-site', '_blank');
-    });
-  </script>
+        // JavaScript para abrir o WhatsApp ao clicar no botão
+        document.getElementById('openWhatsApp').addEventListener('click', function() {
+            window.open('https://api.whatsapp.com/send?phone=5586994293833&text=Olá%20Fruta%20Polpa-site', '_blank');
+        });
+    </script>
 </body>
 
 </html>

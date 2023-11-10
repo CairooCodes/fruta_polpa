@@ -26,8 +26,8 @@ $URI = new URI();
     <img class="w-full cover" src="./assets/img/banner_pagina_polpas.jpg" alt="banner_pagina_polpas">
   </div>
   <div class="mx-auto max-w-7xl px-2 pt-10">
-    <h1 class="lg:text-5xl text-3xl">
-      <span style="letter-spacing: 0.5px" class="font-black bg-clip-text bg-gradient-to-r from-color1 to-color1 text-color1">
+    <h1 class="lg:text-4xl text-3xl">
+      <span style="letter-spacing: 0.5px; color:#1c5503" class="font-black bg-clip-text bg-gradient-to-r from-color1 to-color1 text-color1">
         Polpas Tradicionais
       </span>
     </h1>
@@ -39,7 +39,7 @@ $URI = new URI();
           </div>
 
           <div class="flex justify-center mt-4">
-            <a href="<?php echo $URI->base('/polpa/' . slugify($polpa1['name'])); ?>" style="background: rgb(252,114,0); background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);" class="text-white border-2 border-white bg-white rounded-full font-semibold text-lg px-5 py-2 text-center hover:bg-orange-600 hover:text-green-800"><?php echo $polpa1['name']; ?></a>
+            <a href="<?php echo $URI->base('/polpa/' . slugify($polpa1['name'])); ?>" style="background: rgb(252,114,0); background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);" class="text-white border-2 border-white bg-white rounded-full font-semibold text-lg px-5 py-2 text-center hover:bg-orange-600 hover:text-black"><?php echo $polpa1['name']; ?></a>
           </div>
         </div>
 
@@ -49,8 +49,8 @@ $URI = new URI();
   </div>
 
   <div class="mx-auto max-w-7xl px-2 pt-24 mb-10">
-    <h1 class="lg:text-5xl text-3xl">
-      <span style="letter-spacing: 0.5px" class="font-black bg-clip-text bg-gradient-to-r from-color1 to-color1 text-color1">
+    <h1 class="lg:text-4xl text-3xl">
+      <span style="letter-spacing: 0.5px; color:#1c5503" class="font-black bg-clip-text bg-gradient-to-r from-color1 to-color1 text-color1">
         Polpas Mix
       </span>
     </h1>

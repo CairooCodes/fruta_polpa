@@ -22,7 +22,7 @@ $URI = new URI();
     <section>
         <div class="max-w-full px-4 pt-5 mx-auto lg:grid grid-cols-2">
             <div class="mx-auto py-28">
-                <h1 class="lg:text-5xl text-3xl">
+                <h1 class="lg:text-4xl text-3xl">
                     <span style="letter-spacing: 0.5px" class="font-black bg-clip-text bg-gradient-to-r from-color1 to-color1 text-color1">
                         Entre em Contato
                     </span>
@@ -85,35 +85,35 @@ $URI = new URI();
                         <label class="text-sm font-bold text-white">
                             Nome
                         </label>
-                        <input type="text" name="name" id="name" placeholder="Seu nome completo" class="mt-2 mb-4 w-full rounded-lg p-3 text-gray-900" />
+                        <input type="text" name="name" id="name" placeholder="Seu nome completo" class="mt-2 mb-4 w-full rounded-lg p-3 text-gray-900" required=""/>
                     </div>
                     <div>
                         <label class="text-sm font-bold text-white">
                             Email
                         </label>
-                        <input type="email" name="email" id="email" placeholder="Email@gmail.com" class="mt-2 mb-4 w-full rounded-lg p-3 text-gray-900" />
+                        <input type="email" name="email" id="email" placeholder="Email@gmail.com" class="mt-2 mb-4 w-full rounded-lg p-3 text-gray-900" required=""/>
                     </div>
                     <div>
                         <label class="text-sm font-bold text-white">
                             WhatsApp
                         </label>
-                        <input type="text" name="telephone" id="telephone" placeholder="(99) 9 9999-9999" class="mt-2 mb-4 w-full rounded-lg p-3 text-gray-900" />
+                        <input type="text" name="telephone" id="telephone" placeholder="(99) 9 9999-9999" class="mt-2 mb-4 w-full rounded-lg p-3 text-gray-900" required=""/>
                     </div>
                     <div>
                         <label class="text-sm font-bold text-white">
                             CNPJ
                         </label>
-                        <input type="number" name="cnpj" id="cnpj" placeholder="Da Empresa ou Pessoa Física" class="mt-2 mb-4 w-full rounded-lg p-3 text-gray-900" />
+                        <input type="number" name="cnpj" id="cnpj" placeholder="Da Empresa ou Pessoa Física" class="mt-2 mb-4 w-full rounded-lg p-3 text-gray-900" required=""/>
                     </div>
                     <div>
                         <label class="text-sm font-bold text-white">
                             Mensagem
                         </label><br>
-                        <textarea name="description" id="description" placeholder="Assunto..." rows="2" cols="50" class="mt-2 mb-4 w-full rounded-lg p-3 text-gray-900"></textarea>
+                        <textarea name="description" id="description" placeholder="Assunto..." rows="2" cols="50" class="mt-2 mb-4 w-full rounded-lg p-3 text-gray-900" required=""></textarea>
                     </div>
                     <input type="hidden" value="CONTATO" name="type">
                     <div class="flex justify-center mt-5">
-                        <button style="background: rgb(252,114,0); background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);" class="text-white border-2 border-white bg-white rounded-full font-semibold text-lg px-5 py-2 text-center hover:bg-orange-600 hover:text-black">
+                        <button style="background: rgb(252,114,0); background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);" class="text-white bg-white rounded-full font-semibold text-lg px-5 py-2 text-center hover:bg-orange-600 hover:text-black">
                             Quero comprar Fruta Polpa
                         </button>
                     </div>

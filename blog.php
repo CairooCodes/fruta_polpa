@@ -51,8 +51,10 @@ if ($stmt->rowCount() > 0) {
 <body>
   <?php include "./components/navbar.php" ?>
   <div class="bg-gray-300  pt-16 pb-10">
-    <h1 class="text-center text-6xl">
-      <?php echo $blog['name']; ?>
+    <h1 class="lg:text-5xl text-3xl text-center">
+      <span style="letter-spacing: 0.5px,; color:#1c5503" class="font-black bg-clip-text bg-gradient-to-r from-color1 to-color1 text-color1">
+        <?php echo $blog['name']; ?>
+      </span>
     </h1>
   </div>
   <section class="mx-auto max-w-7xl px-2">
@@ -62,9 +64,9 @@ if ($stmt->rowCount() > 0) {
       </h2>
       <div class="swiper swiper_blog">
         <div class="swiper-wrapper">
-            <a class="swiper-slide">
-              <?php echo "<img class='lazy rounded-md object-cover blog-image' src=" . $URI->base('/admin/uploads/blogs') . '/' . $blog['img'] . '>' ?>
-            </a>
+          <a class="swiper-slide">
+            <?php echo "<img class='lazy rounded-md object-cover blog-image' src=" . $URI->base('/admin/uploads/blogs') . '/' . $blog['img'] . '>' ?>
+          </a>
         </div>
         <div class="swiper-button-next text-white"></div>
         <div class="swiper-button-prev text-white"></div>
@@ -84,23 +86,23 @@ if ($stmt->rowCount() > 0) {
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
   <script>
-		var swiper = new Swiper(".swiper_blog", {
-			loop: true,
-			autoplay: {
-				delay: 5000,
-				disableOnInteraction: false,
-			},
-			pagination: {
-				el: ".swiper-pagination-blog-main",
-				clickable: true,
-			},
-			navigation: {
-				nextEl: ".swiper-button-next",
-				prevEl: ".swiper-button-prev",
-			},
-		});
-	</script>
-    <script>
+    var swiper = new Swiper(".swiper_blog", {
+      loop: true,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination-blog-main",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+  <script>
     // JavaScript para abrir o WhatsApp ao clicar no botão
     document.getElementById('openWhatsApp').addEventListener('click', function() {
       window.open('https://api.whatsapp.com/send?phone=5586994293833&text=Olá%20Fruta%20Polpa-site', '_blank');

@@ -11,31 +11,31 @@
           <label class="text-sm font-bold text-black">
             Nome
           </label>
-          <input type="text" name="name" id="name" placeholder="Seu nome completo" class="mb-2 w-full rounded-lg p-3 text-gray-900" />
+          <input type="text" name="name" id="name" placeholder="Seu nome completo" class="mb-2 w-full rounded-lg p-3 text-gray-900" required=""/>
         </div>
         <div>
           <label class="text-sm font-bold text-black">
             Email
           </label>
-          <input type="email" name="email" id="email" placeholder="Email@gmail.com" class="mb-2 w-full rounded-lg p-3 text-gray-900" />
+          <input type="email" name="email" id="email" placeholder="Email@gmail.com" class="mb-2 w-full rounded-lg p-3 text-gray-900" required=""/>
         </div>
         <div>
           <label class="text-sm font-bold text-black">
             WhatsApp
           </label>
-          <input type="text" name="telephone" id="telephone" placeholder="(99) 9 9999-9999" class="mb-2 w-full rounded-lg p-3 text-gray-900" />
+          <input type="text" name="telephone" id="telephone" placeholder="(99) 9 9999-9999" class="mb-2 w-full rounded-lg p-3 text-gray-900" required=""/>
         </div>
         <div>
           <label class="text-sm font-bold text-black">
             CNPJ
           </label>
-          <input type="number" name="cnpj" id="cnpj" placeholder="Da Empresa ou Pessoa Física" class="mb-2 w-full rounded-lg p-3 text-gray-900" />
+          <input type="number" name="cnpj" id="cnpj" placeholder="Da Empresa ou Pessoa Física" class="mb-2 w-full rounded-lg p-3 text-gray-900" required=""/>
         </div>
         <div>
           <label class="text-sm font-bold text-black">
             Mensagem
           </label><br>
-          <textarea name="description" id="description" placeholder="Assunto..." rows="2" cols="50" class="mb-2 w-full rounded-lg p-3 text-gray-900"></textarea>
+          <textarea name="description" id="description" placeholder="Assunto..." rows="2" cols="50" class="mb-2 w-full rounded-lg p-3 text-gray-900" required=""></textarea>
         </div>
         <input type="hidden" value="CONTATO" name="type">
         <div class="flex justify-center mt-2">
