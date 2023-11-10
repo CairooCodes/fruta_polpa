@@ -22,8 +22,10 @@ $URI = new URI();
     <?php include "./components/navbar.php" ?>
     <section class="mx-auto max-w-7xl px-2 pt-10 pb-10">
         <div>
-            <h1 class="text-orange-600 text-center text-3xl font-extrabold leading-9 tracking-tight sm:text-4xl sm:leading-10 md:text-left md:text-3xl md:leading-14">
-                Certificações
+            <h1 class="lg:text-4xl text-3xl">
+                <span style="letter-spacing: 0.5px" class="font-black bg-clip-text bg-gradient-to-r from-color1 to-color1 text-color1">
+                    Certificações
+                </span>
             </h1>
             <p class="mt-6 text-justify">
                 "Conquistamos selos e certificações de renome por meio de nossas marcas, resultado do nosso contínuo compromisso com a excelência na produção e entrega de produtos de alta qualidade aos nossos consumidores. Nosso empenho em garantir padrões rigorosos de qualidade abrange desde a seleção cuidadosa de matérias-primas até os processos de fabricação e distribuição, assegurando a satisfação e confiança de nossos clientes. Essas conquistas refletem nosso firme compromisso em superar as expectativas do mercado e manter um alto nível de integridade em tudo o que fazemos."
@@ -32,9 +34,12 @@ $URI = new URI();
         <div class="text-center mt-16">
             <div class="lg:grid grid-rows-3 gap-8">
                 <div class="mb-10">
-                    <h2 class="text-orange-600 text-center font-bold text-xl">
-                        Certificação FSSC 22000 pelo órgão DNV
-                    </h2>
+                    <h1 class="lg:text-xl text-3xl text-center">
+                        <span style="letter-spacing: 0.5px" class="font-black bg-clip-text bg-gradient-to-r from-color1 to-color1 text-color1">
+                            Certificação FSSC 22000 pelo órgão DNV
+                        </span>
+                    </h1>
+
                     <div class="px-5 py-10 lg:grid grid-cols-2 gap-2">
                         <div class="flex justify-center">
                             <img src="./assets/img/certificado8.png" alt="" class="lg:w-2/4 md:w-full">
@@ -43,7 +48,7 @@ $URI = new URI();
                             <img src="./assets/img/certificado7.jpg" alt="" class="lg:w-2/4 md:w-full">
                         </div>
                     </div>
-                    <button class="saiba-mais hover:bg-color1 text-sm text-gray-800 font-bold py-2 px-4 rounded-full border-2 border-color1">Saiba Mais</button>
+                    <button style="background: rgb(252,114,0); background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);" class="saiba-mais text-white border-2 border-white bg-white rounded-full font-semibold text-lg px-5 py-2 text-center hover:bg-orange-600 hover:text-black">Saiba Mais</button>
                     <div class="cert-description text-center m-2">
                         Somos Certificados FSSC 22000 pelo órgão DNV. Sabe o que isso representa?<br>
                         Isso quer dizer que somos uma empresa de alimentos com um sistema de segurança de alimentos internacional. A certificação FSSC 22000 garante um sistema de gestão robusto que controla os perigos, minimizando os riscos e garantindo uma produção de alimentos segura.
@@ -58,9 +63,12 @@ $URI = new URI();
                     </div>
                 </div>
                 <div class="mb-10">
-                    <h2 class="text-orange-600 text-center font-bold text-xl">
-                        Certificações Orgânicas
-                    </h2>
+                    <h1 class="lg:text-xl text-3xl text-center">
+                        <span style="letter-spacing: 0.5px" class="font-black bg-clip-text bg-gradient-to-r from-color1 to-color1 text-color1">
+                            Certificações Orgânicas
+                        </span>
+                    </h1>
+
                     <div class="px-5 py-10 lg:grid grid-cols-3 gap-2">
                         <div class="flex justify-center">
                             <img src="./assets/img/certificado4.png" alt="" class="lg:w-11/12 md:w-full h-3/4 mt-10">
@@ -72,7 +80,7 @@ $URI = new URI();
                             <img src="./assets/img/certificado6.png" alt="" class="lg:w-3/4 md:w-full">
                         </div>
                     </div>
-                    <button class="saiba-mais hover:bg-color1 text-sm text-gray-800 font-bold py-2 px-4 rounded-full border-2 border-color1">Saiba Mais</button>
+                    <button style="background: rgb(252,114,0); background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);" class="saiba-mais text-white border-2 border-white bg-white rounded-full font-semibold text-lg px-5 py-2 text-center hover:bg-orange-600 hover:text-black">Saiba Mais</button>
                     <div class="cert-description text-center m-2">
                         Os produtos orgânicos certificados, que possuem selo de conformidade orgânica, são aqueles que durante toda a sua cadeia de produção seguiram as normas de produção orgânica, especificas para cada país. Isso quer dizer que em todos os processos, desde o cultivo, processamento, manipulação, embalagem e chegada até o consumidor final, os produtos seguiram uma série de regras e parâmetros que permitissem a sua integridade orgânica. Integridade essa que é garantida por um organismo de certificação responsável por avaliar todo o processo e verificar se está de acordo com a legislação, concedendo o certificado correspondente e permitindo assim a utilização ou não do selo.
                         <br>
@@ -80,13 +88,16 @@ $URI = new URI();
                     </div>
                 </div>
                 <div class="mb-10">
-                    <h2 class="text-orange-600 text-center font-bold text-xl">
-                        Certificação Kosher
-                    </h2>
+                    <h1 class="lg:text-xl text-3xl text-center">
+                        <span style="letter-spacing: 0.5px" class="font-black bg-clip-text bg-gradient-to-r from-color1 to-color1 text-color1">
+                            Certificação Kosher
+                        </span>
+                    </h1>
+
                     <div class="flex justify-center px-5 py-10">
                         <img src="./assets/img/certificado3.jpg" alt="" class="lg:w-1/4 h-1/4 md:w-full">
                     </div>
-                    <button class="saiba-mais hover:bg-color1 text-sm text-gray-800 font-bold py-2 px-4 rounded-full border-2 border-color1">Saiba Mais</button>
+                    <button style="background: rgb(252,114,0); background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);" class="saiba-mais text-white border-2 border-white bg-white rounded-full font-semibold text-lg px-5 py-2 text-center hover:bg-orange-600 hover:text-black">Saiba Mais</button>
                     <div class="cert-description text-center m-2">
                         É uma certificação mundialmente reconhecida como o mais alto padrão de qualidade para alimentos apropriados ao consumo segundo requisitos da lei judaica. A certificação garante a confiança a quem segue os preceitos judaicos ortodoxos de que o produto a ser consumido está de acordo com suas restrições alimentares, obedecendo a normas específicas tendo como base os fundamentos religiosos judaicos. Essa garantia é evidenciada através de um selo ou símbolo presente na embalagem dos produtos.
                         <br>
@@ -95,13 +106,16 @@ $URI = new URI();
                     </div>
                 </div>
                 <div class="mb-10">
-                    <h2 class="text-orange-600 text-center font-bold text-xl">
-                        Certificação Halal
-                    </h2>
+                    <h1 class="lg:text-xl text-3xl text-center">
+                        <span style="letter-spacing: 0.5px" class="font-black bg-clip-text bg-gradient-to-r from-color1 to-color1 text-color1">
+                            Certificação Halal
+                        </span>
+                    </h1>
+
                     <div class="flex justify-center px-5 py-10">
                         <img src="./assets/img/certificado2.jpeg" alt="" class="lg:w-1/4 h-1/4 md:w-full">
                     </div>
-                    <button class="saiba-mais hover:bg-color1 text-sm text-gray-800 font-bold py-2 px-4 rounded-full border-2 border-color1">Saiba Mais</button>
+                    <button style="background: rgb(252,114,0); background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);" class="saiba-mais text-white border-2 border-white bg-white rounded-full font-semibold text-lg px-5 py-2 text-center hover:bg-orange-600 hover:text-black">Saiba Mais</button>
                     <div class="cert-description text-center m-2">
                         É uma maneira de garantir que os produtos seguem as diretrizes da alimentação islâmica. Essas diretrizes estão relacionadas desde a maneira como o alimento é produzido até as procedências da matéria prima e distribuição. A certificação halal também determina quais alimentos podem ou não ser consumidos pelos mulçumanos, levando em consideração aspectos de higiene e armazenamento dos alimentos, de acordo com as normas sanitárias.
                         <br>
@@ -109,13 +123,16 @@ $URI = new URI();
                     </div>
                 </div>
                 <div class="mb-10">
-                    <h2 class="text-orange-600 text-center font-bold text-xl">
-                        Selo Eureciclo
-                    </h2>
+                    <h1 class="lg:text-xl text-3xl text-center">
+                        <span style="letter-spacing: 0.5px" class="font-black bg-clip-text bg-gradient-to-r from-color1 to-color1 text-color1">
+                            Selo Eureciclo
+                        </span>
+                    </h1>
+
                     <div class="flex justify-center px-5 py-10">
                         <img src="./assets/img/certificado1.png" alt="" class="lg:w-2/4 h-2/4 md:w-full">
                     </div>
-                    <button class="saiba-mais hover:bg-color1 text-sm text-gray-800 font-bold py-2 px-4 rounded-full border-2 border-color1">Saiba Mais</button>
+                    <button style="background: rgb(252,114,0); background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);" class="saiba-mais text-white border-2 border-white bg-white rounded-full font-semibold text-lg px-5 py-2 text-center hover:bg-orange-600 hover:text-black">Saiba Mais</button>
                     <div class="cert-description text-center m-2">
                         O selo eureciclo garante que empresas fabricantes de bens de consumo contribuam para a reciclagem das embalagens colocadas no mercado. Basicamente, a presença do selo eureciclo em uma embalagem de produto é a garantia que a empresa responsável é comprometida com o engajamento sustentável, seja através do apoio financeiro a cooperativas de reciclagem ou a priorização da conscientização ambiental de todos os envolvidos em nosso processo produtivo.
                         <br>

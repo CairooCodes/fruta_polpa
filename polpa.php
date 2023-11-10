@@ -56,8 +56,10 @@ if ($stmt->rowCount() > 0) {
   <section class="mx-auto max-w-7xl px-2">
     <div class="max-w-screen-xl pt-10 mx-auto lg:grid grid-cols-2 pb-10">
       <div>
-        <h1 class="text-4xl text-orange-600 font-bold">
-          <?php echo $polpa['name']; ?>
+        <h1 class="lg:text-3xl text-3xl">
+          <span style="letter-spacing: 0.5px" class="font-black bg-clip-text bg-gradient-to-r from-color1 to-color1 text-color1">
+            <?php echo $polpa['name']; ?>
+          </span>
         </h1>
         <h2 class="py-4 px-2 text-justify text-xl">
           A polpa de fruta é um produto natural obtido pela extração da parte carnosa e suculenta de frutas maduras, preservando seu sabor e aroma autênticos. É uma opção saudável e versátil, rica em nutrientes, que pode ser consumida de várias maneiras, como lanche, ingrediente em bebidas e sobremesas, e é valorizada por sua conveniência e durabilidade, permitindo desfrutar do sabor das frutas em qualquer estação do ano.
@@ -69,8 +71,10 @@ if ($stmt->rowCount() > 0) {
         </div>
       </div>
       <div class="lg:px-10 p-2">
-        <h1 class="text-2xl text-orange-600 font-bold mt-10">
+        <h1 class="lg:text-3xl text-3xl">
+          <span style="letter-spacing: 0.5px" class="font-black bg-clip-text bg-gradient-to-r from-color1 to-color1 text-color1">
           Modo de preparo:
+          </span>
         </h1>
         <h1 class="text-xl mt-5">
           1- Coloque a embalagem por 10 segundos em água corrente.

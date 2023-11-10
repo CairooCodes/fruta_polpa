@@ -21,9 +21,12 @@ $URI = new URI();
 <body>
   <?php include "./components/navbar.php" ?>
   <div class="mx-auto max-w-7xl px-2 pt-10 pb-10">
-    <h1 class="text-orange-600 text-center text-3xl font-extrabold leading-9 tracking-tight sm:text-4xl sm:leading-10 md:text-left md:text-3xl md:leading-14">
-      Receitas
+    <h1 class="lg:text-4xl text-3xl">
+      <span style="letter-spacing: 0.5px" class="font-black bg-clip-text bg-gradient-to-r from-color1 to-color1 text-color1">
+        Receitas
+      </span>
     </h1>
+
     <div class="grid lg:grid-cols-4 gap-8">
 
       <?php foreach ($receitas as $receita) { ?>
@@ -31,12 +34,14 @@ $URI = new URI();
           <div class="mb-8 mt-4 items-center rounded-xl p-2">
             <img class='custom-image' src='./admin/uploads/receitas/<?php echo $receita['img']; ?>'>
           </div>
-          <div class="mb-8 mt-4 items-center rounded-xl p-2 text-orange-600 text-center text-xl font-semibold">
-            <?php echo $receita['name']; ?>
+          <div class="lg:text-xl text-xl text-center">
+              <span style="letter-spacing: 0.5px" class="font-bold bg-clip-text bg-gradient-to-r from-color1 to-color1 text-color1">
+              <?php echo $receita['name']; ?>
+              </span>
           </div>
 
           <div class="flex justify-center mt-4">
-            <a href="<?php echo $URI->base('/receita/' . slugify($receita['name'])); ?>" class="text-white bg-orange-600 focus:ring-4 rounded-md font-md text-md px-5 py-2 text-center">Saiba mais</a>
+            <a href="<?php echo $URI->base('/receita/' . slugify($receita['name'])); ?>" style="background: rgb(252,114,0); background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);" class="saiba-mais text-white border-2 border-white bg-white rounded-full font-semibold text-lg px-5 py-2 text-center hover:bg-orange-600 hover:text-black">Saiba mais</a>
           </div>
         </div>
 

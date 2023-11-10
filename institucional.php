@@ -24,7 +24,7 @@ $URI = new URI();
 <body>
   <?php include "./components/navbar.php"; ?>
   <section class="max-w-full px-4 pt-10 mx-auto fade-in-up">
-    <div class="mx-auto md:max-w-7xl">
+    <section class="mx-auto md:max-w-7xl">
       <div class="grid md:grid-cols-2">
         <div class="grid grid-rows-3">
           <div class="bg-red-600 rounded-t-2xl md:rounded-t-none md:rounded-tl-2xl">
@@ -66,121 +66,135 @@ $URI = new URI();
           <img class="w-full rounded-b-2xl md:rounded-b-none  md:rounded-r-2xl" src="<?php echo $URI->base("/assets/img/institucional.png"); ?>" alt="">
         </div>
       </div>
-    </div>
-    <div class="mx-auto lg:pb-16 pb-4 py-12">
-      <div class="text-center">
-        <p class="text-2xl text-orange-600 uppercase font-sans">Nossa História</p>
-        <h1 class="font-bold text-orange-600 lg:text-5xl text-xl font-sans mb-2">
-          Linha do Tempo
-        </h1>
-      </div>
-    </div>
-    <div class="grid md:grid-cols-4 gap-4 mx-auto md:px-20 justify-center">
-      <div class="">
-        <div class="flex gap-2 mr-2 p-2">
-          <i class="bi bi-dot"></i>
-          <i class="bi bi-dot"></i>
-          <i class="bi bi-dot"></i>
-          <i class="bi bi-dot"></i>
-          <i class="bi bi-dot"></i>
-          <i class="bi bi-dot"></i>
-          <i class="bi bi-dot"></i>
-          <i class="bi bi-dot"></i>
-          <i class="bi bi-dot"></i>
-          <i class="bi bi-dot"></i>
-          <i class="bi bi-dot"></i>
-          <i class="bi bi-dot"></i>
-          <i class="bi bi-dot"></i>
-          <i class="text-center bi bi-record-circle"></i>
-        </div>
-        <div class="grid justify-start">
-          <p class="text-gray-500">(2003)<br><span class="font-semibold font-sans text-color1">Fundação</span></p>
-          <p class="font-sans">Fundada no ano de 2003, a Fruta Polpa iniciou suas atividades<br>
-            vendendo frutas in natura na cidade de Teresina.<br>
-            Com apenas 04 colaboradores, começou o negócio de <br>produção de polpas.</p>
+    </section>
+    <section>
+      <div class="mx-auto lg:pb-16 pb-4 py-12">
+        <div class="text-center">
+          <h6 class="lg:text-3xl text-xl pb-2 text-center pt-4"><span style="font-size: 20px;letter-spacing: 4px; font-weight: 300;" class="text-color1 uppercase bg-clip-text bg-gradient-to-r from-color2 to-color2">Nossa História</span></h6>
+          <h1 class="lg:text-5xl text-3xl text-center"><span style="letter-spacing: 0.5px;color:#1c5503;" class="font-black bg-clip-text bg-gradient-to-r from-color2 to-color2">Linha do Tempo</span></h1>
         </div>
       </div>
-      <div class="">
-        <div class="flex gap-2 mr-2 p-2">
-          <i class="bi bi-dot"></i>
-          <i class="bi bi-dot"></i>
-          <i class="bi bi-dot"></i>
-          <i class="bi bi-dot"></i>
-          <i class="bi bi-dot"></i>
-          <i class="bi bi-dot"></i>
-          <i class="bi bi-dot"></i>
-          <i class="bi bi-dot"></i>
-          <i class="bi bi-dot"></i>
-          <i class="bi bi-dot"></i>
-          <i class="bi bi-dot"></i>
-          <i class="bi bi-dot"></i>
-          <i class="bi bi-dot"></i>
-          <i class="text-center bi bi-record-circle"></i>
+      <div class="grid md:grid-cols-4 gap-4 mx-auto md:px-20 justify-center">
+        <div class="">
+          <div class="flex gap-2 mr-2 p-2">
+            <i class="text-center bi bi-record-circle"></i>
+            <i class="bi bi-dot"></i>
+            <i class="bi bi-dot"></i>
+            <i class="bi bi-dot"></i>
+            <i class="bi bi-dot"></i>
+            <i class="bi bi-dot"></i>
+            <i class="bi bi-dot"></i>
+            <i class="bi bi-dot"></i>
+            <i class="bi bi-dot"></i>
+            <i class="bi bi-dot"></i>
+            <i class="bi bi-dot"></i>
+            <i class="bi bi-dot"></i>
+            <i class="bi bi-dot"></i>
+            <i class="bi bi-dot"></i>
+            <i class="bi bi-dot"></i>
+          </div>
+          <div class="grid justify-start">
+            <p class="text-gray-500">(2003)<br><span class="font-semibold font-sans text-color1">Fundação</span></p>
+            <p class="font-sans">Fundada no ano de 2003, a Fruta Polpa iniciou suas atividades<br>
+              vendendo frutas in natura na cidade de Teresina.<br>
+              Com apenas 04 colaboradores, começou o negócio de <br>produção de polpas.</p>
+          </div>
         </div>
-        <div class="grid justify-start">
-          <p class="text-gray-500">(2010)<br><span class="font-semibold font-sans text-color1">Expanção Nacional</span></p>
-          <p class="font-sans">Fundada no ano de 2003, a Fruta Polpa iniciou suas atividades<br>
-            vendendo frutas in natura na cidade de Teresina.<br>
-            Com apenas 04 colaboradores, começou o negócio de <br>produção de polpas.</p>
+        <div class="">
+          <div class="flex gap-2 mr-2 p-2">
+            <i class="text-center bi bi-record-circle"></i>
+            <i class="bi bi-dot"></i>
+            <i class="bi bi-dot"></i>
+            <i class="bi bi-dot"></i>
+            <i class="bi bi-dot"></i>
+            <i class="bi bi-dot"></i>
+            <i class="bi bi-dot"></i>
+            <i class="bi bi-dot"></i>
+            <i class="bi bi-dot"></i>
+            <i class="bi bi-dot"></i>
+            <i class="bi bi-dot"></i>
+            <i class="bi bi-dot"></i>
+            <i class="bi bi-dot"></i>
+            <i class="bi bi-dot"></i>
+            <i class="bi bi-dot"></i>
+          </div>
+          <div class="grid justify-start">
+            <p class="text-gray-500">(2010)<br><span class="font-semibold font-sans text-color1">Expanção Nacional</span></p>
+            <p class="font-sans">Fundada no ano de 2003, a Fruta Polpa iniciou suas atividades<br>
+              vendendo frutas in natura na cidade de Teresina.<br>
+              Com apenas 04 colaboradores, começou o negócio de <br>produção de polpas.</p>
+          </div>
         </div>
-      </div>
-      <div class="">
-        <div class="flex gap-2 mr-2 p-2">
-          <i class="bi bi-dot"></i>
-          <i class="bi bi-dot"></i>
-          <i class="bi bi-dot"></i>
-          <i class="bi bi-dot"></i>
-          <i class="bi bi-dot"></i>
-          <i class="bi bi-dot"></i>
-          <i class="bi bi-dot"></i>
-          <i class="bi bi-dot"></i>
-          <i class="bi bi-dot"></i>
-          <i class="bi bi-dot"></i>
-          <i class="bi bi-dot"></i>
-          <i class="bi bi-dot"></i>
-          <i class="bi bi-dot"></i>
-          <i class="text-center bi bi-record-circle"></i>
+        <div class="">
+          <div class="flex gap-2 mr-2 p-2">
+            <i class="text-center bi bi-record-circle"></i>
+            <i class="bi bi-dot"></i>
+            <i class="bi bi-dot"></i>
+            <i class="bi bi-dot"></i>
+            <i class="bi bi-dot"></i>
+            <i class="bi bi-dot"></i>
+            <i class="bi bi-dot"></i>
+            <i class="bi bi-dot"></i>
+            <i class="bi bi-dot"></i>
+            <i class="bi bi-dot"></i>
+            <i class="bi bi-dot"></i>
+            <i class="bi bi-dot"></i>
+            <i class="bi bi-dot"></i>
+            <i class="bi bi-dot"></i>
+            <i class="bi bi-dot"></i>
+          </div>
+          <div class="grid justify-start">
+            <p class="text-gray-500">(2015)<br><span class="font-semibold font-sans text-color1">Lançamento de Novos Produtos</span></p>
+            <p class="font-sans text-justify">Fundada no ano de 2003, a Fruta Polpa iniciou suas atividades<br>
+              vendendo frutas in natura na cidade de Teresina.<br>
+              Com apenas 04 colaboradores, começou o negócio de <br>produção de polpas.</p>
+          </div>
         </div>
-        <div class="grid justify-start">
-          <p class="text-gray-500">(2015)<br><span class="font-semibold font-sans text-color1">Lançamento de Novos Produtos</span></p>
-          <p class="font-sans text-justify">Fundada no ano de 2003, a Fruta Polpa iniciou suas atividades<br>
-            vendendo frutas in natura na cidade de Teresina.<br>
-            Com apenas 04 colaboradores, começou o negócio de <br>produção de polpas.</p>
-        </div>
-      </div>
-      <div class="">
-        <div class="flex gap-2 mr-2 p-2">
-          <i class="bi bi-dot"></i>
-          <i class="bi bi-dot"></i>
-          <i class="bi bi-dot"></i>
-          <i class="bi bi-dot"></i>
-          <i class="bi bi-dot"></i>
-          <i class="bi bi-dot"></i>
-          <i class="bi bi-dot"></i>
-          <i class="bi bi-dot"></i>
-          <i class="bi bi-dot"></i>
-          <i class="bi bi-dot"></i>
-          <i class="bi bi-dot"></i>
-          <i class="bi bi-dot"></i>
-          <i class="bi bi-dot"></i>
-          <i class="text-center bi bi-record-circle"></i>
-        </div>
-        <div class="grid justify-start">
-          <p class="text-gray-500">(2018)<br><span class="font-semibold font-sans text-color1">Parceria Global</span></p>
-          <p class="font-sans text-justify">Fundada no ano de 2003, a Fruta Polpa iniciou suas atividades<br>
-            vendendo frutas in natura na cidade de Teresina.<br>
-            Com apenas 04 colaboradores, começou o negócio de <br>produção de polpas.</p>
-        </div>
+        <div class="">
+          <div class="flex gap-2 mr-2 p-2">
+            <i class="text-center bi bi-record-circle"></i>
+            <i class="bi bi-dot"></i>
+            <i class="bi bi-dot"></i>
+            <i class="bi bi-dot"></i>
+            <i class="bi bi-dot"></i>
+            <i class="bi bi-dot"></i>
+            <i class="bi bi-dot"></i>
+            <i class="bi bi-dot"></i>
+            <i class="bi bi-dot"></i>
+            <i class="bi bi-dot"></i>
+            <i class="bi bi-dot"></i>
+            <i class="bi bi-dot"></i>
+            <i class="bi bi-dot"></i>
+            <i class="bi bi-dot"></i>
+            <i class="bi bi-dot"></i>
+          </div>
+          <div class="grid justify-start">
+            <p class="text-gray-500">(2018)<br><span class="font-semibold font-sans text-color1">Parceria Global</span></p>
+            <p class="font-sans text-justify">
+              Fundada no ano de 2003, a Fruta Polpa iniciou suas atividades<br>
+              vendendo frutas in natura na cidade de Teresina.<br>
+              Com apenas 04 colaboradores, começou o negócio de <br>produção de polpas.
+            </p>
+          </div>
 
+        </div>
       </div>
-    </div>
-    <div class="mx-auto max-w-6xl pt-2 about mt-24">
+    </section>
+    <div class="mx-auto max-w-6xl pt-2 about mt-10">
       <section>
         <div class="lg:pt-4 lg:p-0 lg:p-10">
           <div class="md:grid md:grid-cols-2 md:gap-6">
             <div class="mx-auto">
-              <h1 class="font-extrabold text-orange-600 text-4xl font-sans uppercase pb-3 lg:py-10">Fazendas</h1>
-              <p class="text-medium font-sans text-justify">A qualidade dos produtos "in natura" e congelados De Marchi tem origem nas fazendas do grupo e também dos produtores parceiros. Elas são a garantia de produtos cultivados com muito cuidado e sabor incomparáveis.</p>
+              <h6 class="lg:text-3xl text-xl pb-5 pt-4">
+                <span style="letter-spacing: 0.5px" class="text-color1 font-black bg-clip-text bg-gradient-to-r uppercase">
+                  Fazendas
+                </span>
+              </h6>
+
+              <p class="text-medium font-sans text-justify pb-2">
+                A qualidade dos produtos "in natura" e congelados De Marchi tem origem nas fazendas do grupo e também dos produtores parceiros. Elas são a garantia de produtos cultivados com muito cuidado e sabor incomparáveis.
+
+              </p>
             </div>
             <!-- Your HTML Structure -->
             <div class="owl-carousel">
@@ -200,8 +214,15 @@ $URI = new URI();
           <div class="md:grid md:grid-cols-2 md:gap-6">
 
             <div class="mx-auto">
-              <h1 class="font-extrabold text-orange-600 text-4xl font-sans uppercase pb-3 lg:py-10">Indústria</h1>
-              <p class="text-medium font-sans text-justify">O grupo conta com mais de 3.000 profissionais altamente capacitados e modernos equipamentos para garantir produtos minimamente processados, mantendo toda qualidade e sabor que vem direto do campo.</p>
+              <h6 class="lg:text-3xl text-xl pb-5 pt-4">
+                <span style="letter-spacing: 0.5px" class="text-color1 font-black bg-clip-text bg-gradient-to-r uppercase">
+                  Indústrias
+                </span>
+              </h6>
+
+              <p class="text-medium font-sans text-justify pb-2">
+                O grupo conta com mais de 3.000 profissionais altamente capacitados e modernos equipamentos para garantir produtos minimamente processados, mantendo toda qualidade e sabor que vem direto do campo.
+              </p>
             </div>
 
             <!-- Your HTML Structure -->
@@ -222,8 +243,15 @@ $URI = new URI();
         <div class="lg:pt-4 lg:p-0 lg:p-10 p-2">
           <div class="md:grid md:grid-cols-2 md:gap-6">
             <div class="mx-auto">
-              <h1 class="font-extrabold text-orange-600 text-4xl font-sans uppercase pb-3 lg:py-10">Supermercados</h1>
-              <p class="text-medium font-sans text-justify">A De Marchi abastece, diariamente, centenas de supermercados por todo país e também administra as seções FLV (Frutas, Legumes e Verduras) de renomadas redes de supermercados.</p>
+              <h6 class="lg:text-3xl text-xl pb-5 pt-4">
+                <span style="letter-spacing: 0.5px" class="text-color1 font-black bg-clip-text bg-gradient-to-r uppercase">
+                  Supermercados
+                </span>
+              </h6>
+
+              <p class="text-medium font-sans text-justify pb-2">
+                A De Marchi abastece, diariamente, centenas de supermercados por todo país e também administra as seções FLV (Frutas, Legumes e Verduras) de renomadas redes de supermercados.
+              </p>
             </div>
             <!-- Your HTML Structure -->
             <div class="owl-carousel">
@@ -237,7 +265,7 @@ $URI = new URI();
           </div>
         </div>
       </section>
-      <div class="mb-10">
+      <div class="pb-2">
         <a href="<?php echo $URI->base("distribuidores"); ?>" class="flex justify-center">
           <button class="middle none center rounded-lg bg-orange-500 py-5 px-4 shadow-md shadow-orange-500/20 transition-all hover:shadow-lg hover:shadow-orange-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none rounded-full font-sans text-white uppercase font-bold">
             <span class="pr-2">Encontre o Distribuidor mais próximo</span><i class="bi bi-chevron-right"></i>
@@ -247,11 +275,10 @@ $URI = new URI();
     </div>
     <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-4 py-12">
       <div class="text-center pb-12">
-        <!-- <h2 class="text-base font-bold text-indigo-600">
-          We have the best equipment
-        </h2> -->
-        <h1 class="font-bold font-sans text-3xl md:text-4xl lg:text-5xl text-orange-600">
-          Conheça nossa equipe
+        <h1 class="lg:text-5xl text-3xl text-center">
+          <span style="letter-spacing: 0.5px" class="font-black bg-clip-text bg-gradient-to-r from-color1 to-color1 text-color1">
+            Conheça nossa equipe
+          </span>
         </h1>
       </div>
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6">

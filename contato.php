@@ -22,27 +22,29 @@ $URI = new URI();
     <section>
         <div class="max-w-full px-4 pt-5 mx-auto lg:grid grid-cols-2">
             <div class="mx-auto py-28">
-                <h1 class="text-orange-600 text-3xl font-extrabold leading-9 tracking-tight sm:text-4xl sm:leading-10 md:text-left md:text-3xl md:leading-14 text-center">
-                    Entre em Contato
+                <h1 class="lg:text-5xl text-3xl">
+                    <span style="letter-spacing: 0.5px" class="font-black bg-clip-text bg-gradient-to-r from-color1 to-color1 text-color1">
+                        Entre em Contato
+                    </span>
                 </h1>
 
                 <div class="py-8">
                     <div class="mt-4 flex flex-col space-y-2 text-gray-500">
-                        <p class="font-bold text-orange-500">Telefone</p>
+                        <p class="font-bold bg-clip-text bg-gradient-to-r from-color1 to-color1 text-color1">Telefone</p>
                         <p>+55 (86) 9 9429-3833</p>
                     </div>
                     <div class="mt-4 flex flex-col space-y-2 text-gray-500">
-                        <p class="font-bold text-orange-500">Site</p>
+                        <p class="font-bold bg-clip-text bg-gradient-to-r from-color1 to-color1 text-color1">Site</p>
                         <a href="https://frutapolpa.com.br/">frutapolpa.com.br</a>
                     </div>
                     <div class="mt-4 flex flex-col space-y-2 text-gray-500">
-                        <p class="font-bold text-orange-500">WhatsApp</p>
+                        <p class="font-bold bg-clip-text bg-gradient-to-r from-color1 to-color1 text-color1">WhatsApp</p>
                         <a href="https://api.whatsapp.com/send?phone=5586994293833&text=Olá%20Fruta%20Polpa-site" class="font-semibol">+55 (86) 9 9429-3833</a>
                     </div>
-                    <div class="mt-4 flex flex-col space-y-2 text-orange-500">
-                        <p class="font-semibold text-orange-500">REDES SOCIAIS</p>
-                        <div class="mt-4 flex flex-col space-y-2 text-orange-500">
-                            <div class="flex space-x-6 text-orange-500">
+                    <div class="mt-4 flex flex-col space-y-2 bg-clip-text bg-gradient-to-r from-color1 to-color1 text-color1">
+                        <p class="font-semibold bg-clip-text bg-gradient-to-r from-color1 to-color1 text-color1">REDES SOCIAIS</p>
+                        <div class="mt-4 flex flex-col space-y-2 bg-clip-text bg-gradient-to-r from-color1 to-color1 text-color1">
+                            <div class="flex space-x-6 bg-clip-text bg-gradient-to-r from-color1 to-color1 text-color1">
                                 <a href="https://www.facebook.com/FrutaPolpa" target="_blank" rel="noreferrer">
                                     <span class="sr-only"> Facebook </span>
                                     <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -64,9 +66,13 @@ $URI = new URI();
                     </div>
                 </div>
                 <div class="mt-12">
-                    <h1 class="text-orange-600 text-xl font-extrabold leading-9 tracking-tight sm:text-2xl sm:leading-10 md:text-left md:text-xl md:leading-14 text-center">Deseja ser um Revendedor ou Representante?</h1>
+                    <h1 class="lg:text-xl text-3xl">
+                        <span style="letter-spacing: 0.5px" class="font-black bg-clip-text bg-gradient-to-r from-color1 to-color1 text-color1">
+                        Deseja ser um Revendedor ou Representante?
+                        </span>
+                    </h1>
                     <a href="<?php echo $URI->base("/trabalhe-conosco"); ?>" class="flex justify-center py-5">
-                        <button class="hover:bg-color1 text-sm text-gray-800 font-bold py-2 px-4 rounded-full border-2 border-color1">
+                        <button style="background: rgb(252,114,0); background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);" class="text-white border-2 border-white bg-white rounded-full font-semibold text-lg px-5 py-2 text-center hover:bg-orange-600 hover:text-black">
                             Clique aqui e Trabalhe Conosco!
                         </button>
                     </a>
@@ -107,7 +113,7 @@ $URI = new URI();
                     </div>
                     <input type="hidden" value="CONTATO" name="type">
                     <div class="flex justify-center mt-5">
-                        <button class="bg-white hover:bg-color1 text-sm text-color1 hover:text-white font-bold py-2 px-4 rounded-full border-2 border-white w-full md:w-80">
+                        <button style="background: rgb(252,114,0); background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);" class="text-white border-2 border-white bg-white rounded-full font-semibold text-lg px-5 py-2 text-center hover:bg-orange-600 hover:text-black">
                             Quero comprar Fruta Polpa
                         </button>
                     </div>

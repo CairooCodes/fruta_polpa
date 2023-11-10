@@ -179,14 +179,13 @@ body {
 
 .counter {
   font-weight: 800;
-  color: #ff851e;
   font-size: 90px;
   line-height: 0.7;
 }
 
 .counter:after {
   content: ' anos no mercado de polpas de frutas.';
-  color: #00284a;
+  color: #1c5503;
   font-size: 57px;
 }
 

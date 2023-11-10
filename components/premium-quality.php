@@ -2,10 +2,17 @@
   <div class="lg:pt-12 pb-12 lg:grid grid-cols-2 mt-2">
     <div class="lg:px-12">
       <div class="mt-14 mb-4 text-justify">
-        <h1 class="font-sm text-3xl mb-10" style="color: #1c5503">
-          Fruta polpa é <br><span class="font-bold lg:text-5xl" style="color: #1c5503">QUALIDADE PREMIUM</span>
+        <h6 class="lg:text-3xl text-xl pb-2 pt-4">
+          <span style="font-size: 20px;letter-spacing: 4px; font-weight: 300;" class="text-color1 uppercase bg-clip-text bg-gradient-to-r from-color2 to-color2">
+            Fruta Polpa é
+          </span>
+        </h6>
+        <h1 class="lg:text-5xl text-3xl">
+          <span style="letter-spacing: 0.5px;color:#1c5503;" class="font-black bg-clip-text bg-gradient-to-r from-color2 to-color2">
+            Qualidade Premium
+          </span>
         </h1>
-        <p>
+        <p class="pt-5">
           Referência em polpas de frutas premium, garantindo qualidade excepcional e sabor autêntico. Além disso, nosso compromisso com a sustentabilidade inclui práticas responsáveis na produção e parcerias com agricultores locais. Possuímos certificações de qualidade e sustentabilidade, assegurando a pureza de nossos produtos e nossa dedicação ao meio ambiente. Escolha a Fruta Polpa e desfrute de sabores incríveis com consciência ecológica.
         </p>
       </div>
