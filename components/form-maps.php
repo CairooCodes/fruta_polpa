@@ -1,18 +1,12 @@
 <section class="bg-slate-100 pb-5">
-  <div class="max-w-screen-xl px-4 mx-auto lg:grid grid-cols-2 lg:space-x-10">
-    <div class="mx-auto bg-gray-300 rounded w-full mb-5">
+  <div class="max-w-screen-xl px-4 mx-auto lg:grid grid-cols-2 lg:space-x-10 pt-10">
+    <div class="mx-auto bg-white rounded w-full mb-5">
       <form action="./admin/controllers/add_lead.php" method="post" class="mr-auto px-8 pt-2 pb-2 place-self-center">
         <h6 class="lg:text-2xl text-xl pt-2">
           <span style="color:#1c5503; font-size: 20px;letter-spacing: 4px; font-weight: 300;" class="text-white bg-clip-text bg-gradient-to-r from-white to-white">
             Deseja ser um Revendedor ou Representante?
           </span>
         </h6>
-        <h1 class="lg:text-2xl text-2xl pb-2 pt-2">
-          <span style="color: rgb(252,114,0); color: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%); letter-spacing: 0.5px;" class="font-black bg-clip-text bg-gradient-to-r from-color2 to-color2">
-            Preencha o formulário
-          </span>
-        </h1>
-
         <div>
           <label class="text-sm font-bold text-black">
             Nome
@@ -45,7 +39,7 @@
         </div>
         <input type="hidden" value="CONTATO" name="type">
         <div class="flex justify-center mt-2">
-          <button style="background: rgb(252,114,0); background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);" class="text-sm text-black hover:text-white font-bold py-2 px-4 rounded-full border-2 border-white w-full md:w-80">
+          <button style="background: rgb(252,114,0); background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);" class="text-sm text-black hover:text-white font-bold py-2 px-4 rounded-full w-full md:w-80">
             Enviar
           </button>
         </div>
