@@ -23,14 +23,14 @@ $URI = new URI();
 
 <body>
   <?php include "./components/navbar.php"; ?>
-  <section class="max-w-full px-4 pt-10 mx-auto fade-in-up">
+  <section class="max-w-full px-4 pt-10 mx-auto">
     <section class="mx-auto md:max-w-7xl">
       <div class="grid md:grid-cols-2">
         <div class="grid grid-rows-3">
           <div class="bg-red-600 rounded-t-2xl md:rounded-t-none md:rounded-tl-2xl">
             <div class="flex h-full items-center">
-              <h1 class="-rotate-90 text-white text-2xl font-[1000] ml-2">Missão</h1>
-              <h3 class="px-8 text-white text-lg">
+              <h1 class="-rotate-90 text-white text-2xl font-[1000] lg:ml-2">Missão</h1>
+              <h3 class="lg:px-8 px-2 text-white text-lg">
                 Orientados por nossos valores e com a
                 nutrição como foco central, trabalhamos
                 junto com nossos parceiros para melhorar
@@ -41,8 +41,8 @@ $URI = new URI();
           </div>
           <div class="bg-orange-500">
             <div class="flex h-full items-center">
-              <h1 class="-rotate-90 text-white text-2xl font-[1000] ml-4">Visão</h1>
-              <h3 class="px-8 text-white text-lg">
+              <h1 class="-rotate-90 text-white text-2xl font-[1000] lg:ml-4">Visão</h1>
+              <h3 class="lg:px-8 px-2 text-white text-lg">
                 Deﬁnimos como meta direcionar
                 esforços para alcançarmos a liderança
                 no segmento até 2028 de forma
@@ -53,7 +53,7 @@ $URI = new URI();
           <div class="bg-orange-400 md:rounded-bl-2xl  ">
             <div class="flex h-full items-center">
               <h1 class="-rotate-90 text-white text-2xl font-[1000]">Valores</h1>
-              <h3 class="px-8 text-white text-lg">
+              <h3 class="lg:px-8 px-2 text-white text-lg">
                 Respeito ao próximo;<br>
                 Humildade;<br>
                 Proatividade;<br>

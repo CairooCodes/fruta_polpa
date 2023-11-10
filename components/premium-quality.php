@@ -18,7 +18,7 @@
       </div>
       <a href="<?php echo $URI->base("/premium-quality"); ?>" class="leia-mais-link">Leia mais</a>
     </div>
-    <div class="lg:px-16 fade-in-up lg:py-10">
+    <div class="lg:px-16 fade-in-up lg:py-10 pt-4">
       <div class="max-w-full lg:pt-12 mx-auto grid grid-cols-2">
         <img data-src="./assets/img/industria2.png" class="lazy w-full h-16  object-cover rounded-tl-md">
         <div class="flex justify-center items-center text-white p-3 rounded-tr-md" style="background-color: #f7640e;">
