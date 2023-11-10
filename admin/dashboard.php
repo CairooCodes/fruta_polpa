@@ -92,6 +92,9 @@ $page = 'dash';
                 Área de Interesse
               </th>
               <th scope="col" class="px-6 py-3">
+                Status
+              </th>
+              <th scope="col" class="px-6 py-3">
                 Ação
               </th>
             </tr>
@@ -105,15 +108,38 @@ $page = 'dash';
                   </div>
                 </th>
                 <th class="px-6 py-3">
-                <div class="text-base font-semibold"><?php echo $recruitment['office']; ?></div>
+                  <div class="text-base font-semibold"><?php echo $recruitment['office']; ?></div>
                 </th>
+                <td class="px-6 py-4">
+                  <div class="flex items-center space-x-2">
+                    <div class="text-base font-semibold"><?php echo $recruitment['status']; ?></div>
+                    <div class="h-2.5 w-2.5 rounded-full 
+                    <?php
+                    if ($recruitment['status'] == 'Recusado') {
+                      echo "bg-red-500";
+                    }
+                    if ($recruitment['status'] == 'Confirmado') {
+                      echo "bg-green-500";
+                    }
+                    if (($recruitment['status'] == 'Pendente') or ($recruitment['status'] == 'PENDENTE')) {
+                      echo "bg-yellow-500";
+                    }
+                    ?>                           
+                    mr-2"></div>
+                  </div>
+                </td>
                 <td class="px-6 py-4">
                   <a href="./controllers/delete_recruitment.php?id=<?php echo $recruitment['id']; ?>" type="button" class="font-medium text-red-600 hover:underline">Excluir</a>
                 </td>
+                <td class="px-6 py-4">
+                  <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded btnAbrirModal" data-parametro="<?php echo htmlspecialchars(json_encode($recruitment)); ?>">Ver mais</button>
+                </td>
+
               </tr>
             <?php } ?>
           </tbody>
         </table>
+        <?php include "./components/modal_view_recruitment.php"; ?>
       </div>
     </div>
   </div>

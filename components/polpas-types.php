@@ -5,7 +5,7 @@
     <div class="lg:pl-72 px-5 pt-24">
       <div class="swiper swiper_products_type">
         <div class="swiper-wrapper">
-          <div class="swiper-slide">
+          <div class="swiper-slide pb-5">
             <div class="transition duration-500 bg-white rounded-2xl shadow2">
               <div class="h-full">
                 <img style='margin-bottom: -100px;' class='lazy relative top-[-100px]' data-src='./assets/img/ABACAXI1.png'>

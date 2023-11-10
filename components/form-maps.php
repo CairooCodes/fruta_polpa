@@ -1,7 +1,7 @@
 <section class="bg-slate-100 pb-5">
-  <div class="max-w-screen-xl px-4 mx-auto lg:grid grid-cols-2 lg:space-x-10 pt-10">
+  <div class="max-w-screen-xl px-4 mx-auto lg:grid grid-cols-2 lg:space-x-10 pt-5">
     <div class="mx-auto bg-white rounded w-full mb-5">
-      <form action="./admin/controllers/add_lead.php" method="post" class="mr-auto px-8 pt-2 pb-2 place-self-center">
+      <form action="./admin/controllers/add_lead.php" method="post" class="mr-auto lg:px-4 pt-2 pb-2 place-self-center">
         <h6 class="lg:text-2xl text-xl pt-2">
           <span style="color:#1c5503; font-size: 20px;letter-spacing: 4px; font-weight: 300;" class="text-white bg-clip-text bg-gradient-to-r from-white to-white">
             Deseja ser um Revendedor ou Representante?

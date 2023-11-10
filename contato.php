@@ -103,7 +103,7 @@ $URI = new URI();
                         <label class="text-sm font-bold text-white">
                             CNPJ
                         </label>
-                        <input type="number" name="cnpj" id="cnpj" placeholder="Da Empresa ou Pessoa Física" class="mt-2 mb-4 w-full rounded-lg p-3 text-gray-900" required=""/>
+                        <input type="text" name="cnpj" id="cnpj" placeholder="Da Empresa ou Pessoa Física" class="mt-2 mb-4 w-full rounded-lg p-3 text-gray-900" required=""/>
                     </div>
                     <div>
                         <label class="text-sm font-bold text-white">

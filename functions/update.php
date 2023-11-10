@@ -150,4 +150,25 @@ function updateReceitaImage($userId, $newImagePath)
   }
 }
 
-
+function updateRecrutamento($id, $name, $email, $telephone, $city, $status)
+{
+  global $pdo;
+  if ($id) {
+    $stmt = $pdo->prepare("UPDATE recruitment SET name = :name, email=:email, telephone = :telephone, city=:city, status=:status WHERE id = :id");
+    $stmt->bindParam(':name', $name);
+    $stmt->bindParam(':email', $email);
+    $stmt->bindParam(':telephone', $telephone);
+    $stmt->bindParam(':city', $city);
+    $stmt->bindParam(':status', $status);
+    $stmt->bindParam(':id', $id);
+  } else {
+    $stmt = $pdo->prepare("UPDATE recruitment SET name = :name, email=:email, telephone = :telephone, city=:city, status=:status WHERE id = :id");
+    $stmt->bindParam(':name', $name);
+    $stmt->bindParam(':email', $email);
+    $stmt->bindParam(':telephone', $telephone);
+    $stmt->bindParam(':city', $city);
+    $stmt->bindParam(':status', $status);
+    $stmt->bindParam(':id', $id);
+  }
+  $stmt->execute();
+}
