@@ -1,5 +1,5 @@
 <section class="bg-white max-w-full header-institucional">
-  <div class="max-w-full px-4 pt-4 lg:pl-24  mx-auto items-center lg:grid grid-cols-2 mt-2">
+  <div class="max-w-full lg:pl-24  mx-auto pt-32 lg:grid grid-cols-2">
     <div class="lg:px-12">
       <div>
         <p style="color: rgb(252,114,0);
@@ -10,12 +10,13 @@ color: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);" c
         15
       </div>
       <div class="lg:mt-14 mt-4 mb-4 text-justify">
-        <p style="letter-spacing: 0.5px;">Trabalhamos com 25 sabores desde os mais tradicionais que são a acerola, goiaba e maracujá, como também contamos com a linha funcional, montada com 6 sabores especialmente pensadas para trazer benefícios diretos a saúde e qualidade das milhares de famílias em 7 estados diferentes: Piauí, Maranhão, Tocantins, Pará, Amapá, Goiás/DF e Ceará.</p>
+        <p style="letter-spacing: 0.5px;" class="text-gray-800">Trabalhamos com 25 sabores desde os mais tradicionais que são a acerola, goiaba e maracujá, como também contamos com a linha funcional, montada com 6 sabores especialmente pensadas para trazer benefícios diretos a saúde e qualidade das milhares de famílias em 7 estados diferentes: Piauí, Maranhão, Tocantins, Pará, Amapá, Goiás/DF e Ceará.</p>
+       <p style="letter-spacing: 0.5px;" class="text-gray-800">Trabalhamos com 25 sabores desde os mais tradicionais que são a acerola, goiaba e maracujá, como também contamos</p>
       </div>
       <a href="<?php echo $URI->base("/institucional"); ?>" class="leia-mais-link">Leia mais</a>
     </div>
-    <div class="lg:p-20">
-      <img src="./assets/img/banner-home-mobile.jpg" class="w-full">
+    <div class="pt-10 pr-32 pb-20">
+      <img src="./assets/img/pagina_institucionalnova.png" class="w-full">
     </div>
   </div>
 </section>

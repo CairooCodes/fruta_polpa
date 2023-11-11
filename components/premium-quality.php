@@ -8,7 +8,7 @@
           </span>
         </h6>
         <h1 class="lg:text-5xl text-3xl">
-          <span style="letter-spacing: 0.5px;color:#1c5503;" class="font-black bg-clip-text bg-gradient-to-r from-color2 to-color2">
+          <span style="letter-spacing: 0.5px;" class="font-black text-color1">
             Qualidade Premium
           </span>
         </h1>

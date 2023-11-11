@@ -1,8 +1,8 @@
-<section class="bg-slate-100 pb-5">
+<section class="bg-yellow-50 py-20">
   <div class="max-w-screen-xl px-4 mx-auto lg:grid grid-cols-2 lg:space-x-10 pt-5">
-    <div class="mx-auto bg-gray-400 rounded w-full px-4 py-2">
+    <div class="mx-auto bg-color1 rounded w-full px-4">
       <form action="./admin/controllers/add_lead.php" method="post" class="mr-auto lg:p-8 place-self-center">
-        <h2 class="text-center md:text-left text-2xl font-extrabold tracking-wider text-white">Envie uma mensagem</h2>
+        <h2 class="text-center md:text-left text-2xl font-extrabold tracking-wider text-white text-center">Fale Conosco</h2>
         <div>
           <label class="text-sm font-bold text-white">
             Nome
@@ -11,7 +11,7 @@
         </div>
         <div>
           <label class="text-sm font-bold text-white">
-            Email
+            E-mail
           </label>
           <input type="email" name="email" id="email" placeholder="Email@gmail.com" class="mt-1 mb-2 w-full rounded-lg p-3 text-gray-900" required="" />
         </div>
@@ -36,7 +36,7 @@
         <input type="hidden" value="CONTATO" name="type">
         <div class="flex justify-center mt-1">
           <button style="background: rgb(252,114,0); background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);" class="text-white bg-white rounded-full font-semibold text-lg px-5 py-2 text-center hover:bg-orange-600 hover:text-black">
-            Quero comprar Fruta Polpa
+            Quero ser parceiro
           </button>
         </div>
       </form>

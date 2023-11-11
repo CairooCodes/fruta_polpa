@@ -185,7 +185,7 @@ body {
 
 .counter:after {
   content: ' anos no mercado de polpas de frutas.';
-  color: #1c5503;
+  color: #ff851e;
   font-size: 57px;
 }
 
@@ -218,9 +218,9 @@ body {
 }
 
 .leia-mais-link {
-  color: #1c5503;
+  color: #ff851e;
   padding-bottom: 4px;
-  border-bottom: 2px solid #1c5503;
+  border-bottom: 2px solid #ff851e;
   transition: border-bottom 0.3s ease;
 
 }
@@ -367,8 +367,14 @@ header {
 
   .counter:after {
     content: ' anos no mercado de polpas de frutas.';
-    color: #1c5503;
+    color: #ff851e;
     font-size: 32px;
   }
 
+}
+
+.banners { 
+  background-image: url('../img/foto_da_fabrica_2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }

@@ -1,8 +1,8 @@
-<section class="bg-slate-100 max-w-full header-institucional" id="produtos">
-  <h6 class="lg:text-3xl text-xl pb-2 text-center pt-4"><span style="font-size: 20px;letter-spacing: 4px; font-weight: 300;" class="text-color1 uppercase bg-clip-text bg-gradient-to-r from-color2 to-color2">Nossos Produtos</span></h6>
-  <h1 class="lg:text-5xl text-3xl text-center"><span style="letter-spacing: 0.5px;color:#1c5503;" class="font-black bg-clip-text bg-gradient-to-r from-color2 to-color2">Linhas de Produtos</span></h1>
+<section class="bg-yellow-50 max-w-full header-institucional" id="produtos">
+  <h6 class="lg:text-3xl text-xl pb-2 text-center pt-14"><span style="font-size: 20px;letter-spacing: 4px; font-weight: 300;" class="text-color1 uppercase">Conheça nossas</span></h6>
+  <h1 class="lg:text-7xl text-3xl text-center"><span style="letter-spacing: 0.5px;color:#1c5503;" class="font-black bg-clip-text bg-gradient-to-r from-color2 to-color2">Polpas</span></h1>
   <div class="max-w-full px-4 lg:pt-12 pb-12 lg:grid grid-cols-2 mt-2">
-    <div class="lg:pl-72 px-5 pt-24">
+    <div class="lg:pl-72 px-5 pt-14">
       <div class="swiper swiper_products_type">
         <div class="swiper-wrapper">
           <div class="swiper-slide pb-5">
@@ -303,7 +303,7 @@ background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%
         <!-- <div class="swiper-pagination"></div> -->
       </div>
     </div>
-    <div class="lg:pr-72 px-5 pt-24">
+    <div class="lg:pr-72 px-5 pt-14">
       <div class="swiper swiper_products_type2">
         <div class="swiper-wrapper">
           <div class="swiper-slide">

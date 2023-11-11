@@ -52,7 +52,7 @@ if ($stmt->rowCount() > 0) {
   <?php include "./components/navbar.php" ?>
   <div class="bg-gray-300  pt-16 pb-10">
     <h1 class="lg:text-5xl text-3xl text-center">
-      <span style="letter-spacing: 0.5px,; color:#1c5503" class="font-black bg-clip-text bg-gradient-to-r from-color1 to-color1 text-color1">
+      <span style="letter-spacing: 0.5px,; color:#ff851e" class="font-black bg-clip-text bg-gradient-to-r from-color1 to-color1 text-color1">
         <?php echo $blog['name']; ?>
       </span>
     </h1>
