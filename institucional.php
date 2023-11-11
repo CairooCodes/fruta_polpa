@@ -68,6 +68,156 @@ $URI = new URI();
       </div>
     </section>
     <section>
+
+      <ol class="items-center sm:flex">
+        <li class="relative mb-6 sm:mb-0">
+          <div class="flex items-center">
+            <div class="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
+              <svg class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+              </svg>
+            </div>
+            <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
+          </div>
+          <div class="mt-3 sm:pe-8">
+            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Flowbite Library v1.0.0</h3>
+            <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Released on December 2, 2021</time>
+            <p class="text-base font-normal text-gray-500 dark:text-gray-400">Get started with dozens of web components and interactive elements.</p>
+          </div>
+        </li>
+        <li class="relative mb-6 sm:mb-0">
+          <div class="flex items-center">
+            <div class="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
+              <svg class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+              </svg>
+            </div>
+            <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
+          </div>
+          <div class="mt-3 sm:pe-8">
+            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Flowbite Library v1.2.0</h3>
+            <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Released on December 23, 2021</time>
+            <p class="text-base font-normal text-gray-500 dark:text-gray-400">Get started with dozens of web components and interactive elements.</p>
+          </div>
+        </li>
+        <li class="relative mb-6 sm:mb-0">
+          <div class="flex items-center">
+            <div class="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
+              <svg class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+              </svg>
+            </div>
+            <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
+          </div>
+          <div class="mt-3 sm:pe-8">
+            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Flowbite Library v1.3.0</h3>
+            <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Released on January 5, 2022</time>
+            <p class="text-base font-normal text-gray-500 dark:text-gray-400">Get started with dozens of web components and interactive elements.</p>
+          </div>
+        </li>
+        <li class="relative mb-6 sm:mb-0">
+          <div class="flex items-center">
+            <div class="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
+              <svg class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+              </svg>
+            </div>
+            <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
+          </div>
+          <div class="mt-3 sm:pe-8">
+            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Flowbite Library v1.3.0</h3>
+            <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Released on January 5, 2022</time>
+            <p class="text-base font-normal text-gray-500 dark:text-gray-400">Get started with dozens of web components and interactive elements.</p>
+          </div>
+        </li>
+      </ol>
+
+      <div class="border-l-2 mt-10">
+        <!-- Card 1 -->
+        <div class="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-blue-600 text-white rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0">
+          <!-- Dot Follwing the Left Vertical Line -->
+          <div class="w-5 h-5 bg-blue-600 absolute -left-10 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
+
+          <!-- Line that connecting the box with the vertical line -->
+          <div class="w-10 h-1 bg-blue-300 absolute -left-10 z-0"></div>
+
+          <!-- Content that showing in the box -->
+          <div class="flex-auto">
+            <h1 class="text-lg">Day 1</h1>
+            <h1 class="text-xl font-bold">Orientation and Briefing on Uniliver basics</h1>
+            <h3>Classroom</h3>
+          </div>
+          <a href="#" class="text-center text-white hover:text-gray-300">Download materials</a>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-pink-600 text-white rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0">
+          <!-- Dot Follwing the Left Vertical Line -->
+          <div class="w-5 h-5 bg-pink-600 absolute -left-10 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
+
+          <!-- Line that connecting the box with the vertical line -->
+          <div class="w-10 h-1 bg-pink-300 absolute -left-10 z-0"></div>
+
+          <!-- Content that showing in the box -->
+          <div class="flex-auto">
+            <h1 class="text-lg">Day 1</h1>
+            <h1 class="text-xl font-bold">Orientation and Briefing on Uniliver basics</h1>
+            <h3>Classroom</h3>
+          </div>
+          <a href="#" class="text-center text-white hover:text-gray-300">Download materials</a>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-green-600 text-white rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0">
+          <!-- Dot Follwing the Left Vertical Line -->
+          <div class="w-5 h-5 bg-green-600 absolute -left-10 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
+
+          <!-- Line that connecting the box with the vertical line -->
+          <div class="w-10 h-1 bg-green-300 absolute -left-10 z-0"></div>
+
+          <!-- Content that showing in the box -->
+          <div class="flex-auto">
+            <h1 class="text-lg">Day 1</h1>
+            <h1 class="text-xl font-bold">Orientation and Briefing on Uniliver basics</h1>
+            <h3>Classroom</h3>
+          </div>
+          <a href="#" class="text-center text-white hover:text-gray-300">Download materials</a>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-purple-600 text-white rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0">
+          <!-- Dot Follwing the Left Vertical Line -->
+          <div class="w-5 h-5 bg-purple-600 absolute -left-10 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
+
+          <!-- Line that connecting the box with the vertical line -->
+          <div class="w-10 h-1 bg-purple-300 absolute -left-10 z-0"></div>
+
+          <!-- Content that showing in the box -->
+          <div class="flex-auto">
+            <h1 class="text-lg">Day 1</h1>
+            <h1 class="text-xl font-bold">Orientation and Briefing on Uniliver basics</h1>
+            <h3>Classroom</h3>
+          </div>
+          <a href="#" class="text-center text-white hover:text-gray-300">Download materials</a>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-yellow-600 text-white rounded mb-10 flex-col md:flex-row">
+          <!-- Dot Follwing the Left Vertical Line -->
+          <div class="w-5 h-5 bg-yellow-600 absolute -left-10 transform -translate-x-2/4 rounded-full z-10 -mt-2 md:mt-0"></div>
+
+          <!-- Line that connecting the box with the vertical line -->
+          <div class="w-10 h-1 bg-yellow-300 absolute -left-10 z-0"></div>
+
+          <!-- Content that showing in the box -->
+          <div class="flex-auto">
+            <h1 class="text-lg">Day 1</h1>
+            <h1 class="text-xl font-bold">Orientation and Briefing on Uniliver basics</h1>
+            <h3>Classroom</h3>
+          </div>
+          <a href="#" class="text-center text-white hover:text-gray-300">Download materials</a>
+        </div>
+      </div>
       <div class="mx-auto lg:pb-16 pb-4 py-12">
         <div class="text-center">
           <h6 class="lg:text-3xl text-xl pb-2 text-center pt-4"><span style="font-size: 20px;letter-spacing: 4px; font-weight: 300;" class="text-color1 uppercase bg-clip-text bg-gradient-to-r from-color2 to-color2">Nossa História</span></h6>
