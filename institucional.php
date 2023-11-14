@@ -68,6 +68,81 @@ $URI = new URI();
       </div>
     </section>
     <section class="py-10">
+      <div class="hidden lg:block">
+        <div class="grid grid-cols-5">
+          <div class="border-l-2 h-40">
+            <div class="w-5 h-5 bg-blue-600 relative left-0 -top-1 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
+            <div class="relative left-1 -top-5 px-5">
+              <h1>Orientados por nossos valores e com a nutrição como foco central, trabalhamos junto com nossos parceiros para melhorar a qualidade de vida e contribuir para um futuro mais saudável.</h1>
+            </div>
+            <div class="w-5 h-5 bg-blue-600 relative left-0 -top-1 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
+          </div>
+          <div></div>
+          <div class="border-l-2 h-40">
+            <div class="w-5 h-5 bg-blue-600 relative left-0 -top-1 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
+            <div class="relative left-1 -top-5 px-5">
+              <h1>Orientados por nossos valores e com a nutrição como foco central, trabalhamos junto com nossos parceiros para melhorar a qualidade de vida e contribuir para um futuro mais saudável.</h1>
+            </div>
+            <div class="w-5 h-5 bg-blue-600 relative left-0 -top-1 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
+          </div>
+          <div></div>
+          <div class="border-l-2 h-40">
+            <div class="w-5 h-5 bg-blue-600 relative left-0 -top-1 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
+            <div class="relative left-1 -top-5 px-5">
+              <h1>Orientados por nossos valores e com a nutrição como foco central, trabalhamos junto com nossos parceiros para melhorar a qualidade de vida e contribuir para um futuro mais saudável.</h1>
+            </div>
+            <div class="w-5 h-5 bg-blue-600 relative left-0 -top-1 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
+          </div>
+        </div>
+        <div class="border-t-2 border-color1 grid grid-cols-5">
+          <div></div>
+          <div class="border-l-2 h-40">
+            <div class="w-5 h-5 bg-blue-600 relative left-0 -top-1 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
+            <div class="relative left-1 -top-5 px-5">
+              <h1>Orientados por nossos valores e com a nutrição como foco central, trabalhamos junto com nossos parceiros para melhorar a qualidade de vida e contribuir para um futuro mais saudável.</h1>
+            </div>
+            <div class="w-5 h-5 bg-blue-600 relative left-0 -top-1 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
+          </div>
+          <div></div>
+          <div class="border-l-2 h-40">
+            <div class="w-5 h-5 bg-blue-600 relative left-0 -top-1 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
+            <div class="relative left-1 -top-5 px-5">
+              <h1>Orientados por nossos valores e com a nutrição como foco central, trabalhamos junto com nossos parceiros para melhorar a qualidade de vida e contribuir para um futuro mais saudável.</h1>
+            </div>
+            <div class="w-5 h-5 bg-blue-600 relative left-0 -top-1 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
+          </div>
+
+          <div></div>
+        </div>
+      </div>
+
+      <div>
+        <div class="flex overflow-x-auto space-x-8 lg:hidden">
+          <div class="border-l-2 h-40">
+            <div class="w-5 h-5 bg-blue-600 relative left-0 -top-1 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
+            <div class="relative left-1 -top-5 px-5">
+              <h1>Orientados por nossos valores e com a nutrição como foco central, trabalhamos junto com nossos parceiros para melhorar a qualidade de vida e contribuir para um futuro mais saudável.</h1>
+            </div>
+            <div class="w-5 h-5 bg-blue-600 relative left-0 -top-1 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
+          </div>
+          <div></div>
+          <div class="border-l-2 h-40">
+            <div class="w-5 h-5 bg-blue-600 relative left-0 -top-1 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
+            <div class="relative left-1 -top-5 px-5">
+              <h1>Orientados por nossos valores e com a nutrição como foco central, trabalhamos junto com nossos parceiros para melhorar a qualidade de vida e contribuir para um futuro mais saudável.</h1>
+            </div>
+            <div class="w-5 h-5 bg-blue-600 relative left-0 -top-1 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
+          </div>
+          <div></div>
+          <div class="border-l-2 h-40">
+            <div class="w-5 h-5 bg-blue-600 relative left-0 -top-1 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
+            <div class="relative left-1 -top-5 px-5">
+              <h1>Orientados por nossos valores e com a nutrição como foco central, trabalhamos junto com nossos parceiros para melhorar a qualidade de vida e contribuir para um futuro mais saudável.</h1>
+            </div>
+            <div class="w-5 h-5 bg-blue-600 relative left-0 -top-1 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
+          </div>
+        </div>
+      </div>
       <img src="./assets/img/linha_do_tempo.png" class="w-full">
     </section>
     <div class="mx-auto max-w-6xl pt-2 about mt-10">
