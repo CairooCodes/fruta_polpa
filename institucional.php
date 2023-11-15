@@ -67,11 +67,11 @@ $URI = new URI();
         </div>
       </div>
     </section>
-    <section class="py-10">
+    <section class="py-10 px-4">
       <div class="hidden lg:block pt-10">
         <div class="grid grid-cols-5 max-w-screen-xl mx-auto">
           <div>
-            <h1 class="relative right-14 -bottom-14 font-extrabold text-color1">2023</h1>
+            <h1 class="relative right-14 -bottom-14 font-extrabold text-color1">2003</h1>
             <h1 class="pb-4 font-extrabold text-color1 text-xl">Fundação</h1>
             <div class="border-l-2 h-52">
               <div class="w-3 h-3 bg-color1 relative left-0 -top-1 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
@@ -84,8 +84,8 @@ $URI = new URI();
           </div>
           <div></div>
           <div>
-            <h1 class="relative right-14 -bottom-14 font-extrabold text-color1">2023</h1>
-            <h1 class="pb-4 font-extrabold text-color1 text-xl">Fundação</h1>
+            <h1 class="relative right-14 -bottom-14 font-extrabold text-color1">2015</h1>
+            <h1 class="pb-4 font-extrabold text-color1 text-xl">Lançamento de Novos Produtos</h1>
             <div class="border-l-2 h-52">
               <div class="w-3 h-3 bg-color1 relative left-0 -top-1 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
               <div class="relative left-1 -top-5 px-5">
@@ -98,7 +98,7 @@ $URI = new URI();
           <div></div>
           <div>
             <h1 class="relative right-14 -bottom-14 font-extrabold text-color1">2023</h1>
-            <h1 class="pb-4 font-extrabold text-color1 text-xl">Fundação</h1>
+            <h1 class="pb-4 font-extrabold text-color1 text-xl"></h1>
             <div class="border-l-2 h-52">
               <div class="w-3 h-3 bg-color1 relative left-0 -top-1 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
               <div class="relative left-1 -top-5 px-5">
@@ -120,8 +120,8 @@ $URI = new URI();
                   <h1 class="text-sm text-gray-700  pt-2 text-justify">Com apenas 4 colaboradores, começou o negócio de produção de polpas.</h1>
                 </div>
                 <div class="w-3 h-3 bg-color1 relative left-0 -bottom-2 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
-                <h1 class="relative right-14 -top-5 font-extrabold text-color1">2023</h1>
-                <h1 class="pb-4 font-extrabold text-color1 text-xl">Fundação</h1>
+                <h1 class="relative right-14 -top-5 font-extrabold text-color1">2010</h1>
+                <h1 class="pb-4 font-extrabold text-color1 text-xl">Expansão Nacional</h1>
               </div>
             </div>
             <div></div>
@@ -132,11 +132,9 @@ $URI = new URI();
                 <h1 class="text-sm text-gray-700  pt-2 text-justify">Com apenas 4 colaboradores, começou o negócio de produção de polpas.</h1>
               </div>
               <div class="w-3 h-3 bg-color1 relative left-0 -bottom-2 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
-              <h1 class="relative right-14 -top-5 font-extrabold text-color1">2023</h1>
-              <h1 class="pb-4 font-extrabold text-color1 text-xl">Fundação</h1>
-              <div class="w-3 h-3 bg-color1 relative left-0 -top-8 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
+              <h1 class="relative right-14 -top-5 font-extrabold text-color1">2018</h1>
+              <h1 class="pb-4 pl-2 font-extrabold text-color1 text-xl">Parceira Global</h1>
             </div>
-
             <div></div>
           </div>
         </div>
@@ -168,7 +166,7 @@ $URI = new URI();
           </div>
         </div>
       </div>
-      <img src="./assets/img/linha_do_tempo.png" class="w-full">
+      <!-- <img src="./assets/img/linha_do_tempo.png" class="w-full"> -->
     </section>
     <div class="mx-auto max-w-6xl pt-2 about mt-10">
       <section>
