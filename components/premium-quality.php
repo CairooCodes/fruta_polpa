@@ -3,7 +3,7 @@
     <div class="lg:px-12">
       <div class="mt-14 mb-4 text-justify">
         <h6 class="lg:text-3xl text-xl pb-2 pt-4">
-          <span style="font-size: 20px;letter-spacing: 4px; font-weight: 300;" class="text-color1 uppercase bg-clip-text bg-gradient-to-r from-color2 to-color2">
+          <span style="font-size: 20px;letter-spacing: 4px; font-weight: 300;" class="text-color1 uppercase bg-clip-text bg-gradient-to-r from-color1 to-color1">
             Fruta Polpa é
           </span>
         </h6>

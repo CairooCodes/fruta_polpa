@@ -42,8 +42,6 @@
               Institucional
             </a>
           </li>
-          </a>
-          </li>
           <li class="mt-3">
             <a href="<?php echo $URI->base("/trabalhe-conosco"); ?>" class="text-gray-600 cursor-pointer hover:text-orange-500">
               Trabalhe Conosco
