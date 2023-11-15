@@ -1,6 +1,6 @@
 function initMap() {
   const map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 6,
+    zoom: 12,
     center: {
       lat: -5.108008158202379, 
       lng: -42.80315442769431
@@ -328,7 +328,7 @@ function initMap() {
       map,
       icon: {
         url: "./assets/img/mapicon.png",
-        scaledSize: new google.maps.Size(100, 100), // Ajuste o tamanho conforme necessário
+        scaledSize: new google.maps.Size(32, 32), // Ajuste o tamanho conforme necessário
       },
       title: beach.title,
       zIndex: beach.zIndex,

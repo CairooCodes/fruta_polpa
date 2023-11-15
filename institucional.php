@@ -68,6 +68,106 @@ $URI = new URI();
       </div>
     </section>
     <section class="py-10">
+      <div class="hidden lg:block pt-10">
+        <div class="grid grid-cols-5 max-w-screen-xl mx-auto">
+          <div>
+            <h1 class="relative right-14 -bottom-14 font-extrabold text-color1">2023</h1>
+            <h1 class="pb-4 font-extrabold text-color1 text-xl">Fundação</h1>
+            <div class="border-l-2 h-52">
+              <div class="w-3 h-3 bg-color1 relative left-0 -top-1 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
+              <div class="relative left-1 -top-5 px-5">
+                <h1 class="text-sm text-gray-700 text-justify">Fundada no ano de 2003, a Fruta Polpa iniciou suas atividades vendendo frutas in natura na cidade de Teresina</h1>
+                <h1 class="text-sm text-gray-700  pt-2 text-justify">Com apenas 4 colaboradores, começou o negócio de produção de polpas.</h1>
+              </div>
+              <div class="w-10 h-10 relative left-0 -bottom-8 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"><img src="./assets/img/folha.png"></div>
+            </div>
+          </div>
+          <div></div>
+          <div>
+            <h1 class="relative right-14 -bottom-14 font-extrabold text-color1">2023</h1>
+            <h1 class="pb-4 font-extrabold text-color1 text-xl">Fundação</h1>
+            <div class="border-l-2 h-52">
+              <div class="w-3 h-3 bg-color1 relative left-0 -top-1 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
+              <div class="relative left-1 -top-5 px-5">
+                <h1 class="text-sm text-gray-700 text-justify">Fundada no ano de 2003, a Fruta Polpa iniciou suas atividades vendendo frutas in natura na cidade de Teresina</h1>
+                <h1 class="text-sm text-gray-700  pt-2 text-justify">Com apenas 4 colaboradores, começou o negócio de produção de polpas.</h1>
+              </div>
+              <div class="w-10 h-10 relative left-0 -bottom-8 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"><img src="./assets/img/folha.png"></div>
+            </div>
+          </div>
+          <div></div>
+          <div>
+            <h1 class="relative right-14 -bottom-14 font-extrabold text-color1">2023</h1>
+            <h1 class="pb-4 font-extrabold text-color1 text-xl">Fundação</h1>
+            <div class="border-l-2 h-52">
+              <div class="w-3 h-3 bg-color1 relative left-0 -top-1 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
+              <div class="relative left-1 -top-5 px-5">
+                <h1 class="text-sm text-gray-700 text-justify">Fundada no ano de 2003, a Fruta Polpa iniciou suas atividades vendendo frutas in natura na cidade de Teresina</h1>
+                <h1 class="text-sm text-gray-700  pt-2 text-justify">Com apenas 4 colaboradores, começou o negócio de produção de polpas.</h1>
+              </div>
+              <div class="w-10 h-10 relative left-0 -bottom-8 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"><img src="./assets/img/folha.png"></div>
+            </div>
+          </div>
+        </div>
+        <div class="border-t-2 border-color1">
+          <div class="grid grid-cols-5 max-w-screen-xl mx-auto">
+            <div></div>
+            <div>
+              <div class="border-l-2 h-52">
+                <div class="w-10 h-10 relative left-0 -top-4 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"><img src="./assets/img/folha.png"></div>
+                <div class="relative left-1 -top-5 px-5">
+                  <h1 class="text-sm text-gray-700 text-justify">Fundada no ano de 2003, a Fruta Polpa iniciou suas atividades vendendo frutas in natura na cidade de Teresina</h1>
+                  <h1 class="text-sm text-gray-700  pt-2 text-justify">Com apenas 4 colaboradores, começou o negócio de produção de polpas.</h1>
+                </div>
+                <div class="w-3 h-3 bg-color1 relative left-0 -bottom-2 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
+                <h1 class="relative right-14 -top-5 font-extrabold text-color1">2023</h1>
+                <h1 class="pb-4 font-extrabold text-color1 text-xl">Fundação</h1>
+              </div>
+            </div>
+            <div></div>
+            <div class="border-l-2 h-52">
+              <div class="w-10 h-10 relative left-0 -top-4 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"><img src="./assets/img/folha.png"></div>
+              <div class="relative left-1 -top-5 px-5">
+                <h1 class="text-sm text-gray-700 text-justify">Fundada no ano de 2003, a Fruta Polpa iniciou suas atividades vendendo frutas in natura na cidade de Teresina</h1>
+                <h1 class="text-sm text-gray-700  pt-2 text-justify">Com apenas 4 colaboradores, começou o negócio de produção de polpas.</h1>
+              </div>
+              <div class="w-3 h-3 bg-color1 relative left-0 -bottom-2 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
+              <h1 class="relative right-14 -top-5 font-extrabold text-color1">2023</h1>
+              <h1 class="pb-4 font-extrabold text-color1 text-xl">Fundação</h1>
+              <div class="w-3 h-3 bg-color1 relative left-0 -top-8 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
+            </div>
+
+            <div></div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="lg:hidden">
+          <div class="owl-carousel">
+            <div class="item px-3">
+              <div class="border-l-2">
+                <div class="w-3 h-3 bg-color1 relative left-0 -top-1 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
+                <div class="relative left-1 -top-5 px-1">
+                  <h1 class="text-sm text-gray-700 text-justify">Fundada no ano de 2003, a Fruta Polpa iniciou suas atividades vendendo frutas in natura na cidade de Teresina</h1>
+
+                </div>
+                <div class="w-5 h-5 bg-color1 relative left-0 -top-1 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"><img src="./assets/img/folha.png"></div>
+              </div>
+            </div>
+            <div class="item px-3">
+              <div class="border-l-2">
+                <div class="w-3 h-3 bg-color1 relative left-0 -top-1 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
+                <div class="relative left-1 -top-5 px-1">
+                  <h1 class="text-sm text-gray-700 text-justify">Fundada no ano de 2003, a Fruta Polpa iniciou suas atividades vendendo frutas in natura na cidade de Teresina</h1>
+
+                </div>
+                <div class="w-5 h-5 bg-color1 relative left-0 -top-1 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"><img src="./assets/img/folha.png"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <img src="./assets/img/linha_do_tempo.png" class="w-full">
     </section>
     <div class="mx-auto max-w-6xl pt-2 about mt-10">
@@ -245,7 +345,7 @@ $URI = new URI();
   <script>
     $(document).ready(function() {
       var owl = $(".owl-carousel").owlCarousel({
-        items: 1.1, // Number of items to display at a time
+        items: 1.3, // Number of items to display at a time
         loop: true, // Enable loop
         autoplay: true, // Disable autoplay
         margin: 10,

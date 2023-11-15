@@ -1,10 +1,12 @@
 nossos produtos por polpas
-qualidade premium > certificações > receitas > seja nosso parceiro > contato
-remover home da barra de navegacao e rodapé
-botao do banner no limite
+qualidade premium > certificações > receitas > seja nosso parceiro > contato ISSO É PRA TA NO MENU, SO ESSES BOTOES
+remover o botao home da barra de navegacao e rodapé
+botao do banner conheça nossos produtos é pra ta no final da imagem igual demarchi
 remover fonte verde
-padronizar espaçamento da secoes
-ajustas epaçamento entre os titulos
+padronizar espaçamento da secoes ( cairo )
+ajustas epaçamento entre os titulos 
+
+em qualidade premiuim, tirar o colorido dos quadrados e deixar tudo laranja o mesmo do quadrado qualidade premiuim 
 
 redes instagram youtube linkedin icones laranjas
 ajustar backgroud do forumalario
