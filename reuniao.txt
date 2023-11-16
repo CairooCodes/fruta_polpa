@@ -1,7 +1,10 @@
 nossos produtos por polpas
-qualidade premium > certificações > receitas > seja nosso parceiro > contato ISSO É PRA TA NO MENU, SO ESSES BOTOES
-remover o botao home da barra de navegacao e rodapé
-botao do banner conheça nossos produtos é pra ta no final da imagem igual demarchi
+qualidade premium > certificações > receitas > seja nosso parceiro > contato ISSO É PRA TA NO MENU, SO ESSES BOTOES ok
+
+remover o botao home da barra de navegacao e rodapé ok 
+botao do banner conheça nossos produtos é pra ta no final da imagem igual demarchi ok
+
+
 remover fonte verde
 padronizar espaçamento da secoes ( cairo )
 ajustas epaçamento entre os titulos 
@@ -14,7 +17,7 @@ ajustar backgroud do forumalario
 
 
 INSTITUCIONAL
-programar linha do tempo 
+programar linha do tempo
 padronizar botao
 
 
