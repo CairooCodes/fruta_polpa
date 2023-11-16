@@ -36,12 +36,6 @@ if ($xml = simplexml_load_file($file)) {
   }
 }
 $i = 1;
-
-$stmt = $pdo->prepare("SELECT * FROM navbars");
-$stmt->execute();
-while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-  extract($row);
-}
 ?>
 <header class="w-full">
   <div class="hidden bg-gray-200 sm:block">
@@ -63,14 +57,9 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
   <nav class="shadow bg-white">
     <div class="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto">
       <a href="<?php echo $URI->base("/home.php"); ?>">
-        <img class="w-16 my-2" src="<?php echo $URI->base("/assets/img/$logo"); ?>" class="logo" alt="<?php echo $title; ?>" />
+        <img class="w-16 my-2" src="<?php echo $URI->base("/assets/img/logo.png"); ?>" class="logo" alt="Fruta Polpa" />
       </a>
       <div class="flex items-center lg:order-2 lg:hidden">
-        <?php if ($btn_name != null) { ?>
-          <div class="hidden mt-2 mr-4 sm:inline-block">
-            <a href="<?php echo $btn_link; ?>" class="text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-xs px-4 lg:px-5 py-2 lg:py-2.5 sm:mr-2 lg:mr-0 dark:bg-purple-600 dark:hover:bg-purple-700 focus:outline-none dark:focus:ring-purple-800"><?php echo $btn_name; ?></a>
-          </div>
-        <?php } ?>
         <button data-collapse-toggle="mobile-menu-2" type="button" class="inline-flex items-center p-2 ml-1 text-xs text-color1 rounded-lg lg:hidden focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="mobile-menu-2" aria-expanded="false">
           <span class="sr-only">Open main menu</span>
           <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -83,9 +72,6 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
       </div>
       <div class="items-center justify-center hidden w-full lg:flex lg:w-auto lg:order-1 py-1.5" id="mobile-menu-2">
         <ul class="flex flex-col lg:flex-row">
-          <li class="py-2">
-            <a href="<?php echo $URI->base("/home"); ?>" class="block py-2 uppercase text-xs rounded" aria-current="page">Home</a>
-          </li>
           <li class="py-2">
             <a href="<?php echo $URI->base("/institucional"); ?>" class="block py-2 uppercase text-xs rounded" aria-current="page">Institucional</a>
           </li>
@@ -109,18 +95,18 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
           </li>
           
         </ul>
-        <!-- <div class="flex justify-center">
-          <a href="<?php// echo $URI->base("/receitas"); ?>">
+        <div class="flex justify-center">
+          <a href="<?php echo $URI->base("/receitas"); ?>">
             <button class="hover:bg-color1 hover:text-white text-xs text-gray-800 py-2 px-4 rounded-full border-2 border-color1">
               RECEITAS
             </button>
           </a>
-          <a href="<?php// echo $URI->base("/trabalhe-conosco"); ?>">
+          <a href="<?php echo $URI->base("/trabalhe-conosco"); ?>">
           <button class="ml-4 text-xs py-2 px-4 rounded-full border-2 boder-transparent hover:border-color1 bg-color1 hover:bg-white text-white hover:text-color1">
             Trabalhe conosco
           </button>
           </a>
-        </div> -->
+        </div>
       </div>
     </div>
   </nav>

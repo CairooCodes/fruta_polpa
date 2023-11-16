@@ -10,7 +10,7 @@
       <span class="csscursiva lg:text-6xl text-2xl text-white">é Fruta Polpa! </span></p>
     </div>
   </div>
-  <div class="text-center fade-in-up">
+  <div class="fade-in-up relative -bottom-20 text-center">
     <a href="#produtos">
       <button style="background: rgb(252,114,0); background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);" class="mt-4 text-white text-md text-gray-800 py-3 px-4 rounded-full border-2 border-color1 font-semibold">
         CONHEÇA NOSSOS PRODUTOS
