@@ -1,4 +1,4 @@
-<section class="bg-white max-w-full header-institucional">
+<section class="bg-white max-w-full header-institucional px-4">
   <div class="max-w-full lg:pl-24  mx-auto pt-32 lg:grid grid-cols-2">
     <div class="lg:px-12">
       <div>
