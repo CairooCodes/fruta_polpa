@@ -230,31 +230,6 @@ body {
   border-bottom-color: #ff851e;
 }
 
-.container {
-  position: relative;
-  padding: 10px;
-  text-align: left;
-  line-height: 2;
-  color: rgb(0, 0, 0);
-  overflow: hidden;
-}
-
-.container::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url('../img/polpaquemsomos.png');
-  background-color: darkgreen;
-  background-size: cover;
-  background-position: center;
-  opacity: 0.3;
-  z-index: -1;
-}
-
-
 #mobile-menu-2 li a {
   display: inline-block;
   text-decoration: none;
@@ -278,11 +253,6 @@ body {
 #mobile-menu-2 li a:hover:after {
   transform: scaleX(1);
 }
-
-/* #mobile-menu-2 li a.from-left:after {
-  transform-origin: left;
-} */
-
 
 .video {
   position: absolute;
@@ -314,11 +284,8 @@ body {
 
 .same-size-image {
   width: 200px;
-  /* Defina a largura desejada para todas as imagens */
   height: 200px;
-  /* Defina a altura desejada para todas as imagens */
   object-fit: cover;
-  /* Garante que a imagem cubra o contêiner, mantendo suas proporções */
 }
 
 header {
@@ -332,10 +299,6 @@ header {
 
 .csscursiva {
   font-family: 'Lobster', sans-serif;
-}
-
-.fontpolpa {
-  font-family: "Indosign", sans-serif;
 }
 
 .header-institucional {
@@ -397,4 +360,8 @@ header {
 
 .zoom-container:hover img {
   transform: scale(1.1);
+}
+
+.csscursiva2{
+  font-family: 'Indesign-Regular', sans-serif;
 }

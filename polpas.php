@@ -26,7 +26,7 @@ $URI = new URI();
     <div class="max-w-full px-6 lg:pt-12 pt-10 lg:pb-40 mx-auto mt-2 pb-3 lg:px-16">
       <div class="fade-up">
         <p class="cssnormal lg:text-6xl text-2xl text-white text-end">Conheça
-          <span class="fontpolpa lg:text-6xl text-2xl text-white">Nossas Polpas</span>
+          <span class="csscursiva2 lg:text-6xl text-2xl text-white">Nossas Polpas</span>
         </p>
       </div>
     </div>
