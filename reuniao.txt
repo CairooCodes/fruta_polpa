@@ -5,13 +5,13 @@ remover o botao home da barra de navegacao e rodapé ok
 botao do banner conheça nossos produtos é pra ta no final da imagem igual demarchi ok
 
 
-remover fonte verde
+remover fonte verde ok
 padronizar espaçamento da secoes ( cairo )
 ajustas epaçamento entre os titulos 
 
-em qualidade premiuim, tirar o colorido dos quadrados e deixar tudo laranja o mesmo do quadrado qualidade premiuim 
+em qualidade premiuim, tirar o colorido dos quadrados e deixar tudo laranja o mesmo do quadrado qualidade premiuim  ok
 
-redes instagram youtube linkedin icones laranjas
+redes instagram youtube linkedin icones laranjas ok
 ajustar backgroud do forumalario
 
 

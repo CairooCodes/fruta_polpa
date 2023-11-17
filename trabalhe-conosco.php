@@ -20,7 +20,7 @@ $URI = new URI();
 <body>
     <?php include "./components/navbar.php" ?>
     <section>
-        <div class="max-w-full px-4 pt-5 mx-auto lg:grid grid-cols-2">
+        <div class="max-w-full px-4 pt-5 mt-1 mx-auto lg:grid grid-cols-2 bg-yellow-50">
             <div class="mx-auto py-10 flex items-center">
                 <div>
                     <h1 class="text-center">
@@ -113,7 +113,7 @@ $URI = new URI();
                     </div>
                     <input type="hidden" value="RECRUTAMENTO" name="type">
                     <div class="flex justify-center mt-5">
-                        <button style="background: rgb(252,114,0); background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);" class="bg-white hover:bg-color1 text-sm text-white hover:text-black font-bold py-2 px-4 rounded-full w-full md:w-80">
+                        <button class="bg-white hover:bg-color1 text-sm text-color1 hover:text-black font-bold py-2 px-4 rounded-full border w-full md:w-60">
                             Enviar
                         </button>
                     </div>

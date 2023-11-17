@@ -29,7 +29,7 @@ $URI = new URI();
         <div class="grid grid-rows-3">
           <div class="bg-red-600 rounded-t-2xl md:rounded-t-none md:rounded-tl-2xl">
             <div class="flex h-full items-center">
-              <h1 class="-rotate-90 text-white text-2xl font-[1000] lg:ml-2">Missão</h1>
+              <h1 class="-rotate-90 text-white text-2xl font-[1000] lg:ml-2 ml-3">Missão</h1>
               <h3 class="lg:px-8 px-2 text-white text-lg">
                 Orientados por nossos valores e com a
                 nutrição como foco central, trabalhamos
@@ -41,8 +41,8 @@ $URI = new URI();
           </div>
           <div class="bg-orange-500">
             <div class="flex h-full items-center">
-              <h1 class="-rotate-90 text-white text-2xl font-[1000] lg:ml-4">Visão</h1>
-              <h3 class="lg:px-8 px-2 text-white text-lg">
+              <h1 class="-rotate-90 text-white text-2xl font-[1000] ml-4 lg:ml-3">Visão</h1>
+              <h3 class="lg:px-8 px-2 text-white text-lg ml-2">
                 Deﬁnimos como meta direcionar
                 esforços para alcançarmos a liderança
                 no segmento até 2028 de forma
@@ -67,7 +67,7 @@ $URI = new URI();
         </div>
       </div>
     </section>
-    <section class="py-10 px-4">
+    <section class="py-10 px-4 lg:mb-32 lg:mt-16">
       <div class="hidden lg:block pt-10">
         <div class="grid grid-cols-5 max-w-screen-xl mx-auto">
           <div>
@@ -98,7 +98,7 @@ $URI = new URI();
           <div></div>
           <div>
             <h1 class="relative right-14 -bottom-14 font-extrabold text-color1">2023</h1>
-            <h1 class="pb-4 font-extrabold text-color1 text-xl"></h1>
+            <h1 class="pb-4 font-extrabold text-color1 text-xl">Atual</h1>
             <div class="border-l-2 h-52">
               <div class="w-3 h-3 bg-color1 relative left-0 -top-1 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
               <div class="relative left-1 -top-5 px-5">
@@ -145,30 +145,66 @@ $URI = new URI();
           <div class="owl-carousel">
             <div class="item px-3 border-b-2 border-color1 py-3 mb-3">
               <div class="border-l-2">
+                <h1 class="pb-1 font-extrabold text-color1 text-xl">Fundação</h1>
+                <h1 class="pb-2 font-extrabold text-color1">2003</h1>
                 <div class="w-3 h-3 bg-color1 relative left-0 -top-1 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
                 <div class="relative left-1 -top-5 px-1">
                   <h1 class="text-sm text-gray-700 text-justify">Fundada no ano de 2003, a Fruta Polpa iniciou suas atividades vendendo frutas in natura na cidade de Teresina</h1>
-
                 </div>
                 <div class="w-5 h-5 bg-color1 relative left-0 -bottom-5 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"><img src="./assets/img/folha.png"></div>
               </div>
             </div>
             <div class="item px-3 border-b-2 border-color1 py-3 mb-3">
               <div class="border-l-2">
+                <h1 class="pb-1 font-extrabold text-color1 text-xl">Expansão Nacional</h1>
+                <h1 class="pb-2 font-extrabold text-color1">2010</h1>
                 <div class="w-3 h-3 bg-color1 relative left-0 -top-1 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
                 <div class="relative left-1 -top-5 px-1">
                   <h1 class="text-sm text-gray-700 text-justify">Fundada no ano de 2003, a Fruta Polpa iniciou suas atividades vendendo frutas in natura na cidade de Teresina</h1>
-
                 </div>
                 <div class="w-5 h-5 bg-color1 relative left-0 -bottom-5 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"><img src="./assets/img/folha.png"></div>
               </div>
             </div>
+            <div class="item px-3 border-b-2 border-color1 py-3 mb-3">
+              <div class="border-l-2">
+                <h1 class="pb-1 font-extrabold text-color1 text-xl">Novos Produtos</h1>
+                <h1 class="pb-2 font-extrabold text-color1">2015</h1>
+                <div class="w-3 h-3 bg-color1 relative left-0 -top-1 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
+                <div class="relative left-1 -top-5 px-1">
+                  <h1 class="text-sm text-gray-700 text-justify">Fundada no ano de 2003, a Fruta Polpa iniciou suas atividades vendendo frutas in natura na cidade de Teresina</h1>
+                </div>
+                <div class="w-5 h-5 bg-color1 relative left-0 -bottom-5 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"><img src="./assets/img/folha.png"></div>
+              </div>
+            </div>
+            <div class="item px-3 border-b-2 border-color1 py-3 mb-3">
+              <div class="border-l-2">
+                <h1 class="pb-1 font-extrabold text-color1 text-xl">Parceria Global</h1>
+                <h1 class="pb-2 font-extrabold text-color1">2018</h1>
+                <div class="w-3 h-3 bg-color1 relative left-0 -top-1 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
+                <div class="relative left-1 -top-5 px-1">
+                  <h1 class="text-sm text-gray-700 text-justify">Fundada no ano de 2003, a Fruta Polpa iniciou suas atividades vendendo frutas in natura na cidade de Teresina</h1>
+                </div>
+                <div class="w-5 h-5 bg-color1 relative left-0 -bottom-5 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"><img src="./assets/img/folha.png"></div>
+              </div>
+            </div>
+            <div class="item px-3 border-b-2 border-color1 py-3 mb-3">
+              <div class="border-l-2">
+                <h1 class="pb-1 font-extrabold text-color1 text-xl">Atual</h1>
+                <h1 class="pb-2 font-extrabold text-color1">2023</h1>
+                <div class="w-3 h-3 bg-color1 relative left-0 -top-1 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
+                <div class="relative left-1 -top-5 px-1">
+                  <h1 class="text-sm text-gray-700 text-justify">Fundada no ano de 2003, a Fruta Polpa iniciou suas atividades vendendo frutas in natura na cidade de Teresina</h1>
+                </div>
+                <div class="w-5 h-5 bg-color1 relative left-0 -bottom-5 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"><img src="./assets/img/folha.png"></div>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
       <!-- <img src="./assets/img/linha_do_tempo.png" class="w-full"> -->
     </section>
-    <div class="mx-auto max-w-6xl pt-2 about mt-10">
+    <div class="mx-auto max-w-6xl pt-2 about">
       <section>
         <div class="lg:pt-4 lg:p-0 lg:p-10">
           <div class="md:grid md:grid-cols-2 md:gap-20">
@@ -187,10 +223,10 @@ $URI = new URI();
             <!-- Your HTML Structure -->
             <div class="owl-carousel">
               <div class="item">
-                <img src="./assets/img/fazenda.png" class="rounded-lg lg:h-80 cover" alt="fazenda">
+                <img src="./assets/img/fazenda.png" class="rounded-lg h-60 cover" alt="fazenda">
               </div>
               <div class="item">
-                <img src="./assets/img/fazenda2.png" class="rounded-lg lg:h-80 cover" alt="fazenda2">
+                <img src="./assets/img/fazenda2.png" class="rounded-lg h-60 cover" alt="fazenda2">
               </div>
             </div>
           </div>
@@ -216,10 +252,10 @@ $URI = new URI();
             <!-- Your HTML Structure -->
             <div class="owl-carousel order-first">
               <div class="item">
-                <img src="./assets/img/industria2.png" class="rounded-lg lg:h-80 cover" alt="industria">
+                <img src="./assets/img/industria2.png" class="rounded-lg h-56 cover" alt="industria">
               </div>
               <div class="item">
-                <img src="./assets/img/industria.png" class="rounded-lg lg:h-80 cover" alt="industria2">
+                <img src="./assets/img/industria.png" class="rounded-lg h-56 cover" alt="industria2">
               </div>
             </div>
 
@@ -244,10 +280,10 @@ $URI = new URI();
             <!-- Your HTML Structure -->
             <div class="owl-carousel">
               <div class="item">
-                <img src="./assets/img/supermercado.png" class="rounded-lg" alt="supermercado">
+                <img src="./assets/img/supermercado.png" class="rounded-lg h-60" alt="supermercado">
               </div>
               <div class="item">
-                <img src="./assets/img/supermercado2.png" class="rounded-lg" alt="supermercado2">
+                <img src="./assets/img/supermercado2.png" class="rounded-lg h-60" alt="supermercado2">
               </div>
             </div>
           </div>

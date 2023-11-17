@@ -20,7 +20,7 @@ $URI = new URI();
 <body>
     <?php include "./components/navbar.php" ?>
     <section>
-        <div class="max-w-full px-4 pt-5 mx-auto lg:grid grid-cols-2">
+        <div class="max-w-full px-4 pt-5 mt-1 mx-auto lg:grid grid-cols-2 bg-yellow-50">
             <div class="mx-auto py-28">
                 <h1 class="lg:text-4xl text-3xl">
                     <span style="letter-spacing: 0.5px" class="font-black bg-clip-text bg-gradient-to-r from-color1 to-color1 text-color1">
@@ -72,7 +72,7 @@ $URI = new URI();
                         </span>
                     </h1>
                     <a href="<?php echo $URI->base("/trabalhe-conosco"); ?>" class="flex justify-center py-5">
-                        <button style="background: rgb(252,114,0); background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);" class="text-white border-2 border-white bg-white rounded-full font-semibold text-lg px-5 py-2 text-center hover:bg-orange-600 hover:text-black">
+                        <button style="background: rgb(252,114,0); background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);" class="border-2 border-white bg-white rounded-full font-semibold text-lg px-5 py-2 text-center hover:bg-orange-600 hover:text-white">
                             Clique aqui e Trabalhe Conosco!
                         </button>
                     </a>
@@ -113,7 +113,7 @@ $URI = new URI();
                     </div>
                     <input type="hidden" value="CONTATO" name="type">
                     <div class="flex justify-center mt-5">
-                        <button style="background: rgb(252,114,0); background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);" class="text-white bg-white rounded-full font-semibold text-lg px-5 py-2 text-center hover:bg-orange-600 hover:text-black">
+                    <button class="bg-white hover:bg-color1 text-sm text-color1 hover:text-black font-bold py-2 px-4 rounded-full border w-full md:w-60">
                             Quero comprar Fruta Polpa
                         </button>
                     </div>
