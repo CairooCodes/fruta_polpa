@@ -31,7 +31,7 @@ $URI = new URI();
 
       <?php foreach ($receitas as $receita) { ?>
         <div>
-          <div class="mb-8 mt-4 items-center rounded-xl p-2">
+          <div class="mb-8 mt-4 items-center rounded-xl p-2 zoom-container">
             <img class='custom-image' src='./admin/uploads/receitas/<?php echo $receita['img']; ?>'>
           </div>
           <div class="lg:text-xl text-xl text-center">

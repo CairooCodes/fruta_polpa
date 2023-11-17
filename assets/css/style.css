@@ -378,3 +378,16 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+.zoom-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.zoom-container img {
+  transition: transform 0.3s;
+}
+
+.zoom-container:hover img {
+  transform: scale(1.1);
+}
