@@ -41,7 +41,7 @@ $i = 1;
   <div class="hidden bg-gray-200 sm:block">
     <div class="mx-auto flex max-w-screen-xl px-4 justify-between">
       <div class="flex justify-between items-center space-x-2">
-        <a href="#mapa"><img width="20px" src="<?php echo $URI->base('/assets/img/brazil.png') ?>" /></a>
+        <a href="<?php echo $URI->base('/home.php#mapa') ?>"><img width="20px" src="<?php echo $URI->base('/assets/img/brazil.png') ?>" /></a>
         <span class="text-xs text-gray-600">Encontre Fruta Polpa</span>
       </div>
       <div class="flex items-center">
@@ -76,6 +76,9 @@ $i = 1;
             <a href="<?php echo $URI->base("/institucional"); ?>" class="block py-2 uppercase text-xs rounded" aria-current="page">Institucional</a>
           </li>
           <li class="py-2">
+            <a href="<?php echo $URI->base("/polpas"); ?>" class="block py-2 uppercase text-xs rounded" aria-current="page">Polpas</a>
+          </li>
+          <li class="py-2">
             <a href="<?php echo $URI->base("/premium-quality"); ?>" class="block py-2 uppercase text-xs rounded" aria-current="page">Qualidade premium</a>
           </li>
           <li class="py-2">
@@ -90,13 +93,8 @@ $i = 1;
           <li class="py-2">
             <a href="<?php echo $URI->base("/contato"); ?>" class="block py-2 uppercase text-xs rounded" aria-current="page">Contato</a>
           </li>
-
-          <!-- <li class="py-2">
-            <a href="<?php echo $URI->base("/polpas"); ?>" class="block py-2 uppercase text-xs rounded" aria-current="page">Polpas</a>
-          </li> -->
-
         </ul>
-        <!-- <div class="flex justify-center">
+        <div class="flex justify-center">
           <a href="<?php echo $URI->base("/receitas"); ?>">
             <button class="hover:bg-color1 hover:text-white text-xs text-gray-800 py-2 px-4 rounded-full border-2 border-color1">
               RECEITAS
@@ -107,7 +105,7 @@ $i = 1;
               Trabalhe conosco
             </button>
           </a>
-        </div> -->
+        </div>
       </div>
     </div>
   </nav>
