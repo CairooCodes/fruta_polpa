@@ -100,14 +100,14 @@ $URI = new URI();
             </label>
             <input type="text" name="office" id="office" placeholder="Qual área que deseja trabalhar?" class="mt-2 mb-4 w-full rounded-lg p-3 text-gray-900" required="" />
           </div>
-          <div class="">
-            <label class="mt-2 mr-5 text-sm font-bold text-white">
+          <div class="grid">
+            <label for="curriculo" class="mt-2 pb-2 text-sm font-bold text-white">
               Envie seu currículo em PDF
             </label>
             <input type="file" name="curriculo" required="">
           </div>
           <input type="hidden" value="RECRUTAMENTO" name="type">
-          <div class="flex justify-center mt-5">
+          <div class="flex justify-center mt-12">
             <button class="bg-white hover:bg-color1 text-sm text-color1 hover:text-black font-bold py-2 px-4 rounded-full border w-full md:w-60">
               Enviar
             </button>

@@ -68,6 +68,7 @@ $URI = new URI();
       </div>
     </section>
     <section class="py-10 px-4 lg:mb-32 lg:mt-16">
+      <h1 style="letter-spacing: 0.5px;" class="font-black bg-clip-text bg-gradient-to-r from-color1 to-color1 text-color1 text-center text-4xl py-4 px-2">Nossa Linha do Tempo</h1>
       <div class="hidden lg:block pt-10">
         <div class="grid grid-cols-5 max-w-screen-xl mx-auto">
           <div>
