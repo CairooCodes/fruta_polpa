@@ -16,8 +16,6 @@ $URI = new URI();
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 </head>
 
 
@@ -203,7 +201,6 @@ $URI = new URI();
           </div>
         </div>
       </div>
-      <!-- <img src="./assets/img/linha_do_tempo.png" class="w-full"> -->
     </section>
     <div class="mx-auto max-w-6xl pt-2 about">
       <section>
@@ -216,12 +213,12 @@ $URI = new URI();
                 </span>
               </h6>
 
-              <p class="text-medium font-sans text-justify pb-2">
+              <p class="text-medium font-sans text-justify pb-5">
                 A qualidade dos produtos "in natura" e congelados De Marchi tem origem nas fazendas do grupo e também dos produtores parceiros. Elas são a garantia de produtos cultivados com muito cuidado e sabor incomparáveis.
 
               </p>
             </div>
-            <!-- Your HTML Structure -->
+
             <div class="owl-carousel">
               <div class="item">
                 <img src="./assets/img/fazenda.png" class="rounded-lg h-60 cover" alt="fazenda">
@@ -245,12 +242,11 @@ $URI = new URI();
                 </span>
               </h6>
 
-              <p class="text-medium font-sans text-justify pb-2">
+              <p class="text-medium font-sans text-justify pb-5">
                 O grupo conta com mais de 3.000 profissionais altamente capacitados e modernos equipamentos para garantir produtos minimamente processados, mantendo toda qualidade e sabor que vem direto do campo.
               </p>
             </div>
 
-            <!-- Your HTML Structure -->
             <div class="owl-carousel order-first">
               <div class="item">
                 <img src="./assets/img/industria2.png" class="rounded-lg h-56 cover" alt="industria">
@@ -274,11 +270,11 @@ $URI = new URI();
                 </span>
               </h6>
 
-              <p class="text-medium font-sans text-justify pb-2">
+              <p class="text-medium font-sans text-justify pb-5">
                 A De Marchi abastece, diariamente, centenas de supermercados por todo país e também administra as seções FLV (Frutas, Legumes e Verduras) de renomadas redes de supermercados.
               </p>
             </div>
-            <!-- Your HTML Structure -->
+
             <div class="owl-carousel">
               <div class="item">
                 <img src="./assets/img/supermercado.png" class="rounded-lg h-60" alt="supermercado">
@@ -374,18 +370,16 @@ $URI = new URI();
   <script src="./assets/js/lz.js"></script>
   <script src="./assets/js/main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-  <!-- Include Owl Carousel JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-  <!-- Initialize Owl Carousel with Custom Navigation -->
+ 
   <script>
     $(document).ready(function() {
       var owl = $(".owl-carousel").owlCarousel({
-        items: 1.3, // Number of items to display at a time
-        loop: true, // Enable loop
-        autoplay: true, // Disable autoplay
+        items: 1.3,
+        loop: true,
+        autoplay: true,
       });
 
-      // Custom navigation button events
       $(".custom-navigation .prev").on("click", function() {
         owl.trigger("prev.owl.carousel");
       });

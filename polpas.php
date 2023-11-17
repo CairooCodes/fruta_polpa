@@ -22,9 +22,15 @@ $URI = new URI();
 
 <body>
   <?php include "./components/navbar.php" ?>
-  <div>
-    <img class="w-full cover" src="./assets/img/banner_pagina_polpas.jpg" alt="banner_pagina_polpas">
-  </div>
+  <section class="max-w-full lg:pt-32 lg:pb-12 pb-2 polpas">
+    <div class="max-w-full px-6 lg:pt-12 pt-10 lg:pb-40 mx-auto mt-2 pb-3 lg:px-16">
+      <div class="fade-up">
+        <p class="cssnormal lg:text-6xl text-2xl text-white text-end">Conheça
+          <span class="fontpolpa lg:text-6xl text-2xl text-white">Nossas Polpas</span>
+        </p>
+      </div>
+    </div>
+  </section>
   <div class="mx-auto max-w-7xl px-2 pt-10">
     <h1 class="lg:text-4xl text-3xl">
       <span style="letter-spacing: 0.5px;" class="font-black bg-clip-text bg-gradient-to-r from-color1 to-color1 text-color1">

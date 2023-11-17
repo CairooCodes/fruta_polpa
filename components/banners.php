@@ -1,8 +1,3 @@
-<!-- <section class="video w-full">
-  <video class="w-full" playsinline autoplay muted loop>
-    <source  src="./assets/img/frutapolpanew.mp4" type="video/mp4">
-  </video>
-</section> -->
 <section class="max-w-full lg:pt-32 lg:pb-12 pb-2 banners">
   <div class="max-w-full px-6 lg:pt-12 pt-10 lg:pb-40 mx-auto mt-2 pb-3 lg:px-16">
     <div class="fade-up">

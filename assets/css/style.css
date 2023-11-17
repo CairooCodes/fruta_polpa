@@ -334,11 +334,12 @@ header {
   font-family: 'Lobster', sans-serif;
 }
 
+.fontpolpa {
+  font-family: "Indosign", sans-serif;
+}
+
 .header-institucional {
   font-family: 'Raleway', sans-serif;
-  /* background-image: url('../img/banner_pagina_Institucional.jpg');
-  background-size: cover;
-  background-repeat: no-repeat; */
 }
 
 /* Definindo a classe para aplicar o efeito fade-in-up */
@@ -375,6 +376,12 @@ header {
 
 .banners { 
   background-image: url('../img/foto_da_fabrica_2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.polpas { 
+  background-image: url('../img/banner_pagina_polpas.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }

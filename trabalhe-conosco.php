@@ -21,49 +21,47 @@ $URI = new URI();
   <?php include "./components/navbar.php" ?>
   <section>
     <div class="max-w-full px-4 pt-5 mt-1 mx-auto lg:grid grid-cols-2 bg-yellow-50">
-      <div class="mx-auto">
+      <div class="mx-auto px-2 pb-5">
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-4">
           <!-- Replace this with your grid items -->
           <div class="bg-white rounded-lg border p-4">
             <div class="px-1 py-4">
-              <div class="font-bold text-xl mb-2">Blog Title</div>
+              <div class="font-bold text-xl mb-2 text-color1 text-center">Promotor de Vendas</div>
               <p class="text-gray-700 text-base">
-                This is a simple blog card example using Tailwind CSS. You can replace this text with your own blog content.
+                "Oportunidade para Promotor de Vendas de Polpas de Frutas. Venha fazer parte da nossa equipe e impulsionar nossos produtos no mercado. Candidate-se agora!"
               </p>
             </div>
-            <div class="px-1 py-4">
-              <a href="#" class="text-blue-500 hover:underline">Read More</a>
+            <div class="px-1 py-4 flex justify-center">
+              <a href="#" class="text-color1 hover:underline">Saiba mais</a>
             </div>
           </div>
           <div class="bg-white rounded-lg border p-4">
-    
             <div class="px-1 py-4">
-              <div class="font-bold text-xl mb-2">Blog Title</div>
+              <div class="font-bold text-xl mb-2 text-color1 text-center">Motorista</div>
               <p class="text-gray-700 text-base">
-                This is a simple blog card example using Tailwind CSS. You can replace this text with your own blog content.
+              "Oportunidade para Motorista: Faça parte de nossa equipe dedicada. Junte-se a nós, destaque-se na estrada com sucesso e compromisso profissional!"
               </p>
             </div>
-            <div class="px-1 py-4">
-              <a href="#" class="text-blue-500 hover:underline">Read More</a>
+            <div class="px-1 py-4 flex justify-center">
+              <a href="#" class="text-color1 hover:underline">Saiba mais</a>
             </div>
           </div>
           <div class="bg-white rounded-lg border p-4">
-    
             <div class="px-1 py-4">
-              <div class="font-bold text-xl mb-2">Blog Title</div>
+              <div class="font-bold text-xl mb-2 text-color1 text-center">Supervisor</div>
               <p class="text-gray-700 text-base">
-                This is a simple blog card example using Tailwind CSS. You can replace this text with your own blog content.
+                "Supervisor de Equipe: Lidere, motive e alcance o sucesso. Oportunidade para profissional comprometido. Candidate-se e fortaleça nossa equipe."
               </p>
             </div>
-            <div class="px-1 py-4">
-              <a href="#" class="text-blue-500 hover:underline">Read More</a>
+            <div class="px-1 py-4 flex justify-center">
+              <a href="#" class="text-color1 hover:underline">Saiba mais</a>
             </div>
           </div>
         </div>
       </div>
-      <div class="mx-auto bg-gray-400 rounded w-full px-4 py-2">
+      <div class="mx-auto bg-gray-400 rounded w-full px-4 py-2 order-first">
         <form action="./admin/controllers/add_recruitment.php" method="post" class="mr-auto lg:p-16 place-self-center">
-          <h2 class="text-center md:text-left text-3xl font-extrabold pb-5 tracking-wider text-white">Envie uma mensagem</h2>
+          <h2 class="text-center md:text-left text-3xl font-extrabold pb-5 tracking-wider text-white">Envie seu currículo e venha fazer parte do nosso time</h2>
           <div>
             <label class="text-sm font-bold text-white">
               Nome
