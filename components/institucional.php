@@ -1,5 +1,5 @@
 <section class="bg-white max-w-full header-institucional px-4">
-  <div class="max-w-full lg:pl-24  mx-auto pt-32 lg:grid grid-cols-2">
+  <div class="max-w-full lg:pl-24  mx-auto lg:pt-32 pt-12 lg:grid grid-cols-2">
     <div class="lg:px-12">
       <div>
         <p style="color: rgb(252,114,0);
@@ -15,7 +15,7 @@ color: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);" c
       </div>
       <a href="<?php echo $URI->base("/institucional"); ?>" class="leia-mais-link">Leia mais</a>
     </div>
-    <div class="pt-10 pr-32 pb-20">
+    <div class="pt-10 lg:pr-32 lg:pb-20">
       <img src="./assets/img/pagina_institucionalnova.png" class="w-full">
     </div>
   </div>

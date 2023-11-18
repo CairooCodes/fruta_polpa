@@ -41,18 +41,6 @@
       top: 0;
     }
 
-    /* Definindo a classe para aplicar o efeito fade-in-up */
-    .fade-in-up {
-      opacity: 0;
-      transform: translateY(20px);
-      transition: opacity 0.5s ease-out, transform 0.5s ease-out;
-    }
-
-    .fade-in-up.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
     /* teste aqui */
     /* Estilize os links no navbar */
     nav ul {

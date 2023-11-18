@@ -1,8 +1,9 @@
 <section class="max-w-full lg:pt-32 lg:pb-12 pb-2 banners">
-  <div class="max-w-full px-6 lg:pt-12 pt-10 lg:pb-40 mx-auto mt-2 pb-3 lg:px-16">
-    <div class="fade-up">
-      <p class="cssnormal lg:text-6xl text-2xl text-white text-end">Não é polpa,
-      <span class="csscursiva lg:text-6xl text-2xl text-white">é Fruta Polpa! </span></p>
+  <div class="max-w-full px-6 lg:pt-12 pt-10 lg:pb-40 mx-auto pb-3 lg:px-16">
+    <div class="fade-in-left">
+      <p class="cssnormal lg:text-6xl text-2xl text-white text-end">Não é polpa é,
+      <br>
+      <span class="csscursiva">Fruta! </span></p>
     </div>
   </div>
   <div class="fade-in-up relative lg:-bottom-20 -bottom-10 text-center">

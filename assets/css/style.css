@@ -7,6 +7,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&family=Lobster&display=swap');
 
 
+@font-face {
+  font-family: indosign;
+  src: url(../fonts/Indosign.ttf);
+}
+
+
 .carousel-3D-swiper-section {
   display: flex;
   justify-content: center;
@@ -185,7 +191,7 @@ body {
 
 .counter:after {
   content: ' anos no mercado de polpas de frutas.';
-  color: #ff851e;
+  color: #FFae00;
   font-size: 57px;
 }
 
@@ -259,23 +265,6 @@ body {
   z-index: -2;
 }
 
-.fade-up {
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeInUp 1s ease forwards;
-}
-
-@keyframes fadeInUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.fade-up {
-  text-shadow: #000 1px 1px;
-}
-
 .blog-image {
   max-width: 100%;
   height: auto;
@@ -298,7 +287,9 @@ header {
 }
 
 .csscursiva {
-  font-family: 'Lobster', sans-serif;
+  font-family: 'indosign', sans-serif;
+  color: #FFae00;
+  font-size: 120px;
 }
 
 .header-institucional {
@@ -317,6 +308,17 @@ header {
   transform: translateY(0);
 }
 
+.fade-in-left {
+  opacity: 0;
+  transform: translateX(20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.fade-in-left.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .swiper-pagination-bullet-active {
   background-color: yellow !important;
 }
@@ -324,17 +326,20 @@ header {
 @media (max-width: 767px) {
   .counter {
     font-weight: 800;
-    color: #ff851e;
+    color: #FFae00;
     font-size: 50px;
     line-height: 0.7;
   }
 
   .counter:after {
     content: ' anos no mercado de polpas de frutas.';
-    color: #ff851e;
+    color: #FFae00;
     font-size: 32px;
   }
 
+  .csscursiva {
+    font-size: 70px;
+  }
 }
 
 .banners { 
@@ -360,8 +365,4 @@ header {
 
 .zoom-container:hover img {
   transform: scale(1.1);
-}
-
-.csscursiva2{
-  font-family: 'Indesign-Regular', sans-serif;
 }
