@@ -155,7 +155,7 @@ $URI = new URI();
 
       <div>
         <div class="lg:hidden">
-          <div class="owl-carousel">
+          <div class="owl-carousel line-time">
             <div class="item px-3 border-b-2 border-color1 py-3 mb-3">
               <div class="border-l-2">
                 <h1 class="pb-1 font-extrabold text-color1 text-xl">Fundação</h1>
@@ -233,7 +233,7 @@ $URI = new URI();
               </p>
             </div>
 
-            <div class="owl-carousel">
+            <div class="owl-carousel carousel-indu">
               <div class="item">
                 <img src="./assets/img/fazenda.png" class="rounded-lg h-60 cover" alt="fazenda">
               </div>
@@ -261,9 +261,9 @@ $URI = new URI();
               </p>
             </div>
 
-            <div class="owl-carousel order-first">
+            <div class="owl-carousel carousel-indu order-first">
               <div class="item">
-                <img src="./assets/img/industria2.png" class="rounded-lg h-56 cover" alt="industria">
+                <img src="./assets/img/foto_da_fabrica_2.jpg" class="rounded-lg h-56 cover" alt="industria">
               </div>
               <div class="item">
                 <img src="./assets/img/industria.png" class="rounded-lg h-56 cover" alt="industria2">
@@ -289,7 +289,7 @@ $URI = new URI();
               </p>
             </div>
 
-            <div class="owl-carousel">
+            <div class="owl-carousel carousel-indu">
               <div class="item">
                 <img src="./assets/img/supermercado.png" class="rounded-lg h-60" alt="supermercado">
               </div>
@@ -300,15 +300,8 @@ $URI = new URI();
           </div>
         </div>
       </section>
-      <div class="pb-2">
-        <a href="<?php echo $URI->base("distribuidores"); ?>" class="flex justify-center">
-          <button class="middle none center rounded-lg bg-orange-500 py-5 px-4 shadow-md shadow-orange-500/20 transition-all hover:shadow-lg hover:shadow-orange-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none rounded-full font-sans text-white font-bold">
-            <span class="pr-2">Encontre o Distribuidor mais próximo</span><i class="bi bi-chevron-right"></i>
-          </button>
-        </a>
-      </div>
     </div>
-    <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-4 py-12">
+    <!-- <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-4 py-12">
       <div class="text-center pb-12">
         <h1 class="lg:text-5xl text-3xl text-center">
           <span style="letter-spacing: 0.5px" class="font-black bg-clip-text bg-gradient-to-r from-color1 to-color1 text-color1">
@@ -319,60 +312,16 @@ $URI = new URI();
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <div class="w-full bg-white rounded-lg p-12 flex flex-col justify-center items-center">
           <div class="mb-8">
-            <img class="object-center object-cover rounded-full h-48 w-48" src="./assets/img/seleção.png" alt="photo">
+            <img class="object-center object-cover rounded-full h-48 w-48" src="" alt="photo">
           </div>
           <div class="text-center">
-            <p class="text-xl text-gray-700 font-bold mb-2">Dany Bailey</p>
-            <p class="text-base text-gray-400 font-normal">Software Engineer</p>
+            <p class="text-xl text-gray-700 font-bold mb-2">Marcelo</p>
+            <p class="text-base text-gray-400 font-normal">CEO</p>
           </div>
         </div>
-        <div class="w-full bg-white rounded-lg p-12 flex flex-col justify-center items-center">
-          <div class="mb-8">
-            <img class="object-center object-cover rounded-full h-48 w-48" src="./assets/img/seleção.png" alt="photo">
-          </div>
-          <div class="text-center">
-            <p class="text-xl text-gray-700 font-bold mb-2">Lucy Carter</p>
-            <p class="text-base text-gray-400 font-normal">Graphic Designer</p>
-          </div>
-        </div>
-        <div class="w-full bg-white rounded-lg p-12 flex flex-col justify-center items-center">
-          <div class="mb-8">
-            <img class="object-center object-cover rounded-full h-48 w-48" src="./assets/img/seleção.png" alt="photo">
-          </div>
-          <div class="text-center">
-            <p class="text-xl text-gray-700 font-bold mb-2">Jade Bradley</p>
-            <p class="text-base text-gray-400 font-normal">Dev Ops</p>
-          </div>
-        </div>
-        <div class="w-full bg-white rounded-lg p-12 flex flex-col justify-center items-center">
-          <div class="mb-8">
-            <img class="object-center object-cover rounded-full h-48 w-48" src="./assets/img/seleção.png" alt="photo">
-          </div>
-          <div class="text-center">
-            <p class="text-xl text-gray-700 font-bold mb-2">Dany Bailey</p>
-            <p class="text-base text-gray-400 font-normal">Software Engineer</p>
-          </div>
-        </div>
-        <div class="w-full bg-white rounded-lg p-12 flex flex-col justify-center items-center">
-          <div class="mb-8">
-            <img class="object-center object-cover rounded-full h-48 w-48" src="./assets/img/seleção.png" alt="photo">
-          </div>
-          <div class="text-center">
-            <p class="text-xl text-gray-700 font-bold mb-2">Lucy Carter</p>
-            <p class="text-base text-gray-400 font-normal">Graphic Designer</p>
-          </div>
-        </div>
-        <div class="w-full bg-white rounded-lg p-12 flex flex-col justify-center items-center">
-          <div class="mb-8">
-            <img class="object-center object-cover rounded-full h-48 w-48" src="./assets/img/seleção.png" alt="photo">
-          </div>
-          <div class="text-center">
-            <p class="text-xl text-gray-700 font-bold mb-2">Jade Bradley</p>
-            <p class="text-base text-gray-400 font-normal">Dev Ops</p>
-          </div>
         </div>
       </div>
-    </section>
+    </section> -->
   </section>
   <?php include "./components/footer.php"; ?>
   <?php include "./components/btn-whatsapp.php" ?>
@@ -388,51 +337,25 @@ $URI = new URI();
 
   <script>
     $(document).ready(function() {
-      var owl = $(".owl-carousel").owlCarousel({
+      var owl = $(".line-time").owlCarousel({
         items: 1.3,
         loop: true,
         autoplay: true,
       });
+    });
+  </script>
 
-      $(".custom-navigation .prev").on("click", function() {
-        owl.trigger("prev.owl.carousel");
+<script>
+    $(document).ready(function() {
+      var owl = $(".carousel-indu").owlCarousel({
+        items: 1.3,
+        loop: true,
+        autoplay: true,
+        margin: 20
       });
-
-      $(".custom-navigation .next").on("click", function() {
-        owl.trigger("next.owl.carousel");
-      });
     });
   </script>
 
-  <script>
-    var swiper = new Swiper(".swiper_equip", {
-      loop: true,
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-      breakpoints: {
-        300: {
-          slidesPerView: 1,
-          spaceBetween: 20,
-        },
-        640: {
-          slidesPerView: 2,
-          spaceBetween: 10,
-        },
-        768: {
-          slidesPerView: 3,
-          spaceBetween: 20,
-        },
-      },
-    });
-  </script>
-  <script>
-    // JavaScript para abrir o WhatsApp ao clicar no botão
-    document.getElementById('openWhatsApp').addEventListener('click', function() {
-      window.open('https://api.whatsapp.com/send?phone=5586994293833&text=Olá%20Fruta%20Polpa-site', '_blank');
-    });
-  </script>
 </body>
 
 </html>

@@ -133,12 +133,7 @@ $URI = new URI();
       prevScrollpos = currentScrollPos;
     }
   </script>
-  <script>
-    // JavaScript para abrir o WhatsApp ao clicar no botão
-    document.getElementById('openWhatsApp').addEventListener('click', function() {
-      window.open('https://api.whatsapp.com/send?phone=5586994293833&text=Olá%20Fruta%20Polpa-site', '_blank');
-    });
-  </script>
+
 </body>
 
 </html>
