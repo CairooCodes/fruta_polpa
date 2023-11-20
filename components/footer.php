@@ -3,8 +3,8 @@
   <div class="max-w-screen-xl px-4 flex flex-col flex-wrap py-12 mx-auto md:items-center lg:items-start md:flex-row md:flex-no-wrap">
     <div class="flex-shrink-0 w-64 mx-auto text-center md:mx-0 md:text-left">
       <div>
-        <a href="<?php echo $URI->base("/home"); ?>" class="flex justify-center">
-          <img data-src="<?php echo $URI->base("/assets/img/logo.png"); ?>" class="logo lazy" alt="Fruta Polpa" />
+        <a href="<?php echo $URI->base("home"); ?>" class="flex justify-center">
+          <img data-src="<?php echo $URI->base("assets/img/logo.png"); ?>" class="logo lazy" alt="Fruta Polpa" />
         </a>
       </div>
       <div class="text-center mt-2">
@@ -40,12 +40,12 @@
         </h2>
         <div class="mb-10 list-none">
           <li class="mt-3">
-            <a href="<?php echo $URI->base("/institucional"); ?>" class="text-gray-600 cursor-pointer hover:text-orange-500">
+            <a href="<?php echo $URI->base("institucional"); ?>" class="text-gray-600 cursor-pointer hover:text-orange-500">
               Institucional
             </a>
           </li>
           <li class="mt-3">
-            <a href="<?php echo $URI->base("/trabalhe-conosco"); ?>" class="text-gray-600 cursor-pointer hover:text-orange-500">
+            <a href="<?php echo $URI->base("trabalhe-conosco"); ?>" class="text-gray-600 cursor-pointer hover:text-orange-500">
               Trabalhe Conosco
             </a>
           </li>
@@ -58,12 +58,12 @@
         </h2>
         <div class="mb-10 list-none">
           <li class="mt-3">
-            <a href="<?php echo $URI->base("/polpas-tradicionais"); ?>" class="text-gray-600 cursor-pointer hover:text-orange-500">
+            <a href="<?php echo $URI->base("polpas-tradicionais"); ?>" class="text-gray-600 cursor-pointer hover:text-orange-500">
               Polpas Tradicionais
             </a>
           </li>
           <li class="mt-3">
-            <a href="<?php echo $URI->base("/polpas-mixs"); ?>" class="text-gray-600 cursor-pointer hover:text-orange-500">
+            <a href="<?php echo $URI->base("polpas-mixs"); ?>" class="text-gray-600 cursor-pointer hover:text-orange-500">
               Polpas Mix
             </a>
           </li>
@@ -78,10 +78,10 @@
         </p>
         <div class="mb-10 list-none">
           <li class="mt-3">
-            <a href="<?php echo $URI->base("/contato"); ?>" class="text-gray-600 cursor-pointer hover:text-orange-500">
+            <a href="<?php echo $URI->base("contato"); ?>" class="text-gray-600 cursor-pointer hover:text-orange-500">
               Fale Conosco
           <li class="mt-3">
-            <a href="<?php echo $URI->base("/trabalhe-conosco"); ?>" class="text-gray-600 cursor-pointer hover:text-orange-500">
+            <a href="<?php echo $URI->base("trabalhe-conosco"); ?>" class="text-gray-600 cursor-pointer hover:text-orange-500">
               Seja um Representante
             </a>
           </li>

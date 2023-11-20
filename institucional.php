@@ -28,7 +28,7 @@ $URI = new URI();
           <div class="bg-red-600 rounded-t-2xl md:rounded-t-none md:rounded-tl-2xl">
             <div class="flex h-full items-center">
               <h1 class="-rotate-90 text-white text-2xl font-[1000] lg:ml-2 ml-3">Missão</h1>
-              <h3 class="lg:px-8 px-2 text-white text-lg">
+              <h3 class="lg:px-8 px-2 py-2 text-white lg:text-lg text-md">
                 Orientados por nossos valores e com a
                 nutrição como foco central, trabalhamos
                 junto com nossos parceiros para melhorar
@@ -40,7 +40,7 @@ $URI = new URI();
           <div class="bg-orange-500">
             <div class="flex h-full items-center">
               <h1 class="-rotate-90 text-white text-2xl font-[1000] ml-4 lg:ml-3">Visão</h1>
-              <h3 class="lg:px-8 px-2 text-white text-lg ml-2">
+              <h3 class="lg:px-8 px-2 text-white lg:text-lg text-md ml-2">
                 Deﬁnimos como meta direcionar
                 esforços para alcançarmos a liderança
                 no segmento até 2028 de forma
@@ -51,7 +51,7 @@ $URI = new URI();
           <div class="bg-orange-400 md:rounded-bl-2xl  ">
             <div class="flex h-full items-center">
               <h1 class="-rotate-90 text-white text-2xl font-[1000]">Valores</h1>
-              <h3 class="lg:px-8 px-2 text-white text-lg">
+              <h3 class="lg:px-8 px-2 text-white lg:text-lg text-md">
                 Respeito ao próximo;<br>
                 Humildade;<br>
                 Proatividade;<br>
@@ -65,22 +65,19 @@ $URI = new URI();
         </div>
       </div>
     </section>
-    <section class="mx-auto md:max-w-7xl">
-      <div class="grid items-center md:grid-cols-2 gap-20">
-        <img class="w-full" src="<?php echo $URI->base("/assets/img/institucional2.png"); ?>" alt="">
+    <section class="bg-white max-w-full header-institucional">
+      <div class="max-w-full lg:pl-24  mx-auto lg:grid grid-cols-2 gap-10">
+        <div class="lg:mt-14 mt-4 mb-4 text-justify">
+          <p style="letter-spacing: 0.5px;" class="text-gray-800">Trabalhamos com 25 sabores desde os mais tradicionais que são a acerola, goiaba e maracujá, como também contamos com a linha funcional, montada com 6 sabores especialmente pensadas para trazer benefícios diretos a saúde e qualidade das milhares de famílias em 7 estados diferentes: Piauí, Maranhão, Tocantins, Pará, Amapá, Goiás/DF e Ceará.</p>
+          <p style="letter-spacing: 0.5px;" class="text-gray-800 pt-2">Com maciços investimentos em tecnologia de ponta e qualidade nos processos de produção, hoje a Fruta Polpa é uma da poucas empresas com certificação internacional no nordeste, nos tornando referência nacional do seguimento. Na parte da qualidade, contamos com processos e análises assíduas desde a chegada das frutas até após sua produção, tudo feito com profissionais altamente qualificados e laboratório dentro da própria indústria.</p>
+        </div>
         <div>
-          <h3 class="text-color1 text-2xl">
-            Tradição que nasceu no amor pelo campo. <br>
-
-            Tecnologia para extrair o melhor da natureza. <br>
-
-            Qualidade traduzida em saúde, sabor e alegria. 
-          </h3>
+          <img src="./assets/img/pagina_inicial_2.png" class="w-full">
         </div>
       </div>
     </section>
     <section class="py-10 px-4 lg:mb-32 lg:mt-16">
-      <h1 style="letter-spacing: 0.5px;" class="font-black bg-clip-text bg-gradient-to-r from-color1 to-color1 text-color1 text-center text-4xl py-4 px-2">Nossa Linha do Tempo</h1>
+      <h1 style="letter-spacing: 0.5px;" class="font-black bg-clip-text bg-gradient-to-r from-color1 to-color1 text-color1 text-center lg:text-4xl py-4 px-2 text-xl">Nossa Linha do Tempo</h1>
       <div class="hidden lg:block pt-10">
         <div class="grid grid-cols-5 max-w-screen-xl mx-auto">
           <div>
@@ -157,9 +154,9 @@ $URI = new URI();
         <div class="lg:hidden">
           <div class="owl-carousel line-time">
             <div class="item px-3 border-b-2 border-color1 py-3 mb-3">
+              <h1 class="pb-1 font-extrabold text-color1 text-lg">Fundação</h1>
+              <h1 class="pb-2 font-extrabold text-color1">2003</h1>
               <div class="border-l-2">
-                <h1 class="pb-1 font-extrabold text-color1 text-xl">Fundação</h1>
-                <h1 class="pb-2 font-extrabold text-color1">2003</h1>
                 <div class="w-3 h-3 bg-color1 relative left-0 -top-1 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
                 <div class="relative left-1 -top-5 px-1">
                   <h1 class="text-sm text-gray-700 text-justify">Fundada no ano de 2003, a Fruta Polpa iniciou suas atividades vendendo frutas in natura na cidade de Teresina</h1>
@@ -168,9 +165,9 @@ $URI = new URI();
               </div>
             </div>
             <div class="item px-3 border-b-2 border-color1 py-3 mb-3">
+              <h1 class="pb-1 font-extrabold text-color1 text-lg">Expansão Nacional</h1>
+              <h1 class="pb-2 font-extrabold text-color1">2010</h1>
               <div class="border-l-2">
-                <h1 class="pb-1 font-extrabold text-color1 text-xl">Expansão Nacional</h1>
-                <h1 class="pb-2 font-extrabold text-color1">2010</h1>
                 <div class="w-3 h-3 bg-color1 relative left-0 -top-1 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
                 <div class="relative left-1 -top-5 px-1">
                   <h1 class="text-sm text-gray-700 text-justify">Fundada no ano de 2003, a Fruta Polpa iniciou suas atividades vendendo frutas in natura na cidade de Teresina</h1>
@@ -179,9 +176,9 @@ $URI = new URI();
               </div>
             </div>
             <div class="item px-3 border-b-2 border-color1 py-3 mb-3">
+              <h1 class="pb-1 font-extrabold text-color1 text-lg">Novos Produtos</h1>
+              <h1 class="pb-2 font-extrabold text-color1">2015</h1>
               <div class="border-l-2">
-                <h1 class="pb-1 font-extrabold text-color1 text-xl">Novos Produtos</h1>
-                <h1 class="pb-2 font-extrabold text-color1">2015</h1>
                 <div class="w-3 h-3 bg-color1 relative left-0 -top-1 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
                 <div class="relative left-1 -top-5 px-1">
                   <h1 class="text-sm text-gray-700 text-justify">Fundada no ano de 2003, a Fruta Polpa iniciou suas atividades vendendo frutas in natura na cidade de Teresina</h1>
@@ -190,9 +187,9 @@ $URI = new URI();
               </div>
             </div>
             <div class="item px-3 border-b-2 border-color1 py-3 mb-3">
+              <h1 class="pb-1 font-extrabold text-color1 text-lg">Novos Produtos</h1>
+              <h1 class="pb-2 font-extrabold text-color1">2015</h1>
               <div class="border-l-2">
-                <h1 class="pb-1 font-extrabold text-color1 text-xl">Parceria Global</h1>
-                <h1 class="pb-2 font-extrabold text-color1">2018</h1>
                 <div class="w-3 h-3 bg-color1 relative left-0 -top-1 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
                 <div class="relative left-1 -top-5 px-1">
                   <h1 class="text-sm text-gray-700 text-justify">Fundada no ano de 2003, a Fruta Polpa iniciou suas atividades vendendo frutas in natura na cidade de Teresina</h1>
@@ -201,9 +198,9 @@ $URI = new URI();
               </div>
             </div>
             <div class="item px-3 border-b-2 border-color1 py-3 mb-3">
+              <h1 class="pb-1 font-extrabold text-color1 text-xl">Atual</h1>
+              <h1 class="pb-2 font-extrabold text-color1">2023</h1>
               <div class="border-l-2">
-                <h1 class="pb-1 font-extrabold text-color1 text-xl">Atual</h1>
-                <h1 class="pb-2 font-extrabold text-color1">2023</h1>
                 <div class="w-3 h-3 bg-color1 relative left-0 -top-1 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
                 <div class="relative left-1 -top-5 px-1">
                   <h1 class="text-sm text-gray-700 text-justify">Fundada no ano de 2003, a Fruta Polpa iniciou suas atividades vendendo frutas in natura na cidade de Teresina</h1>
@@ -228,8 +225,7 @@ $URI = new URI();
               </h6>
 
               <p class="text-medium font-sans text-justify pb-5">
-                A qualidade dos produtos "in natura" e congelados De Marchi tem origem nas fazendas do grupo e também dos produtores parceiros. Elas são a garantia de produtos cultivados com muito cuidado e sabor incomparáveis.
-
+                A excelência das polpas de qualidade da Fruta Polpa é assegurada por meio das fazendas do grupo e de nossos parceiros produtores. Nossos produtos são cultivados com extrema dedicação, resultando em uma experiência de sabor inigualável tanto nas opções tradicionais quanto nas mixs.
               </p>
             </div>
 
@@ -257,7 +253,7 @@ $URI = new URI();
               </h6>
 
               <p class="text-medium font-sans text-justify pb-5">
-                O grupo conta com mais de 3.000 profissionais altamente capacitados e modernos equipamentos para garantir produtos minimamente processados, mantendo toda qualidade e sabor que vem direto do campo.
+                Contando com mais de 20 veículos e posto de abastecimento na própria indústria, a logística empregada na distribuição do produto final atende cerca de 2000 clientes ativos, em 1000 cidades, incluindo grandes redes como Supermercado Mateus, Carvalho Supermercado, Pão de Açúcar, Extra, Supermercado Líder e Grupo Jorge Batista.
               </p>
             </div>
 
@@ -283,9 +279,8 @@ $URI = new URI();
                   Supermercados
                 </span>
               </h6>
-
               <p class="text-medium font-sans text-justify pb-5">
-                A De Marchi abastece, diariamente, centenas de supermercados por todo país e também administra as seções FLV (Frutas, Legumes e Verduras) de renomadas redes de supermercados.
+                Constantemente realizamos diversas ações promocionais nas nossas plataformas digitais bem como ações externas com degustações, sejam nos supermercados, eventos relacionados a saúde e esportes, academias, parques públicos e muito mais, sempre com um incrível feedback de quem prova nossos produtos pela primeira vez ou como forma de elogios para a marca de quem já nos conhece.
               </p>
             </div>
 
@@ -345,7 +340,7 @@ $URI = new URI();
     });
   </script>
 
-<script>
+  <script>
     $(document).ready(function() {
       var owl = $(".carousel-indu").owlCarousel({
         items: 1.3,

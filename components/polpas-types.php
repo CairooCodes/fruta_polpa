@@ -3,17 +3,17 @@
   <h1 class="lg:text-7xl text-3xl text-center"><span style="letter-spacing: 0.5px;" class="font-black bg-clip-text bg-gradient-to-r from-color1 to-color1 text-color1">Polpas</span></h1>
   <div class="max-w-full px-4 lg:pt-12 pb-12 lg:grid grid-cols-2 mt-2">
     <div class="lg:pl-72 px-5 pt-14">
-      <div class="swiper swiper_products_type">
+      <div class="swiper swiper_products_type z-0">
         <div class="swiper-wrapper">
           <div class="swiper-slide pb-5">
             <div class="transition duration-500 bg-white rounded-2xl shadow2">
               <div class="h-full">
-                <img style='margin-bottom: -100px;' class='lazy relative top-[-100px]' data-src='./assets/img/ABACAXI1.png'>
+                <img style='margin-bottom: -100px;' class='lazy relative top-[-100px]' data-src='./assets/img/polpas/ABACAXI1.jpg'>
               </div>
               <div class="bg-bottom rounded-b-2xl" style="background: rgb(252,114,0);
 background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);">
                 <div class="flex justify-center pb-5">
-                  <a href="<?php echo $URI->base("/polpas-tradicionais"); ?>">
+                  <a href="<?php echo $URI->base("polpas-tradicionais"); ?>">
                     <h3 class="text-xl text-white text-center font-bold pt-6 mb-2">100%
                       naturais</h3>
                     <h3 class="text-3xl text-white text-center font-black mb-2">Polpas Tradicionais</h3>
@@ -29,12 +29,12 @@ background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%
           <div class="swiper-slide">
             <div class=" transition duration-500 bg-white rounded-2xl shadow2 ">
               <div class="h-full">
-                <img style='margin-bottom: -100px;' class='lazy relative top-[-100px]' data-src='./assets/img/AÇAÍ1.png'>
+                <img style='margin-bottom: -100px;' class='lazy relative top-[-100px]' data-src='./assets/img/polpas/AÇAÍ1.jpg'>
               </div>
               <div class="bg-bottom rounded-b-2xl" style="background: rgb(252,114,0);
 background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);">
                 <div class="flex justify-center pb-5">
-                  <a href="<?php echo $URI->base("/polpas-tradicionais"); ?>">
+                  <a href="<?php echo $URI->base("polpas-tradicionais"); ?>">
                     <h3 class="text-xl text-white text-center font-bold pt-6 mb-2">100%
                       naturais</h3>
                     <h3 class="text-3xl text-white text-center font-black mb-2">Polpas Tradicionais</h3>
@@ -50,12 +50,12 @@ background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%
           <div class="swiper-slide">
             <div class=" transition duration-500 bg-white rounded-2xl shadow2 ">
               <div class="h-full">
-                <img style='margin-bottom: -100px;' class='lazy relative top-[-100px]' data-src='./assets/img/ACEROLA1.png'>
+                <img style='margin-bottom: -100px;' class='lazy relative top-[-100px]' data-src='./assets/img/polpas/ACEROLA1.jpg'>
               </div>
               <div class="bg-bottom rounded-b-2xl" style="background: rgb(252,114,0);
 background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);">
                 <div class="flex justify-center pb-5">
-                  <a href="<?php echo $URI->base("/polpas-tradicionais"); ?>">
+                  <a href="<?php echo $URI->base("polpas-tradicionais"); ?>">
                     <h3 class="text-xl text-white text-center font-bold pt-6 mb-2">100%
                       naturais</h3>
                     <h3 class="text-3xl text-white text-center font-black mb-2">Polpas Tradicionais</h3>
@@ -71,12 +71,12 @@ background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%
           <div class="swiper-slide">
             <div class=" transition duration-500 bg-white rounded-2xl shadow2 ">
               <div class="h-full">
-                <img style='margin-bottom: -100px;' class='lazy relative top-[-100px]' data-src='./assets/img/BACURI1.png'>
+                <img style='margin-bottom: -100px;' class='lazy relative top-[-100px]' data-src='./assets/img/polpas/BACURI1.jpg'>
               </div>
               <div class="bg-bottom rounded-b-2xl" style="background: rgb(252,114,0);
 background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);">
                 <div class="flex justify-center pb-5">
-                  <a href="<?php echo $URI->base("/polpas-tradicionais"); ?>">
+                  <a href="<?php echo $URI->base("polpas-tradicionais"); ?>">
                     <h3 class="text-xl text-white text-center font-bold pt-6 mb-2">100%
                       naturais</h3>
                     <h3 class="text-3xl text-white text-center font-black mb-2">Polpas Tradicionais</h3>
@@ -92,12 +92,12 @@ background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%
           <div class="swiper-slide">
             <div class=" transition duration-500 bg-white rounded-2xl shadow2 ">
               <div class="h-full">
-                <img style='margin-bottom: -100px;' class='lazy relative top-[-100px]' data-src='./assets/img/CAJÁ1.png'>
+                <img style='margin-bottom: -100px;' class='lazy relative top-[-100px]' data-src='./assets/img/polpas/CAJÁ1.jpg'>
               </div>
               <div class="bg-bottom rounded-b-2xl" style="background: rgb(252,114,0);
 background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);">
                 <div class="flex justify-center pb-5">
-                  <a href="<?php echo $URI->base("/polpas-tradicionais"); ?>">
+                  <a href="<?php echo $URI->base("polpas-tradicionais"); ?>">
                     <h3 class="text-xl text-white text-center font-bold pt-6 mb-2">100%
                       naturais</h3>
                     <h3 class="text-3xl text-white text-center font-black mb-2">Polpas Tradicionais</h3>
@@ -113,12 +113,12 @@ background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%
           <div class="swiper-slide">
             <div class=" transition duration-500 bg-white rounded-2xl shadow2 ">
               <div class="h-full">
-                <img style='margin-bottom: -100px;' class='lazy relative top-[-100px]' data-src='./assets/img/CAJU1.png'>
+                <img style='margin-bottom: -100px;' class='lazy relative top-[-100px]' data-src='./assets/img/polpas/CAJU1.jpg'>
               </div>
               <div class="bg-bottom rounded-b-2xl" style="background: rgb(252,114,0);
 background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);">
                 <div class="flex justify-center pb-5">
-                  <a href="<?php echo $URI->base("/polpas-tradicionais"); ?>">
+                  <a href="<?php echo $URI->base("polpas-tradicionais"); ?>">
                     <h3 class="text-xl text-white text-center font-bold pt-6 mb-2">100%
                       naturais</h3>
                     <h3 class="text-3xl text-white text-center font-black mb-2">Polpas Tradicionais</h3>
@@ -134,12 +134,12 @@ background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%
           <div class="swiper-slide">
             <div class=" transition duration-500 bg-white rounded-2xl shadow2 ">
               <div class="h-full">
-                <img style='margin-bottom: -100px;' class='lazy relative top-[-100px]' data-src='./assets/img/CUPUAÇU1.png'>
+                <img style='margin-bottom: -100px;' class='lazy relative top-[-100px]' data-src='./assets/img/polpas/CUPUAÇU1.jpg'>
               </div>
               <div class="bg-bottom rounded-b-2xl" style="background: rgb(252,114,0);
 background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);">
                 <div class="flex justify-center pb-5">
-                  <a href="<?php echo $URI->base("/polpas-tradicionais"); ?>">
+                  <a href="<?php echo $URI->base("polpas-tradicionais"); ?>">
                     <h3 class="text-xl text-white text-center font-bold pt-6 mb-2">100%
                       naturais</h3>
                     <h3 class="text-3xl text-white text-center font-black mb-2">Polpas Tradicionais</h3>
@@ -155,12 +155,12 @@ background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%
           <div class="swiper-slide">
             <div class=" transition duration-500 bg-white rounded-2xl shadow2 ">
               <div class="h-full">
-                <img style='margin-bottom: -100px;' class='lazy relative top-[-100px]' data-src='./assets/img/GOIABA1.png'>
+                <img style='margin-bottom: -100px;' class='lazy relative top-[-100px]' data-src='./assets/img/polpas/GOIABA1.jpg'>
               </div>
               <div class="bg-bottom rounded-b-2xl" style="background: rgb(252,114,0);
 background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);">
                 <div class="flex justify-center pb-5">
-                  <a href="<?php echo $URI->base("/polpas-tradicionais"); ?>">
+                  <a href="<?php echo $URI->base("polpas-tradicionais"); ?>">
                     <h3 class="text-xl text-white text-center font-bold pt-6 mb-2">100%
                       naturais</h3>
                     <h3 class="text-3xl text-white text-center font-black mb-2">Polpas Tradicionais</h3>
@@ -176,12 +176,12 @@ background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%
           <div class="swiper-slide">
             <div class=" transition duration-500 bg-white rounded-2xl shadow2 ">
               <div class="h-full">
-                <img style='margin-bottom: -100px;' class='lazy relative top-[-100px]' data-src='./assets/img/GRAVIOLA1.png'>
+                <img style='margin-bottom: -100px;' class='lazy relative top-[-100px]' data-src='./assets/img/polpas/GRAVIOLA1.jpg'>
               </div>
               <div class="bg-bottom rounded-b-2xl" style="background: rgb(252,114,0);
 background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);">
                 <div class="flex justify-center pb-5">
-                  <a href="<?php echo $URI->base("/polpas-tradicionais"); ?>">
+                  <a href="<?php echo $URI->base("polpas-tradicionais"); ?>">
                     <h3 class="text-xl text-white text-center font-bold pt-6 mb-2">100%
                       naturais</h3>
                     <h3 class="text-3xl text-white text-center font-black mb-2">Polpas Tradicionais</h3>
@@ -197,12 +197,12 @@ background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%
           <div class="swiper-slide">
             <div class=" transition duration-500 bg-white rounded-2xl shadow2 ">
               <div class="h-full">
-                <img style='margin-bottom: -100px;' class='lazy relative top-[-100px]' data-src='./assets/img/MANGA1.png'>
+                <img style='margin-bottom: -100px;' class='lazy relative top-[-100px]' data-src='./assets/img/polpas/MANGA1.jpg'>
               </div>
               <div class="bg-bottom rounded-b-2xl" style="background: rgb(252,114,0);
 background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);">
                 <div class="flex justify-center pb-5">
-                  <a href="<?php echo $URI->base("/polpas-tradicionais"); ?>">
+                  <a href="<?php echo $URI->base("polpas-tradicionais"); ?>">
                     <h3 class="text-xl text-white text-center font-bold pt-6 mb-2">100%
                       naturais</h3>
                     <h3 class="text-3xl text-white text-center font-black mb-2">Polpas Tradicionais</h3>
@@ -218,12 +218,12 @@ background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%
           <div class="swiper-slide">
             <div class=" transition duration-500 bg-white rounded-2xl shadow2 ">
               <div class="h-full">
-                <img style='margin-bottom: -100px;' class='lazy relative top-[-100px]' data-src='./assets/img/MARACUJÁ1.png'>
+                <img style='margin-bottom: -100px;' class='lazy relative top-[-100px]' data-src='./assets/img/polpas/MARACUJÁ1.jpg'>
               </div>
               <div class="bg-bottom rounded-b-2xl" style="background: rgb(252,114,0);
 background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);">
                 <div class="flex justify-center pb-5">
-                  <a href="<?php echo $URI->base("/polpas-tradicionais"); ?>">
+                  <a href="<?php echo $URI->base("polpas-tradicionais"); ?>">
                     <h3 class="text-xl text-white text-center font-bold pt-6 mb-2">100%
                       naturais</h3>
                     <h3 class="text-3xl text-white text-center font-black mb-2">Polpas Tradicionais</h3>
@@ -239,12 +239,12 @@ background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%
           <div class="swiper-slide">
             <div class=" transition duration-500 bg-white rounded-2xl shadow2 ">
               <div class="h-full">
-                <img style='margin-bottom: -100px;' class='lazy relative top-[-100px]' data-src='./assets/img/MORANGO1.png'>
+                <img style='margin-bottom: -100px;' class='lazy relative top-[-100px]' data-src='./assets/img/polpas/MORANGO1.jpg'>
               </div>
               <div class="bg-bottom rounded-b-2xl" style="background: rgb(252,114,0);
 background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);">
                 <div class="flex justify-center pb-5">
-                  <a href="<?php echo $URI->base("/polpas-tradicionais"); ?>">
+                  <a href="<?php echo $URI->base("polpas-tradicionais"); ?>">
                     <h3 class="text-xl text-white text-center font-bold pt-6 mb-2">100%
                       naturais</h3>
                     <h3 class="text-3xl text-white text-center font-black mb-2">Polpas Tradicionais</h3>
@@ -260,12 +260,12 @@ background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%
           <div class="swiper-slide">
             <div class=" transition duration-500 bg-white rounded-2xl shadow2 ">
               <div class="h-full">
-                <img style='margin-bottom: -100px;' class='lazy relative top-[-100px]' data-src='./assets/img/MURICI1.png'>
+                <img style='margin-bottom: -100px;' class='lazy relative top-[-100px]' data-src='./assets/img/polpas/MURICI1.jpg'>
               </div>
               <div class="bg-bottom rounded-b-2xl" style="background: rgb(252,114,0);
 background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);">
                 <div class="flex justify-center pb-5">
-                  <a href="<?php echo $URI->base("/polpas-tradicionais"); ?>">
+                  <a href="<?php echo $URI->base("polpas-tradicionais"); ?>">
                     <h3 class="text-xl text-white text-center font-bold pt-6 mb-2">100%
                       naturais</h3>
                     <h3 class="text-3xl text-white text-center font-black mb-2">Polpas Tradicionais</h3>
@@ -281,12 +281,12 @@ background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%
           <div class="swiper-slide">
             <div class=" transition duration-500 bg-white rounded-2xl shadow2 ">
               <div class="h-full">
-                <img style='margin-bottom: -100px;' class='lazy relative top-[-100px]' data-src='./assets/img/TAMARINDO1.png'>
+                <img style='margin-bottom: -100px;' class='lazy relative top-[-100px]' data-src='./assets/img/polpas/TAMARINDO1.jpg'>
               </div>
               <div class="bg-bottom rounded-b-2xl" style="background: rgb(252,114,0);
 background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);">
                 <div class="flex justify-center pb-5">
-                  <a href="<?php echo $URI->base("/polpas-tradicionais"); ?>">
+                  <a href="<?php echo $URI->base("polpas-tradicionais"); ?>">
                     <h3 class="text-xl text-white text-center font-bold pt-6 mb-2">100%
                       naturais</h3>
                     <h3 class="text-3xl text-white text-center font-black mb-2">Polpas Tradicionais</h3>
@@ -303,18 +303,18 @@ background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%
         <!-- <div class="swiper-pagination"></div> -->
       </div>
     </div>
-    <div class="lg:pr-72 px-5 pt-14">
-      <div class="swiper swiper_products_type2">
+    <div class="lg:pr-72 px-5 lg:pt-14 pt-32">
+      <div class="swiper swiper_products_type2 z-0">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <div class=" transition duration-500 bg-white rounded-2xl shadow2 ">
               <div class="h-full">
-                <img style='margin-bottom: -100px;' class='lazy relative top-[-100px]' data-src='./assets/img/MIX_ABACAXI_COM_HORTELÃ1.png'>
+                <img style='margin-bottom: -100px;' class='lazy relative top-[-100px]' data-src='./assets/img/polpas/MIX_ABACAXI_COM_HORTELÃ1.jpg'>
               </div>
               <div class="bg-bottom rounded-b-2xl" style="background: rgb(252,114,0);
 background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);">
                 <div class="flex justify-center pb-5">
-                  <a href="<?php echo $URI->base("/polpas-mixs"); ?>">
+                  <a href="<?php echo $URI->base("polpas-mixs"); ?>">
                     <h3 class="text-xl text-white text-center font-bold pt-6 mb-2">100%
                       naturais</h3>
                     <h3 class="text-3xl text-white text-center font-black mb-2">Polpas Mix</h3>
@@ -330,12 +330,12 @@ background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%
           <div class="swiper-slide">
             <div class=" transition duration-500 bg-white rounded-2xl shadow2 ">
               <div class="h-full">
-                <img style='margin-bottom: -100px;' class='lazy relative top-[-100px]' data-src='./assets/img/MIX_HIBISCO1.png'>
+                <img style='margin-bottom: -100px;' class='lazy relative top-[-100px]' data-src='./assets/img/polpas/MIX_HIBISCO1.jpg'>
               </div>
               <div class="bg-bottom rounded-b-2xl" style="background: rgb(252,114,0);
 background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);">
                 <div class="flex justify-center pb-5">
-                  <a href="<?php echo $URI->base("/polpas-mixs"); ?>">
+                  <a href="<?php echo $URI->base("polpas-mixs"); ?>">
                     <h3 class="text-xl text-white text-center font-bold pt-6 mb-2">100%
                       naturais</h3>
                     <h3 class="text-3xl text-white text-center font-black mb-2">Polpas Mix</h3>
@@ -351,12 +351,12 @@ background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%
           <div class="swiper-slide">
             <div class=" transition duration-500 bg-white rounded-2xl shadow2 ">
               <div class="h-full">
-                <img style='margin-bottom: -100px;' class='lazy relative top-[-100px]' data-src='./assets/img/MIX_REFRESCANTE1.png'>
+                <img style='margin-bottom: -100px;' class='lazy relative top-[-100px]' data-src='./assets/img/polpas/MIX_REFRESCANTE1.jpg'>
               </div>
               <div class="bg-bottom rounded-b-2xl" style="background: rgb(252,114,0);
 background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);">
                 <div class="flex justify-center pb-5">
-                  <a href="<?php echo $URI->base("/polpas-mixs"); ?>">
+                  <a href="<?php echo $URI->base("polpas-mixs"); ?>">
                     <h3 class="text-xl text-white text-center font-bold pt-6 mb-2">100%
                       naturais</h3>
                     <h3 class="text-3xl text-white text-center font-black mb-2">Polpas Mix</h3>
@@ -372,12 +372,12 @@ background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%
           <div class="swiper-slide">
             <div class=" transition duration-500 bg-white rounded-2xl shadow2 ">
               <div class="h-full">
-                <img style='margin-bottom: -100px;' class='lazy relative top-[-100px]' data-src='./assets/img/MIX_TROPICAL1.png'>
+                <img style='margin-bottom: -100px;' class='lazy relative top-[-100px]' data-src='./assets/img/polpas/MIX_TROPICAL1.jpg'>
               </div>
               <div class="bg-bottom rounded-b-2xl" style="background: rgb(252,114,0);
 background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);">
                 <div class="flex justify-center pb-5">
-                  <a href="<?php echo $URI->base("/polpas-mixs"); ?>">
+                  <a href="<?php echo $URI->base("polpas-mixs"); ?>">
                     <h3 class="text-xl text-white text-center font-bold pt-6 mb-2">100%
                       naturais</h3>
                     <h3 class="text-3xl text-white text-center font-black mb-2">Polpas Mix</h3>
@@ -393,12 +393,12 @@ background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%
           <div class="swiper-slide">
             <div class=" transition duration-500 bg-white rounded-2xl shadow2 ">
               <div class="h-full">
-                <img style='margin-bottom: -100px;' class='lazy relative top-[-100px]' data-src='./assets/img/MIX_VERDE1.png'>
+                <img style='margin-bottom: -100px;' class='lazy relative top-[-100px]' data-src='./assets/img/polpas/MIX_VERDE1.jpg'>
               </div>
               <div class="bg-bottom rounded-b-2xl" style="background: rgb(252,114,0);
 background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);">
                 <div class="flex justify-center pb-5">
-                  <a href="<?php echo $URI->base("/polpas-mixs"); ?>">
+                  <a href="<?php echo $URI->base("polpas-mixs"); ?>">
                     <h3 class="text-xl text-white text-center font-bold pt-6 mb-2">100%
                       naturais</h3>
                     <h3 class="text-3xl text-white text-center font-black mb-2">Polpas Mix</h3>
@@ -414,12 +414,12 @@ background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%
           <div class="swiper-slide">
             <div class=" transition duration-500 bg-white rounded-2xl shadow2 ">
               <div class="h-full">
-                <img style='margin-bottom: -100px;' class='lazy relative top-[-100px]' data-src='./assets/img/MIX_YELLOW1.png'>
+                <img style='margin-bottom: -100px;' class='lazy relative top-[-100px]' data-src='./assets/img/polpas/MIX_YELLOW1.jpg'>
               </div>
               <div class="bg-bottom rounded-b-2xl" style="background: rgb(252,114,0);
 background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);">
                 <div class="flex justify-center pb-5">
-                  <a href="<?php echo $URI->base("/polpas-mixs"); ?>">
+                  <a href="<?php echo $URI->base("polpas-mixs"); ?>">
                     <h3 class="text-xl text-white text-center font-bold pt-6 mb-2">100%
                       naturais</h3>
                     <h3 class="text-3xl text-white text-center font-black mb-2">Polpas Mix</h3>

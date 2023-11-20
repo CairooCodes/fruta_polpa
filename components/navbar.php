@@ -5,7 +5,7 @@ include "api-tempo.php";
   <div class="hidden bg-gray-200 sm:block">
     <div class="mx-auto flex max-w-screen-xl px-4 justify-between">
       <div class="flex justify-between items-center space-x-2">
-        <a href="<?php echo $URI->base('/home.php#mapa') ?>"><img width="20px" src="<?php echo $URI->base('/assets/img/brazil.png') ?>" /></a>
+        <a href="<?php echo $URI->base('home.php#mapa') ?>"><img width="20px" src="<?php echo $URI->base('/assets/img/brazil.png') ?>" /></a>
         <span class="text-xs text-gray-600">Encontre Fruta Polpa</span>
       </div>
       <div class="flex items-center">
@@ -20,7 +20,7 @@ include "api-tempo.php";
   </div>
   <nav class="shadow bg-white">
     <div class="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto">
-      <a href="<?php echo $URI->base("/home.php"); ?>">
+      <a href="<?php echo $URI->base("home.php"); ?>">
         <img class="w-16 my-2" src="<?php echo $URI->base("/assets/img/logo.png"); ?>" class="logo" alt="Fruta Polpa" />
       </a>
       <div class="flex items-center lg:order-2 lg:hidden">
@@ -37,34 +37,34 @@ include "api-tempo.php";
       <div class="items-center justify-center hidden w-full lg:flex lg:w-auto lg:order-1 py-1.5" id="mobile-menu-2">
         <ul class="flex flex-col lg:flex-row">
           <li class="py-2">
-            <a href="<?php echo $URI->base("/institucional"); ?>" class="block py-2 uppercase text-xs rounded" aria-current="page">Institucional</a>
+            <a href="<?php echo $URI->base("institucional"); ?>" class="block py-2 uppercase text-xs rounded" aria-current="page">Institucional</a>
           </li>
           <li class="py-2">
-            <a href="<?php echo $URI->base("/polpas"); ?>" class="block py-2 uppercase text-xs rounded" aria-current="page">Polpas</a>
+            <a href="<?php echo $URI->base("polpas"); ?>" class="block py-2 uppercase text-xs rounded" aria-current="page">Polpas</a>
           </li>
           <li class="py-2">
-            <a href="<?php echo $URI->base("/premium-quality"); ?>" class="block py-2 uppercase text-xs rounded" aria-current="page">Qualidade premium</a>
+            <a href="<?php echo $URI->base("premium-quality"); ?>" class="block py-2 uppercase text-xs rounded" aria-current="page">Qualidade premium</a>
           </li>
           <li class="py-2">
-            <a href="<?php echo $URI->base("/certificacoes"); ?>" class="block py-2 uppercase text-xs rounded" aria-current="page">Certificações</a>
+            <a href="<?php echo $URI->base("certificacoes"); ?>" class="block py-2 uppercase text-xs rounded" aria-current="page">Certificações</a>
           </li>
           <li class="py-2">
-            <a href="<?php echo $URI->base("/receitas"); ?>" class="block py-2 uppercase text-xs rounded" aria-current="page">Receitas</a>
+            <a href="<?php echo $URI->base("receitas"); ?>" class="block py-2 uppercase text-xs rounded" aria-current="page">Receitas</a>
           </li>
           <li class="py-2">
-            <a href="<?php echo $URI->base("/trabalhe-conosco"); ?>" class="block py-2 uppercase text-xs rounded" aria-current="page">Seja nosso parceiro</a>
+            <a href="<?php echo $URI->base("trabalhe-conosco"); ?>" class="block py-2 uppercase text-xs rounded" aria-current="page">Seja nosso parceiro</a>
           </li>
           <li class="py-2">
-            <a href="<?php echo $URI->base("/contato"); ?>" class="block py-2 uppercase text-xs rounded" aria-current="page">Contato</a>
+            <a href="<?php echo $URI->base("contato"); ?>" class="block py-2 uppercase text-xs rounded" aria-current="page">Contato</a>
           </li>
         </ul>
         <div class="flex justify-center">
-          <a href="<?php echo $URI->base("/receitas"); ?>">
+          <a href="<?php echo $URI->base("receitas"); ?>">
             <button class="hover:bg-color1 hover:text-white text-xs text-gray-800 py-2 px-4 rounded-full border-2 border-color1">
               RECEITAS
             </button>
           </a>
-          <a href="<?php echo $URI->base("/trabalhe-conosco"); ?>">
+          <a href="<?php echo $URI->base("trabalhe-conosco"); ?>">
             <button class="ml-4 text-xs py-2 px-4 rounded-full border-2 boder-transparent hover:border-color1 bg-color1 hover:bg-white text-white hover:text-color1">
               Trabalhe conosco
             </button>

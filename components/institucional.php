@@ -13,10 +13,10 @@ color: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);" c
         <p style="letter-spacing: 0.5px;" class="text-gray-800">Trabalhamos com 25 sabores desde os mais tradicionais que são a acerola, goiaba e maracujá, como também contamos com a linha funcional, montada com 6 sabores especialmente pensadas para trazer benefícios diretos a saúde e qualidade das milhares de famílias em 7 estados diferentes: Piauí, Maranhão, Tocantins, Pará, Amapá, Goiás/DF e Ceará.</p>
         <p style="letter-spacing: 0.5px;" class="text-gray-800 pt-2">Com maciços investimentos em tecnologia de ponta e qualidade nos processos de produção, hoje a Fruta Polpa é uma da poucas empresas com certificação internacional no nordeste, nos tornando referência nacional do seguimento...</p>
       </div>
-      <a href="<?php echo $URI->base("/institucional"); ?>" class="leia-mais-link">Leia mais</a>
+      <a href="<?php echo $URI->base("institucional"); ?>" class="leia-mais-link">Leia mais</a>
     </div>
     <div class="pt-10 lg:pr-32 lg:pb-20">
-      <img src="./assets/img/pagina_institucionalnova.png" class="w-full">
+      <img src="./assets/img/pagina_institucionalnova.jpg" class="w-full">
     </div>
   </div>
 </section>
