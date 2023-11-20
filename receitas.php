@@ -32,7 +32,7 @@ $URI = new URI();
       <?php foreach ($receitas as $receita) { ?>
         <div>
           <div class="mb-8 mt-4 items-center rounded-xl p-2 zoom-container">
-            <img class='custom-image' src='./admin/uploads/receitas/<?php echo $receita['img']; ?>'>
+            <img class='custom-image w-full' src='./admin/uploads/receitas/<?php echo $receita['img']; ?>'>
           </div>
           <div class="lg:text-xl text-xl text-center">
               <span style="letter-spacing: 0.5px" class="font-bold bg-clip-text bg-gradient-to-r from-color1 to-color1 text-color1">
@@ -61,12 +61,7 @@ $URI = new URI();
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
-  <script>
-    // JavaScript para abrir o WhatsApp ao clicar no botão
-    document.getElementById('openWhatsApp').addEventListener('click', function() {
-      window.open('https://api.whatsapp.com/send?phone=5586994293833&text=Olá%20Fruta%20Polpa-site', '_blank');
-    });
-  </script>
+
 </body>
 
 </html>
