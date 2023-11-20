@@ -65,6 +65,20 @@ $URI = new URI();
         </div>
       </div>
     </section>
+    <section class="mx-auto md:max-w-7xl">
+      <div class="grid items-center md:grid-cols-2 gap-20">
+        <img class="w-full" src="<?php echo $URI->base("/assets/img/institucional2.png"); ?>" alt="">
+        <div>
+          <h3 class="text-color1 text-2xl">
+            Tradição que nasceu no amor pelo campo. <br>
+
+            Tecnologia para extrair o melhor da natureza. <br>
+
+            Qualidade traduzida em saúde, sabor e alegria. 
+          </h3>
+        </div>
+      </div>
+    </section>
     <section class="py-10 px-4 lg:mb-32 lg:mt-16">
       <h1 style="letter-spacing: 0.5px;" class="font-black bg-clip-text bg-gradient-to-r from-color1 to-color1 text-color1 text-center text-4xl py-4 px-2">Nossa Linha do Tempo</h1>
       <div class="hidden lg:block pt-10">
@@ -371,7 +385,7 @@ $URI = new URI();
   <script src="./assets/js/main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
- 
+
   <script>
     $(document).ready(function() {
       var owl = $(".owl-carousel").owlCarousel({
