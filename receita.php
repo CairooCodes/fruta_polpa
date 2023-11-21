@@ -20,7 +20,7 @@ function remove_simbolos_acentos($string)
 
 
 $url = explode("/", $_SERVER['REQUEST_URI']);
-$idpost = $url[3];
+$idpost = $url[4];
 
 $idpost2 = "";
 
@@ -56,15 +56,14 @@ if ($stmt->rowCount() > 0) {
         <h1 class="text-3xl text-orange-600 font-bold pb-5">
           <?php echo $receita['name']; ?>
         </h1>
-        <div class="rounded-xl shadow-md shadow-blue-200 mb-5">
-          <div class="flex justify-center">
-            <?php echo "<img class='fade-in-up lazy w-4/5' data-src=" . $URI->base('/admin/uploads/receitas') . '/' . $receita['img'] . '>' ?>
+        <div class="rounded-xlmb-5">
+          <div class="flex">
+            <?php echo "<img class='fade-in-up lazy w-92' data-src=" . $URI->base('/admin/uploads/receitas') . '/' . $receita['img'] . '>' ?>
           </div>
         </div>
       </div>
       <div class="lg:px-10 p-2">
         <?php echo $receita['description']; ?>
-        <?php echo $receita['video']; ?>
       </div>
     </div>
   </section>

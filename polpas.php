@@ -25,8 +25,8 @@ $URI = new URI();
   <section class="max-w-full lg:pt-32 lg:pb-12 pb-2 polpas">
     <div class="max-w-full px-6 lg:pt-12 pt-10 lg:pb-40 mx-auto mt-2 pb-3 lg:px-16">
       <div class="fade-up">
-        <p class="cssnormal lg:text-6xl text-2xl text-black text-end">Conheça<br>
-          <span class="csscursiva lg:text-6xl text-2xl text-black">Nossas Polpas</span>
+        <p class="cssnormal lg:text-6xl text-2xl text-black text-end">Polpas<br>
+          <span class="csscursiva lg:text-6xl text-2xl text-black">100% Naturais</span>
         </p>
       </div>
     </div>

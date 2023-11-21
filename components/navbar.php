@@ -52,16 +52,13 @@ include "api-tempo.php";
             <a href="<?php echo $URI->base("receitas"); ?>" class="block py-2 uppercase text-xs rounded" aria-current="page">Receitas</a>
           </li>
           <li class="py-2">
-            <a href="<?php echo $URI->base("trabalhe-conosco"); ?>" class="block py-2 uppercase text-xs rounded" aria-current="page">Seja nosso parceiro</a>
-          </li>
-          <li class="py-2">
-            <a href="<?php echo $URI->base("contato"); ?>" class="block py-2 uppercase text-xs rounded" aria-current="page">Contato</a>
+            <a href="<?php echo $URI->base("contato"); ?>" class="block py-2 uppercase text-xs rounded" aria-current="page">Seja nosso parceiro</a>
           </li>
         </ul>
         <div class="flex justify-center">
-          <a href="<?php echo $URI->base("receitas"); ?>">
+          <a href="https://api.whatsapp.com/send?phone=5586994293833&text=Olá%20Fruta%20Polpa-site">
             <button class="hover:bg-color1 hover:text-white text-xs text-gray-800 py-2 px-4 rounded-full border-2 border-color1">
-              RECEITAS
+              WhatsApp
             </button>
           </a>
           <a href="<?php echo $URI->base("trabalhe-conosco"); ?>">
