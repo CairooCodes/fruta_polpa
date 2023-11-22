@@ -17,4 +17,6 @@ RewriteRule ^blogs$ blogs.php [QSA,L,NC]
 RewriteRule ^blog\/([0-9A-z_-]+)$ blog.php?slug=$1 [QSA,L,NC]
 RewriteRule ^receita\/([0-9A-z_-]+)$ receita.php?slug=$1 [QSA,L,NC]
 RewriteRule ^receitas$ receitas.php [QSA,L,NC]
+RewriteRule ^nutriente\/([0-9A-z_-]+)$ nutriente.php?slug=$1 [QSA,L,NC]
+RewriteRule ^nutrientes$ nutrientes.php [QSA,L,NC]
 

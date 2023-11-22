@@ -73,7 +73,7 @@ if ($stmt->rowCount() > 0) {
       <div class="lg:px-10 p-2">
         <h1 class="lg:text-3xl text-3xl">
           <span style="letter-spacing: 0.5px" class="font-black bg-clip-text bg-gradient-to-r from-color1 to-color1 text-color1">
-          Modo de preparo:
+            Modo de preparo:
           </span>
         </h1>
         <h1 class="text-xl mt-5">
@@ -85,58 +85,7 @@ if ($stmt->rowCount() > 0) {
         <h1 class="text-xl">
           3- Bata no liquidificador 100g de fruta com 200ml de água ou outro líquido de sua preferência. Rende 1 copo de 300 ml. Adoce a gosto.
         </h1>
-        <div class="w-full max-w-md mx-auto py-4 mt-5">
-          <table class="bg-green-300 w-full">
-            <thead class="bg-green-600">
-              <tr>
-                <th class="px-4 py-2">Nutriente</th>
-                <th class="px-4 py-2">% VD (*)</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="px-4 py-2">Valor Energético</td>
-                <td class="px-4 py-2">4%</td>
-              </tr>
-              <tr>
-                <td class="px-4 py-2">Carboidratos</td>
-                <td class="px-4 py-2">0,2%</td>
-              </tr>
-              <tr>
-                <td class="px-4 py-2">Proteínas</td>
-                <td class="px-4 py-2">2%</td>
-              </tr>
-              <tr>
-                <td class="px-4 py-2">Gorduras totais</td>
-                <td class="px-4 py-2">17%</td>
-              </tr>
-              <tr>
-                <td class="px-4 py-2">Gorduras saturadas</td>
-                <td class="px-4 py-2">15%</td>
-              </tr>
-              <tr>
-                <td class="px-4 py-2">Gorduras trans</td>
-                <td class="px-4 py-2">**</td>
-              </tr>
-              <tr>
-                <td class="px-4 py-2">Fibra alimentar</td>
-                <td class="px-4 py-2">37%</td>
-              </tr>
-              <tr>
-                <td class="px-4 py-2">Sódio</td>
-                <td class="px-4 py-2">5,5%</td>
-              </tr>
-              <tr>
-                <td class="px-4 py-2">Cálcio</td>
-                <td class="px-4 py-2">5%</td>
-              </tr>
-              <tr>
-                <td class="px-4 py-2">Ferro</td>
-                <td class="px-4 py-2">0,2%</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+        <?php include "components/nutricionais.php"; ?>
       </div>
     </div>
     <?php
