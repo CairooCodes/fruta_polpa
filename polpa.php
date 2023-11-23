@@ -60,8 +60,8 @@ if ($stmt->rowCount() > 0) {
             <?php echo $polpa['name']; ?>
           </span>
         </h1>
-        <h2 class="py-4 px-2 text-justify text-xl">
-          A polpa de fruta é um produto natural obtido pela extração da parte carnosa e suculenta de frutas maduras, preservando seu sabor e aroma autênticos. É uma opção saudável e versátil, rica em nutrientes, que pode ser consumida de várias maneiras, como lanche, ingrediente em bebidas e sobremesas, e é valorizada por sua conveniência e durabilidade, permitindo desfrutar do sabor das frutas em qualquer estação do ano.
+        <h2 class="m-2 text-justify text-xl">
+        <?php echo $polpa['subject']; ?>
         </h2>
         <div class="rounded-xl shadow-md shadow-blue-200 mb-5">
           <div class="flex justify-center">
@@ -75,18 +75,12 @@ if ($stmt->rowCount() > 0) {
             Modo de preparo:
           </span>
         </h1>
-        <h1 class="text-xl mt-5">
-          1- Coloque a embalagem por 10 segundos em água corrente.
-        </h1>
-        <h1 class="text-xl">
-          2- Abra a embalagem com o produto ainda congelado.
-        </h1>
-        <h1 class="text-xl">
-          3- Bata no liquidificador 100g de fruta com 200ml de água ou outro líquido de sua preferência. Rende 1 copo de 300 ml. Adoce a gosto.
+        <h1 class="text-xl m-2">
+          <?php echo $polpa['description']; ?>
         </h1>
         <div class="w-full max-w-md mx-auto py-4 mt-5">
           <div>
-            <img src="<?php echo $URI->base("/admin/uploads/nutri/$polpa[nutri]"); ?>" />
+            <?php echo $polpa['info']; ?>
           </div>
         </div>
       </div>
