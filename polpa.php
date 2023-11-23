@@ -5,7 +5,6 @@ require "config/url.class.php";
 require "./functions/get.php";
 
 $receitas = getAllReceitas();
-$polpas;
 $URI = new URI();
 
 function remove_simbolos_acentos($string)
@@ -85,7 +84,11 @@ if ($stmt->rowCount() > 0) {
         <h1 class="text-xl">
           3- Bata no liquidificador 100g de fruta com 200ml de água ou outro líquido de sua preferência. Rende 1 copo de 300 ml. Adoce a gosto.
         </h1>
-        <?php include "components/nutricionais.php"; ?>
+        <div class="w-full max-w-md mx-auto py-4 mt-5">
+          <div>
+            <img src="<?php echo $URI->base("/admin/uploads/nutri/$polpa[nutri]"); ?>" />
+          </div>
+        </div>
       </div>
     </div>
     <?php
