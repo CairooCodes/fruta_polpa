@@ -92,7 +92,7 @@ $receitas = getAllReceitas();
               <textarea name="subject" id="subject" type="text"><?php echo $polpa['subject']; ?></textarea>
             </div>
             <div>
-              <label class="block text-sm font-medium text-gray-900">informações Nutricionais</label>
+              <label class="block text-sm font-medium text-gray-900">Informações Nutricionais</label>
               <textarea name="info" id="info" type="text"><?php echo $polpa['info']; ?></textarea>
             </div>
             <div>
