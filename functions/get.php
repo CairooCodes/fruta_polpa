@@ -18,7 +18,7 @@ function getAbouts()
 function getAllPolpas()
 {
   global $pdo;
-  $stmt = $pdo->prepare("SELECT products.id, products.img, products.name, c.name as categorie_type FROM products INNER JOIN categories c ON products.categorie_id = c.id order by products.id desc;");
+  $stmt = $pdo->prepare("SELECT products.id, products.img, products.name, c.name as categorie_type FROM products INNER JOIN categories c ON products.categorie_id = c.id order by products.id asc;");
   $stmt->execute();
   return $stmt->fetchAll(PDO::FETCH_ASSOC);
 }
@@ -92,7 +92,7 @@ function getCategories()
 function getAllReceitas()
 {
   global $pdo;
-  $stmt = $pdo->prepare("SELECT * FROM receitas order by id desc");
+  $stmt = $pdo->prepare("SELECT * FROM receitas order by id asc");
   $stmt->execute();
   return $stmt->fetchAll(PDO::FETCH_ASSOC);
 }
@@ -100,7 +100,7 @@ function getAllReceitas()
 function getReceitas1()
 {
   global $pdo;
-  $stmt = $pdo->prepare("SELECT * FROM receitas where categorie_id = 1 order by id desc");
+  $stmt = $pdo->prepare("SELECT * FROM receitas where categorie_id = 1 order by id asc");
   $stmt->execute();
   return $stmt->fetchAll(PDO::FETCH_ASSOC);
 }
@@ -108,7 +108,7 @@ function getReceitas1()
 function getReceitas2()
 {
   global $pdo;
-  $stmt = $pdo->prepare("SELECT * FROM receitas where categorie_id = 2 order by id desc");
+  $stmt = $pdo->prepare("SELECT * FROM receitas where categorie_id = 2 order by id asc");
   $stmt->execute();
   return $stmt->fetchAll(PDO::FETCH_ASSOC);
 }
