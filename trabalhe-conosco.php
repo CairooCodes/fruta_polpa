@@ -21,7 +21,7 @@ $URI = new URI();
   <?php include "./components/navbar.php" ?>
   <section>
     <div class="max-w-full px-4 pt-5 mt-1 bg-yellow-50">
-      <div class="bg-gray-400 rounded px-4 py-2 w-1/2 flex mx-auto">
+      <div class="bg-gray-400 rounded px-4 py-2 lg:w-1/2 flex mx-auto">
         <form action="./admin/controllers/add_recruitment.php" method="post" class="mr-auto lg:p-16 place-self-center">
           <h2 class="text-center md:text-left text-3xl font-extrabold pb-5 tracking-wider text-white">Envie seu currículo e venha fazer parte do nosso time</h2>
           <div>
