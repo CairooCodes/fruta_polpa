@@ -26,7 +26,7 @@ function getAllPolpas()
 function getPolpas1()
 {
   global $pdo;
-  $stmt = $pdo->prepare("SELECT * FROM products where categorie_id = 1 order by id desc");
+  $stmt = $pdo->prepare("SELECT * FROM products where categorie_id = 1 order by id asc");
   $stmt->execute();
   return $stmt->fetchAll(PDO::FETCH_ASSOC);
 }
@@ -34,7 +34,7 @@ function getPolpas1()
 function getPolpas2()
 {
   global $pdo;
-  $stmt = $pdo->prepare("SELECT * FROM products where categorie_id = 2 order by id desc");
+  $stmt = $pdo->prepare("SELECT * FROM products where categorie_id = 2 order by id asc");
   $stmt->execute();
   return $stmt->fetchAll(PDO::FETCH_ASSOC);
 }
