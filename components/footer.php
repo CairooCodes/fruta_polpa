@@ -4,7 +4,7 @@
     <div class="flex-shrink-0 w-64 mx-auto text-center md:mx-0 md:text-left">
       <div>
         <a href="<?php echo $URI->base("home"); ?>" class="flex justify-center">
-          <img data-src="<?php echo $URI->base("assets/img/logo.png"); ?>" class="logo lazy" alt="Fruta Polpa" />
+          <img data-src="<?php echo $URI->base("./assets/img/logo.png"); ?>" class="logo lazy" alt="Fruta Polpa" />
         </a>
       </div>
       <div class="text-center mt-2">
@@ -104,7 +104,7 @@
   <div class="bg-gray-200 w-full">
     <div class="container px-5 py-4 mx-auto">
       <p class="text-sm text-gray-700 capitalize xl:text-center">
-        © Fruta Polpa<br>Web Developer @cairocodes
+        © Fruta Polpa<br>Web Developer @cairofelipedev
       </p>
     </div>
   </div>
