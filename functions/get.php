@@ -139,28 +139,28 @@ function getCategoriesReceitas()
   return $stmt->fetchAll(PDO::FETCH_ASSOC);
 }
 
-function getNutricionais($id)
+function getNutri($id)
 {
   global $pdo;
-  $stmt = $pdo->prepare("SELECT * FROM nutricionais WHERE id = :id");
+  $stmt = $pdo->prepare("SELECT * FROM nutri WHERE id = :id");
   $stmt->bindParam(':id', $id);
   $stmt->execute();
   return $stmt->fetch(PDO::FETCH_ASSOC);
 }
 
-function getNutricionais2($id)
+function getNutri2($id)
 {
   global $pdo;
-  $stmt = $pdo->prepare("SELECT * FROM nutricionais WHERE product_id = :id");
+  $stmt = $pdo->prepare("SELECT * FROM nutri WHERE product_id = :id");
   $stmt->bindParam(':id', $id);
   $stmt->execute();
   return $stmt->fetch(PDO::FETCH_ASSOC);
 }
 
-function getAllNutricionais()
+function getAllNutri()
 {
   global $pdo;
-  $stmt = $pdo->prepare("SELECT * FROM Nutricionais order by id desc");
+  $stmt = $pdo->prepare("SELECT * FROM nutri order by id desc");
   $stmt->execute();
   return $stmt->fetchAll(PDO::FETCH_ASSOC);
 }
