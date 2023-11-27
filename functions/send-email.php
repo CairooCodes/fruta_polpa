@@ -33,6 +33,7 @@ $strings = array('http', 'sexy', '<a', 'sex', 'sexual', 'pussy', 'tudo', 'photo'
 if (substr_in_array($strings, $msg_explodida) == true) {
   echo ("<script type= 'text/javascript'>alert('Mensagem não enviada, tente novamente!');</script>
             <script>window.location = 'home';</script>");
+  exit();
 }
 
 
@@ -96,7 +97,9 @@ $enviaremail = mail($destino, $assunto, $arquivo, $headers);
 if ($enviaremail) {
   $mgm = "E-MAIL ENVIADO COM SUCESSO! <br> O link será enviado para o e-mail fornecido no formulário";
   echo ("<script type= 'text/javascript'>alert('Obrigado! Em breve entramos em contato com você');</script>
-            <script>window.location = 'home';</script>");
+            <script>window.location = '/home';</script>");
+  header("Location: /home");
+  exit();
 } else {
   $mgm = "ERRO AO ENVIAR E-MAIL!";
   echo "";
