@@ -20,7 +20,7 @@ function remove_simbolos_acentos($string)
 
 
 $url = explode("/", $_SERVER['REQUEST_URI']);
-$idpost = $url[3];
+$idpost = $url[4];
 
 $idpost2 = "";
 
@@ -60,9 +60,7 @@ if ($stmt->rowCount() > 0) {
             <?php echo $polpa['name']; ?>
           </span>
         </h1>
-        <h2 class="m-2 text-justify text-xl">
-          <?php echo $polpa['subject']; ?>
-        </h2>
+        <?php echo $polpa['subject']; ?>
         <div class="rounded-xl shadow-md shadow-blue-200 mb-5">
           <div class="flex justify-center">
             <?php echo "<img class='fade-in-up lazy' data-src=" . $URI->base('/admin/uploads/polpas') . '/' . $polpa['img'] . '>' ?>
