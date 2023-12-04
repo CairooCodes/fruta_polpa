@@ -20,7 +20,7 @@ $URI = new URI();
 <body>
   <?php include "./components/navbar.php" ?>
   <section class="bg-white max-w-screen-xl px-4 header-institucional mx-auto">
-    <div class="lg:pt-12 pb-12 lg:grid grid-cols-2 mt-2 items-center">
+    <div class="lg:pt-12 pb-12 lg:grid grid-cols-2 mt-2 items-center fade-in-up">
       <div class="lg:px-12">
         <div class="mt-14 mb-4 text-justify">
           <h6 class="lg:text-3xl text-xl pb-2 pt-4">
@@ -41,17 +41,24 @@ $URI = new URI();
           </p>
         </div>
       </div>
-      <div class="">
-        <img data-src="./assets/img/logistica.jpg" class="lazy w-full rounded-br-md h-96  object-cover">
+      <div class="p-6">
+        <img data-src="./assets/img/logistica.jpg" class="lazy w-full rounded-md h-96  object-cover">
       </div>
     </div>
-    <div class="lg:pt-12 pb-12 lg:grid grid-cols-2 mt-2 items-center">
-      <div class="">
-        <img data-src="./assets/img/fazenda2.png" class="lazy w-full rounded-br-md h-96 object-cover">
+    <div class="lg:pt-12 pb-12 lg:grid grid-cols-2 mt-2 items-center fade-in-up">
+      <div class="p-6">
+        <img data-src="./assets/img/fazenda2.png" class="lazy w-full rounded-md h-96 object-cover">
       </div>
       <div class="lg:px-12">
         <div class="mt-10 mb-4 text-justify">
-          <h1 class="flex">
+          <h1 class="flex pb-2">
+            <i class="bi bi-record-fill pr-2 pt-1 text-xs"></i>
+            Produto de alto padrão de qualidade.
+          </h1>
+          <p class="">
+            Nosso produto de alto padrão de qualidade reflete o compromisso da Fruta Polpa em oferecer excelência, proporcionando uma experiência única e deliciosa para os nossos clientes
+          </p>
+          <h1 class="pt-5 flex pb-2">
             <i class="bi bi-record-fill pr-2 pt-1 text-xs"></i>
             Fornecedores qualificados e aprovados.
           </h1>
@@ -66,7 +73,7 @@ $URI = new URI();
             Da colheita ao momento que chegam na nossa indústria, todas as frutas passam por um processo eficiente de seleção.
           </p>
           <h1 class="pt-5 flex pb-2">
-          <i class="bi bi-record-fill pr-2 pt-1 text-xs"></i>
+            <i class="bi bi-record-fill pr-2 pt-1 text-xs"></i>
             Investimento na melhoria dos processos industriais.
           </h1>
           <p class="">
@@ -76,7 +83,7 @@ $URI = new URI();
         </div>
       </div>
     </div>
-    <div class="lg:pt-12 pb-12 lg:grid grid-cols-2 mt-2 items-center">
+    <div class="lg:pt-12 pb-12 lg:grid grid-cols-2 mt-2 items-center fade-in-up">
       <div class="lg:px-12">
         <div class="mt-14 mb-4 text-justify">
           <h1 class="pt-5 flex pb-2">
@@ -104,16 +111,17 @@ $URI = new URI();
           </p>
         </div>
       </div>
-      <div class="">
-        <img data-src="./assets/img/industria.png" class="lazy w-full rounded-br-md h-96  object-cover">
+      <div class="p-6 fade-in-up">
+        <img data-src="./assets/img/foto_da_fabrica_2.jpg" class="lazy w-full h-96 rounded-md object-cover">
       </div>
     </div>
   </section>
 
   <?php include "./components/footer.php" ?>
   <?php include "./components/btn-whatsapp.php" ?>
-  <script src="./assets/js/script.js"></script>
+  <script src="assets/js/tw.js"></script>
   <script src="./assets/js/lz.js"></script>
+  <script src="./assets/js/main.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
   <script src="assets/js/dark_mode.js"></script>
   <script src="assets/js/tw.js"></script>
