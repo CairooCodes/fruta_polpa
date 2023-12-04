@@ -43,7 +43,7 @@ include "api-tempo.php";
             <a href="<?php echo $URI->base("polpas"); ?>" class="block py-2 uppercase text-xs rounded" aria-current="page">Polpas</a>
           </li>
           <li class="py-2">
-            <a href="<?php echo $URI->base("premium-quality"); ?>" class="block py-2 uppercase text-xs rounded" aria-current="page">Qualidade premium</a>
+            <a href="<?php echo $URI->base("qualidade-premium"); ?>" class="block py-2 uppercase text-xs rounded" aria-current="page">Qualidade premium</a>
           </li>
           <li class="py-2">
             <a href="<?php echo $URI->base("certificacoes"); ?>" class="block py-2 uppercase text-xs rounded" aria-current="page">Certificações</a>

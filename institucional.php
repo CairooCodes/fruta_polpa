@@ -66,8 +66,8 @@ $URI = new URI();
       </div>
     </section>
     <section class="bg-white max-w-full header-institucional">
-      <div class="max-w-full lg:pl-24  mx-auto lg:grid grid-cols-2 gap-10">
-        <div class="lg:mt-14 mt-4 mb-4 text-justify">
+      <div class="max-w-full lg:pl-24 mx-auto lg:grid grid-cols-2 gap-10">
+        <div class="lg:mt-14 mt-6 text-justify">
           <p style="letter-spacing: 0.5px;" class="text-gray-800">Há mais de 15 anos, a <span class="font-black text-color1">Fruta Polpa</span> é presença marcante na mesa dos piauienses. Aliada da saúde e do bem-estar, é uma das maiores do Brasil no segmento de polpa de frutas, sendo reconhecida como “A Melhor do Brasil” por sua qualidade, sabor e excelência em todos os processos.</p>
           <p style="letter-spacing: 0.5px;" class="text-gray-800 pt-3">Nossa história começa em 1994, graças à visão e perseverança do fundador Sr. Marcelo Teixeira e Sra. Denise Teixeira, que iniciaram o negócio de forma artesanal, com pouquíssima estrutura e uma única ideia: Levar mais qualidade de vida e sabor para os piauienses.</p>
           <p style="letter-spacing: 0.5px;" class="text-gray-800 pt-3">O negócio cresceu, e o desejo de melhoria contínua fez com que a indústria passasse por inúmeras transformações, desde sua localização até o processo de produção, passando pelos produtos e logística.</p>
@@ -81,15 +81,18 @@ $URI = new URI();
     </section>
     <section class="py-10 px-4 lg:mb-32 lg:mt-16">
       <h1 style="letter-spacing: 0.5px;" class="font-black bg-clip-text bg-gradient-to-r from-color1 to-color1 text-color1 text-center lg:text-4xl py-4 px-2 text-xl">Nossa Linha do Tempo</h1>
+      <h2 class="lg:mt-5 mt-6 text-justify lg:px-16 mx-auto">
+        <p style="letter-spacing: 0.5px;" class="text-gray-800">A Fruta Polpa nasceu em meados dos anos 90 da vontade de levar mais saúde e um produto de qualidade à população piauiense. No início éramos apenas 04 colaboradores, um dosador e um funil, e assim iniciamos aquela que iria se tornar uma das maiores indústrias do segmento no Brasil.</p>
+        <p style="letter-spacing: 0.5px;" class="text-gray-800 pt-3"><span class="font-bold text-color1">Nosso Propósito: </span>Produzir um produto com alto padrão de qualidade, preço justo e que melhore a qualidade de vida dos consumidores. Além disso, queremos nos tornar a maior e marca de polpa de fruta do Brasil.</p>
+      </h2>
       <div class="hidden lg:block pt-10">
         <div class="grid grid-cols-5 max-w-screen-xl mx-auto">
           <div>
-            <h1 class="relative right-14 -bottom-14 font-extrabold text-color1">2003</h1>
+            <h1 class="relative right-14 -bottom-14 font-extrabold text-color1">1995</h1>
             <h1 class="pb-4 font-extrabold text-color1 text-xl">Fundação</h1>
             <div class="border-l-2 h-52">
               <div class="w-3 h-3 bg-color1 relative left-0 -top-1 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
               <div class="relative left-1 -top-5 px-5">
-                <h1 class="text-sm text-gray-700 text-justify">Fundada no ano de 2003, a Fruta Polpa iniciou suas atividades vendendo frutas in natura na cidade de Teresina</h1>
                 <h1 class="text-sm text-gray-700  pt-2 text-justify">Com apenas 4 colaboradores, começou o negócio de produção de polpas.</h1>
               </div>
               <div class="w-10 h-10 relative left-0 -bottom-8 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"><img src="./assets/img/folha.png"></div>
@@ -97,127 +100,144 @@ $URI = new URI();
           </div>
           <div></div>
           <div>
-            <h1 class="relative right-14 -bottom-14 font-extrabold text-color1">2015</h1>
-            <h1 class="pb-4 font-extrabold text-color1 text-xl">Lançamento de Novos Produtos</h1>
+            <h1 class="relative right-14 -bottom-20 font-extrabold text-color1">2002</h1>
+            <h1 class="pb-4 font-extrabold text-color1 text-xl">Primeiro Centro de Distribuição</h1>
             <div class="border-l-2 h-52">
               <div class="w-3 h-3 bg-color1 relative left-0 -top-1 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
               <div class="relative left-1 -top-5 px-5">
-                <h1 class="text-sm text-gray-700 text-justify">Fundada no ano de 2003, a Fruta Polpa iniciou suas atividades vendendo frutas in natura na cidade de Teresina</h1>
-                <h1 class="text-sm text-gray-700  pt-2 text-justify">Com apenas 4 colaboradores, começou o negócio de produção de polpas.</h1>
+                <h1 class="text-sm text-gray-700 text-justify">Em um marco importante, a Fruta Polpa inaugura seu Primeiro Centro de Distribuição, fortalecendo a eficiência na entrega de produtos frescos e saborosos.</h1>
               </div>
               <div class="w-10 h-10 relative left-0 -bottom-8 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"><img src="./assets/img/folha.png"></div>
             </div>
           </div>
           <div></div>
           <div>
-            <h1 class="relative right-14 -bottom-14 font-extrabold text-color1">2023</h1>
-            <h1 class="pb-4 font-extrabold text-color1 text-xl">Atual</h1>
+            <h1 class="relative right-14 -bottom-20 font-extrabold text-color1">2004</h1>
+            <h1 class="pb-4 pl-2 font-extrabold text-color1 text-xl">Indústria Fruta Polpa é inaugurada</h1>
             <div class="border-l-2 h-52">
               <div class="w-3 h-3 bg-color1 relative left-0 -top-1 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
               <div class="relative left-1 -top-5 px-5">
-                <h1 class="text-sm text-gray-700 text-justify">Fundada no ano de 2003, a Fruta Polpa iniciou suas atividades vendendo frutas in natura na cidade de Teresina</h1>
-                <h1 class="text-sm text-gray-700  pt-2 text-justify">Com apenas 4 colaboradores, começou o negócio de produção de polpas.</h1>
+                <h1 class="text-sm text-gray-700 text-justify">A inauguração da Indústria Fruta Polpa marca o início de uma jornada dedicada à produção de produtos de alta qualidade e sabor incomparável.</h1>
               </div>
               <div class="w-10 h-10 relative left-0 -bottom-8 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"><img src="./assets/img/folha.png"></div>
             </div>
           </div>
         </div>
         <div class="border-t-2 border-color1">
-          <div class="grid grid-cols-5 max-w-screen-xl mx-auto">
+          <div class="grid grid-cols-6 max-w-screen-xl mx-auto">
             <div></div>
             <div>
-              <div class="border-l-2 h-52">
+              <div class="border-l-2 h-48">
                 <div class="w-10 h-10 relative left-0 -top-4 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"><img src="./assets/img/folha.png"></div>
                 <div class="relative left-1 -top-5 px-5">
-                  <h1 class="text-sm text-gray-700 text-justify">Fundada no ano de 2003, a Fruta Polpa iniciou suas atividades vendendo frutas in natura na cidade de Teresina</h1>
-                  <h1 class="text-sm text-gray-700  pt-2 text-justify">Com apenas 4 colaboradores, começou o negócio de produção de polpas.</h1>
+                  <h1 class="text-sm text-gray-700 text-justify">Os primeiros investimentos em tecnologia da Fruta Polpa refletem o compromisso da empresa em inovar, visando maior eficiência e qualidade em seus processos.</h1>
+
                 </div>
                 <div class="w-3 h-3 bg-color1 relative left-0 -bottom-2 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
-                <h1 class="relative right-14 -top-5 font-extrabold text-color1">2010</h1>
-                <h1 class="pb-4 font-extrabold text-color1 text-xl">Expansão Nacional</h1>
+                <h1 class="relative right-28 -top-3 font-extrabold text-color1">1999/2002</h1>
+                <h1 class="pb-4 font-extrabold text-color1 text-xl">Primeiros investimentos em tecnologia</h1>
               </div>
             </div>
             <div></div>
             <div class="border-l-2 h-52">
               <div class="w-10 h-10 relative left-0 -top-4 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"><img src="./assets/img/folha.png"></div>
               <div class="relative left-1 -top-5 px-5">
-                <h1 class="text-sm text-gray-700 text-justify">Fundada no ano de 2003, a Fruta Polpa iniciou suas atividades vendendo frutas in natura na cidade de Teresina</h1>
-                <h1 class="text-sm text-gray-700  pt-2 text-justify">Com apenas 4 colaboradores, começou o negócio de produção de polpas.</h1>
+                <h1 class="text-sm text-gray-700 text-justify">O início da expansão da Fruta Polpa representa um momento emocionante, evidenciando a dedicação da empresa em oferecer excelência aos clientes.</h1>
               </div>
               <div class="w-3 h-3 bg-color1 relative left-0 -bottom-2 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
-              <h1 class="relative right-14 -top-5 font-extrabold text-color1">2018</h1>
-              <h1 class="pb-4 pl-2 font-extrabold text-color1 text-xl">Parceira Global</h1>
+              <h1 class="relative right-14 -top-5 font-extrabold text-color1">2003</h1>
+              <h1 class="pb-4 pl-2 font-extrabold text-color1 text-xl">Início da expansão</h1>
             </div>
             <div></div>
+            <div class="border-l-2 h-52">
+              <div class="w-10 h-10 relative left-0 -top-4 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"><img src="./assets/img/folha.png"></div>
+              <div class="relative left-1 -top-5 px-5">
+                <h1 class="text-sm text-gray-700 text-justify">Para atender à demanda em ascensão, a Fruta Polpa amplia sua fábrica, dobrando a capacidade e assegurando qualidade e frescor constantes aos clientes.</h1>
+              </div>
+              <div class="w-3 h-3 bg-color1 relative left-0 -bottom-2 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
+              <h1 class="relative right-14 -top-5 font-extrabold text-color1">2012</h1>
+              <h1 class="pb-4 pl-2 font-extrabold text-color1 text-xl">Ampliando a Fábrica para dobrar a capacidade</h1>
+            </div>
           </div>
         </div>
       </div>
-
+      <!-- MOBILE -->
       <div>
         <div class="lg:hidden">
           <div class="owl-carousel line-time">
             <div class="item px-3 border-b-2 border-color1 py-3 mb-3">
               <h1 class="pb-1 font-extrabold text-color1 text-lg">Fundação</h1>
+              <h1 class="pb-2 font-extrabold text-color1">1995</h1>
+              <div class="border-l-2">
+                <div class="w-3 h-3 bg-color1 relative left-0 -top-1 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
+                <div class="relative left-1 -top-5 px-1">
+                  <h1 class="text-sm text-gray-700 text-justify">Com apenas 4 colaboradores, começou o negócio de produção de polpas.</h1>
+                </div>
+                <div class="w-5 h-5 bg-color1 relative left-0 -bottom-5 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"><img src="./assets/img/folha.png"></div>
+              </div>
+            </div>
+            <div class="item px-3 border-b-2 border-color1 py-3 mb-3">
+              <h1 class="pb-1 font-extrabold text-color1 text-lg">Primeiros investimentos em tecnologia</h1>
+              <h1 class="pb-2 font-extrabold text-color1">1999/2002</h1>
+              <div class="border-l-2">
+                <div class="w-3 h-3 bg-color1 relative left-0 -top-1 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
+                <div class="relative left-1 -top-5 px-1">
+                  <h1 class="text-sm text-gray-700 text-justify">Os primeiros investimentos em tecnologia da Fruta Polpa refletem o compromisso da empresa em inovar, visando maior eficiência e qualidade em seus processos.</h1>
+                </div>
+                <div class="w-5 h-5 bg-color1 relative left-0 -bottom-5 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"><img src="./assets/img/folha.png"></div>
+              </div>
+            </div>
+            <div class="item px-3 border-b-2 border-color1 py-3 mb-3">
+              <h1 class="pb-1 font-extrabold text-color1 text-lg">Primeiro Centro de Distribuição</h1>
+              <h1 class="pb-2 font-extrabold text-color1">2002</h1>
+              <div class="border-l-2">
+                <div class="w-3 h-3 bg-color1 relative left-0 -top-1 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
+                <div class="relative left-1 -top-5 px-1">
+                  <h1 class="text-sm text-gray-700 text-justify">Em um marco importante, a Fruta Polpa inaugura seu Primeiro Centro de Distribuição, fortalecendo a eficiência na entrega de produtos frescos e saborosos.</h1>
+                </div>
+                <div class="w-5 h-5 bg-color1 relative left-0 -bottom-5 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"><img src="./assets/img/folha.png"></div>
+              </div>
+            </div>
+            <div class="item px-3 border-b-2 border-color1 py-3 mb-3">
+              <h1 class="pb-1 font-extrabold text-color1 text-lg">Início da expansão</h1>
               <h1 class="pb-2 font-extrabold text-color1">2003</h1>
               <div class="border-l-2">
                 <div class="w-3 h-3 bg-color1 relative left-0 -top-1 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
                 <div class="relative left-1 -top-5 px-1">
-                  <h1 class="text-sm text-gray-700 text-justify">Fundada no ano de 2003, a Fruta Polpa iniciou suas atividades vendendo frutas in natura na cidade de Teresina</h1>
+                  <h1 class="text-sm text-gray-700 text-justify">O início da expansão da Fruta Polpa representa um momento emocionante, evidenciando a dedicação da empresa em oferecer excelência aos clientes.</h1>
                 </div>
                 <div class="w-5 h-5 bg-color1 relative left-0 -bottom-5 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"><img src="./assets/img/folha.png"></div>
               </div>
             </div>
             <div class="item px-3 border-b-2 border-color1 py-3 mb-3">
-              <h1 class="pb-1 font-extrabold text-color1 text-lg">Expansão Nacional</h1>
-              <h1 class="pb-2 font-extrabold text-color1">2010</h1>
+              <h1 class="pb-2 font-extrabold text-color1">Indústria Fruta Polpa é inaugurada</h1>
+              <h1 class="pb-1 font-extrabold text-color1 text-xl">2004</h1>
               <div class="border-l-2">
                 <div class="w-3 h-3 bg-color1 relative left-0 -top-1 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
                 <div class="relative left-1 -top-5 px-1">
-                  <h1 class="text-sm text-gray-700 text-justify">Fundada no ano de 2003, a Fruta Polpa iniciou suas atividades vendendo frutas in natura na cidade de Teresina</h1>
+                  <h1 class="text-sm text-gray-700 text-justify">A inauguração da Indústria Fruta Polpa marca o início de uma jornada dedicada à produção de produtos de alta qualidade e sabor incomparável.</h1>
                 </div>
                 <div class="w-5 h-5 bg-color1 relative left-0 -bottom-5 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"><img src="./assets/img/folha.png"></div>
               </div>
             </div>
             <div class="item px-3 border-b-2 border-color1 py-3 mb-3">
-              <h1 class="pb-1 font-extrabold text-color1 text-lg">Novos Produtos</h1>
-              <h1 class="pb-2 font-extrabold text-color1">2015</h1>
+              <h1 class="pb-2 font-extrabold text-color1">Ampliando a Fábrica para dobrar a capacidade </h1>
+              <h1 class="pb-1 font-extrabold text-color1 text-xl">2012</h1>
               <div class="border-l-2">
                 <div class="w-3 h-3 bg-color1 relative left-0 -top-1 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
                 <div class="relative left-1 -top-5 px-1">
-                  <h1 class="text-sm text-gray-700 text-justify">Fundada no ano de 2003, a Fruta Polpa iniciou suas atividades vendendo frutas in natura na cidade de Teresina</h1>
+                  <h1 class="text-sm text-gray-700 text-justify">Para atender à demanda em ascensão, a Fruta Polpa amplia sua fábrica, dobrando a capacidade e assegurando qualidade e frescor constantes aos clientes.</h1>
                 </div>
                 <div class="w-5 h-5 bg-color1 relative left-0 -bottom-5 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"><img src="./assets/img/folha.png"></div>
               </div>
             </div>
-            <div class="item px-3 border-b-2 border-color1 py-3 mb-3">
-              <h1 class="pb-1 font-extrabold text-color1 text-lg">Novos Produtos</h1>
-              <h1 class="pb-2 font-extrabold text-color1">2015</h1>
-              <div class="border-l-2">
-                <div class="w-3 h-3 bg-color1 relative left-0 -top-1 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
-                <div class="relative left-1 -top-5 px-1">
-                  <h1 class="text-sm text-gray-700 text-justify">Fundada no ano de 2003, a Fruta Polpa iniciou suas atividades vendendo frutas in natura na cidade de Teresina</h1>
-                </div>
-                <div class="w-5 h-5 bg-color1 relative left-0 -bottom-5 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"><img src="./assets/img/folha.png"></div>
-              </div>
-            </div>
-            <div class="item px-3 border-b-2 border-color1 py-3 mb-3">
-              <h1 class="pb-1 font-extrabold text-color1 text-xl">Atual</h1>
-              <h1 class="pb-2 font-extrabold text-color1">2023</h1>
-              <div class="border-l-2">
-                <div class="w-3 h-3 bg-color1 relative left-0 -top-1 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
-                <div class="relative left-1 -top-5 px-1">
-                  <h1 class="text-sm text-gray-700 text-justify">Fundada no ano de 2003, a Fruta Polpa iniciou suas atividades vendendo frutas in natura na cidade de Teresina</h1>
-                </div>
-                <div class="w-5 h-5 bg-color1 relative left-0 -bottom-5 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"><img src="./assets/img/folha.png"></div>
-              </div>
-            </div>
-
           </div>
         </div>
       </div>
     </section>
+    <!-- MOBILE -->
     <div class="mx-auto max-w-6xl pt-2 about">
-      <section>
+      <section class="lg:mt-16">
         <div class="lg:pt-4 lg:p-0 lg:p-10">
           <div class="md:grid md:grid-cols-2 md:gap-20">
             <div class="mx-auto">
@@ -228,7 +248,7 @@ $URI = new URI();
               </h6>
 
               <p class="text-medium font-sans text-justify pb-5">
-                A excelência das polpas de qualidade da Fruta Polpa é assegurada por meio das fazendas do grupo e de nossos parceiros produtores. Nossos produtos são cultivados com extrema dedicação, resultando em uma experiência de sabor inigualável tanto nas opções tradicionais quanto nas mixs.
+                A Fruta Polpa apoia o setor da agricultura na compra da matéria prima, garantindo o estoque da safra o ano inteiro, também é feita uma seleção rigorosa dos produtos a serem comprados para a fabricação dos produtos.
               </p>
             </div>
 

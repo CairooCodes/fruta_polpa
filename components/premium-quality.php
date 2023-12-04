@@ -13,11 +13,11 @@
           </span>
         </h1>
         <p class="pt-5">
-          Referência em polpas de frutas premium, garantindo qualidade excepcional e sabor autêntico. Além disso, nosso compromisso com a sustentabilidade inclui práticas responsáveis na produção e parcerias com agricultores locais. Possuímos certificações de qualidade e sustentabilidade, assegurando a pureza de nossos produtos e nossa dedicação ao meio ambiente. Escolha a Fruta Polpa e desfrute de sabores incríveis com consciência ecológica.
-        </p>
-        <p class="pt-5">
-          Referência em polpas de frutas premium, garantindo qualidade excepcional e sabor autêntico. Além disso, nosso compromisso com a sustentabilidade inclui práticas responsáveis na produção e parcerias com agricultores locais. Possuímos certificações de qualidade e sustentabilidade, assegurando a pureza de nossos produtos e nossa dedicação ao meio ambiente. Escolha a Fruta Polpa e desfrute de sabores incríveis com consciência ecológica.
-        </p>
+            A Qualidade Premium Fruta Polpa, vem do compromisso em levar até o nosso consumidor final um produto de alto padrão, sabor e valor nutricional.
+          </p>
+          <p class="pt-3">
+            Esse conceito vem surge a partir de momento em que todos os nossos fornecedores passam por um processo extremamente rígido para que nossa matéria prima seja de altíssima qualidade, o mesmo se aplica para todo o restante da produção das polpas congeladas que você compra no supermercado, conheça um pouco mais alguns tópicos que compõe essa parte que podemos considerar o nosso diferencial competitivo.
+          </p>
       </div>
       <a href="<?php echo $URI->base("premium-quality"); ?>" class="leia-mais-link">Leia mais</a>
     </div>
