@@ -334,7 +334,7 @@ $URI = new URI();
 
               <p class="text-medium font-sans text-justify pb-5">
                 Contando com mais de 20 veículos e posto de abastecimento na própria indústria, a logística empregada na distribuição do produto final atende cerca de 2000 clientes ativos, em 1000 cidades, incluindo grandes redes como Supermercado Mateus, Carvalho Supermercado, Pão de Açúcar, Extra, Supermercado Líder e Grupo Jorge Batista. <br>
-                Com profissionais diretos e indiretos: 187 Colaboradores, 11 Representantes comerciais, 34 MEI' e 22 Terceirizados.
+                Com profissionais diretos e indiretos: 187 Colaboradores, 11 Representantes comerciais, 34 MEI's e 22 Terceirizados.
               </p>
             </div>
 
