@@ -19,7 +19,7 @@ $URI = new URI();
 
 <body>
   <?php include "./components/navbar.php" ?>
-  <section class="bg-white max-w-screen-xl px-4 header-institucional mx-auto">
+  <section class="bg-white max-w-screen-xl lg:px-8 lg:py-4 px-6 header-institucional mx-auto">
     <div class="lg:pt-12 pb-12 lg:grid grid-cols-2 mt-2 items-center fade-in-up">
       <div class="lg:px-12">
         <div class="mt-14 mb-4 text-justify">
@@ -47,72 +47,98 @@ $URI = new URI();
     </div>
     <div class="lg:pt-12 pb-12 lg:grid grid-cols-2 mt-2 items-center fade-in-up">
       <div class="p-6">
-        <img data-src="./assets/img/fazenda2.png" class="lazy w-full rounded-md h-96 object-cover">
+        <img data-src="./assets/img/fazenda2.png" class="lazy lg:w-4/5 w-full rounded-md h-72 object-cover lg:lg:ml-12">
       </div>
       <div class="lg:px-12">
-        <div class="mt-10 mb-4 text-justify">
-          <h1 class="flex pb-2">
-            <i class="bi bi-record-fill pr-2 pt-1 text-xs"></i>
+        <div class="lg:mt-10 mb-4 text-justify">
+          <h1 class="pt-10 pb-6 lg:font-semibold font-bold lg:text-xl text-base flex">
+            <!-- <i class="bi bi-record-fill pr-2 pt-1 text-xs"></i> -->
             Produto de alto padrão de qualidade.
           </h1>
-          <p class="">
+          <p class="lg:text-xl text-base pb-5">
             Nosso produto de alto padrão de qualidade reflete o compromisso da Fruta Polpa em oferecer excelência, proporcionando uma experiência única e deliciosa para os nossos clientes
           </p>
-          <h1 class="pt-5 flex pb-2">
-            <i class="bi bi-record-fill pr-2 pt-1 text-xs"></i>
+          <h1 class="pt-10 pb-6 lg:font-semibold font-bold lg:text-xl text-base flex">
+            <!-- <i class="bi bi-record-fill pr-2 pt-1 text-xs"></i> -->
             Fornecedores qualificados e aprovados.
           </h1>
-          <p class="">
+          <p class="lg:text-xl text-base pb-5">
             Todas as fazendas parceiras são selecionadas por critérios técnicos e qualidade dos frutos, avaliada por especialistas.
           </p>
-          <h1 class="pt-5 flex pb-2">
-            <i class="bi bi-record-fill pr-2 pt-1 text-xs"></i>
-            Frutas rigorosamente selecionadas.
-          </h1>
-          <p class="">
-            Da colheita ao momento que chegam na nossa indústria, todas as frutas passam por um processo eficiente de seleção.
-          </p>
-          <h1 class="pt-5 flex pb-2">
-            <i class="bi bi-record-fill pr-2 pt-1 text-xs"></i>
-            Investimento na melhoria dos processos industriais.
-          </h1>
-          <p class="">
-            Na Fruta Polpa, o investimento em tecnologia e processos de melhoria são constantes, por isso, aqui contamos com o que há de mais moderno no segmento, tendo capacidade para exportação.
-          </p>
-
         </div>
       </div>
     </div>
     <div class="lg:pt-12 pb-12 lg:grid grid-cols-2 mt-2 items-center fade-in-up">
       <div class="lg:px-12">
-        <div class="mt-14 mb-4 text-justify">
-          <h1 class="pt-5 flex pb-2">
-            <i class="bi bi-record-fill pr-2 pt-1 text-xs"></i>
+        <div class="lg:mt-10 mb-4 text-justify">
+          <h1 class="lg:pt-10 pb-6 lg:font-semibold font-bold lg:text-xl text-xl flex">
+            <!-- <i class="bi bi-record-fill pr-2 pt-1 text-xs"></i> -->
+            Frutas rigorosamente selecionadas.
+          </h1>
+          <p class="">
+            Da colheita ao momento que chegam na nossa indústria, todas as frutas passam por um processo eficiente de seleção.
+          </p>
+          <h1 class="pt-10 pb-6 lg:font-semibold font-bold lg:text-xl text-base flex">
+            <!-- <i class="bi bi-record-fill pr-2 pt-1 text-xs"></i> -->
+            Investimento na melhoria dos processos industriais.
+          </h1>
+          <p class="lg:text-xl text-base pb-5">
+            Na Fruta Polpa, o investimento em tecnologia e processos de melhoria são constantes, por isso, aqui contamos com o que há de mais moderno no segmento, tendo capacidade para exportação.
+          </p>
+        </div>
+      </div>
+      <div class="p-6">
+        <img data-src="./assets/img/fazenda2.png" class="lazy lg:w-4/5 w-full rounded-md h-72 object-cover lg:ml-12">
+      </div>
+    </div>
+    <div class="lg:pt-14 pb-12 lg:grid grid-cols-2 mt-2 items-center fade-in-up">
+      <div class="p-6 fade-in-up">
+        <img data-src="./assets/img/foto_da_fabrica_2.jpg" class="lazy lg:w-4/5 w-full h-72 rounded-md object-cover lg:ml-12">
+      </div>
+      <div class="lg:px-12">
+        <div class="mb-6 text-justify">
+          <h1 class="pt-10 pb-6 lg:font-semibold font-bold lg:text-xl text-xl flex">
+            <!-- <i class="bi blg:i-record-fill font-bold pr-2 pt-1 text-xsbase</i> -->
             Laboratório próprio equipado para análise da matéria prima e do produto acabado
             lote a lote.
           </h1>
-          <p class="">
+          <p class="lg:text-xl text-base pb-5">
             Aqui todas as etapas do nosso processo produtivo são analisadas através de equipamentos de alta qualidade e nutricionistas
           </p>
-          <h1 class="pt-5 flex pb-2">
-            <i class="bi bi-record-fill pr-2 pt-1 text-xs"></i>
+        </div>
+      </div>
+    </div>
+    <div class="lg:pt-12 pb-12 lg:grid grid-cols-2 mt-2 items-center fade-in-up">
+      <div class="lg:px-12">
+        <div class="lg:mt-10 mb-4 text-justify">
+          <h1 class="pt-10 pb-6 lg:font-semibold font-bold lg:text-xl text-xl flex">
+            <!-- <i class="bi blg:i-record-fill font-bold pr-2 pt-1 text-xsbase</i> -->
             Certificação por auditoria da empresa IBD certificações para produção de produto
             ORGÂNICO.
           </h1>
-          <p class="">
+          <p class="lg:text-xl text-base pb-5">
             A certificação IBD (Instituto Biodinâmico) é direcionada para propriedades agrícolas e processos produtivos desse segmento, sendo emitida com uma importante comprovação de que os produtos gerados nesses locais são produzidos e/ou processados conforme normas orgânicas e biodinâmicas.
-          </p>
-          <h1 class="pt-5 flex pb-2">
-            <i class="bi bi-record-fill pr-2 pt-1 text-xs"></i>
-            Norma de APPCC implantada.
-          </h1>
-          <p class="">
-            O Sistema APPCC (Sistema de Análise de Perigos e Pontos Críticos de Controle) cuja sigla em inglês é HACCP (Hazard Analysis and Critical Control Point), consiste em um sistema de controle sobre a segurança do alimento mediante a análise e controle dos riscos biológicos, químicos e físicos em todas as etapas, desde a produção da matéria prima até a fabricação, distribuição e consumo.
           </p>
         </div>
       </div>
       <div class="p-6 fade-in-up">
-        <img data-src="./assets/img/foto_da_fabrica_2.jpg" class="lazy w-full h-96 rounded-md object-cover">
+        <img data-src="./assets/img/foto_da_fabrica_2.jpg" class="lazy lg:w-4/5 w-full h-72 rounded-md object-cover lg:ml-12">
+      </div>
+    </div>
+    <div class="lg:pt-12 pb-12 lg:grid grid-cols-2 mt-2 items-center fade-in-up">
+      <div class="p-6 fade-in-up">
+        <img data-src="./assets/img/foto_da_fabrica_2.jpg" class="lazy lg:w-4/5 w-full h-72 rounded-md object-cover lg:ml-12">
+      </div>
+      <div class="lg:px-12">
+        <div class="lg:mt-14 mb-4 text-justify">
+          <h1 class="lg:pt-10 pb-5 lg:font-semibold font-bold lg:text-xl text-base flex">
+            <!-- <i class="bi bi-record-fill pr-2 pt-1 text-xs"></i> -->
+            Norma de APPCC implantada.
+          </h1>
+          <p class="lg:text-xl text-base pb-5">
+            O Sistema APPCC (Sistema de Análise de Perigos e Pontos Críticos de Controle) cuja sigla em inglês é HACCP (Hazard Analysis and Critical Control Point), consiste em um sistema de controle sobre a segurança do alimento mediante a análise e controle dos riscos biológicos, químicos e físicos em todas as etapas, desde a produção da matéria prima até a fabricação, distribuição e consumo.
+          </p>
+        </div>
       </div>
     </div>
   </section>
