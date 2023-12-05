@@ -81,29 +81,29 @@ $URI = new URI();
     </section>
     <section>
       <div>
-        <div class="container flex flex-col mx-auto bg-white">
-          <div class="w-full draggable">
-            <div class="container flex flex-col items-center gap-16 mx-auto my-32">
+        <div class="container flex flex-col mx-auto bg-green-700 text-white">
+          <div class="w-full">
+            <div class="container flex flex-col items-center gap-16 mx-auto my-12">
               <div class="grid w-full grid-cols-1 lg:grid-cols-5 md:grid-cols-2 gap-y-8">
                 <div class="flex flex-col items-center">
-                  <h3 class="text-5xl font-extrabold leading-tight text-center text-color1">+<span id="countto1" countTo="67"></span></h3>
-                  <p class="text-base font-medium leading-7 text-center text-color1">Quantos fornecedores</p>
+                  <h3 class="text-5xl font-extrabold leading-tight text-center">+<span id="countto1" countTo="67"></span></h3>
+                  <p class="text-base font-medium leading-7 text-center">Quantos fornecedores</p>
                 </div>
                 <div class="flex flex-col items-center">
-                  <h3 class="text-5xl font-extrabold leading-tight text-center text-color1">+<span id="countto2" countTo="41"></span></h3>
-                  <p class="text-base font-medium leading-7 text-center text-color1">Quantos veículos</p>
+                  <h3 class="text-5xl font-extrabold leading-tight text-center">+<span id="countto2" countTo="41"></span></h3>
+                  <p class="text-base font-medium leading-7 text-center">Quantos veículos</p>
                 </div>
                 <div class="flex flex-col items-center pr-5">
-                  <h3 class="text-5xl font-extrabold leading-tight text-center text-color1"><span id="countto3" countTo="9000"></span>m</h3>
-                  <p class="text-base font-medium leading-7 text-center text-color1">Quantos metros quadrados de indústria</p>
+                  <h3 class="text-5xl font-extrabold leading-tight text-center"><span id="countto3" countTo="9000"></span>m</h3>
+                  <p class="text-base font-medium leading-7 text-center">Quantos metros quadrados de indústria</p>
                 </div>
                 <div class="flex flex-col items-center">
-                  <h3 class="text-5xl font-extrabold leading-tight text-center text-color1"><span id="countto4" countTo="80000" data-decimal="2"></span>t</h3>
-                  <p class="text-base font-medium leading-7 text-center text-color1">Quantas toneladas por ano</p>
+                  <h3 class="text-5xl font-extrabold leading-tight text-center"><span id="countto4" countTo="80000" data-decimal="2"></span>t</h3>
+                  <p class="text-base font-medium leading-7 text-center">Quantas toneladas por ano</p>
                 </div>
                 <div class="flex flex-col items-center">
-                  <h3 class="text-5xl font-extrabold leading-tight text-center text-color1">+<span id="countto5" countTo="1500"></span></h3>
-                  <p class="text-base font-medium leading-7 text-center text-color1">Quantos pontos de vendas</p>
+                  <h3 class="text-5xl font-extrabold leading-tight text-center">+<span id="countto5" countTo="1500"></span></h3>
+                  <p class="text-base font-medium leading-7 text-center">Quantos pontos de vendas</p>
                 </div>
               </div>
             </div>
@@ -111,43 +111,42 @@ $URI = new URI();
         </div>
       </div>
     </section>
-    <section class="lg:py-10 px-4 lg:mb-32 lg:mt-2">
-      <h1 style="letter-spacing: 0.5px;" class="font-black bg-clip-text bg-gradient-to-r from-color1 to-color1 text-color1 text-center lg:text-4xl py-4 px-2 text-xl">Nossa Linha do Tempo</h1>
+    <section class="lg:py-10 px-4 lg:mb-22 lg:mt-2">
+      <h1 style="letter-spacing: 0.5px;" class="font-black bg-clip-text bg-gradient-to-r from-color1 to-color1 text-gray-700 text-center lg:text-4xl py-4 px-2 text-xl">Nossa Linha do Tempo</h1>
       <h2 class="lg:mt-5 mt-6 text-justify lg:px-16 mx-auto">
         <p style="letter-spacing: 0.5px;" class="text-gray-800">A Fruta Polpa nasceu em meados dos anos 90 da vontade de levar mais saúde e um produto de qualidade à população piauiense. No início éramos apenas 04 colaboradores, um dosador e um funil, e assim iniciamos aquela que iria se tornar uma das maiores indústrias do segmento no Brasil.</p>
         <p style="letter-spacing: 0.5px;" class="text-gray-800 pt-3"><span class="font-bold text-color1">Nosso Propósito: </span>Produzir um produto com alto padrão de qualidade, preço justo e que melhore a qualidade de vida dos consumidores. Além disso, queremos nos tornar a maior e marca de polpa de fruta do Brasil.</p>
       </h2>
       <div class="hidden lg:block pt-10">
-        <div class="grid grid-cols-7 max-w-screen-xl mx-auto">
-          <div>
-            <h1 class="relative right-14 -bottom-14 font-extrabold text-color1">1995</h1>
-            <h1 class="pb-4 font-extrabold text-color1 text-xl">Fundação</h1>
-            <div class="border-l-2 h-52">
-              <div class="w-3 h-3 bg-color1 relative left-0 -top-1 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
+        <div class="grid grid-cols-12 max-w-screen-xl mx-auto">
+          <div class="col-span-2">
+            <h1 class="relative right-12 -bottom-10 font-extrabold text-color1">1995</h1>
+            <h1 class="pb-4 font-extrabold text-gray-800 text-md">Fundação</h1>
+            <div class="border-l-2">
+              <div class="w-3 h-3 bg-green-600 relative left-0 -top-1 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
               <div class="relative left-1 -top-5 px-5">
                 <h1 class="text-sm text-gray-700">Com apenas 4 colaboradores, começou o negócio de produção de polpas.</h1>
               </div>
-              <div class="w-10 h-10 relative left-0 -bottom-8 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"><img src="./assets/img/folha.png"></div>
+              <div class="w-10 h-10 relative left-0 -bottom-5 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"><img src="./assets/img/folha.png"></div>
             </div>
           </div>
           <div></div>
-          <div>
-            <h1 class="relative right-14 -bottom-20 font-extrabold text-color1">2002</h1>
-            <h1 class="pb-4 font-extrabold text-color1 text-xl">Primeiro Centro de Distribuição</h1>
-            <div class="border-l-2 h-52">
-              <div class="w-3 h-3 bg-color1 relative left-0 -top-1 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
+          <div class="col-span-3">
+            <h1 class="relative right-12 -bottom-10 font-extrabold text-color1">2002</h1>
+            <h1 class="pb-4 font-extrabold text-gray-800 text-md">Primeiro Centro de Distribuição</h1>
+            <div class="border-l-2">
+              <div class="w-3 h-3 bg-green-600 relative left-0 -top-1 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
               <div class="relative left-1 -top-5 px-5">
                 <h1 class="text-sm text-gray-700">Em um marco importante, a Fruta Polpa inaugura seu Primeiro Centro de Distribuição, fortalecendo a eficiência na entrega de produtos frescos e saborosos.</h1>
               </div>
-              <div class="w-10 h-10 relative left-0 -bottom-8 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"><img src="./assets/img/folha.png"></div>
+              <div class="w-10 h-10 relative left-0 -bottom-5 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"><img src="./assets/img/folha.png"></div>
             </div>
           </div>
-          <div></div>
-          <div>
-            <h1 class="relative right-14 -bottom-20 font-extrabold text-color1">2004</h1>
-            <h1 class="pb-4 pl-2 font-extrabold text-color1 text-xl">Indústria Fruta Polpa é inaugurada</h1>
-            <div class="border-l-2 h-52">
-              <div class="w-3 h-3 bg-color1 relative left-0 -top-1 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
+          <div class="col-span-3">
+            <h1 class="relative right-12 -bottom-10 font-extrabold text-color1">2004</h1>
+            <h1 class="pb-4 pl-2 font-extrabold text-gray-800 text-md">Indústria Fruta Polpa é inaugurada</h1>
+            <div class="border-l-2">
+              <div class="w-3 h-3 bg-green-600 relative left-0 -top-1 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
               <div class="relative left-1 -top-5 px-5">
                 <h1 class="text-sm text-gray-700">A inauguração da Indústria Fruta Polpa marca o início de uma jornada dedicada à produção de produtos de alta qualidade e sabor incomparável.</h1>
               </div>
@@ -157,11 +156,11 @@ $URI = new URI();
           <div>
             <div></div>
           </div>
-          <div>
-            <h1 class="relative right-24 -bottom-16 font-extrabold text-color1">2019/2023</h1>
-            <h1 class="pb-4 pl-2 font-extrabold text-color1 text-xl">Início da expansão</h1>
-            <div class="border-l-2 h-52">
-              <div class="w-3 h-3 bg-color1 relative left-0 -top-1 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
+          <div class="col-span-2">
+            <h1 class="relative right-12 -bottom-10 font-extrabold text-color1">2019/2023</h1>
+            <h1 class="pb-4 pl-2 font-extrabold text-gray-800 text-md">Início da expansão</h1>
+            <div class="border-l-2">
+              <div class="w-3 h-3 bg-green-600 relative left-0 -top-1 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
               <div class="relative left-1 -top-5 px-5">
                 <h1 class="text-sm text-gray-700">Início da expansão (norte, nordeste, centro–oeste, sudeste).</h1>
               </div>
@@ -170,121 +169,125 @@ $URI = new URI();
           </div>
         </div>
         <div class="border-t-2 border-color1">
-          <div class="grid grid-cols-6 max-w-screen-xl mx-auto">
+          <div class="grid grid-cols-9 max-w-screen-xl mx-auto">
             <div></div>
-            <div>
-              <div class="border-l-2 h-48">
+            <div class="col-span-2">
+              <div class="border-l-2">
                 <div class="w-10 h-10 relative left-0 -top-4 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"><img src="./assets/img/folha.png"></div>
                 <div class="relative left-1 -top-5 px-5">
                   <h1 class="text-sm text-gray-700">Os primeiros investimentos em tecnologia da Fruta Polpa refletem o compromisso da empresa em inovar, visando maior eficiência e qualidade em seus processos.
                   </h1>
                 </div>
-                <div class="w-3 h-3 bg-color1 relative left-0 -bottom-2 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
-                <h1 class="relative right-28 -top-3 font-extrabold text-color1">1999/2002</h1>
-                <h1 class="pb-4 font-extrabold text-color1 text-xl">Primeiros investimentos em tecnologia</h1>
+                <div class="w-3 h-3 bg-green-600 relative left-0 -bottom-2 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
               </div>
+              <h1 class="relative right-28 -top-3 font-extrabold text-color1">1999/2002</h1>
+              <h1 class="pb-4 font-extrabold text-gray-800 text-md">Primeiros investimentos em tecnologia</h1>
             </div>
             <div></div>
-            <div class="border-l-2 h-52">
-              <div class="w-10 h-10 relative left-0 -top-4 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"><img src="./assets/img/folha.png"></div>
-              <div class="relative left-1 -top-3 px-5">
-                <h1 class="text-sm text-gray-700">O início da expansão da Fruta Polpa representa um momento emocionante, evidenciando a dedicação da empresa em oferecer excelência aos clientes.</h1>
+            <div class="col-span-2">
+              <div class="border-l-2">
+                <div class="w-10 h-10 relative left-0 -top-4 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"><img src="./assets/img/folha.png"></div>
+                <div class="relative left-1 -top-3 px-5">
+                  <h1 class="text-sm text-gray-700">O início da expansão da Fruta Polpa representa um momento emocionante, evidenciando a dedicação da empresa em oferecer excelência aos clientes.</h1>
+                </div>
+                <div class="w-3 h-3 bg-green-600 relative left-0 -bottom-2 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
               </div>
-              <div class="w-3 h-3 bg-color1 relative left-0 -bottom-2 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
               <h1 class="relative right-14 -top-3 font-extrabold text-color1">2003</h1>
-              <h1 class="pb-4 pl-2 font-extrabold text-color1 text-xl">Início da expansão</h1>
+              <h1 class="pb-4 pl-2 font-extrabold text-gray-800 text-md">Início da expansão</h1>
             </div>
             <div></div>
-            <div class="border-l-2 h-52">
-              <div class="w-10 h-10 relative left-0 -top-4 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"><img src="./assets/img/folha.png"></div>
-              <div class="relative left-1 -top-3 px-5">
-                <h1 class="text-sm text-gray-700">Para atender à demanda em ascensão, a Fruta Polpa amplia sua fábrica, dobrando a capacidade e assegurando qualidade e frescor constantes aos clientes.</h1>
+            <div class="col-span-2">
+              <div class="border-l-2">
+                <div class="w-10 h-10 relative left-0 -top-4 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"><img src="./assets/img/folha.png"></div>
+                <div class="relative left-1 -top-3 px-5">
+                  <h1 class="text-sm text-gray-700">Para atender à demanda em ascensão, a Fruta Polpa amplia sua fábrica, dobrando a capacidade e assegurando qualidade e frescor constantes aos clientes.</h1>
+                </div>
+                <div class="w-3 h-3 bg-green-600 relative left-0 -bottom-2 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
               </div>
-              <div class="w-3 h-3 bg-color1 relative left-0 -bottom-2 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
               <h1 class="relative right-14 -top-3 font-extrabold text-color1">2012</h1>
-              <h1 class="pb-4 pl-2 font-extrabold text-color1 text-xl">Ampliando a Fábrica para dobrar a capacidade</h1>
+              <h1 class="pb-4 pl-2 font-extrabold text-gray-800 text-md">Ampliando a Fábrica para dobrar a capacidade</h1>
             </div>
           </div>
         </div>
       </div>
       <!-- MOBILE -->
       <div>
-        <div class="lg:hidden">
+        <div class="lg:hidden pt-10">
           <div class="owl-carousel line-time">
-            <div class="item px-3 border-b-2 border-color1 py-3 mb-3">
-              <h1 class="pb-1 font-extrabold text-color1 text-lg">Fundação</h1>
+            <div class="item h-52 px-3 border-b-2 border-color1">
+              <h1 class="pb-1 font-extrabold text-gray-800 text-sm">Fundação</h1>
               <h1 class="pb-2 font-extrabold text-color1">1995</h1>
               <div class="border-l-2">
                 <div class="w-3 h-3 bg-color1 relative left-0 -top-1 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
                 <div class="relative left-1 -top-5 px-1">
-                  <h1 class="text-sm text-gray-700 text-justify">Com apenas 4 colaboradores, começou o negócio de produção de polpas.</h1>
+                  <h1 class="text-xs text-gray-700 text-justify">Com apenas 4 colaboradores, começou o negócio de produção de polpas.</h1>
                 </div>
                 <div class="w-5 h-5 bg-color1 relative left-0 -bottom-5 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"><img src="./assets/img/folha.png"></div>
               </div>
             </div>
-            <div class="item px-3 border-b-2 border-color1 py-3 mb-3">
-              <h1 class="pb-1 font-extrabold text-color1 text-lg">Primeiros investimentos em tecnologia</h1>
+            <div class="item h-52 px-3 border-b-2 border-color1">
+              <h1 class="pb-1 font-extrabold text-gray-800 text-sm">Primeiros investimentos em tecnologia</h1>
               <h1 class="pb-2 font-extrabold text-color1">1999/2002</h1>
               <div class="border-l-2">
                 <div class="w-3 h-3 bg-color1 relative left-0 -top-1 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
-                <!-- <div class="relative left-1 -top-5 px-1">
-                  <h1 class="text-sm text-gray-700 text-justify">Os primeiros investimentos em tecnologia da Fruta Polpa refletem o compromisso da empresa em inovar, visando maior eficiência e qualidade em seus processos.</h1>
-                </div> -->
+                <div class="relative left-1 -top-5 px-1">
+                  <h1 class="text-xs text-gray-700 text-justify">Os primeiros investimentos em tecnologia da Fruta Polpa refletem o compromisso da empresa em inovar, visando maior eficiência e qualidade em seus processos.</h1>
+                </div>
                 <div class="w-5 h-5 bg-color1 relative left-0 -bottom-5 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"><img src="./assets/img/folha.png"></div>
               </div>
             </div>
-            <div class="item px-3 border-b-2 border-color1 py-3 mb-3">
-              <h1 class="pb-1 font-extrabold text-color1 text-xl">Primeiro Centro de Distribuição</h1>
+            <div class="item h-52 px-3 border-b-2 border-color1">
+              <h1 class="pb-1 font-extrabold text-gray-800 text-sm">Primeiro Centro de Distribuição</h1>
               <h1 class="pb-2 font-extrabold text-color1">2002</h1>
               <div class="border-l-2">
                 <div class="w-3 h-3 bg-color1 relative left-0 -top-1 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
-                <!-- <div class="relative left-1 -top-5 px-1">
-                  <h1 class="text-sm text-gray-700 text-justify">Em um marco importante, a Fruta Polpa inaugura seu Primeiro Centro de Distribuição, fortalecendo a eficiência na entrega de produtos frescos e saborosos.</h1>
-                </div> -->
+                <div class="relative left-1 -top-5 px-1">
+                  <h1 class="text-xs text-gray-700 text-justify">Em um marco importante, a Fruta Polpa inaugura seu Primeiro Centro de Distribuição, fortalecendo a eficiência na entrega de produtos frescos e saborosos.</h1>
+                </div>
                 <div class="w-5 h-5 bg-color1 relative left-0 -bottom-5 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"><img src="./assets/img/folha.png"></div>
               </div>
             </div>
-            <div class="item px-3 border-b-2 border-color1 py-3 mb-3">
-              <h1 class="pb-1 font-extrabold text-color1 text-lg">Início da expansão</h1>
+            <div class="item h-52 px-3 border-b-2 border-color1">
+              <h1 class="pb-1 font-extrabold text-gray-800 text-sm">Início da expansão</h1>
               <h1 class="pb-2 font-extrabold text-color1">2003</h1>
               <div class="border-l-2">
                 <div class="w-3 h-3 bg-color1 relative left-0 -top-1 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
-                <!-- <div class="relative left-1 -top-5 px-1">
-                  <h1 class="text-sm text-gray-700 text-justify">O início da expansão da Fruta Polpa representa um momento emocionante, evidenciando a dedicação da empresa em oferecer excelência aos clientes.</h1>
-                </div> -->
+                <div class="relative left-1 -top-5 px-1">
+                  <h1 class="text-xs text-gray-700 text-justify">O início da expansão da Fruta Polpa representa um momento emocionante, evidenciando a dedicação da empresa em oferecer excelência aos clientes.</h1>
+                </div>
                 <div class="w-5 h-5 bg-color1 relative left-0 -bottom-5 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"><img src="./assets/img/folha.png"></div>
               </div>
             </div>
-            <div class="item px-3 border-b-2 border-color1 py-3 mb-3">
-              <h1 class="pb-2 font-extrabold text-color1">Indústria Fruta Polpa é inaugurada</h1>
-              <h1 class="pb-1 font-extrabold text-color1 text-xl">2004</h1>
+            <div class="item h-52 px-3 border-b-2 border-color1">
+              <h1 class="pb-2 font-extrabold text-gray-800 text-sm">Indústria Fruta Polpa é inaugurada</h1>
+              <h1 class="pb-1 font-extrabold text-color1 text-md">2004</h1>
               <div class="border-l-2">
                 <div class="w-3 h-3 bg-color1 relative left-0 -top-1 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
-                <!-- <div class="relative left-1 -top-5 px-1">
-                  <h1 class="text-sm text-gray-700 text-justify">A inauguração da Indústria Fruta Polpa marca o início de uma jornada dedicada à produção de produtos de alta qualidade e sabor incomparável.</h1>
-                </div> -->
+                <div class="relative left-1 -top-5 px-1">
+                  <h1 class="text-xs text-gray-700 text-justify">A inauguração da Indústria Fruta Polpa marca o início de uma jornada dedicada à produção de produtos de alta qualidade e sabor incomparável.</h1>
+                </div>
                 <div class="w-5 h-5 bg-color1 relative left-0 -bottom-5 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"><img src="./assets/img/folha.png"></div>
               </div>
             </div>
-            <div class="item px-3 border-b-2 border-color1 py-3 mb-3">
-              <h1 class="pb-2 font-extrabold text-color1">Ampliando a Fábrica para dobrar a capacidade</h1>
-              <h1 class="pb-1 font-extrabold text-color1 text-xl">2012</h1>
+            <div class="item h-52 px-3 border-b-2 border-color1">
+              <h1 class="pb-2 font-extrabold text-gray-800 text-sm">Ampliando a Fábrica para dobrar a capacidade</h1>
+              <h1 class="pb-1 font-extrabold text-color1 text-md">2012</h1>
               <div class="border-l-2">
                 <div class="w-3 h-3 bg-color1 relative left-0 -top-1 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
-                <!-- <div class="relative left-1 -top-5 px-1">
-                  <h1 class="text-sm text-gray-700 text-justify">Para atender à demanda em ascensão, a Fruta Polpa amplia sua fábrica, dobrando a capacidade e assegurando qualidade e frescor constantes aos clientes.</h1>
-                </div> -->
+                <div class="relative left-1 -top-5 px-1">
+                  <h1 class="text-xs text-gray-700 text-justify">Para atender à demanda em ascensão, a Fruta Polpa amplia sua fábrica, dobrando a capacidade e assegurando qualidade e frescor constantes aos clientes.</h1>
+                </div>
                 <div class="w-5 h-5 bg-color1 relative left-0 -bottom-5 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"><img src="./assets/img/folha.png"></div>
               </div>
             </div>
-            <div class="item px-3 border-b-2 border-color1 py-3 mb-3">
-              <h1 class="pb-2 font-extrabold text-color1">Início da expansão (norte, nordeste, centro–oeste, sudeste)</h1>
-              <h1 class="pb-1 font-extrabold text-color1 text-xl">2019/2023</h1>
+            <div class="item h-52 px-3 border-b-2 border-color1">
+              <h1 class="pb-2 font-extrabold text-gray-800 text-sm">Início da expansão (norte, nordeste, centro–oeste, sudeste)</h1>
+              <h1 class="pb-1 font-extrabold text-color1 text-md">2019/2023</h1>
               <div class="border-l-2">
                 <div class="w-3 h-3 bg-color1 relative left-0 -top-1 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
-                <!-- <div class="relative left-1 -top-5 px-1">
-                  <h1 class="text-sm text-gray-700 text-justify">Para atender à demanda em ascensão, a Fruta Polpa amplia sua fábrica, dobrando a capacidade e assegurando qualidade e frescor constantes aos clientes.</h1>
-                </div> -->
+                <div class="relative left-1 -top-5 px-1">
+                  <h1 class="text-xs text-gray-700 text-justify">Para atender à demanda em ascensão, a Fruta Polpa amplia sua fábrica, dobrando a capacidade e assegurando qualidade e frescor constantes aos clientes.</h1>
+                </div>
                 <div class="w-5 h-5 bg-color1 relative left-0 -bottom-5 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"><img src="./assets/img/folha.png"></div>
               </div>
             </div>
@@ -426,7 +429,7 @@ $URI = new URI();
         };
         countUp1 = new CountUp(ID, 9.000, options);
         countUp2 = new CountUp(ID, 8000000, options);
-        
+
       } else {
         countUp = new CountUp(ID, value);
       }
