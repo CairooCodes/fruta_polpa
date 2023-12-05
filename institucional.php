@@ -93,12 +93,12 @@ $URI = new URI();
                   <h3 class="text-5xl font-extrabold leading-tight text-center text-color1">+<span id="countto2" countTo="41"></span></h3>
                   <p class="text-base font-medium leading-7 text-center text-color1">Quantos veículos</p>
                 </div>
-                <div class="flex flex-col items-center">
-                  <h3 class="text-5xl font-extrabold leading-tight text-center text-color1"><span id="countto3" countTo="9000" data-decimal="1"></span>m</h3>
+                <div class="flex flex-col items-center pr-5">
+                  <h3 class="text-5xl font-extrabold leading-tight text-center text-color1"><span id="countto3" countTo="9000"></span>m</h3>
                   <p class="text-base font-medium leading-7 text-center text-color1">Quantos metros quadrados de indústria</p>
                 </div>
                 <div class="flex flex-col items-center">
-                  <h3 class="text-5xl font-extrabold leading-tight text-center text-color1"><span id="countto4" countTo="80000" data-decimal="1"></span>ton</h3>
+                  <h3 class="text-5xl font-extrabold leading-tight text-center text-color1"><span id="countto4" countTo="80000" data-decimal="2"></span>t</h3>
                   <p class="text-base font-medium leading-7 text-center text-color1">Quantas toneladas por ano</p>
                 </div>
                 <div class="flex flex-col items-center">
@@ -422,8 +422,11 @@ $URI = new URI();
       if (number.hasAttribute("data-decimal")) {
         const options = {
           decimalPlaces: 1,
+          decimalPlaces: 2,
         };
-        countUp = new CountUp(ID, 2.8, options);
+        countUp1 = new CountUp(ID, 9.000, options);
+        countUp2 = new CountUp(ID, 8000000, options);
+        
       } else {
         countUp = new CountUp(ID, value);
       }
