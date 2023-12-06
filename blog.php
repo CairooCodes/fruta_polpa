@@ -44,7 +44,7 @@ if ($stmt->rowCount() > 0) {
 <html lang="pt-br">
 
 <head>
-  <?php include "components/heads.php"; ?>
+<?php include "components/heads.php"; ?>
 
 </head>
 
@@ -65,7 +65,7 @@ if ($stmt->rowCount() > 0) {
       <div class="swiper swiper_blog">
         <div class="swiper-wrapper">
           <a class="swiper-slide">
-            <?php echo "<img class='lazy rounded-md object-cover blog-image' src=" . $URI->base('/admin/uploads/blogs') . '/' . $blog['img'] . '>' ?>
+            <?php echo "<img class='lazy rounded-md object-cover blog-image' data-src=" . $URI->base('/admin/uploads/blogs') . '/' . $blog['img'] . '>' ?>
           </a>
         </div>
         <div class="swiper-button-next text-white"></div>
@@ -76,8 +76,11 @@ if ($stmt->rowCount() > 0) {
   </section>
 
   <?php include "./components/footer.php" ?>
-  <?php include "./components/modal_form_whatsapp.php" ?>
+  <?php include "./components/btn-whatsapp.php" ?>
+
+  <script src="<?php echo $URI->base('/assets/js/lz.js'); ?>"></script>
   <script src="<?php echo $URI->base('assets/js/script.js'); ?>"></script>
+  <script src="<?php echo $URI->base('/assets/js/main.js'); ?>"></script>
   <script src="./assets/js/lz.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
   <script src="<?php echo $URI->base('/assets/js/tw.js'); ?>"></script>
