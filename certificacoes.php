@@ -23,7 +23,7 @@ $URI = new URI();
     <section class="mx-auto max-w-7xl px-2 py-10 lg:px-16">
         <div class="px-4 py-3">
             <h1 class="lg:text-4xl text-3xl text-center lg:text-start">
-                <span style="letter-spacing: 0.5px" class="font-black bg-clip-text bg-gradient-to-r from-color1 to-color1 text-color1">
+                <span style="letter-spacing: 0.5px" class="font-semibold text-gray-800">
                     Certificações
                 </span>
             </h1>
@@ -36,7 +36,7 @@ $URI = new URI();
                 <div class="fade-in-up">
                     <div class="px-4 py-3">
                         <h1 class="lg:text-3xl text-3xl text-center">
-                            <span style="letter-spacing: 0.5px" class="font-semibold bg-clip-text bg-gradient-to-r from-color1 to-color1 text-color1">
+                            <span style="letter-spacing: 0.5px" class="font-semibold text-gray-800">
                                 Energia Renovável
                             </span>
                         </h1>
@@ -53,13 +53,13 @@ $URI = new URI();
                         <!-- <button style="background: rgb(252,114,0); background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);" class="saiba-mais text-white border-2 border-white bg-white rounded-full font-semibold text-lg px-5 py-2 text-center hover:bg-orange-600 hover:text-black">Saiba Mais</button> -->
                         <!-- <div class="cert-description"> -->
                         <div class="px-4">
-                            <h2 class="py-6 text-gray-500 text-xl lg:text-start text-center">Vantagens da energia renovável</h2>
+                            <h2 class="py-6 text-gray-500 lg:text-xl text-base lg:text-start text-center">Vantagens da energia renovável</h2>
                             <h1 class="lg:text-start text-center">
-                                <p class="text-4xl font-semibold bg-clip-text bg-gradient-to-r from-color1 to-color1 text-color1">Natureza e inovação para o </p>
-                                <pl class="text-4xl font-semibold bg-clip-text bg-gradient-to-r from-color1 to-color1 text-color1"> desenvolvimento sustentável</p>
+                                <p class="lg:text-4xl text-2xl font-semibold text-green-700">Natureza e inovação para o </p>
+                                <pl class="lg:text-4xl text-2xl font-semibold text-green-700"> desenvolvimento sustentável</p>
                             </h1>
                             <div class="lg:flex lg:justify-center">
-                                <p class="lg:py-12 py-5 lg:text-start text-center text-2xl">Produzir energia renovável é bom para o meio ambiente, para a economia e para<br> as pessoas</p>
+                                <p class="lg:py-12 py-5 lg:text-start text-center lg:text-xl text-base">Produzir energia renovável é bom para o meio ambiente, para a economia e para as pessoas</p>
                             </div>
                         </div>
                         <div class="lg:grid grid-cols-3 gap-8 p-5 text-center px-2">
