@@ -313,7 +313,7 @@ $URI = new URI();
               </p>
             </div>
 
-            <div class="owl-carousel carousel-indu">
+            <div class="owl-carousel carousel-indu z-0">
               <div class="item">
                 <img loading="lazy" src="./assets/img/fazenda1.jpg" class="rounded-lg h-60 object-cover" alt="fazenda">
               </div>
@@ -342,7 +342,7 @@ $URI = new URI();
               </p>
             </div>
 
-            <div class="owl-carousel carousel-indu order-first">
+            <div class="owl-carousel carousel-indu order-first z-0">
               <div class="item">
                 <img loading="lazy" src="./assets/img/foto_da_fabrica_2.jpg" class="rounded-lg h-56 object-cover" alt="industria">
               </div>
@@ -372,7 +372,7 @@ $URI = new URI();
               </p>
             </div>
 
-            <div class="owl-carousel carousel-indu">
+            <div class="owl-carousel carousel-indu z-0">
               <div class="item">
                 <img loading="lazy" src="./assets/img/supermercado.png" class="rounded-lg h-60" alt="supermercado">
               </div>
@@ -384,27 +384,6 @@ $URI = new URI();
         </div>
       </section>
     </div>
-    <!-- <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-4 py-12">
-      <div class="text-center pb-12">
-        <h1 class="lg:text-5xl text-3xl text-center">
-          <span style="letter-spacing: 0.5px" class="font-black bg-clip-text bg-gradient-to-r from-color1 to-color1 text-color1">
-            Conheça nossa equipe
-          </span>
-        </h1>
-      </div>
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <div class="w-full bg-white rounded-lg p-12 flex flex-col justify-center items-center">
-          <div class="mb-8">
-            <img class="object-center object-object-cover rounded-full h-48 w-48" src="" alt="photo">
-          </div>
-          <div class="text-center">
-            <p class="text-xl text-gray-700 font-bold mb-2">Marcelo</p>
-            <p class="text-base text-gray-400 font-normal">CEO</p>
-          </div>
-        </div>
-        </div>
-      </div>
-    </section> -->
   </section>
   <?php include "./components/footer.php"; ?>
   <?php include "./components/btn-whatsapp.php" ?>
