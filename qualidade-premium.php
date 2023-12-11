@@ -41,86 +41,81 @@ $URI = new URI();
           </p>
         </div>
       </div>
-      <div class="p-6 lg:order-last">
+      <div class="lg:p-6 lg:order-last">
         <img src="./assets/img/logistica.jpg" loading="lazy" class="w-full rounded-md h-96  object-cover">
       </div>
     </div>
     <div class="lg:pt-12 lg:grid grid-cols-2 mt-2 items-center fade-in-up">
-      <div class="p-6">
+      <div class="lg:p-6">
         <img src="./assets/img/fazenda1.jpg" loading="lazy" class="lg:w-4/5 w-full rounded-md h-72 object-cover lg:ml-12">
       </div>
       <div class="lg:px-12">
         <div class="lg:mt-10 mb-4">
-          <h1 class="font-bold pb-3 text-color1 lg:text-3xl text-2xl">
-            <!-- <i class="bi bi-record-fill pr-2 pt-1 text-xs"></i> -->
+          <h1 class="font-bold pb-3 pt-5 text-color1 lg:text-3xl text-2xl">
             Frutas rigorosamente selecionadas.
           </h1>
-          <p class="text-justify">
+          <p class="text-justify mb-12">
             Da colheita ao momento que chegam na nossa indústria, todas as frutas passam por um processo eficiente de seleção.
           </p>
         </div>
       </div>
     </div>
     <div class="lg:pt-14 lg:grid grid-cols-2 mt-2 items-center fade-in-up">
-      <div class="p-6 fade-in-up lg:order-last">
+      <div class="lg:p-6 fade-in-up lg:order-last">
         <img src="./assets/img/tecnologia.jpg" loading="lazy" class="lg:w-4/5 w-full h-72 rounded-md object-cover lg:ml-12">
       </div>
       <div class="lg:px-12">
-        <div class="mb-6">
-          <h1 class="font-bold pb-3 text-color1 lg:text-3xl text-2xl">
-            <!-- <i class="bi bi-record-fill pr-2 pt-1 text-xs"></i> -->
+        <div class="lg:mt-10 mb-4">
+          <h1 class="font-bold pb-3 pt-5 text-color1 lg:text-3xl text-2xl">
             Investimento na melhoria dos processos industriais.
           </h1>
-          <p class="lg:text-xl text-base pb-5 text-justify">
+          <p class="text-justify mb-12">
             Na Fruta Polpa, o investimento em tecnologia e processos de melhoria são constantes, por isso, aqui contamos com o que há de mais moderno no segmento, tendo capacidade para exportação.
           </p>
         </div>
       </div>
     </div>
     <div class="lg:pt-14 lg:grid grid-cols-2 mt-2 items-center fade-in-up">
-      <div class="p-6 fade-in-up">
+      <div class="lg:p-6 fade-in-up">
         <img src="./assets/img/industria2.jpg" loading="lazy" class="lg:w-4/5 w-full h-72 rounded-md object-cover lg:ml-12">
       </div>
       <div class="lg:px-12">
-        <div class="mb-6">
-          <h1 class="font-bold pb-3 text-color1 lg:text-3xl text-2xl">
-            <!-- <i class="bi blg:i-record-fill font-bold pr-2 pt-1 text-xsbase</i> -->
+        <div class="lg:mt-10 mb-4">
+          <h1 class="font-bold pb-3 pt-5 text-color1 lg:text-3xl text-2xl">
             Laboratório próprio equipado para análise em todas as etapas
           </h1>
-          <p class="lg:text-xl text-base pb-5  text-justify">
+          <p class="text-justify mb-12">
             Aqui todas as etapas do nosso processo produtivo são analisadas através de equipamentos de alta qualidade e nutricionistas qualificados.
           </p>
         </div>
       </div>
     </div>
     <div class="lg:pt-12 lg:grid grid-cols-2 mt-2 items-center fade-in-up">
-      <div class="p-6 fade-in-up lg:order-last">
+      <div class="lg:p-6 fade-in-up lg:order-last">
         <img src="./assets/img/IBD.jpg" loading="lazy" class="lg:w-10/12 w-full h-72 rounded-md object-cover lg:ml-12">
       </div>
       <div class="lg:px-12">
         <div class="lg:mt-10 mb-4">
-          <h1 class="font-bold pb-3 text-color1 lg:text-3xl text-2xl">
-            <!-- <i class="bi blg:i-record-fill font-bold pr-2 pt-1 text-xsbase</i> -->
+          <h1 class="font-bold pb-3 pt-5 text-color1 lg:text-3xl text-2xl">
             Certificação por auditoria da empresa IBD certificações para produção de produto
             ORGÂNICO.
           </h1>
-          <p class="lg:text-xl text-base pb-5 text-justify">
+          <p class="text-justify mb-12">
             A certificação IBD (Instituto Biodinâmico) é direcionada para propriedades agrícolas e processos produtivos desse segmento, sendo emitida com uma importante comprovação de que os produtos gerados nesses locais são produzidos e/ou processados conforme normas orgânicas e biodinâmicas.
           </p>
         </div>
       </div>
     </div>
     <div class="lg:pt-12 lg:grid grid-cols-2 mt-2 items-center fade-in-up">
-      <div class="p-6 fade-in-up">
+      <div class="lg:p-6 fade-in-up">
         <img src="./assets/img/APPCC.png" loading="lazy" class="lg:w-full w-full h-72 rounded-md object-cover lg:ml-12">
       </div>
       <div class="lg:px-12">
-        <div class="lg:mt-14 mb-4">
-          <h1 class="font-bold pb-3 text-color1 lg:text-3xl text-2xl">
-            <!-- <i class="bi bi-record-fill pr-2 pt-1 text-xs"></i> -->
+        <div class="lg:mt-10 mb-4">
+          <h1 class="font-bold pb-3 pt-5 text-color1 lg:text-3xl text-2xl">
             Norma de APPCC implantada.
           </h1>
-          <p class="lg:text-xl text-base pb-5 text-justify">
+          <p class="text-justify mb-12">
             O Sistema APPCC (Sistema de Análise de Perigos e Pontos Críticos de Controle) cuja sigla em inglês é HACCP (Hazard Analysis and Critical Control Point), consiste em um sistema de controle sobre a segurança do alimento mediante a análise e controle dos riscos biológicos, químicos e físicos em todas as etapas, desde a produção da matéria prima até a fabricação, distribuição e consumo.
           </p>
         </div>
