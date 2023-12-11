@@ -315,10 +315,10 @@ $URI = new URI();
 
             <div class="owl-carousel carousel-indu">
               <div class="item">
-                <img loading="lazy" src="./assets/img/fazenda1.jpg" class="rounded-lg h-60 cover" alt="fazenda">
+                <img loading="lazy" src="./assets/img/fazenda1.jpg" class="rounded-lg h-60 object-cover" alt="fazenda">
               </div>
               <div class="item">
-                <img loading="lazy" src="./assets/img/fazenda2.jpg" class="rounded-lg h-60 cover" alt="fazenda">
+                <img loading="lazy" src="./assets/img/fazenda2.jpg" class="rounded-lg h-60 object-cover" alt="fazenda">
               </div>
             </div>
           </div>
@@ -332,7 +332,7 @@ $URI = new URI();
             <div class="mx-auto">
               <h6 class="lg:text-3xl text-xl pb-5 pt-4">
                 <span style="letter-spacing: 0.5px" class="text-color1 font-black bg-clip-text bg-gradient-to-r">
-                  Indústrias
+                  Indústria
                 </span>
               </h6>
 
@@ -344,10 +344,13 @@ $URI = new URI();
 
             <div class="owl-carousel carousel-indu order-first">
               <div class="item">
-                <img loading="lazy" src="./assets/img/industria1.jpg" class="rounded-lg h-56 cover" alt="industria">
+                <img loading="lazy" src="./assets/img/foto_da_fabrica_2.jpg" class="rounded-lg h-56 object-cover" alt="industria">
               </div>
               <div class="item">
-                <img loading="lazy" src="./assets/img/industria2.jpg" class="rounded-lg h-56 cover" alt="industria">
+                <img loading="lazy" src="./assets/img/laboratorio2.jpg" class="rounded-lg h-56 object-cover" alt="industria">
+              </div>
+              <div class="item">
+                <img loading="lazy" src="./assets/img/laboratorio1.jpg" class="rounded-lg h-56 object-cover" alt="industria">
               </div>
             </div>
 
@@ -365,7 +368,7 @@ $URI = new URI();
                 </span>
               </h6>
               <p class="text-medium font-sans text-justify pb-5">
-              Constantemente realizamos ações promocionais nas nossas plataformas digitais bem como ações externas através de degustações em supermercados, eventos relacionados a saúde esportes, academias, parques públicos e muito mais, sempre com um incrível feedback de quem prova nossos produtos pela primeira vez ou como forma de elogios para a marca de quem já nos conhece.
+                Constantemente realizamos ações promocionais nas nossas plataformas digitais bem como ações externas através de degustações em supermercados, eventos relacionados a saúde esportes, academias, parques públicos e muito mais, sempre com um incrível feedback de quem prova nossos produtos pela primeira vez ou como forma de elogios para a marca de quem já nos conhece.
               </p>
             </div>
 
@@ -392,7 +395,7 @@ $URI = new URI();
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <div class="w-full bg-white rounded-lg p-12 flex flex-col justify-center items-center">
           <div class="mb-8">
-            <img class="object-center object-cover rounded-full h-48 w-48" src="" alt="photo">
+            <img class="object-center object-object-cover rounded-full h-48 w-48" src="" alt="photo">
           </div>
           <div class="text-center">
             <p class="text-xl text-gray-700 font-bold mb-2">Marcelo</p>
