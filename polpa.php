@@ -20,7 +20,7 @@ function remove_simbolos_acentos($string)
 
 
 $url = explode("/", $_SERVER['REQUEST_URI']);
-$idpost = $url[3];
+$idpost = $url[4];
 
 $idpost2 = "";
 
@@ -76,13 +76,13 @@ if ($stmt->rowCount() > 0) {
         <h1 class="text-xl m-2">
           <?php echo $polpa['description']; ?>
         </h1>
-        <div class="w-full max-w-md mx-auto py-4 mt-5">
-          <table class="bg-green-300 w-full">
+        <div class="py-4 mt-5">
+          <table class="bg-green-300">
             <thead class="bg-green-600">
               <tr>
-                <th class="px-4 py-2">Nutriente</th>
-                <th class="py-2">100g</th>
-                <th class="py-2">% VD (*)</th>
+                <th class="">Nutriente</th>
+                <th class="">100g</th>
+                <th class="">% VD (*)</th>
               </tr>
             </thead>
             <tbody>
@@ -99,54 +99,54 @@ if ($stmt->rowCount() > 0) {
               }
               ?>
               <tr>
-                <td class="px-4 py-2">Valor Energético</td>
-                <td class="px-20 py-2"><?php echo $nutri['valor_energetico'] ?></td>
-                <td class="px-10 py-2"><?php echo $nutri['valor_energeticovd'] ?></td>
+                <td>Valor Energético</td>
+                <td><?php echo $nutri['valor_energetico'] ?></td>
+                <td><?php echo $nutri['valor_energeticovd'] ?></td>
               </tr>
               <tr>
-                <td class="px-4 py-2">Carboidratos</td>
-                <td class="px-20 py-2"><?php echo $nutri['carboidratos'] ?></td>
-                <td class="px-10 py-2"><?php echo $nutri['carboidratosvd'] ?></td>
+                <td>Carboidratos</td>
+                <td><?php echo $nutri['carboidratos'] ?></td>
+                <td><?php echo $nutri['carboidratosvd'] ?></td>
               </tr>
               <tr>
-                <td class="px-4 py-2">Acucares totais</td>
-                <td class="px-20 py-2"><?php echo $nutri['acucares_totais'] ?></td>
-                <td class="px-10 py-2"><?php echo $nutri['acucares_totaisvd'] ?></td>
+                <td>Acucares totais</td>
+                <td><?php echo $nutri['acucares_totais'] ?></td>
+                <td><?php echo $nutri['acucares_totaisvd'] ?></td>
               </tr>
               <tr>
-                <td class="px-4 py-2">Acucares adicionados</td>
-                <td class="px-20 py-2"><?php echo $nutri['acucares_adicionados'] ?></td>
-                <td class="px-10 py-2"><?php echo $nutri['acucares_adicionadosvd'] ?></td>
+                <td>Acucares adicionados</td>
+                <td><?php echo $nutri['acucares_adicionados'] ?></td>
+                <td><?php echo $nutri['acucares_adicionadosvd'] ?></td>
               </tr>
               <tr>
-                <td class="px-4 py-2">Proteínas</td>
-                <td class="px-20 py-2"><?php echo $nutri['proteinas'] ?></td>
-                <td class="px-10 py-2"><?php echo $nutri['proteinasvd'] ?></td>
+                <td>Proteínas</td>
+                <td><?php echo $nutri['proteinas'] ?></td>
+                <td><?php echo $nutri['proteinasvd'] ?></td>
               </tr>
               <tr>
-                <td class="px-4 py-2">Gorduras totais</td>
-                <td class="px-20 py-2"><?php echo $nutri['gorduras_totais'] ?></td>
-                <td class="px-10 py-2"><?php echo $nutri['gorduras_totaisvd'] ?></td>
+                <td>Gorduras totais</td>
+                <td><?php echo $nutri['gorduras_totais'] ?></td>
+                <td><?php echo $nutri['gorduras_totaisvd'] ?></td>
               </tr>
               <tr>
-                <td class="px-4 py-2">Gorduras saturadas</td>
-                <td class="px-20 py-2"><?php echo $nutri['gorduras_saturadas'] ?></td>
-                <td class="px-10 py-2"><?php echo $nutri['gorduras_saturadasvd'] ?></td>
+                <td>Gorduras saturadas</td>
+                <td><?php echo $nutri['gorduras_saturadas'] ?></td>
+                <td><?php echo $nutri['gorduras_saturadasvd'] ?></td>
               </tr>
               <tr>
-                <td class="px-4 py-2">Gorduras trans</td>
-                <td class="px-20 py-2"><?php echo $nutri['gorduras_trans'] ?></td>
-                <td class="px-10 py-2"><?php echo $nutri['gorduras_transvd'] ?></td>
+                <td>Gorduras trans</td>
+                <td><?php echo $nutri['gorduras_trans'] ?></td>
+                <td><?php echo $nutri['gorduras_transvd'] ?></td>
               </tr>
               <tr>
-                <td class="px-4 py-2">Fibras alimentares</td>
-                <td class="px-20 py-2"><?php echo $nutri['fibras_alimentares'] ?></td>
-                <td class="px-10 py-2"><?php echo $nutri['fibras_alimentaresvd'] ?></td>
+                <td>Fibras alimentares</td>
+                <td><?php echo $nutri['fibras_alimentares'] ?></td>
+                <td><?php echo $nutri['fibras_alimentaresvd'] ?></td>
               </tr>
               <tr>
-                <td class="px-4 py-2">Sódio</td>
-                <td class="px-20 py-2"><?php echo $nutri['sodio'] ?></td>
-                <td class="px-10 py-2"><?php echo $nutri['sodiovd'] ?></td>
+                <td>Sódio</td>
+                <td><?php echo $nutri['sodio'] ?></td>
+                <td><?php echo $nutri['sodiovd'] ?></td>
               </tr>
             </tbody>
           </table>
