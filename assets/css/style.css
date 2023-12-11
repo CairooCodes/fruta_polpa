@@ -340,13 +340,25 @@ header {
   .csscursiva {
     font-size: 70px;
   }
+
+  .banners .banner-text {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+  }
 }
 
 .banners {
-  position: relative;
+  /* position: relative;
   background-image: url('../img/foto_da_fabrica_2.jpg');
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
+}
+
+.banners .banner-text {
+  position: absolute;
+  top: 20px;
+  right: 50px;
 }
 
 .overlay {

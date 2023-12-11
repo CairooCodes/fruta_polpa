@@ -37,7 +37,6 @@ $URI = new URI();
   <?php include "./components/btn-whatsapp.php" ?>
 
   <script src="assets/js/tw.js"></script>
-  <script src="./assets/js/lz.js"></script>
   <script src="./assets/js/main.js"></script>
   <script src="./assets/js/maps.js"></script>
 

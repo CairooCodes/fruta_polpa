@@ -8,7 +8,7 @@
           <div class="swiper-slide pb-5">
             <div class="transition duration-500 bg-white rounded-2xl shadow2">
               <div class="h-full">
-                <img style='margin-bottom: -100px;' class='lazy relative top-[-100px]' data-src='./assets/img/polpas/ABACAXI.png'>
+                <img style='margin-bottom: -100px;' class='relative top-[-100px]' loading="lazy" src='./assets/img/polpas/ABACAXI.png'>
               </div>
               <div class="bg-bottom rounded-b-2xl" style="background: rgb(252,114,0);
 background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);">
@@ -29,7 +29,7 @@ background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%
           <div class="swiper-slide">
             <div class=" transition duration-500 bg-white rounded-2xl shadow2 ">
               <div class="h-full">
-                <img style='margin-bottom: -100px;' class='lazy relative top-[-100px]' data-src='./assets/img/polpas/ACAI.png'>
+                <img style='margin-bottom: -100px;' class='relative top-[-100px]' loading="lazy" src='./assets/img/polpas/ACAI.png'>
               </div>
               <div class="bg-bottom rounded-b-2xl" style="background: rgb(252,114,0);
 background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);">
@@ -50,7 +50,7 @@ background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%
           <div class="swiper-slide">
             <div class=" transition duration-500 bg-white rounded-2xl shadow2 ">
               <div class="h-full">
-                <img style='margin-bottom: -100px;' class='lazy relative top-[-100px]' data-src='./assets/img/polpas/ACEROLA.png'>
+                <img style='margin-bottom: -100px;' class='relative top-[-100px]' loading="lazy" src='./assets/img/polpas/ACEROLA.png'>
               </div>
               <div class="bg-bottom rounded-b-2xl" style="background: rgb(252,114,0);
 background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);">
@@ -71,7 +71,7 @@ background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%
           <div class="swiper-slide">
             <div class=" transition duration-500 bg-white rounded-2xl shadow2 ">
               <div class="h-full">
-                <img style='margin-bottom: -100px;' class='lazy relative top-[-100px]' data-src='./assets/img/polpas/BACURI.png'>
+                <img style='margin-bottom: -100px;' class='relative top-[-100px]' loading="lazy" src='./assets/img/polpas/BACURI.png'>
               </div>
               <div class="bg-bottom rounded-b-2xl" style="background: rgb(252,114,0);
 background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);">
@@ -92,7 +92,7 @@ background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%
           <div class="swiper-slide">
             <div class=" transition duration-500 bg-white rounded-2xl shadow2 ">
               <div class="h-full">
-                <img style='margin-bottom: -100px;' class='lazy relative top-[-100px]' data-src='./assets/img/polpas/CAJA.png'>
+                <img style='margin-bottom: -100px;' class='relative top-[-100px]' loading="lazy" src='./assets/img/polpas/CAJA.png'>
               </div>
               <div class="bg-bottom rounded-b-2xl" style="background: rgb(252,114,0);
 background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);">
@@ -113,7 +113,7 @@ background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%
           <div class="swiper-slide">
             <div class=" transition duration-500 bg-white rounded-2xl shadow2 ">
               <div class="h-full">
-                <img style='margin-bottom: -100px;' class='lazy relative top-[-100px]' data-src='./assets/img/polpas/CAJU.png'>
+                <img style='margin-bottom: -100px;' class='relative top-[-100px]' loading="lazy" src='./assets/img/polpas/CAJU.png'>
               </div>
               <div class="bg-bottom rounded-b-2xl" style="background: rgb(252,114,0);
 background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);">
@@ -134,7 +134,7 @@ background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%
           <div class="swiper-slide">
             <div class=" transition duration-500 bg-white rounded-2xl shadow2 ">
               <div class="h-full">
-                <img style='margin-bottom: -100px;' class='lazy relative top-[-100px]' data-src='./assets/img/polpas/CUPUAÇU.png'>
+                <img style='margin-bottom: -100px;' class='relative top-[-100px]' loading="lazy" src='./assets/img/polpas/CUPUAÇU.png'>
               </div>
               <div class="bg-bottom rounded-b-2xl" style="background: rgb(252,114,0);
 background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);">
@@ -155,7 +155,7 @@ background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%
           <div class="swiper-slide">
             <div class=" transition duration-500 bg-white rounded-2xl shadow2 ">
               <div class="h-full">
-                <img style='margin-bottom: -100px;' class='lazy relative top-[-100px]' data-src='./assets/img/polpas/GOIABA.png'>
+                <img style='margin-bottom: -100px;' class='relative top-[-100px]' loading="lazy" src='./assets/img/polpas/GOIABA.png'>
               </div>
               <div class="bg-bottom rounded-b-2xl" style="background: rgb(252,114,0);
 background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);">
@@ -176,7 +176,7 @@ background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%
           <div class="swiper-slide">
             <div class=" transition duration-500 bg-white rounded-2xl shadow2 ">
               <div class="h-full">
-                <img style='margin-bottom: -100px;' class='lazy relative top-[-100px]' data-src='./assets/img/polpas/GRAVIOLA.png'>
+                <img style='margin-bottom: -100px;' class='relative top-[-100px]' loading="lazy" src='./assets/img/polpas/GRAVIOLA.png'>
               </div>
               <div class="bg-bottom rounded-b-2xl" style="background: rgb(252,114,0);
 background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);">
@@ -197,7 +197,7 @@ background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%
           <div class="swiper-slide">
             <div class=" transition duration-500 bg-white rounded-2xl shadow2 ">
               <div class="h-full">
-                <img style='margin-bottom: -100px;' class='lazy relative top-[-100px]' data-src='./assets/img/polpas/MANGA.png'>
+                <img style='margin-bottom: -100px;' class='relative top-[-100px]' loading="lazy" src='./assets/img/polpas/MANGA.png'>
               </div>
               <div class="bg-bottom rounded-b-2xl" style="background: rgb(252,114,0);
 background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);">
@@ -218,7 +218,7 @@ background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%
           <div class="swiper-slide">
             <div class=" transition duration-500 bg-white rounded-2xl shadow2 ">
               <div class="h-full">
-                <img style='margin-bottom: -100px;' class='lazy relative top-[-100px]' data-src='./assets/img/polpas/MARACUJA.png'>
+                <img style='margin-bottom: -100px;' class='relative top-[-100px]' loading="lazy" src='./assets/img/polpas/MARACUJA.png'>
               </div>
               <div class="bg-bottom rounded-b-2xl" style="background: rgb(252,114,0);
 background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);">
@@ -239,7 +239,7 @@ background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%
           <div class="swiper-slide">
             <div class=" transition duration-500 bg-white rounded-2xl shadow2 ">
               <div class="h-full">
-                <img style='margin-bottom: -100px;' class='lazy relative top-[-100px]' data-src='./assets/img/polpas/MORANGO.png'>
+                <img style='margin-bottom: -100px;' class='relative top-[-100px]' loading="lazy" src='./assets/img/polpas/MORANGO.png'>
               </div>
               <div class="bg-bottom rounded-b-2xl" style="background: rgb(252,114,0);
 background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);">
@@ -260,7 +260,7 @@ background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%
           <div class="swiper-slide">
             <div class=" transition duration-500 bg-white rounded-2xl shadow2 ">
               <div class="h-full">
-                <img style='margin-bottom: -100px;' class='lazy relative top-[-100px]' data-src='./assets/img/polpas/MURICI.png'>
+                <img style='margin-bottom: -100px;' class='relative top-[-100px]' loading="lazy" src='./assets/img/polpas/MURICI.png'>
               </div>
               <div class="bg-bottom rounded-b-2xl" style="background: rgb(252,114,0);
 background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);">
@@ -281,7 +281,7 @@ background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%
           <div class="swiper-slide">
             <div class=" transition duration-500 bg-white rounded-2xl shadow2 ">
               <div class="h-full">
-                <img style='margin-bottom: -100px;' class='lazy relative top-[-100px]' data-src='./assets/img/polpas/TAMARINDO.png'>
+                <img style='margin-bottom: -100px;' class='relative top-[-100px]' loading="lazy" src='./assets/img/polpas/TAMARINDO.png'>
               </div>
               <div class="bg-bottom rounded-b-2xl" style="background: rgb(252,114,0);
 background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);">
@@ -309,7 +309,7 @@ background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%
           <div class="swiper-slide">
             <div class=" transition duration-500 bg-white rounded-2xl shadow2 ">
               <div class="h-full">
-                <img style='margin-bottom: -100px;' class='lazy relative top-[-100px]' data-src='./assets/img/polpas/MIX_ABACAXI_COM_HORTELÃ.png'>
+                <img style='margin-bottom: -100px;' class='relative top-[-100px]' loading="lazy" src='./assets/img/polpas/MIX_ABACAXI_COM_HORTELÃ.png'>
               </div>
               <div class="bg-bottom rounded-b-2xl" style="background: rgb(252,114,0);
 background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);">
@@ -330,7 +330,7 @@ background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%
           <div class="swiper-slide">
             <div class=" transition duration-500 bg-white rounded-2xl shadow2 ">
               <div class="h-full">
-                <img style='margin-bottom: -100px;' class='lazy relative top-[-100px]' data-src='./assets/img/polpas/MIX_HIBISCO.png'>
+                <img style='margin-bottom: -100px;' class='relative top-[-100px]' loading="lazy" src='./assets/img/polpas/MIX_HIBISCO.png'>
               </div>
               <div class="bg-bottom rounded-b-2xl" style="background: rgb(252,114,0);
 background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);">
@@ -351,7 +351,7 @@ background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%
           <div class="swiper-slide">
             <div class=" transition duration-500 bg-white rounded-2xl shadow2 ">
               <div class="h-full">
-                <img style='margin-bottom: -100px;' class='lazy relative top-[-100px]' data-src='./assets/img/polpas/MIX_REFRESCANTE.png'>
+                <img style='margin-bottom: -100px;' class='relative top-[-100px]' loading="lazy" src='./assets/img/polpas/MIX_REFRESCANTE.png'>
               </div>
               <div class="bg-bottom rounded-b-2xl" style="background: rgb(252,114,0);
 background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);">
@@ -372,7 +372,7 @@ background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%
           <div class="swiper-slide">
             <div class=" transition duration-500 bg-white rounded-2xl shadow2 ">
               <div class="h-full">
-                <img style='margin-bottom: -100px;' class='lazy relative top-[-100px]' data-src='./assets/img/polpas/MIX_TROPICAL.png'>
+                <img style='margin-bottom: -100px;' class='relative top-[-100px]' loading="lazy" src='./assets/img/polpas/MIX_TROPICAL.png'>
               </div>
               <div class="bg-bottom rounded-b-2xl" style="background: rgb(252,114,0);
 background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);">
@@ -393,7 +393,7 @@ background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%
           <div class="swiper-slide">
             <div class=" transition duration-500 bg-white rounded-2xl shadow2 ">
               <div class="h-full">
-                <img style='margin-bottom: -100px;' class='lazy relative top-[-100px]' data-src='./assets/img/polpas/MIX_VERDE.png'>
+                <img style='margin-bottom: -100px;' class='relative top-[-100px]' loading="lazy" src='./assets/img/polpas/MIX_VERDE.png'>
               </div>
               <div class="bg-bottom rounded-b-2xl" style="background: rgb(252,114,0);
 background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);">
@@ -414,7 +414,7 @@ background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%
           <div class="swiper-slide">
             <div class=" transition duration-500 bg-white rounded-2xl shadow2 ">
               <div class="h-full">
-                <img style='margin-bottom: -100px;' class='lazy relative top-[-100px]' data-src='./assets/img/polpas/MIX_YELLOW.png'>
+                <img style='margin-bottom: -100px;' class='relative top-[-100px]' loading="lazy" src='./assets/img/polpas/MIX_YELLOW.png'>
               </div>
               <div class="bg-bottom rounded-b-2xl" style="background: rgb(252,114,0);
 background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);">

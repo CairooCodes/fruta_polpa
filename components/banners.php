@@ -1,5 +1,6 @@
-<section class="max-w-full lg:pt-32 lg:pb-12 pb-2 banners relative">
-  <div class="max-w-full px-6 lg:pt-12 pt-10 lg:pb-40 mx-auto pb-3 lg:px-16 relative z-10">
+<section class="max-w-full banners relative">
+  <img src="./assets/img/foto_da_fabrica_2.jpg" loading="lazy">
+  <div class="banner-text max-w-full lg:pt-12 pt-2 mx-auto pb-3 relative z-10">
     <div class="fade-in-left">
       <p class="cssnormal lg:text-6xl text-2xl text-white text-end">Não é polpa é,
         <br>
@@ -7,12 +8,14 @@
       </p>
     </div>
   </div>
-  <div class="fade-in-up relative lg:-bottom-20 -bottom-10 text-center z-10">
-    <a href="#produtos">
-      <button style="background: rgb(252,114,0); background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);" class="mt-4 text-white text-md text-gray-800 py-3 px-4 rounded-full border-2 border-color1 font-semibold">
-        CONHEÇA NOSSOS PRODUTOS
-      </button>
-    </a>
+  <div class="flex justify-center">
+    <div class="fade-in-up absolute lg:-bottom-5 -bottom-10 text-center z-10">
+      <a href="#produtos">
+        <button style="background: rgb(252,114,0); background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);" class="mt-4 text-white text-md text-gray-800 py-3 px-4 rounded-full border-2 border-color1 font-semibold">
+          CONHEÇA NOSSOS PRODUTOS
+        </button>
+      </a>
+    </div>
   </div>
   <div class="overlay absolute top-0 left-0 w-full h-full bg-black opacity-50 z-0"></div>
 </section>
