@@ -23,7 +23,7 @@ $URI = new URI();
   <div class="mx-auto max-w-7xl px-2 pt-10 pb-10">
     <h1 class="lg:text-4xl text-3xl">
       <span style="letter-spacing: 0.5px" class="text-color1">
-        Receitas
+        Receitas Fruta Polpa
       </span>
     </h1>
 

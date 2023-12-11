@@ -20,7 +20,7 @@ function remove_simbolos_acentos($string)
 
 
 $url = explode("/", $_SERVER['REQUEST_URI']);
-$idpost = $url[4];
+$idpost = $url[3];
 
 $idpost2 = "";
 
@@ -76,13 +76,13 @@ if ($stmt->rowCount() > 0) {
         <h1 class="text-xl m-2">
           <?php echo $polpa['description']; ?>
         </h1>
-        <div class="py-4 mt-5">
-          <table class="bg-green-300">
+        <div class="py-4 mt-5 p-2">
+          <table class="bg-green-300 w-full">
             <thead class="bg-green-600">
-              <tr>
-                <th class="">Nutriente</th>
-                <th class="">100g</th>
-                <th class="">% VD (*)</th>
+              <tr class="">
+                <th class="py-1">Nutriente</th>
+                <th class="py-1">100g</th>
+                <th class="py-1">% VD (*)</th>
               </tr>
             </thead>
             <tbody>
@@ -99,54 +99,54 @@ if ($stmt->rowCount() > 0) {
               }
               ?>
               <tr>
-                <td>Valor Energético</td>
-                <td><?php echo $nutri['valor_energetico'] ?></td>
-                <td><?php echo $nutri['valor_energeticovd'] ?></td>
+                <td class="pl-2 py-2">Valor Energético</td>
+                <td class="text-center"><?php echo $nutri['valor_energetico'] ?></td>
+                <td class="text-center"><?php echo $nutri['valor_energeticovd'] ?></td>
               </tr>
               <tr>
-                <td>Carboidratos</td>
-                <td><?php echo $nutri['carboidratos'] ?></td>
-                <td><?php echo $nutri['carboidratosvd'] ?></td>
+                <td class="pl-2 py-2">Carboidratos</td>
+                <td class="text-center"><?php echo $nutri['carboidratos'] ?></td>
+                <td class="text-center"><?php echo $nutri['carboidratosvd'] ?></td>
               </tr>
               <tr>
-                <td>Acucares totais</td>
-                <td><?php echo $nutri['acucares_totais'] ?></td>
-                <td><?php echo $nutri['acucares_totaisvd'] ?></td>
+                <td class="pl-2 py-2">Acucares totais</td>
+                <td class="text-center"><?php echo $nutri['acucares_totais'] ?></td>
+                <td class="text-center"><?php echo $nutri['acucares_totaisvd'] ?></td>
               </tr>
               <tr>
-                <td>Acucares adicionados</td>
-                <td><?php echo $nutri['acucares_adicionados'] ?></td>
-                <td><?php echo $nutri['acucares_adicionadosvd'] ?></td>
+                <td class="pl-2 py-2">Acucares adicionados</td>
+                <td class="text-center"><?php echo $nutri['acucares_adicionados'] ?></td>
+                <td class="text-center"><?php echo $nutri['acucares_adicionadosvd'] ?></td>
               </tr>
               <tr>
-                <td>Proteínas</td>
-                <td><?php echo $nutri['proteinas'] ?></td>
-                <td><?php echo $nutri['proteinasvd'] ?></td>
+                <td class="pl-2 py-2">Proteínas</td>
+                <td class="text-center"><?php echo $nutri['proteinas'] ?></td>
+                <td class="text-center"><?php echo $nutri['proteinasvd'] ?></td>
               </tr>
               <tr>
-                <td>Gorduras totais</td>
-                <td><?php echo $nutri['gorduras_totais'] ?></td>
-                <td><?php echo $nutri['gorduras_totaisvd'] ?></td>
+                <td class="pl-2 py-2">Gorduras totais</td>
+                <td class="text-center"><?php echo $nutri['gorduras_totais'] ?></td>
+                <td class="text-center"class="text-center"><?php echo $nutri['gorduras_totaisvd'] ?></td>
               </tr>
               <tr>
-                <td>Gorduras saturadas</td>
-                <td><?php echo $nutri['gorduras_saturadas'] ?></td>
-                <td><?php echo $nutri['gorduras_saturadasvd'] ?></td>
+                <td class="pl-2 py-2">Gorduras saturadas</td>
+                <td class="text-center"><?php echo $nutri['gorduras_saturadas'] ?></td>
+                <td class="text-center"><?php echo $nutri['gorduras_saturadasvd'] ?></td>
               </tr>
               <tr>
-                <td>Gorduras trans</td>
-                <td><?php echo $nutri['gorduras_trans'] ?></td>
-                <td><?php echo $nutri['gorduras_transvd'] ?></td>
+                <td class="pl-2 py-2">Gorduras trans</td>
+                <td class="text-center"><?php echo $nutri['gorduras_trans'] ?></td>
+                <td class="text-center"><?php echo $nutri['gorduras_transvd'] ?></td>
               </tr>
               <tr>
-                <td>Fibras alimentares</td>
-                <td><?php echo $nutri['fibras_alimentares'] ?></td>
-                <td><?php echo $nutri['fibras_alimentaresvd'] ?></td>
+                <td class="pl-2 py-2">Fibras alimentares</td>
+                <td class="text-center"><?php echo $nutri['fibras_alimentares'] ?></td>
+                <td class="text-center"><?php echo $nutri['fibras_alimentaresvd'] ?></td>
               </tr>
               <tr>
-                <td>Sódio</td>
-                <td><?php echo $nutri['sodio'] ?></td>
-                <td><?php echo $nutri['sodiovd'] ?></td>
+                <td class="pl-2 py-2">Sódio</td>
+                <td class="text-center"><?php echo $nutri['sodio'] ?></td>
+                <td class="text-center"><?php echo $nutri['sodiovd'] ?></td>
               </tr>
             </tbody>
           </table>
@@ -167,7 +167,7 @@ if ($stmt->rowCount() > 0) {
     }
     ?>
 
-    <div class="grid grid-cols-3 pb-10">
+    <div class="lg:grid lg:grid-cols-3 pb-10">
       <?php
       $polpaId = $polpa['id'];
       // Consulta SQL para obter todas as receitas relacionadas à polpa
@@ -180,10 +180,10 @@ if ($stmt->rowCount() > 0) {
         foreach ($receitasDaPolpa as $receita) {
       ?>
           <div>
-            <div class="mb-8 mt-4 items-center rounded-xl p-2">
-              <?php echo "<img class='rounded-md' loading='lazy' style='width: 350px; height: 250px;' src=" . $URI->base('/admin/uploads/receitas') . '/' . $receita['img'] . '>' ?>
+            <div class="mb-8 mt-4 rounded-xl p-2 flex justify-center">
+              <?php echo "<img class='rounded-md w-3/4' loading='lazy' src=" . $URI->base('/admin/uploads/receitas') . '/' . $receita['img'] . '>' ?>
             </div>
-            <div class="mb-8 mt-4 items-center rounded-xl p-2 text-orange-600 text-center text-xl font-semibold">
+            <div class="mb-8 mt-4 rounded-xl p-2 text-orange-600 text-center text-xl font-semibold">
               <?php echo $receita['name']; ?>
             </div>
             <div class="flex justify-center">

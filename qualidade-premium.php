@@ -41,24 +41,33 @@ $URI = new URI();
           </p>
         </div>
       </div>
-      <div class="p-6">
+      <div class="p-6 lg:order-last">
         <img src="./assets/img/logistica.jpg" loading="lazy" class="w-full rounded-md h-96  object-cover">
       </div>
     </div>
-    <div class="lg:pt-12 pb-12 lg:grid grid-cols-2 mt-2 items-center fade-in-up">
+    <div class="lg:pt-12 lg:grid grid-cols-2 mt-2 items-center fade-in-up">
       <div class="p-6">
-        <img src="./assets/img/fazenda2.png" loading="lazy" class="lg:w-4/5 w-full rounded-md h-72 object-cover lg:ml-12">
+        <img src="./assets/img/fazenda1.jpg" loading="lazy" class="lg:w-4/5 w-full rounded-md h-72 object-cover lg:ml-12">
       </div>
       <div class="lg:px-12">
         <div class="lg:mt-10 mb-4 text-justify">
-          <h1 class="lg:pt-10 pb-6 lg:font-semibold font-bold lg:text-xl text-xl flex">
+          <h1 class="pt-5 pb-6 lg:font-semibold font-bold lg:text-xl text-base flex">
             <!-- <i class="bi bi-record-fill pr-2 pt-1 text-xs"></i> -->
             Frutas rigorosamente selecionadas.
           </h1>
           <p class="">
             Da colheita ao momento que chegam na nossa indústria, todas as frutas passam por um processo eficiente de seleção.
           </p>
-          <h1 class="pt-10 pb-6 lg:font-semibold font-bold lg:text-xl text-base flex">
+        </div>
+      </div>
+    </div>
+    <div class="lg:pt-14 lg:grid grid-cols-2 mt-2 items-center fade-in-up">
+      <div class="p-6 fade-in-up lg:order-last">
+        <img src="./assets/img/tecnologia.jpg" loading="lazy" class="lg:w-4/5 w-full h-72 rounded-md object-cover lg:ml-12">
+      </div>
+      <div class="lg:px-12">
+        <div class="mb-6 text-justify">
+          <h1 class="pt-5 pb-6 lg:font-semibold font-bold lg:text-xl text-base flex">
             <!-- <i class="bi bi-record-fill pr-2 pt-1 text-xs"></i> -->
             Investimento na melhoria dos processos industriais.
           </h1>
@@ -68,10 +77,13 @@ $URI = new URI();
         </div>
       </div>
     </div>
-    <div class="lg:pt-14 pb-12 lg:grid grid-cols-2 mt-2 items-center fade-in-up">
+    <div class="lg:pt-14 lg:grid grid-cols-2 mt-2 items-center fade-in-up">
+      <div class="p-6 fade-in-up">
+        <img src="./assets/img/industria2.jpg" loading="lazy" class="lg:w-4/5 w-full h-72 rounded-md object-cover lg:ml-12">
+      </div>
       <div class="lg:px-12">
         <div class="mb-6 text-justify">
-          <h1 class="pt-10 pb-6 lg:font-semibold font-bold lg:text-xl text-base flex">
+          <h1 class="pt-5 pb-6 lg:font-semibold font-bold lg:text-xl text-base flex">
             <!-- <i class="bi blg:i-record-fill font-bold pr-2 pt-1 text-xsbase</i> -->
             Laboratório próprio equipado para análise em todas as etapas
           </h1>
@@ -80,17 +92,14 @@ $URI = new URI();
           </p>
         </div>
       </div>
-      <div class="p-6 fade-in-up">
-        <img src="./assets/img/foto_da_fabrica_2.jpg" loading="lazy" class="lg:w-4/5 w-full h-72 rounded-md object-cover lg:ml-12">
-      </div>
     </div>
-    <div class="lg:pt-12 pb-12 lg:grid grid-cols-2 mt-2 items-center fade-in-up">
-      <div class="p-6 fade-in-up">
-        <img src="./assets/img/foto_da_fabrica_2.jpg" loading="lazy" class="lg:w-4/5 w-full h-72 rounded-md object-cover lg:ml-12">
+    <div class="lg:pt-12 lg:grid grid-cols-2 mt-2 items-center fade-in-up">
+      <div class="p-6 fade-in-up lg:order-last">
+        <img src="./assets/img/IBD.jpg" loading="lazy" class="lg:w-10/12 w-full h-72 rounded-md object-cover lg:ml-12">
       </div>
       <div class="lg:px-12">
         <div class="lg:mt-10 mb-4 text-justify">
-          <h1 class="pt-10 pb-6 lg:font-semibold font-bold lg:text-xl text-xl flex">
+          <h1 class="pt-5 pb-6 lg:font-semibold font-bold lg:text-xl text-base flex">
             <!-- <i class="bi blg:i-record-fill font-bold pr-2 pt-1 text-xsbase</i> -->
             Certificação por auditoria da empresa IBD certificações para produção de produto
             ORGÂNICO.
@@ -101,10 +110,13 @@ $URI = new URI();
         </div>
       </div>
     </div>
-    <div class="lg:pt-12 pb-12 lg:grid grid-cols-2 mt-2 items-center fade-in-up">
+    <div class="lg:pt-12 lg:grid grid-cols-2 mt-2 items-center fade-in-up">
+      <div class="p-6 fade-in-up">
+        <img src="./assets/img/APPCC.png" loading="lazy" class="lg:w-full w-full h-72 rounded-md object-cover lg:ml-12">
+      </div>
       <div class="lg:px-12">
         <div class="lg:mt-14 mb-4 text-justify">
-          <h1 class="lg:pt-10 pb-5 lg:font-semibold font-bold lg:text-xl text-base flex">
+          <h1 class="pt-5 pb-6 lg:font-semibold font-bold lg:text-xl text-base flex">
             <!-- <i class="bi bi-record-fill pr-2 pt-1 text-xs"></i> -->
             Norma de APPCC implantada.
           </h1>
@@ -113,9 +125,7 @@ $URI = new URI();
           </p>
         </div>
       </div>
-      <div class="p-6 fade-in-up">
-        <img src="./assets/img/foto_da_fabrica_2.jpg" loading="lazy" class="lg:w-4/5 w-full h-72 rounded-md object-cover lg:ml-12">
-      </div>
+
     </div>
   </section>
 
