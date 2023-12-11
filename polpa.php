@@ -69,7 +69,7 @@ if ($stmt->rowCount() > 0) {
       </div>
       <div class="lg:px-10 p-2">
         <h1 class="lg:text-3xl text-3xl">
-          <span style="letter-spacing: 0.5px" class="font-black bg-clip-text bg-gradient-to-r from-color1 to-color1 text-color1">
+          <span style="letter-spacing: 0.5px" class="font-black text-color1">
             Modo de preparo:
           </span>
         </h1>
@@ -79,7 +79,7 @@ if ($stmt->rowCount() > 0) {
         <div class="py-4 mt-5 p-2">
           <table class="bg-green-300 w-full">
             <thead class="bg-green-600">
-              <tr class="">
+              <tr>
                 <th class="py-1">Nutriente</th>
                 <th class="py-1">100g</th>
                 <th class="py-1">% VD (*)</th>
