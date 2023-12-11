@@ -31,10 +31,14 @@ $URI = new URI();
 
             <?php foreach ($blogs as $blog) { ?>
                 <div>
-                    <div class="mb-8 mt-4 items-center rounded-xl p-2 flex justify-center zoom-container">
+                    <div class="mb-3 mt-4 items-center rounded-xl p-2 flex justify-center zoom-container">
                         <img class='custom-image w-full' loading="lazy" src='./admin/uploads/blogs/<?php echo $blog['img']; ?>'>
                     </div>
-
+                    <div class="lg:text-xl text-xl text-center">
+                        <span style="letter-spacing: 0.5px" class="text-gray-800">
+                            <?php echo $blog['name']; ?>
+                        </span>
+                    </div>
                     <div class="flex justify-center mt-4">
                         <a href="<?php echo $URI->base('/blog/' . slugify($blog['name'])); ?>" style="background: rgb(252,114,0); background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);" class="text-white border-2 border-white bg-white rounded-full font-semibold text-lg px-5 py-2 text-center hover:bg-orange-600 hover:text-black">Saiba mais</a>
                     </div>

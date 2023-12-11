@@ -22,7 +22,7 @@ $URI = new URI();
   <?php include "./components/navbar.php" ?>
   <div class="mx-auto max-w-7xl px-2 pt-10 pb-10">
     <h1 class="lg:text-4xl text-3xl">
-      <span style="letter-spacing: 0.5px" class="font-black bg-clip-text bg-gradient-to-r from-color1 to-color1 text-color1">
+      <span style="letter-spacing: 0.5px" class="text-color1">
         Receitas
       </span>
     </h1>
@@ -31,11 +31,11 @@ $URI = new URI();
 
       <?php foreach ($receitas as $receita) { ?>
         <div>
-          <div class="mb-8 mt-4 items-center rounded-xl p-2 zoom-container">
+          <div class="mb-3 mt-4 items-center rounded-xl p-2 zoom-container">
             <img class='custom-image w-full' loading="lazy" src='./admin/uploads/receitas/<?php echo $receita['img']; ?>'>
           </div>
           <div class="lg:text-xl text-xl text-center">
-              <span style="letter-spacing: 0.5px" class="font-bold bg-clip-text bg-gradient-to-r from-color1 to-color1 text-color1">
+              <span style="letter-spacing: 0.5px" class="text-gray-800">
               <?php echo $receita['name']; ?>
               </span>
           </div>
