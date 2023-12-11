@@ -33,7 +33,7 @@ $URI = new URI();
         </div>
         <div class="text-justify lg:pt-6 mt-5">
             <div class="">
-                <div class="fade-in-up">
+                <div class="lg:fade-in-up">
                     <div class="px-4 py-3">
                         <h1 class="lg:text-3xl text-3xl text-center">
                             <span style="letter-spacing: 0.5px" class="font-semibold text-gray-800">
@@ -44,10 +44,10 @@ $URI = new URI();
                             Os resíduos orgânicos gerados dos despolpamento das frutas (cascas e sementes de frutas) no processo de produção, são acumulados em caixas dispostas em pallets e enviadas para sítios onde será utilizado para a alimentação de animais e transformado em adubo para as plantas pelo processo de compostagem.
                         </p>
                         <div class="flex justify-center px-5 py-10">
-                            <img src="./assets/img/smart-energia.png" alt="" class="lg:w-1/4 h-2/4 md:w-full">
+                            <img src="./assets/img/smart-energia.png" alt="" loading="lazy" class="lg:w-1/4 h-2/4 md:w-full">
                         </div>
                     </div>
-                    <div class="fade-in-up border-t border-gray-300 py-4">
+                    <div class="lg:fade-in-up border-t border-gray-300 py-4">
                         <div class="lg:grid grid-cols-3 gap-8 p-5 text-center px-2">
                             <div>
                                 <div class="flex justify-center p-5">
@@ -97,10 +97,10 @@ $URI = new URI();
                                 A Fruta Polpa utiliza energia de fonte renováveis como (Eólica, Biomassa, PCH, Solar) de baixo impacto em suas instalações. Através do consumo de energia renovável e ambientalmente sustentável.
                             </p>
                             <div class="flex justify-center px-5 py-10">
-                                <img src="./assets/img/Selo-Energia-Renovavel.png" alt="" class="lg:w-1/4 h-2/4 md:w-full">
+                                <img src="./assets/img/Selo-Energia-Renovavel.png" alt="" loading="lazy" class="lg:w-1/4 h-2/4 md:w-full">
                             </div>
                         </div>
-                        <div class="fade-in-up border-t border-gray-300 py-2">
+                        <div class="lg:fade-in-up border-t border-gray-300 py-2">
                             <!-- <button style="background: rgb(252,114,0); background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);" class="saiba-mais text-white border-2 border-white bg-white rounded-full font-semibold text-lg px-5 py-2 text-center hover:bg-orange-600 hover:text-black">Saiba Mais</button> -->
                             <!-- <div class="cert-description"> -->
                             <div class="px-4">

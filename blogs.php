@@ -32,7 +32,7 @@ $URI = new URI();
             <?php foreach ($blogs as $blog) { ?>
                 <div>
                     <div class="mb-8 mt-4 items-center rounded-xl p-2 flex justify-center zoom-container">
-                        <img class='custom-image w-full' src='./admin/uploads/blogs/<?php echo $blog['img']; ?>'>
+                        <img class='custom-image w-full' loading="lazy" src='./admin/uploads/blogs/<?php echo $blog['img']; ?>'>
                     </div>
 
                     <div class="flex justify-center mt-4">

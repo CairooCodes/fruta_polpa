@@ -11,7 +11,7 @@
             foreach ($products as $product) {
             ?>
                 <div class="swiper-slide grid bg-white p-4 rounded-2xl shadow2">
-                    <img class='lazy max-h-2/3 object-cover' data-src='./admin/uploads/products/<?php echo $product['img'] ?>'>
+                    <img class='max-h-2/3 object-cover' loading="lazy" src='./admin/uploads/products/<?php echo $product['img'] ?>'>
                     <div class="flex justify-evenly pb-5 bg-green-600">
                         <a href="<?php echo $URI->base('/product/' . slugify($product['name'])); ?>">
                             </button>

@@ -10,7 +10,7 @@
     <div class="swiper-wrapper cursor-default">
       <?php for ($i = 1; $i <= 20; $i++) { ?>
         <div class="swiper-slide flex justify-center items-center">
-          <img class="lazy object-contain md:h-28 h-16" data-src='<?php echo $URI->base('/assets/img/parceiros/img' . $i . '.png') ?>' alt="">
+          <img class="object-contain md:h-28 h-16" loading="lazy" src='<?php echo $URI->base('/assets/img/parceiros/img' . $i . '.png') ?>' alt="">
         </div>
       <?php } ?>
 

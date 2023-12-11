@@ -37,38 +37,18 @@ $URI = new URI();
             A Qualidade Premium Fruta Polpa, vem do compromisso em levar até o nosso consumidor final um produto de alto padrão, sabor e valor nutricional.
           </p>
           <p class="pt-3">
-            Esse conceito vem surge a partir de momento em que todos os nossos fornecedores passam por um processo extremamente rígido para que nossa matéria prima seja de altíssima qualidade, o mesmo se aplica para todo o restante da produção das polpas congeladas que você compra no supermercado, conheça um pouco mais alguns tópicos que compõe essa parte que podemos considerar o nosso diferencial competitivo.
+            Esse conceito vem surge a partir do momento em que todos os nossos fornecedores são rigorosamente selecionados através de critérios técnicos e qualidade dos frutos, avaliada por especialistas.
           </p>
         </div>
       </div>
       <div class="p-6">
-        <img data-src="./assets/img/logistica.jpg" class="lazy w-full rounded-md h-96  object-cover">
+        <img src="./assets/img/logistica.jpg" loading="lazy" class="w-full rounded-md h-96  object-cover">
       </div>
     </div>
     <div class="lg:pt-12 pb-12 lg:grid grid-cols-2 mt-2 items-center fade-in-up">
       <div class="p-6">
-        <img data-src="./assets/img/fazenda2.png" class="lazy lg:w-4/5 w-full rounded-md h-72 object-cover lg:lg:ml-12">
+        <img src="./assets/img/fazenda2.png" loading="lazy" class="lg:w-4/5 w-full rounded-md h-72 object-cover lg:ml-12">
       </div>
-      <div class="lg:px-12">
-        <div class="lg:mt-10 mb-4 text-justify">
-          <h1 class="pt-10 pb-6 lg:font-semibold font-bold lg:text-xl text-base flex">
-            <!-- <i class="bi bi-record-fill pr-2 pt-1 text-xs"></i> -->
-            Produto de alto padrão de qualidade.
-          </h1>
-          <p class="lg:text-xl text-base pb-5">
-            Nosso produto de alto padrão de qualidade reflete o compromisso da Fruta Polpa em oferecer excelência, proporcionando uma experiência única e deliciosa para os nossos clientes
-          </p>
-          <h1 class="pt-10 pb-6 lg:font-semibold font-bold lg:text-xl text-base flex">
-            <!-- <i class="bi bi-record-fill pr-2 pt-1 text-xs"></i> -->
-            Fornecedores qualificados e aprovados.
-          </h1>
-          <p class="lg:text-xl text-base pb-5">
-            Todas as fazendas parceiras são selecionadas por critérios técnicos e qualidade dos frutos, avaliada por especialistas.
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="lg:pt-12 pb-12 lg:grid grid-cols-2 mt-2 items-center fade-in-up">
       <div class="lg:px-12">
         <div class="lg:mt-10 mb-4 text-justify">
           <h1 class="lg:pt-10 pb-6 lg:font-semibold font-bold lg:text-xl text-xl flex">
@@ -87,28 +67,27 @@ $URI = new URI();
           </p>
         </div>
       </div>
-      <div class="p-6">
-        <img data-src="./assets/img/fazenda2.png" class="lazy lg:w-4/5 w-full rounded-md h-72 object-cover lg:ml-12">
-      </div>
     </div>
     <div class="lg:pt-14 pb-12 lg:grid grid-cols-2 mt-2 items-center fade-in-up">
-      <div class="p-6 fade-in-up">
-        <img data-src="./assets/img/foto_da_fabrica_2.jpg" class="lazy lg:w-4/5 w-full h-72 rounded-md object-cover lg:ml-12">
-      </div>
       <div class="lg:px-12">
         <div class="mb-6 text-justify">
-          <h1 class="pt-10 pb-6 lg:font-semibold font-bold lg:text-xl text-xl flex">
+          <h1 class="pt-10 pb-6 lg:font-semibold font-bold lg:text-xl text-base flex">
             <!-- <i class="bi blg:i-record-fill font-bold pr-2 pt-1 text-xsbase</i> -->
-            Laboratório próprio equipado para análise da matéria prima e do produto acabado
-            lote a lote.
+            Laboratório próprio equipado para análise em todas as etapas
           </h1>
           <p class="lg:text-xl text-base pb-5">
-            Aqui todas as etapas do nosso processo produtivo são analisadas através de equipamentos de alta qualidade e nutricionistas
+            Aqui todas as etapas do nosso processo produtivo são analisadas através de equipamentos de alta qualidade e nutricionistas qualificados.
           </p>
         </div>
       </div>
+      <div class="p-6 fade-in-up">
+        <img src="./assets/img/foto_da_fabrica_2.jpg" loading="lazy" class="lg:w-4/5 w-full h-72 rounded-md object-cover lg:ml-12">
+      </div>
     </div>
     <div class="lg:pt-12 pb-12 lg:grid grid-cols-2 mt-2 items-center fade-in-up">
+      <div class="p-6 fade-in-up">
+        <img src="./assets/img/foto_da_fabrica_2.jpg" loading="lazy" class="lg:w-4/5 w-full h-72 rounded-md object-cover lg:ml-12">
+      </div>
       <div class="lg:px-12">
         <div class="lg:mt-10 mb-4 text-justify">
           <h1 class="pt-10 pb-6 lg:font-semibold font-bold lg:text-xl text-xl flex">
@@ -121,14 +100,8 @@ $URI = new URI();
           </p>
         </div>
       </div>
-      <div class="p-6 fade-in-up">
-        <img data-src="./assets/img/foto_da_fabrica_2.jpg" class="lazy lg:w-4/5 w-full h-72 rounded-md object-cover lg:ml-12">
-      </div>
     </div>
     <div class="lg:pt-12 pb-12 lg:grid grid-cols-2 mt-2 items-center fade-in-up">
-      <div class="p-6 fade-in-up">
-        <img data-src="./assets/img/foto_da_fabrica_2.jpg" class="lazy lg:w-4/5 w-full h-72 rounded-md object-cover lg:ml-12">
-      </div>
       <div class="lg:px-12">
         <div class="lg:mt-14 mb-4 text-justify">
           <h1 class="lg:pt-10 pb-5 lg:font-semibold font-bold lg:text-xl text-base flex">
@@ -139,6 +112,9 @@ $URI = new URI();
             O Sistema APPCC (Sistema de Análise de Perigos e Pontos Críticos de Controle) cuja sigla em inglês é HACCP (Hazard Analysis and Critical Control Point), consiste em um sistema de controle sobre a segurança do alimento mediante a análise e controle dos riscos biológicos, químicos e físicos em todas as etapas, desde a produção da matéria prima até a fabricação, distribuição e consumo.
           </p>
         </div>
+      </div>
+      <div class="p-6 fade-in-up">
+        <img src="./assets/img/foto_da_fabrica_2.jpg" loading="lazy" class="lg:w-4/5 w-full h-72 rounded-md object-cover lg:ml-12">
       </div>
     </div>
   </section>

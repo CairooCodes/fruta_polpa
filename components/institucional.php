@@ -19,7 +19,7 @@ color: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);" c
       <a href="<?php echo $URI->base("institucional"); ?>" class="leia-mais-link">Leia mais</a>
     </div>
     <div class="pt-10 lg:pr-32 lg:pb-20">
-      <img src="./assets/img/pagina_institucionalnova.jpg" class="w-full">
+      <img src="./assets/img/pagina_institucionalnova.jpg" loading="lazy" class="w-full">
     </div>
   </div>
 </section>

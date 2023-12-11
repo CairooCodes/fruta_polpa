@@ -32,7 +32,7 @@ $URI = new URI();
       <?php foreach ($polpas1 as $polpa1) { ?>
         <div>
           <div class="mb-8 mt-4 items-center rounded-xl p-2">
-            <img src='./admin/uploads/polpas/<?php echo $polpa1['img']; ?>'>
+            <img loading="lazy" src='./admin/uploads/polpas/<?php echo $polpa1['img']; ?>'>
           </div>
 
           <div class="flex justify-center mt-4">

@@ -63,7 +63,7 @@ if ($stmt->rowCount() > 0) {
         <?php echo $polpa['subject']; ?>
         <div class="rounded-xl shadow-md shadow-blue-200 mb-5">
           <div class="flex justify-center">
-            <?php echo "<img class='fade-in-up lazy' data-src=" . $URI->base('/admin/uploads/polpas') . '/' . $polpa['img'] . '>' ?>
+            <?php echo "<img class='fade-in-up' loading='lazy' src=" . $URI->base('/admin/uploads/polpas') . '/' . $polpa['img'] . '>' ?>
           </div>
         </div>
       </div>
@@ -181,7 +181,7 @@ if ($stmt->rowCount() > 0) {
       ?>
           <div>
             <div class="mb-8 mt-4 items-center rounded-xl p-2">
-              <?php echo "<img class='lazy rounded-md' style='width: 350px; height: 250px;' data-src=" . $URI->base('/admin/uploads/receitas') . '/' . $receita['img'] . '>' ?>
+              <?php echo "<img class='rounded-md' loading='lazy' style='width: 350px; height: 250px;' src=" . $URI->base('/admin/uploads/receitas') . '/' . $receita['img'] . '>' ?>
             </div>
             <div class="mb-8 mt-4 items-center rounded-xl p-2 text-orange-600 text-center text-xl font-semibold">
               <?php echo $receita['name']; ?>

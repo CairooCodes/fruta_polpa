@@ -32,7 +32,7 @@ $URI = new URI();
       <?php foreach ($receitas as $receita) { ?>
         <div>
           <div class="mb-8 mt-4 items-center rounded-xl p-2 zoom-container">
-            <img class='custom-image w-full' src='./admin/uploads/receitas/<?php echo $receita['img']; ?>'>
+            <img class='custom-image w-full' loading="lazy" src='./admin/uploads/receitas/<?php echo $receita['img']; ?>'>
           </div>
           <div class="lg:text-xl text-xl text-center">
               <span style="letter-spacing: 0.5px" class="font-bold bg-clip-text bg-gradient-to-r from-color1 to-color1 text-color1">

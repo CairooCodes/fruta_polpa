@@ -11,7 +11,7 @@
             <?php foreach ($blogs as $blog) { ?>
               <div class="swiper-slide">
                 <div class="lazy max-h-2/3 object-cover">
-                  <img src='./admin/uploads/blogs/<?php echo $blog['img'] ?>'>
+                  <img loading="lazy" src='./admin/uploads/blogs/<?php echo $blog['img'] ?>'>
                   <div class="details rounded-b-2xl absolute bottom-0 w-full h-2/5">
                     <h3><?php echo $blog['name'] ?></h3>
                   </div>

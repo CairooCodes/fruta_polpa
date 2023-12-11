@@ -23,30 +23,30 @@
     </div>
     <div class="lg:px-16 fade-in-up lg:py-10 pt-4">
       <div class="max-w-full lg:pt-12 mx-auto grid grid-cols-2">
-        <img data-src="./assets/img/qualidade_premium.jpg" class="lazy w-full h-28  object-cover rounded-tl-md">
+        <img src="./assets/img/qualidade_premium.jpg" loading="lazy" class="w-full h-28  object-cover rounded-tl-md">
         <div class="flex justify-center items-center text-white p-3 rounded-tr-md" style="background-color: #f7640e;">
           <h1 class="font-bold  text-sm">QUALIDADE PREMIUM</h1>
         </div>
         <div class="flex justify-center items-center text-white p-3" style="background-color: #f7640e;">
           <h1 class="font-bold  text-sm">TECNOLOGIA</h1>
         </div>
-        <img data-src="./assets/img/tecnologia.jpg" class="lazy w-full h-28 object-cover">
-        <img data-src="./assets/img/materiaprimaselecionada.png" class="lazy w-full h-28  object-cover">
+        <img src="./assets/img/tecnologia.jpg" loading="lazy" class="w-full h-28 object-cover">
+        <img src="./assets/img/materiaprimaselecionada.png" loading="lazy" class="w-full h-28  object-cover">
         <div class="flex justify-center items-center text-white text-center p-3" style="background-color:  #f7640e;">
           <h1 class="font-bold  text-sm">MATÉRIA PRIMA SELECIONADA</h1>
         </div>
         <div class="flex justify-center items-center text-white p-3" style="background-color: #f7640e;">
           <h1 class="font-bold  text-sm">SELEÇÃO</h1>
         </div>
-        <img data-src="./assets/img/selecao.jpg" class="lazy w-full h-28 object-cover">
-        <img data-src="./assets/img/producao.jpg" class="lazy w-full h-28 object-cover">
+        <img src="./assets/img/selecao.jpg" loading="lazy" class="w-full h-28 object-cover">
+        <img src="./assets/img/producao.jpg" loading="lazy" class="w-full h-28 object-cover">
         <div class="flex justify-center items-center text-white p-3" style="background-color: #f7640e;">
           <h1 class="font-bold  text-sm">PRODUÇÃO</h1>
         </div>
         <div class="flex justify-center items-center text-white p-3 rounded-bl-md" style="background-color: #f7640e;">
           <h1 class="font-bold  text-sm">LOGÍSTICA</h1>
         </div>
-        <img data-src="./assets/img/logistica.jpg" class="lazy w-full rounded-br-md h-28  object-cover">
+        <img src="./assets/img/logistica.jpg" loading="lazy" class="w-full rounded-br-md h-28  object-cover">
       </div>
     </div>
   </div>

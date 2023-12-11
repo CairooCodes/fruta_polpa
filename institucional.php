@@ -61,7 +61,7 @@ $URI = new URI();
           </div>
         </div>
         <div class="">
-          <img class="w-full rounded-b-2xl md:rounded-b-none  md:rounded-r-2xl" src="<?php echo $URI->base("/assets/img/institucional.png"); ?>" alt="">
+          <img loading="lazy" class="w-full rounded-b-2xl md:rounded-b-none  md:rounded-r-2xl" src="<?php echo $URI->base("/assets/img/institucional.png"); ?>" alt="">
         </div>
       </div>
     </section>
@@ -296,6 +296,7 @@ $URI = new URI();
       </div>
     </section>
     <!-- MOBILE -->
+
     <div class="mx-auto max-w-6xl pt-2 about">
       <section class="lg:mt-16">
         <div class="lg:pt-4 lg:p-0 lg:p-10">
@@ -308,16 +309,16 @@ $URI = new URI();
               </h6>
 
               <p class="text-medium font-sans text-justify pb-5">
-                A Fruta Polpa apoia o setor da agricultura na compra da matéria prima, garantindo o estoque da safra o ano inteiro, também é feita uma seleção rigorosa dos produtos a serem comprados para a fabricação dos produtos.
+                A Fruta Polpa apoia o setor da agricultura através da compra da matéria prima durante o ano inteiro. Temos fornecedores de confiança que trabalham com frutas de qualidade superior, o que garante para nossos clientes o melhor produto.
               </p>
             </div>
 
             <div class="owl-carousel carousel-indu">
               <div class="item">
-                <img src="./assets/img/fazenda.png" class="rounded-lg h-60 cover" alt="fazenda">
+                <img loading="lazy" src="./assets/img/fazenda1.jpg" class="rounded-lg h-60 cover" alt="fazenda">
               </div>
               <div class="item">
-                <img src="./assets/img/fazenda2.png" class="rounded-lg h-60 cover" alt="fazenda2">
+                <img loading="lazy" src="./assets/img/fazenda2.jpg" class="rounded-lg h-60 cover" alt="fazenda">
               </div>
             </div>
           </div>
@@ -336,17 +337,17 @@ $URI = new URI();
               </h6>
 
               <p class="text-medium font-sans text-justify pb-5">
-                Contando com mais de 20 veículos e posto de abastecimento na própria indústria, a logística empregada na distribuição do produto final atende cerca de 2000 clientes ativos, em 1000 cidades, incluindo grandes redes como Supermercado Mateus, Carvalho Supermercado, Pão de Açúcar, Extra, Supermercado Líder e Grupo Jorge Batista. <br>
-                Com profissionais diretos e indiretos: 187 Colaboradores, 11 Representantes comerciais, 34 MEI's e 22 Terceirizados.
+                Contando com mais de 20 veículos e posto de abastecimento próprio, a logística empregada na distribuição do produto final atende mais de 1500 clientes ativos, incluindo grandes redes como Mix Mateus, Carvalho Supermercado, Pão de Açúcar, Extra, Supermercado Líder e Grupo Jorge Batista<br>
+                Contamos 187 colaboradores com diretos e indiretos, 11 representantes comerciais, 34 MEI's e 22 terceirizados.
               </p>
             </div>
 
             <div class="owl-carousel carousel-indu order-first">
               <div class="item">
-                <img src="./assets/img/foto_da_fabrica_2.jpg" class="rounded-lg h-56 cover" alt="industria">
+                <img loading="lazy" src="./assets/img/industria1.jpg" class="rounded-lg h-56 cover" alt="industria">
               </div>
               <div class="item">
-                <img src="./assets/img/industria.png" class="rounded-lg h-56 cover" alt="industria2">
+                <img loading="lazy" src="./assets/img/industria2.jpg" class="rounded-lg h-56 cover" alt="industria">
               </div>
             </div>
 
@@ -364,16 +365,16 @@ $URI = new URI();
                 </span>
               </h6>
               <p class="text-medium font-sans text-justify pb-5">
-                Constantemente realizamos diversas ações promocionais nas nossas plataformas digitais bem como ações externas com degustações, sejam nos supermercados, eventos relacionados a saúde e esportes, academias, parques públicos e muito mais, sempre com um incrível feedback de quem prova nossos produtos pela primeira vez ou como forma de elogios para a marca de quem já nos conhece.
+              Constantemente realizamos ações promocionais nas nossas plataformas digitais bem como ações externas através de degustações em supermercados, eventos relacionados a saúde esportes, academias, parques públicos e muito mais, sempre com um incrível feedback de quem prova nossos produtos pela primeira vez ou como forma de elogios para a marca de quem já nos conhece.
               </p>
             </div>
 
             <div class="owl-carousel carousel-indu">
               <div class="item">
-                <img src="./assets/img/supermercado.png" class="rounded-lg h-60" alt="supermercado">
+                <img loading="lazy" src="./assets/img/supermercado.png" class="rounded-lg h-60" alt="supermercado">
               </div>
               <div class="item">
-                <img src="./assets/img/supermercado2.png" class="rounded-lg h-60" alt="supermercado2">
+                <img loading="lazy" src="./assets/img/supermercado2.png" class="rounded-lg h-60" alt="supermercado2">
               </div>
             </div>
           </div>
