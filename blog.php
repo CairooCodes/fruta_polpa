@@ -62,7 +62,7 @@ if ($stmt->rowCount() > 0) {
       <h2>
         <?php echo $blog['description']; ?>
       </h2>
-      <div class="swiper swiper_blog">
+      <div class="swiper swiper_blog z-0">
         <div class="swiper-wrapper">
           <a class="swiper-slide">
             <?php echo "<img class='rounded-md object-cover blog-image' loading='lazy' src=" . $URI->base('/admin/uploads/blogs') . '/' . $blog['img'] . '>' ?>

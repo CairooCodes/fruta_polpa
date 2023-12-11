@@ -3,7 +3,7 @@
   <h1 class="lg:text-7xl text-3xl text-center"><span style="letter-spacing: 0.5px;" class="font-black bg-clip-text bg-gradient-to-r from-color1 to-color1 text-color1">Polpas</span></h1>
   <div class="max-w-full px-4 lg:pt-12 pb-12 lg:grid grid-cols-2 mt-2">
     <div class="lg:pl-72 px-5 pt-14">
-      <div class="swiper swiper_products_type">
+      <div class="swiper swiper_products_type z-0">
         <div class="swiper-wrapper">
           <div class="swiper-slide pb-5">
             <div class="transition duration-500 bg-white rounded-2xl shadow2">
@@ -304,7 +304,7 @@ background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%
       </div>
     </div>
     <div class="lg:pr-72 px-5 pt-14">
-      <div class="swiper swiper_products_type2">
+      <div class="swiper swiper_products_type2 z-0">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <div class=" transition duration-500 bg-white rounded-2xl shadow2 ">

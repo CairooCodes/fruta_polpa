@@ -1,5 +1,5 @@
 <section class="bg-color1  my-12 mx-8 rounded-2xl">
-    <div class="swiper swiper_products pt-12 pb-6  px-5 rounded-2xl shadow2">
+    <div class="swiper swiper_products pt-12 pb-6  px-5 rounded-2xl shadow2 z-0">
         <h1 class="lg:text-5xl text-3xl text-center">
             <span style="letter-spacing: 0.5px" class="font-black bg-clip-text bg-gradient-to-r from-color1 to-color1 text-color1">
                 Nossos Produtos

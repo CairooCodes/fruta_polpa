@@ -2,7 +2,7 @@
   <div class="lg:flex lg:justify-center lg:max-w-screen-xl">
     <div class="w-full">
       <h3 class="mb-8 lg:text-4xl text-2xl font-bold text-center text-white">Blog Fruta Polpa</h3>
-      <section class="carousel-3D-swiper-section">
+      <section class="carousel-3D-swiper-section z-0">
         <!-- Slider main container -->
         <div class="carousel-3D-swiper">
           <!-- Additional required wrapper -->
