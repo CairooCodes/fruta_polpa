@@ -24,7 +24,7 @@ $page = 'trabalhe-conosco';
 <html lang="pt-br">
 
 <head>
-  <title>Trabalhe Conosco - Fruta Polpa</title>
+  <title>Dashboard - Fruta Polpa</title>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -53,9 +53,6 @@ $page = 'trabalhe-conosco';
     <div class="max-w-7xl px-4 pb-8 mx-auto py-8">
       <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
         <div class="flex items-center justify-between py-4 bg-white">
-          <div>
-
-          </div>
           <div class="flex space-x-2">
             <button id="dropdownActionButton" data-dropdown-toggle="dropdownAction" class="inline-flex items-center text-gray-500 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-sm px-3 py-1.5" type="button">
               Opções
@@ -92,6 +89,9 @@ $page = 'trabalhe-conosco';
                 Área de Interesse
               </th>
               <th scope="col" class="px-6 py-3">
+                Status
+              </th>
+              <th scope="col" class="px-6 py-3">
                 Ação
               </th>
             </tr>
@@ -105,15 +105,38 @@ $page = 'trabalhe-conosco';
                   </div>
                 </th>
                 <th class="px-6 py-3">
-                <div class="text-base font-semibold"><?php echo $recruitment['office']; ?></div>
+                  <div class="text-base font-semibold"><?php echo $recruitment['office']; ?></div>
                 </th>
+                <td class="px-6 py-4">
+                  <div class="flex items-center space-x-2">
+                    <div class="text-base font-semibold"><?php echo $recruitment['status']; ?></div>
+                    <div class="h-2.5 w-2.5 rounded-full 
+                    <?php
+                    if ($recruitment['status'] == 'Recusado') {
+                      echo "bg-red-500";
+                    }
+                    if ($recruitment['status'] == 'Confirmado') {
+                      echo "bg-green-500";
+                    }
+                    if (($recruitment['status'] == 'Pendente') or ($recruitment['status'] == 'PENDENTE')) {
+                      echo "bg-yellow-500";
+                    }
+                    ?>                           
+                    mr-2"></div>
+                  </div>
+                </td>
                 <td class="px-6 py-4">
                   <a href="./controllers/delete_recruitment.php?id=<?php echo $recruitment['id']; ?>" type="button" class="font-medium text-red-600 hover:underline">Excluir</a>
                 </td>
+                <td class="px-6 py-4">
+                  <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded btnAbrirModal" data-parametro="<?php echo htmlspecialchars(json_encode($recruitment)); ?>">Ver mais</button>
+                </td>
+
               </tr>
             <?php } ?>
           </tbody>
         </table>
+        <?php include "./components/modal_view_recruitment.php"; ?>
       </div>
     </div>
   </div>
