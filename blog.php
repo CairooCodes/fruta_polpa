@@ -20,7 +20,7 @@ function remove_simbolos_acentos($string)
 
 
 $url = explode("/", $_SERVER['REQUEST_URI']);
-$idpost = $url[3];
+$idpost = $url[2];
 
 $idpost2 = "";
 
@@ -44,35 +44,33 @@ if ($stmt->rowCount() > 0) {
 <html lang="pt-br">
 
 <head>
-<?php include "components/heads.php"; ?>
-
+  <?php include "components/heads.php"; ?>
 </head>
 
 <body>
   <?php include "./components/navbar.php" ?>
-  <div class="pt-16 pb-10">
-    <h1 class="lg:text-5xl text-3xl text-center">
-      <span style="letter-spacing: 0.5px,; color:#ff851e" class="font-black text-color1">
-        <?php echo $blog['name']; ?>
-      </span>
-    </h1>
-  </div>
   <section class="mx-auto max-w-7xl px-2">
-    <div class="max-w-screen-xl px-4 py-8 mx-auto space-y-12 lg:space-y-20 lg:py-6 lg:px-6">
-      <h2>
-        <?php echo $blog['description']; ?>
-      </h2>
-      <div class="swiper swiper_blog z-0">
-        <div class="swiper-wrapper">
-          <a class="swiper-slide">
-            <?php echo "<img class='rounded-md object-cover blog-image' loading='lazy' src=" . $URI->base('/admin/uploads/blogs') . '/' . $blog['img'] . '>' ?>
-          </a>
+    <div class="max-w-screen-xl pt-10 mx-auto lg:grid grid-cols-2 gap-10 pb-10">
+      <div>
+        <h1 class="lg:text-4xl text-3xl text-color1 pb-3 text-center">
+          <?php echo $blog['name']; ?>
+        </h1>
+        <div class="swiper swiper_blog z-0">
+          <div class="swiper-wrapper">
+            <a class="swiper-slide">
+              <?php echo "<img class='rounded-md object-cover w-full' loading='lazy' src=" . $URI->base('/admin/uploads/blogs') . '/' . $blog['img'] . '>' ?>
+            </a>
+          </div>
+          <div class="swiper-button-next text-white"></div>
+          <div class="swiper-button-prev text-white"></div>
+          <div class="swiper-pagination swiper-pagination-blog-main"></div>
         </div>
-        <div class="swiper-button-next text-white"></div>
-        <div class="swiper-button-prev text-white"></div>
-        <div class="swiper-pagination swiper-pagination-blog-main"></div>
       </div>
-    </div>
+      <div>
+        <h2 class="pt-3">
+          <?php echo $blog['description']; ?>
+        </h2>
+      </div>
   </section>
 
   <?php include "./components/footer.php" ?>
@@ -105,7 +103,7 @@ if ($stmt->rowCount() > 0) {
       },
     });
   </script>
-  
+
 </body>
 
 </html>

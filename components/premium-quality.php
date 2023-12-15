@@ -16,7 +16,7 @@
             A Qualidade Premium Fruta Polpa, vem do compromisso em levar até o nosso consumidor final um produto de alto padrão, sabor e valor nutricional.
           </p>
           <p class="pt-3">
-            Esse conceito vem surge a partir de momento em que todos os nossos fornecedores passam por um processo extremamente rígido para que nossa matéria prima seja de altíssima qualidade, o mesmo se aplica para todo o restante da produção das polpas congeladas que você compra no supermercado, conheça um pouco mais alguns tópicos que compõe essa parte que podemos considerar o nosso diferencial competitivo.
+            Esse conceito surge a partir do momento em que todos os nossos fornecedores passam por um processo extremamente rígido para que nossa matéria prima seja de altíssima qualidade, o mesmo se aplica para todo o restante da produção das polpas congeladas que você compra no supermercado, conheça um pouco mais em alguns tópicos que compõe essa parte que podemos considerar o nosso diferencial competitivo.
           </p>
       </div>
       <a href="<?php echo $URI->base("qualidade-premium"); ?>" class="leia-mais-link">Leia mais</a>

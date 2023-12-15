@@ -87,7 +87,7 @@ $page = 'dash';
               </a>
             </div>
             <div class="md:col-span-2 lg:col-span-1">
-              <a href="servicos.php">
+              <a href="blogs.php">
                 <div class="h-full py-8 px-6 space-y-6 rounded-xl text-2xl border border-gray-200 bg-color1 text-white">
                   <div class="flex space-x-2">
                     <i class="bi bi-journals"></i>

@@ -20,7 +20,7 @@ function remove_simbolos_acentos($string)
 
 
 $url = explode("/", $_SERVER['REQUEST_URI']);
-$idpost = $url[3];
+$idpost = $url[2];
 
 $idpost2 = "";
 
@@ -55,10 +55,8 @@ if ($stmt->rowCount() > 0) {
   <section class="mx-auto max-w-7xl px-2">
     <div class="max-w-screen-xl pt-10 mx-auto lg:grid grid-cols-2 pb-10">
       <div>
-        <h1 class="lg:text-4xl text-3xl">
-          <span style="letter-spacing: 0.5px;" class="font-black bg-clip-text bg-gradient-to-r from-color1 to-color1 text-color1">
-            <?php echo $polpa['name']; ?>
-          </span>
+        <h1 class="lg:text-4xl text-3xl text-color1 pb-3">
+          <?php echo $polpa['name']; ?>
         </h1>
         <?php echo $polpa['subject']; ?>
         <div class="rounded-xl shadow-md shadow-blue-200 mb-5">
@@ -68,18 +66,16 @@ if ($stmt->rowCount() > 0) {
         </div>
       </div>
       <div class="lg:px-10 p-2">
-        <h1 class="lg:text-3xl text-3xl">
-          <span style="letter-spacing: 0.5px" class="font-black text-color1">
-            Modo de preparo:
-          </span>
+        <h1 class="lg:text-3xl text-3xl text-color1">
+          Modo de preparo:
         </h1>
         <h1 class="text-xl m-2">
           <?php echo $polpa['description']; ?>
         </h1>
         <div class="py-4 mt-5 p-2">
-          <table class="bg-white w-full">
-            <thead class="bg-orange-100">
-              <tr>
+          <table class="bg-hite w-full">
+            <thead class="bg-green-700">
+              <tr class="text-white">
                 <th class="py-1">Nutriente</th>
                 <th class="py-1">100g</th>
                 <th class="py-1">% VD (*)</th>
@@ -126,7 +122,7 @@ if ($stmt->rowCount() > 0) {
               <tr>
                 <td class="pl-2 py-2">Gorduras totais</td>
                 <td class="text-center"><?php echo $nutri['gorduras_totais'] ?></td>
-                <td class="text-center"class="text-center"><?php echo $nutri['gorduras_totaisvd'] ?></td>
+                <td class="text-center" class="text-center"><?php echo $nutri['gorduras_totaisvd'] ?></td>
               </tr>
               <tr class="bg-orange-400">
                 <td class="pl-2 py-2">Gorduras saturadas</td>

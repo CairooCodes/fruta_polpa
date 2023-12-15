@@ -40,9 +40,6 @@ $URI = new URI();
                                 Smart Energia
                             </span>
                         </h1>
-                        <p class="lg:text-base lg:text-base text-xl py-6 lg:py-8">
-                            Os resíduos orgânicos gerados dos despolpamento das frutas (cascas e sementes de frutas) no processo de produção, são acumulados em caixas dispostas em pallets e enviadas para sítios onde será utilizado para a alimentação de animais e transformado em adubo para as plantas pelo processo de compostagem.
-                        </p>
                         <div class="flex justify-center px-5 py-10">
                             <img src="./assets/img/smart-energia.png" alt="" loading="lazy" class="lg:w-1/4 h-2/4 md:w-full">
                         </div>

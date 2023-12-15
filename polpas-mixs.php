@@ -35,7 +35,7 @@ $URI = new URI();
                     </div>
 
                     <div class="flex justify-center mt-4">
-                        <a href="<?php echo $URI->base('/polpa/' . slugify($polpa2['name'])); ?>" style="background: rgb(252,114,0); background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);" class="saiba-mais text-white border-2 border-white bg-white rounded-full font-semibold text-lg px-5 py-2 text-center hover:bg-orange-600 hover:text-black"><?php echo $polpa2['name']; ?></a>
+                        <a href="<?php echo $URI->base('polpa/' . slugify($polpa2['name'])); ?>" style="background: rgb(252,114,0); background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);" class="saiba-mais text-white border-2 border-white bg-white rounded-full font-semibold text-lg px-5 py-2 text-center hover:bg-orange-600 hover:text-black"><?php echo $polpa2['name']; ?></a>
                     </div>
                 </div>
 

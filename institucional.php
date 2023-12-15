@@ -65,11 +65,11 @@ $URI = new URI();
         </div>
       </div>
     </section>
-    <section class="bg-white max-w-full header-institucional">
-      <div class="max-w-full lg:pl-24 mx-auto lg:grid grid-cols-2 gap-10">
+    <section class="bg-white mx-auto md:max-w-7xl py-8 px-4 lg:mb-10 md:mb-10 sm:mb-4 header-institucional">
+      <div class="max-w-full lg:pl-24 mx-auto grid lg:grid-cols-2 gap-10">
         <div class="lg:mt-14 mt-6 text-justify">
-          <p style="letter-spacing: 0.5px;" class="text-gray-800">Há mais de 15 anos, a <span class="font-black text-color1">Fruta Polpa</span> é presença marcante na mesa dos piauienses. Aliada da saúde e do bem-estar, é uma das maiores do Brasil no segmento de polpa de frutas, sendo reconhecida como “A Melhor do Brasil” por sua qualidade, sabor e excelência em todos os processos.</p>
-          <p style="letter-spacing: 0.5px;" class="text-gray-800 pt-3">Nossa história começa em 1994, graças à visão e perseverança do fundador Sr. Marcelo Teixeira e Sra. Denise Teixeira, que iniciaram o negócio de forma artesanal, com pouquíssima estrutura e uma única ideia: Levar mais qualidade de vida e sabor para os piauienses.</p>
+          <p style="letter-spacing: 0.5px;" class="text-gray-800">Há mais de 20 anos, a <span class="font-black text-color1">Fruta Polpa</span> é presença marcante na mesa dos piauienses. Aliada da saúde e do bem-estar, é uma das maiores do Brasil no segmento de polpa de frutas, sendo reconhecida como “A Melhor do Brasil” por sua qualidade, sabor e excelência em todos os processos.</p>
+          <p style="letter-spacing: 0.5px;" class="text-gray-800 pt-3">Nossa história começa em 1995, graças à visão e perseverança do fundador Sr. Marcelo Teixeira e Sra. Denise Teixeira, que iniciaram o negócio de forma artesanal, com pouquíssima estrutura e uma única ideia: Levar mais qualidade de vida e sabor para os piauienses.</p>
           <p style="letter-spacing: 0.5px;" class="text-gray-800 pt-3">O negócio cresceu, e o desejo de melhoria contínua fez com que a indústria passasse por inúmeras transformações, desde sua localização até o processo de produção, passando pelos produtos e logística.</p>
           <p style="letter-spacing: 0.5px;" class="text-gray-800 pt-3">Atualmente temos abrangência nacional, além do mercado piauiense, atendemos também Maranhão, Ceará, Paraíba, Pernambuco, Bahia, Pará, Tocantins, Goiás, Rio de Janeiro e Distrito Federal.</p>
           <p style="letter-spacing: 0.5px;" class="text-gray-800 pt-3">Nossa meta é ser líder de mercado no Brasil até 2028, e para isso contamos com um time de excelência, processos bem estruturados, logística e claro produtos diferenciados que agradam não apenas pelo sabor, mas pelo compromisso em levar até a milhões de famílias brasileiras um produto de alta confiabilidade.</p>
@@ -81,7 +81,7 @@ $URI = new URI();
     </section>
     <section>
       <div>
-        <div class="container flex flex-col mx-auto bg-green-700 text-white">
+        <div class="container flex flex-col mx-auto bg-green-700 text-white lg:mb-2 mb-5">
           <div class="w-full">
             <div class="container flex flex-col items-center gap-16 mx-auto my-12">
               <div class="grid w-full grid-cols-1 lg:grid-cols-5 md:grid-cols-2 gap-y-8">
@@ -113,14 +113,10 @@ $URI = new URI();
     </section>
     <section class="lg:py-10 px-4 lg:mb-22 lg:mt-2">
       <h1 style="letter-spacing: 0.5px;" class="font-black bg-clip-text bg-gradient-to-r from-color1 to-color1 text-gray-700 text-center lg:text-4xl py-4 px-2 text-xl">Nossa Linha do Tempo</h1>
-      <!-- <h2 class="lg:mt-5 mt-6 text-justify lg:px-16 mx-auto">
-        <p style="letter-spacing: 0.5px;" class="text-gray-800">A Fruta Polpa nasceu em meados dos anos 90 da vontade de levar mais saúde e um produto de qualidade à população piauiense. No início éramos apenas 04 colaboradores, um dosador e um funil, e assim iniciamos aquela que iria se tornar uma das maiores indústrias do segmento no Brasil.</p>
-        <p style="letter-spacing: 0.5px;" class="text-gray-800 pt-3"><span class="font-bold text-color1">Nosso Propósito: </span>Produzir um produto com alto padrão de qualidade, preço justo e que melhore a qualidade de vida dos consumidores. Além disso, queremos nos tornar a maior e marca de polpa de fruta do Brasil.</p>
-      </h2> -->
       <div class="hidden lg:block pt-10">
         <div class="grid grid-cols-12 max-w-screen-xl mx-auto">
           <div class="col-span-2">
-            <h1 class="relative right-12 -bottom-10 font-extrabold text-color1">1995</h1>
+            <h1 class="relative right-4 -bottom-10 text-color1 text-md">1995</h1>
             <h1 class="pb-4 font-extrabold text-gray-800 text-md">Fundação</h1>
             <div class="border-l-2">
               <div class="w-3 h-3 bg-green-600 relative left-0 -top-1 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
@@ -132,7 +128,7 @@ $URI = new URI();
           </div>
           <div></div>
           <div class="col-span-3">
-            <h1 class="relative right-12 -bottom-10 font-extrabold text-color1">2002</h1>
+            <h1 class="relative right-4 -bottom-10 text-color1 text-md">2002</h1>
             <h1 class="pb-4 font-extrabold text-gray-800 text-md">Primeiro Centro de Distribuição</h1>
             <div class="border-l-2">
               <div class="w-3 h-3 bg-green-600 relative left-0 -top-1 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
@@ -143,7 +139,7 @@ $URI = new URI();
             </div>
           </div>
           <div class="col-span-3">
-            <h1 class="relative right-12 -bottom-10 font-extrabold text-color1">2004</h1>
+            <h1 class="relative right-4 -bottom-10 text-color1 text-md">2004</h1>
             <h1 class="pb-4 pl-2 font-extrabold text-gray-800 text-md">Indústria Fruta Polpa é inaugurada</h1>
             <div class="border-l-2">
               <div class="w-3 h-3 bg-green-600 relative left-0 -top-1 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
@@ -157,7 +153,7 @@ $URI = new URI();
             <div></div>
           </div>
           <div class="col-span-2">
-            <h1 class="relative right-12 -bottom-10 font-extrabold text-color1">2019/2023</h1>
+            <h1 class="relative right-12 -bottom-10 text-color1 text-md">2019/2023</h1>
             <h1 class="pb-4 pl-2 font-extrabold text-gray-800 text-md">Início da expansão</h1>
             <div class="border-l-2">
               <div class="w-3 h-3 bg-green-600 relative left-0 -top-1 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
@@ -180,7 +176,7 @@ $URI = new URI();
                 </div>
                 <div class="w-3 h-3 bg-green-600 relative left-0 -bottom-2 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
               </div>
-              <h1 class="relative right-28 -top-3 font-extrabold text-color1">1999/2002</h1>
+              <h1 class="relative right-28 -top-3 text-color1 text-md">1999/2002</h1>
               <h1 class="pb-4 font-extrabold text-gray-800 text-md">Primeiros investimentos em tecnologia</h1>
             </div>
             <div></div>
@@ -192,7 +188,7 @@ $URI = new URI();
                 </div>
                 <div class="w-3 h-3 bg-green-600 relative left-0 -bottom-2 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
               </div>
-              <h1 class="relative right-14 -top-3 font-extrabold text-color1">2003</h1>
+              <h1 class="relative right-14 -top-3 text-color1 text-md">2003</h1>
               <h1 class="pb-4 pl-2 font-extrabold text-gray-800 text-md">Início da expansão</h1>
             </div>
             <div></div>
@@ -204,7 +200,7 @@ $URI = new URI();
                 </div>
                 <div class="w-3 h-3 bg-green-600 relative left-0 -bottom-2 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
               </div>
-              <h1 class="relative right-14 -top-3 font-extrabold text-color1">2012</h1>
+              <h1 class="relative right-14 -top-3 text-color1 text-md">2012</h1>
               <h1 class="pb-4 pl-2 font-extrabold text-gray-800 text-md">Ampliando a Fábrica para dobrar a capacidade</h1>
             </div>
           </div>
@@ -337,7 +333,7 @@ $URI = new URI();
               </h6>
 
               <p class="text-medium font-sans text-justify pb-5">
-                Contando com mais de 20 veículos e posto de abastecimento próprio, a logística empregada na distribuição do produto final atende mais de 1500 clientes ativos, incluindo grandes redes como Mix Mateus, Carvalho Supermercado, Pão de Açúcar, Extra, Supermercado Líder e Grupo Jorge Batista<br>
+                Contando com mais de 20 veículos e posto de abastecimento próprio, a logística empregada na distribuição do produto final atende mais de 1500 clientes ativos, incluindo grandes redes como Mix Mateus, Carrefuor, Carvalho Supermercado, Pão de Açúcar, Coco Bambu, Extra, Supermercado Líder e Grupo Jorge Batista<br>
                 Contamos 187 colaboradores com diretos e indiretos, 11 representantes comerciais, 34 MEI's e 22 terceirizados.
               </p>
             </div>
