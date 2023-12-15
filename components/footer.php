@@ -59,12 +59,12 @@
         <div class="mb-10 list-none">
           <li class="mt-3">
             <a href="<?php echo $URI->base("polpas-tradicionais"); ?>" class="text-gray-600 cursor-pointer hover:text-orange-500">
-              Polpas Tradicionais
+              Linha Tradicional
             </a>
           </li>
           <li class="mt-3">
             <a href="<?php echo $URI->base("polpas-mixs"); ?>" class="text-gray-600 cursor-pointer hover:text-orange-500">
-              Polpas Mix
+              Linha Mix
             </a>
           </li>
           <li class="mt-3">
