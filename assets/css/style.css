@@ -117,6 +117,10 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 
+.post-intro {
+  font-family: 'Raleway', sans-serif !important;
+}
+
 .hero {
   padding-top: 80px;
   z-index: -1;
