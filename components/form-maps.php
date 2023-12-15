@@ -42,8 +42,8 @@
       </form>
     </div>
     <div class="">
-      <div id="map"></div>
       <div id="mapa"></div>
+      <div id="map"></div>
     </div>
   </div>
 </section>

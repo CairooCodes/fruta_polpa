@@ -77,8 +77,8 @@ if ($stmt->rowCount() > 0) {
           <?php echo $polpa['description']; ?>
         </h1>
         <div class="py-4 mt-5 p-2">
-          <table class="bg-green-300 w-full">
-            <thead class="bg-green-600">
+          <table class="bg-white w-full">
+            <thead class="bg-orange-100">
               <tr>
                 <th class="py-1">Nutriente</th>
                 <th class="py-1">100g</th>
@@ -98,7 +98,7 @@ if ($stmt->rowCount() > 0) {
                 }
               }
               ?>
-              <tr>
+              <tr class="bg-orange-400">
                 <td class="pl-2 py-2">Valor Energético</td>
                 <td class="text-center"><?php echo $nutri['valor_energetico'] ?></td>
                 <td class="text-center"><?php echo $nutri['valor_energeticovd'] ?></td>
@@ -108,7 +108,7 @@ if ($stmt->rowCount() > 0) {
                 <td class="text-center"><?php echo $nutri['carboidratos'] ?></td>
                 <td class="text-center"><?php echo $nutri['carboidratosvd'] ?></td>
               </tr>
-              <tr>
+              <tr class="bg-orange-400">
                 <td class="pl-2 py-2">Acucares totais</td>
                 <td class="text-center"><?php echo $nutri['acucares_totais'] ?></td>
                 <td class="text-center"><?php echo $nutri['acucares_totaisvd'] ?></td>
@@ -118,7 +118,7 @@ if ($stmt->rowCount() > 0) {
                 <td class="text-center"><?php echo $nutri['acucares_adicionados'] ?></td>
                 <td class="text-center"><?php echo $nutri['acucares_adicionadosvd'] ?></td>
               </tr>
-              <tr>
+              <tr class="bg-orange-400">
                 <td class="pl-2 py-2">Proteínas</td>
                 <td class="text-center"><?php echo $nutri['proteinas'] ?></td>
                 <td class="text-center"><?php echo $nutri['proteinasvd'] ?></td>
@@ -128,7 +128,7 @@ if ($stmt->rowCount() > 0) {
                 <td class="text-center"><?php echo $nutri['gorduras_totais'] ?></td>
                 <td class="text-center"class="text-center"><?php echo $nutri['gorduras_totaisvd'] ?></td>
               </tr>
-              <tr>
+              <tr class="bg-orange-400">
                 <td class="pl-2 py-2">Gorduras saturadas</td>
                 <td class="text-center"><?php echo $nutri['gorduras_saturadas'] ?></td>
                 <td class="text-center"><?php echo $nutri['gorduras_saturadasvd'] ?></td>
@@ -138,7 +138,7 @@ if ($stmt->rowCount() > 0) {
                 <td class="text-center"><?php echo $nutri['gorduras_trans'] ?></td>
                 <td class="text-center"><?php echo $nutri['gorduras_transvd'] ?></td>
               </tr>
-              <tr>
+              <tr class="bg-orange-400">
                 <td class="pl-2 py-2">Fibras alimentares</td>
                 <td class="text-center"><?php echo $nutri['fibras_alimentares'] ?></td>
                 <td class="text-center"><?php echo $nutri['fibras_alimentaresvd'] ?></td>
@@ -161,7 +161,7 @@ if ($stmt->rowCount() > 0) {
     $stmt2->execute();
 
     if ($stmt2->rowCount() > 0) {
-      echo "<h1 class='text-xl text-gray-800 font-bold'>
+      echo "<h1 class='text-xl text-green-800 font-bold'>
       Confira algumas de nossas receitas
     </h1>";
     }

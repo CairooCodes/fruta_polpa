@@ -15,8 +15,6 @@ $stmt = $pdo->prepare($sql);
 $stmt->execute([$user_id]);
 $user = $stmt->fetch();
 
-
-$recruitments = getRecruitments();
 $page = 'dash';
 ?>
 

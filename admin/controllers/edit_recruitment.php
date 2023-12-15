@@ -10,6 +10,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $status = $_POST['status'];
 
     updateRecrutamento($id, $name, $email, $telephone, $city, $status);
-    header('Location: ../dashboard.php');
+    header('Location: ../trabalhe-conosco.php');
     exit();
 }

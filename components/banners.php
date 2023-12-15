@@ -2,7 +2,7 @@
   <img src="./assets/img/foto_da_fabrica_2.jpg" loading="lazy">
   <div class="banner-text max-w-full lg:pt-12 pt-2 mx-auto pb-3 relative z-10">
     <div class="fade-in-left">
-      <p class="cssnormal lg:text-6xl text-2xl text-white text-end">Não é polpa é,
+      <p class="cssnormal lg:text-6xl text-2xl text-white text-end">Não é polpa, é
         <br>
         <span class="csscursiva">Fruta! </span>
       </p>
