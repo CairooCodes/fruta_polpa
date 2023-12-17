@@ -34,7 +34,7 @@ $URI = new URI();
   <div class="mx-auto max-w-7xl px-2 pt-10">
     <h1 class="lg:text-4xl text-3xl">
       <span style="letter-spacing: 0.5px;" class="font-black bg-clip-text bg-gradient-to-r from-color1 to-color1 text-color1">
-        Polpas Tradicionais
+        Linha Tradicional
       </span>
     </h1>
     <div class="grid lg:grid-cols-4 gap-8">
@@ -57,7 +57,7 @@ $URI = new URI();
   <div class="mx-auto max-w-7xl px-2 pt-24 mb-10">
     <h1 class="lg:text-4xl text-3xl">
       <span style="letter-spacing: 0.5px;" class="font-black bg-clip-text bg-gradient-to-r from-color1 to-color1 text-color1">
-        Polpas Mix
+        Linha Mix
       </span>
     </h1>
     <div class="grid lg:grid-cols-4 gap-8">

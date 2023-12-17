@@ -22,10 +22,16 @@ $URI = new URI();
   <?php include "./components/navbar.php" ?>
   <div class="mx-auto max-w-7xl px-2 pt-10 pb-10">
     <h1 class="lg:text-4xl text-3xl">
-      <span style="letter-spacing: 0.5px" class="text-color1">
+      <span class="text-color1 px-4">
         Receitas Fruta Polpa
       </span>
     </h1>
+    <p class="lg:mt-4 mt-2 text-justify px-4">
+      Nossos produtos são caracterizados pela versatilidade, podem ser usados para os mais diversas receitas como: Bolos, sobremesas, drinks, tortas, geleias, sorvetes, saladas, mousses além é claro dos sucos para refrescar e proporcionar mais saúde, já que todos os nutrientes das nossas polpas são mantidos graças ao nosso processo premium de qualidade.
+    </p>
+    <p class="mt-1 text-justify mb-10 px-4">
+      Confira nossas receitas, faça em casa e nos marque no instagram @Frutapolpa.
+    </p>
 
     <div class="grid lg:grid-cols-4 gap-8">
 
@@ -35,9 +41,9 @@ $URI = new URI();
             <img class='custom-image w-full' loading="lazy" src='./admin/uploads/receitas/<?php echo $receita['img']; ?>'>
           </div>
           <div class="lg:text-xl text-xl text-center">
-              <span style="letter-spacing: 0.5px" class="text-gray-800">
+            <span class="text-gray-800">
               <?php echo $receita['name']; ?>
-              </span>
+            </span>
           </div>
 
           <div class="flex justify-center mt-4">

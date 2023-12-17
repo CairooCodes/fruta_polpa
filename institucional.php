@@ -68,10 +68,10 @@ $URI = new URI();
     <section class="bg-white mx-auto md:max-w-7xl py-8 px-4 lg:mb-10 md:mb-10 sm:mb-4 header-institucional">
       <div class="max-w-full lg:pl-24 mx-auto grid lg:grid-cols-2 gap-10">
         <div class="lg:mt-14 mt-6 text-justify">
-          <p style="letter-spacing: 0.5px;" class="text-gray-800">Há mais de 20 anos, a <span class="font-black text-color1">Fruta Polpa</span> é presença marcante na mesa dos piauienses. Aliada da saúde e do bem-estar, é uma das maiores do Brasil no segmento de polpa de frutas, sendo reconhecida como “A Melhor do Brasil” por sua qualidade, sabor e excelência em todos os processos.</p>
-          <p style="letter-spacing: 0.5px;" class="text-gray-800 pt-3">Nossa história começa em 1995, graças à visão e perseverança do fundador Sr. Marcelo Teixeira e Sra. Denise Teixeira, que iniciaram o negócio de forma artesanal, com pouquíssima estrutura e uma única ideia: Levar mais qualidade de vida e sabor para os piauienses.</p>
-          <p style="letter-spacing: 0.5px;" class="text-gray-800 pt-3">O negócio cresceu, e o desejo de melhoria contínua fez com que a indústria passasse por inúmeras transformações, desde sua localização até o processo de produção, passando pelos produtos e logística.</p>
-          <p style="letter-spacing: 0.5px;" class="text-gray-800 pt-3">Atualmente temos abrangência nacional, além do mercado piauiense, atendemos também Maranhão, Ceará, Paraíba, Pernambuco, Bahia, Pará, Tocantins, Goiás, Rio de Janeiro e Distrito Federal.</p>
+          <p style="letter-spacing: 0.5px;" class="text-gray-800">Há mais de 20 anos, a <span class="font-black text-color1">Fruta Polpa</span> é presença marcante na mesa dos Brasileiros. Aliada da saúde e do bem-estar, é uma das maiores do Brasil no segmento de polpa de frutas, sendo reconhecida como “A Melhor do Brasil” por sua qualidade, sabor e excelência em todos os processos.</p>
+          <p style="letter-spacing: 0.5px;" class="text-gray-800 pt-3">Nossa história começa em 1995, graças à visão e perseverança do fundador Sr. Marcelo Teixeira e Sra. Denise Teixeira, que iniciaram o negócio de forma artesanal, com pouquíssima estrutura e uma única ideia: Levar mais qualidade de vida e sabor para as famílias.</p>
+          <p style="letter-spacing: 0.5px;" class="text-gray-800 pt-3">O negócio cresceu, e o desejo de melhoria contínua nos fez mudar para melhor, desde a localização, processos de produção, produtos e logística e toda nossa estrutura como um todo.</p>
+          <p style="letter-spacing: 0.5px;" class="text-gray-800 pt-3">Atualmente temos abrangência nacional, atendendo os mercados dos estados do Piauí, Maranhão, Ceará, Paraíba, Pernambuco, Bahia, Pará, Tocantins, Goiás, Rio de Janeiro e Distrito Federal.</p>
           <p style="letter-spacing: 0.5px;" class="text-gray-800 pt-3">Nossa meta é ser líder de mercado no Brasil até 2028, e para isso contamos com um time de excelência, processos bem estruturados, logística e claro produtos diferenciados que agradam não apenas pelo sabor, mas pelo compromisso em levar até a milhões de famílias brasileiras um produto de alta confiabilidade.</p>
         </div>
         <div>
@@ -154,11 +154,11 @@ $URI = new URI();
           </div>
           <div class="col-span-2">
             <h1 class="relative right-12 -bottom-10 text-color1 text-md">2019/2023</h1>
-            <h1 class="pb-4 pl-2 font-extrabold text-gray-800 text-md">Início da expansão</h1>
+            <h1 class="pb-4 pl-2 font-extrabold text-gray-800 text-md">Abrangência nacional</h1>
             <div class="border-l-2">
               <div class="w-3 h-3 bg-green-600 relative left-0 -top-1 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
               <div class="relative left-1 -top-5 px-5">
-                <h1 class="text-sm text-gray-700">Início da expansão (norte, nordeste, centro–oeste, sudeste).</h1>
+                <h1 class="text-sm text-gray-700">Abrangência nacional (norte, nordeste, centro–oeste, sudeste).</h1>
               </div>
               <div class="w-10 h-10 relative left-0 -bottom-8 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"><img src="./assets/img/folha.png"></div>
             </div>
@@ -277,7 +277,7 @@ $URI = new URI();
               </div>
             </div>
             <div class="item h-32 px-3 border-b-2 border-color1">
-              <h1 class="pb-2 font-extrabold text-gray-800 text-sm">Início da expansão</h1>
+              <h1 class="pb-2 font-extrabold text-gray-800 text-sm">Abrangência nacional</h1>
               <h1 class="pb-1 font-extrabold text-color1 text-xs">2019/2023</h1>
               <div class="border-l-2">
                 <div class="w-3 h-3 bg-green-600 relative left-0 -top-1 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
@@ -326,15 +326,16 @@ $URI = new URI();
           <div class="md:grid md:grid-cols-2 md:gap-20">
 
             <div class="mx-auto">
-              <h6 class="lg:text-3xl text-xl pb-5 pt-4">
+              <h6 class="lg:text-3xl text-xl pb-5 lg:pt-2 pt-4">
                 <span style="letter-spacing: 0.5px" class="text-color1 font-black bg-clip-text bg-gradient-to-r">
                   Indústria
                 </span>
               </h6>
-
+              <p class="text-medium font-sans text-justify pb-1">
+              Contando com mais de 20 veículos e posto de abastecimento próprio, a logística empregada na distribuição do produto final atende mais de 1500 clientes ativos, incluindo grandes redes como Mix Mateus, Carrefuor, Pão de Açúcar, Coco Bambu, Extra, Carvalho Supermercado, Supermercado Líder e Grupo Jorge Batista.
+              </p>
               <p class="text-medium font-sans text-justify pb-5">
-                Contando com mais de 20 veículos e posto de abastecimento próprio, a logística empregada na distribuição do produto final atende mais de 1500 clientes ativos, incluindo grandes redes como Mix Mateus, Carrefuor, Carvalho Supermercado, Pão de Açúcar, Coco Bambu, Extra, Supermercado Líder e Grupo Jorge Batista<br>
-                Contamos 187 colaboradores com diretos e indiretos, 11 representantes comerciais, 34 MEI's e 22 terceirizados.
+              Contamos 187 colaboradores com diretos e indiretos, 11 representantes comerciais, 34 MEI's e 22 terceirizados.
               </p>
             </div>
 

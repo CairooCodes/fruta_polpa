@@ -23,7 +23,7 @@ $URI = new URI();
     <section class="mx-auto max-w-7xl px-2 py-10 lg:px-16">
         <div class="px-4 py-3">
             <h1 class="lg:text-4xl text-3xl text-center lg:text-start">
-                <span style="letter-spacing: 0.5px" class="font-semibold text-gray-800">
+                <span class="font-semibold text-gray-800">
                     Certificações
                 </span>
             </h1>
@@ -36,7 +36,7 @@ $URI = new URI();
                 <div class="lg:fade-in-up">
                     <div class="px-4 py-3">
                         <h1 class="lg:text-3xl text-3xl text-center">
-                            <span style="letter-spacing: 0.5px" class="font-semibold text-gray-800">
+                            <span class="font-semibold text-gray-800">
                                 Smart Energia
                             </span>
                         </h1>
@@ -54,7 +54,7 @@ $URI = new URI();
                                 </div>
                                 <h1 class="text-xl font-bold pb-2">Sustentabilidade</h1>
                                 <p class="text-justify p-5">
-                                A energia solar é sustentável porque sua matéria prima é originada da natureza, ou seja, a captação de energia elétrica é feita pela luz do sol. Desta forma, os recursos naturais podem ser usados de forma abundante e renovável, não afetando o meio ambiente.
+                                    A energia solar é sustentável porque sua matéria prima é originada da natureza, ou seja, a captação de energia elétrica é feita pela luz do sol. Desta forma, os recursos naturais podem ser usados de forma abundante e renovável, não afetando o meio ambiente.
                                 </p>
                             </div>
                             <div>
@@ -65,7 +65,7 @@ $URI = new URI();
                                 </div>
                                 <h1 class="text-xl font-bold pb-2">Energia Renovável e Limpa</h1>
                                 <p class="text-justify p-5">
-                                A produção de energia elétrica através de um recurso renovável, a luz solar. Por isso, não emite gases poluentes como: óxidos de nitrogênio (NOx), dióxido de carbono (CO2) e dióxido de enxofre (SO2), que são prejudiciais à saúde e ao meio ambiente.
+                                    A produção de energia elétrica através de um recurso renovável, a luz solar. Por isso, não emite gases poluentes como: óxidos de nitrogênio (NOx), dióxido de carbono (CO2) e dióxido de enxofre (SO2), que são prejudiciais à saúde e ao meio ambiente.
                                 </p>
                             </div>
                             <div>
@@ -76,30 +76,60 @@ $URI = new URI();
                                 </div>
                                 <h1 class="text-xl font-bold pb-2">Impactos ambientais e benefícios da energia solar solar</h1>
                                 <p class="text-justify p-5">
-                                O impacto ambiental da energia solar é totalmente benéfico à natureza, já que ele fornece energia de um recurso natural (sol) para a conversão em eletricidade. 
+                                    O impacto ambiental da energia solar é totalmente benéfico à natureza, já que ele fornece energia de um recurso natural (sol) para a conversão em eletricidade.
                                 </p>
                             </div>
                         </div>
 
-                        <div class="px-4 py-3 lg:pt-16">
-                            <h1 class="lg:text-3xl text-3xl text-center">
-                                <span style="letter-spacing: 0.5px" class="font-semibold text-gray-800">
-                                    Energia Renovável
-                                </span>
-                            </h1>
-                            <p class="lg:text-base lg:text-base text-xl py-6 lg:py-8">
-                                Os resíduos orgânicos gerados dos despolpamento das frutas (cascas e sementes de frutas) no processo de produção, são acumulados em caixas dispostas em pallets e enviadas para sítios onde será utilizado para a alimentação de animais e transformado em adubo para as plantas pelo processo de compostagem.
-                            </p>
-                            <p class="lg:text-base lg:text-base text-xl">
-                                A Fruta Polpa utiliza energia de fonte renováveis como (Eólica, Biomassa, PCH, Solar) de baixo impacto em suas instalações. Através do consumo de energia renovável e ambientalmente sustentável.
-                            </p>
-                            <div class="flex justify-center px-5 py-10">
-                                <img src="./assets/img/Selo-Energia-Renovavel.png" alt="" loading="lazy" class="lg:w-1/4 h-2/4 md:w-full">
+                        <div class="lg:pt-12 lg:grid grid-cols-2 mt-2 items-center fade-in-up">
+                            <div class="lg:p-6 fade-in-up">
+                                <img src="./assets/img/IBD.jpg" loading="lazy" class="lg:w-10/12 w-full h-72 rounded-md object-cover lg:ml-12">
+                            </div>
+                            <div class="lg:px-12 px-2">
+                                <div class="lg:mt-10 mb-4">
+                                    <h1 class="font-bold pb-3 pt-5 text-color1 lg:text-3xl text-2xl lg:text-start text-center">
+                                        Certificação por auditoria da empresa IBD certificações para produção de produto
+                                        ORGÂNICO.
+                                    </h1>
+                                    <p class="text-justify mb-12">
+                                        A certificação IBD (Instituto Biodinâmico) é direcionada para propriedades agrícolas e processos produtivos desse segmento, sendo emitida com uma importante comprovação de que os produtos gerados nesses locais são produzidos e/ou processados conforme normas orgânicas e biodinâmicas.
+                                    </p>
+                                </div>
                             </div>
                         </div>
+                        <div class="lg:pt-12 lg:grid grid-cols-2 mt-2 items-center fade-in-up">
+                            <div class="lg:p-6 fade-in-up lg:order-last">
+                                <img src="./assets/img/APPCC.png" loading="lazy" class="lg:w-full w-full h-72 rounded-md object-cover lg:ml-12">
+                            </div>
+                            <div class="lg:px-12 px-2">
+                                <div class="lg:mt-10 mb-4">
+                                    <h1 class="font-bold pb-3 pt-5 text-color1 lg:text-3xl text-2xl lg:text-start text-center">
+                                        Norma de APPCC implantada.
+                                    </h1>
+                                    <p class="text-justify mb-12">
+                                        O Sistema APPCC (Sistema de Análise de Perigos e Pontos Críticos de Controle) cuja sigla em inglês é HACCP (Hazard Analysis and Critical Control Point), consiste em um sistema de controle sobre a segurança do alimento mediante a análise e controle dos riscos biológicos, químicos e físicos em todas as etapas, desde a produção da matéria prima até a fabricação, distribuição e consumo.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
                         <div class="lg:fade-in-up border-t border-gray-300 py-2">
-                            <!-- <button style="background: rgb(252,114,0); background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);" class="saiba-mais text-white border-2 border-white bg-white rounded-full font-semibold text-lg px-5 py-2 text-center hover:bg-orange-600 hover:text-black">Saiba Mais</button> -->
-                            <!-- <div class="cert-description"> -->
+                            <div class="lg:pt-12 lg:grid grid-cols-2 mt-2 items-center fade-in-up">
+                                <div class="lg:p-6 px-2 fade-in-up lg:order-last">
+                                    <img src="./assets/img/energia-solar.png" loading="lazy" class="lg:w-full w-full h-72 rounded-md object-cover lg:ml-12">
+                                </div>
+                                <div class="lg:px-12 px-2">
+                                    <div class="lg:mt-10 mb-4">
+                                        <h1 class="font-bold pb-3 pt-5 text-color1 lg:text-3xl text-2xl lg:text-start text-center">
+                                            Energia Renovável
+                                        </h1>
+                                        <p class="text-justify mb-12">
+                                            A Fruta Polpa utiliza energia de fonte renováveis como ( Eólica, Biomassa, PCH, Solar) de baixo impacto em suas instalações. Através do consumo de energia renovável e ambientalmente sustentável e isso traz diversos benefícios:
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
                             <div class="px-4">
                                 <h2 class="py-6 text-gray-500 lg:text-xl text-base lg:text-start text-center">Vantagens da energia renovável</h2>
                                 <h1 class="lg:text-start text-center">
@@ -178,6 +208,22 @@ $URI = new URI();
                                     <p class="text-justify p-5">
                                         A Economia Verde exige e continuará exigindo no futuro um número crescente de profissionais capacitados
                                     </p>
+                                </div>
+                            </div>
+
+                            <div class="lg:pt-12 lg:grid grid-cols-2 mt-2 items-center fade-in-up">
+                                <div class="lg:p-6 px-2 fade-in-up">
+                                    <img src="./assets/img/plantando.png" loading="lazy" class="lg:w-full w-full h-72 rounded-md object-cover lg:ml-12">
+                                </div>
+                                <div class="lg:px-12 px-2">
+                                    <div class="lg:mt-10 mb-4">
+                                        <h1 class="font-bold pb-3 pt-5 text-color1 lg:text-3xl text-2xl lg:text-start text-center">
+                                            Resíduos Orgânicos
+                                        </h1>
+                                        <p class="text-justify mb-12">
+                                            Os resíduos orgânicos gerados dos despolpamento das frutas (cascas e sementes de frutas) no processo de produção, são acumulados em caixas dispostas em pallets e enviadas para sítios onde será utilizado para a alimentação de animais e transformado em adubo para as plantas pelo processo de compostagem.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>

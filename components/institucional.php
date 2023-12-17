@@ -10,8 +10,8 @@ color: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);" c
         20
       </div>
       <div class="lg:mt-14 mt-4 mb-4 text-justify">
-        <p style="letter-spacing: 0.5px;" class="text-gray-800">Há mais de 20 anos, a <span class="font-black text-color1">Fruta Polpa</span> é presença marcante na mesa dos piauienses. Aliada da saúde e do bem-estar, é uma das maiores do Brasil no segmento de polpa de frutas, sendo reconhecida como “A Melhor do Brasil” por sua qualidade, sabor e excelência em todos os processos.</p>
-        <p style="letter-spacing: 0.5px;" class="text-gray-800 pt-3">Nossa história começa em 1995, graças à visão e perseverança do fundador Sr. Marcelo Teixeira e Sra. Denise Teixeira, que iniciaram o negócio de forma artesanal, com pouquíssima estrutura e uma única ideia: Levar mais qualidade de vida e sabor para os piauienses...</p>
+        <p style="letter-spacing: 0.5px;" class="text-gray-800">Há mais de 20 anos, a <span class="font-black text-color1">Fruta Polpa</span> é presença marcante na mesa dos brasileiros. Aliada da saúde e do bem-estar, é uma das maiores do Brasil no segmento de polpa de frutas, sendo reconhecida como “A Melhor do Brasil” por sua qualidade, sabor e excelência em todos os processos.</p>
+        <p style="letter-spacing: 0.5px;" class="text-gray-800 pt-3">Nossa história começa em 1995, graças à visão e perseverança do fundador Sr. Marcelo Teixeira e Sra. Denise Teixeira, que iniciaram o negócio de forma artesanal, com pouquíssima estrutura e uma única ideia: Levar mais qualidade de vida e sabor para as familias...</p>
       </div>
       <a href="<?php echo $URI->base("institucional"); ?>" class="leia-mais-link">Leia mais</a>
     </div>
