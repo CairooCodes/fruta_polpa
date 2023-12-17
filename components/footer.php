@@ -87,7 +87,7 @@
           </li>
         </div>
       </div>
-      <div class="">
+      <!-- <div class="">
         <h2 class="mb-3 text-sm font-medium tracking-widest text-gray-600 uppercase title-font">
           Legalidade
         </h2>
@@ -98,7 +98,7 @@
             </a>
           </li>
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
   <div class="bg-gray-200 w-full">
