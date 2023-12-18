@@ -41,21 +41,22 @@ $arquivo = "
   <style type='text/css'>
   body {
   margin:0px;
-  font-family:Verdane;
+  font-family:Arial;
   font-size:12px;
   color: #666666;
   }
   a{
-  color: #666666;
+  color: black;
   text-decoration: none;
   }
   a:hover {
   color: #FF0000;
   text-decoration: none;
   }
+  td {padding:2px;}
   </style>
     <html>
-        <table width='510' border='1' cellpadding='1' cellspacing='1' bgcolor='#CCCCCC'>
+        <table width='510' border='1' cellpadding='1' cellspacing='1'>
                 <tr>
                   <td width='500'>Nome:$nome</td>
                 </tr>
@@ -66,7 +67,7 @@ $arquivo = "
                   <td width='320'>Whats:<b>$whats</b></td>
                 </tr>
                 <tr>
-                  <td width='320'>CNPJ:$cnpj</td>
+                  <td width='320'>CNPJ ou CPF:$cnpj</td>
                 </tr>
                 <tr>
                   <td width='320'>Mensagem:$mensagem</td>
@@ -74,7 +75,7 @@ $arquivo = "
                 </td>
                 </tr>
                 <tr>
-                    <td>Este e-mail foi enviado em <b>$data_envio</b> às <b>$hora_envio</b></td>
+                    <td>Este e-mail foi enviado em <b>$data_envio <b>$hora_envio</b></td>
                 </tr>
         </table>
     </html>
@@ -97,8 +98,8 @@ $enviaremail = mail($destino, $assunto, $arquivo, $headers);
 if ($enviaremail) {
   $mgm = "E-MAIL ENVIADO COM SUCESSO! <br> O link será enviado para o e-mail fornecido no formulário";
   echo ("<script type= 'text/javascript'>alert('Obrigado! Em breve entramos em contato com você');</script>
-            <script>window.location = '/home';</script>");
-  header("Location: /home");
+            <script>window.location = '/home.php';</script>");
+  header("Location: /home.php");
   exit();
 } else {
   $mgm = "ERRO AO ENVIAR E-MAIL!";

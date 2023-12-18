@@ -23,9 +23,9 @@
         </div>
         <div>
           <label class="text-sm font-bold text-white">
-            CNPJ
+            CNPJ ou CPF
           </label>
-          <input type="text" name="cnpj" id="cnpj" placeholder="CNPJ" class="mt-1 mb-2 w-full rounded-lg p-3 text-gray-900" required="" />
+          <input type="text" name="cnpj" id="cnpj" placeholder="CNPJ ou CPF" class="mt-1 mb-2 w-full rounded-lg p-3 text-gray-900" required="" />
         </div>
         <div>
           <label class="text-sm font-bold text-white">
