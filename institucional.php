@@ -70,7 +70,7 @@ $URI = new URI();
         <div class="lg:mt-14 mt-6 text-justify">
           <p style="letter-spacing: 0.5px;" class="text-gray-800">Há mais de 20 anos, a <span class="font-black text-color1">Fruta Polpa</span> é presença marcante na mesa dos Brasileiros. Aliada da saúde e do bem-estar, é uma das maiores do Brasil no segmento de polpa de frutas, sendo reconhecida como “A Melhor do Brasil” por sua qualidade, sabor e excelência em todos os processos.</p>
           <p style="letter-spacing: 0.5px;" class="text-gray-800 pt-3">Nossa história começa em 1995, graças à visão e perseverança do fundador Sr. Marcelo Teixeira e Sra. Denise Teixeira, que iniciaram o negócio de forma artesanal, com pouquíssima estrutura e uma única ideia: Levar mais qualidade de vida e sabor para as famílias.</p>
-          <p style="letter-spacing: 0.5px;" class="text-gray-800 pt-3">O negócio cresceu, e o desejo de melhoria contínua nos fez mudar para melhor, desde a localização, processos de produção, produtos e logística e toda nossa estrutura como um todo.</p>
+          <p style="letter-spacing: 0.5px;" class="text-gray-800 pt-3">O negócio cresceu, e o desejo de melhoria contínua nos fez mudar para melhor, desde a localização, processos de produção, produtos, logística e toda nossa estrutura como um todo.</p>
           <p style="letter-spacing: 0.5px;" class="text-gray-800 pt-3">Atualmente temos abrangência nacional, atendendo os mercados dos estados do Piauí, Maranhão, Ceará, Paraíba, Pernambuco, Bahia, Pará, Tocantins, Goiás, Rio de Janeiro e Distrito Federal.</p>
           <p style="letter-spacing: 0.5px;" class="text-gray-800 pt-3">Nossa meta é ser líder de mercado no Brasil até 2028, e para isso contamos com um time de excelência, processos bem estruturados, logística e claro produtos diferenciados que agradam não apenas pelo sabor, mas pelo compromisso em levar até a milhões de famílias brasileiras um produto de alta confiabilidade.</p>
         </div>
@@ -87,23 +87,23 @@ $URI = new URI();
               <div class="grid w-full grid-cols-1 lg:grid-cols-5 md:grid-cols-2 gap-y-8">
                 <div class="flex flex-col items-center">
                   <h3 class="text-5xl font-extrabold leading-tight text-center">+<span id="countto1" countTo="67"></span></h3>
-                  <p class="text-base font-medium leading-7 text-center">Quantos fornecedores</p>
+                  <p class="text-base font-medium leading-7 text-center">Fornecedores</p>
                 </div>
                 <div class="flex flex-col items-center">
                   <h3 class="text-5xl font-extrabold leading-tight text-center">+<span id="countto2" countTo="41"></span></h3>
-                  <p class="text-base font-medium leading-7 text-center">Quantos veículos</p>
+                  <p class="text-base font-medium leading-7 text-center">Veículos</p>
                 </div>
                 <div class="flex flex-col items-center pr-5">
                   <h3 class="text-5xl font-extrabold leading-tight text-center"><span id="countto3" countTo="9000"></span>m</h3>
-                  <p class="text-base font-medium leading-7 text-center">Quantos metros quadrados de indústria</p>
+                  <p class="text-base font-medium leading-7 text-center">Metros quadrados de indústria</p>
                 </div>
                 <div class="flex flex-col items-center">
                   <h3 class="text-5xl font-extrabold leading-tight text-center"><span id="countto4" countTo="80000" data-decimal="2"></span>t</h3>
-                  <p class="text-base font-medium leading-7 text-center">Quantas toneladas por ano</p>
+                  <p class="text-base font-medium leading-7 text-center">Toneladas por ano</p>
                 </div>
                 <div class="flex flex-col items-center">
                   <h3 class="text-5xl font-extrabold leading-tight text-center">+<span id="countto5" countTo="1500"></span></h3>
-                  <p class="text-base font-medium leading-7 text-center">Quantos pontos de vendas</p>
+                  <p class="text-base font-medium leading-7 text-center">Pontos de vendas</p>
                 </div>
               </div>
             </div>
@@ -158,7 +158,7 @@ $URI = new URI();
             <div class="border-l-2">
               <div class="w-3 h-3 bg-green-600 relative left-0 -top-1 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
               <div class="relative left-1 -top-5 px-5">
-                <h1 class="text-sm text-gray-700">Abrangência nacional (norte, nordeste, centro–oeste, sudeste).</h1>
+                <h1 class="text-sm text-gray-700 pl-3">Abrangência nacional (norte, nordeste, centro–oeste, sudeste).</h1>
               </div>
               <div class="w-10 h-10 relative left-0 -bottom-8 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"><img src="./assets/img/folha.png"></div>
             </div>
@@ -216,9 +216,8 @@ $URI = new URI();
               <div class="border-l-2">
                 <div class="w-3 h-3 bg-green-600 relative left-0 -top-1 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
                 <div class="relative left-1 -top-5 px-1">
-                  <h1 class="text-xs text-gray-700 text-justify">Com apenas 4 colaboradores dedicados e visionários, deu-se início a um empreendimento promissor no ramo da produção de polpas.</h1>
+                  <h1 class="text-xs text-gray-700 text-justify pl-2">Com apenas 4 colaboradores dedicados e visionários, deu-se início a um empreendimento promissor no ramo da produção de polpas.</h1>
                 </div>
-                <!-- <div class="w-5 h-5 bg-green-600 relative left-0 -bottom-20 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"><img src="./assets/img/folha.png"></div> -->
               </div>
             </div>
             <div class="item h-32 px-3 border-b-2 border-color1">
@@ -227,9 +226,8 @@ $URI = new URI();
               <div class="border-l-2">
                 <div class="w-3 h-3 bg-green-600 relative left-0 -top-1 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
                 <div class="relative left-1 -top-5 px-1">
-                  <h1 class="text-xs text-gray-700 text-justify">Os primeiros investimentos em tecnologia da Fruta Polpa refletem o compromisso da empresa em inovar, visando maior eficiência e qualidade em seus processos.</h1>
+                  <h1 class="text-xs text-gray-700 text-justify pl-2">Os primeiros investimentos em tecnologia da Fruta Polpa refletem o compromisso da empresa em inovar, visando maior eficiência e qualidade em seus processos.</h1>
                 </div>
-                <!-- <div class="w-5 h-5 bg-green-600 relative left-0 -bottom-20 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"><img src="./assets/img/folha.png"></div> -->
               </div>
             </div>
             <div class="item h-32 px-3 border-b-2 border-color1">
@@ -238,9 +236,8 @@ $URI = new URI();
               <div class="border-l-2">
                 <div class="w-3 h-3 bg-green-600 relative left-0 -top-1 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
                 <div class="relative left-1 -top-5 px-1">
-                  <h1 class="text-xs text-gray-700 text-justify">Em um marco importante, a Fruta Polpa inaugura seu Primeiro Centro de Distribuição, fortalecendo a eficiência na entrega de produtos frescos e saborosos.</h1>
+                  <h1 class="text-xs text-gray-700 text-justify pl-2">Em um marco importante, a Fruta Polpa inaugura seu Primeiro Centro de Distribuição, fortalecendo a eficiência na entrega de produtos frescos e saborosos.</h1>
                 </div>
-                <!-- <div class="w-5 h-5 bg-green-600 relative left-0 -bottom-20 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"><img src="./assets/img/folha.png"></div> -->
               </div>
             </div>
             <div class="item h-32 px-3 border-b-2 border-color1">
@@ -249,9 +246,8 @@ $URI = new URI();
               <div class="border-l-2">
                 <div class="w-3 h-3 bg-green-600 relative left-0 -top-1 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
                 <div class="relative left-1 -top-5 px-1">
-                  <h1 class="text-xs text-gray-700 text-justify">O início da expansão da Fruta Polpa representa um momento emocionante, evidenciando a dedicação da empresa em oferecer excelência aos clientes.</h1>
+                  <h1 class="text-xs text-gray-700 text-justify pl-2">O início da expansão da Fruta Polpa representa um momento emocionante, evidenciando a dedicação da empresa em oferecer excelência aos clientes.</h1>
                 </div>
-                <!-- <div class="w-5 h-5 bg-green-600 relative left-0 -bottom-20 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"><img src="./assets/img/folha.png"></div> -->
               </div>
             </div>
             <div class="item h-32 px-3 border-b-2 border-color1">
@@ -260,9 +256,8 @@ $URI = new URI();
               <div class="border-l-2">
                 <div class="w-3 h-3 bg-green-600 relative left-0 -top-1 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
                 <div class="relative left-1 -top-5 px-1">
-                  <h1 class="text-xs text-gray-700 text-justify">A inauguração da indústria Fruta Polpa marca o início de uma jornada dedicada à produção de produtos de alta qualidade e sabor incomparável.</h1>
+                  <h1 class="text-xs text-gray-700 text-justify pl-2">A inauguração da indústria Fruta Polpa marca o início de uma jornada dedicada à produção de produtos de alta qualidade e sabor incomparável.</h1>
                 </div>
-                <!-- <div class="w-5 h-5 bg-green-600 relative left-0 -bottom-20 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"><img src="./assets/img/folha.png"></div> -->
               </div>
             </div>
             <div class="item h-32 px-3 border-b-2 border-color1">
@@ -271,9 +266,8 @@ $URI = new URI();
               <div class="border-l-2">
                 <div class="w-3 h-3 bg-green-600 relative left-0 -top-1 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
                 <div class="relative left-1 -top-5 px-1">
-                  <h1 class="text-xs text-gray-700 text-justify">Para atender à demanda em ascensão, a Fruta Polpa amplia sua fábrica, dobrando a capacidade e assegurando qualidade e frescor constantes aos clientes.</h1>
+                  <h1 class="text-xs text-gray-700 text-justify pl-2">Para atender à demanda em ascensão, a Fruta Polpa amplia sua fábrica, dobrando a capacidade e assegurando qualidade e frescor constantes aos clientes.</h1>
                 </div>
-                <!-- <div class="w-5 h-5 bg-green-600 relative left-0 -bottom-20 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"><img src="./assets/img/folha.png"></div> -->
               </div>
             </div>
             <div class="item h-32 px-3 border-b-2 border-color1">
@@ -282,9 +276,8 @@ $URI = new URI();
               <div class="border-l-2">
                 <div class="w-3 h-3 bg-green-600 relative left-0 -top-1 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
                 <div class="relative left-1 -top-5 px-1">
-                  <h1 class="text-xs text-gray-700 text-justify">Para atender à demanda em ascensão, a Fruta Polpa amplia sua fábrica, dobrando a capacidade e assegurando qualidade e frescor constantes aos clientes.</h1>
+                  <h1 class="text-xs text-gray-700 text-justify pl-2">Para atender à demanda em ascensão, a Fruta Polpa amplia sua fábrica, dobrando a capacidade e assegurando qualidade e frescor constantes aos clientes.</h1>
                 </div>
-                <!-- <div class="w-5 h-5 bg-green-600 relative left-0 -bottom-20 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"><img src="./assets/img/folha.png"></div> -->
               </div>
             </div>
           </div>
