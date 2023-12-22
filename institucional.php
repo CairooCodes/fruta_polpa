@@ -116,8 +116,8 @@ $URI = new URI();
       <div class="hidden lg:block pt-10">
         <div class="grid grid-cols-12 max-w-screen-xl mx-auto">
           <div class="col-span-2">
-            <h1 class="relative right-4 -bottom-10 text-color1 text-md">1995</h1>
-            <h1 class="pb-4 font-extrabold text-gray-800 text-md">Fundação</h1>
+            <h1 class="relative right-4 -bottom-12 text-color1 text-md">1995</h1>
+            <h1 class="pb-7 font-extrabold text-gray-800 text-md">Fundação</h1>
             <div class="border-l-2">
               <div class="w-3 h-3 bg-green-600 relative left-0 -top-1 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
               <div class="relative left-1 -top-5 px-5">
@@ -128,8 +128,8 @@ $URI = new URI();
           </div>
           <div></div>
           <div class="col-span-3">
-            <h1 class="relative right-4 -bottom-10 text-color1 text-md">2002</h1>
-            <h1 class="pb-4 font-extrabold text-gray-800 text-md">Primeiro Centro de Distribuição</h1>
+            <h1 class="relative right-4 -bottom-12 text-color1 text-md">2002</h1>
+            <h1 class="pb-7 font-extrabold text-gray-800 text-md">Primeiro Centro de Distribuição</h1>
             <div class="border-l-2">
               <div class="w-3 h-3 bg-green-600 relative left-0 -top-1 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
               <div class="relative left-1 -top-5 px-5">
@@ -139,8 +139,8 @@ $URI = new URI();
             </div>
           </div>
           <div class="col-span-3">
-            <h1 class="relative right-4 -bottom-10 text-color1 text-md">2004</h1>
-            <h1 class="pb-4 pl-2 font-extrabold text-gray-800 text-md">Indústria Fruta Polpa é inaugurada</h1>
+            <h1 class="relative right-4 -bottom-12 text-color1 text-md">2004</h1>
+            <h1 class="pb-7 pl-2 font-extrabold text-gray-800 text-md">Indústria Fruta Polpa é inaugurada</h1>
             <div class="border-l-2">
               <div class="w-3 h-3 bg-green-600 relative left-0 -top-1 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
               <div class="relative left-1 -top-5 px-5">
@@ -153,8 +153,8 @@ $URI = new URI();
             <div></div>
           </div>
           <div class="col-span-2">
-            <h1 class="relative right-12 -bottom-10 text-color1 text-md">2019/2023</h1>
-            <h1 class="pb-4 pl-2 font-extrabold text-gray-800 text-md">Abrangência nacional</h1>
+            <h1 class="relative right-12 -bottom-12 text-color1 text-md">2019/2023</h1>
+            <h1 class="pb-7 pl-2 font-extrabold text-gray-800 text-md">Abrangência nacional</h1>
             <div class="border-l-2">
               <div class="w-3 h-3 bg-green-600 relative left-0 -top-1 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
               <div class="relative left-1 -top-5 px-5">
