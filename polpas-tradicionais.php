@@ -24,7 +24,7 @@ $URI = new URI();
   <div class="mx-auto max-w-7xl px-2 pt-10">
     <h1 class="lg:text-4xl text-3xl">
       <span style="letter-spacing: 0.5px;" class="font-black bg-clip-text bg-gradient-to-r from-color1 to-color1 text-color1">
-        Fruta Polpa Tradicionais
+        Linha Tradicional
       </span>
     </h1>
 

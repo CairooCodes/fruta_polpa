@@ -325,10 +325,10 @@ $URI = new URI();
                 </span>
               </h6>
               <p class="text-medium font-sans text-justify pb-1">
-              Contando com mais de 20 veículos e posto de abastecimento próprio, a logística empregada na distribuição do produto final atende mais de 1500 clientes ativos, incluindo grandes redes como Mix Mateus, Carrefuor, Pão de Açúcar, Coco Bambu, Extra, Carvalho Supermercado, Supermercado Líder e Grupo Jorge Batista.
+              Contando com mais de 40 veículos e posto de abastecimento próprio, a logística empregada na distribuição do produto final atende mais de 1500 clientes ativos, incluindo grandes redes como Mix Mateus, Carrefuor, Pão de Açúcar, Coco Bambu, Extra, Carvalho Supermercado, Supermercado Líder e Grupo Jorge Batista.
               </p>
               <p class="text-medium font-sans text-justify pb-5">
-              Contamos 187 colaboradores com diretos e indiretos, 11 representantes comerciais, 34 MEI's e 22 terceirizados.
+              Contamos 187 colaboradores com diretos e indiretos, 13 representantes comerciais, 40 MEI's e 22 terceirizados.
               </p>
             </div>
 

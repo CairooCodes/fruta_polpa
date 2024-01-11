@@ -31,7 +31,7 @@
           <h1 class="font-bold  text-sm">TECNOLOGIA</h1>
         </div>
         <img src="./assets/img/tecnologia.jpg" loading="lazy" class="w-full h-28 object-cover">
-        <img src="./assets/img/materiaprimaselecionada.png" loading="lazy" class="w-full h-28  object-cover">
+        <img src="./assets/img/fazenda1.jpg" loading="lazy" class="w-full h-28  object-cover">
         <div class="flex justify-center items-center text-white text-center p-3" style="background-color:  #f7640e;">
           <h1 class="font-bold  text-sm">MATÉRIA PRIMA SELECIONADA</h1>
         </div>

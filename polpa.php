@@ -183,7 +183,7 @@ if ($stmt->rowCount() > 0) {
               <?php echo $receita['name']; ?>
             </div>
             <div class="flex justify-center">
-              <a href="<?php echo $URI->base('/receita/' . slugify($receita['name'])); ?>" class="text-orange-600 border-2 border-orange-600 bg-white rounded-full font-semibold text-lg px-5 py-2 text-center hover:bg-orange-600 hover:text-white">Saiba Mais</a>
+              <a href="<?php echo $URI->base('receita/' . slugify($receita['name'])); ?>" class="text-orange-600 border-2 border-orange-600 bg-white rounded-full font-semibold text-lg px-5 py-2 text-center hover:bg-orange-600 hover:text-white">Saiba Mais</a>
             </div>
           </div>
       <?php }
