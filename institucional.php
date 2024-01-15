@@ -364,10 +364,10 @@ $URI = new URI();
 
             <div class="owl-carousel carousel-indu z-0">
               <div class="item">
-                <img loading="lazy" src="./assets/img/supermercado.png" class="rounded-lg h-60" alt="supermercado">
+                <img loading="lazy" src="./assets/img/supermercado1.jpg" class="rounded-lg h-72 object-cover" alt="supermercado">
               </div>
               <div class="item">
-                <img loading="lazy" src="./assets/img/supermercado2.png" class="rounded-lg h-60" alt="supermercado2">
+                <img loading="lazy" src="./assets/img/supermercado2.jpg" class="rounded-lg h-72 object-cover" alt="supermercado2">
               </div>
             </div>
           </div>
