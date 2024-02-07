@@ -130,7 +130,17 @@ $URI = new URI();
       prevScrollpos = currentScrollPos;
     }
   </script>
-
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      autoplay: {
+        delay: 4500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+  </script>
 </body>
 
 </html>

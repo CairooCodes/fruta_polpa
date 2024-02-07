@@ -1,5 +1,15 @@
 <section class="max-w-full banners relative">
-  <img src="./assets/img/foto_da_fabrica_2.jpg" loading="lazy">
+  <div class="swiper mySwiper z-0">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="./assets/img/foto_da_fabrica_2.jpg" loading="lazy"></div>
+      <div class="swiper-slide h-[300px]"><img src="./assets/img/banner1.jpg" loading="lazy"></div>
+      <div class="swiper-slide"><img src="./assets/img/banner2.jpg" loading="lazy"></div>
+      <div class="swiper-slide"><img src="./assets/img/banner3.jpg" loading="lazy"></div>
+      <div class="swiper-slide"><img src="./assets/img/banner4.jpg" loading="lazy"></div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+  <!-- <img src="./assets/img/foto_da_fabrica_2.jpg" loading="lazy"> -->
   <div class="banner-text max-w-full lg:pt-12 pt-2 mx-auto pb-3 relative z-10">
     <div class="fade-in-left">
       <p class="cssnormal lg:text-6xl text-2xl text-white text-end">Não é polpa, é
@@ -17,5 +27,5 @@
       </a>
     </div>
   </div>
-  <div class="overlay absolute top-0 left-0 w-full h-full bg-black opacity-50 z-0"></div>
+  <div class="overlay absolute top-0 left-0 w-full h-full bg-black opacity-50 z-1"></div>
 </section>
