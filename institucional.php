@@ -334,16 +334,13 @@ $URI = new URI();
 
             <div class="owl-carousel carousel-indu order-first z-0">
               <div class="item">
-                <img loading="lazy" src="./assets/img/maquinario.jpg" class="rounded-lg h-56 object-cover" alt="industria">
+                <img loading="lazy" src="./assets/img/foto_da_fabrica_2.jpg" class="rounded-lg h-56 object-cover" alt="industria">
               </div>
               <div class="item">
-                <img loading="lazy" src="./assets/img/producao-acerola.jpg" class="rounded-lg h-56 object-cover" alt="industria">
+                <img loading="lazy" src="./assets/img/laboratorio2.jpg" class="rounded-lg h-56 object-cover" alt="industria">
               </div>
               <div class="item">
-                <img loading="lazy" src="./assets/img/caminhoes.jpg" class="rounded-lg h-56 object-cover" alt="industria">
-              </div>
-              <div class="item">
-                <img loading="lazy" src="./assets/img/quimica.jpg" class="rounded-lg h-56 object-cover" alt="industria">
+                <img loading="lazy" src="./assets/img/laboratorio1.jpg" class="rounded-lg h-56 object-cover" alt="industria">
               </div>
             </div>
 
