@@ -67,16 +67,17 @@ function updateBlogImage($userId, $newImagePath)
   }
 }
 
-function updatePolpa($id, $name, $description, $categorie_id, $subject, $info)
+function updatePolpa($id, $name, $description, $categorie_id, $subject, $info, $img)
 {
   global $pdo;
   if ($img) {
-    $stmt = $pdo->prepare("UPDATE products SET name = :name, description=:description, categorie_id = :categorie_id, subject=:subject, info=:info WHERE id = :id");
+    $stmt = $pdo->prepare("UPDATE products SET name = :name, description=:description, categorie_id = :categorie_id, subject=:subject, info=:info, img=:img WHERE id = :id");
     $stmt->bindParam(':name', $name);
     $stmt->bindParam(':description', $description);
     $stmt->bindParam(':categorie_id', $categorie_id);
     $stmt->bindParam(':subject', $subject);
     $stmt->bindParam(':info', $info);
+    $stmt->bindValue(':img', $img);
     $stmt->bindParam(':id', $id);
   } else {
     $stmt = $pdo->prepare("UPDATE products SET name = :name, description=:description, categorie_id = :categorie_id, subject=:subject, info=:info WHERE id = :id");
@@ -88,19 +89,6 @@ function updatePolpa($id, $name, $description, $categorie_id, $subject, $info)
     $stmt->bindParam(':id', $id);
   }
   $stmt->execute();
-}
-
-function updatePolpaImage($userId, $newImagePath)
-{
-  global $pdo;
-
-  try {
-    $sql = "UPDATE products SET img = ? WHERE id = ?";
-    $stmt = $pdo->prepare($sql);
-    $stmt->execute([$newImagePath, $userId]);
-  } catch (PDOException $e) {
-    echo 'Erro ao atualizar a imagem de perfil: ' . $e->getMessage();
-  }
 }
 
 function updateCategorie($id, $name)
