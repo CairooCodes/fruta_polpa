@@ -9,21 +9,25 @@ if (!empty($_GET['id'])) {
     $product_id = $_POST['product_id'];
 
 
+    $uploadDir = '../uploads/receitas/';
+
+    $imgPath = null;
+
     if (isset($_FILES['img']) && $_FILES['img']['error'] == UPLOAD_ERR_OK) {
-      $uploadDir = '../uploads/receitas/';
       $imgTmpName = $_FILES['img']['tmp_name'];
       $imgName = $_FILES['img']['name'];
+
       $uniqueName = uniqid() . '_' . $imgName;
+
       if (move_uploaded_file($imgTmpName, $uploadDir . $uniqueName)) {
-        updateReceitaImage($id, $uniqueName);
+        $imgPath = $uniqueName;
       } else {
-        echo 'Erro ao fazer o upload da imagem de perfil.';
+        echo 'Erro ao fazer o upload da imagem.';
         exit;
       }
     }
 
-
-    updateReceita($id, $name, $description, $product_id);
+    updateReceita($id, $name, $description, $product_id, $imgPath);
     header('Location: ../receitas.php');
     exit();
   }

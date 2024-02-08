@@ -8,21 +8,25 @@ if (!empty($_GET['id'])) {
     $description = $_POST['description'];
 
     
+    $uploadDir = '../uploads/blogs/';
+
+    $imgPath = null;
+
     if (isset($_FILES['img']) && $_FILES['img']['error'] == UPLOAD_ERR_OK) {
-      $uploadDir = '../uploads/blogs/';
       $imgTmpName = $_FILES['img']['tmp_name'];
       $imgName = $_FILES['img']['name'];
+
       $uniqueName = uniqid() . '_' . $imgName;
 
       if (move_uploaded_file($imgTmpName, $uploadDir . $uniqueName)) {
-        updateBlogImage($id, $uniqueName);
+        $imgPath = $uniqueName;
       } else {
-        echo 'Erro ao fazer o upload da imagem de perfil.';
+        echo 'Erro ao fazer o upload da imagem.';
         exit;
       }
     }
 
-    updateBlog($id, $name, $description);
+    updateBlog($id, $name, $description, $imgPath);
     header('Location: ../blogs.php');
     exit();
   }
