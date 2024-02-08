@@ -1,11 +1,11 @@
 <section class="max-w-full banners relative">
   <div class="swiper mySwiper z-0">
     <div class="swiper-wrapper">
-      <div class="swiper-slide"><img src="./assets/img/foto_da_fabrica_2.jpg" loading="lazy"></div>
-      <div class="swiper-slide h-[300px]"><img src="./assets/img/banner1.jpg" loading="lazy"></div>
-      <div class="swiper-slide"><img src="./assets/img/banner2.jpg" loading="lazy"></div>
-      <div class="swiper-slide"><img src="./assets/img/banner3.jpg" loading="lazy"></div>
-      <div class="swiper-slide"><img src="./assets/img/banner4.jpg" loading="lazy"></div>
+      <div class="swiper-slide"><img src="./assets/img/foto_da_fabrica_2.jpg" loading="lazy" class="w-full"></div>
+      <div class="swiper-slide"><img src="./assets/img/foto_producao2.jpg" loading="lazy" class="w-full"></div>
+      <div class="swiper-slide"><img src="./assets/img/foto_producao1.jpg" loading="lazy" class="w-full"></div>
+      <div class="swiper-slide"><img src="./assets/img/foto_caminhoes.jpg" loading="lazy" class="w-full"></div>
+      <div class="swiper-slide"><img src="./assets/img/foto_laboratorio.jpg" loading="lazy" class="w-full"></div>
     </div>
     <div class="swiper-pagination"></div>
   </div>
