@@ -58,7 +58,7 @@ if ($stmt->rowCount() > 0) {
         <div class="swiper swiper_blog z-0">
           <div class="swiper-wrapper">
             <a class="swiper-slide">
-              <?php echo "<img class='rounded-md object-cover w-full' loading='lazy' src=" . $URI->base('/admin/uploads/blogs') . '/' . $blog['img'] . '>' ?>
+              <?php echo "<img class='rounded-md object-cover w-full' loading='lazy' src=" . 'https://frutapolpa.com.br/admin/uploads/blogs' . '/' . $blog['img'] . '>' ?>
             </a>
           </div>
           <div class="swiper-button-next text-white"></div>

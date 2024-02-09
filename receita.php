@@ -58,7 +58,7 @@ if ($stmt->rowCount() > 0) {
         </h1>
         <div class="rounded-xlmb-5">
           <div class="flex">
-            <?php echo "<img class='fade-in-up w-92' loading='lazy' src=" . $URI->base('/admin/uploads/receitas') . '/' . $receita['img'] . '>' ?>
+            <?php echo "<img class='fade-in-up w-92' loading='lazy' src=" . 'https://frutapolpa.com.br/admin/uploads/receitas' . '/' . $receita['img'] . '>' ?>
           </div>
         </div>
       </div>
