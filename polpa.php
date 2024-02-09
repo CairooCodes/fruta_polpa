@@ -20,7 +20,7 @@ function remove_simbolos_acentos($string)
 
 
 $url = explode("/", $_SERVER['REQUEST_URI']);
-$idpost = $url[3];
+$idpost = $url[4];
 
 $idpost2 = "";
 
@@ -84,8 +84,7 @@ if ($stmt->rowCount() > 0) {
             <tbody>
               <?php
               $nutrientes = [];
-
-              $stmt = $pdo->prepare("SELECT * FROM nutri where product_id = '$idpost2'");
+              $stmt = $pdo->prepare("SELECT * FROM nutri where product_id = '$polpa[id]'");
               $stmt->execute();
 
               if ($stmt->rowCount() > 0) {

@@ -27,5 +27,5 @@
       </a>
     </div>
   </div>
-  <div class="overlay absolute top-0 left-0 w-full h-full bg-black opacity-50 z-1"></div>
+  <div class="overlay absolute top-0 left-0 w-full h-full bg-black opacity-40 z-1"></div>
 </section>
