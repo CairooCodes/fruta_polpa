@@ -10,13 +10,13 @@ if (!isset($_SESSION['id'])) {
 
 $user_id = $_SESSION['id'] ?? null;
 
-$sql = "SELECT valor_energetico, carboidratos, proteinas, gorduras_totais, gorduras_saturadas, gorduras_trans, fibra_alimentar, sodio, calcio, ferro FROM users WHERE id = ?";
+$sql = "SELECT valor_energetico, carboidratos, proteinas, gorduras_totais, gorduras_saturadas, gorduras_trans, fibras_alimentares, sodio FROM nutri WHERE id = ?";
 $stmt = $pdo->prepare($sql);
 $stmt->execute([$user_id]);
 $user = $stmt->fetch();
 
 $polpas = getAllPolpas();
-$nutricionais = getAllnutricionais();
+$nutricionais = getAllNutri();
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -94,27 +94,26 @@ $nutricionais = getAllnutricionais();
             </tr>
           </thead>
           <tbody>
-            <?php foreach ($Nutricionals as $Nutricional) { ?>
+            <?php foreach ($nutricionais as $nutricional) { ?>
               <tr class="bg-white border-b">
                 <th scope="row" class="flex items-center px-6 py-4 text-gray-900 whitespace-nowrap">
                   <!-- <div>
-                    <img class='lazy w-10' data-src='./uploads/Nutricionals/<?php echo $Nutricional['img']; ?>'></img>
+                    <img class='lazy w-10' data-src='./uploads/nutricionals/<?php echo $nutricional['img']; ?>'></img>
                   </div> -->
                 </th>
                 <th class="bg-white border-b">
                   <div class="pl-3">
-                    <div class="text-base font-semibold"><?php echo $Nutricional['product_id']; ?></div>
+                    <div class="text-base font-semibold"><?php echo $nutricional['product_id']; ?></div>
                   </div>
                 </th>
                 <td class="px-6 py-4">
-                  <a href="./editar_Nutricional.php?id=<?php echo $Nutricional['id']; ?>" type="button" class="font-medium text-blue-600 hover:underline">Editar</a>
-                  <a href="./controllers/delete_Nutricional.php?id=<?php echo $Nutricional['id']; ?>" type="button" class="font-medium text-red-600 hover:underline">Excluir</a>
+                  <a href="./controllers/delete_nutricional.php?id=<?php echo $nutricional['id']; ?>" type="button" class="font-medium text-red-600 hover:underline">Excluir</a>
                 </td>
               </tr>
             <?php } ?>
           </tbody>
         </table>
-        <?php include "./components/modal_add_Nutricional.php"; ?>
+        <?php include "./components/modal_add_nutricionais.php"; ?>
       </div>
     </div>
   </div>
