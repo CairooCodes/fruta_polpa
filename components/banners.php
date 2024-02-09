@@ -3,7 +3,7 @@
     <div class="swiper-wrapper">
       <div class="swiper-slide"><img src="./assets/img/foto_da_fabrica_2.jpg" loading="lazy" class="w-full"></div>
       <div class="swiper-slide"><img src="./assets/img/foto_producao2.jpg" loading="lazy" class="w-full"></div>
-      <div class="swiper-slide"><img src="./assets/img/foto_producao1.jpg" loading="lazy" class="w-full"></div>
+      <div class="swiper-slide"><img src="./assets/img/fotoproducao.jpg" loading="lazy" class="w-full"></div>
       <div class="swiper-slide"><img src="./assets/img/foto_caminhoes.jpg" loading="lazy" class="w-full"></div>
       <div class="swiper-slide"><img src="./assets/img/foto_laboratorio.jpg" loading="lazy" class="w-full"></div>
     </div>

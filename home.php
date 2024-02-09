@@ -16,7 +16,7 @@ $URI = new URI();
 
 <head>
   <?php include "./components/heads.php"; ?>
-  <link rel="stylesheet" href="<?php echo $URI->base("/assets/css/maps.css"); ?>">
+  <link rel="stylesheet" href="https://frutapolpa.com.br/assets/css/maps.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
 

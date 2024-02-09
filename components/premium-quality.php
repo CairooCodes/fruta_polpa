@@ -19,7 +19,7 @@
             Esse conceito surge a partir do momento em que todos os nossos fornecedores passam por um processo extremamente rígido para que nossa matéria prima seja de altíssima qualidade, o mesmo se aplica para todo o restante da produção das polpas congeladas que você compra no supermercado, conheça um pouco mais em alguns tópicos que compõe essa parte que podemos considerar o nosso diferencial competitivo.
           </p>
       </div>
-      <a href="<?php echo $URI->base("qualidade-premium"); ?>" class="leia-mais-link">Leia mais</a>
+      <a href="https://frutapolpa.com.br/qualidade-premium" class="leia-mais-link">Leia mais</a>
     </div>
     <div class="lg:px-16 fade-in-up lg:py-10 pt-4">
       <div class="max-w-full lg:pt-12 mx-auto grid grid-cols-2">

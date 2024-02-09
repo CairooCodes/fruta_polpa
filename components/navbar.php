@@ -5,12 +5,12 @@ include "api-tempo.php";
   <div class="hidden bg-gray-200 sm:block">
     <div class="mx-auto flex max-w-screen-xl px-4 justify-between">
       <div class="flex justify-between items-center space-x-2">
-        <a href="<?php echo $URI->base('home.php#mapa') ?>"><img width="20px" src="<?php echo $URI->base('/assets/img/brazil.png') ?>" /></a>
+        <a href="https://frutapolpa.com.br/home.php#mapa"><img width="20px" src="https://frutapolpa.com.br/assets/img/brazil.png" /></a>
         <span class="text-xs text-gray-600">Encontre Fruta Polpa</span>
       </div>
       <div class="flex items-center">
         <div>
-          <img class="mr-2 nuvem-icon" width="30" src="<?php echo $URI->base('/assets/img/tempo.png') ?>">
+          <img class="mr-2 nuvem-icon" width="30" src="https://frutapolpa.com.br/assets/img/tempo.png">
         </div>
         <div class="hidden md:block text-gray-600 text-xs">
           Teresina/PI - Min <?php echo $var1[$i]; ?> e Max <?php echo $var2[$i]; ?> ºC
@@ -20,8 +20,8 @@ include "api-tempo.php";
   </div>
   <nav class="shadow bg-white">
     <div class="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto">
-      <a href="<?php echo $URI->base("home.php"); ?>">
-        <img class="w-16 my-2" src="<?php echo $URI->base("/assets/img/logo.png"); ?>" class="logo" alt="Fruta Polpa" />
+      <a href="https://frutapolpa.com.br/home.php">
+        <img class="w-16 my-2" src="https://frutapolpa.com.br/assets/img/logo.png" class="logo" alt="Fruta Polpa" />
       </a>
       <div class="flex items-center lg:order-2 lg:hidden">
         <button id="mobile-menu-button" data-collapse-toggle="mobile-menu-2" type="button" class="inline-flex items-center p-2 ml-1 text-xs text-color1 rounded-lg lg:hidden focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="mobile-menu-2" aria-expanded="false">
@@ -37,25 +37,22 @@ include "api-tempo.php";
       <div class="items-center justify-center hidden w-full lg:flex lg:w-auto lg:order-1 py-1.5" id="mobile-menu-2">
         <ul class="flex flex-col lg:flex-row">
           <li class="py-2">
-            <a href="<?php echo $URI->base("institucional"); ?>" class="block py-2 uppercase text-xs rounded" aria-current="page">Institucional</a>
+            <a href="https://frutapolpa.com.br/institucional" class="block py-2 uppercase text-xs rounded" aria-current="page">Institucional</a>
           </li>
           <li class="py-2">
-            <a href="<?php echo $URI->base("polpas"); ?>" class="block py-2 uppercase text-xs rounded" aria-current="page">Polpas</a>
+            <a href="https://frutapolpa.com.br/polpas" class="block py-2 uppercase text-xs rounded" aria-current="page">Polpas</a>
           </li>
           <li class="py-2">
-            <a href="<?php echo $URI->base("qualidade-premium"); ?>" class="block py-2 uppercase text-xs rounded" aria-current="page">Qualidade premium</a>
+            <a href="https://frutapolpa.com.br/qualidade-premium" class="block py-2 uppercase text-xs rounded" aria-current="page">Qualidade premium</a>
           </li>
           <li class="py-2">
-            <a href="<?php echo $URI->base("certificacoes"); ?>" class="block py-2 uppercase text-xs rounded" aria-current="page">Certificações</a>
-          </li>
-          <!-- <li class="py-2">
-            <a href="<?php// echo $URI->base("blog"); ?>" class="block py-2 uppercase text-xs rounded" aria-current="page">Blog</a>
-          </li> -->
-          <li class="py-2">
-            <a href="<?php echo $URI->base("receitas"); ?>" class="block py-2 uppercase text-xs rounded" aria-current="page">Receitas</a>
+            <a href="https://frutapolpa.com.br/certificacoes" class="block py-2 uppercase text-xs rounded" aria-current="page">Certificações</a>
           </li>
           <li class="py-2">
-            <a href="<?php echo $URI->base("contato"); ?>" class="block py-2 uppercase text-xs rounded" aria-current="page">Seja nosso parceiro</a>
+            <a href="https://frutapolpa.com.br/receitas" class="block py-2 uppercase text-xs rounded" aria-current="page">Receitas</a>
+          </li>
+          <li class="py-2">
+            <a href="https://frutapolpa.com.br/contato" class="block py-2 uppercase text-xs rounded" aria-current="page">Seja nosso parceiro</a>
           </li>
         </ul>
         <div class="flex justify-center">
@@ -64,7 +61,7 @@ include "api-tempo.php";
               WhatsApp
             </button>
           </a>
-          <a href="<?php echo $URI->base("trabalhe-conosco"); ?>">
+          <a href="https://frutapolpa.com.br/trabalhe-conosco">
             <button class="ml-4 text-xs py-2 px-4 rounded-full border-2 boder-transparent hover:border-color1 bg-color1 hover:bg-white text-white hover:text-color1">
               Trabalhe conosco
             </button>
