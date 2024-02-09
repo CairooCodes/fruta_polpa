@@ -1,7 +1,7 @@
 <section class="bg-yellow-50 lg:py-20">
   <div class="max-w-screen-xl px-4 mx-auto lg:grid grid-cols-2 lg:space-x-10 pt-5">
     <div class="mx-auto rounded w-full px-4" style="background: rgb(252,114,0); background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);">
-      <form action="./functions/send-email.php" method="post" class="mr-auto lg:p-8 place-self-center pt-5 mb-5 pb-5">
+      <form action="https://testefrutapolpa.com.br/functions/send-email.php" method="post" class="mr-auto lg:p-8 place-self-center pt-5 mb-5 pb-5">
         <h2 class="text-center md:text-left text-2xl font-extrabold tracking-wider text-white text-center">Fale Conosco</h2>
         <div>
           <label class="text-sm font-bold text-white">
