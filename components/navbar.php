@@ -71,3 +71,10 @@ include "api-tempo.php";
     </div>
   </nav>
 </header>
+<div class="z-10 fixed">
+  <a data-modal-target="addUserModal" data-modal-show="addUserModal" class="pointer">
+    <button class="whatsapp-button">
+      <i class="bi bi-whatsapp"></i>
+    </button>
+  </a>
+</div>
