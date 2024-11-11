@@ -5,300 +5,29 @@
     <div class="lg:pl-72 px-5 pt-14">
       <div class="swiper swiper_products_type z-0">
         <div class="swiper-wrapper">
-          <div class="swiper-slide pb-5">
-            <div class="transition duration-500 bg-white rounded-2xl shadow2">
-              <div class="h-full">
-                <img style='margin-bottom: -100px;' class='relative top-[-100px]' loading="lazy" src='./assets/img/polpas/ABACAXI.png'>
-              </div>
-              <div class="bg-bottom rounded-b-2xl" style="background: rgb(252,114,0);
-background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);">
-                <div class="flex justify-center pb-5">
-                  <a href="https://frutapolpa.com.br/polpas-tradicionais">
-                    <h3 class="text-xl text-white text-center font-bold pt-6 mb-2">100%
-                      naturais</h3>
-                    <h3 class="text-3xl text-white text-center font-black mb-2">Polpas Tradicionais</h3>
-                    <button class="hover:bg-slate-100 hover:text-gray-900 text-sm text-white py-2 px-4 rounded-full border-2 border-gray mt-4 ml-20">
-                      CONHEÇA
-                      <i class="bi bi-caret-right-fill"></i>
-                    </button>
-                  </a>
+          <?php foreach ($polpas1 as $polpa1) { ?>
+            <div class="swiper-slide pb-5">
+              <div class="transition duration-500 bg-white rounded-2xl shadow2">
+                <div class="h-full">
+                  <img loading="lazy" src='./admin/uploads/polpas/<?php echo $polpa1['img']; ?>'>
+                </div>
+                <div class="bg-bottom rounded-b-2xl" style="background: rgb(252,114,0); background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);">
+                  <div class="flex justify-center pb-5">
+                    <a href="https://frutapolpa.com.br/polpas-tradicionais">
+                      <h3 class="text-xl text-white text-center font-bold pt-6 mb-2">100%
+                        naturais</h3>
+                      <h3 class="text-3xl text-white text-center font-black mb-2">Polpas Tradicionais</h3>
+                      <button class="hover:bg-slate-100 hover:text-gray-900 text-sm text-white py-2 px-4 rounded-full border-2 border-gray mt-4 ml-20">
+                        CONHEÇA
+                        <i class="bi bi-caret-right-fill"></i>
+                      </button>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="swiper-slide">
-            <div class=" transition duration-500 bg-white rounded-2xl shadow2 ">
-              <div class="h-full">
-                <img style='margin-bottom: -100px;' class='relative top-[-100px]' loading="lazy" src='./assets/img/polpas/ACAI.png'>
-              </div>
-              <div class="bg-bottom rounded-b-2xl" style="background: rgb(252,114,0);
-background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);">
-                <div class="flex justify-center pb-5">
-                  <a href="https://frutapolpa.com.br/polpas-tradicionais">
-                    <h3 class="text-xl text-white text-center font-bold pt-6 mb-2">100%
-                      naturais</h3>
-                    <h3 class="text-3xl text-white text-center font-black mb-2">Polpas Tradicionais</h3>
-                    <button class="hover:bg-slate-100 hover:text-gray-900 text-sm text-white py-2 px-4 rounded-full border-2 border-gray mt-4 ml-20">
-                      CONHEÇA
-                      <i class="bi bi-caret-right-fill"></i>
-                    </button>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class=" transition duration-500 bg-white rounded-2xl shadow2 ">
-              <div class="h-full">
-                <img style='margin-bottom: -100px;' class='relative top-[-100px]' loading="lazy" src='./assets/img/polpas/ACEROLA.png'>
-              </div>
-              <div class="bg-bottom rounded-b-2xl" style="background: rgb(252,114,0);
-background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);">
-                <div class="flex justify-center pb-5">
-                  <a href="https://frutapolpa.com.br/polpas-tradicionais">
-                    <h3 class="text-xl text-white text-center font-bold pt-6 mb-2">100%
-                      naturais</h3>
-                    <h3 class="text-3xl text-white text-center font-black mb-2">Polpas Tradicionais</h3>
-                    <button class="hover:bg-slate-100 hover:text-gray-900 text-sm text-white py-2 px-4 rounded-full border-2 border-gray mt-4 ml-20">
-                      CONHEÇA
-                      <i class="bi bi-caret-right-fill"></i>
-                    </button>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class=" transition duration-500 bg-white rounded-2xl shadow2 ">
-              <div class="h-full">
-                <img style='margin-bottom: -100px;' class='relative top-[-100px]' loading="lazy" src='./assets/img/polpas/BACURI.png'>
-              </div>
-              <div class="bg-bottom rounded-b-2xl" style="background: rgb(252,114,0);
-background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);">
-                <div class="flex justify-center pb-5">
-                  <a href="https://frutapolpa.com.br/polpas-tradicionais">
-                    <h3 class="text-xl text-white text-center font-bold pt-6 mb-2">100%
-                      naturais</h3>
-                    <h3 class="text-3xl text-white text-center font-black mb-2">Polpas Tradicionais</h3>
-                    <button class="hover:bg-slate-100 hover:text-gray-900 text-sm text-white py-2 px-4 rounded-full border-2 border-gray mt-4 ml-20">
-                      CONHEÇA
-                      <i class="bi bi-caret-right-fill"></i>
-                    </button>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class=" transition duration-500 bg-white rounded-2xl shadow2 ">
-              <div class="h-full">
-                <img style='margin-bottom: -100px;' class='relative top-[-100px]' loading="lazy" src='./assets/img/polpas/CAJA.png'>
-              </div>
-              <div class="bg-bottom rounded-b-2xl" style="background: rgb(252,114,0);
-background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);">
-                <div class="flex justify-center pb-5">
-                  <a href="https://frutapolpa.com.br/polpas-tradicionais">
-                    <h3 class="text-xl text-white text-center font-bold pt-6 mb-2">100%
-                      naturais</h3>
-                    <h3 class="text-3xl text-white text-center font-black mb-2">Polpas Tradicionais</h3>
-                    <button class="hover:bg-slate-100 hover:text-gray-900 text-sm text-white py-2 px-4 rounded-full border-2 border-gray mt-4 ml-20">
-                      CONHEÇA
-                      <i class="bi bi-caret-right-fill"></i>
-                    </button>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class=" transition duration-500 bg-white rounded-2xl shadow2 ">
-              <div class="h-full">
-                <img style='margin-bottom: -100px;' class='relative top-[-100px]' loading="lazy" src='./assets/img/polpas/CAJU.png'>
-              </div>
-              <div class="bg-bottom rounded-b-2xl" style="background: rgb(252,114,0);
-background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);">
-                <div class="flex justify-center pb-5">
-                  <a href="https://frutapolpa.com.br/polpas-tradicionais">
-                    <h3 class="text-xl text-white text-center font-bold pt-6 mb-2">100%
-                      naturais</h3>
-                    <h3 class="text-3xl text-white text-center font-black mb-2">Polpas Tradicionais</h3>
-                    <button class="hover:bg-slate-100 hover:text-gray-900 text-sm text-white py-2 px-4 rounded-full border-2 border-gray mt-4 ml-20">
-                      CONHEÇA
-                      <i class="bi bi-caret-right-fill"></i>
-                    </button>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class=" transition duration-500 bg-white rounded-2xl shadow2 ">
-              <div class="h-full">
-                <img style='margin-bottom: -100px;' class='relative top-[-100px]' loading="lazy" src='./assets/img/polpas/CUPUAÇU.png'>
-              </div>
-              <div class="bg-bottom rounded-b-2xl" style="background: rgb(252,114,0);
-background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);">
-                <div class="flex justify-center pb-5">
-                  <a href="https://frutapolpa.com.br/polpas-tradicionais">
-                    <h3 class="text-xl text-white text-center font-bold pt-6 mb-2">100%
-                      naturais</h3>
-                    <h3 class="text-3xl text-white text-center font-black mb-2">Polpas Tradicionais</h3>
-                    <button class="hover:bg-slate-100 hover:text-gray-900 text-sm text-white py-2 px-4 rounded-full border-2 border-gray mt-4 ml-20">
-                      CONHEÇA
-                      <i class="bi bi-caret-right-fill"></i>
-                    </button>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class=" transition duration-500 bg-white rounded-2xl shadow2 ">
-              <div class="h-full">
-                <img style='margin-bottom: -100px;' class='relative top-[-100px]' loading="lazy" src='./assets/img/polpas/GOIABA.png'>
-              </div>
-              <div class="bg-bottom rounded-b-2xl" style="background: rgb(252,114,0);
-background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);">
-                <div class="flex justify-center pb-5">
-                  <a href="https://frutapolpa.com.br/polpas-tradicionais">
-                    <h3 class="text-xl text-white text-center font-bold pt-6 mb-2">100%
-                      naturais</h3>
-                    <h3 class="text-3xl text-white text-center font-black mb-2">Polpas Tradicionais</h3>
-                    <button class="hover:bg-slate-100 hover:text-gray-900 text-sm text-white py-2 px-4 rounded-full border-2 border-gray mt-4 ml-20">
-                      CONHEÇA
-                      <i class="bi bi-caret-right-fill"></i>
-                    </button>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class=" transition duration-500 bg-white rounded-2xl shadow2 ">
-              <div class="h-full">
-                <img style='margin-bottom: -100px;' class='relative top-[-100px]' loading="lazy" src='./assets/img/polpas/GRAVIOLA.png'>
-              </div>
-              <div class="bg-bottom rounded-b-2xl" style="background: rgb(252,114,0);
-background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);">
-                <div class="flex justify-center pb-5">
-                  <a href="https://frutapolpa.com.br/polpas-tradicionais">
-                    <h3 class="text-xl text-white text-center font-bold pt-6 mb-2">100%
-                      naturais</h3>
-                    <h3 class="text-3xl text-white text-center font-black mb-2">Polpas Tradicionais</h3>
-                    <button class="hover:bg-slate-100 hover:text-gray-900 text-sm text-white py-2 px-4 rounded-full border-2 border-gray mt-4 ml-20">
-                      CONHEÇA
-                      <i class="bi bi-caret-right-fill"></i>
-                    </button>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class=" transition duration-500 bg-white rounded-2xl shadow2 ">
-              <div class="h-full">
-                <img style='margin-bottom: -100px;' class='relative top-[-100px]' loading="lazy" src='./assets/img/polpas/MANGA.png'>
-              </div>
-              <div class="bg-bottom rounded-b-2xl" style="background: rgb(252,114,0);
-background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);">
-                <div class="flex justify-center pb-5">
-                  <a href="https://frutapolpa.com.br/polpas-tradicionais">
-                    <h3 class="text-xl text-white text-center font-bold pt-6 mb-2">100%
-                      naturais</h3>
-                    <h3 class="text-3xl text-white text-center font-black mb-2">Polpas Tradicionais</h3>
-                    <button class="hover:bg-slate-100 hover:text-gray-900 text-sm text-white py-2 px-4 rounded-full border-2 border-gray mt-4 ml-20">
-                      CONHEÇA
-                      <i class="bi bi-caret-right-fill"></i>
-                    </button>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class=" transition duration-500 bg-white rounded-2xl shadow2 ">
-              <div class="h-full">
-                <img style='margin-bottom: -100px;' class='relative top-[-100px]' loading="lazy" src='./assets/img/polpas/MARACUJA.png'>
-              </div>
-              <div class="bg-bottom rounded-b-2xl" style="background: rgb(252,114,0);
-background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);">
-                <div class="flex justify-center pb-5">
-                  <a href="https://frutapolpa.com.br/polpas-tradicionais">
-                    <h3 class="text-xl text-white text-center font-bold pt-6 mb-2">100%
-                      naturais</h3>
-                    <h3 class="text-3xl text-white text-center font-black mb-2">Polpas Tradicionais</h3>
-                    <button class="hover:bg-slate-100 hover:text-gray-900 text-sm text-white py-2 px-4 rounded-full border-2 border-gray mt-4 ml-20">
-                      CONHEÇA
-                      <i class="bi bi-caret-right-fill"></i>
-                    </button>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class=" transition duration-500 bg-white rounded-2xl shadow2 ">
-              <div class="h-full">
-                <img style='margin-bottom: -100px;' class='relative top-[-100px]' loading="lazy" src='./assets/img/polpas/MORANGO.png'>
-              </div>
-              <div class="bg-bottom rounded-b-2xl" style="background: rgb(252,114,0);
-background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);">
-                <div class="flex justify-center pb-5">
-                  <a href="https://frutapolpa.com.br/polpas-tradicionais">
-                    <h3 class="text-xl text-white text-center font-bold pt-6 mb-2">100%
-                      naturais</h3>
-                    <h3 class="text-3xl text-white text-center font-black mb-2">Polpas Tradicionais</h3>
-                    <button class="hover:bg-slate-100 hover:text-gray-900 text-sm text-white py-2 px-4 rounded-full border-2 border-gray mt-4 ml-20">
-                      CONHEÇA
-                      <i class="bi bi-caret-right-fill"></i>
-                    </button>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class=" transition duration-500 bg-white rounded-2xl shadow2 ">
-              <div class="h-full">
-                <img style='margin-bottom: -100px;' class='relative top-[-100px]' loading="lazy" src='./assets/img/polpas/MURICI.png'>
-              </div>
-              <div class="bg-bottom rounded-b-2xl" style="background: rgb(252,114,0);
-background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);">
-                <div class="flex justify-center pb-5">
-                  <a href="https://frutapolpa.com.br/polpas-tradicionais">
-                    <h3 class="text-xl text-white text-center font-bold pt-6 mb-2">100%
-                      naturais</h3>
-                    <h3 class="text-3xl text-white text-center font-black mb-2">Polpas Tradicionais</h3>
-                    <button class="hover:bg-slate-100 hover:text-gray-900 text-sm text-white py-2 px-4 rounded-full border-2 border-gray mt-4 ml-20">
-                      CONHEÇA
-                      <i class="bi bi-caret-right-fill"></i>
-                    </button>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class=" transition duration-500 bg-white rounded-2xl shadow2 ">
-              <div class="h-full">
-                <img style='margin-bottom: -100px;' class='relative top-[-100px]' loading="lazy" src='./assets/img/polpas/TAMARINDO.png'>
-              </div>
-              <div class="bg-bottom rounded-b-2xl" style="background: rgb(252,114,0);
-background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);">
-                <div class="flex justify-center pb-5">
-                  <a href="https://frutapolpa.com.br/polpas-tradicionais">
-                    <h3 class="text-xl text-white text-center font-bold pt-6 mb-2">100%
-                      naturais</h3>
-                    <h3 class="text-3xl text-white text-center font-black mb-2">Polpas Tradicionais</h3>
-                    <button class="hover:bg-slate-100 hover:text-gray-900 text-sm text-white py-2 px-4 rounded-full border-2 border-gray mt-4 ml-20">
-                      CONHEÇA
-                      <i class="bi bi-caret-right-fill"></i>
-                    </button>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
+          <?php }
+          ?>
         </div>
         <!-- <div class="swiper-pagination"></div> -->
       </div>
@@ -306,132 +35,29 @@ background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%
     <div class="lg:pr-72 px-5 pt-14">
       <div class="swiper swiper_products_type2 z-0">
         <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class=" transition duration-500 bg-white rounded-2xl shadow2 ">
-              <div class="h-full">
-                <img style='margin-bottom: -100px;' class='relative top-[-100px]' loading="lazy" src='./assets/img/polpas/MIX_ABACAXI_COM_HORTELÃ.png'>
-              </div>
-              <div class="bg-bottom rounded-b-2xl" style="background: rgb(252,114,0);
-background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);">
-                <div class="flex justify-center pb-5">
-                  <a href="https://frutapolpa.com.br/polpas-mixs">
-                    <h3 class="text-xl text-white text-center font-bold pt-6 mb-2">100%
-                      naturais</h3>
-                    <h3 class="text-3xl text-white text-center font-black mb-2">Polpas Mix</h3>
-                    <button class="hover:bg-slate-100 hover:text-gray-900 text-sm text-white py-2 px-4 rounded-full border-2 border-gray mt-4 ml-4">
-                      CONHEÇA
-                      <i class="bi bi-caret-right-fill"></i>
-                    </button>
-                  </a>
+          <?php foreach ($polpas2 as $polpa2) { ?>
+            <div class="swiper-slide">
+              <div class=" transition duration-500 bg-white rounded-2xl shadow2 ">
+                <div class="h-full">
+                <img loading="lazy" src='./admin/uploads/polpas/<?php echo $polpa2['img']; ?>'>
+                </div>
+                <div class="bg-bottom rounded-b-2xl" style="background: rgb(252,114,0);background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);">
+                  <div class="flex justify-center pb-5">
+                    <a href="https://frutapolpa.com.br/polpas-mixs">
+                      <h3 class="text-xl text-white text-center font-bold pt-6 mb-2">100%
+                        naturais</h3>
+                      <h3 class="text-3xl text-white text-center font-black mb-2">Polpas Mix</h3>
+                      <button class="hover:bg-slate-100 hover:text-gray-900 text-sm text-white py-2 px-4 rounded-full border-2 border-gray mt-4 ml-4">
+                        CONHEÇA
+                        <i class="bi bi-caret-right-fill"></i>
+                      </button>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="swiper-slide">
-            <div class=" transition duration-500 bg-white rounded-2xl shadow2 ">
-              <div class="h-full">
-                <img style='margin-bottom: -100px;' class='relative top-[-100px]' loading="lazy" src='./assets/img/polpas/MIX_HIBISCO.png'>
-              </div>
-              <div class="bg-bottom rounded-b-2xl" style="background: rgb(252,114,0);
-background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);">
-                <div class="flex justify-center pb-5">
-                  <a href="https://frutapolpa.com.br/polpas-mixs">
-                    <h3 class="text-xl text-white text-center font-bold pt-6 mb-2">100%
-                      naturais</h3>
-                    <h3 class="text-3xl text-white text-center font-black mb-2">Polpas Mix</h3>
-                    <button class="hover:bg-slate-100 hover:text-gray-900 text-sm text-white py-2 px-4 rounded-full border-2 border-gray mt-4 ml-4">
-                      CONHEÇA
-                      <i class="bi bi-caret-right-fill"></i>
-                    </button>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class=" transition duration-500 bg-white rounded-2xl shadow2 ">
-              <div class="h-full">
-                <img style='margin-bottom: -100px;' class='relative top-[-100px]' loading="lazy" src='./assets/img/polpas/MIX_REFRESCANTE.png'>
-              </div>
-              <div class="bg-bottom rounded-b-2xl" style="background: rgb(252,114,0);
-background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);">
-                <div class="flex justify-center pb-5">
-                  <a href="https://frutapolpa.com.br/polpas-mixs">
-                    <h3 class="text-xl text-white text-center font-bold pt-6 mb-2">100%
-                      naturais</h3>
-                    <h3 class="text-3xl text-white text-center font-black mb-2">Polpas Mix</h3>
-                    <button class="hover:bg-slate-100 hover:text-gray-900 text-sm text-white py-2 px-4 rounded-full border-2 border-gray mt-4 ml-4">
-                      CONHEÇA
-                      <i class="bi bi-caret-right-fill"></i>
-                    </button>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class=" transition duration-500 bg-white rounded-2xl shadow2 ">
-              <div class="h-full">
-                <img style='margin-bottom: -100px;' class='relative top-[-100px]' loading="lazy" src='./assets/img/polpas/MIX_TROPICAL.png'>
-              </div>
-              <div class="bg-bottom rounded-b-2xl" style="background: rgb(252,114,0);
-background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);">
-                <div class="flex justify-center pb-5">
-                  <a href="https://frutapolpa.com.br/polpas-mixs">
-                    <h3 class="text-xl text-white text-center font-bold pt-6 mb-2">100%
-                      naturais</h3>
-                    <h3 class="text-3xl text-white text-center font-black mb-2">Polpas Mix</h3>
-                    <button class="hover:bg-slate-100 hover:text-gray-900 text-sm text-white py-2 px-4 rounded-full border-2 border-gray mt-4 ml-4">
-                      CONHEÇA
-                      <i class="bi bi-caret-right-fill"></i>
-                    </button>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class=" transition duration-500 bg-white rounded-2xl shadow2 ">
-              <div class="h-full">
-                <img style='margin-bottom: -100px;' class='relative top-[-100px]' loading="lazy" src='./assets/img/polpas/MIX_VERDE.png'>
-              </div>
-              <div class="bg-bottom rounded-b-2xl" style="background: rgb(252,114,0);
-background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);">
-                <div class="flex justify-center pb-5">
-                  <a href="https://frutapolpa.com.br/polpas-mixs">
-                    <h3 class="text-xl text-white text-center font-bold pt-6 mb-2">100%
-                      naturais</h3>
-                    <h3 class="text-3xl text-white text-center font-black mb-2">Polpas Mix</h3>
-                    <button class="hover:bg-slate-100 hover:text-gray-900 text-sm text-white py-2 px-4 rounded-full border-2 border-gray mt-4 ml-4">
-                      CONHEÇA
-                      <i class="bi bi-caret-right-fill"></i>
-                    </button>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class=" transition duration-500 bg-white rounded-2xl shadow2 ">
-              <div class="h-full">
-                <img style='margin-bottom: -100px;' class='relative top-[-100px]' loading="lazy" src='./assets/img/polpas/MIX_YELLOW.png'>
-              </div>
-              <div class="bg-bottom rounded-b-2xl" style="background: rgb(252,114,0);
-background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);">
-                <div class="flex justify-center pb-5">
-                  <a href="https://frutapolpa.com.br/polpas-mixs">
-                    <h3 class="text-xl text-white text-center font-bold pt-6 mb-2">100%
-                      naturais</h3>
-                    <h3 class="text-3xl text-white text-center font-black mb-2">Polpas Mix</h3>
-                    <button class="hover:bg-slate-100 hover:text-gray-900 text-sm text-white py-2 px-4 rounded-full border-2 border-gray mt-4 ml-4">
-                      CONHEÇA
-                      <i class="bi bi-caret-right-fill"></i>
-                    </button>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
+          <?php }
+          ?>
         </div>
         <!-- <div class="swiper-pagination2"></div> -->
       </div>
