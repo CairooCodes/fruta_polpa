@@ -31,7 +31,7 @@ $URI = new URI();
                 <div>
                     <h2 class="text-2xl font-bold text-orange-500">Introdução</h2>
                     <p class="mt-4 text-gray-700">
-                        Em cumprimento à Lei nº 14.611 de 04 de Julho de 2023, à Portaria MTE Nº 3.714 ao Decreto nº 11.795/2023, bem como aos compromissos da empresa Fruta Polpa para a promoção de práticas de inclusão e diversidade, divulgamos o relatório de igualdade salarial. É importante saber que a CBO (Classificação Brasileira de Ocupações) é um sistema que organiza e classifica as profissões existentes no Brasil, tendo sido utilizada como base para elaboração do relatório.
+                        Em cumprimento à Lei nº 14.611 de 04 de Julho de 2023, à Portaria MTE Nº 3.714 ao Decreto nº 11.795/2023, bem como aos compromissos da empresa FRUTA POLPA, com a razão social DENCLA INDUSTRIA DE POLPAS LTDA, que opera com o CNPJ 05.891.546/0001-01 e tem sua sede localizada na Avenida Henry Wall de Carvalho, 12960, Angelim, Teresina PI, 64.034-280, para a promoção de práticas de inclusão e diversidade, divulgamos o relatório de igualdade salarial. É importante saber que a CBO (Classificação Brasileira de Ocupações) é um sistema que organiza e classifica as profissões existentes no Brasil, tendo sido utilizada como base para elaboração do relatório.
                     </p>
                 </div>
 
