@@ -18,10 +18,9 @@ $URI = new URI();
     <?php include "./components/navbar.php" ?>
     <div class="mx-auto max-w-7xl px-2 pt-10">
         <!-- Hero Section -->
-        <div class="bg-blue-50 py-20">
+        <div class="bg-orange-50 py-20">
             <div class="text-center">
-                <h1 class="text-4xl font-bold text-blue-900">Relatório de Transparência Salarial</h1>
-                <p class="mt-4 text-lg text-blue-700">Entenda como funciona a política de remuneração na Avine.</p>
+                <h1 class="text-4xl font-bold text-orange-500">Relatório de Transparência Salarial</h1>
             </div>
         </div>
 
@@ -30,59 +29,59 @@ $URI = new URI();
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <!-- Left Column -->
                 <div>
-                    <h2 class="text-2xl font-bold text-blue-900">Introdução</h2>
+                    <h2 class="text-2xl font-bold text-orange-500">Introdução</h2>
                     <p class="mt-4 text-gray-700">
-                        Na Avine, acreditamos que a transparência é fundamental para construir um ambiente de trabalho justo e equitativo. Este relatório tem como objetivo fornecer uma visão clara e detalhada sobre como estruturamos a remuneração de nossos colaboradores.
+                        Em cumprimento à Lei nº 14.611 de 04 de Julho de 2023, à Portaria MTE Nº 3.714 ao Decreto nº 11.795/2023, bem como aos compromissos da empresa Fruta Polpa para a promoção de práticas de inclusão e diversidade, divulgamos o relatório de igualdade salarial. É importante saber que a CBO (Classificação Brasileira de Ocupações) é um sistema que organiza e classifica as profissões existentes no Brasil, tendo sido utilizada como base para elaboração do relatório.
                     </p>
                 </div>
 
                 <!-- Right Column -->
                 <div>
-                    <h2 class="text-2xl font-bold text-blue-900">Metodologia</h2>
-                    <p class="mt-4 text-gray-700">
-                        Utilizamos uma metodologia baseada em dados reais e benchmarks de mercado para garantir que nossos salários sejam competitivos e justos. Todos os dados são revisados periodicamente para garantir a precisão e a relevância.
+                    <h2 class="text-2xl font-bold text-orange-500">Ela serve para</h2>
+                    <p class="mt-1 text-gray-700">
+                        - Identificar e nomear profissões;
                     </p>
+                    <p class="mt-1 text-gray-700">- Descrever, de forma geral e ampla, as atividades que cada profissão realiza; </p>
+                    <p class="mt-1 text-gray-700">- Informar os requisitos, formações acadêmicas e experiências necessárias mais utilizados no mercado de trabalho </p>
+                    <h2 class="text-2xl font-bold text-orange-500 mt-4">Para que é utilizado</h2>
+                    <p class="mt-1 text-gray-700">
+                        - Buscar informações sobre profissões;
+                    </p>
+                    <p class="mt-1 text-gray-700">- Auxiliar empresas a classificar cargos e funções (e-Social e Caged); </p>
+                    <p class="mt-1 text-gray-700">- Pesquisas públicas de mercado de trabalho; </p>
+                    <p class="mt-1 text-gray-700">- Políticas públicas de emprego e qualificação profissional. </p>
                 </div>
             </div>
 
-            <!-- Additional Content -->
-            <div class="mt-10">
-                <h2 class="text-2xl font-bold text-blue-900">Dados Salariais</h2>
-                <p class="mt-4 text-gray-700">
-                    Abaixo, você encontrará uma tabela com os dados salariais médios por cargo e nível de experiência. Esses dados são atualizados anualmente e refletem a média salarial dentro da empresa.
-                </p>
+            <div class="mt-10 flex justify-center mb-10">
+                <div>
+                    <h2 class="text-2xl font-bold text-orange-500 text-center">Relatórios Disponíveis</h2>
+                    <p class="mt-4 text-gray-700">
+                        Confira abaixo os relatórios de transparência salarial disponíveis para download:
+                    </p>
 
-                <!-- Example Table -->
-                <div class="mt-6 overflow-x-auto">
-                    <table class="min-w-full bg-white">
-                        <thead>
-                            <tr>
-                                <th class="py-2 px-4 border-b border-gray-200 bg-gray-100 text-left text-gray-600">Cargo</th>
-                                <th class="py-2 px-4 border-b border-gray-200 bg-gray-100 text-left text-gray-600">Nível</th>
-                                <th class="py-2 px-4 border-b border-gray-200 bg-gray-100 text-left text-gray-600">Salário Médio</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="py-2 px-4 border-b border-gray-200">Desenvolvedor</td>
-                                <td class="py-2 px-4 border-b border-gray-200">Júnior</td>
-                                <td class="py-2 px-4 border-b border-gray-200">R$ 4.000,00</td>
-                            </tr>
-                            <tr>
-                                <td class="py-2 px-4 border-b border-gray-200">Desenvolvedor</td>
-                                <td class="py-2 px-4 border-b border-gray-200">Pleno</td>
-                                <td class="py-2 px-4 border-b border-gray-200">R$ 6.500,00</td>
-                            </tr>
-                            <tr>
-                                <td class="py-2 px-4 border-b border-gray-200">Desenvolvedor</td>
-                                <td class="py-2 px-4 border-b border-gray-200">Sênior</td>
-                                <td class="py-2 px-4 border-b border-gray-200">R$ 9.000,00</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <div class="mt-6 flex flex-col space-y-4 md:flex-row md:space-y-0 md:space-x-4">
+                        <!-- First PDF Link -->
+                        <a href="./docs/RELATORIO 1º SEMESTRE 2024.pdf" class="flex items-center p-4 bg-orange-50 rounded-lg hover:bg-orange-100 transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-orange-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                            </svg>
+                            <span class="ml-4 text-blue-900 font-medium">Relatório Primeiro Semestre 2024</span>
+                        </a>
+
+                        <!-- Second PDF Link -->
+                        <a href="./docs/REALTORIO 2º SEMESTRE 2024.pdf" class="flex items-center p-4 bg-orange-50 rounded-lg hover:bg-orange-100 transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-orange-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                            </svg>
+                            <span class="ml-4 text-blue-900 font-medium">Relatório Segundo Semestre 2024</span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
+    </div>
+    </div>
     </div>
 
     <?php include "./components/footer.php" ?>
