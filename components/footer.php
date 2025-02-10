@@ -44,6 +44,11 @@
               Trabalhe Conosco
             </a>
           </li>
+          <li class="mt-3">
+            <a href="https://frutapolpa.com.br/transparencia-salarial" class="text-gray-600 cursor-pointer hover:text-orange-500">
+              Transparência Salarial
+            </a>
+          </li>
         </div>
       </div>
 

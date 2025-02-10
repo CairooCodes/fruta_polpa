@@ -54,6 +54,9 @@ include "api-tempo.php";
           <li class="py-2">
             <a href="https://frutapolpa.com.br/contato" class="block py-2 uppercase text-xs rounded" aria-current="page">Seja nosso parceiro</a>
           </li>
+          <li class="py-2 lg:hidden">
+            <a href="https://frutapolpa.com.br/transparencia-salarial" class="block py-2 uppercase text-xs rounded" aria-current="page">Transparência Salarial</a>
+          </li>
         </ul>
         <div class="flex justify-center">
           <a href="https://api.whatsapp.com/send?phone=5586994293833&text=Olá%20Fruta%20Polpa-site">
