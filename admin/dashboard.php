@@ -9,6 +9,7 @@ if (!isset($_SESSION['id'])) {
 }
 
 $user_id = $_SESSION['id'] ?? null;
+$user_type = $_SESSION['type'];
 
 $sql = "SELECT name, email, img FROM users WHERE id = ?";
 $stmt = $pdo->prepare($sql);
@@ -52,23 +53,25 @@ $page = 'dash';
       <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
         <div class="flex items-center justify-between py-4 bg-white">
           <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3 pb-6">
-            <div class="md:col-span-2 lg:col-span-1">
-              <a href="banners.php">
-                <div class="h-full py-8 px-6 space-y-6 rounded-xl text-2xl border border-gray-200 bg-color1 text-white">
-                  <div class="flex space-x-2">
-                    <i class="bi bi-images"></i>
-                    <h6>
-                      BANNERS
-                      <?php
-                      $sth = $pdo->prepare("SELECT count(*) as total from banners");
-                      $sth->execute();
-                      print_r($sth->fetchColumn());
-                      ?>
-                    </h6>
+            <?php if ($user_type == 1): ?>
+              <div class="md:col-span-2 lg:col-span-1">
+                <a href="banners.php">
+                  <div class="h-full py-8 px-6 space-y-6 rounded-xl text-2xl border border-gray-200 bg-color1 text-white">
+                    <div class="flex space-x-2">
+                      <i class="bi bi-images"></i>
+                      <h6>
+                        BANNERS
+                        <?php
+                        $sth = $pdo->prepare("SELECT count(*) as total from banners");
+                        $sth->execute();
+                        print_r($sth->fetchColumn());
+                        ?>
+                      </h6>
+                    </div>
                   </div>
-                </div>
-              </a>
-            </div>
+                </a>
+              </div>
+            <?php endif; ?>
             <div class="md:col-span-2 lg:col-span-1">
               <a href="trabalhe-conosco.php">
                 <div class="h-full py-8 px-6 space-y-6 rounded-xl text-2xl border border-gray-200 bg-color1 text-white">
@@ -148,6 +151,23 @@ $page = 'dash';
                       $sth = $pdo->prepare("SELECT count(*) as total from leads");
                       $sth->execute();
                       print_r($sth->fetchColumn());
+                      ?>
+                    </h6>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="md:col-span-2 lg:col-span-1">
+              <a href="cupons.php">
+                <div class="h-full py-8 px-6 space-y-6 rounded-xl text-2xl border border-gray-200 bg-color1 text-white">
+                  <div class="flex space-x-2">
+                    <i class="bi bi-inboxes"></i>
+                    <h6>
+                      Cupons
+                      <?php
+                      // $sth = $pdo->prepare("SELECT count(*) as total from leads");
+                      // $sth->execute();
+                      // print_r($sth->fetchColumn());
                       ?>
                     </h6>
                   </div>

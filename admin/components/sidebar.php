@@ -8,28 +8,30 @@
 
     <ul class="space-y-2 tracking-wide mt-8">
       <li>
-        <a href="dashboard.php" aria-label="dashboard" 
-        class="relative px-3 py-2 flex items-center space-x-3 rounded-xl 
+        <a href="dashboard.php" aria-label="dashboard"
+          class="relative px-3 py-2 flex items-center space-x-3 rounded-xl 
         <?php if ($page == 'dash') {
           echo 'bg-orange-600 text-white';
         } ?>">
           <svg class=" -ml-1 h-6 w-6" viewBox="0 0 24 24" fill="none">
-          <path d="M6 8a2 2 0 0 1 2-2h1a2 2 0 0 1 2 2v1a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V8ZM6 15a2 2 0 0 1 2-2h1a2 2 0 0 1 2 2v1a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2v-1Z" class="fill-current text-cyan-400 dark:fill-slate-600"></path>
-          <path d="M13 8a2 2 0 0 1 2-2h1a2 2 0 0 1 2 2v1a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2V8Z" class="fill-current text-cyan-200"></path>
-          <path d="M13 15a2 2 0 0 1 2-2h1a2 2 0 0 1 2 2v1a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-1Z" class="fill-current group-hover:text-sky-300"></path>
+            <path d="M6 8a2 2 0 0 1 2-2h1a2 2 0 0 1 2 2v1a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V8ZM6 15a2 2 0 0 1 2-2h1a2 2 0 0 1 2 2v1a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2v-1Z" class="fill-current text-cyan-400 dark:fill-slate-600"></path>
+            <path d="M13 8a2 2 0 0 1 2-2h1a2 2 0 0 1 2 2v1a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2V8Z" class="fill-current text-cyan-200"></path>
+            <path d="M13 15a2 2 0 0 1 2-2h1a2 2 0 0 1 2 2v1a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-1Z" class="fill-current group-hover:text-sky-300"></path>
           </svg>
           <span class="group-hover:text-gray-700">Dashboard</span>
         </a>
       </li>
-      <li>
-        <a href="banners.php" class="px-3 py-2 flex items-center space-x-3 rounded-md text-gray-800 group 
+      <?php if ($user_type == 1): ?>
+        <li>
+          <a href="banners.php" class="px-3 py-2 flex items-center space-x-3 rounded-md text-gray-800 group 
         <?php if ($page == 'banners') {
           echo 'bg-orange-600 text-white';
         } ?>">
-          <i class="bi bi-images"></i>
-          <span class="group-hover:text-gray-700">Banners</span>
-        </a>
-      </li>
+            <i class="bi bi-images"></i>
+            <span class="group-hover:text-gray-700">Banners</span>
+          </a>
+        </li>
+      <?php endif; ?>
       <li>
         <a href="trabalhe-conosco.php?id=1" class="px-3 py-2 flex items-center space-x-3 rounded-md text-gray-800 group 
         <?php if ($page == 'trabalhe-conosco') {
@@ -73,6 +75,15 @@
         } ?>">
           <i class="bi bi-inboxes"></i>
           <span class="group-hover:text-gray-700">Leads</span>
+        </a>
+      </li>
+      <li>
+        <a href="cupons.php" class="px-3 py-2 flex items-center space-x-3 rounded-md text-gray-800 group 
+        <?php if ($page == 'cupons') {
+          echo 'bg-orange-600 text-white';
+        } ?>">
+          <i class="bi bi-inboxes"></i>
+          <span class="group-hover:text-gray-700">Cupons</span>
         </a>
       </li>
     </ul>
