@@ -9,6 +9,8 @@ if (!isset($_SESSION['id'])) {
 }
 
 $user_id = $_SESSION['id'] ?? null;
+$user_type = $_SESSION['type'];
+
 
 $sql = "SELECT name, email, img FROM users WHERE id = ?";
 $stmt = $pdo->prepare($sql);

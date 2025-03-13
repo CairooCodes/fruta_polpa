@@ -2,6 +2,14 @@
 session_start();
 require "../db_config.php";
 
+if (!isset($_SESSION['id'])) {
+  header('Location: login.php');
+  exit;
+}
+
+$user_id = $_SESSION['id'] ?? null;
+$user_type = $_SESSION['type'];
+
 $id = $_GET['id'];
 $about = getAbout($id);
 

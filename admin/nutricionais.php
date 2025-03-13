@@ -9,6 +9,7 @@ if (!isset($_SESSION['id'])) {
 }
 
 $user_id = $_SESSION['id'] ?? null;
+$user_type = $_SESSION['type'];
 
 $sql = "SELECT valor_energetico, carboidratos, proteinas, gorduras_totais, gorduras_saturadas, gorduras_trans, fibras_alimentares, sodio FROM nutri WHERE id = ?";
 $stmt = $pdo->prepare($sql);
