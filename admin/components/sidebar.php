@@ -87,7 +87,7 @@
         </a>
       </li>
       <?php endif; ?>
-      <?php if ($user_type == 1): ?>
+      <?php if ($user_type == 1 | $user_type == 2): ?>
       <li>
         <a href="cupons.php" class="px-3 py-2 flex items-center space-x-3 rounded-md text-gray-800 group 
         <?php if ($page == 'cupons') {

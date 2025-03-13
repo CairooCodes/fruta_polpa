@@ -72,6 +72,7 @@ $page = 'dash';
                 </a>
               </div>
             <?php endif; ?>
+            <?php if ($user_type == 1): ?>
             <div class="md:col-span-2 lg:col-span-1">
               <a href="trabalhe-conosco.php">
                 <div class="h-full py-8 px-6 space-y-6 rounded-xl text-2xl border border-gray-200 bg-color1 text-white">
@@ -89,6 +90,8 @@ $page = 'dash';
                 </div>
               </a>
             </div>
+            <?php endif; ?>
+            <?php if ($user_type == 1): ?>
             <div class="md:col-span-2 lg:col-span-1">
               <a href="blogs.php">
                 <div class="h-full py-8 px-6 space-y-6 rounded-xl text-2xl border border-gray-200 bg-color1 text-white">
@@ -106,6 +109,8 @@ $page = 'dash';
                 </div>
               </a>
             </div>
+            <?php endif; ?>
+            <?php if ($user_type == 1): ?>
             <div class="md:col-span-2 lg:col-span-1">
               <a href="polpas.php">
                 <div class="h-full py-8 px-6 space-y-6 rounded-xl text-2xl border border-gray-200 bg-color1 text-white">
@@ -123,6 +128,8 @@ $page = 'dash';
                 </div>
               </a>
             </div>
+            <?php endif; ?>
+            <?php if ($user_type == 1): ?>
             <div class="md:col-span-2 lg:col-span-1">
               <a href="receitas.php">
                 <div class="h-full py-8 px-6 space-y-6 rounded-xl text-2xl border border-gray-200 bg-color1 text-white">
@@ -140,6 +147,8 @@ $page = 'dash';
                 </div>
               </a>
             </div>
+            <?php endif; ?>
+            <?php if ($user_type == 1): ?>
             <div class="md:col-span-2 lg:col-span-1">
               <a href="leads.php">
                 <div class="h-full py-8 px-6 space-y-6 rounded-xl text-2xl border border-gray-200 bg-color1 text-white">
@@ -157,6 +166,8 @@ $page = 'dash';
                 </div>
               </a>
             </div>
+            <?php endif; ?>
+            <?php if ($user_type == 1 | $user_type == 2): ?>
             <div class="md:col-span-2 lg:col-span-1">
               <a href="cupons.php">
                 <div class="h-full py-8 px-6 space-y-6 rounded-xl text-2xl border border-gray-200 bg-color1 text-white">
@@ -174,6 +185,7 @@ $page = 'dash';
                 </div>
               </a>
             </div>
+            <?php endif; ?>
           </div>
         </div>
       </div>
