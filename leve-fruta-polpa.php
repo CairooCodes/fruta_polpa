@@ -52,8 +52,8 @@ $URI = new URI();
             <h1>Como participar?</h1>
         </div>
         <div class="flex items-center justify-center">
-            <div class="grid grid-cols-3 gap-8 pt-3">
-                <div class="flex flex-col items-center">
+            <div class="lg:grid grid-cols-3 gap-8 pt-3">
+                <div class="flex flex-col items-center lg:pb-0 pb-5">
                     <div class="flex items-center justify-center">
                         <img src="./assets/img/logo.png" alt="Logo" class="w-20">
                     </div>
@@ -61,7 +61,7 @@ $URI = new URI();
                         <h1 class="text-center font-bold"><span class="text-3xl">Compre</span> <br> <span class="text-xl">qualquer produto Fruta Polpas</span></h1>
                     </div>
                 </div>
-                <div class="flex flex-col items-center">
+                <div class="flex flex-col items-center lg:pb-0 pb-5">
                     <div class="flex items-center justify-center">
                         <div class="bg-green-600 w-16 h-16 rounded-full flex items-center justify-center">
                             <i class="bi bi-whatsapp text-white text-3xl"></i>
@@ -71,7 +71,7 @@ $URI = new URI();
                         <h1 class="text-center font-bold"><span class="text-3xl uppercase">Cadastre</span> <br> <span class="text-xl"><a href="#" class="underline">aqui no site</a> <br> ou pelo WhatsApp (xx) xxxx-xxxx</span></h1>
                     </div>
                 </div>
-                <div class="flex flex-col items-center">
+                <div class="flex flex-col items-center lg:pb-0 pb-5">
                     <div class="flex items-center justify-center">
                         <div class="bg-green-600 w-16 h-16 rounded-full flex items-center justify-center">
                             <i class="bi bi-gift text-white text-3xl"></i>
