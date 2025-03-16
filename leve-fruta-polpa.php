@@ -68,7 +68,7 @@ $URI = new URI();
                         </div>
                     </div>
                     <div>
-                        <h1 class="text-center font-bold"><span class="text-3xl uppercase">Cadastre</span> <br> <span class="text-xl"><a href="#" class="underline">aqui no site</a> <br> ou pelo WhatsApp (xx) xxxx-xxxx</span></h1>
+                        <h1 class="text-center font-bold"><span class="text-3xl uppercase">Cadastre</span> <br> <span class="text-xl"><a href="https://frutapolpa.com.br/" class="underline">aqui no site</a> <br> ou pelo WhatsApp (xx) xxxx-xxxx</span></h1>
                     </div>
                 </div>
                 <div class="flex flex-col items-center lg:pb-0 pb-5">
