@@ -33,70 +33,79 @@
         </li>
       <?php endif; ?>
       <?php if ($user_type == 1): ?>
-      <li>
-        <a href="trabalhe-conosco.php?id=1" class="px-3 py-2 flex items-center space-x-3 rounded-md text-gray-800 group 
+        <li>
+          <a href="trabalhe-conosco.php?id=1" class="px-3 py-2 flex items-center space-x-3 rounded-md text-gray-800 group 
         <?php if ($page == 'trabalhe-conosco') {
           echo 'bg-orange-600 text-white';
         } ?>">
-          <i class="bi bi-people"></i>
-          <span class="group-hover:text-gray-700">Trabalhe Conosco</span>
-        </a>
-      </li>
+            <i class="bi bi-people"></i>
+            <span class="group-hover:text-gray-700">Trabalhe Conosco</span>
+          </a>
+        </li>
       <?php endif; ?>
       <?php if ($user_type == 1): ?>
-      <li>
-        <a href="blogs.php" class="px-3 py-2 flex items-center space-x-3 rounded-md text-gray-800 group 
+        <li>
+          <a href="blogs.php" class="px-3 py-2 flex items-center space-x-3 rounded-md text-gray-800 group 
         <?php if ($page == 'blogs') {
           echo 'bg-orange-600 text-white';
         } ?>">
-          <i class="bi bi-journals"></i>
-          <span class="group-hover:text-gray-700">Blogs</span>
-        </a>
-      </li>
+            <i class="bi bi-journals"></i>
+            <span class="group-hover:text-gray-700">Blogs</span>
+          </a>
+        </li>
       <?php endif; ?>
       <?php if ($user_type == 1): ?>
-      <li>
-        <a href="polpas.php" class="px-3 py-2 flex items-center space-x-3 rounded-md text-gray-800 group 
+        <li>
+          <a href="polpas.php" class="px-3 py-2 flex items-center space-x-3 rounded-md text-gray-800 group 
         <?php if ($page == 'polpas') {
           echo 'bg-orange-600 text-white';
         } ?>">
-          <i class="bi bi-cart"></i>
-          <span class="group-hover:text-gray-700">Polpas</span>
-        </a>
-      </li>
+            <i class="bi bi-cart"></i>
+            <span class="group-hover:text-gray-700">Polpas</span>
+          </a>
+        </li>
       <?php endif; ?>
       <?php if ($user_type == 1): ?>
-      <li>
-        <a href="receitas.php" class="px-3 py-2 flex items-center space-x-3 rounded-md text-gray-800 group 
+        <li>
+          <a href="receitas.php" class="px-3 py-2 flex items-center space-x-3 rounded-md text-gray-800 group 
         <?php if ($page == 'receitas') {
           echo 'bg-orange-600 text-white';
         } ?>">
-          <i class="bi bi-file-text"></i>
-          <span class="group-hover:text-gray-700">Receitas</span>
-        </a>
-      </li>
+            <i class="bi bi-file-text"></i>
+            <span class="group-hover:text-gray-700">Receitas</span>
+          </a>
+        </li>
       <?php endif; ?>
       <?php if ($user_type == 1): ?>
-      <li>
-        <a href="leads.php" class="px-3 py-2 flex items-center space-x-3 rounded-md text-gray-800 group 
+        <li>
+          <a href="leads.php" class="px-3 py-2 flex items-center space-x-3 rounded-md text-gray-800 group 
         <?php if ($page == 'leads') {
           echo 'bg-orange-600 text-white';
         } ?>">
-          <i class="bi bi-inboxes"></i>
-          <span class="group-hover:text-gray-700">Leads</span>
-        </a>
-      </li>
+            <i class="bi bi-inboxes"></i>
+            <span class="group-hover:text-gray-700">Leads</span>
+          </a>
+        </li>
       <?php endif; ?>
       <?php if ($user_type == 1 | $user_type == 2): ?>
-      <li>
-        <a href="cupons.php" class="px-3 py-2 flex items-center space-x-3 rounded-md text-gray-800 group 
+        <li>
+          <a href="cupons.php" class="px-3 py-2 flex items-center space-x-3 rounded-md text-gray-800 group 
         <?php if ($page == 'cupons') {
           echo 'bg-orange-600 text-white';
         } ?>">
-          <i class="bi bi-inboxes"></i>
-          <span class="group-hover:text-gray-700">Cupons</span>
-        </a>
-      </li>
+            <i class="bi bi-inboxes"></i>
+            <span class="group-hover:text-gray-700">Cupons</span>
+          </a>
+        </li>
+        <li>
+          <a href="cupons.php" class="px-3 py-2 flex items-center space-x-3 rounded-md text-gray-800 group 
+        <?php if ($page == 'cupons') {
+          echo 'bg-orange-600 text-white';
+        } ?>">
+            <i class="bi bi-person-fill-gear"></i>
+            <span class="group-hover:text-gray-700">Configurações</span>
+          </a>
+        </li>
       <?php endif; ?>
     </ul>
   </div>

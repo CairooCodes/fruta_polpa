@@ -49,9 +49,10 @@ $page = 'dash';
   <?php include "components/sidebar.php" ?>
   <div class="ml-auto mb-6 lg:w-[75%] xl:w-[80%] 2xl:w-[85%]">
     <?php include "components/header.php" ?>
+    <h1 class="px-10 text-xl pt-5">Olá João, Seja Bem vindo</h1>
     <div class="max-w-7xl px-4 pb-8 mx-auto py-8">
       <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
-        <div class="flex items-center justify-between py-4 bg-white">
+        <div class="flex items-center justify-between py-4 bg-white px-10">
           <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3 pb-6">
             <?php if ($user_type == 1): ?>
               <div class="md:col-span-2 lg:col-span-1">
@@ -73,118 +74,125 @@ $page = 'dash';
               </div>
             <?php endif; ?>
             <?php if ($user_type == 1): ?>
-            <div class="md:col-span-2 lg:col-span-1">
-              <a href="trabalhe-conosco.php">
-                <div class="h-full py-8 px-6 space-y-6 rounded-xl text-2xl border border-gray-200 bg-color1 text-white">
-                  <div class="flex space-x-2">
-                    <i class="bi bi-people"></i>
-                    <h6>
-                      TRABALHE CONOSCO
-                      <?php
-                      $sth = $pdo->prepare("SELECT count(*) as total from recruitment");
-                      $sth->execute();
-                      print_r($sth->fetchColumn());
-                      ?>
-                    </h6>
+              <div class="md:col-span-2 lg:col-span-1">
+                <a href="trabalhe-conosco.php">
+                  <div class="h-full py-8 px-6 space-y-6 rounded-xl text-2xl border border-gray-200 bg-color1 text-white">
+                    <div class="flex space-x-2">
+                      <i class="bi bi-people"></i>
+                      <h6>
+                        TRABALHE CONOSCO
+                        <?php
+                        $sth = $pdo->prepare("SELECT count(*) as total from recruitment");
+                        $sth->execute();
+                        print_r($sth->fetchColumn());
+                        ?>
+                      </h6>
+                    </div>
                   </div>
-                </div>
-              </a>
-            </div>
+                </a>
+              </div>
             <?php endif; ?>
             <?php if ($user_type == 1): ?>
-            <div class="md:col-span-2 lg:col-span-1">
-              <a href="blogs.php">
-                <div class="h-full py-8 px-6 space-y-6 rounded-xl text-2xl border border-gray-200 bg-color1 text-white">
-                  <div class="flex space-x-2">
-                    <i class="bi bi-journals"></i>
-                    <h6>
-                      BLOGS
-                      <?php
-                      $sth = $pdo->prepare("SELECT count(*) as total from blogs");
-                      $sth->execute();
-                      print_r($sth->fetchColumn());
-                      ?>
-                    </h6>
+              <div class="md:col-span-2 lg:col-span-1">
+                <a href="blogs.php">
+                  <div class="h-full py-8 px-6 space-y-6 rounded-xl text-2xl border border-gray-200 bg-color1 text-white">
+                    <div class="flex space-x-2">
+                      <i class="bi bi-journals"></i>
+                      <h6>
+                        BLOGS
+                        <?php
+                        $sth = $pdo->prepare("SELECT count(*) as total from blogs");
+                        $sth->execute();
+                        print_r($sth->fetchColumn());
+                        ?>
+                      </h6>
+                    </div>
                   </div>
-                </div>
-              </a>
-            </div>
+                </a>
+              </div>
             <?php endif; ?>
             <?php if ($user_type == 1): ?>
-            <div class="md:col-span-2 lg:col-span-1">
-              <a href="polpas.php">
-                <div class="h-full py-8 px-6 space-y-6 rounded-xl text-2xl border border-gray-200 bg-color1 text-white">
-                  <div class="flex space-x-2">
-                    <i class="bi bi-cart"></i>
-                    <h6>
-                      POLPAS
-                      <?php
-                      $sth = $pdo->prepare("SELECT count(*) as total from products");
-                      $sth->execute();
-                      print_r($sth->fetchColumn());
-                      ?>
-                    </h6>
+              <div class="md:col-span-2 lg:col-span-1">
+                <a href="polpas.php">
+                  <div class="h-full py-8 px-6 space-y-6 rounded-xl text-2xl border border-gray-200 bg-color1 text-white">
+                    <div class="flex space-x-2">
+                      <i class="bi bi-cart"></i>
+                      <h6>
+                        POLPAS
+                        <?php
+                        $sth = $pdo->prepare("SELECT count(*) as total from products");
+                        $sth->execute();
+                        print_r($sth->fetchColumn());
+                        ?>
+                      </h6>
+                    </div>
                   </div>
-                </div>
-              </a>
-            </div>
+                </a>
+              </div>
             <?php endif; ?>
             <?php if ($user_type == 1): ?>
-            <div class="md:col-span-2 lg:col-span-1">
-              <a href="receitas.php">
-                <div class="h-full py-8 px-6 space-y-6 rounded-xl text-2xl border border-gray-200 bg-color1 text-white">
-                  <div class="flex space-x-2">
-                    <i class="bi bi-file-text"></i>
-                    <h6>
-                      RECEITAS
-                      <?php
-                      $sth = $pdo->prepare("SELECT count(*) as total from receitas");
-                      $sth->execute();
-                      print_r($sth->fetchColumn());
-                      ?>
-                    </h6>
+              <div class="md:col-span-2 lg:col-span-1">
+                <a href="receitas.php">
+                  <div class="h-full py-8 px-6 space-y-6 rounded-xl text-2xl border border-gray-200 bg-color1 text-white">
+                    <div class="flex space-x-2">
+                      <i class="bi bi-file-text"></i>
+                      <h6>
+                        RECEITAS
+                        <?php
+                        $sth = $pdo->prepare("SELECT count(*) as total from receitas");
+                        $sth->execute();
+                        print_r($sth->fetchColumn());
+                        ?>
+                      </h6>
+                    </div>
                   </div>
-                </div>
-              </a>
-            </div>
+                </a>
+              </div>
             <?php endif; ?>
             <?php if ($user_type == 1): ?>
-            <div class="md:col-span-2 lg:col-span-1">
-              <a href="leads.php">
-                <div class="h-full py-8 px-6 space-y-6 rounded-xl text-2xl border border-gray-200 bg-color1 text-white">
-                  <div class="flex space-x-2">
-                    <i class="bi bi-inboxes"></i>
-                    <h6>
-                      LEADS
-                      <?php
-                      $sth = $pdo->prepare("SELECT count(*) as total from leads");
-                      $sth->execute();
-                      print_r($sth->fetchColumn());
-                      ?>
-                    </h6>
+              <div class="md:col-span-2 lg:col-span-1">
+                <a href="leads.php">
+                  <div class="h-full py-8 px-6 space-y-6 rounded-xl text-2xl border border-gray-200 bg-color1 text-white">
+                    <div class="flex space-x-2">
+                      <i class="bi bi-inboxes"></i>
+                      <h6>
+                        LEADS
+                        <?php
+                        $sth = $pdo->prepare("SELECT count(*) as total from leads");
+                        $sth->execute();
+                        print_r($sth->fetchColumn());
+                        ?>
+                      </h6>
+                    </div>
                   </div>
-                </div>
-              </a>
-            </div>
+                </a>
+              </div>
             <?php endif; ?>
             <?php if ($user_type == 1 | $user_type == 2): ?>
-            <div class="md:col-span-2 lg:col-span-1">
-              <a href="cupons.php">
-                <div class="h-full py-8 px-6 space-y-6 rounded-xl text-2xl border border-gray-200 bg-color1 text-white">
-                  <div class="flex space-x-2">
-                    <i class="bi bi-inboxes"></i>
-                    <h6>
-                      Cupons
-                      <?php
-                      // $sth = $pdo->prepare("SELECT count(*) as total from leads");
-                      // $sth->execute();
-                      // print_r($sth->fetchColumn());
-                      ?>
-                    </h6>
+              <div class="md:col-span-2 lg:col-span-1">
+                <a href="cupons.php">
+                  <div class="h-full py-8 px-6 space-y-6 rounded-xl text-2xl border border-gray-200 bg-color1 text-white">
+                    <div class="flex space-x-2">
+                      <i class="bi bi-stickies-fill"></i>
+                      <h6>
+                        Cupons
+                      </h6>
+                    </div>
                   </div>
-                </div>
-              </a>
-            </div>
+                </a>
+              </div>
+              <div class="md:col-span-2 lg:col-span-1">
+                <a href="cupons.php">
+                  <div class="h-full py-8 px-6 space-y-6 rounded-xl text-2xl border border-gray-200 bg-color1 text-white">
+                    <div class="flex space-x-2">
+                      <i class="bi bi-person-fill-gear"></i>
+                      <h6>
+                        Configurações
+                      </h6>
+                    </div>
+                  </div>
+                </a>
+              </div>
             <?php endif; ?>
           </div>
         </div>

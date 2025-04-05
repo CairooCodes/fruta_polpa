@@ -69,7 +69,7 @@ session_start();
         </form>
         <div class="mt-7 text-center text-gray-900 text-xs">
           <span>
-            Copyright © 2023 Fruta Polpa
+            Copyright © 2025 Fruta Polpa
         </div>
       </div>
     </div>
