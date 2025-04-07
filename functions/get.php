@@ -164,3 +164,10 @@ function getAllNutri()
   $stmt->execute();
   return $stmt->fetchAll(PDO::FETCH_ASSOC);
 }
+
+function getAllCupons() {
+  global $pdo;
+  $sql = "SELECT * FROM coupons ORDER BY id DESC";
+  $stmt = $pdo->query($sql);
+  return $stmt->fetchAll();
+}
