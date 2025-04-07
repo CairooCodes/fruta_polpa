@@ -49,7 +49,7 @@ $page = 'dash';
   <?php include "components/sidebar.php" ?>
   <div class="ml-auto mb-6 lg:w-[75%] xl:w-[80%] 2xl:w-[85%]">
     <?php include "components/header.php" ?>
-    <h1 class="px-10 text-xl pt-5">Olá João, Seja Bem vindo</h1>
+    <h1 class="px-10 text-xl pt-5">Olá, Seja Bem vindo</h1>
     <div class="max-w-7xl px-4 pb-8 mx-auto py-8">
       <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
         <div class="flex items-center justify-between py-4 bg-white px-10">

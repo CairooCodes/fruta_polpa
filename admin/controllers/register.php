@@ -7,7 +7,17 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $first_name = $_POST["first_name"];
     $last_name = $_POST["last_name"];
     $birth_date = $_POST["birth_date"];
-    $phone = $_POST["phone"];
+    $ddd = preg_replace('/\D/', '', $_POST['ddd']);
+    $number = preg_replace('/\D/', '', $_POST['phone_number']);
+
+    // Valida DDD e número
+    if (strlen($ddd) !== 2 || strlen($number) !== 8) {
+        echo json_encode(['error' => true, 'message' => 'Número de telefone inválido.']);
+        exit;
+    }
+
+    // Concatena com o prefixo internacional, sem o 9 fixo
+    $phone = '55' . $ddd . $number;
     $email = $_POST["email"];
     $cep = $_POST["cep"];
     $state = $_POST["state"];
@@ -35,10 +45,10 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     // Criptografa a senha
     $hashed_password = password_hash($password, PASSWORD_DEFAULT);
 
-    // Insere usuário na tabela users
-    $sql_user = "INSERT INTO users (cpf, password, type) VALUES (?, ?, 2)";
+    // Insere usuário na tabela users (agora também com email)
+    $sql_user = "INSERT INTO users (name, cpf, email, password, type) VALUES (?, ?, ?, ?, 2)";
     $stmt = $pdo->prepare($sql_user);
-    $stmt->execute([$cpf, $hashed_password]);
+    $stmt->execute([$first_name, $cpf, $email, $hashed_password]);
 
     // Recupera o ID do usuário recém-criado
     $user_id = $pdo->lastInsertId();
@@ -50,12 +60,12 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $stmt = $pdo->prepare($sql_log);
     $stmt->execute([$user_id, $action, $date_time]);
 
-    // Inicia a sessão e define as variáveis
+    // Inicia a sessão e define as variáveis (opcional se for redirecionar direto pro login)
     $_SESSION['id'] = $user_id;
     $_SESSION['name'] = $first_name . ' ' . $last_name;
     $_SESSION['cpf'] = $cpf;
 
-    // Redireciona para o dashboard
-    header('Location: ../dashboard.php');
+    // Redireciona para a tela de login
+    header('Location: ../login.php');
     exit;
 }

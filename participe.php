@@ -20,10 +20,11 @@ $URI = new URI();
         <div class="max-w-7xl mx-auto p-6">
             <h2 class="text-3xl font-bold mb-4 font-sans text-center">PREENCHA OS CAMPOS ABAIXO PARA SE CADASTRAR</h2>
             <form action="./admin/controllers/register.php" method="POST" class="space-y-4">
-                <div class="grid grid-cols-2 gap-4">
+                <div class="lg:grid lg:grid-cols-2 gap-4">
                     <div>
                         <label class="block text-sm font-medium">CPF *</label>
-                        <input type="text" name="cpf" class="w-full border p-2 rounded-md" required>
+                        <input type="text" name="cpf" class="w-full border p-2 rounded-md" required maxlength="11" pattern="\d{11}" oninput="this.value = this.value.replace(/\D/g, '')">
+
                     </div>
                     <div>
                         <label class="block text-sm font-medium">Nome *</label>
@@ -38,10 +39,26 @@ $URI = new URI();
                         <input type="date" name="birth_date" class="w-full border p-2 rounded-md" required>
                     </div>
                 </div>
-                <div class="grid grid-cols-3 gap-4">
+                <div class="lg:grid lg:grid-cols-3 gap-4">
                     <div>
-                        <label class="block text-sm font-medium">Celular *</label>
-                        <input type="text" name="phone" class="w-full border p-2 rounded-md" required>
+                        <label class="block text-sm font-medium">WhatsApp *</label>
+                        <div class="flex space-x-2 items-end">
+                            <div>
+                                <label class="block text-sm font-medium">DDD *</label>
+                                <input type="text" id="ddd" name="ddd" maxlength="2" required
+                                    class="w-16 border p-2 rounded-md text-center" pattern="\d{2}">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium invisible">9</label>
+                                <input type="text" value="9" disabled
+                                    class="w-8 border p-2 rounded-md text-center bg-gray-100 text-gray-500">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium">Telefone *</label>
+                                <input type="text" id="phone_number" name="phone_number" maxlength="8" required
+                                    class="w-32 border p-2 rounded-md text-center" pattern="\d{8}">
+                            </div>
+                        </div>
                     </div>
                     <div>
                         <label class="block text-sm font-medium">E-mail *</label>
@@ -131,6 +148,35 @@ $URI = new URI();
             window.open('https://api.whatsapp.com/send?phone=5586994293833&text=Olá%20Fruta%20Polpa-site', '_blank');
         });
     </script>
+    <script>
+        const phoneInput = document.getElementById('phone');
+
+        phoneInput.addEventListener('input', function() {
+            let input = this.value.replace(/\D/g, ''); // só números
+
+            // Limita a 10 dígitos totais (2 do DDD + 8 do número)
+            input = input.slice(0, 10);
+
+            if (input.length >= 2) {
+                const ddd = input.slice(0, 2); // força DDD com 2 dígitos
+                const number = input.slice(2);
+
+                let formatted = `(${ddd}) `;
+
+                if (number.length > 0) {
+                    formatted += `9${number.slice(0, 4)}`;
+                    if (number.length > 4) {
+                        formatted += `-${number.slice(4)}`;
+                    }
+                }
+
+                this.value = formatted;
+            } else {
+                this.value = input;
+            }
+        });
+    </script>
+
 </body>
 
 </html>
