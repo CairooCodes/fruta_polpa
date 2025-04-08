@@ -99,7 +99,7 @@ $URI = new URI();
                 <div class="space-y-2">
                     <label class="flex items-center">
                         <input type="checkbox" name="novidades" class="mr-2">
-                        Sim, aceito receber novidades e ofertas personalizadas sobre os produtos da Bauducco®.
+                        Sim, aceito receber novidades e ofertas personalizadas sobre os produtos da Fruta Polpa.
                     </label>
                     <label class="flex items-center">
                         <input type="checkbox" name="privacidade" required class="mr-2">
@@ -119,7 +119,7 @@ $URI = new URI();
                         <option value="banner_site">Vi um banner em um site</option>
                         <option value="indicacao">Uma pessoa me indicou</option>
                         <option value="busca_online">Sites de busca (Google, Bing, Yahoo)</option>
-                        <option value="lojas_bauducco">Vi uma comunicação nas Lojas Bauducco</option>
+                        <option value="comunicacao">Vi uma comunicação da Fruta Polpa</option>
                     </select>
                 </div>
 
