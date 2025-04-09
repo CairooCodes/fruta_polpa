@@ -182,6 +182,30 @@ $page = 'dash';
                 </a>
               </div>
               <div class="md:col-span-2 lg:col-span-1">
+                <a href="numeros.php">
+                  <div class="h-full py-8 px-6 space-y-6 rounded-xl text-2xl border border-gray-200 bg-color1 text-white">
+                    <div class="flex space-x-2">
+                      <i class="bi bi-receipt"></i>
+                      <h6>
+                        Números da Sorte
+                      </h6>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="md:col-span-2 lg:col-span-1">
+                <a href="participantes.php">
+                  <div class="h-full py-8 px-6 space-y-6 rounded-xl text-2xl border border-gray-200 bg-color1 text-white">
+                    <div class="flex space-x-2">
+                      <i class="bi bi-people"></i>
+                      <h6>
+                        Participantes
+                      </h6>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- <div class="md:col-span-2 lg:col-span-1">
                 <a href="cupons.php">
                   <div class="h-full py-8 px-6 space-y-6 rounded-xl text-2xl border border-gray-200 bg-color1 text-white">
                     <div class="flex space-x-2">
@@ -192,7 +216,7 @@ $page = 'dash';
                     </div>
                   </div>
                 </a>
-              </div>
+              </div> -->
             <?php endif; ?>
           </div>
         </div>

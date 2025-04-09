@@ -98,12 +98,12 @@
           </a>
         </li>
         <li>
-          <a href="cupons.php" class="px-3 py-2 flex items-center space-x-3 rounded-md text-gray-800 group 
-        <?php if ($page == 'cupons') {
+          <a href="numeros.php" class="px-3 py-2 flex items-center space-x-3 rounded-md text-gray-800 group 
+        <?php if ($page == 'numeros') {
           echo 'bg-orange-600 text-white';
         } ?>">
             <i class="bi bi-person-fill-gear"></i>
-            <span class="group-hover:text-gray-700">Configurações</span>
+            <span class="group-hover:text-gray-700">Números</span>
           </a>
         </li>
       <?php endif; ?>

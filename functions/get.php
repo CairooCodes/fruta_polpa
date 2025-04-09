@@ -165,9 +165,35 @@ function getAllNutri()
   return $stmt->fetchAll(PDO::FETCH_ASSOC);
 }
 
-function getAllCupons() {
+function getAllCupons()
+{
   global $pdo;
-  $sql = "SELECT * FROM coupons ORDER BY id DESC";
+  $sql = "
+    SELECT 
+      coupons.*, 
+      participants.first_name AS participant_name 
+    FROM coupons 
+    LEFT JOIN participants ON coupons.participant_id = participants.id
+    ORDER BY coupons.id DESC
+  ";
   $stmt = $pdo->query($sql);
-  return $stmt->fetchAll();
+  return $stmt->fetchAll(PDO::FETCH_ASSOC);
+}
+
+function getAllCouponCodes()
+{
+  global $pdo;
+  $sql = "SELECT 
+            cc.id,
+            cc.code,
+            cc.created_at,
+            p.first_name AS participant_name,
+            c.image AS coupon_image
+          FROM coupon_codes cc
+          JOIN participants p ON cc.participant_id = p.id
+          LEFT JOIN coupons c ON cc.coupon_id = c.id
+          ORDER BY cc.created_at DESC";
+  $stmt = $pdo->prepare($sql);
+  $stmt->execute();
+  return $stmt->fetchAll(PDO::FETCH_ASSOC);
 }

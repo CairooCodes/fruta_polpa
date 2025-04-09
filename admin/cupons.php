@@ -21,6 +21,7 @@ $page = 'cupons';
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <title>Cupons Fruta Polpa</title>
   <meta charset="UTF-8">
@@ -30,6 +31,7 @@ $page = 'cupons';
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.css" rel="stylesheet" />
 </head>
+
 <body>
   <?php include "components/sidebar.php"; ?>
   <div class="ml-auto mb-6 lg:w-[75%] xl:w-[80%] 2xl:w-[85%]">
@@ -84,7 +86,7 @@ $page = 'cupons';
                     <span class="text-gray-400 italic">Sem imagem</span>
                   <?php endif; ?>
                 </td>
-                <td class="px-6 py-4"><?php echo $cupom['participant_id']; ?></td>
+                <td class="px-6 py-4"><?php echo htmlspecialchars($cupom['participant_name']); ?></td>
                 <td class="px-6 py-4"><?php echo date('d/m/Y H:i', strtotime($cupom['created_at'])); ?></td>
                 <td class="px-6 py-4">
                   <a href="./editar_cupom.php?id=<?php echo $cupom['id']; ?>" class="font-medium text-blue-600 hover:underline">Editar</a>
@@ -112,4 +114,5 @@ $page = 'cupons';
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
 </body>
+
 </html>
