@@ -81,7 +81,7 @@ $user_type = $_SESSION['type'];
                                 <td class="px-4 py-3">
                                     <a href="editar_participante.php?id=<?php echo $p['id']; ?>"
                                         class="text-blue-600 hover:underline">Editar</a> </br>
-                                    <a href="excluir_participante.php?id=<?php echo $p['id']; ?>"
+                                    <a href="./controllers/delete_participante.php?id=<?php echo $p['id']; ?>"
                                         class="text-red-600 hover:underline"
                                         onclick="return confirm('Tem certeza que deseja excluir este participante?')">Excluir</a>
                                 </td>

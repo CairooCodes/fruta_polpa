@@ -1,26 +1,24 @@
 <?php
-session_start();
-require "../db_config.php";
+require "../../db_config.php";
 
-// Verifica se o usuário está logado
-if (!isset($_SESSION['id'])) {
-    header('Location: login.php');
-    exit;
+
+if (!empty($_GET['id'])) {
+
+  $id = $_GET['id'];
+  deleteParticipante($id);
+  header('Location: ../participantes.php');
+  exit();
+} else {
+
+  header('Location: ../participantes.php');
+  exit();
 }
 
-// Verifica se o ID do participante foi fornecido
-if (!isset($_GET['id'])) {
-    header('Location: participantes.php');
-    exit;
+
+function deleteParticipante($id)
+{
+  global $pdo;
+  $stmt = $pdo->prepare("DELETE FROM participants WHERE id = :id");
+  $stmt->bindParam(':id', $id);
+  $stmt->execute();
 }
-
-$id = $_GET['id'];
-
-// Exclui o participante
-$sql = "DELETE FROM participants WHERE id = :id";
-$stmt = $pdo->prepare($sql);
-$stmt->execute(['id' => $id]);
-
-header('Location: participantes.php');
-exit;
-?>
