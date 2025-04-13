@@ -37,12 +37,21 @@ $URI = new URI();
     <section class="flex items-center justify-center min-h-screen w-full bg-no-repeat bg-center bg-cover polpas">
         <div class="bg-white bg-opacity-80 p-16 rounded-lg shadow-lg w-full max-w-4xl">
             <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-28">
-                <img src="./assets/img/logo.png" alt="Logo" class="w-72 mx-auto animate-bounce" style="animation-duration: 5s;">
+                <img src="./assets/img/logo.png" alt="Logo" class="w-72 mx-auto animate-bounce"
+                    style="animation-duration: 5s;">
                 <div class="flex flex-col space-y-6">
-                    <h1 class="text-center text-4xl font-bold text-emerald-800">PARTICIPE AQUI! <br> É FÁCIL E RÁPIDO.</h1>
-                    <p class="text-center text-xl font-bold text-emerald-800">Informe seu cpf para logar ou se cadastrar:</p>
-                    <input type="text" placeholder="Digite seu CPF" class="p-5 border border-color1 rounded-full w-full text-lg">
-                    <div class="flex justify-center items-center"><button class="w-1/2 p-3 bg-green-600 text-white rounded-full text-lg hover:bg-green-700">Enviar</button></div>
+                    <h1 class="text-center text-4xl font-bold text-emerald-800">PARTICIPE AQUI! <br> É FÁCIL E RÁPIDO.
+                    </h1>
+                    <p class="text-center text-xl font-bold text-emerald-800">Informe seu cpf para logar ou se
+                        cadastrar:</p>
+                    <form action="verificar_cpf.php" method="POST">
+                        <input type="text" name="cpf" placeholder="Digite seu CPF"
+                            class="p-5 border border-color1 rounded-full w-full text-lg">
+                        <div class="flex justify-center items-center pt-3">
+                            <button type="submit"
+                                class="w-1/2 p-3 bg-green-600 text-white rounded-full text-lg hover:bg-green-700">Enviar</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -58,7 +67,8 @@ $URI = new URI();
                         <img src="./assets/img/logo.png" alt="Logo" class="w-20">
                     </div>
                     <div>
-                        <h1 class="text-center font-bold"><span class="text-3xl">Compre</span> <br> <span class="text-xl">qualquer produto Fruta Polpas</span></h1>
+                        <h1 class="text-center font-bold"><span class="text-3xl">Compre</span> <br> <span
+                                class="text-xl">qualquer produto Fruta Polpas</span></h1>
                     </div>
                 </div>
                 <div class="flex flex-col items-center lg:pb-0 pb-5">
@@ -68,7 +78,9 @@ $URI = new URI();
                         </div>
                     </div>
                     <div>
-                        <h1 class="text-center font-bold"><span class="text-3xl uppercase">Cadastre</span> <br> <span class="text-xl"><a href="https://frutapolpa.com.br/" class="underline">aqui no site</a> <br> ou pelo WhatsApp (xx) xxxx-xxxx</span></h1>
+                        <h1 class="text-center font-bold"><span class="text-3xl uppercase">Cadastre</span> <br> <span
+                                class="text-xl"><a href="https://frutapolpa.com.br/" class="underline">aqui no site</a>
+                                <br> ou pelo WhatsApp (xx) xxxx-xxxx</span></h1>
                     </div>
                 </div>
                 <div class="flex flex-col items-center lg:pb-0 pb-5">
@@ -78,7 +90,8 @@ $URI = new URI();
                         </div>
                     </div>
                     <div>
-                        <h1 class="text-center font-bold"><span class="text-3xl uppercase">Concorra</span> <br> <span class="text-xl">a prêmios que não <br> dá para esquecer</span></h1>
+                        <h1 class="text-center font-bold"><span class="text-3xl uppercase">Concorra</span> <br> <span
+                                class="text-xl">a prêmios que não <br> dá para esquecer</span></h1>
                     </div>
                 </div>
             </div>
@@ -96,7 +109,8 @@ $URI = new URI();
                             <div class="swiper-slide pb-5">
                                 <div class="transition duration-500 bg-white rounded-2xl shadow2">
                                     <div class="h-full">
-                                        <img loading="lazy" src='https://frutapolpa.com.br/admin/uploads/polpas/<?php echo $polpa1['img']; ?>'>
+                                        <img loading="lazy"
+                                            src='https://frutapolpa.com.br/admin/uploads/polpas/<?php echo $polpa1['img']; ?>'>
                                     </div>
                                 </div>
                             </div>
@@ -113,7 +127,8 @@ $URI = new URI();
                             <div class="swiper-slide">
                                 <div class=" transition duration-500 bg-white rounded-2xl shadow2 ">
                                     <div class="h-full">
-                                        <img loading="lazy" src='https://frutapolpa.com.br/admin/uploads/polpas/<?php echo $polpa2['img']; ?>'>
+                                        <img loading="lazy"
+                                            src='https://frutapolpa.com.br/admin/uploads/polpas/<?php echo $polpa2['img']; ?>'>
                                     </div>
                                 </div>
                             </div>
@@ -135,7 +150,9 @@ $URI = new URI();
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAet9s5aUCXCW8LCVn3GgnSixUcrXhSANc&callback=initMap&v=weekly" defer></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAet9s5aUCXCW8LCVn3GgnSixUcrXhSANc&callback=initMap&v=weekly"
+        defer></script>
 
     <script>
         var swiper = new Swiper(".swiper_products_type", {

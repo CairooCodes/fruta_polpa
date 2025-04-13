@@ -14,6 +14,8 @@ $stmt = $pdo->query($sql);
 $participants = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 $page = 'participantes';
+$user_type = $_SESSION['type'];
+
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -57,7 +59,7 @@ $page = 'participantes';
                     </thead>
                     <tbody>
                         <?php foreach ($participants as $p): ?>
-                            <tr class="bg-white border-b">
+                            <br class="bg-white border-b">
                                 <td class="px-4 py-3"><?php echo $p['id']; ?></td>
                                 <td class="px-4 py-3"><?php echo $p['first_name'] . ' ' . $p['last_name']; ?></td>
                                 <td class="px-4 py-3"><?php echo $p['cpf']; ?></td>
@@ -72,7 +74,17 @@ $page = 'participantes';
                                 <td class="px-4 py-3"><?php echo $p['number']; ?></td>
                                 <td class="px-4 py-3"><?php echo $p['complement'] ?? '-'; ?></td>
                                 <td class="px-4 py-3"><?php echo date('d/m/Y H:i', strtotime($p['created_at'])); ?></td>
-                                <td class="px-4 py-3"><?php echo $p['updated_at'] ? date('d/m/Y H:i', strtotime($p['updated_at'])) : '-'; ?></td>
+                                <td class="px-4 py-3">
+                                    <?php echo $p['updated_at'] ? date('d/m/Y H:i', strtotime($p['updated_at'])) : '-'; ?>
+                                </td>
+                                <!-- Adicionando botões para Editar e Excluir -->
+                                <td class="px-4 py-3">
+                                    <a href="editar_participante.php?id=<?php echo $p['id']; ?>"
+                                        class="text-blue-600 hover:underline">Editar</a> </br>
+                                    <a href="excluir_participante.php?id=<?php echo $p['id']; ?>"
+                                        class="text-red-600 hover:underline"
+                                        onclick="return confirm('Tem certeza que deseja excluir este participante?')">Excluir</a>
+                                </td>
                             </tr>
                         <?php endforeach; ?>
                     </tbody>
