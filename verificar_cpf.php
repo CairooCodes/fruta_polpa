@@ -17,7 +17,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['cpf'])) {
 
     // Verificar se o CPF é válido
     if (verificarCPF($cpf)) {
-        header("Location: /admin/login.php");
+        header("Location: ./admin/login.php");
         exit;
     } else {
         header("Location: ./participe.php");
