@@ -12,7 +12,7 @@ function updateAbout($id, $texto)
 function updateBanner($id, $name)
 {
   global $pdo;
-  if ($img) {
+  if ($id) {
     $stmt = $pdo->prepare("UPDATE banners SET name = :name, img=:img WHERE id = :id");
     $stmt->bindParam(':name', $name);
     $stmt->bindParam(':id', $id);
@@ -133,6 +133,25 @@ function updateRecrutamento($id, $name, $email, $telephone, $city, $status)
     $stmt->bindParam(':city', $city);
     $stmt->bindParam(':status', $status);
     $stmt->bindParam(':id', $id);
+  }
+  $stmt->execute();
+}
+
+function updateCupom($participant_id, $image, $status, $quantity)
+{
+  global $pdo;
+  if ($participant_id) {
+    $stmt = $pdo->prepare("UPDATE coupons SET status=:status, quantity=:quantity, image=:image WHERE participant_id = :participant_id");
+    $stmt->bindParam(':status', $status);
+    $stmt->bindParam(':quantity', $quantity);
+    $stmt->bindParam(':image', $image);
+    $stmt->bindParam(':participant_id', $participant_id);
+  } else {
+    $stmt = $pdo->prepare("UPDATE coupons SET status=:status, quantity=:quantity, image=:image WHERE participant_id = :participant_id");
+    $stmt->bindParam(':status', $status);
+    $stmt->bindParam(':quantity', $quantity);
+    $stmt->bindParam(':image', $image);
+    $stmt->bindParam(':participant_id', $participant_id);
   }
   $stmt->execute();
 }

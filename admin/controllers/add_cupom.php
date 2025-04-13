@@ -22,9 +22,12 @@ if (isset($_FILES['img']) && $_FILES['img']['error'] == UPLOAD_ERR_OK) {
   }
 }
 
-$sql = "INSERT INTO coupons (participant_id, image, created_at, updated_at) VALUES (?, ?, NOW(), NOW())";
+$sql = "INSERT INTO coupons (codigo, image, participant_id, status, created_at, updated_at) 
+        VALUES (?, ?, ?, 'válido', NOW(), NOW())";
 $stmt = $pdo->prepare($sql);
-$stmt->execute([$participant_id, $imgPath]);
+$stmt->execute([$codigo, $imgPath, $participant_id]);
 
 header('Location: ../cupons.php');
 exit;
+
+

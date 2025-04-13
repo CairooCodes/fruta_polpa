@@ -1,47 +1,36 @@
 <?php
 require "../../db_config.php";
+require "../../functions/update.php";
 
-if (isset($_GET['id'])) {
-    $cupom_id = $_GET['id'];
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $cupom_id = $_POST['id'];
+    $participant_id = $_POST['participant_id'];
+    $quantity = $_POST['quantity'];
+    $status = $_POST['status'];
 
-    $sql = "SELECT * FROM coupons WHERE id = ?";
-    $stmt = $pdo->prepare($sql);
-    $stmt->execute([$cupom_id]);
-    $cupom = $stmt->fetch(PDO::FETCH_ASSOC);
+    $uploadDir = '../uploads/cupons/';
 
-    if (!$cupom) {
-        echo 'Cupom não encontrado.';
-        exit;
-    }
+    $imgPath = null;
 
+    if (isset($_FILES['image']) && $_FILES['image']['error'] == UPLOAD_ERR_OK) {
+        $imgTmpName = $_FILES['image']['tmp_name'];
+        $imgName = $_FILES['image']['name'];
 
-    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-        $participant_id = $_POST['participant_id'];
-        $imgPath = $cupom['image'];
+        $uniqueName = uniqid() . '_' . $imgName;
 
-        if (isset($_FILES['img']) && $_FILES['img']['error'] == UPLOAD_ERR_OK) {
-            $uploadDir = '../uploads/cupons/';
-            $imgTmpName = $_FILES['img']['tmp_name'];
-            $imgName = $_FILES['img']['name'];
-            $uniqueName = uniqid() . '_' . $imgName;
-
-            if (move_uploaded_file($imgTmpName, $uploadDir . $uniqueName)) {
-                $imgPath = 'https://frutapolpa.com.br/admin/uploads/cupons/' . $uniqueName;
-            } else {
-                echo 'Erro ao fazer o upload da imagem.';
-                exit;
-            }
+        if (move_uploaded_file($imgTmpName, $uploadDir . $uniqueName)) {
+            $imgPath = $uniqueName;
+        } else {
+            echo 'Erro ao fazer o upload da imagem.';
+            exit;
         }
-
-        $sql = "UPDATE coupons SET participant_id = ?, image = ?, updated_at = NOW() WHERE id = ?";
-        $stmt = $pdo->prepare($sql);
-        $stmt->execute([$participant_id, $imgPath, $cupom_id]);
-
-        header('Location: ../cupons.php');
-        exit;
     }
+
+    updateCupom($participant_id, $imgPath, $status, $quantity);
+    header('Location: ../cupons.php');
+    exit();
 } else {
-    echo 'ID do cupom não fornecido.';
-    exit;
+    header('Location: ../cupons.php');
+    exit();
 }
 ?>
