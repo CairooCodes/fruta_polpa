@@ -4,10 +4,6 @@ require "config/helper.php";
 require "config/url.class.php";
 require "./functions/get.php";
 
-$polpas = getAllPolpas();
-$polpas1 = getPolpas1();
-$polpas2 = getPolpas2();
-
 $URI = new URI();
 ?>
 <!DOCTYPE html>
@@ -18,128 +14,73 @@ $URI = new URI();
     <link rel="stylesheet" href="https://frutapolpa.com.br/assets/css/maps.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <style>
-        @keyframes jump {
-
-            0%,
-            100% {
-                transform: translateY(0);
-            }
-
-            50% {
-                transform: translateY(-5px);
-            }
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
         }
+
+        .bg-custom-image {
+            background-image: url('./assets/img/landing_page/Wallpaper.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 100%;
+        }
+
+        @media (max-width: 640px) {
+        .modelo-mobile {
+            display: none !important;
+        }
+
+        .texto-mobile {
+            position: relative !important;
+            top: 0 !important;
+            right: 0 !important;
+            transform: none !important;
+            margin-top: 1rem;
+            width: 60% !important;
+        }
+    }
     </style>
 </head>
 
-<body>
+<body class="overflow-x-hidden">
     <?php include "./components/navbar.php"; ?>
-    <section class="flex items-center justify-center min-h-screen w-full bg-no-repeat bg-center bg-cover polpas">
-        <div class="bg-white bg-opacity-80 p-16 rounded-lg shadow-lg w-full max-w-4xl">
-            <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-28">
-                <img src="./assets/img/logo.png" alt="Logo" class="w-72 mx-auto animate-bounce"
-                    style="animation-duration: 5s;">
-                <div class="flex flex-col space-y-6">
-                    <h1 class="text-center text-4xl font-bold text-emerald-800">PARTICIPE AQUI! <br> É FÁCIL E RÁPIDO.
-                    </h1>
-                    <p class="text-center text-xl font-bold text-emerald-800">Informe seu cpf para logar ou se
-                        cadastrar:</p>
-                    <form action="verificar_cpf.php" method="POST">
-                        <input type="text" name="cpf" placeholder="Digite seu CPF"
-                            class="p-5 border border-color1 rounded-full w-full text-lg">
-                        <div class="flex justify-center items-center pt-3">
-                            <button type="submit"
-                                class="w-1/2 p-3 bg-green-600 text-white rounded-full text-lg hover:bg-green-700">Enviar</button>
-                        </div>
-                    </form>
-                </div>
+    <section class="bg-custom-image px-4 sm:px-0">
+        <div class="flex w-full flex-col sm:flex-row items-center sm:items-start">
+            <div class="py-4 sm:pl-12 flex justify-center sm:justify-start">
+                <img src="./assets/img/landing_page/LOGOTIPO_RGB.png" alt="LOGOTIPO_RGB" class="w-32 sm:w-44">
             </div>
+            <div class="flex flex-1 items-center justify-center">
+                <img src="./assets/img/landing_page/SELO3D.png" alt="SELO3D" class="lg:w-2/3 sm:w-1/2">
+            </div>
+        </div>
+
+        <div class="flex items-center justify-center relative">
+            <!-- Modelo (escondido no mobile) -->
+            <img src="./assets/img/landing_page/Modelo.png" alt="Modelo"
+                class="sm:block lg:w-[950px] lg:absolute lg:top-[-480px] lg:left-[650px] transform -translate-x-1/2 z-0 hidden">
+
+            <!-- Produtos -->
+            <img src="./assets/img/landing_page/Produtos.png" alt="Produtos"
+                class="w-full lg:w-[1000px] relative z-10">
+
+            <!-- Texto -->
+            <img src="./assets/img/landing_page/Texto.png" alt="Texto"
+                class="w-full lg:w-96 lg:absolute lg:top-4 lg:top-[-30px] lg:right-[10%] lg:right-[370px] transform translate-x-1/2 z-0 hidden">
+        </div>
+
+        <div class="flex items-center justify-center mt-10">
+            <img src="./assets/img/landing_page/Polpas.png" alt="Polpas" class="w-full lg:w-4/5 relative z-10">
+        </div>
+
+        <div class="flex items-center justify-center py-10">
+            <img src="./assets/img/landing_page/Regulamento.png" alt="Regulamento" class="lg:w-2/3 relative z-10">
         </div>
     </section>
-    <section class="py-3 bg-color3">
-        <div class="p-5 text-3xl font-bold uppercase text-center">
-            <h1>Como participar?</h1>
-        </div>
-        <div class="flex items-center justify-center">
-            <div class="lg:grid grid-cols-3 gap-8 pt-3">
-                <div class="flex flex-col items-center lg:pb-0 pb-5">
-                    <div class="flex items-center justify-center">
-                        <img src="./assets/img/logo.png" alt="Logo" class="w-20">
-                    </div>
-                    <div>
-                        <h1 class="text-center font-bold"><span class="text-3xl">Compre</span> <br> <span
-                                class="text-xl">qualquer produto Fruta Polpas</span></h1>
-                    </div>
-                </div>
-                <div class="flex flex-col items-center lg:pb-0 pb-5">
-                    <div class="flex items-center justify-center">
-                        <div class="bg-green-600 w-16 h-16 rounded-full flex items-center justify-center">
-                            <i class="bi bi-whatsapp text-white text-3xl"></i>
-                        </div>
-                    </div>
-                    <div>
-                        <h1 class="text-center font-bold"><span class="text-3xl uppercase">Cadastre</span> <br> <span
-                                class="text-xl"><a href="https://frutapolpa.com.br/" class="underline">aqui no site</a>
-                                <br> ou pelo WhatsApp (xx) xxxx-xxxx</span></h1>
-                    </div>
-                </div>
-                <div class="flex flex-col items-center lg:pb-0 pb-5">
-                    <div class="flex items-center justify-center">
-                        <div class="bg-green-600 w-16 h-16 rounded-full flex items-center justify-center">
-                            <i class="bi bi-gift text-white text-3xl"></i>
-                        </div>
-                    </div>
-                    <div>
-                        <h1 class="text-center font-bold"><span class="text-3xl uppercase">Concorra</span> <br> <span
-                                class="text-xl">a prêmios que não <br> dá para esquecer</span></h1>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="py-3 bg-color3">
-        <div class="p-5 text-3xl font-bold uppercase text-center">
-            <h1>Toda a linha de produtos <br> Fruta Polpa participam.</h1>
-        </div>
-        <div class="max-w-full px-4 pb-12 lg:grid grid-cols-2">
-            <div class="lg:pl-72 px-5">
-                <div class="swiper swiper_products_type z-0">
-                    <div class="swiper-wrapper">
-                        <?php foreach ($polpas1 as $polpa1) { ?>
-                            <div class="swiper-slide pb-5">
-                                <div class="transition duration-500 bg-white rounded-2xl shadow2">
-                                    <div class="h-full">
-                                        <img loading="lazy"
-                                            src='https://frutapolpa.com.br/admin/uploads/polpas/<?php echo $polpa1['img']; ?>'>
-                                    </div>
-                                </div>
-                            </div>
-                        <?php }
-                        ?>
-                    </div>
-                    <!-- <div class="swiper-pagination"></div> -->
-                </div>
-            </div>
-            <div class="lg:pr-72 px-5">
-                <div class="swiper swiper_products_type2 z-0">
-                    <div class="swiper-wrapper">
-                        <?php foreach ($polpas2 as $polpa2) { ?>
-                            <div class="swiper-slide">
-                                <div class=" transition duration-500 bg-white rounded-2xl shadow2 ">
-                                    <div class="h-full">
-                                        <img loading="lazy"
-                                            src='https://frutapolpa.com.br/admin/uploads/polpas/<?php echo $polpa2['img']; ?>'>
-                                    </div>
-                                </div>
-                            </div>
-                        <?php }
-                        ?>
-                    </div>
-                    <!-- <div class="swiper-pagination2"></div> -->
-                </div>
-            </div>
-        </div>
-    </section>
+
     <?php include "./components/footer.php"; ?>
     <script src="assets/js/tw.js"></script>
     <script src="./assets/js/main.js"></script>
@@ -157,7 +98,6 @@ $URI = new URI();
     <script>
         var swiper = new Swiper(".swiper_products_type", {
             effect: "flip",
-            // grabCursor: true,
             autoplay: {
                 delay: 3500,
                 disableOnInteraction: false,
@@ -166,11 +106,8 @@ $URI = new URI();
                 el: ".swiper-pagination",
             },
         });
-    </script>
-    <script>
-        var swiper = new Swiper(".swiper_products_type2", {
+        var swiper2 = new Swiper(".swiper_products_type2", {
             effect: "flip",
-            // grabCursor: true,
             autoplay: {
                 delay: 4500,
                 disableOnInteraction: false,
