@@ -22,23 +22,11 @@ $URI = new URI();
             <form action="./admin/controllers/register.php" method="POST" class="space-y-4">
                 <div class="lg:grid lg:grid-cols-2 gap-4">
                     <div>
-                        <label class="block text-sm font-medium">CPF *</label>
-                        <input type="text" name="cpf" class="w-full border p-2 rounded-md" required maxlength="11" pattern="\d{11}" oninput="this.value = this.value.replace(/\D/g, '')">
-
-                    </div>
-                    <div>
                         <label class="block text-sm font-medium">Nome *</label>
                         <input type="text" name="first_name" class="w-full border p-2 rounded-md" required>
                     </div>
-                    <div>
-                        <label class="block text-sm font-medium">Sobrenome *</label>
-                        <input type="text" name="last_name" class="w-full border p-2 rounded-md" required>
-                    </div>
-                    <div>
-                        <label class="block text-sm font-medium">Data de Nascimento *</label>
-                        <input type="date" name="birth_date" class="w-full border p-2 rounded-md" required>
-                    </div>
                 </div>
+
                 <div class="lg:grid lg:grid-cols-3 gap-4">
                     <div>
                         <label class="block text-sm font-medium">WhatsApp *</label>
@@ -69,10 +57,6 @@ $URI = new URI();
                         <input type="text" name="cep" class="w-full border p-2 rounded-md" required>
                     </div>
                     <div>
-                        <label class="block text-sm font-medium">Estado *</label>
-                        <input type="text" name="state" class="w-full border p-2 rounded-md" required>
-                    </div>
-                    <div>
                         <label class="block text-sm font-medium">Cidade *</label>
                         <input type="text" name="city" class="w-full border p-2 rounded-md" required>
                     </div>
@@ -80,19 +64,8 @@ $URI = new URI();
                         <label class="block text-sm font-medium">Bairro *</label>
                         <input type="text" name="neighborhood" class="w-full border p-2 rounded-md" required>
                     </div>
-                    <div>
-                        <label class="block text-sm font-medium">Endereço *</label>
-                        <input type="text" name="address" class="w-full border p-2 rounded-md" required>
-                    </div>
-                    <div>
-                        <label class="block text-sm font-medium">Número *</label>
-                        <input type="text" name="number" class="w-full border p-2 rounded-md" required>
-                    </div>
-                    <div>
-                        <label class="block text-sm font-medium">Complemento</label>
-                        <input type="text" name="complement" class="w-full border p-2 rounded-md">
-                    </div>
                 </div>
+
                 <label class="block text-sm font-medium">Crie uma senha *</label>
                 <input type="password" name="password" class="w-full border p-2 rounded-md" required>
 

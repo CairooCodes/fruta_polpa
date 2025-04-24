@@ -3,10 +3,10 @@ require "../../db_config.php";
 session_start();
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
-    $cpf = $_POST["cpf"];
+    $cpf = $_POST["cpf"] ?? null;
     $first_name = $_POST["first_name"];
-    $last_name = $_POST["last_name"];
-    $birth_date = $_POST["birth_date"];
+    $last_name = $_POST["last_name"] ?? null;
+    $birth_date = $_POST["birth_date"] ?? null;
     $ddd = preg_replace('/\D/', '', $_POST['ddd']);
     $number = preg_replace('/\D/', '', $_POST['phone_number']);
 
@@ -20,12 +20,12 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $phone = '55' . $ddd . $number;
     $email = $_POST["email"];
     $cep = $_POST["cep"];
-    $state = $_POST["state"];
+    $state = $_POST["state"] ?? null;
     $city = $_POST["city"];
     $neighborhood = $_POST["neighborhood"];
-    $address = $_POST["address"];
-    $number = $_POST["number"];
-    $complement = $_POST["complement"];
+    $address = $_POST["address"] ?? null;
+    $number = $_POST["number"] ?? null;
+    $complement = $_POST["complement"] ?? null;
     $password = $_POST["password"];
 
     // Verifica se o CPF já está cadastrado
