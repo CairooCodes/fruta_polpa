@@ -2,18 +2,27 @@
 require "../../db_config.php";
 session_start();
 
-$email = $_POST['email'] ?? null;
+$login = $_POST['login'] ?? null;
 $password = $_POST['password'] ?? null;
 
-if (empty($email) || empty($password)) {
+if (empty($login) || empty($password)) {
     echo json_encode(['error' => true, 'message' => 'Todos os campos são obrigatórios!']);
     exit;
 }
 
+// Verifica se o login é e-mail ou número
+$isEmail = filter_var($login, FILTER_VALIDATE_EMAIL);
+$searchField = $isEmail ? 'email' : 'phone';
+
+// Ajusta número de telefone se necessário
+if (!$isEmail && str_starts_with($login, '55')) {
+    $login = preg_replace('/[^0-9]/', '', $login); // remove tudo que não for número
+}
+
 try {
-    $sql = "SELECT id, name, email, password, type FROM users WHERE email = ? LIMIT 1";
+    $sql = "SELECT id, name, email, phone, password, type FROM users WHERE $searchField = ? LIMIT 1";
     $stmt = $pdo->prepare($sql);
-    $stmt->execute([$email]);
+    $stmt->execute([$login]);
     $user = $stmt->fetch(PDO::FETCH_ASSOC);
 
     if (!$user || !password_verify($password, $user['password'])) {
@@ -21,16 +30,14 @@ try {
         exit;
     }
 
-    // Regenera o ID da sessão para segurança
     session_regenerate_id(true);
-
-    // Armazena os dados do usuário na sessão
     $_SESSION['id'] = $user['id'];
     $_SESSION['name'] = $user['name'];
     $_SESSION['email'] = $user['email'];
-    $_SESSION['type'] = $user['type']; // Agora type será salvo corretamente
+    $_SESSION['phone'] = $user['phone'];
+    $_SESSION['type'] = $user['type'];
 
-    // Registro de login no log
+    // Registro de log
     $sql_log = "INSERT INTO user_logs (user_id, action, date_time) VALUES (?, ?, ?)";
     $stmt = $pdo->prepare($sql_log);
     $stmt->execute([$user['id'], 'login', date('Y-m-d H:i:s')]);

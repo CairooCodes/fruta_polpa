@@ -46,9 +46,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $hashed_password = password_hash($password, PASSWORD_DEFAULT);
 
     // Insere usuário na tabela users (agora também com email)
-    $sql_user = "INSERT INTO users (name, cpf, email, password, type) VALUES (?, ?, ?, ?, 2)";
+    $sql_user = "INSERT INTO users (name, cpf, phone, email, password, type) VALUES (?, ?, ?, ?, ?, 2)";
     $stmt = $pdo->prepare($sql_user);
-    $stmt->execute([$first_name, $cpf, $email, $hashed_password]);
+    $stmt->execute([$first_name, $cpf, $phone, $email, $hashed_password]);
 
     // Recupera o ID do usuário recém-criado
     $user_id = $pdo->lastInsertId();
@@ -64,6 +64,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $_SESSION['id'] = $user_id;
     $_SESSION['name'] = $first_name . ' ' . $last_name;
     $_SESSION['cpf'] = $cpf;
+    $_SESSION['phone'] = $phone;
 
     // Redireciona para a tela de login
     header('Location: ../login.php');
