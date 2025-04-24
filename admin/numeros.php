@@ -11,12 +11,34 @@ if (!isset($_SESSION['id'])) {
 $user_id = $_SESSION['id'];
 $user_type = $_SESSION['type'];
 
-$sql = "SELECT name, email, img FROM users WHERE id = ?";
+$sql = "SELECT name, email, phone FROM users WHERE id = ?";
 $stmt = $pdo->prepare($sql);
 $stmt->execute([$user_id]);
 $user = $stmt->fetch();
 
-$couponCodes = getAllCouponCodes();
+if ($user_type == 2) {
+    // Buscar o ID do participante com base no telefone
+    $phone = $user['phone']; // Número de telefone do usuário
+    $sql = "SELECT id FROM participants WHERE phone = ?";
+    $stmt = $pdo->prepare($sql);
+    $stmt->execute([$phone]);
+    $participant = $stmt->fetch();
+
+    if ($participant) {
+        $participant_id = $participant['id'];
+        // Buscar os cupons do participante encontrado
+        $sql = "SELECT * FROM coupon_codes WHERE participant_id = ?";
+        $stmt = $pdo->prepare($sql);
+        $stmt->execute([$participant_id]);
+        $couponCodes = $stmt->fetchAll();
+    } else {
+        // Se o participante não for encontrado, não há numeros
+        $couponCodes = [];
+    }
+} else {
+    // Se o usuário for do tipo 1, listar todos os numeros
+    $cupons = getAllCouponCodes();
+}
 $page = 'numeros';
 ?>
 <!DOCTYPE html>
@@ -53,8 +75,10 @@ $page = 'numeros';
                 <table class="w-full text-sm text-left text-gray-500">
                     <thead class="text-xs text-gray-700 uppercase bg-gray-50">
                         <tr>
-                            <th class="px-6 py-3">Imagem</th>
-                            <th class="px-6 py-3">Participante</th>
+                            <?php if ($user_type == 1): ?>
+                                <th class="px-6 py-3">Imagem</th>
+                                <th class="px-6 py-3">Participante</th>
+                            <?php endif; ?>
                             <th class="px-6 py-3">Código</th>
                             <th class="px-6 py-3">Criado em</th>
                             <th class="px-6 py-3">Ação</th>
@@ -63,20 +87,22 @@ $page = 'numeros';
                     <tbody>
                         <?php foreach ($couponCodes as $cc) { ?>
                             <tr class="bg-white border-b">
-                                <td class="px-6 py-4">
-                                    <?php if ($cc['coupon_image']) : ?>
-                                        <img class="w-10 h-10 object-cover rounded" src="<?php echo $cc['coupon_image']; ?>" alt="Imagem do cupom">
-                                    <?php else : ?>
-                                        <span class="text-gray-400 italic">Sem imagem</span>
-                                    <?php endif; ?>
-                                </td>
-                                <td class="px-6 py-4"><?php echo htmlspecialchars($cc['participant_name']); ?></td>
+                                <?php if ($user_type == 1): ?>
+                                    <td class="px-6 py-4">
+                                        <?php if ($cc['coupon_image']) : ?>
+                                            <img class="w-10 h-10 object-cover rounded" src="<?php echo $cc['coupon_image']; ?>" alt="Imagem do cupom">
+                                        <?php else : ?>
+                                            <span class="text-gray-400 italic">Sem imagem</span>
+                                        <?php endif; ?>
+                                    </td>
+                                    <td class="px-6 py-4"><?php echo htmlspecialchars($cc['participant_name']); ?></td>
+                                <?php endif; ?>
                                 <td class="px-6 py-4 font-mono font-semibold"><?php echo $cc['code']; ?></td>
                                 <td class="px-6 py-4"><?php echo date('d/m/Y H:i', strtotime($cc['created_at'])); ?></td>
                                 <td class="px-6 py-4">
                                     <!-- Botões opcionais -->
-                                    <!-- <a href="#" class="text-blue-600 hover:underline">Editar</a> -->
-                                    <!-- <a href="#" class="text-red-600 hover:underline">Excluir</a> -->
+                                    <a href="#" class="text-blue-600 hover:underline">Editar</a>
+                                    <a href="#" class="text-red-600 hover:underline">Excluir</a>
                                 </td>
                             </tr>
                         <?php } ?>

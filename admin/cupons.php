@@ -95,10 +95,11 @@ $page = 'cupons';
           <thead class="text-xs text-gray-700 uppercase bg-gray-50">
             <tr>
               <th class="px-6 py-3">Imagem</th>
-              <th class="px-6 py-3">Participante</th>
+              <?php if ($user_type == 1): ?>
+                <th class="px-6 py-3">Participante</th>
+              <?php endif; ?>
               <th class="px-6 py-3">Quant. Polpas</th>
               <th class="px-6 py-3">Criado em</th>
-              <th class="px-6 py-3">Status</th>
               <th class="px-6 py-3">Ação</th>
             </tr>
           </thead>
@@ -112,10 +113,11 @@ $page = 'cupons';
                     <span class="text-gray-400 italic">Sem imagem</span>
                   <?php endif; ?>
                 </td>
-                <td class="px-6 py-4"><?php echo htmlspecialchars($cupom['participant_name']); ?></td>
+                <?php if ($user_type == 1): ?>
+                  <td class="px-6 py-4"><?php echo htmlspecialchars($cupom['participant_name']); ?></td>
+                <?php endif; ?>
                 <td class="px-6 py-4 text-center"><?php echo htmlspecialchars($cupom['quantity']); ?></td>
                 <td class="px-6 py-4"><?php echo date('d/m/Y H:i', strtotime($cupom['created_at'])); ?></td>
-                <!-- <td class="px-6 py-4"><?php echo htmlspecialchars($cupom['status']); ?></td> -->
                 <td class="px-6 py-4">
                   <a href="./editar_cupom.php?id=<?php echo $cupom['id']; ?>" class="font-medium text-blue-600 hover:underline">Editar</a>
                   <a href="./controllers/delete_cupom.php?id=<?php echo $cupom['id']; ?>" class="font-medium text-red-600 hover:underline">Excluir</a>
