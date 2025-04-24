@@ -16,7 +16,7 @@ $URI = new URI();
 
 <body>
     <?php include "./components/navbar.php" ?>
-    <div class="mx-auto bg-gray-200 pt-10">
+    <div class="mx-auto bg-gray-100 pt-10">
         <div class="max-w-7xl mx-auto p-6">
             <h2 class="text-3xl font-bold mb-4 font-sans text-center">PREENCHA OS CAMPOS ABAIXO PARA SE CADASTRAR</h2>
             <form action="./admin/controllers/register.php" method="POST" class="space-y-4">
@@ -25,29 +25,24 @@ $URI = new URI();
                         <label class="block text-sm font-medium">Nome *</label>
                         <input type="text" name="first_name" class="w-full border p-2 rounded-md" required>
                     </div>
-                </div>
-
-                <div class="lg:grid lg:grid-cols-3 gap-4">
                     <div>
                         <label class="block text-sm font-medium">WhatsApp *</label>
                         <div class="flex space-x-2 items-end">
                             <div>
-                                <label class="block text-sm font-medium">DDD *</label>
                                 <input type="text" id="ddd" name="ddd" maxlength="2" required
                                     class="w-16 border p-2 rounded-md text-center" pattern="\d{2}">
                             </div>
                             <div>
-                                <label class="block text-sm font-medium invisible">9</label>
                                 <input type="text" value="9" disabled
                                     class="w-8 border p-2 rounded-md text-center bg-gray-100 text-gray-500">
                             </div>
                             <div>
-                                <label class="block text-sm font-medium">Telefone *</label>
                                 <input type="text" id="phone_number" name="phone_number" maxlength="8" required
-                                    class="w-32 border p-2 rounded-md text-center" pattern="\d{8}">
+                                    class="border p-2 rounded-md text-center" pattern="\d{8}">
                             </div>
                         </div>
                     </div>
+
                     <div>
                         <label class="block text-sm font-medium">E-mail *</label>
                         <input type="email" name="email" class="w-full border p-2 rounded-md" required>

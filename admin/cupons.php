@@ -11,12 +11,36 @@ if (!isset($_SESSION['id'])) {
 $user_id = $_SESSION['id'];
 $user_type = $_SESSION['type'];
 
-$sql = "SELECT name, email, img FROM users WHERE id = ?";
+$sql = "SELECT name, email, phone FROM users WHERE id = ?";
 $stmt = $pdo->prepare($sql);
 $stmt->execute([$user_id]);
 $user = $stmt->fetch();
 
-$cupons = getAllCupons(); // Essa função deve buscar os campos reais da tabela
+if ($user_type == 2) {
+  // Buscar o ID do participante com base no telefone
+  $phone = $user['phone']; // Número de telefone do usuário
+  $sql = "SELECT id FROM participants WHERE phone = ?";
+  $stmt = $pdo->prepare($sql);
+  $stmt->execute([$phone]);
+  $participant = $stmt->fetch();
+
+  if ($participant) {
+    $participant_id = $participant['id'];
+    // Buscar os cupons do participante encontrado
+    $sql = "SELECT * FROM coupons WHERE participant_id = ?";
+    $stmt = $pdo->prepare($sql);
+    $stmt->execute([$participant_id]);
+    $cupons = $stmt->fetchAll();
+  } else {
+    // Se o participante não for encontrado, não há cupons
+    $cupons = [];
+  }
+} else {
+  // Se o usuário for do tipo 1, listar todos os cupons
+  $cupons = getAllCupons();
+}
+
+
 $page = 'cupons';
 ?>
 <!DOCTYPE html>
@@ -91,7 +115,7 @@ $page = 'cupons';
                 <td class="px-6 py-4"><?php echo htmlspecialchars($cupom['participant_name']); ?></td>
                 <td class="px-6 py-4 text-center"><?php echo htmlspecialchars($cupom['quantity']); ?></td>
                 <td class="px-6 py-4"><?php echo date('d/m/Y H:i', strtotime($cupom['created_at'])); ?></td>
-                <td class="px-6 py-4"><?php echo htmlspecialchars($cupom['status']); ?></td>
+                <!-- <td class="px-6 py-4"><?php echo htmlspecialchars($cupom['status']); ?></td> -->
                 <td class="px-6 py-4">
                   <a href="./editar_cupom.php?id=<?php echo $cupom['id']; ?>" class="font-medium text-blue-600 hover:underline">Editar</a>
                   <a href="./controllers/delete_cupom.php?id=<?php echo $cupom['id']; ?>" class="font-medium text-red-600 hover:underline">Excluir</a>

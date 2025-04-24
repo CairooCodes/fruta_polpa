@@ -14,10 +14,20 @@ if (empty($login) || empty($password)) {
 $isEmail = filter_var($login, FILTER_VALIDATE_EMAIL);
 $searchField = $isEmail ? 'email' : 'phone';
 
-// Ajusta número de telefone se necessário
-if (!$isEmail && str_starts_with($login, '55')) {
-    $login = preg_replace('/[^0-9]/', '', $login); // remove tudo que não for número
+if (!$isEmail) {
+    // Remove tudo que não for número
+    $login = preg_replace('/\D/', '', $login);
+
+    // Verifica se começa com 55. Se não, adiciona.
+    if (substr($login, 0, 2) !== '55') {
+        $login = '55' . $login;
+    }
 }
+
+
+// DEBUG: Ver login final
+// echo "<pre>Login final: $login</pre>";
+// exit;
 
 try {
     $sql = "SELECT id, name, email, phone, password, type FROM users WHERE $searchField = ? LIMIT 1";

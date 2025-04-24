@@ -43,7 +43,7 @@ session_start();
         <form action="./controllers/auth.php" method="POST">
           <div class="space-y-6">
             <div class="">
-              <input name="login" id="login" class="w-full text-sm  px-4 py-3 bg-gray-200 focus:bg-gray-100 border border-gray-200 rounded-lg focus:outline-none focus:border-orange-400" type="text" placeholder="Número de celular">
+              <input name="login" class="w-full text-sm  px-4 py-3 bg-gray-200 focus:bg-gray-100 border border-gray-200 rounded-lg focus:outline-none focus:border-orange-400" type="" placeholder="Seu Número ou Email">
             </div>
             <div class="relative" x-data="{ show: true }">
               <input name="password" placeholder="Password" :type="show ? 'password' : 'text'" class="w-full text-sm  px-4 py-3 bg-gray-200 focus:bg-gray-100 border border-gray-200 rounded-lg focus:outline-none focus:border-orange-400">
@@ -83,38 +83,6 @@ session_start();
       alertify.error("Login ou senha incorretos");
     <?php endif; ?>
   </script>
-
-<script>
-  const loginInput = document.getElementById('login');
-
-  loginInput.addEventListener('focus', function () {
-    if (loginInput.value === '') {
-      loginInput.value = '55';
-      // Coloca o cursor depois do 55
-      loginInput.setSelectionRange(2, 2);
-    }
-  });
-
-  loginInput.addEventListener('keydown', function (e) {
-    // Impede apagar o 55
-    if (loginInput.selectionStart <= 2 && (e.key === "Backspace" || e.key === "Delete")) {
-      e.preventDefault();
-    }
-
-    // Impede digitação antes do 55
-    if (loginInput.selectionStart < 2 && e.key.length === 1) {
-      e.preventDefault();
-    }
-  });
-
-  loginInput.addEventListener('input', function () {
-    if (!loginInput.value.startsWith('55')) {
-      loginInput.value = '55';
-      loginInput.setSelectionRange(2, 2);
-    }
-  });
-</script>
-
 </body>
 
 </html>
