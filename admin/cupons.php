@@ -108,7 +108,7 @@ $page = 'cupons';
               <tr class="bg-white border-b">
                 <td class="px-6 py-4">
                   <?php if ($cupom['image']) : ?>
-                    <img class="w-10 h-10 object-cover rounded" src="./uploads/cupons/<?php echo $cupom['image']; ?>" alt="Imagem do cupom">
+                    <img class="w-10 h-10 object-cover rounded" src="<?php echo $cupom['image']; ?>" alt="Imagem do cupom">
                   <?php else : ?>
                     <span class="text-gray-400 italic">Sem imagem</span>
                   <?php endif; ?>

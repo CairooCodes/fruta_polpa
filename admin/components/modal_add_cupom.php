@@ -16,10 +16,13 @@
       <!-- Modal body -->
       <div class="p-6 space-y-6">
         <div class="grid grid-cols-6 gap-6">
+          <input type="hidden" name="participant_id" value="<?php echo $participant_id; ?>">
+
           <div class="col-span-6 sm:col-span-3">
-            <label class="block mb-2 text-sm font-medium text-gray-900">ID do Participante</label>
-            <input type="number" name="participant_id" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-orange-600 focus:border-orange-600 block w-full p-2.5" placeholder="ID" required>
+            <label class="block mb-2 text-sm font-medium text-gray-900">Quantidade de Polpas</label>
+            <input type="number" name="quantity" min="1" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-orange-600 focus:border-orange-600 block w-full p-2.5" required>
           </div>
+
           <div class="col-span-6 sm:col-span-3">
             <label class="block mb-2 text-sm font-medium text-gray-900">Imagem</label>
             <input type="file" name="img" accept="image/*" class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50">
