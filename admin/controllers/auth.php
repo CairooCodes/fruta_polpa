@@ -10,30 +10,41 @@ if (empty($login) || empty($password)) {
     exit;
 }
 
-// Verifica se o login é e-mail ou número
+// Verifica se é e-mail
 $isEmail = filter_var($login, FILTER_VALIDATE_EMAIL);
 $searchField = $isEmail ? 'email' : 'phone';
 
 if (!$isEmail) {
-    // Remove tudo que não for número
+    // Limpa tudo que não for número
     $login = preg_replace('/\D/', '', $login);
 
-    // Verifica se começa com 55. Se não, adiciona.
+    // Adiciona o 55 se não tiver
     if (substr($login, 0, 2) !== '55') {
         $login = '55' . $login;
     }
+
+    // Agora temos login como 55 + DDD + número
+
+    $loginSemNove = $login;
+
+    // Verifica se tem 9 dígitos após o DDD (ex: 5586999598080)
+    if (preg_match('/^55\d{2}9\d{8}$/', $login)) {
+        // Remove o 9 após o DDD
+        $loginSemNove = substr($login, 0, 5) . substr($login, 6);
+    }
 }
-
-
-// DEBUG: Ver login final
-// echo "<pre>Login final: $login</pre>";
-// exit;
 
 try {
     $sql = "SELECT id, name, email, phone, password, type FROM users WHERE $searchField = ? LIMIT 1";
     $stmt = $pdo->prepare($sql);
-    $stmt->execute([$login]);
+    $stmt->execute([$isEmail ? $login : $loginSemNove]);
     $user = $stmt->fetch(PDO::FETCH_ASSOC);
+
+    // Se não achou com número sem o 9, tenta com o número original
+    if (!$user && !$isEmail) {
+        $stmt->execute([$login]);
+        $user = $stmt->fetch(PDO::FETCH_ASSOC);
+    }
 
     if (!$user || !password_verify($password, $user['password'])) {
         header('Location: ../login.php?login=failed');

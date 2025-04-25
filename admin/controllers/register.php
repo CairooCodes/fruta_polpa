@@ -18,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
     // Concatena com o prefixo internacional, sem o 9 fixo
     $phone = '55' . $ddd . $number;
-    $email = $_POST["email"];
+    $email = $_POST["email"] ?? null;
     $cep = $_POST["cep"];
     $state = $_POST["state"] ?? null;
     $city = $_POST["city"];
