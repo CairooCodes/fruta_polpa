@@ -2,7 +2,6 @@
 require_once "db_config.php";
 require "config/helper.php";
 require "config/url.class.php";
-require "./functions/get.php";
 
 $URI = new URI();
 
@@ -22,51 +21,46 @@ $URI = new URI();
   <section>
     <div class="max-w-full px-4 pt-5 mt-1 bg-yellow-50">
       <div class="bg-gray-400 rounded px-4 py-2 lg:w-1/2 flex mx-auto">
-        <form action="./admin/controllers/add_recruitment.php" method="post" class="mr-auto lg:p-16 place-self-center">
+        <form action="./admin/controllers/enviar_curriculo.php" method="post" enctype="multipart/form-data" class="mr-auto lg:p-16 place-self-center">
           <h2 class="text-center md:text-left text-3xl font-extrabold pb-5 tracking-wider text-white">Envie seu currículo e venha fazer parte do nosso time</h2>
+
           <div>
-            <label class="text-sm font-bold text-white">
-              Nome
-            </label>
-            <input type="text" name="name" id="name" placeholder="Seu nome completo" class="mt-2 mb-4 w-full rounded-lg p-3 text-gray-900" required="" />
+            <label class="text-sm font-bold text-white">Nome</label>
+            <input type="text" name="name" id="name" placeholder="Seu nome completo" class="mt-2 mb-4 w-full rounded-lg p-3 text-gray-900" required />
           </div>
+
           <div>
-            <label class="text-sm font-bold text-white">
-              Email
-            </label>
-            <input type="email" name="email" id="email" placeholder="Email@gmail.com" class="mt-2 mb-4 w-full rounded-lg p-3 text-gray-900" required="" />
+            <label class="text-sm font-bold text-white">Email</label>
+            <input type="email" name="email" id="email" placeholder="Email@gmail.com" class="mt-2 mb-4 w-full rounded-lg p-3 text-gray-900" required />
           </div>
+
           <div>
-            <label class="text-sm font-bold text-white">
-              Telefone
-            </label>
-            <input type="text" name="telephone" id="telephone" placeholder="(99) 9 9999-9999" class="mt-2 mb-4 w-full rounded-lg p-3 text-gray-900" required="" />
+            <label class="text-sm font-bold text-white">Telefone</label>
+            <input type="text" name="telephone" id="telephone" placeholder="(99) 9 9999-9999" class="mt-2 mb-4 w-full rounded-lg p-3 text-gray-900" required />
           </div>
+
           <div>
-            <label class="text-sm font-bold text-white">
-              Cidade
-            </label>
-            <input type="text" name="city" id="city" placeholder="Cidade" class="mt-2 mb-4 w-full rounded-lg p-3 text-gray-900" required="" />
+            <label class="text-sm font-bold text-white">Cidade</label>
+            <input type="text" name="city" id="city" placeholder="Cidade" class="mt-2 mb-4 w-full rounded-lg p-3 text-gray-900" required />
           </div>
+
           <div>
-            <label class="text-sm font-bold text-white">
-              Estado
-            </label>
-            <input type="text" name="state" id="state" placeholder="Estado" class="mt-2 mb-4 w-full rounded-lg p-3 text-gray-900" required="" />
+            <label class="text-sm font-bold text-white">Estado</label>
+            <input type="text" name="state" id="state" placeholder="Estado" class="mt-2 mb-4 w-full rounded-lg p-3 text-gray-900" required />
           </div>
+
           <div>
-            <label class="text-sm font-bold text-white">
-              Área de Interesse
-            </label>
-            <input type="text" name="office" id="office" placeholder="Qual área que deseja trabalhar?" class="mt-2 mb-4 w-full rounded-lg p-3 text-gray-900" required="" />
+            <label class="text-sm font-bold text-white">Área de Interesse</label>
+            <input type="text" name="office" id="office" placeholder="Qual área que deseja trabalhar?" class="mt-2 mb-4 w-full rounded-lg p-3 text-gray-900" required />
           </div>
+
           <div class="grid">
-            <label for="curriculo" class="mt-2 pb-2 text-sm font-bold text-white">
-              Envie seu currículo em PDF
-            </label>
-            <input type="file" name="curriculo" required="">
+            <label for="curriculo" class="mt-2 pb-2 text-sm font-bold text-white">Envie seu currículo em PDF</label>
+            <input type="file" name="curriculo" id="curriculo" accept=".pdf" required class="bg-white rounded-lg p-2 text-gray-900" />
           </div>
-          <input type="hidden" value="RECRUTAMENTO" name="type">
+
+          <input type="hidden" name="type" value="RECRUTAMENTO" />
+
           <div class="flex justify-center mt-12">
             <button class="bg-white hover:bg-color1 text-sm text-color1 hover:text-black font-bold py-2 px-4 rounded-full border w-full md:w-60">
               Enviar
