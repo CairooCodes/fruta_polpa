@@ -18,51 +18,52 @@ $URI = new URI();
     <?php include "./components/navbar.php" ?>
     <div class="mx-auto bg-gray-100 pt-10">
         <div class="max-w-7xl mx-auto p-6">
-            <h2 class="text-3xl font-bold mb-4 font-sans text-center">PREENCHA OS CAMPOS ABAIXO PARA SE CADASTRAR</h2>
+            <h2 class="lg:text-3xl text-xl font-semibold mb-4 font-sans text-center">Preencha os campos abaixo e comece a participar</h2>
             <form action="./admin/controllers/register.php" method="POST" class="space-y-4">
                 <div class="lg:grid lg:grid-cols-2 gap-4">
                     <div>
                         <label class="block text-sm font-medium">Nome *</label>
-                        <input type="text" name="first_name" class="w-full border p-2 rounded-md" required>
+                        <input type="text" name="first_name" class="w-full border border-gray-200 p-2 rounded-md" required>
                     </div>
                     <div>
                         <label class="block text-sm font-medium">WhatsApp *</label>
                         <div class="flex space-x-2 items-end">
                             <div>
                                 <input type="text" id="ddd" name="ddd" maxlength="2" required
-                                    class="w-16 border p-2 rounded-md text-center" pattern="\d{2}">
+                                    class="w-20 border border-gray-200 p-2 rounded-md text-center" pattern="\d{2}" placeholder="DDD">
                             </div>
                             <div>
                                 <input type="text" value="9" disabled
-                                    class="w-8 border p-2 rounded-md text-center bg-gray-100 text-gray-500">
+                                    class="w-14 border border-gray-200 p-2 rounded-md text-center bg-gray-100 text-gray-500">
                             </div>
                             <div>
                                 <input type="text" id="phone_number" name="phone_number" maxlength="8" required
-                                    class="border p-2 rounded-md text-center" pattern="\d{8}">
+                                    class="border border-gray-200 p-2 rounded-md text-center" pattern="\d{8}" placeholder="Número do WhatsApp">
                             </div>
                         </div>
                     </div>
-
-                    <div>
+                </div>
+                <div class="lg:grid lg:grid-cols-3 gap-4">
+                    <!-- <div>
                         <label class="block text-sm font-medium">E-mail *</label>
-                        <input type="email" name="email" class="w-full border p-2 rounded-md" required>
-                    </div>
+                        <input type="email" name="email" class="w-full border border-gray-200 p-2 rounded-md" required>
+                    </div> -->
                     <div>
                         <label class="block text-sm font-medium">CEP *</label>
-                        <input type="text" name="cep" class="w-full border p-2 rounded-md" required>
+                        <input type="text" name="cep" class="w-full border border-gray-200 p-2 rounded-md" required>
                     </div>
                     <div>
                         <label class="block text-sm font-medium">Cidade *</label>
-                        <input type="text" name="city" class="w-full border p-2 rounded-md" required>
+                        <input type="text" name="city" class="w-full border border-gray-200 p-2 rounded-md" required>
                     </div>
                     <div>
                         <label class="block text-sm font-medium">Bairro *</label>
-                        <input type="text" name="neighborhood" class="w-full border p-2 rounded-md" required>
+                        <input type="text" name="neighborhood" class="w-full border border-gray-200 p-2 rounded-md" required>
                     </div>
                 </div>
 
                 <label class="block text-sm font-medium">Crie uma senha *</label>
-                <input type="password" name="password" class="w-full border p-2 rounded-md" required>
+                <input type="password" name="password" class="w-full border border-gray-200 p-2 rounded-md" required>
 
                 <div class="space-y-2">
                     <label class="flex items-center">
@@ -81,7 +82,7 @@ $URI = new URI();
 
                 <div class="col-span-2">
                     <label class="block text-sm font-medium">Como você ficou sabendo do programa?</label>
-                    <select name="origem" class="w-full border p-2 rounded-md">
+                    <select name="origem" class="w-full border border-gray-200 p-2 rounded-md">
                         <option value="supermercado">Vi uma comunicação no supermercado</option>
                         <option value="redes_sociais">Vi um post nas redes sociais</option>
                         <option value="banner_site">Vi um banner em um site</option>
