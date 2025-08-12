@@ -34,22 +34,45 @@ $URI = new URI();
 
 <body>
     <?php include "./components/navbar.php"; ?>
-    <section class="flex items-center justify-center min-h-screen w-full bg-no-repeat bg-center bg-cover polpas">
-        <div class="bg-white bg-opacity-80 p-16 rounded-lg shadow-lg w-full max-w-4xl">
-            <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-28">
-                <img src="./assets/img/logo.png" alt="Logo" class="w-72 mx-auto animate-bounce"
-                    style="animation-duration: 5s;">
+    <section class="flex items-center justify-center min-h-screen w-full bg-no-repeat bg-center bg-cover premiadas">
+        <div class="max-w-7xl">
+            <div class="grid grid-cols-1 md:grid-cols-2 items-center">
+                <img src="./assets/img/logo.png" alt="Logo">
                 <div class="flex flex-col space-y-6">
-                    <h1 class="text-center text-4xl font-bold text-emerald-800">PARTICIPE AQUI! <br> É FÁCIL E RÁPIDO.
+                    <h1 class="text-4xl font-bold text-emerald-800">
+                        PARTICIPE AQUI! <br> É FÁCIL E RÁPIDO.
                     </h1>
-                    <p class="text-center text-xl font-bold text-emerald-800">Informe seu cpf para logar ou se
-                        cadastrar:</p>
-                    <form action="verificar_cpf.php" method="POST">
-                        <input type="text" name="cpf" placeholder="Digite seu CPF"
-                            class="p-5 border border-color1 rounded-full w-full text-lg">
+                    <p class="text-xl font-bold text-emerald-800">
+                        Informe seu telefone para logar ou se cadastrar:
+                    </p>
+                    <form action="verificar_phone.php" method="POST">
+                        <div>
+                            <label class="block text-sm font-medium">WhatsApp *</label>
+                            <div class="flex space-x-2 items-end">
+                                <div>
+                                    <input type="text" id="ddd" name="ddd" maxlength="2" required
+                                        class="w-20 border border-gray-200 p-2 rounded-md text-center"
+                                        pattern="\d{2}" placeholder="DDD"
+                                        oninput="this.value = this.value.replace(/[^0-9]/g, '')">
+                                </div>
+                                <div>
+                                    <input type="text" value="9" disabled
+                                        class="w-14 border border-gray-200 p-2 rounded-md text-center bg-gray-100 text-gray-500">
+                                </div>
+                                <div>
+                                    <input type="text" id="phone_number" name="phone_number" maxlength="8" required
+                                        class="border border-gray-200 p-2 rounded-md text-center"
+                                        pattern="\d{8}" placeholder="Número do WhatsApp"
+                                        oninput="this.value = this.value.replace(/[^0-9]/g, '')">
+                                </div>
+                            </div>
+                        </div>
+
                         <div class="flex justify-center items-center pt-3">
                             <button type="submit"
-                                class="w-1/2 p-3 bg-green-600 text-white rounded-full text-lg hover:bg-green-700">Enviar</button>
+                                class="w-1/2 p-3 bg-green-600 text-white rounded-full text-lg hover:bg-green-700">
+                                Enviar
+                            </button>
                         </div>
                     </form>
                 </div>
@@ -93,49 +116,6 @@ $URI = new URI();
                         <h1 class="text-center font-bold"><span class="text-3xl uppercase">Concorra</span> <br> <span
                                 class="text-xl">a prêmios que não <br> dá para esquecer</span></h1>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="py-3 bg-color3">
-        <div class="p-5 text-3xl font-bold uppercase text-center">
-            <h1>Toda a linha de produtos <br> Fruta Polpa participam.</h1>
-        </div>
-        <div class="max-w-full px-4 pb-12 lg:grid grid-cols-2">
-            <div class="lg:pl-72 px-5">
-                <div class="swiper swiper_products_type z-0">
-                    <div class="swiper-wrapper">
-                        <?php foreach ($polpas1 as $polpa1) { ?>
-                            <div class="swiper-slide pb-5">
-                                <div class="transition duration-500 bg-white rounded-2xl shadow2">
-                                    <div class="h-full">
-                                        <img loading="lazy"
-                                            src='https://frutapolpa.com.br/admin/uploads/polpas/<?php echo $polpa1['img']; ?>'>
-                                    </div>
-                                </div>
-                            </div>
-                        <?php }
-                        ?>
-                    </div>
-                    <!-- <div class="swiper-pagination"></div> -->
-                </div>
-            </div>
-            <div class="lg:pr-72 px-5">
-                <div class="swiper swiper_products_type2 z-0">
-                    <div class="swiper-wrapper">
-                        <?php foreach ($polpas2 as $polpa2) { ?>
-                            <div class="swiper-slide">
-                                <div class=" transition duration-500 bg-white rounded-2xl shadow2 ">
-                                    <div class="h-full">
-                                        <img loading="lazy"
-                                            src='https://frutapolpa.com.br/admin/uploads/polpas/<?php echo $polpa2['img']; ?>'>
-                                    </div>
-                                </div>
-                            </div>
-                        <?php }
-                        ?>
-                    </div>
-                    <!-- <div class="swiper-pagination2"></div> -->
                 </div>
             </div>
         </div>

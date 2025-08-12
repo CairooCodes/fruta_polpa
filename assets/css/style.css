@@ -375,10 +375,8 @@ header {
   /* Ajuste a opacidade conforme necessário */
 }
 
-.polpas {
-  background-image: url('../img/novobanner.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
+.premiadas {
+  background-image: url('../img/Wallpaper.png');
 }
 
 .zoom-container {

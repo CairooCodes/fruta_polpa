@@ -21,7 +21,7 @@
 <link rel="apple-touch-icon" sizes="180x180" href="https://frutapolpa.com.br/assets/img/logo.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://frutapolpa.com.br/assets/img/icon.png">
 <script src="https://cdn.tailwindcss.com"></script>
-<link rel="stylesheet" href="https://frutapolpa.com.br/assets/css/style.css">
+<link rel="stylesheet" href="./assets/css/style.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.css" rel="stylesheet" />
 <script src="https://cdn.jsdelivr.net/npm/intersection-observer@0.12.2/intersection-observer.min.js"></script>
