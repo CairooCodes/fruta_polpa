@@ -37,7 +37,7 @@ $URI = new URI();
     <section class="flex items-center justify-center min-h-screen w-full bg-no-repeat bg-center bg-cover premiadas">
         <div class="max-w-7xl">
             <div class="grid grid-cols-1 md:grid-cols-2 items-center">
-                <img src="./assets/img/logo.png" alt="Logo">
+                <img src="./assets/img/polpapremiada.png" class="w-full" alt="Logo">
                 <div class="flex flex-col space-y-6">
                     <h1 class="text-4xl font-bold text-emerald-800">
                         PARTICIPE AQUI! <br> É FÁCIL E RÁPIDO.
