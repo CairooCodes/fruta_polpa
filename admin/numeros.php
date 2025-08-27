@@ -37,7 +37,7 @@ if ($user_type == 2) {
     }
 } else {
     // Se o usuário for do tipo 1, listar todos os numeros
-    $cupons = getAllCouponCodes();
+    $couponCodes = getAllCouponCodes();
 }
 $page = 'numeros';
 ?>

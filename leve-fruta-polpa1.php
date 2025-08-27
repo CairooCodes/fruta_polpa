@@ -42,8 +42,8 @@ $URI = new URI();
                                 </div>
                                 <div>
                                     <input type="text" id="phone_number" name="phone_number" maxlength="8" required
-                                        class="lg:w-72 w-46 border border-gray-200 p-2 rounded-md text-center"
-                                        pattern="\d{8}" placeholder="Número do WhatsApp"
+                                        class="lg:w-72 w-40 border border-gray-200 p-2 rounded-md text-center"
+                                        pattern="\d{8}" placeholder="WhatsApp"
                                         oninput="this.value = this.value.replace(/[^0-9]/g, '')">
                                 </div>
                             </div>
