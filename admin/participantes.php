@@ -12,38 +12,58 @@ $user_id = $_SESSION['id'] ?? null;
 $user_type = $_SESSION['type'];
 
 
-// ================== FILTROS ================== //
+// ================== FILTROS - BACKEND ================== //
 $where = [];
 $params = [];
 
+// 1. Filtro de Busca (Nome, CPF, Email)
 if (!empty($_GET['search'])) {
     $where[] = "(first_name LIKE :search OR last_name LIKE :search OR cpf LIKE :search OR email LIKE :search)";
     $params[':search'] = "%" . $_GET['search'] . "%";
 }
 
+// 2. Filtro de Estado
 if (!empty($_GET['state'])) {
     $where[] = "state = :state";
     $params[':state'] = $_GET['state'];
 }
 
+// 3. Filtro de Cidade (Neighborhood)
 if (!empty($_GET['city'])) {
     $where[] = "neighborhood = :city";
     $params[':city'] = $_GET['city'];
 }
 
+// 4. NOVO: Filtro por Data de Início (created_at >=)
+if (!empty($_GET['date_start'])) {
+    // Garante que o participante foi criado NA OU DEPOIS da data de início (00:00:00)
+    $where[] = "created_at >= :date_start";
+    $params[':date_start'] = $_GET['date_start'] . " 00:00:00"; 
+}
+
+// 5. NOVO: Filtro por Data de Fim (created_at <=)
+if (!empty($_GET['date_end'])) {
+    // Garante que o participante foi criado NA OU ANTES da data de fim (23:59:59)
+    $where[] = "created_at <= :date_end";
+    $params[':date_end'] = $_GET['date_end'] . " 23:59:59";
+}
+
 $filterWhere = $where ? "WHERE " . implode(" AND ", $where) : "";
 
 // ================== ESTATÍSTICAS ================== //
+// As estatísticas agora consideram os filtros aplicados, inclusive a data.
 $total_sql = "SELECT COUNT(*) as total FROM participants $filterWhere";
 $stmt = $pdo->prepare($total_sql);
 $stmt->execute($params);
 $total = $stmt->fetch(PDO::FETCH_ASSOC)['total'];
 
+// Traz a contagem de estados (respeitando os filtros)
 $estados_sql = "SELECT state, COUNT(*) as total FROM participants $filterWhere GROUP BY state ORDER BY total DESC";
 $stmt = $pdo->prepare($estados_sql);
 $stmt->execute($params);
 $estados = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
+// Traz a contagem de cidades (respeitando os filtros)
 $cidades_sql = "SELECT neighborhood, COUNT(*) as total FROM participants $filterWhere GROUP BY neighborhood ORDER BY total DESC";
 $stmt = $pdo->prepare($cidades_sql);
 $stmt->execute($params);
@@ -78,7 +98,6 @@ $page = 'participantes';
 
             <h1 class="text-2xl font-bold mb-6">Participantes Cadastrados</h1>
 
-            <!-- ================== CARDS DE RESUMO ================== -->
             <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
                 <div class="bg-blue-100 p-4 rounded-lg shadow text-center">
                     <h2 class="text-lg font-bold">Total Participantes</h2>
@@ -94,14 +113,25 @@ $page = 'participantes';
                 </div>
             </div>
 
-            <!-- ================== FILTROS ================== -->
             <form method="get" class="flex flex-wrap gap-4 mb-6">
-                <!-- Busca -->
                 <input type="text" name="search" placeholder="Buscar por nome, cpf ou email"
                     value="<?php echo $_GET['search'] ?? ''; ?>"
                     class="px-3 py-2 border rounded-lg w-64">
 
-                <!-- Estados -->
+                <div class="flex items-center space-x-2">
+                    <label for="date_start" class="text-sm font-medium text-gray-700">De:</label>
+                    <input type="date" name="date_start" id="date_start"
+                        value="<?php echo $_GET['date_start'] ?? ''; ?>"
+                        class="px-3 py-2 border rounded-lg">
+                </div>
+
+                <div class="flex items-center space-x-2">
+                    <label for="date_end" class="text-sm font-medium text-gray-700">Até:</label>
+                    <input type="date" name="date_end" id="date_end"
+                        value="<?php echo $_GET['date_end'] ?? ''; ?>"
+                        class="px-3 py-2 border rounded-lg">
+                </div>
+
                 <select name="state" class="px-3 py-2 border rounded-lg" onchange="this.form.submit()">
                     <option value="">Todos os estados</option>
                     <?php foreach ($estados as $e): ?>
@@ -112,7 +142,6 @@ $page = 'participantes';
                     <?php endforeach; ?>
                 </select>
 
-                <!-- Cidades -->
                 <select name="city" class="px-3 py-2 border rounded-lg" onchange="this.form.submit()">
                     <option value="">Todas as cidades</option>
                     <?php foreach ($cidades as $c): ?>
@@ -128,7 +157,6 @@ $page = 'participantes';
                 </button>
             </form>
 
-            <!-- ================== TABELA ================== -->
             <div class="relative overflow-x-auto shadow-md sm:rounded-lg bg-white">
                 <table class="w-full text-sm text-left text-gray-500">
                     <thead class="text-xs text-gray-700 uppercase bg-gray-50">
