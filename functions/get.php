@@ -197,3 +197,10 @@ function getAllCouponCodes()
   $stmt->execute();
   return $stmt->fetchAll(PDO::FETCH_ASSOC);
 }
+
+function getAllEmails()
+{
+  global $pdo;
+  $stmt = $pdo->query("SELECT * FROM emails ORDER BY created_at DESC");
+  return $stmt->fetchAll(PDO::FETCH_ASSOC);
+}
