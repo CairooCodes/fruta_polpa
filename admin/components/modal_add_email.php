@@ -40,7 +40,7 @@
                     </div>
                     <div>
                         <label class="text-sm font-medium text-gray-700">Sentimento</label>
-                        <input type="number" name="sentimento_id" class="w-full border rounded-lg p-2 text-sm">
+                        <input type="number" name="sentimento" class="w-full border rounded-lg p-2 text-sm">
                     </div>
                     <div>
                         <label class="text-sm font-medium text-gray-700">Estado</label>

@@ -4,7 +4,7 @@ require "../../db_config.php";
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $stmt = $pdo->prepare("
     INSERT INTO emails 
-      (cpf, nome, email, celular, data_nascimento, sexo, sentimento_id, estado, cidade, unidade_loja, 
+      (cpf, nome, email, celular, data_nascimento, sexo, sentimento, estado, cidade, unidade_loja, 
       o_que_deseja, motivo_contato, qual_solicitacao, mensagem, send_email)
     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
   ");
@@ -16,7 +16,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $_POST['celular'] ?? null,
         $_POST['data_nascimento'] ?? null,
         $_POST['sexo'] ?? null,
-        $_POST['sentimento_id'] ?? null,
+        $_POST['sentimento'] ?? null,
         $_POST['estado'] ?? null,
         $_POST['cidade'] ?? null,
         $_POST['unidade_loja'] ?? null,
