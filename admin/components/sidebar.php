@@ -106,6 +106,15 @@
             <span class="group-hover:text-gray-700">Números</span>
           </a>
         </li>
+        <li>
+          <a href="emails.php" class="px-3 py-2 flex items-center space-x-3 rounded-md text-gray-800 group 
+        <?php if ($page == 'emails') {
+          echo 'bg-orange-600 text-white';
+        } ?>">
+            <i class="bi bi-envelope"></i>
+            <span class="group-hover:text-gray-700">Emails</span>
+          </a>
+        </li>
       <?php endif; ?>
     </ul>
   </div>

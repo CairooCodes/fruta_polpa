@@ -9,6 +9,7 @@ if (!isset($_SESSION['id'])) {
 }
 
 $user_id = $_SESSION['id'] ?? null;
+$user_type = $_SESSION['type'];
 
 $sql = "SELECT name, email, img FROM users WHERE id = ?";
 $stmt = $pdo->prepare($sql);
@@ -53,6 +54,7 @@ $page = 'emails';
                             <th class="px-6 py-3">E-mail</th>
                             <th class="px-6 py-3">Celular</th>
                             <th class="px-6 py-3">Estado</th>
+                            <th class="px-6 py-3">Status</th>
                             <th class="px-6 py-3">Criado em</th>
                             <th class="px-6 py-3">Ações</th>
                         </tr>
@@ -64,6 +66,7 @@ $page = 'emails';
                                 <td class="px-6 py-4"><?php echo htmlspecialchars($email['email']); ?></td>
                                 <td class="px-6 py-4"><?php echo htmlspecialchars($email['celular']); ?></td>
                                 <td class="px-6 py-4"><?php echo htmlspecialchars($email['estado']); ?></td>
+                                <td class="px-6 py-4"><?php echo htmlspecialchars($email['status']); ?></td>
                                 <td class="px-6 py-4"><?php echo date('d/m/Y H:i', strtotime($email['created_at'])); ?></td>
                                 <td class="px-6 py-4">
                                     <a href="./editar_email.php?id=<?php echo $email['id']; ?>" class="text-blue-600 hover:underline">Editar</a>
