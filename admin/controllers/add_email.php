@@ -2,12 +2,19 @@
 require "../../db_config.php";
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+
+    $enviarAgora = isset($_POST['enviar_agora']) ? 1 : 0;
+
+    // Define status e send_email conforme checkbox
+    $status = $enviarAgora ? 1 : 2;
+    $send_email = $enviarAgora ? null : ($_POST['send_email'] ?? null);
+
     $stmt = $pdo->prepare("
-    INSERT INTO emails 
-      (cpf, nome, email, celular, data_nascimento, sexo, sentimento, estado, cidade, unidade_loja, 
-      o_que_deseja, motivo_contato, qual_solicitacao, mensagem, send_email)
-    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-  ");
+        INSERT INTO emails 
+          (cpf, nome, email, celular, data_nascimento, sexo, sentimento, estado, cidade, unidade_loja, 
+          o_que_deseja, motivo_contato, qual_solicitacao, mensagem, send_email, status)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+    ");
 
     $stmt->execute([
         $_POST['cpf'] ?? null,
@@ -24,7 +31,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $_POST['motivo_contato'] ?? null,
         $_POST['qual_solicitacao'] ?? null,
         $_POST['mensagem'] ?? null,
-        $_POST['send_email'] ?? null
+        $send_email,
+        $status
     ]);
 
     header("Location: ../emails.php");

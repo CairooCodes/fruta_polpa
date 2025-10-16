@@ -72,11 +72,27 @@
                     <label class="text-sm font-medium text-gray-700">Mensagem</label>
                     <textarea name="mensagem" rows="4" class="w-full border rounded-lg p-2 text-sm"></textarea>
                 </div>
-                <div>
+                <div class="flex items-center space-x-2">
+                    <input
+                        type="checkbox"
+                        id="enviarAgora"
+                        name="enviar_agora"
+                        class="w-4 h-4 text-orange-700 border-gray-300 rounded focus:ring-orange-600">
+                    <label for="enviarAgora" class="text-sm font-medium text-gray-700">Enviar e-mail agora</label>
+                </div>
+
+                <div id="dataEnvioContainer">
                     <label class="text-sm font-medium text-gray-700">Enviar em</label>
                     <input type="datetime-local" name="send_email" class="w-full border rounded-lg p-2 text-sm">
                 </div>
             </div>
+
+            <script>
+                document.getElementById('enviarAgora').addEventListener('change', function() {
+                    const dataEnvioContainer = document.getElementById('dataEnvioContainer');
+                    dataEnvioContainer.style.display = this.checked ? 'none' : 'block';
+                });
+            </script>
 
             <div class="flex justify-end p-4 border-t">
                 <button type="submit" class="bg-orange-700 hover:bg-orange-800 text-white font-medium rounded-lg text-sm px-5 py-2.5">
