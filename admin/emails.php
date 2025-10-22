@@ -66,7 +66,19 @@ $page = 'emails';
                                 <td class="px-6 py-4"><?php echo htmlspecialchars($email['email']); ?></td>
                                 <td class="px-6 py-4"><?php echo htmlspecialchars($email['celular']); ?></td>
                                 <td class="px-6 py-4"><?php echo htmlspecialchars($email['estado']); ?></td>
-                                <td class="px-6 py-4"><?php echo htmlspecialchars($email['status']); ?></td>
+                                <td class="px-6 py-4">
+                                    <?php
+                                    $status = $email['status'] ?? null; // valor seguro
+
+                                    if ($status == 1) {
+                                        echo "Em processamento";
+                                    } elseif ($status == 2) {
+                                        echo "Agendamento";
+                                    } else {
+                                        echo htmlspecialchars($status);
+                                    }
+                                    ?>
+                                </td>
                                 <td class="px-6 py-4"><?php echo date('d/m/Y H:i', strtotime($email['created_at'])); ?></td>
                                 <td class="px-6 py-4">
                                     <a href="./editar_email.php?id=<?php echo $email['id']; ?>" class="text-blue-600 hover:underline">Editar</a>
