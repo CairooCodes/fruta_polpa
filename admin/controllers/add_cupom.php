@@ -1,8 +1,17 @@
 <?php
 require "../../db_config.php";
 
-$participant_id = $_POST['participant_id'];
+$cpf = $_POST['cpf'] ?? null;
+$ddd = preg_replace('/\D/', '', $_POST['ddd']);
+$number = preg_replace('/\D/', '', $_POST['phone_number']);
 $quantity = isset($_POST['quantity']) ? intval($_POST['quantity']) : 0;
+
+if (strlen($ddd) !== 2 || strlen($number) !== 8) {
+    echo 'Número de telefone inválido.';
+    exit;
+}
+
+$phone = '55' . $ddd . $number;
 
 $uploadDir = '../uploads/cupons/';
 $imgPath = null;
@@ -20,33 +29,30 @@ if (isset($_FILES['img']) && $_FILES['img']['error'] == UPLOAD_ERR_OK) {
     }
 }
 
-// Inserir o cupom na tabela 'coupons' com quantidade e imagem
-$sql = "INSERT INTO coupons (participant_id, image, quantity, created_at, updated_at) 
-        VALUES (?, ?, ?, NOW(), NOW())";
+// ===== Inserir o cupom =====
+$sql = "INSERT INTO coupons (cpf, phone, image, quantity, created_at, updated_at) 
+        VALUES (?, ?, ?, ?, NOW(), NOW())";
 $stmt = $pdo->prepare($sql);
-$stmt->execute([$participant_id, $imgPath, $quantity]);
+$stmt->execute([$cpf, $phone, $imgPath, $quantity]);
 
 $coupon_id = $pdo->lastInsertId();
 
-// Calcular quantidade de códigos a gerar com base na quantidade
-$couponCount = 0;
-if ($quantity >= 3 && $quantity < 5) {
-    $couponCount = 1;
-} elseif ($quantity >= 5 && $quantity < 10) {
-    $couponCount = 2;
-} elseif ($quantity >= 10) {
-    $couponCount = 3;
-}
+// ===== Lógica igual à automação =====
+$couponCount = min(intdiv($quantity, 3), 5);
 
-// Gerar e salvar os códigos da sorte
 for ($i = 0; $i < $couponCount; $i++) {
-    $code = rand(100000, 999999);
+    do {
+        $code = rand(100000, 999999);
+        $stmt = $pdo->prepare("SELECT COUNT(*) FROM coupon_codes WHERE code = ?");
+        $stmt->execute([$code]);
+        $exists = $stmt->fetchColumn() > 0;
+    } while ($exists);
 
-    $sql = "INSERT INTO coupon_codes (participant_id, coupon_id, code, created_at, updated_at)
-            VALUES (?, ?, ?, NOW(), NOW())";
+    $sql = "INSERT INTO coupon_codes (coupon_id, code, created_at, updated_at)
+            VALUES (?, ?, NOW(), NOW())";
     $stmt = $pdo->prepare($sql);
-    $stmt->execute([$participant_id, $coupon_id, $code]);
+    $stmt->execute([$coupon_id, $code]);
 }
 
-header('Location: ../cupons.php');
+header('Location: ../../participe.php?phone=' . urlencode($phone));
 exit;
