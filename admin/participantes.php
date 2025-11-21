@@ -39,8 +39,8 @@ if (!empty($_GET['date_end'])) {
 $filterWhere = $where ? "WHERE " . implode(" AND ", $where) : "";
 
 
-$filterWhereStep0 = $filterWhere ? $filterWhere . " AND step_register = 0" : "WHERE step_register = 0";
-$stmt = $pdo->prepare("SELECT COUNT(*) AS total FROM participants $filterWhereStep0");
+$filterWhereAll = $filterWhere; // apenas aplica os filtros da busca, estado, datas
+$stmt = $pdo->prepare("SELECT COUNT(*) AS total FROM participants $filterWhereAll");
 $stmt->execute($params);
 $totalWhats = $stmt->fetch(PDO::FETCH_ASSOC)['total'];
 
@@ -51,9 +51,26 @@ $stmt->execute($params);
 $totalSite = $stmt->fetch(PDO::FETCH_ASSOC)['total'];
 
 // ESTADOS
-$stmt = $pdo->prepare("SELECT state, COUNT(*) AS total FROM participants $filterWhere GROUP BY state ORDER BY total DESC");
-$stmt->execute($params);
+$cliente_estados = ['MA','PI','PA','TO','GO','RJ','PB','CE','DF']; // 8 estados solicitados
+
+// Se já houver filtros no WHERE, usamos AND, senão usamos WHERE
+$stateFilter = ($filterWhere ? " AND " : "WHERE ") . "state IN (" . implode(',', array_fill(0, count($cliente_estados), '?')) . ")";
+
+$stmt = $pdo->prepare("
+    SELECT state, COUNT(*) AS total 
+    FROM participants 
+    $filterWhere
+    $stateFilter
+    GROUP BY state 
+    ORDER BY total DESC
+");
+
+// Passando os parâmetros do filtro + os estados do cliente
+$params_exec = array_merge($params, $cliente_estados);
+$stmt->execute($params_exec);
+
 $estados = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
 
 // Cupons enviados
 $stmt = $pdo->prepare("SELECT COUNT(*) as total_sent FROM coupons WHERE image IS NOT NULL");
