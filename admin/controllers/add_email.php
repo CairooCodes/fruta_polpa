@@ -33,7 +33,9 @@ function enviarMensagemWhatsApp($emailId, $pdo)
         "Solicitação: {$dados['qual_solicitacao']}\n" .
         "Mensagem: {$dados['mensagem']}\n" .
         "Enviar em: {$dados['send_email']}\n" .
-        "Status: {$dados['status']}\n";
+        "Status: {$dados['status']}\n\n" .
+        "📝 *Por favor, preencha também o formulário no portal Assaí:*\n" .
+        "https://www.assai.com.br/espaco-do-cliente\n";
 
     // Credenciais Z-API
     $baseUrl     = "https://api.z-api.io";
@@ -43,26 +45,34 @@ function enviarMensagemWhatsApp($emailId, $pdo)
 
     $url = "$baseUrl/instances/$instanceId/token/$token/send-text";
 
-    $payload = [
-        "phone"   => "558699598080",
-        "message" => $mensagem
+    $numeros = [
+        "558699598080",
+        "558699206955"
     ];
 
-    // CURL
-    $ch = curl_init();
-    curl_setopt_array($ch, [
-        CURLOPT_URL => $url,
-        CURLOPT_RETURNTRANSFER => true,
-        CURLOPT_POST => true,
-        CURLOPT_HTTPHEADER => [
-            "Client-Token: $clientToken",
-            "Content-Type: application/json"
-        ],
-        CURLOPT_POSTFIELDS => json_encode($payload)
-    ]);
+    foreach ($numeros as $numero) {
 
-    curl_exec($ch);
-    curl_close($ch);
+        $payload = [
+            "phone"   => $numero,
+            "message" => $mensagem
+        ];
+
+        // CURL
+        $ch = curl_init();
+        curl_setopt_array($ch, [
+            CURLOPT_URL => $url,
+            CURLOPT_RETURNTRANSFER => true,
+            CURLOPT_POST => true,
+            CURLOPT_HTTPHEADER => [
+                "Client-Token: $clientToken",
+                "Content-Type: application/json"
+            ],
+            CURLOPT_POSTFIELDS => json_encode($payload)
+        ]);
+
+        curl_exec($ch);
+        curl_close($ch);
+    }
 }
 
 
@@ -112,4 +122,3 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     header("Location: ../emails.php");
     exit;
 }
-?>

@@ -51,7 +51,7 @@ $stmt->execute($params);
 $totalSite = $stmt->fetch(PDO::FETCH_ASSOC)['total'];
 
 // ESTADOS
-$cliente_estados = ['MA','PI','PA','TO','GO','RJ','PB','CE','DF']; // 8 estados solicitados
+$cliente_estados = ['MA', 'PI', 'PA', 'TO', 'GO', 'RJ', 'PB', 'CE', 'DF']; // 8 estados solicitados
 
 // Se já houver filtros no WHERE, usamos AND, senão usamos WHERE
 $stateFilter = ($filterWhere ? " AND " : "WHERE ") . "state IN (" . implode(',', array_fill(0, count($cliente_estados), '?')) . ")";
@@ -197,7 +197,6 @@ $page = 'participantes';
                             <th class="px-4 py-3">Nome</th>
                             <th class="px-4 py-3">CPF</th>
                             <th class="px-4 py-3">Telefone</th>
-                            <th class="px-4 py-3">Email</th>
                             <th class="px-4 py-3">Criado em</th>
                             <th class="px-4 py-3">Atualizado em</th>
                         </tr>
@@ -210,7 +209,6 @@ $page = 'participantes';
                                     <td class="px-4 py-3"><?php echo htmlspecialchars($p['first_name'] . " " . $p['last_name']); ?></td>
                                     <td class="px-4 py-3"><?php echo htmlspecialchars($p['cpf']); ?></td>
                                     <td class="px-4 py-3"><?php echo htmlspecialchars($p['phone']); ?></td>
-                                    <td class="px-4 py-3"><?php echo htmlspecialchars($p['email']); ?></td>
                                     <td class="px-4 py-3"><?php echo date('d/m/Y H:i', strtotime($p['created_at'])); ?></td>
                                     <td class="px-4 py-3"><?php echo $p['updated_at'] ? date('d/m/Y H:i', strtotime($p['updated_at'])) : '-'; ?></td>
                                 </tr>
@@ -258,7 +256,14 @@ $page = 'participantes';
                         position: 'right'
                     },
                     tooltip: {
-                        enabled: true
+                        callbacks: {
+                            label: function(context) {
+                                let total = context.dataset.data.reduce((a, b) => a + b, 0);
+                                let value = context.raw;
+                                let percentage = ((value / total) * 100).toFixed(1);
+                                return `${context.label}: ${percentage}%`;
+                            }
+                        }
                     }
                 }
             }
