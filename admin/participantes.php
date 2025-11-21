@@ -2,74 +2,75 @@
 session_start();
 require "../db_config.php";
 
-// Verifica se o usuário está logado
 if (!isset($_SESSION['id'])) {
     header('Location: login.php');
     exit;
 }
 
 $user_id = $_SESSION['id'] ?? null;
-$user_type = $_SESSION['type'];
+$user_type = $_SESSION['type'] ?? null;
 
-
-// ================== FILTROS - BACKEND ================== //
 $where = [];
 $params = [];
 
-// 1. Filtro de Busca (Nome, CPF, Email)
+
 if (!empty($_GET['search'])) {
     $where[] = "(first_name LIKE :search OR last_name LIKE :search OR cpf LIKE :search OR email LIKE :search)";
     $params[':search'] = "%" . $_GET['search'] . "%";
 }
 
-// 2. Filtro de Estado
 if (!empty($_GET['state'])) {
     $where[] = "state = :state";
     $params[':state'] = $_GET['state'];
 }
 
-// 3. Filtro de Cidade (Neighborhood)
-if (!empty($_GET['city'])) {
-    $where[] = "neighborhood = :city";
-    $params[':city'] = $_GET['city'];
-}
 
-// 4. NOVO: Filtro por Data de Início (created_at >=)
 if (!empty($_GET['date_start'])) {
-    // Garante que o participante foi criado NA OU DEPOIS da data de início (00:00:00)
     $where[] = "created_at >= :date_start";
-    $params[':date_start'] = $_GET['date_start'] . " 00:00:00"; 
+    $params[':date_start'] = $_GET['date_start'] . " 00:00:00";
 }
 
-// 5. NOVO: Filtro por Data de Fim (created_at <=)
+
 if (!empty($_GET['date_end'])) {
-    // Garante que o participante foi criado NA OU ANTES da data de fim (23:59:59)
     $where[] = "created_at <= :date_end";
     $params[':date_end'] = $_GET['date_end'] . " 23:59:59";
 }
 
 $filterWhere = $where ? "WHERE " . implode(" AND ", $where) : "";
 
-// ================== ESTATÍSTICAS ================== //
-// As estatísticas agora consideram os filtros aplicados, inclusive a data.
-$total_sql = "SELECT COUNT(*) as total FROM participants $filterWhere";
-$stmt = $pdo->prepare($total_sql);
-$stmt->execute($params);
-$total = $stmt->fetch(PDO::FETCH_ASSOC)['total'];
 
-// Traz a contagem de estados (respeitando os filtros)
-$estados_sql = "SELECT state, COUNT(*) as total FROM participants $filterWhere GROUP BY state ORDER BY total DESC";
-$stmt = $pdo->prepare($estados_sql);
+$filterWhereStep0 = $filterWhere ? $filterWhere . " AND step_register = 0" : "WHERE step_register = 0";
+$stmt = $pdo->prepare("SELECT COUNT(*) AS total FROM participants $filterWhereStep0");
+$stmt->execute($params);
+$totalWhats = $stmt->fetch(PDO::FETCH_ASSOC)['total'];
+
+// Total Site (step_register IS NULL)
+$filterWhereSite = $filterWhere ? $filterWhere . " AND step_register IS NULL" : "WHERE step_register IS NULL";
+$stmt = $pdo->prepare("SELECT COUNT(*) AS total FROM participants $filterWhereSite");
+$stmt->execute($params);
+$totalSite = $stmt->fetch(PDO::FETCH_ASSOC)['total'];
+
+// ESTADOS
+$stmt = $pdo->prepare("SELECT state, COUNT(*) AS total FROM participants $filterWhere GROUP BY state ORDER BY total DESC");
 $stmt->execute($params);
 $estados = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-// Traz a contagem de cidades (respeitando os filtros)
-$cidades_sql = "SELECT neighborhood, COUNT(*) as total FROM participants $filterWhere GROUP BY neighborhood ORDER BY total DESC";
-$stmt = $pdo->prepare($cidades_sql);
-$stmt->execute($params);
-$cidades = $stmt->fetchAll(PDO::FETCH_ASSOC);
+// Cupons enviados
+$stmt = $pdo->prepare("SELECT COUNT(*) as total_sent FROM coupons WHERE image IS NOT NULL");
+$stmt->execute();
+$coupons_sent = $stmt->fetch(PDO::FETCH_ASSOC)['total_sent'];
 
-// ================== PARTICIPANTES ================== //
+// Soma de quantity em coupons
+$stmt = $pdo->prepare("SELECT COALESCE(SUM(quantity),0) as total_quantity FROM coupons");
+$stmt->execute();
+$coupons_quantity_sum = $stmt->fetch(PDO::FETCH_ASSOC)['total_quantity'];
+
+// Cadastro pelo site no horário fixo
+$stmt = $pdo->prepare("SELECT COUNT(*) as total_site FROM participants WHERE step_register IS NULL AND created_at = :t");
+$stmt->execute([':t' => '2025-10-27 15:19:33']);
+$site_registrations_at_time = $stmt->fetch(PDO::FETCH_ASSOC)['total_site'];
+
+// Lista de participantes
 $sql = "SELECT * FROM participants $filterWhere ORDER BY created_at DESC";
 $stmt = $pdo->prepare($sql);
 $stmt->execute($params);
@@ -87,76 +88,90 @@ $page = 'participantes';
     <link href="../assets/img/logo.png" rel="icon">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 
 <body class="bg-gray-100">
     <?php include "components/sidebar.php"; ?>
     <div class="ml-auto mb-6 lg:w-[75%] xl:w-[80%] 2xl:w-[85%]">
         <?php include "components/header.php"; ?>
+
         <div class="max-w-full px-4 pb-8 mx-auto py-8">
 
-            <h1 class="text-2xl font-bold mb-6">Participantes Cadastrados</h1>
 
+
+            <!-- CARDS AJUSTADOS -->
             <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
-                <div class="bg-blue-100 p-4 rounded-lg shadow text-center">
-                    <h2 class="text-lg font-bold">Total Participantes</h2>
-                    <p class="text-2xl"><?php echo $total; ?></p>
+                <div class="bg-white">
+                    <h1 class="text-2xl font-bold mb-6 ml-2">Participantes Cadastrados</h1>
+                    <div class="p-4 rounded-lg shadow text-center">
+                        <h2 class="text-lg font-bold">WhatsApp</h2>
+                        <p class="text-2xl"><?php echo $totalWhats; ?></p>
+                    </div>
+
+                    <div class="p-4 rounded-lg shadow text-center">
+                        <h2 class="text-lg font-bold">Site</h2>
+                        <p class="text-2xl"><?php echo $totalSite; ?></p>
+                    </div>
                 </div>
-                <div class="bg-green-100 p-4 rounded-lg shadow text-center">
-                    <h2 class="text-lg font-bold">Estados</h2>
-                    <p class="text-2xl"><?php echo count($estados); ?></p>
+                <div class="bg-white p-4 rounded-lg shadow">
+                    <h3 class="font-bold mb-2">Estados <?php echo count($estados); ?></h3>
+                    <canvas id="statesChart" height="200"></canvas>
                 </div>
-                <div class="bg-yellow-100 p-4 rounded-lg shadow text-center">
-                    <h2 class="text-lg font-bold">Cidades</h2>
-                    <p class="text-2xl"><?php echo count($cidades); ?></p>
+                <div class="bg-white">
+                    <div class="p-4 rounded-lg shadow text-center">
+                        <h2 class="text-lg font-bold">Cupons enviados</h2>
+                        <p class="text-2xl"><?php echo $coupons_sent; ?></p>
+                    </div>
+
+                    <div class="p-4 rounded-lg shadow text-center">
+                        <h2 class="text-lg font-bold">Quantidade de Polpas</h2>
+                        <p class="text-2xl"><?php echo $coupons_quantity_sum; ?></p>
+                    </div>
                 </div>
             </div>
 
+            <!-- FILTROS (cidade removida) -->
             <form method="get" class="flex flex-wrap gap-4 mb-6">
                 <input type="text" name="search" placeholder="Buscar por nome, cpf ou email"
-                    value="<?php echo $_GET['search'] ?? ''; ?>"
+                    value="<?php echo htmlspecialchars($_GET['search'] ?? ''); ?>"
                     class="px-3 py-2 border rounded-lg w-64">
 
                 <div class="flex items-center space-x-2">
-                    <label for="date_start" class="text-sm font-medium text-gray-700">De:</label>
+                    <label for="date_start">De:</label>
                     <input type="date" name="date_start" id="date_start"
-                        value="<?php echo $_GET['date_start'] ?? ''; ?>"
+                        value="<?php echo htmlspecialchars($_GET['date_start'] ?? ''); ?>"
                         class="px-3 py-2 border rounded-lg">
                 </div>
 
                 <div class="flex items-center space-x-2">
-                    <label for="date_end" class="text-sm font-medium text-gray-700">Até:</label>
+                    <label for="date_end">Até:</label>
                     <input type="date" name="date_end" id="date_end"
-                        value="<?php echo $_GET['date_end'] ?? ''; ?>"
+                        value="<?php echo htmlspecialchars($_GET['date_end'] ?? ''); ?>"
                         class="px-3 py-2 border rounded-lg">
                 </div>
 
                 <select name="state" class="px-3 py-2 border rounded-lg" onchange="this.form.submit()">
                     <option value="">Todos os estados</option>
                     <?php foreach ($estados as $e): ?>
-                        <option value="<?php echo $e['state']; ?>" 
+                        <option value="<?php echo htmlspecialchars($e['state']); ?>"
                             <?php echo (($_GET['state'] ?? '') == $e['state']) ? 'selected' : ''; ?>>
-                            <?php echo $e['state']; ?> (<?php echo $e['total']; ?>)
+                            <?php echo htmlspecialchars($e['state']); ?> (<?php echo $e['total']; ?>)
                         </option>
                     <?php endforeach; ?>
                 </select>
 
-                <select name="city" class="px-3 py-2 border rounded-lg" onchange="this.form.submit()">
-                    <option value="">Todas as cidades</option>
-                    <?php foreach ($cidades as $c): ?>
-                        <option value="<?php echo $c['neighborhood']; ?>" 
-                            <?php echo (($_GET['city'] ?? '') == $c['neighborhood']) ? 'selected' : ''; ?>>
-                            <?php echo $c['neighborhood']; ?> (<?php echo $c['total']; ?>)
-                        </option>
-                    <?php endforeach; ?>
-                </select>
-
-                <button class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">
+                <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">
                     Filtrar
                 </button>
+
+                <a href="participantes.php"
+                    class="bg-gray-500 text-white px-4 py-2 rounded-lg hover:bg-gray-600">
+                    Limpar
+                </a>
             </form>
 
+            <!-- TABELA MANTIDA -->
             <div class="relative overflow-x-auto shadow-md sm:rounded-lg bg-white">
                 <table class="w-full text-sm text-left text-gray-500">
                     <thead class="text-xs text-gray-700 uppercase bg-gray-50">
@@ -164,12 +179,8 @@ $page = 'participantes';
                             <th class="px-4 py-3">ID</th>
                             <th class="px-4 py-3">Nome</th>
                             <th class="px-4 py-3">CPF</th>
-                            <th class="px-4 py-3">Nascimento</th>
                             <th class="px-4 py-3">Telefone</th>
                             <th class="px-4 py-3">Email</th>
-                            <th class="px-4 py-3">CEP</th>
-                            <th class="px-4 py-3">Estado</th>
-                            <th class="px-4 py-3">Cidade</th>
                             <th class="px-4 py-3">Criado em</th>
                             <th class="px-4 py-3">Atualizado em</th>
                         </tr>
@@ -179,30 +190,64 @@ $page = 'participantes';
                             <?php foreach ($participants as $p): ?>
                                 <tr class="bg-white border-b hover:bg-gray-50">
                                     <td class="px-4 py-3"><?php echo $p['id']; ?></td>
-                                    <td class="px-4 py-3"><?php echo $p['first_name'] . ' ' . $p['last_name']; ?></td>
-                                    <td class="px-4 py-3"><?php echo $p['cpf']; ?></td>
-                                    <td class="px-4 py-3"><?php echo date('d/m/Y', strtotime($p['birth_date'])); ?></td>
-                                    <td class="px-4 py-3"><?php echo $p['phone']; ?></td>
-                                    <td class="px-4 py-3"><?php echo $p['email']; ?></td>
-                                    <td class="px-4 py-3"><?php echo $p['cep']; ?></td>
-                                    <td class="px-4 py-3"><?php echo $p['state']; ?></td>
-                                    <td class="px-4 py-3"><?php echo $p['neighborhood']; ?></td>
+                                    <td class="px-4 py-3"><?php echo htmlspecialchars($p['first_name'] . " " . $p['last_name']); ?></td>
+                                    <td class="px-4 py-3"><?php echo htmlspecialchars($p['cpf']); ?></td>
+                                    <td class="px-4 py-3"><?php echo htmlspecialchars($p['phone']); ?></td>
+                                    <td class="px-4 py-3"><?php echo htmlspecialchars($p['email']); ?></td>
                                     <td class="px-4 py-3"><?php echo date('d/m/Y H:i', strtotime($p['created_at'])); ?></td>
                                     <td class="px-4 py-3"><?php echo $p['updated_at'] ? date('d/m/Y H:i', strtotime($p['updated_at'])) : '-'; ?></td>
                                 </tr>
                             <?php endforeach; ?>
                         <?php else: ?>
                             <tr>
-                                <td colspan="11" class="text-center py-4">Nenhum participante encontrado</td>
+                                <td colspan="7" class="text-center py-4">Nenhum participante encontrado</td>
                             </tr>
                         <?php endif; ?>
                     </tbody>
                 </table>
             </div>
+
         </div>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script>
+        // Dados dos estados
+        const estadosData = <?php echo json_encode($estados); ?>;
+        const stateLabels = estadosData.map(e => e.state || 'Sem Estado');
+        const stateValues = estadosData.map(e => parseInt(e.total));
+
+        function randomColor() {
+            return 'rgba(' + Math.floor(Math.random() * 255) + ',' + Math.floor(Math.random() * 255) + ',' + Math.floor(Math.random() * 255) + ',0.8)';
+        }
+        const stateColors = stateLabels.map(() => randomColor());
+
+        // Gráfico de ESTADOS
+        const ctxStates = document.getElementById('statesChart').getContext('2d');
+        new Chart(ctxStates, {
+            type: 'pie',
+            data: {
+                labels: stateLabels,
+                datasets: [{
+                    data: stateValues,
+                    backgroundColor: stateColors,
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'right'
+                    },
+                    tooltip: {
+                        enabled: true
+                    }
+                }
+            }
+        });
+    </script>
+
 </body>
 
 </html>
