@@ -74,7 +74,7 @@ try {
     // ===============================
     // 5️⃣ GERAR CÓDIGOS DA SORTE
     // ===============================
-    $couponCount = min(intdiv($quantity, 3), 5); // a cada 3 polpas = 1 código, até 5 códigos
+    $couponCount = intdiv($quantity, 5); // 1 código a cada 5 polpas
 
     for ($i = 0; $i < $couponCount; $i++) {
         do {
@@ -85,7 +85,7 @@ try {
         } while ($exists);
 
         $sql = "INSERT INTO coupon_codes (participant_id, coupon_id, code, created_at, updated_at)
-                VALUES (?, ?, ?, NOW(), NOW())";
+            VALUES (?, ?, ?, NOW(), NOW())";
         $stmt = $pdo->prepare($sql);
         $stmt->execute([$participant_id, $coupon_id, $code]);
     }
@@ -93,7 +93,6 @@ try {
     // Redireciona de volta para a página de participação
     header('Location: ../../participe.php?success=1&phone=' . urlencode($phone));
     exit;
-
 } catch (Exception $e) {
     echo "Erro ao salvar cupom: " . $e->getMessage();
     exit;
