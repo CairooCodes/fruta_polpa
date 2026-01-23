@@ -10,6 +10,7 @@ $cep = $_POST['cep'] ?? null;
 $ddd = preg_replace('/\D/', '', $_POST['ddd'] ?? '');
 $number = preg_replace('/\D/', '', $_POST['phone_number'] ?? '');
 $quantity = isset($_POST['quantity']) ? intval($_POST['quantity']) : 0;
+$complement = $_POST['complement'] ?? null;
 
 if (strlen($ddd) !== 2 || strlen($number) !== 8) {
     echo 'Número de telefone inválido.';
@@ -64,10 +65,10 @@ if (isset($_FILES['img']) && $_FILES['img']['error'] == UPLOAD_ERR_OK) {
 // 4️⃣ SALVAR CUPOM
 // ===============================
 try {
-    $sql = "INSERT INTO coupons (participant_id, image, quantity, created_at, updated_at) 
-            VALUES (?, ?, ?, NOW(), NOW())";
+    $sql = "INSERT INTO coupons (participant_id, image, quantity, complement, created_at, updated_at) 
+        VALUES (?, ?, ?, ?, NOW(), NOW())";
     $stmt = $pdo->prepare($sql);
-    $stmt->execute([$participant_id, $imgPath, $quantity]);
+    $stmt->execute([$participant_id, $imgPath, $quantity, $complement]);
 
     $coupon_id = $pdo->lastInsertId();
 

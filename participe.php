@@ -137,6 +137,17 @@ if ($phoneParam) {
                         <option value="20">20</option>
                     </select>
                 </div>
+                <div>
+                    <label class="block text-sm font-medium">
+                        Onde você comprou a polpa? *
+                    </label>
+                    <input
+                        type="text"
+                        name="complement"
+                        placeholder="Ex: Supermercado X, Feira do bairro, Distribuidor Y"
+                        class="w-full border border-gray-200 p-2 rounded-md"
+                        required>
+                </div>
 
                 <!-- Imagem -->
                 <div>
