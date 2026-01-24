@@ -64,9 +64,9 @@ include "api-tempo.php";
               WhatsApp
             </button>
           </a>
-          <a href="https://frutapolpa.com.br/trabalhe-conosco">
+          <a href="https://frutapolpa.com.br/participe">
             <button class="ml-4 text-xs py-2 px-4 rounded-full border-2 boder-transparent hover:border-color1 bg-color1 hover:bg-white text-white hover:text-color1">
-              Trabalhe conosco
+              Promoções
             </button>
           </a>
         </div>

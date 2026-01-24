@@ -5,6 +5,7 @@ require "db_config.php";
 
 $URI = new URI();
 $phoneParam = $_GET['phone'] ?? null;
+$success = isset($_GET['success']) && $_GET['success'] == 1;
 $participant = null;
 $coupons = [];
 $couponCodes = [];
@@ -76,96 +77,109 @@ if ($phoneParam) {
                     <p class="text-gray-600 text-center">Nenhum cupom encontrado para este número.</p>
                 <?php endif; ?>
             </div>
+
+            <div class="mt-6 text-center">
+                <a href="<?= strtok($_SERVER["REQUEST_URI"], '?') ?>"
+                    class="inline-block bg-gray-600 text-white px-6 py-2 rounded-md hover:bg-gray-700 transition">
+                    Cadastrar outro cupom
+                </a>
+            </div>
         <?php endif; ?>
-        <div class="max-w-3xl mx-auto p-6 bg-white rounded-lg shadow">
 
-            <h2 class="lg:text-3xl text-xl font-semibold mb-4 text-center text-orange-600 font-sans">
-                Envie seu cupom e participe da promoção
-            </h2>
+        <?php if (!$success): ?>
+            <div class="max-w-3xl mx-auto p-6 bg-white rounded-lg shadow">
 
-            <!-- Formulário -->
-            <form id="cupomForm" action="./admin/controllers/add_cupom.php" method="post" enctype="multipart/form-data" class="space-y-4">
+                <h2 class="lg:text-3xl text-xl font-semibold mb-4 text-center text-orange-600 font-sans">
+                    Envie seu cupom e participe da promoção
+                </h2>
 
-                <!-- Nome completo -->
-                <div>
-                    <label class="block text-sm font-medium">Nome completo *</label>
-                    <input type="text" name="first_name" placeholder="Digite seu nome completo"
-                        class="w-full border border-gray-200 p-2 rounded-md" required>
-                </div>
+                <!-- Formulário -->
+                <form id="cupomForm" action="./admin/controllers/add_cupom.php" method="post" enctype="multipart/form-data" class="space-y-4">
 
-                <!-- CPF -->
-                <div>
-                    <label class="block text-sm font-medium">CPF *</label>
-                    <input type="text" name="cpf" maxlength="14" placeholder="000.000.000-00"
-                        class="w-full border border-gray-200 p-2 rounded-md" required>
-                </div>
+                    <!-- Nome completo -->
+                    <div>
+                        <label class="block text-sm font-medium">Nome completo *</label>
+                        <input type="text" name="first_name" placeholder="Digite seu nome completo"
+                            class="w-full border border-gray-200 p-2 rounded-md" required>
+                    </div>
 
-                <!-- CEP -->
-                <div>
-                    <label class="block text-sm font-medium">CEP *</label>
-                    <input type="text" name="cep" maxlength="9" placeholder="00000-000"
-                        class="w-full border border-gray-200 p-2 rounded-md" required>
-                </div>
+                    <!-- CPF -->
+                    <div>
+                        <label class="block text-sm font-medium">CPF *</label>
+                        <input type="text" name="cpf" maxlength="14" placeholder="000.000.000-00"
+                            class="w-full border border-gray-200 p-2 rounded-md" required>
+                    </div>
 
-                <!-- WhatsApp -->
-                <div>
-                    <label class="block text-sm font-medium">WhatsApp *</label>
-                    <div class="flex space-x-2 items-end">
-                        <div>
-                            <input type="text" id="ddd" name="ddd" maxlength="2" required
-                                class="w-20 border border-gray-200 p-2 rounded-md text-center" pattern="\d{2}" placeholder="DDD">
-                        </div>
-                        <div>
-                            <input type="text" value="9" disabled
-                                class="w-14 border border-gray-200 p-2 rounded-md text-center bg-gray-100 text-gray-500">
-                        </div>
-                        <div>
-                            <input type="text" id="phone_number" name="phone_number" maxlength="8" required
-                                class="border border-gray-200 p-2 rounded-md text-center" pattern="\d{8}" placeholder="Número do WhatsApp">
+                    <!-- CEP -->
+                    <div>
+                        <label class="block text-sm font-medium">CEP *</label>
+                        <input type="text" name="cep" maxlength="9" placeholder="00000-000"
+                            class="w-full border border-gray-200 p-2 rounded-md" required>
+                    </div>
+
+                    <!-- WhatsApp -->
+                    <div>
+                        <label class="block text-sm font-medium">WhatsApp *</label>
+                        <div class="flex space-x-2 items-end">
+                            <div>
+                                <input type="text" id="ddd" name="ddd" maxlength="2" required
+                                    class="w-20 border border-gray-200 p-2 rounded-md text-center" pattern="\d{2}" placeholder="DDD">
+                            </div>
+                            <div>
+                                <input type="text" value="9" disabled
+                                    class="w-14 border border-gray-200 p-2 rounded-md text-center bg-gray-100 text-gray-500">
+                            </div>
+                            <div>
+                                <input type="text" id="phone_number" name="phone_number" maxlength="8" required
+                                    class="border border-gray-200 p-2 rounded-md text-center" pattern="\d{8}" placeholder="Número do WhatsApp">
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- Quantidade -->
-                <div>
-                    <label class="block text-sm font-medium">Quantas polpas você comprou? *</label>
-                    <select name="quantity" class="w-full border border-gray-200 p-2 rounded-md" required>
-                        <option value="">Selecione a quantidade</option>
-                        <option value="5">5</option>
-                        <option value="10">10</option>
-                        <option value="15">15</option>
-                        <option value="20">20</option>
-                    </select>
-                </div>
-                <div>
-                    <label class="block text-sm font-medium">
-                        Onde você comprou a polpa? *
-                    </label>
-                    <input
-                        type="text"
-                        name="complement"
-                        placeholder="Ex: Supermercado X, Feira do bairro, Distribuidor Y"
-                        class="w-full border border-gray-200 p-2 rounded-md"
-                        required>
-                </div>
+                    <!-- Quantidade -->
+                    <div>
+                        <label class="block text-sm font-medium">Quantas polpas você comprou? *</label>
+                        <select name="quantity" class="w-full border border-gray-200 p-2 rounded-md" required>
+                            <option value="">Selecione a quantidade</option>
+                            <option value="5">5</option>
+                            <option value="10">10</option>
+                            <option value="15">15</option>
+                            <option value="20">20</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium">
+                            Onde você comprou a polpa? *
+                        </label>
+                        <input
+                            type="text"
+                            name="complement"
+                            placeholder="Ex: Supermercado X, Feira do bairro, Distribuidor Y"
+                            class="w-full border border-gray-200 p-2 rounded-md"
+                            required>
+                    </div>
 
-                <!-- Imagem -->
-                <div>
-                    <label class="block text-sm font-medium">Foto do Cupom *</label>
-                    <input type="file" name="img" accept="image/*"
-                        class="block w-full text-sm text-gray-900 border border-gray-300 rounded-md cursor-pointer bg-gray-50" required>
-                </div>
+                    <!-- Imagem -->
+                    <div>
+                        <label class="block text-sm font-medium">Foto do Cupom *</label>
+                        <input type="file" name="img" accept="image/*"
+                            class="block w-full text-sm text-gray-900 border border-gray-300 rounded-md cursor-pointer bg-gray-50" required>
+                    </div>
 
-                <button type="submit"
-                    class="w-full bg-orange-600 text-white py-2 rounded-md hover:bg-orange-700 transition">
-                    Enviar Cupom
-                </button>
-            </form>
-        </div>
+                    <button type="submit"
+                        class="w-full bg-orange-600 text-white py-2 rounded-md hover:bg-orange-700 transition">
+                        Enviar Cupom
+                    </button>
+                </form>
+            </div>
+        <?php endif; ?>
     </div>
 
     <?php include "./components/footer.php"; ?>
     <?php include "./components/btn-whatsapp.php"; ?>
+    <script src="assets/js/tw.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/maps.js"></script>
 </body>
 
 </html>
