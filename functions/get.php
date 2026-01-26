@@ -39,6 +39,14 @@ function getPolpas2()
   return $stmt->fetchAll(PDO::FETCH_ASSOC);
 }
 
+function getPotes()
+{
+  global $pdo;
+  $stmt = $pdo->prepare("SELECT * FROM products where categorie_id = 3 order by id asc");
+  $stmt->execute();
+  return $stmt->fetchAll(PDO::FETCH_ASSOC);
+}
+
 function getPolpa($id)
 {
   global $pdo;

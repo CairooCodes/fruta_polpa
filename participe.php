@@ -50,7 +50,7 @@ if ($phoneParam) {
         <!-- Exibir cupons e códigos -->
         <?php if ($participant): ?>
             <div class="max-w-3xl mx-auto mt-8 p-6 bg-white rounded-lg shadow">
-                <h3 class="text-xl font-semibold mb-4 text-center text-gray-700">
+                <h3 class="text-xl font-semibold mb-4 text-center text-orange-600">
                     Cupons cadastrados para <?= htmlspecialchars($participant['first_name']) ?>
                 </h3>
 
@@ -78,9 +78,9 @@ if ($phoneParam) {
                 <?php endif; ?>
             </div>
 
-            <div class="mt-6 text-center">
+            <div class="my-6 text-center">
                 <a href="<?= strtok($_SERVER["REQUEST_URI"], '?') ?>"
-                    class="inline-block bg-gray-600 text-white px-6 py-2 rounded-md hover:bg-gray-700 transition">
+                    class="w-full bg-orange-600 text-white py-3 px-3 rounded-md hover:bg-orange-700 transition">
                     Cadastrar outro cupom
                 </a>
             </div>

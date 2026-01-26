@@ -6,6 +6,7 @@ require "./functions/get.php";
 
 $polpas1 = getPolpas1();
 $polpas2 = getPolpas2();
+$potes = getPotes();
 
 $URI = new URI();
 
@@ -70,6 +71,29 @@ $URI = new URI();
 
           <div class="flex justify-center mt-4">
             <a href="<?php echo ('https://frutapolpa.com.br/polpa/' . slugify($polpa2['name'])); ?>" style="background: rgb(252,114,0); background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);" class="text-white border-2 border-white bg-white rounded-full font-semibold text-lg px-5 py-2 text-center hover:bg-orange-600 hover:text-black"><?php echo $polpa2['name']; ?></a>
+          </div>
+        </div>
+
+      <?php }
+      ?>
+    </div>
+  </div>
+
+  <div class="mx-auto max-w-7xl px-2 pt-10">
+    <h1 class="lg:text-4xl text-3xl">
+      <span style="letter-spacing: 0.5px;" class="font-black bg-clip-text bg-gradient-to-r from-color1 to-color1 text-color1">
+        Potes de Açaí
+      </span>
+    </h1>
+    <div class="grid lg:grid-cols-4 gap-8">
+      <?php foreach ($potes as $pote) { ?>
+        <div>
+          <div class="mb-8 mt-4 items-center rounded-xl p-2">
+            <img loading="lazy" src='./admin/uploads/polpas/<?php echo $pote['img']; ?>'>
+          </div>
+
+          <div class="flex justify-center mt-4">
+            <a href="<?php echo ('https://frutapolpa.com.br/polpa/' . slugify($pote['name'])); ?>" style="background: rgb(252,114,0); background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);" class="text-white border-2 border-white bg-white rounded-full font-semibold text-lg px-5 py-2 text-center hover:bg-orange-600 hover:text-black"><?php echo $pote['name']; ?></a>
           </div>
         </div>
 

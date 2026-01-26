@@ -68,10 +68,10 @@ $URI = new URI();
     <section class="bg-white mx-auto md:max-w-7xl py-8 px-4 lg:mb-10 md:mb-10 sm:mb-4 header-institucional">
       <div class="max-w-full lg:pl-24 mx-auto grid lg:grid-cols-2 gap-10">
         <div class="lg:mt-14 mt-6 text-justify">
-          <p style="letter-spacing: 0.5px;" class="text-gray-800">Há mais de 20 anos, a <span class="font-black text-color1">Fruta Polpa</span> é presença marcante na mesa dos Brasileiros. Aliada da saúde e do bem-estar, é uma das maiores do Brasil no segmento de polpa de frutas, sendo reconhecida como “A Melhor do Brasil” por sua qualidade, sabor e excelência em todos os processos.</p>
+          <p style="letter-spacing: 0.5px;" class="text-gray-800">A <span class="font-black text-color1">Fruta Polpa</span> é presença marcante na mesa dos Brasileiros. Aliada da saúde e do bem-estar, é uma das maiores do Brasil no segmento de polpa de frutas, sendo reconhecida como “A Melhor do Brasil” por sua qualidade, sabor e excelência em todos os Nossa Linha do Tempo processos.</p>
           <p style="letter-spacing: 0.5px;" class="text-gray-800 pt-3">Nossa história começa em 1995, graças à visão e perseverança do fundador Sr. Marcelo Teixeira e Sra. Denise Teixeira, que iniciaram o negócio de forma artesanal, com pouquíssima estrutura e uma única ideia: Levar mais qualidade de vida e sabor para as famílias.</p>
           <p style="letter-spacing: 0.5px;" class="text-gray-800 pt-3">O negócio cresceu, e o desejo de melhoria contínua nos fez mudar para melhor, desde a localização, processos de produção, produtos, logística e toda nossa estrutura como um todo.</p>
-          <p style="letter-spacing: 0.5px;" class="text-gray-800 pt-3">Atualmente temos abrangência nacional, atendendo os mercados dos estados do Piauí, Maranhão, Ceará, Paraíba, Pernambuco, Bahia, Pará, Tocantins, Goiás, Rio de Janeiro e Distrito Federal.</p>
+          <p style="letter-spacing: 0.5px;" class="text-gray-800 pt-3">Atualmente temos abrangência nacional, atendendo os mercados dos estados do Piauí, Maranhão, Pará, Tocantins, Goiás, Rio de Janeiro e Distrito Federal.</p>
           <p style="letter-spacing: 0.5px;" class="text-gray-800 pt-3">Nossa meta é ser líder de mercado no Brasil até 2028, e para isso contamos com um time de excelência, processos bem estruturados, logística e claro produtos diferenciados que agradam não apenas pelo sabor, mas pelo compromisso em levar até a milhões de famílias brasileiras um produto de alta confiabilidade.</p>
         </div>
         <div>
