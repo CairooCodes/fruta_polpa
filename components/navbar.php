@@ -40,7 +40,7 @@ include "api-tempo.php";
             <a href="https://frutapolpa.com.br/institucional" class="block py-2 uppercase text-xs rounded" aria-current="page">Institucional</a>
           </li>
           <li class="py-2">
-            <a href="https://frutapolpa.com.br/polpas" class="block py-2 uppercase text-xs rounded" aria-current="page">Polpas</a>
+            <a href="./produtos.php" class="block py-2 uppercase text-xs rounded" aria-current="page">Produtos</a>
           </li>
           <li class="py-2">
             <a href="https://frutapolpa.com.br/qualidade-premium" class="block py-2 uppercase text-xs rounded" aria-current="page">Qualidade premium</a>
