@@ -29,10 +29,10 @@ if (!empty($_GET['id'])) {
     }
 
     updatePolpa($id, $name, $description, $categorie_id, $subject, $info, $imgPath);
-    header('Location: ../polpas.php');
+    header('Location: ../produtos.php');
     exit();
   }
 } else {
-  header('Location: ../polpas.php');
+  header('Location: ../produtos.php');
   exit();
 }

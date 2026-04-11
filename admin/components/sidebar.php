@@ -56,12 +56,12 @@
       <?php endif; ?>
       <?php if ($user_type == 1): ?>
         <li>
-          <a href="polpas.php" class="px-3 py-2 flex items-center space-x-3 rounded-md text-gray-800 group 
-        <?php if ($page == 'polpas') {
+          <a href="produtos.php" class="px-3 py-2 flex items-center space-x-3 rounded-md text-gray-800 group 
+        <?php if ($page == 'produtos') {
           echo 'bg-orange-600 text-white';
         } ?>">
             <i class="bi bi-cart"></i>
-            <span class="group-hover:text-gray-700">Polpas</span>
+            <span class="group-hover:text-gray-700">Produtos</span>
           </a>
         </li>
       <?php endif; ?>

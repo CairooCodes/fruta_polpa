@@ -39,7 +39,7 @@
             <div class="swiper-slide">
               <div class=" transition duration-500 bg-white rounded-2xl shadow2 ">
                 <div class="h-full">
-                <img loading="lazy" src='./admin/uploads/polpas/<?php echo $polpa2['img']; ?>'>
+                  <img loading="lazy" src='./admin/uploads/polpas/<?php echo $polpa2['img']; ?>'>
                 </div>
                 <div class="bg-bottom rounded-b-2xl" style="background: rgb(252,114,0);background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);">
                   <div class="flex justify-center pb-5">
@@ -65,15 +65,15 @@
     <div class="px-5 pt-14">
       <div class="swiper swiper_products_type2 z-0">
         <div class="swiper-wrapper">
-          <?php foreach ($polpas2 as $polpa2) { ?>
+          <?php foreach ($polpas3 as $polpa3) { ?>
             <div class="swiper-slide">
               <div class=" transition duration-500 bg-white rounded-2xl shadow2 ">
                 <div class="h-full">
-                <img loading="lazy" src='./admin/uploads/polpas/<?php echo $polpa2['img']; ?>'>
+                  <img loading="lazy" src='./admin/uploads/polpas/<?php echo $polpa3['img']; ?>'>
                 </div>
                 <div class="bg-bottom rounded-b-2xl" style="background: rgb(252,114,0);background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);">
                   <div class="flex justify-center pb-5">
-                    <a href="https://frutapolpa.com.br/polpas-mixs">
+                    <a href="./potes.php">
                       <h3 class="text-xl text-white text-center font-bold pt-6 mb-2">100%
                         naturais</h3>
                       <h3 class="text-3xl text-white text-center font-black mb-2">Potes</h3>

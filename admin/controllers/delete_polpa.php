@@ -6,11 +6,11 @@ if (!empty($_GET['id'])) {
 
   $id = $_GET['id'];
   deletePolpa($id);
-  header('Location: ../polpas.php');
+  header('Location: ../produtos.php');
   exit();
 } else {
 
-  header('Location: ../polpas.php');
+  header('Location: ../produtos.php');
   exit();
 }
 

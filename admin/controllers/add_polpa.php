@@ -33,4 +33,4 @@ $new_description = $dom->saveHTML();
 $sql = "INSERT INTO products (name, img, description, categorie_id, subject, info) VALUES (?,?,?,?,?,?)";
 $stmt = $pdo->prepare($sql);
 $stmt->execute([$name, $imgPath, $description, $categorie_id, $subject, $info]);  
-header('Location: ../polpas.php');
+header('Location: ../produtos.php');

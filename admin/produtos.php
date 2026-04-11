@@ -19,13 +19,13 @@ $user = $stmt->fetch();
 $receitas = getAllReceitas();
 $polpas = getAllPolpas();
 $categories = getCategoriesPolpas();
-$page = 'polpas';
+$page = 'produtos';
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
-  <title>Polpas Fruta Polpa</title>
+  <title>Produtos Fruta Polpa</title>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -67,7 +67,7 @@ $page = 'polpas';
               <div id="dropdownAction" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44">
                 <ul class="py-1 text-sm text-gray-700" aria-labelledby="dropdownActionButton">
                   <li>
-                    <button data-modal-target="addPolpaModal" data-modal-show="addPolpaModal" class="block px-4 py-2 hover:bg-gray-100">Adicionar Polpa</button>
+                    <button data-modal-target="addPolpaModal" data-modal-show="addPolpaModal" class="block px-4 py-2 hover:bg-gray-100">Adicionar Produtos</button>
                   </li>
                   <li>
                     <a href="#" class="block px-4 py-2 hover:bg-gray-100">Exportar Dados</a>

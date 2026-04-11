@@ -8,6 +8,7 @@ $banners = getBanners();
 $polpas = getAllPolpas();
 $polpas1 = getPolpas1();
 $polpas2 = getPolpas2();
+$polpas3 = getPolpas3();
 $potes = getPotes();
 
 $URI = new URI();
