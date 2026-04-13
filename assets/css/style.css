@@ -496,3 +496,10 @@ nav a:hover+.hover-image,
   font-size: 24px;
   line-height: 60px;
 }
+
+.polpas {
+    background-image: url('https://frutapolpa.com.br/assets/img/banner_pagina_polpas.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
