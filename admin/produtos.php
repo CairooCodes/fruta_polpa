@@ -114,7 +114,7 @@ $page = 'produtos';
                   <?php echo $polpa['categorie_type']; ?>
                 </th>
                 <td class="px-6 py-4">
-                  <a href="./editar_polpa.php?id=<?php echo $polpa['id']; ?>" type="button" class="font-medium text-blue-600 hover:underline">Editar</a>
+                  <a href="./editar_produto.php?id=<?php echo $polpa['id']; ?>" type="button" class="font-medium text-blue-600 hover:underline">Editar</a>
                   <a href="./controllers/delete_polpa.php?id=<?php echo $polpa['id']; ?>" type="button" class="font-medium text-red-600 hover:underline">Excluir</a>
                 </td>
               </tr>

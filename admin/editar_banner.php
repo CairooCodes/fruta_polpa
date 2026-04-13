@@ -26,7 +26,7 @@ function getBanner($id)
   $stmt->execute();
   return $stmt->fetch(PDO::FETCH_ASSOC);
 }
-
+$page = 'banners';
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">

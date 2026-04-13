@@ -36,6 +36,7 @@ if (isset($_GET['id'])) {
 }
 
 $user_type = $_SESSION['type'];
+$page = 'cupons';
 ?>
 
 <!DOCTYPE html>
