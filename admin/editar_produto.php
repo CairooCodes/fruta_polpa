@@ -9,6 +9,7 @@ if (!isset($_SESSION['id'])) {
 }
 
 $user_id = $_SESSION['id'] ?? null;
+$user_type = $_SESSION['type'];
 
 $sql = "SELECT name, email, img FROM users WHERE id = ?";
 $stmt = $pdo->prepare($sql);
@@ -19,7 +20,7 @@ $id = $_GET['id'];
 $polpa = getPolpa($id);
 $categories = getCategoriesPolpas();
 $receitas = getAllReceitas();
-
+$page = 'produtos';
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
