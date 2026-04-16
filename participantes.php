@@ -93,6 +93,7 @@ $totalLista = count($rows);
         <form method="POST" action="importar_participants.php"
             class="flex flex-col md:flex-row gap-4 items-end">
 
+            <!-- DATA -->
             <div>
                 <label class="block text-sm font-medium text-gray-700">
                     created_at para importação
@@ -104,11 +105,34 @@ $totalLista = count($rows);
                     class="border rounded px-3 py-2">
             </div>
 
+            <!-- QUANTIDADE -->
+            <div>
+                <label class="block text-sm font-medium text-gray-700">
+                    Quantidade
+                </label>
+                <input
+                    type="number"
+                    name="limit"
+                    min="1"
+                    value="50"
+                    required
+                    class="border rounded px-3 py-2 w-28">
+            </div>
+
+            <!-- CEP -->
+            <div>
+                <label class="block text-sm font-medium text-gray-700">
+                    CEP para todos
+                </label>
+                <textarea name="ceps" required class="border rounded px-3 py-2"
+                    placeholder="Digite um CEP por linha"></textarea>
+            </div>
+
             <button
                 type="submit"
                 class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded"
-                onclick="return confirm('Importar os primeiros 50 registros?')">
-                Importar 50 registros
+                onclick="return confirm('Importar registros?')">
+                Importar
             </button>
         </form>
     </div>
@@ -123,7 +147,7 @@ $totalLista = count($rows);
         </p>
     </div>
 
-    <!-- TABELA -->
+    <?php include 'components/participants_chart.php'; ?>
     <div class="bg-white rounded shadow overflow-x-auto">
         <table class="min-w-full divide-y divide-gray-200">
             <thead class="bg-gray-50">

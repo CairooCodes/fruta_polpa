@@ -220,3 +220,23 @@ function getAllEmails()
   $stmt = $pdo->query("SELECT * FROM emails ORDER BY created_at DESC");
   return $stmt->fetchAll(PDO::FETCH_ASSOC);
 }
+
+function getParticipantsByDay()
+{
+  global $pdo;
+
+  $sql = "
+        SELECT 
+            DATE(created_at) as date,
+            COUNT(*) as total
+        FROM participants
+        WHERE created_at IS NOT NULL
+        GROUP BY DATE(created_at)
+        ORDER BY DATE(created_at) ASC
+    ";
+
+  $stmt = $pdo->prepare($sql);
+  $stmt->execute();
+
+  return $stmt->fetchAll(PDO::FETCH_ASSOC);
+}

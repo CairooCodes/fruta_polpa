@@ -1,34 +1,55 @@
 <?php
 require "db_config.php";
 
-if (empty($_POST['created_at'])) {
-    die("Data de criação é obrigatória.");
+if (
+    empty($_POST['created_at']) ||
+    empty($_POST['limit']) ||
+    empty($_POST['ceps'])
+) {
+    die("Dados obrigatórios não informados.");
 }
 
-/* converter datetime-local para MySQL */
 $createdAt = str_replace('T', ' ', $_POST['created_at']);
+
+
+$limit = (int) $_POST['limit'];
+$limit = max(1, min($limit, 1000));
+
+
+$cepsInput = explode("\n", $_POST['ceps']);
+$ceps = [];
+
+foreach ($cepsInput as $cep) {
+    $cepLimpo = preg_replace('/\D/', '', $cep);
+    if (!empty($cepLimpo)) {
+        $ceps[] = $cepLimpo;
+    }
+}
+
+if (empty($ceps)) {
+    die("Nenhum CEP válido informado.");
+}
 
 try {
     $pdo->beginTransaction();
 
     $sqlSelect = "
-        SELECT
+        SELECT 
             p2.cpf,
             p2.first_name,
             p2.last_name,
             p2.birth_date,
             p2.phone,
             p2.email,
-            p2.cep,
             p2.state,
             p2.city,
             p2.neighborhood,
             p2.address,
             p2.number,
             p2.complement,
-            p2.step,
-            p2.step_register,
-            p2.is_active,
+            COALESCE(p2.step, 0) as step,
+            COALESCE(p2.step_register, 0) as step_register,
+            COALESCE(p2.is_active, 1) as is_active,
             p2.full_name
         FROM participants2 p2
         LEFT JOIN participants p
@@ -37,7 +58,7 @@ try {
         WHERE p.id IS NULL
           AND p2.cpf IS NOT NULL
         ORDER BY p2.id
-        LIMIT 50
+        LIMIT {$limit}
     ";
 
     $stmtSelect = $pdo->prepare($sqlSelect);
@@ -45,84 +66,64 @@ try {
 
     $sqlInsert = "
         INSERT INTO participants (
-            cpf,
-            first_name,
-            last_name,
-            birth_date,
-            phone,
-            email,
-            cep,
-            state,
-            city,
-            neighborhood,
-            address,
-            number,
-            complement,
-            step,
-            step_register,
-            is_active,
-            full_name,
-            created_at,
-            updated_at
+            cpf, first_name, last_name, birth_date,
+            phone, email, cep, state, city,
+            neighborhood, address, number, complement,
+            step, step_register, is_active, full_name,
+            created_at, updated_at
         ) VALUES (
-            :cpf,
-            :first_name,
-            :last_name,
-            :birth_date,
-            :phone,
-            :email,
-            :cep,
-            :state,
-            :city,
-            :neighborhood,
-            :address,
-            :number,
-            :complement,
-            :step,
-            :step_register,
-            :is_active,
-            :full_name,
-            :created_at,
-            :updated_at
+            :cpf, :first_name, :last_name, :birth_date,
+            :phone, :email, :cep, :state, :city,
+            :neighborhood, :address, :number, :complement,
+            :step, :step_register, :is_active, :full_name,
+            :created_at, :updated_at
         )
     ";
 
     $stmtInsert = $pdo->prepare($sqlInsert);
 
     $importados = 0;
+    $indexCep = 0;
+    $totalCeps = count($ceps);
 
     while ($row = $stmtSelect->fetch(PDO::FETCH_ASSOC)) {
+
+        $cepAtual = $ceps[$indexCep];
+
         $stmtInsert->execute([
-            ':cpf'           => $row['cpf'],
-            ':first_name'    => $row['first_name'],
-            ':last_name'     => $row['last_name'],
-            ':birth_date'    => $row['birth_date'],
-            ':phone'         => $row['phone'],
-            ':email'         => $row['email'],
-            ':cep'           => $row['cep'],
-            ':state'         => $row['state'],
-            ':city'          => $row['city'],
-            ':neighborhood'  => $row['neighborhood'],
-            ':address'       => $row['address'],
-            ':number'        => $row['number'],
-            ':complement'    => $row['complement'],
-            ':step'          => $row['step'],
+            ':cpf' => preg_replace('/\D/', '', $row['cpf']),
+            ':first_name' => $row['first_name'] ?? '',
+            ':last_name' => $row['last_name'] ?? '',
+            ':birth_date' => $row['birth_date'],
+            ':phone' => substr(preg_replace('/\D/', '', $row['phone']), 0, 20),
+            ':email' => strtolower($row['email'] ?? ''),
+            ':cep' => $cepAtual,
+            ':state' => $row['state'],
+            ':city' => $row['city'],
+            ':neighborhood' => $row['neighborhood'],
+            ':address' => $row['address'],
+            ':number' => $row['number'],
+            ':complement' => $row['complement'] ?? null,
+
+            ':step' => $row['step'],
             ':step_register' => $row['step_register'],
-            ':is_active'     => $row['is_active'],
-            ':full_name'     => $row['full_name'],
-            ':created_at'    => $createdAt,
-            ':updated_at'    => $createdAt
+            ':is_active' => $row['is_active'],
+
+            ':full_name' => $row['full_name'] ?? '',
+            ':created_at' => $createdAt,
+            ':updated_at' => $createdAt
         ]);
 
         $importados++;
+
+        $indexCep = ($indexCep + 1) % $totalCeps;
     }
 
     $pdo->commit();
 
     header("Location: participantes.php?importados={$importados}");
     exit;
-
 } catch (Exception $e) {
     $pdo->rollBack();
-    die("Erro na importação: " . $e->getMessage());
+    die("Erro: " . $e->getMessage());
 }
