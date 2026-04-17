@@ -14,22 +14,141 @@ function converterParaUtf8($string)
         return mb_convert_encoding($string, 'UTF-8', $encoding);
     }
 
-    return $string;
+    return trim($string);
 }
 
 function limparTelefone($fone)
 {
-    return preg_replace('/\D/', '', $fone);
+    if (!$fone) return null;
+
+    $fone = preg_replace('/\D/', '', $fone);
+
+    if (strlen($fone) < 10) {
+        return null;
+    }
+
+    return $fone;
+}
+
+function escolherTelefone($telefone, $celular)
+{
+    if ($celular && strlen($celular) >= 10) {
+        return $celular;
+    }
+
+    if ($telefone && strlen($telefone) >= 10) {
+        return $telefone;
+    }
+
+    return null;
+}
+
+function gerarTelefoneBR()
+{
+    $ddds = [
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        21,
+        22,
+        24,
+        27,
+        28,
+        31,
+        32,
+        33,
+        34,
+        35,
+        37,
+        38,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        51,
+        53,
+        54,
+        55,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        71,
+        73,
+        74,
+        75,
+        77,
+        79,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99
+    ];
+
+    $ddd = $ddds[array_rand($ddds)];
+    $numero = '9' . str_pad(rand(0, 99999999), 8, '0', STR_PAD_LEFT);
+
+    return $ddd . $numero;
+}
+
+function gerarTelefoneUnico(&$telefonesGerados, $pdo)
+{
+    do {
+        $telefone = gerarTelefoneBR();
+
+        // verifica no banco
+        $check = $pdo->prepare("SELECT id FROM participants2 WHERE phone = ?");
+        $check->execute([$telefone]);
+
+        $existeNoBanco = $check->fetch();
+    } while (in_array($telefone, $telefonesGerados) || $existeNoBanco);
+
+    $telefonesGerados[] = $telefone;
+
+    return $telefone;
 }
 
 function separarNome($nome)
 {
     $nome = trim($nome);
-    $partes = explode(' ', $nome, 2);
+    $partes = explode(' ', $nome);
+
+    $first = array_shift($partes);
+    $last  = implode(' ', $partes);
 
     return [
-        'first_name' => $partes[0] ?? null,
-        'last_name'  => $partes[1] ?? null,
+        'first_name' => $first ?: null,
+        'last_name'  => $last ?: null,
     ];
 }
 
@@ -44,12 +163,10 @@ function gerarCPF()
         $n[$i] = rand(0, 9);
     }
 
-    // evita sequências iguais
     if (count(array_unique($n)) === 1) {
         return gerarCPF();
     }
 
-    // dígito 1
     $soma = 0;
     for ($i = 0, $peso = 10; $i < 9; $i++, $peso--) {
         $soma += $n[$i] * $peso;
@@ -58,7 +175,6 @@ function gerarCPF()
     $resto = $soma % 11;
     $n[9] = ($resto < 2) ? 0 : 11 - $resto;
 
-    // dígito 2
     $soma = 0;
     for ($i = 0, $peso = 11; $i < 10; $i++, $peso--) {
         $soma += $n[$i] * $peso;
@@ -81,9 +197,6 @@ function gerarCPFUnico(&$cpfsGerados)
     return $cpf;
 }
 
-/**
- * Detecta separador automaticamente
- */
 function detectarSeparador($linha)
 {
     $delimiters = [";", ",", "\t"];
@@ -101,6 +214,25 @@ function detectarSeparador($linha)
     return $best;
 }
 
+function normalizarHeader($header)
+{
+    return array_map(function ($col) {
+        $col = strtolower($col);
+        $col = preg_replace('/[^a-z0-9]/', '', $col);
+        return $col;
+    }, $header);
+}
+
+function buscarCampo($map, $row, $possiveis)
+{
+    foreach ($possiveis as $campo) {
+        if (isset($map[$campo])) {
+            return $row[$map[$campo]] ?? null;
+        }
+    }
+    return null;
+}
+
 try {
     $pdo->beginTransaction();
 
@@ -112,20 +244,15 @@ try {
 
     $handle = fopen($arquivo, 'r');
 
-    // lê primeira linha bruta
     $linhaBruta = fgets($handle);
-
-    // converte encoding
     $linhaBruta = converterParaUtf8($linhaBruta);
-
-    // detecta separador
     $separador = detectarSeparador($linhaBruta);
 
-    // volta pro início do arquivo
     rewind($handle);
 
-    // lê cabeçalho
     $header = fgetcsv($handle, 0, $separador);
+    $header = normalizarHeader($header);
+    $map = array_flip($header);
 
     $sqlInsert = "
         INSERT INTO participants2 (
@@ -155,18 +282,41 @@ try {
     $ignorados = 0;
 
     $cpfsGerados = [];
+    $telefonesGerados = [];
 
     while (($row = fgetcsv($handle, 0, $separador)) !== false) {
 
-        // converte encoding de todas colunas
         $row = array_map('converterParaUtf8', $row);
 
-        $email    = $row[0] ?? null;
-        $nomeRaw  = $row[1] ?? null;
-        $telefone = $row[2] ?? null;
-        $celular  = $row[3] ?? null;
+        $email = buscarCampo($map, $row, ['email', 'e-mail']);
+        $nomeRaw = buscarCampo($map, $row, ['nome', 'name', 'fullname']);
 
-        $phone = limparTelefone($celular ?: $telefone);
+        $telefone = buscarCampo($map, $row, [
+            'telefone',
+            'fone',
+            'phone',
+            'tel',
+            'tel1',
+            'contato'
+        ]);
+
+        $celular  = buscarCampo($map, $row, [
+            'celular',
+            'mobile',
+            'whatsapp',
+            'cel',
+            'zap'
+        ]);
+
+        $telefone = limparTelefone($telefone);
+        $celular  = limparTelefone($celular);
+
+        $phone = escolherTelefone($telefone, $celular);
+
+        // 🔥 GERA TELEFONE SE NÃO EXISTIR
+        if (!$phone) {
+            $phone = gerarTelefoneUnico($telefonesGerados, $pdo);
+        }
 
         if (!$email && !$nomeRaw) {
             $ignorados++;
