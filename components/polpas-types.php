@@ -76,7 +76,7 @@
                     <a href="./potes.php">
                       <h3 class="text-xl text-white text-center font-bold pt-6 mb-2">100%
                         naturais</h3>
-                      <h3 class="text-3xl text-white text-center font-black mb-2">Potes</h3>
+                      <h3 class="text-3xl text-white text-center font-black mb-2">Cremes</h3>
                       <button class="hover:bg-slate-100 hover:text-gray-900 text-sm text-white py-2 px-4 rounded-full border-2 border-gray mt-4 ml-4">
                         CONHEÇA
                         <i class="bi bi-caret-right-fill"></i>
