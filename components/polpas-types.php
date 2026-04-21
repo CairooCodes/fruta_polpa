@@ -1,7 +1,7 @@
 <section class="bg-yellow-50 max-w-full header-institucional" id="produtos">
   <h6 class="lg:text-3xl text-xl pb-2 text-center pt-14"><span style="font-size: 20px;letter-spacing: 4px; font-weight: 300;" class="text-color1 uppercase">Conheça nossos</span></h6>
   <h1 class="lg:text-7xl text-3xl text-center"><span style="letter-spacing: 0.5px;" class="font-black bg-clip-text bg-gradient-to-r from-color1 to-color1 text-color1">Produtos</span></h1>
-  <div class="max-w-full px-4 lg:pt-12 pb-12 lg:grid grid-cols-3 mt-2">
+  <div class="max-w-full px-4 lg:pt-12 pb-12 lg:grid grid-cols-4 mt-2">
     <div class="px-5 pt-14">
       <div class="swiper swiper_products_type z-0">
         <div class="swiper-wrapper">
@@ -63,21 +63,51 @@
       </div>
     </div>
     <div class="px-5 pt-14">
-      <div class="swiper swiper_products_type2 z-0">
+      <div class="swiper swiper_products_type3 z-0">
         <div class="swiper-wrapper">
           <?php foreach ($polpas3 as $polpa3) { ?>
             <div class="swiper-slide">
               <div class=" transition duration-500 bg-white rounded-2xl shadow2 ">
-                <div class="h-full">
-                  <img loading="lazy" src='./admin/uploads/polpas/<?php echo $polpa3['img']; ?>'>
+                <div class="h-full flex items-center justify-center">
+                  <img loading="lazy" class="h-[330px] w-[300px] object-contain" src='./admin/uploads/polpas/<?php echo $polpa3['img']; ?>'>
                 </div>
                 <div class="bg-bottom rounded-b-2xl" style="background: rgb(252,114,0);background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);">
                   <div class="flex justify-center pb-5">
-                    <a href="./potes.php">
+                    <a href="./cremes-de-açaí.php">
                       <h3 class="text-xl text-white text-center font-bold pt-6 mb-2">100%
                         naturais</h3>
-                      <h3 class="text-3xl text-white text-center font-black mb-2">Cremes</h3>
-                      <button class="hover:bg-slate-100 hover:text-gray-900 text-sm text-white py-2 px-4 rounded-full border-2 border-gray mt-4 ml-4">
+                      <h3 class="text-3xl text-white text-center font-black mb-2">Cremes de Açaí</h3>
+                      <button class="hover:bg-slate-100 hover:text-gray-900 text-sm text-white py-2 px-4 rounded-full border-2 border-gray mt-4 ml-12">
+                        CONHEÇA
+                        <i class="bi bi-caret-right-fill"></i>
+                      </button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <?php }
+          ?>
+        </div>
+        <!-- <div class="swiper-pagination2"></div> -->
+      </div>
+    </div>
+    <div class="px-5 pt-14">
+      <div class="swiper swiper_products_type4 z-0">
+        <div class="swiper-wrapper">
+          <?php foreach ($polpas4 as $polpa4) { ?>
+            <div class="swiper-slide">
+              <div class=" transition duration-500 bg-white rounded-2xl shadow2 ">
+                <div class="h-full flex items-center justify-center">
+                  <img loading="lazy" class="h-[335px] object-contain" src='./admin/uploads/polpas/<?php echo $polpa4['img']; ?>'>
+                </div>
+                <div class="bg-bottom rounded-b-2xl" style="background: rgb(252,114,0);background: linear-gradient(15deg, rgba(252,114,0,1) 25%, rgba(255,198,0,1) 100%);">
+                  <div class="flex justify-center pb-5">
+                    <a href="./frutas-congeladas.php">
+                      <h3 class="text-xl text-white text-center font-bold pt-6 mb-2">100%
+                        naturais</h3>
+                      <h3 class="text-2xl text-white text-center font-black mb-2">Frutas Congeladas</h3>
+                      <button class="hover:bg-slate-100 hover:text-gray-900 text-sm text-white py-2 px-4 rounded-full border-2 border-gray mt-4 ml-12">
                         CONHEÇA
                         <i class="bi bi-caret-right-fill"></i>
                       </button>

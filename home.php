@@ -9,6 +9,7 @@ $polpas = getAllPolpas();
 $polpas1 = getPolpas1();
 $polpas2 = getPolpas2();
 $polpas3 = getPolpas3();
+$polpas4 = getPolpas4();
 $potes = getPotes();
 
 $URI = new URI();
@@ -99,6 +100,32 @@ $URI = new URI();
       // grabCursor: true,
       autoplay: {
         delay: 4500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+  </script>
+  <script>
+    var swiper = new Swiper(".swiper_products_type3", {
+      effect: "flip",
+      // grabCursor: true,
+      autoplay: {
+        delay: 5500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+  </script>
+  <script>
+    var swiper = new Swiper(".swiper_products_type4", {
+      effect: "flip",
+      // grabCursor: true,
+      autoplay: {
+        delay: 6500,
         disableOnInteraction: false,
       },
       pagination: {
