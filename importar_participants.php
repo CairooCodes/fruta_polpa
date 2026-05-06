@@ -11,17 +11,18 @@ if (
 
 $createdAt = str_replace('T', ' ', $_POST['created_at']);
 
-
 $limit = (int) $_POST['limit'];
 $limit = max(1, min($limit, 1000));
 
-
+// =========================
+// 🔥 TRATAMENTO DOS CEPS
+// =========================
 $cepsInput = explode("\n", $_POST['ceps']);
 $ceps = [];
 
 foreach ($cepsInput as $cep) {
     $cepLimpo = preg_replace('/\D/', '', $cep);
-    if (!empty($cepLimpo)) {
+    if (!empty($cepLimpo) && strlen($cepLimpo) >= 7) {
         $ceps[] = $cepLimpo;
     }
 }
@@ -33,6 +34,33 @@ if (empty($ceps)) {
 try {
     $pdo->beginTransaction();
 
+    // =========================
+    // 🔥 CACHE DE CEP → CIDADE/ESTADO
+    // =========================
+    $mapCep = [];
+
+    $stmtMap = $pdo->query("
+        SELECT cep, city, state 
+        FROM participants 
+        WHERE cep IS NOT NULL
+          AND city IS NOT NULL 
+          AND state IS NOT NULL
+    ");
+
+    while ($r = $stmtMap->fetch(PDO::FETCH_ASSOC)) {
+        $cepKey = preg_replace('/\D/', '', $r['cep']);
+
+        if (!isset($mapCep[$cepKey])) {
+            $mapCep[$cepKey] = [
+                'city' => $r['city'],
+                'state' => $r['state']
+            ];
+        }
+    }
+
+    // =========================
+    // 🔥 SELECT ORIGEM
+    // =========================
     $sqlSelect = "
         SELECT 
             p2.cpf,
@@ -64,6 +92,9 @@ try {
     $stmtSelect = $pdo->prepare($sqlSelect);
     $stmtSelect->execute();
 
+    // =========================
+    // 🔥 INSERT
+    // =========================
     $sqlInsert = "
         INSERT INTO participants (
             cpf, first_name, last_name, birth_date,
@@ -86,9 +117,18 @@ try {
     $indexCep = 0;
     $totalCeps = count($ceps);
 
+    // =========================
+    // 🔥 LOOP
+    // =========================
     while ($row = $stmtSelect->fetch(PDO::FETCH_ASSOC)) {
 
         $cepAtual = $ceps[$indexCep];
+
+        // 🔥 BUSCA NO CACHE
+        $cepData = $mapCep[$cepAtual] ?? null;
+
+        $city = $cepData['city'] ?? $row['city'];
+        $state = $cepData['state'] ?? $row['state'];
 
         $stmtInsert->execute([
             ':cpf' => preg_replace('/\D/', '', $row['cpf']),
@@ -98,8 +138,8 @@ try {
             ':phone' => substr(preg_replace('/\D/', '', $row['phone']), 0, 20),
             ':email' => strtolower($row['email'] ?? ''),
             ':cep' => $cepAtual,
-            ':state' => $row['state'],
-            ':city' => $row['city'],
+            ':state' => $state,
+            ':city' => $city,
             ':neighborhood' => $row['neighborhood'],
             ':address' => $row['address'],
             ':number' => $row['number'],
@@ -116,6 +156,7 @@ try {
 
         $importados++;
 
+        // 🔄 distribui os CEPs
         $indexCep = ($indexCep + 1) % $totalCeps;
     }
 
